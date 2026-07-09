@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buy British — Map of UK Makers & Producers</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<style>
+  :root{
+    --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#9aa3ad;
+    --farm:#2e7d32; --clothing:#2c5f8a; --ink:#1d2733; --muted:#6b7682;
+    --line:#e3e8ee; --bg:#f6f8fa;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink)}
+  #app{display:flex;height:100vh;overflow:hidden}
+
+  /* Sidebar */
+  #sidebar{width:340px;min-width:340px;height:100%;display:flex;flex-direction:column;background:#fff;border-right:1px solid var(--line);z-index:1000}
+  .brand{padding:16px 18px 12px;border-bottom:1px solid var(--line)}
+  .brand h1{margin:0;font-size:20px;letter-spacing:.5px;color:var(--navy)}
+  .brand h1 span{color:var(--red)}
+  .brand p{margin:4px 0 0;font-size:12px;color:var(--muted)}
+  .brand .suggest{display:block;margin-top:10px;text-align:center;padding:8px 10px;border-radius:8px;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;text-decoration:none}
+  .brand .suggest:hover{filter:brightness(1.08)}
+  .controls{padding:12px 14px;border-bottom:1px solid var(--line)}
+  #search{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
+  #search:focus{border-color:var(--navy)}
+  .filter-group{margin-top:12px}
+  .filter-group .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:6px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{cursor:pointer;user-select:none;border:1px solid var(--line);background:#fff;padding:5px 10px;border-radius:999px;font-size:12.5px;display:inline-flex;align-items:center;gap:6px;transition:.15s}
+  .chip .dot{width:9px;height:9px;border-radius:50%}
+  .chip.active{border-color:var(--navy);background:var(--navy);color:#fff}
+  .chip.active.tier-gold{background:var(--gold);border-color:var(--gold);color:#3a2e0a}
+  .chip.active.tier-silver{background:var(--silver);border-color:var(--silver);color:#1d2733}
+  .count{padding:8px 16px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--line)}
+  .count b{color:var(--ink)}
+  #list{flex:1;overflow-y:auto}
+  .item{padding:11px 16px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;gap:11px;align-items:flex-start}
+  .item:hover{background:var(--bg)}
+  .logo{width:38px;height:38px;border-radius:8px;flex:0 0 38px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;overflow:hidden;background:var(--navy)}
+  .logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .item .meta{min-width:0}
+  .item .nm{font-size:14px;font-weight:600;line-height:1.2}
+  .item .sub{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:4px;margin-top:5px}
+  .tag.gold{background:#f6edd2;color:#7a5a12}
+  .tag.silver{background:#eceff2;color:#566069}
+  .tag.cat{background:#e7f0e8;color:#27632a;margin-left:5px}
+  .tag.cat.clothing{background:#e4edf5;color:#234e74}
+
+  /* Map */
+  #map{flex:1;height:100%}
+  .legend{background:#fff;padding:10px 12px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:12px;line-height:1.7}
+  .legend .row{display:flex;align-items:center;gap:7px}
+  .legend .sw{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #ccc}
+
+  /* Markers */
+  .pin{width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35);position:relative}
+  .pin::after{content:"";position:absolute;inset:5px;background:#fff;border-radius:50%}
+  .pin.tier-gold::after{background:var(--gold)}
+  .pin.tier-silver::after{background:#fff}
+
+  /* Popup */
+  .leaflet-popup-content{margin:0;width:262px!important}
+  .pop{font-family:inherit}
+  .pop .head{display:flex;gap:11px;padding:13px 14px 10px;align-items:center}
+  .pop .plogo{width:46px;height:46px;border-radius:9px;flex:0 0 46px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;background:var(--navy);overflow:hidden}
+  .pop .plogo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .pop h3{margin:0;font-size:15.5px}
+  .pop .pmeta{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .pop .badges{padding:0 14px 8px}
+  .pop .desc{padding:2px 14px 10px;font-size:12.5px;line-height:1.45;color:#39434e}
+  .pop .rows{padding:0 14px 12px;font-size:12.5px}
+  .pop .rows a{color:var(--navy);text-decoration:none;font-weight:600}
+  .pop .rows a:hover{text-decoration:underline}
+  .pop .addr{color:var(--muted);font-size:11.5px;padding:0 14px 12px;display:flex;gap:6px}
+  .pop .links{display:flex;gap:8px;padding:0 14px 13px}
+  .pop .links a{flex:1;text-align:center;padding:7px;border-radius:7px;font-size:12px;font-weight:600;text-decoration:none}
+  .pop .links a.web{background:var(--navy);color:#fff}
+  .pop .links a.ig{background:#f0f2f5;color:var(--ink)}
+
+  @media (max-width:760px){
+    #app{flex-direction:column}
+    #sidebar{width:100%;min-width:0;height:46%}
+    #map{height:54%}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <h1>BUY <span>BRITISH</span></h1>
+      <p>Makers &amp; producers who grow or make it in the UK</p>
+      <a class="suggest" href="submit.html">+ Suggest a business</a>
+    </div>
+    <div class="controls">
+      <input id="search" type="text" placeholder="Search by name, town or type…" autocomplete="off" />
+      <div class="filter-group">
+        <div class="lbl">Category</div>
+        <div class="chips" id="catChips">
+          <span class="chip active" data-cat="farm"><span class="dot" style="background:var(--farm)"></span>Farm shops</span>
+          <span class="chip active" data-cat="clothing"><span class="dot" style="background:var(--clothing)"></span>Clothing</span>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="lbl">Standard</div>
+        <div class="chips" id="tierChips">
+          <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
+          <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
+        </div>
+      </div>
+    </div>
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+  </aside>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+let BUSINESSES = [];
+const CAT = { farm:{label:'Farm shop', color:getCss('--farm')}, clothing:{label:'Clothing', color:getCss('--clothing')} };
+function getCss(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+function domain(url){try{return new URL(url).hostname.replace(/^www\./,'');}catch(e){return '';}}
+function initials(name){return name.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(0,2).map(s=>s[0]).join('').toUpperCase();}
+function logoHtml(b, cls){
+  const d = domain(b.website);
+  const bg = CAT[b.category].color;
+  const fallback = `this.onerror=null;this.parentNode.style.background='${bg}';this.replaceWith(document.createTextNode('${initials(b.name)}'))`;
+  return `<div class="${cls}" style="background:${bg}"><img src="https://logo.clearbit.com/${d}" alt="" onerror="${fallback}"></div>`;
+}
+
+// --- Map (locked to the UK) ---
+const UK_BOUNDS = L.latLngBounds([49.7, -8.8], [61.1, 2.1]); // SW: Scilly/Channel, NE: Shetland
+const map = L.map('map', {
+  zoomControl:true,
+  minZoom:5,
+  maxBounds: UK_BOUNDS,
+  maxBoundsViscosity: 1.0   // hard wall — can't drag off the UK
+});
+map.fitBounds(UK_BOUNDS);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; OpenStreetMap, &copy; CARTO', maxZoom:19, bounds: UK_BOUNDS, noWrap:true
+}).addTo(map);
+
+const cluster = L.markerClusterGroup({maxClusterRadius:45, showCoverageOnHover:false});
+map.addLayer(cluster);
+
+// legend
+const legend = L.control({position:'bottomright'});
+legend.onAdd = function(){
+  const d = L.DomUtil.create('div','legend');
+  d.innerHTML = `
+    <div class="row"><span class="sw" style="background:${CAT.farm.color}"></span>Farm shop</div>
+    <div class="row"><span class="sw" style="background:${CAT.clothing.color}"></span>Clothing</div>
+    <div class="row" style="margin-top:5px"><span class="sw" style="background:${getCss('--gold')}"></span>Gold · made/grown fully in UK</div>
+    <div class="row"><span class="sw" style="background:#fff"></span>Silver · made in UK, some imports</div>`;
+  return d;
+};
+legend.addTo(map);
+
+// build markers
+const markers = {};
+function buildMarkers(){
+  BUSINESSES.forEach(b=>{
+    const icon = L.divIcon({
+      className:'', iconSize:[26,26], iconAnchor:[13,26], popupAnchor:[0,-24],
+      html:`<div class="pin tier-${b.tier}" style="background:${CAT[b.category].color}"></div>`
+    });
+    const m = L.marker([b.lat,b.lng],{icon});
+    m.bindPopup(popupHtml(b),{closeButton:true});
+    markers[b.id]=m;
+  });
+}
+
+function popupHtml(b){
+  const igRow = b.instagram ? `<a class="ig" href="${b.instagram}" target="_blank" rel="noopener">Instagram</a>` : '';
+  return `<div class="pop">
+    <div class="head">${logoHtml(b,'plogo')}
+      <div><h3>${b.name}</h3>
+        <div class="pmeta">${CAT[b.category].label} · ${b.subcategory||''}</div></div>
+    </div>
+    <div class="badges">
+      <span class="tag ${b.tier}">${b.tier} standard</span>
+      <span class="tag cat ${b.category}">${b.listing_type==='online_only'?'Online only':(b.listing_type==='both'?'Shop + online':'Shop')}</span>
+    </div>
+    <div class="desc">${b.description}</div>
+    <div class="addr">📍 <span>${b.address}</span></div>
+    <div class="links">
+      <a class="web" href="${b.website}" target="_blank" rel="noopener">Website</a>
+      ${igRow}
+    </div>
+  </div>`;
+}
+
+// --- Filters + list ---
+const state = { q:'', cats:new Set(['farm','clothing']), tiers:new Set(['gold','silver']) };
+const listEl = document.getElementById('list');
+const countEl = document.getElementById('count');
+
+function visible(){
+  const q = state.q.toLowerCase();
+  return BUSINESSES.filter(b=>
+    state.cats.has(b.category) && state.tiers.has(b.tier) &&
+    (q==='' || (b.name+' '+b.town+' '+(b.subcategory||'')+' '+b.category).toLowerCase().includes(q))
+  );
+}
+function render(){
+  const vis = visible();
+  const ids = new Set(vis.map(b=>b.id));
+  cluster.clearLayers();
+  vis.forEach(b=>cluster.addLayer(markers[b.id]));
+  countEl.innerHTML = `Showing <b>${vis.length}</b> of ${BUSINESSES.length} businesses`;
+  listEl.innerHTML = vis.map(b=>`
+    <div class="item" data-id="${b.id}">
+      ${logoHtml(b,'logo')}
+      <div class="meta">
+        <div class="nm">${b.name}</div>
+        <div class="sub">${b.town}</div>
+        <span class="tag ${b.tier}">${b.tier}</span>
+        <span class="tag cat ${b.category}">${CAT[b.category].label}</span>
+      </div>
+    </div>`).join('') || '<div style="padding:24px 16px;color:var(--muted);font-size:13px">No matches. Try clearing a filter.</div>';
+  listEl.querySelectorAll('.item').forEach(el=>{
+    el.addEventListener('click',()=>focus(el.dataset.id));
+  });
+}
+function focus(id){
+  const b = BUSINESSES.find(x=>x.id===id); if(!b) return;
+  map.flyTo([b.lat,b.lng], 11, {duration:.6});
+  const m = markers[id];
+  setTimeout(()=>{ if(cluster.hasLayer(m)){ cluster.zoomToShowLayer(m,()=>m.openPopup()); } }, 650);
+}
+
+document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.querySelectorAll('#catChips .chip').forEach(c=>c.addEventListener('click',()=>{
+  const k=c.dataset.cat; c.classList.toggle('active');
+  c.classList.contains('active')?state.cats.add(k):state.cats.delete(k); render();
+}));
+document.querySelectorAll('#tierChips .chip').forEach(c=>c.addEventListener('click',()=>{
+  const k=c.dataset.tier; c.classList.toggle('active');
+  c.classList.contains('active')?state.tiers.add(k):state.tiers.delete(k); render();
+}));
+
+// --- Load data, then boot ---
+fetch('data/businesses.json')
+  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data=>{ BUSINESSES = data; buildMarkers(); render(); })
+  .catch(()=>{
+    countEl.innerHTML = 'Could not load listings. If you opened this file directly, run a local server (e.g. <code>python3 -m http.server</code>) — browsers block local data files.';
+  });
+</script>
+</body>
+</html>

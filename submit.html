@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Suggest a business — Buy British</title>
+<style>
+  :root{
+    --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#9aa3ad;
+    --ink:#1d2733; --muted:#6b7682; --line:#e3e8ee; --bg:#f6f8fa;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  .wrap{max-width:640px;margin:0 auto;padding:28px 18px 60px}
+  .brand{margin-bottom:6px}
+  .brand h1{margin:0;font-size:22px;letter-spacing:.5px;color:var(--navy)}
+  .brand h1 span{color:var(--red)}
+  .back{font-size:13px;color:var(--navy);text-decoration:none;font-weight:600}
+  .back:hover{text-decoration:underline}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:16px}
+  h2{margin:0 0 6px;font-size:18px;color:var(--navy)}
+  .sub{margin:0 0 18px;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .standards{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:12.5px;line-height:1.55;color:#39434e;margin-bottom:20px}
+  .standards b.g{color:#7a5a12}
+  .standards b.s{color:#566069}
+  label{display:block;font-size:12.5px;font-weight:600;margin:14px 0 5px}
+  label .opt{font-weight:400;color:var(--muted)}
+  input[type=text],input[type=email],input[type=url],select,textarea{
+    width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none;font-family:inherit;background:#fff
+  }
+  input:focus,select:focus,textarea:focus{border-color:var(--navy)}
+  textarea{min-height:84px;resize:vertical}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:520px){.row2{grid-template-columns:1fr}}
+  .hint{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.4}
+  button{margin-top:22px;width:100%;padding:12px;border:0;border-radius:9px;background:var(--red);color:#fff;font-size:15px;font-weight:700;cursor:pointer}
+  button:hover{filter:brightness(1.08)}
+  button:disabled{background:var(--silver);cursor:not-allowed}
+  .notice{display:none;background:#fdf3e0;border:1px solid #ecd9a8;border-radius:8px;padding:11px 13px;font-size:12.5px;line-height:1.5;margin-bottom:16px}
+  .ok{display:none;background:#e8f3ea;border:1px solid #bfdec5;border-radius:8px;padding:14px;font-size:14px;line-height:1.5;margin-top:16px}
+  .hp{position:absolute;left:-9999px;opacity:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><h1>BUY <span>BRITISH</span></h1></div>
+  <a class="back" href="index.html">&larr; Back to the map</a>
+
+  <div class="card">
+    <h2>Suggest a business</h2>
+    <p class="sub">Know a maker or producer that genuinely makes or grows what it sells in the UK? Tell us. Every suggestion is checked against our standards before it appears on the map.</p>
+
+    <div class="standards">
+      <b class="g">Gold</b> — fully made/grown in the UK, including the main material (fabric milled here, produce grown here).<br>
+      <b class="s">Silver</b> — genuinely made in the UK, but the main material or some stock is imported.<br>
+      Products merely designed, branded, printed or packed in the UK don't qualify.
+    </div>
+
+    <div class="notice" id="notActive">
+      <b>Form not yet activated.</b> The site owner needs to add a Formspree form ID before submissions will send.
+    </div>
+
+    <form id="f" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+
+      <label>Business name</label>
+      <input type="text" name="business_name" required>
+
+      <div class="row2">
+        <div>
+          <label>Website</label>
+          <input type="url" name="website" placeholder="https://…" required>
+        </div>
+        <div>
+          <label>Instagram <span class="opt">(optional)</span></label>
+          <input type="url" name="instagram" placeholder="https://instagram.com/…">
+        </div>
+      </div>
+
+      <div class="row2">
+        <div>
+          <label>Category</label>
+          <select name="category" required>
+            <option value="">Choose…</option>
+            <option>Farm shop</option>
+            <option>Clothing &amp; accessories</option>
+            <option>Pottery &amp; crockery</option>
+            <option>Jewellery</option>
+            <option>Other UK maker</option>
+          </select>
+        </div>
+        <div>
+          <label>Shop, online or both?</label>
+          <select name="listing_type" required>
+            <option value="">Choose…</option>
+            <option>Physical shop</option>
+            <option>Online only</option>
+            <option>Both</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Address <span class="opt">(street, town, postcode — postcode matters most)</span></label>
+      <input type="text" name="address" required>
+
+      <label>Where are the products made or grown?</label>
+      <textarea name="made_in_uk" placeholder="e.g. All garments cut and sewn at their Leicester workshop; fabric woven in Yorkshire" required></textarea>
+      <div class="hint">Be as specific as you can — this is what we verify.</div>
+
+      <label>Where do the materials or produce come from? <span class="opt">(if known)</span></label>
+      <textarea name="materials" placeholder="e.g. British wool from Cornish flocks / imported Italian leather / all produce from their own farm"></textarea>
+      <div class="hint">This decides Gold vs Silver. "Don't know" is a fine answer.</div>
+
+      <label>Links that back this up <span class="opt">(optional)</span></label>
+      <textarea name="evidence_links" placeholder="e.g. their About page, a press article, a mill they name"></textarea>
+
+      <div class="row2">
+        <div>
+          <label>Your name</label>
+          <input type="text" name="submitter_name" required>
+        </div>
+        <div>
+          <label>Your email</label>
+          <input type="email" name="email" required>
+        </div>
+      </div>
+
+      <label>Your connection to the business</label>
+      <select name="relationship" required>
+        <option value="">Choose…</option>
+        <option>I own or run it</option>
+        <option>I work there</option>
+        <option>I'm a customer / fan</option>
+        <option>Other</option>
+      </select>
+      <div class="hint">Owners: submitting from an email on your business's own domain speeds up verification. We may email you for a logo and confirmation.</div>
+
+      <button type="submit" id="sendBtn">Submit for review</button>
+    </form>
+
+    <div class="ok" id="okMsg">
+      <b>Thank you — received.</b> We check every suggestion against the standards above, so it may take a little while to appear. If we need more detail we'll email you.
+    </div>
+  </div>
+</div>
+
+<script>
+const form = document.getElementById('f');
+const FORM_ID_PLACEHOLDER = 'YOUR_FORM' + '_ID'; // split so this check doesn't match itself
+if (form.action.includes(FORM_ID_PLACEHOLDER)) {
+  document.getElementById('notActive').style.display = 'block';
+  document.getElementById('sendBtn').disabled = true;
+}
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('sendBtn');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (!res.ok) throw new Error(res.status);
+    form.style.display = 'none';
+    document.getElementById('okMsg').style.display = 'block';
+  } catch (err) {
+    btn.disabled = false; btn.textContent = 'Submit for review';
+    alert('Sorry — sending failed. Please try again in a moment.');
+  }
+});
+</script>
+</body>
+</html>
