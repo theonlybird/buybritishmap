@@ -132,8 +132,10 @@ function initials(name){return name.replace(/[^A-Za-z ]/g,'').split(' ').filter(
 function logoHtml(b, cls){
   const d = domain(b.website);
   const bg = CAT[b.category].color;
-  const fallback = `this.onerror=null;this.parentNode.style.background='${bg}';this.replaceWith(document.createTextNode('${initials(b.name)}'))`;
-  return `<div class="${cls}" style="background:${bg}"><img src="https://logo.clearbit.com/${d}" alt="" onerror="${fallback}"></div>`;
+  // Cascade: local override (assets/logos/{id}.png) -> Google favicon service -> initials tile
+  const initialsFallback = `this.onerror=null;this.parentNode.style.background='${bg}';this.replaceWith(document.createTextNode('${initials(b.name)}'))`;
+  const tryFavicon = `this.onerror=function(){${initialsFallback}};this.src='https://www.google.com/s2/favicons?domain=${d}&amp;sz=128'`;
+  return `<div class="${cls}" style="background:${bg}"><img src="assets/logos/${b.id}.png" alt="" onerror="${tryFavicon}"></div>`;
 }
 
 // --- Map (locked to the UK, framed by ocean/edge of Europe) ---
