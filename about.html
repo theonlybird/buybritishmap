@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — Buy British</title>
+<style>
+  :root{
+    --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#9aa3ad;
+    --ink:#1d2733; --muted:#6b7682; --line:#e3e8ee; --bg:#f6f8fa;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
+  #topbar .flag{position:absolute;left:0;top:0;bottom:0;width:230px;opacity:.16;pointer-events:none;
+    -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%);
+    mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%)}
+  #topbar .flag svg{width:100%;height:100%;display:block}
+  .site-title{margin:0;font-size:24px;letter-spacing:1px;color:var(--navy);font-weight:800}
+  .site-title span{color:var(--red)}
+  .site-title a{color:inherit;text-decoration:none}
+  #burger{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid var(--line);border-radius:9px;background:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+  #burger:hover{border-color:var(--navy)}
+  #burger .bar{width:20px;height:2px;background:var(--navy);border-radius:2px}
+  #menu{position:absolute;right:10px;top:60px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 8px 24px rgba(0,0,0,.13);min-width:210px;padding:6px;z-index:1200}
+  #menu a{display:block;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+  #menu a:hover{background:var(--bg);color:var(--navy)}
+  #menu a.cta{background:var(--red);color:#fff;margin-top:4px;text-align:center}
+  #menu a.cta:hover{filter:brightness(1.08)}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 18px 60px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  h2{margin:0 0 12px;font-size:20px;color:var(--navy)}
+  h3{margin:22px 0 6px;font-size:15.5px;color:var(--navy)}
+  p,li{font-size:14.5px;line-height:1.65;color:#39434e}
+  a{color:var(--navy)}
+  .tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:4px}
+  .tag.gold{background:#f6edd2;color:#7a5a12}
+  .tag.silver{background:#eceff2;color:#566069}
+  @media (max-width:760px){#topbar .flag{width:130px}.site-title{font-size:19px}}
+</style>
+</head>
+<body>
+<header id="topbar">
+  <div class="flag" aria-hidden="true">
+    <svg viewBox="0 0 60 36" preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <rect width="60" height="36" fill="#012169"/>
+      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#fff" stroke-width="7"/>
+      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#C8102E" stroke-width="3"/>
+      <path d="M30,0 V36 M0,18 H60" stroke="#fff" stroke-width="12"/>
+      <path d="M30,0 V36 M0,18 H60" stroke="#C8102E" stroke-width="7"/>
+    </svg>
+  </div>
+  <h1 class="site-title"><a href="index.html">BUY <span>BRITISH</span></a></h1>
+  <button id="burger" aria-label="Menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+  <nav id="menu" hidden>
+    <a href="index.html">Map</a>
+    <a href="about.html">About</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+    <a class="cta" href="submit.html">+ Suggest a Business</a>
+  </nav>
+</header>
+<div class="wrap">
+  <div class="card">
+    <h2>About Buy British</h2>
+    <p>Britain is full of people who genuinely make and grow excellent things &mdash; and most shoppers never find them. The default is to open Amazon, where convenience wins and the money largely leaves the local economy. Buy British exists to answer one simple question: <em>what&rsquo;s made or grown near me, and how can I buy it?</em></p>
+    <p>Every pin on the map is a business that genuinely makes or grows what it sells in the UK. Not &ldquo;designed in Britain&rdquo;. Not branded, printed or packed here. Made here.</p>
+    <h3>The standard</h3>
+    <p><span class="tag gold">Gold</span>&ensp;Fully made or grown in the UK &mdash; including the main material. The fabric was milled here, the clay was dug or prepared here, the metal was worked from bullion at a British bench, the produce was grown on the farm.</p>
+    <p><span class="tag silver">Silver</span>&ensp;Genuinely made in the UK, but the main material or some stock is imported &mdash; a Northampton shoe made from imported calf leather, a pot thrown here in imported porcelain, a farm shop that stocks some imports alongside its own produce.</p>
+    <p>Where we can&rsquo;t clearly evidence the origin of the main material, a business gets Silver until it&rsquo;s confirmed &mdash; we never give the benefit of the doubt for Gold. Every listing carries a public evidence note so you can judge for yourself.</p>
+    <h3>What we are not</h3>
+    <p>We&rsquo;re not a marketplace &mdash; we never touch the transaction, we just point you at the maker. And no business can pay to be listed, promoted, or upgraded. Tiers can&rsquo;t be bought; only evidence moves you up.</p>
+    <h3>Who&rsquo;s behind this</h3>
+    <p>Buy British is an independent project, built and researched by hand. If you spot an error &mdash; or know a maker who belongs here &mdash; please <a href="submit.html">suggest a business</a> or <a href="contact.html">get in touch</a>.</p>
+  </div>
+</div>
+<script>
+const burgerBtn = document.getElementById('burger'), burgerMenu = document.getElementById('menu');
+burgerBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = !burgerMenu.hasAttribute('hidden');
+  if (open) { burgerMenu.setAttribute('hidden',''); } else { burgerMenu.removeAttribute('hidden'); }
+  burgerBtn.setAttribute('aria-expanded', String(!open));
+});
+document.addEventListener('click', e => {
+  if (!burgerMenu.hasAttribute('hidden') && !burgerMenu.contains(e.target)) burgerMenu.setAttribute('hidden','');
+});
+</script>
+</body>
+</html>

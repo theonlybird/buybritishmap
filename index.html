@@ -15,16 +15,29 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink)}
-  #app{display:flex;height:100vh;overflow:hidden}
+
+  /* Top banner */
+  #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
+  #topbar .flag{position:absolute;left:0;top:0;bottom:0;width:230px;opacity:.16;pointer-events:none;
+    -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%);
+    mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%)}
+  #topbar .flag svg{width:100%;height:100%;display:block}
+  .site-title{margin:0;font-size:24px;letter-spacing:1px;color:var(--navy);font-weight:800}
+  .site-title span{color:var(--red)}
+  .site-title a{color:inherit;text-decoration:none}
+  #burger{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid var(--line);border-radius:9px;background:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+  #burger:hover{border-color:var(--navy)}
+  #burger .bar{width:20px;height:2px;background:var(--navy);border-radius:2px}
+  #menu{position:absolute;right:10px;top:60px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 8px 24px rgba(0,0,0,.13);min-width:210px;padding:6px;z-index:1200}
+  #menu a{display:block;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+  #menu a:hover{background:var(--bg);color:var(--navy)}
+  #menu a.cta{background:var(--red);color:#fff;margin-top:4px;text-align:center}
+  #menu a.cta:hover{filter:brightness(1.08)}
+
+  #app{display:flex;height:calc(100vh - 64px);overflow:hidden}
 
   /* Sidebar */
   #sidebar{width:340px;min-width:340px;height:100%;display:flex;flex-direction:column;background:#fff;border-right:1px solid var(--line);z-index:1000}
-  .brand{padding:16px 18px 12px;border-bottom:1px solid var(--line)}
-  .brand h1{margin:0;font-size:20px;letter-spacing:.5px;color:var(--navy)}
-  .brand h1 span{color:var(--red)}
-  .brand p{margin:4px 0 0;font-size:12px;color:var(--muted)}
-  .brand .suggest{display:block;margin-top:10px;text-align:center;padding:8px 10px;border-radius:8px;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;text-decoration:none}
-  .brand .suggest:hover{filter:brightness(1.08)}
   .controls{padding:12px 14px;border-bottom:1px solid var(--line)}
   #search{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
   #search:focus{border-color:var(--navy)}
@@ -89,17 +102,35 @@
     #app{flex-direction:column}
     #sidebar{width:100%;min-width:0;height:46%}
     #map{height:54%}
+    #topbar .flag{width:130px}
+    .site-title{font-size:19px}
   }
 </style>
 </head>
 <body>
+<header id="topbar">
+  <div class="flag" aria-hidden="true">
+    <svg viewBox="0 0 60 36" preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <rect width="60" height="36" fill="#012169"/>
+      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#fff" stroke-width="7"/>
+      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#C8102E" stroke-width="3"/>
+      <path d="M30,0 V36 M0,18 H60" stroke="#fff" stroke-width="12"/>
+      <path d="M30,0 V36 M0,18 H60" stroke="#C8102E" stroke-width="7"/>
+    </svg>
+  </div>
+  <h1 class="site-title"><a href="index.html">BUY <span>BRITISH</span></a></h1>
+  <button id="burger" aria-label="Menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+  <nav id="menu" hidden>
+    <a href="about.html">About</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+    <a class="cta" href="submit.html">+ Suggest a Business</a>
+  </nav>
+</header>
 <div id="app">
   <aside id="sidebar">
-    <div class="brand">
-      <h1>BUY <span>BRITISH</span></h1>
-      <p>Makers &amp; producers who grow or make it in the UK</p>
-      <a class="suggest" href="submit.html">+ Suggest a business</a>
-    </div>
     <div class="controls">
       <input id="search" type="text" placeholder="Search by name, town or type…" autocomplete="off" />
       <div class="filter-group">
@@ -128,6 +159,18 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
+// --- Burger menu ---
+const burgerBtn = document.getElementById('burger'), burgerMenu = document.getElementById('menu');
+burgerBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = !burgerMenu.hasAttribute('hidden');
+  if (open) { burgerMenu.setAttribute('hidden',''); } else { burgerMenu.removeAttribute('hidden'); }
+  burgerBtn.setAttribute('aria-expanded', String(!open));
+});
+document.addEventListener('click', e => {
+  if (!burgerMenu.hasAttribute('hidden') && !burgerMenu.contains(e.target)) burgerMenu.setAttribute('hidden','');
+});
+
 let BUSINESSES = [];
 const CAT = { farm:{label:'Farm shop', color:getCss('--farm')}, clothing:{label:'Clothing', color:getCss('--clothing')}, ceramics:{label:'Ceramics', color:getCss('--ceramics')}, jewellery:{label:'Jewellery & Watches', color:getCss('--jewellery')} };
 function getCss(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
