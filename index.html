@@ -10,7 +10,7 @@
 <style>
   :root{
     --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#9aa3ad;
-    --farm:#2e7d32; --clothing:#2c5f8a; --ink:#1d2733; --muted:#6b7682;
+    --farm:#2e7d32; --clothing:#2c5f8a; --ceramics:#b0653a; --ink:#1d2733; --muted:#6b7682;
     --line:#e3e8ee; --bg:#f6f8fa;
   }
   *{box-sizing:border-box}
@@ -51,6 +51,7 @@
   .tag.silver{background:#eceff2;color:#566069}
   .tag.cat{background:#e7f0e8;color:#27632a;margin-left:5px}
   .tag.cat.clothing{background:#e4edf5;color:#234e74}
+  .tag.cat.ceramics{background:#f5e9e1;color:#8a4a24}
 
   /* Map */
   #map{flex:1;height:100%}
@@ -105,6 +106,7 @@
         <div class="chips" id="catChips">
           <span class="chip active" data-cat="farm"><span class="dot" style="background:var(--farm)"></span>Farm shops</span>
           <span class="chip active" data-cat="clothing"><span class="dot" style="background:var(--clothing)"></span>Clothing</span>
+          <span class="chip active" data-cat="ceramics"><span class="dot" style="background:var(--ceramics)"></span>Ceramics</span>
         </div>
       </div>
       <div class="filter-group">
@@ -125,7 +127,7 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 let BUSINESSES = [];
-const CAT = { farm:{label:'Farm shop', color:getCss('--farm')}, clothing:{label:'Clothing', color:getCss('--clothing')} };
+const CAT = { farm:{label:'Farm shop', color:getCss('--farm')}, clothing:{label:'Clothing', color:getCss('--clothing')}, ceramics:{label:'Ceramics', color:getCss('--ceramics')} };
 function getCss(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
 function domain(url){try{return new URL(url).hostname.replace(/^www\./,'');}catch(e){return '';}}
 function initials(name){return name.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(0,2).map(s=>s[0]).join('').toUpperCase();}
@@ -171,6 +173,7 @@ legend.onAdd = function(){
   d.innerHTML = `
     <div class="row"><span class="sw" style="background:${CAT.farm.color}"></span>Farm shop</div>
     <div class="row"><span class="sw" style="background:${CAT.clothing.color}"></span>Clothing</div>
+    <div class="row"><span class="sw" style="background:${CAT.ceramics.color}"></span>Ceramics</div>
     <div class="row" style="margin-top:5px"><span class="sw" style="background:${getCss('--gold')}"></span>Gold · made/grown fully in UK</div>
     <div class="row"><span class="sw" style="background:#fff"></span>Silver · made in UK, some imports</div>`;
   return d;
@@ -212,7 +215,7 @@ function popupHtml(b){
 }
 
 // --- Filters + list ---
-const state = { q:'', cats:new Set(['farm','clothing']), tiers:new Set(['gold','silver']) };
+const state = { q:'', cats:new Set(['farm','clothing','ceramics']), tiers:new Set(['gold','silver']) };
 const listEl = document.getElementById('list');
 const countEl = document.getElementById('count');
 
