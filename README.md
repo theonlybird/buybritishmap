@@ -33,9 +33,9 @@ then open http://localhost:8000.
 
 ## Deployment
 
-Hosted as a static site (Cloudflare Pages, connected to this repo). Pushes to `main` deploy automatically.
+Hosted as a static site on GitHub Pages (Settings → Pages → deploy from `main`). Pushes to `main` deploy automatically. The custom domain buybritishmap.uk will be connected later.
 
-The submission form posts to Formspree — the form ID in `submit.html` must be set (search for `YOUR_FORM_ID`) or the form displays as inactive.
+The submission form posts to Formspree.
 
 ## Roadmap
 
