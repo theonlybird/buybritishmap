@@ -136,18 +136,28 @@ function logoHtml(b, cls){
   return `<div class="${cls}" style="background:${bg}"><img src="https://logo.clearbit.com/${d}" alt="" onerror="${fallback}"></div>`;
 }
 
-// --- Map (locked to the UK) ---
-const UK_BOUNDS = L.latLngBounds([49.7, -8.8], [61.1, 2.1]); // SW: Scilly/Channel, NE: Shetland
+// --- Map (locked to the UK, framed by ocean/edge of Europe) ---
+const UK_BOUNDS  = L.latLngBounds([49.7, -8.8], [61.1, 2.1]);   // SW: Scilly/Channel, NE: Shetland
+const MAX_BOUNDS = L.latLngBounds([46.5, -16.0], [63.5, 10.5]); // breathing room: ocean + edge of Europe
 const map = L.map('map', {
   zoomControl:true,
-  minZoom:5,
-  maxBounds: UK_BOUNDS,
-  maxBoundsViscosity: 1.0   // hard wall — can't drag off the UK
+  zoomSnap: 0.25,             // finer zoom steps so the min-zoom limit sits snugly
+  maxBounds: MAX_BOUNDS,
+  maxBoundsViscosity: 0.8,    // soft wall — drag past the edge springs gently back
+  bounceAtZoomLimits: true    // pinch/zoom past the limit bounces back
 });
 map.fitBounds(UK_BOUNDS);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-  attribution:'&copy; OpenStreetMap, &copy; CARTO', maxZoom:19, bounds: UK_BOUNDS, noWrap:true
+  attribution:'&copy; OpenStreetMap, &copy; CARTO', maxZoom:19, noWrap:true
 }).addTo(map);
+
+// Never let the viewport outgrow the tiled area: the lowest allowed zoom is
+// the one where MAX_BOUNDS still covers the whole screen — so no grey, ever.
+function clampMinZoom(){
+  map.setMinZoom(map.getBoundsZoom(MAX_BOUNDS, true));
+}
+map.whenReady(clampMinZoom);
+map.on('resize', clampMinZoom);
 
 const cluster = L.markerClusterGroup({maxClusterRadius:45, showCoverageOnHover:false});
 map.addLayer(cluster);
