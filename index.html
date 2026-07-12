@@ -10,7 +10,7 @@
 <style>
   :root{
     --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#9aa3ad;
-    --farm:#2e7d32; --clothing:#2c5f8a; --ceramics:#b0653a; --jewellery:#7a5296; --ink:#1d2733; --muted:#6b7682;
+    --farm:#3c9d4e; --clothing:#24549c; --ceramics:#b0653a; --jewellery:#7a5296; --ink:#1d2733; --muted:#6b7682;
     --line:#e3e8ee; --bg:#f6f8fa;
   }
   *{box-sizing:border-box}
@@ -300,13 +300,25 @@ function focus(id){
 }
 
 document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value;render();});
-document.querySelectorAll('#catChips .chip').forEach(c=>c.addEventListener('click',()=>{
-  const k=c.dataset.cat; c.classList.toggle('active');
-  c.classList.contains('active')?state.cats.add(k):state.cats.delete(k); render();
+
+// Chip behaviour: all on by default; first click isolates that filter,
+// further clicks add/remove; removing the last one restores all.
+const ALL_CATS = ['farm','clothing','ceramics','jewellery'];
+const ALL_TIERS = ['gold','silver'];
+function chipClick(set, all, key){
+  if (set.size === all.length) { set.clear(); set.add(key); }
+  else if (set.has(key)) { set.delete(key); if (set.size === 0) all.forEach(k => set.add(k)); }
+  else { set.add(key); }
+}
+function syncChips(){
+  document.querySelectorAll('#catChips .chip').forEach(c => c.classList.toggle('active', state.cats.has(c.dataset.cat)));
+  document.querySelectorAll('#tierChips .chip').forEach(c => c.classList.toggle('active', state.tiers.has(c.dataset.tier)));
+}
+document.querySelectorAll('#catChips .chip').forEach(c => c.addEventListener('click', () => {
+  chipClick(state.cats, ALL_CATS, c.dataset.cat); syncChips(); render();
 }));
-document.querySelectorAll('#tierChips .chip').forEach(c=>c.addEventListener('click',()=>{
-  const k=c.dataset.tier; c.classList.toggle('active');
-  c.classList.contains('active')?state.tiers.add(k):state.tiers.delete(k); render();
+document.querySelectorAll('#tierChips .chip').forEach(c => c.addEventListener('click', () => {
+  chipClick(state.tiers, ALL_TIERS, c.dataset.tier); syncChips(); render();
 }));
 
 // --- Load data, then boot ---
