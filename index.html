@@ -49,8 +49,11 @@
   .chip.active{border-color:var(--navy);background:var(--navy);color:#fff}
   .chip.active.tier-gold{background:var(--gold);border-color:var(--gold);color:#3a2e0a}
   .chip.active.tier-silver{background:var(--silver);border-color:var(--silver);color:#1d2733}
-  .count{padding:8px 16px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--line)}
+  .countrow{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 16px;border-bottom:1px solid var(--line)}
+  .count{font-size:12px;color:var(--muted)}
   .count b{color:var(--ink)}
+  #sortBtn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:4px 9px;font-size:11.5px;font-weight:600;color:var(--navy);cursor:pointer;white-space:nowrap}
+  #sortBtn:hover{border-color:var(--navy)}
   #list{flex:1;overflow-y:auto}
   .item{padding:11px 16px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;gap:11px;align-items:flex-start}
   .item:hover{background:var(--bg)}
@@ -150,7 +153,10 @@
         </div>
       </div>
     </div>
-    <div class="count" id="count"></div>
+    <div class="countrow">
+      <div class="count" id="count"></div>
+      <button id="sortBtn" title="Sort alphabetically">A–Z ↓</button>
+    </div>
     <div id="list"></div>
   </aside>
   <div id="map"></div>
@@ -261,7 +267,7 @@ function popupHtml(b){
 }
 
 // --- Filters + list ---
-const state = { q:'', cats:new Set(['farm','clothing','ceramics','jewellery']), tiers:new Set(['gold','silver']) };
+const state = { q:'', cats:new Set(['farm','clothing','ceramics','jewellery']), tiers:new Set(['gold','silver']), sortAsc:true };
 const listEl = document.getElementById('list');
 const countEl = document.getElementById('count');
 
@@ -274,6 +280,7 @@ function visible(){
 }
 function render(){
   const vis = visible();
+  vis.sort((a,b)=> state.sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
   const ids = new Set(vis.map(b=>b.id));
   cluster.clearLayers();
   vis.forEach(b=>cluster.addLayer(markers[b.id]));
@@ -300,6 +307,11 @@ function focus(id){
 }
 
 document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.getElementById('sortBtn').addEventListener('click',()=>{
+  state.sortAsc = !state.sortAsc;
+  document.getElementById('sortBtn').textContent = state.sortAsc ? 'A–Z ↓' : 'Z–A ↑';
+  render();
+});
 
 // Chip behaviour: all on by default; first click isolates that filter,
 // further clicks add/remove; removing the last one restores all.
