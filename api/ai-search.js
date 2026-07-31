@@ -1,15 +1,11 @@
-const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
-// Load business catalog
+// Load business catalog directly via require so Vercel bundles it into the function
 let catalogCache = null;
 function getCompressedCatalog() {
   if (catalogCache) return catalogCache;
   try {
-    const dataPath = path.join(process.cwd(), 'data', 'businesses.json');
-    const raw = fs.readFileSync(dataPath, 'utf8');
-    const businesses = JSON.parse(raw);
+    const businesses = require('../data/businesses.json');
     const compact = businesses.map(b => ({
       i: b.id,
       n: b.name,
@@ -29,7 +25,7 @@ function getCompressedCatalog() {
 
 module.exports = async function handler(req, res) {
   // Enable CORS
-  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
   res.setHeader(
@@ -38,22 +34,27 @@ module.exports = async function handler(req, res) {
   );
 
   if (req.method === 'OPTIONS') {
-    res.status(200).end();
-    return;
+    return res.status(200).end();
   }
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed. Use POST.' });
   }
 
-  const apiKey = process.env.GEMINI_API_KEY || (req.body && req.body.apiKey);
+  // Parse body if stringified
+  let body = req.body;
+  if (typeof body === 'string') {
+    try { body = JSON.parse(body); } catch(e) {}
+  }
+
+  const apiKey = process.env.GEMINI_API_KEY || (body && body.apiKey);
   if (!apiKey) {
     return res.status(400).json({
-      error: 'Missing GEMINI_API_KEY. Set GEMINI_API_KEY environment variable in Vercel or pass apiKey in request body.'
+      error: 'Missing GEMINI_API_KEY environment variable in Vercel.'
     });
   }
 
-  const query = req.body && req.body.query ? req.body.query.trim() : '';
+  const query = body && body.query ? String(body.query).trim() : '';
   if (!query) {
     return res.status(400).json({ error: 'Query parameter is required.' });
   }
@@ -65,7 +66,7 @@ Analyze the user's natural language request and find the best matching British m
 
 CRITICAL INSTRUCTIONS:
 1. Understand regional synonyms (e.g. Yorkshire = Sheffield, Leeds, Hathersage; Scotland = Hawick, Edinburgh, Glasgow, Highlands; Wales = Gwynedd, Monmouthshire; Cotswolds = Chipping Campden).
-2. Match materials, craft techniques, and product synonyms (e.g. kitchen knife = forged cutlery/blades; jumper = knitwear/cashmere/wool; cookware = cast iron/spun iron/copper pans).
+2. Match materials, craft techniques, and product synonyms (e.g. kitchen knife = forged cutlery/blades; jumper = knitwear/cashmere/wool; cookware = cast iron/spun iron/copper pans; hat = headwear/flat cap).
 3. Return ONLY a valid JSON object matching this exact structure:
 {
   "query": "${query.replace(/"/g, '\\"')}",
@@ -114,9 +115,9 @@ ${catalogStr}`;
       };
 
       const request = https.request(options, response => {
-        let body = '';
-        response.on('data', chunk => (body += chunk));
-        response.on('end', () => resolve({ statusCode: response.statusCode, body }));
+        let respBody = '';
+        response.on('data', chunk => (respBody += chunk));
+        response.on('end', () => resolve({ statusCode: response.statusCode, body: respBody }));
       });
 
       request.on('error', err => reject(err));
