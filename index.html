@@ -888,12 +888,12 @@ function resetSearchAndShowGrid() {
   state.tiers = new Set(ALL_TIERS);
   state.sortAsc = true;
 
-  document.querySelectorAll('#sortBtn, .sortBtn').forEach(b => {
+  document.querySelectorAll('#sortBtn, #gridSortBtn, .sortBtn, .btn-sort').forEach(b => {
     b.textContent = 'A–Z ↓';
   });
 
   syncChips();
-  toggleView('grid');
+  toggleView(state.currentView);
   renderGrid();
   renderMapList();
 }
