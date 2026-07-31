@@ -296,7 +296,7 @@ function clampMinZoom(){ map.setMinZoom(map.getBoundsZoom(MAX_BOUNDS, true)); }
 map.whenReady(clampMinZoom);
 map.on('resize', clampMinZoom);
 
-const cluster = L.markerClusterGroup({maxClusterRadius:45, showCoverageOnHover:false});
+const cluster = L.markerClusterGroup({maxClusterRadius:40, spiderfyOnMaxZoom:true, showCoverageOnHover:false, zoomToBoundsOnClick:true});
 map.addLayer(cluster);
 
 // Legend
@@ -483,9 +483,11 @@ function renderGrid(){
 function focus(id){
   const b = BUSINESSES.find(x=>x.id===id); if(!b) return;
   toggleView('map');
-  map.flyTo([b.lat,b.lng], 11, {duration:.6});
   const m = markers[id];
-  setTimeout(()=>{ if(cluster.hasLayer(m)){ cluster.zoomToShowLayer(m,()=>m.openPopup()); } }, 650);
+  if (!m) return;
+  cluster.zoomToShowLayer(m, () => {
+    m.openPopup();
+  });
 }
 
 function selectBusinessOnMap(id) {
