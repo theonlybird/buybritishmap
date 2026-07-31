@@ -51,11 +51,13 @@ function stageOneFilter(query, catalog, maxCandidates = 40) {
   return [...matched, ...fallback];
 }
 
+// Only models that are currently live on the Gemini API.
+// The 1.5 family was retired and returns 404, which masked the real error.
 const MODEL_CANDIDATES = [
-  'gemini-1.5-flash',
   'gemini-2.5-flash',
+  'gemini-2.5-flash-lite',
   'gemini-2.0-flash',
-  'gemini-1.5-pro'
+  'gemini-flash-latest'
 ];
 
 const https = require('https');
@@ -178,7 +180,7 @@ ${catalogStr}`;
     });
   }
 
-  let lastStatus = 0, lastBody = '', triedModels = [];
+  let lastStatus = 0, lastBody = '', triedModels = [], attempts = [];
 
   for (const model of MODEL_CANDIDATES) {
     triedModels.push(model);
@@ -194,6 +196,10 @@ ${catalogStr}`;
 
     lastStatus = apiRes.statusCode;
     lastBody = apiRes.body;
+
+    let attemptMsg = '';
+    try { attemptMsg = JSON.parse(apiRes.body)?.error?.message || ''; } catch (e) {}
+    attempts.push({ model, status: apiRes.statusCode, message: attemptMsg.slice(0, 200) });
 
     // 404 = model not enabled; 429 = rate limit / quota exceeded for this model: continue trying next model!
     if (apiRes.statusCode === 404 || apiRes.statusCode === 429) continue;
@@ -225,10 +231,33 @@ ${catalogStr}`;
   let googleMessage = '';
   try { googleMessage = JSON.parse(lastBody)?.error?.message || ''; } catch (e) {}
 
-  return res.status(lastStatus || 502).json({
-    error: `Gemini API error (status ${lastStatus}).`,
-    googleMessage,
+  // Report the most actionable failure, not just the last one.
+  const quota = attempts.find(a => a.status === 429);
+  const notFound = attempts.find(a => a.status === 404);
+  let fix = '';
+  let reportStatus = lastStatus;
+  let reportMessage = googleMessage;
+
+  if (quota) {
+    reportStatus = 429;
+    reportMessage = quota.message || googleMessage;
+    fix = 'Free-tier quota for ' + quota.model + ' is exhausted. Either wait for the daily reset (midnight Pacific) or enable billing on the Google Cloud project behind this API key to move to a paid tier.';
+  } else if (notFound) {
+    reportStatus = 404;
+    reportMessage = notFound.message || googleMessage;
+    fix = 'No configured model is available to this API key. GET /api/ai-search to see which models the key can use, then update MODEL_CANDIDATES.';
+  } else if (lastStatus === 400) {
+    fix = 'The API key was rejected or the request was malformed. Check GEMINI_API_KEY in Vercel.';
+  } else if (lastStatus === 403) {
+    fix = 'The API key is not authorised. Check key restrictions in Google AI Studio / Cloud Console.';
+  }
+
+  return res.status(reportStatus || 502).json({
+    error: `Gemini API error (status ${reportStatus}).`,
+    googleMessage: reportMessage,
+    fix,
     triedModels,
+    attempts,
     details: String(lastBody).slice(0, 500)
   });
 };
