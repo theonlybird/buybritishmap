@@ -2,116 +2,273 @@
  "emma-bridgewater": {
   "id": "emma-bridgewater",
   "shopify": true,
-  "productCount": 250,
+  "productCount": 722,
   "tags": [
+   "bags & leather goods",
    "bowls",
+   "bread & bakery",
+   "childrenswear",
+   "coats & jackets",
+   "cutlery & knives",
    "dairy & cheese",
+   "drinks & spirits",
+   "fruit & veg",
+   "game & venison",
+   "knitwear",
    "mugs",
    "plates",
-   "tableware"
+   "pork & bacon",
+   "pottery",
+   "poultry",
+   "scarves & accessories",
+   "suits & trousers",
+   "tableware",
+   "tweed & woven goods"
   ],
+  "tagEvidence": {
+   "plates": "Pumpkins Medium Oval Platter Serving Plates & Bowls AW Exit ",
+   "pottery": "Pumpkins Medium Oval Platter Serving Plates & Bowls AW Exit ",
+   "mugs": "Pumpkins 1/2 Pint Mug Mugs AW Exit DRESSER: Halloween LITHO/",
+   "fruit & veg": "Foraging Soup Plate Plates AW Exit DRESSER: Fruit & Veg GIFT",
+   "bowls": "Foraging French Bowl Bowls AW Exit DRESSER: Fruit & Veg GIFT",
+   "scarves & accessories": "Farmyard Double Oven Glove Tea Towels & Oven Gloves AW New E",
+   "dairy & cheese": "Farmyard Small Butter Dish Butter Dishes AW Exit DRESSER: An",
+   "tableware": "Farmyard 4 Mug Teapot Teapots AW Exit DRESSER: Animals & Bir",
+   "bread & bakery": "Blackberry Set Of 3 Round Cake Tins Storage Tins AW Reintro ",
+   "tweed & woven goods": "Patterned Wool Throw 140Cm X 185Cm Cushions & Throws AW New ",
+   "game & venison": "Personalised Peter Rabbit™ Medium Dinner Plate, 8.5 Inch  co",
+   "drinks & spirits": "Black Toast Set Of 2 Gin Glass Glasses & Tumblers BFCM25 BFD",
+   "bags & leather goods": "Black Toast Rpet Medium Shopper Bag Shopping Bags Core Flow ",
+   "knitwear": "Polka Dot Jumper Decoration Decorations AW Flow DRESSER: Cla",
+   "pork & bacon": "Black Toast Bacon & Egg Large Dinner Plate, 10.5 Inch - Set ",
+   "childrenswear": "Personalised Pink Hearts 3 Pint Jug Personalised Pottery COL",
+   "poultry": "Black Toast Roast Chicken Large Dinner Plate, 10.5 Inch Plat",
+   "cutlery & knives": "Pink Hearts Set Of 16 Cutlery Cutlery AW Continuity Flow DRE",
+   "coats & jackets": "Black Toast Wooden Coat Hook Shelves & Storage COLLECT: Kitc",
+   "suits & trousers": "Little Sailor 3 Piece Children's Rice Husk Suitcase Set Chil"
+  },
   "observedTypes": [
-   "Serving Plates & Bowls",
-   "Plates",
-   "Mugs",
+   "Books",
    "Bowls",
-   "Tablecloths",
-   "Tea Towels & Oven Gloves",
-   "Storage Tins",
-   "Trays",
+   "Bread Bin",
+   "Butter Dishes",
+   "Cake Stands & Domes",
+   "Calendars & Diaries",
+   "Candle Holders",
+   "Children's sets",
+   "Chopping & Serving Boards",
+   "Coddlers",
+   "Condiment Dispenser",
+   "Cushions & Throws",
+   "Cutlery",
+   "Decorations",
+   "Dishes",
+   "Doorstops & Doormats",
+   "Egg Cups",
+   "Emma Bridgewater Membership",
+   "Factory Ticket",
+   "Gift Bag",
+   "Gift Cards",
+   "Gift Set",
+   "Gift Wrap & Greetings Cards",
+   "Glasses & Tumblers",
+   "Halloween Decorations & Accessories",
+   "Jars Vases & Plant Pots",
+   "Jugs & Carafes",
+   "Kitchen & Food Storage",
+   "Mugs",
    "Napkins",
+   "Personalised Pottery",
+   "Placemats & Coasters",
+   "Plates",
+   "Platters",
    "Pots & Pans",
    "Roasting Trays",
-   "Tureens",
-   "Soup Plates",
-   "Egg Cups",
-   "Butter Dishes",
-   "Teapots",
-   "Travel Cups & Insulated Bottles",
-   "Jars Vases & Plant Pots",
-   "Table & Serveware",
-   "Jugs & Carafes"
+   "Serving Plates & Bowls",
+   "Shelves & Storage",
+   "Shopping Bags",
+   "Soup Plates"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "Pumpkins Medium Oval Platter",
+   "Pumpkins Medium Dinner Plate, 8.5 Inch",
+   "Pumpkins 1/2 Pint Mug",
+   "Foraging Soup Plate",
+   "Foraging French Bowl",
+   "Foraging Medium Dinner Plate, 8.5 Inch",
+   "Spell Books 1/2 Pint Mug",
+   "Witches' Feet 1/2 Pint Mug"
+  ],
+  "checked": "2026-07-31"
  },
  "community-clothing": {
   "id": "community-clothing",
   "shopify": true,
-  "productCount": 250,
+  "productCount": 893,
   "tags": [
+   "activewear",
+   "bags & leather goods",
+   "bread & bakery",
+   "cashmere & merino",
+   "coats & jackets",
    "dresses",
+   "footwear & boots",
+   "fruit & veg",
+   "hats & caps",
+   "jeans & denim",
    "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "socks",
    "suits & trousers",
+   "tweed & woven goods",
    "underwear & nightwear",
    "vests & waistcoats",
-   "womenswear"
+   "womenswear",
+   "workwear & aprons"
   ],
+  "tagEvidence": {
+   "knitwear": "Women's Lambswool Crew Neck - Rose Pink Knitwear Knitwear No",
+   "cashmere & merino": "Women's Lambswool Crew Neck - Rose Pink Knitwear Knitwear No",
+   "womenswear": "Women's Lambswool Crew Neck - Rose Pink Knitwear Knitwear No",
+   "shirts": "Men's Short Sleeve T Shirt Plastic Free - Ghost T-Shirts gra",
+   "jeans & denim": "WOMENS COTTON CREW NECK - DENIM MARL Knitwear bis-paused Kni",
+   "suits & trousers": "Men's Pleated Lightweight 100% Cotton Twill Chinos - Dark Na",
+   "underwear & nightwear": "Mens Jersey Shorts Plastic Free - Grey Marl Loungewear Lanca",
+   "dresses": "Shirley Cotton Hemp Sleeveless Dress - Light Olive Dresses D",
+   "vests & waistcoats": "Womens Plastic Free Ribbed Vest - Grey Marl Vest Jersey Lanc",
+   "socks": "Everyday Cotton Sock Plain 3 Pack - Charcoal Socks Midlands ",
+   "activewear": "Wilkie Swim Short Plastic Free - Olive Shorts Lancashire lig",
+   "footwear & boots": "Beacon Trainer - White Footwear Greater Manchester North Not",
+   "coats & jackets": "Men's Chore Jacket- Forest Green Jackets Jackets Lancashire ",
+   "workwear & aprons": "Apron - WHITE/BLACK STRIPE Accessories Accessories Lancashir",
+   "tweed & woven goods": "Women's Work Lightweight Trousers - Black Trousers bis-hidde",
+   "hats & caps": "Lambswool Two Tone Hat- Navy Knitted Accessories OddsandEnds",
+   "scarves & accessories": "Lambswool Cable Scarf - Flame Marl Knitted Accessories Acces",
+   "fruit & veg": "Graphic Cotton Sock 2 Pack Fruit Salad Socks graphic Knitwea",
+   "bags & leather goods": "Navy and Denim Tote Bag Indigo Accessories Accessories bags ",
+   "bread & bakery": "Kids Barm Cake! T Shirt Plastic Free - Bone T-Shirts kids La"
+  },
   "observedTypes": [
-   "Shorts",
-   "Knitwear",
-   "T-Shirts",
-   "Trousers",
-   "Shirts",
-   "Jeans",
-   "Loungewear",
-   "Tops",
-   "Skirts",
-   "Dresses",
-   "Vest",
-   "Socks",
-   "Women's Underwear",
-   "Sweatshirt",
-   "Rugby Shirts",
-   "Footwear",
-   "Sweatpants",
-   "Polos",
    "Accessories",
+   "Digital Gift Cards",
+   "Dresses",
+   "Footwear",
    "Jackets",
+   "Jeans",
+   "Jersey Dresses",
+   "Knitted Accessories",
+   "Knitwear",
+   "LS T-Shirts",
+   "Loungewear",
+   "Men's Underwear",
    "Outerwear",
-   "Knitted Accessories"
+   "Polos",
+   "Rugby Shirts",
+   "Shirts",
+   "Shorts",
+   "Skirts",
+   "Socks",
+   "Sportswear",
+   "Sweatpants",
+   "Sweatshirt",
+   "T-Shirts",
+   "Tops",
+   "Trousers",
+   "Vest",
+   "Women's Underwear"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "MARDEN MENS CORDUROY SHORT - TEAL",
+   "MARDEN MENS CORDUROY SHORT - NAVY",
+   "MARDEN MENS CORDUROY SHORT - FLAME RED",
+   "Women's Lambswool Crew Neck - Rose Pink",
+   "Women's Lambswool Crew Neck - Charcoal",
+   "Women's Lambswool Crew Neck - Red",
+   "Men's Short Sleeve T Shirt Plastic Free - Ghost",
+   "MENS GRAPHIC ICE CREAM CONE T-SHIRT"
+  ],
+  "checked": "2026-07-31"
  },
  "oubas": {
   "id": "oubas",
   "shopify": true,
   "productCount": 178,
   "tags": [
+   "activewear",
+   "bags & leather goods",
+   "cashmere & merino",
+   "dresses",
+   "hats & caps",
    "knitwear",
    "scarves & accessories",
-   "tweed & woven goods"
+   "tweed & woven goods",
+   "vests & waistcoats"
   ],
+  "tagEvidence": {
+   "vests & waistcoats": "The Morvan Organic Cotton Waistcoat in French Navy / Chalk",
+   "scarves & accessories": "The Morvan Organic Cotton Triangle Scarf in Blush/Chalk",
+   "knitwear": "Eden Fine Merino Wrap Cardigan in Chestnut  dup-review-publi",
+   "cashmere & merino": "Eden Fine Merino Wrap Cardigan in Chestnut  dup-review-publi",
+   "activewear": "'Tricot de Peau' Fine Merino Base Layer in Mushroom",
+   "dresses": "The Seasgair Naturally Dyed Merino Wool Maxi Dress in Mushro",
+   "hats & caps": "Donegal Merino Wool Beanie Hat in Capri Blue",
+   "bags & leather goods": "Natural Fragrance Bag for Clothing",
+   "tweed & woven goods": "Hollins British Wool Blanket in Silver Grey blanket"
+  },
   "observedTypes": [
-   "scarf",
-   "knitwear",
    "Cardigan",
-   "jumper",
+   "Gift Card",
    "Headwrap",
+   "Jumper",
+   "blanket",
    "cushion",
-   "blanket"
+   "jumper",
+   "scarf, knitwear"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "The Morvan Organic Cotton Waistcoat in French Navy / Chalk",
+   "Organic Cotton Quadrant Vest French Navy / Chalk",
+   "Organic Cotton Quadrant Vest in Lemon / Chalk",
+   "The Morvan Organic Cotton Triangle Scarf in Blush/Chalk",
+   "The Morvan Organic Cotton Triangle Scarf in Lemon/Chalk",
+   "The Morvan Organic Cotton Triangle Scarf in French Navy/Chalk",
+   "The Freyja British Wool Cable Vest in Ecru",
+   "The Freyja British Wool Cable Vest in Navy"
+  ],
+  "checked": "2026-07-31"
  },
  "trakke": {
   "id": "trakke",
   "shopify": true,
   "productCount": 32,
   "tags": [
+   "activewear",
    "bags & leather goods"
   ],
+  "tagEvidence": {
+   "bags & leather goods": "Wester Limited Edition Backpack [Trakke] Backpacks 770273627",
+   "activewear": "Largo Sling Sling Bag 7545290326121 Alpkit BF24_MessengerSli"
+  },
   "observedTypes": [
-   "Messengers",
-   "Backpacks",
-   "Sling Bag",
-   "Backpack",
    "Accessory",
-   "Messenger Bag"
+   "Backpack",
+   "Messenger Bag",
+   "Sling Bag",
+   "[Trakke] Backpacks",
+   "[Trakke] Messengers"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "Bairn Pro Messenger | New Lining",
+   "Bairn Messenger | New Lining",
+   "Wester Limited Edition Backpack",
+   "Zero Waste Sling",
+   "Storr 35L Travel Backpack",
+   "Storr 25L Travel Backpack",
+   "Merchant Tote",
+   "Micro Foulden Pouch"
+  ],
+  "checked": "2026-07-31"
  },
  "zatchels": {
   "id": "zatchels",
@@ -138,48 +295,111 @@
  "sheila-fleet": {
   "id": "sheila-fleet",
   "shopify": true,
-  "productCount": 250,
+  "productCount": 1000,
   "tags": [
+   "bags & leather goods",
    "cufflinks & signets",
-   "jewellery"
+   "dresses",
+   "jewellery",
+   "scarves & accessories",
+   "silverware"
   ],
+  "tagEvidence": {
+   "jewellery": "Daisies at Dawn Dress Stud Earrings in SCAA Enamel Earrings ",
+   "silverware": "Daisies at Dawn Dress Stud Earrings in SCAA Enamel Earrings ",
+   "dresses": "Daisies at Dawn Dress Necklace in SCAA Enamel Necklace chari",
+   "cufflinks & signets": "Book of Kells Trinity Knot Cufflinks in 9ct Yellow Gold Cuff",
+   "scarves & accessories": "Daisies & Honeybee Muslin Scarf Scarf bought-in-goods discou",
+   "bags & leather goods": "Summer Meadow Tote Bag Tote Bag bought-in-goods discountable"
+  },
   "observedTypes": [
-   "Earrings",
-   "Necklace",
-   "Pendant",
+   "Bangle",
    "Bracelet",
    "Brooch",
-   "Bangle",
-   "Ring",
    "Cufflinks",
+   "Earrings",
+   "Kilt Pin",
    "Lapel Pin",
-   "Ring Set"
+   "Necklace",
+   "OPTIONS_HIDDEN_PRODUCTS",
+   "Pendant",
+   "Ring",
+   "Ring Set",
+   "Scarf",
+   "Tie Tack",
+   "Tote Bag"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "Daisies at Dawn Dress Stud Earrings in SCAA Enamel",
+   "Daisies at Dawn Stud Earrings in SCAA Enamel",
+   "Daisies at Dawn Drop Earrings in SCAA Enamel",
+   "Daisies at Dawn Dress Necklace in SCAA Enamel",
+   "Daisies at Dawn Small Pendant in SCAA Enamel",
+   "Daisies at Dawn Petite Pendant in SCAA Enamel",
+   "Daisies at Dawn Occasion Necklace in SCAA Enamel",
+   "Daisies at Dawn Stretch Bracelet in SCAA Enamel"
+  ],
+  "checked": "2026-07-31"
  },
  "navygrey": {
   "id": "navygrey",
   "shopify": true,
   "productCount": 161,
   "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "coats & jackets",
    "knitwear",
-   "shirts"
+   "lamb",
+   "scarves & accessories",
+   "shirts",
+   "socks",
+   "tweed & woven goods",
+   "vests & waistcoats"
   ],
+  "tagEvidence": {
+   "knitwear": "The Weekend - Atlantic Blue Jumper __icon:factory:Made in Po",
+   "cashmere & merino": "The Weekend - Atlantic Blue Jumper __icon:factory:Made in Po",
+   "lamb": "The Easy - Caramel Jumper __icon:factory:Made in the British",
+   "vests & waistcoats": "The Linen / The Vest - Navy / Archive Sale Linen Jersey sale",
+   "shirts": "The Oversize Shirt - White Shirt __icon:box:100% recycled & ",
+   "scarves & accessories": "The Summer Held Blanket Scarf Accessory __icon:factory:Made ",
+   "tweed & woven goods": "The Summer Held Blanket Scarf Accessory __icon:factory:Made ",
+   "bags & leather goods": "Navygrey x Francli - Blue Bag",
+   "coats & jackets": "The Maree Jacket - Undyed Ecru Cardigan knitwear womens knit",
+   "socks": "The House Sock - Atlantic Blue & Navy Accessory __icon:box:1"
+  },
   "observedTypes": [
-   "Jumper",
-   "Linen Jersey",
+   "Accessory",
+   "Bag",
    "Cardigan",
-   "Sweatshirt",
-   "Shorts",
-   "Top",
    "Cotton Jersey",
-   "Tank",
+   "Fabric Shaver",
+   "Gift Card",
+   "Gift Wrap",
+   "Jumper",
+   "Leaflet",
+   "Linen Jersey",
    "Shirt",
-   "Accessory"
+   "Shorts",
+   "Sweatshirt",
+   "Tank",
+   "The Core",
+   "The Core - Seasonal",
+   "Top",
+   "Wool Wash"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "The Weekend - Atlantic Blue",
+   "The Linen / The V - Harbour Blue / Archive Sale",
+   "The Easy - Caramel",
+   "The Easy - Noisette / Archive Sale",
+   "The Summer Knit Tee - Peach Sand / Archive Sale",
+   "The Summer Knit Tee - Ecru / Archive Sale",
+   "The Linen / The Boatneck - Harbour Blue / Archive Sale",
+   "The Linen / The Boatneck - White / Archive Sale"
+  ],
+  "checked": "2026-07-31"
  },
  "tanner-bates": {
   "id": "tanner-bates",
@@ -188,31 +408,70 @@
   "tags": [
    "bags & leather goods",
    "braces & belts",
+   "dresses",
+   "jewellery",
+   "tweed & woven goods",
    "watches"
   ],
+  "tagEvidence": {
+   "braces & belts": "Salcombe Leather Dress Belt",
+   "dresses": "Salcombe Leather Dress Belt",
+   "watches": "Bellever Bespoke Leather Watch Strap Watch Strap syncio-hidd",
+   "jewellery": "Love Heart Leather Key Ring",
+   "bags & leather goods": "Venford Hip Bag",
+   "tweed & woven goods": "Leather Blanket Harness"
+  },
   "observedTypes": [
-   "Belt",
-   "Watch Strap",
    "Bag",
-   "Notebook",
+   "Belt",
    "Bookmark",
-   "Small Leather Goods",
-   "Wallet",
+   "Gift Card",
    "Leather Care",
+   "Notebook",
+   "Place Mats and Coasters",
+   "Small Leather Goods",
    "Travel Accessories",
-   "Place Mats and Coasters"
+   "Wallet",
+   "Watch Strap"
   ],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "Salcombe Leather Dress Belt",
+   "Bow Unisex Leather Belt",
+   "Noss Leather Belt",
+   "Origami Glasses Case",
+   "Origami Card Pouch",
+   "Origami Card Holder",
+   "Bellever Bespoke Leather Watch Strap",
+   "Travel Watch Pouch"
+  ],
+  "checked": "2026-07-31"
  },
  "carradice": {
   "id": "carradice",
   "shopify": true,
   "productCount": 114,
-  "tags": [],
+  "tags": [
+   "bags & leather goods",
+   "poultry",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "Bagman Utility Rear Rack  Audax Bagman Bagman Racks Bar Bag ",
+   "poultry": "Cotton Duck Repair Kit  Accessories",
+   "tweed & woven goods": "Barley Tweed Saddlebag (9L)  Audax City & Commuting Cycle To"
+  },
   "observedTypes": [],
-  "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "sample": [
+   "Safari Heritage Touring Bundle",
+   "Field Green Brompton City Carry Bundle",
+   "Field Green Camper Expedition Bundle",
+   "Field Green Lowsaddle Expedition Bundle",
+   "Field Green Barley Touring Bundle",
+   "Barley Touring Bundle",
+   "Odyssey Expedition Bundle",
+   "Cambrian Bikepacking Bundle"
+  ],
+  "checked": "2026-07-31"
  },
  "seh-kelly": {
   "id": "seh-kelly",
@@ -231,6 +490,19 @@
    "vests & waistcoats",
    "watches"
   ],
+  "tagEvidence": {
+   "coats & jackets": "SB jacket in linen hopsack in hadal blue Jacket",
+   "suits & trousers": "Field trousers in linen hopsack in natural Trousers",
+   "shirts": "T-shirt in ring-spun cotton in porridge T-Shirt",
+   "jewellery": "T-shirt in ring-spun cotton in porridge T-Shirt",
+   "underwear & nightwear": "Pyjama top in linen hopsack in hadal Pyjama top",
+   "knitwear": "Crewneck jumper in charcoal Jumper",
+   "hats & caps": "Watch cap in bister Hat",
+   "watches": "Watch cap in bister Hat",
+   "scarves & accessories": "Shawl cardigan in hadal Cardigan",
+   "dresses": "Dress trousers in black Trousers",
+   "vests & waistcoats": "Waistcoat in middling sheep Jacket"
+  },
   "observedTypes": [
    "Cardigan",
    "Coat",
@@ -279,6 +551,19 @@
    "vests & waistcoats",
    "watches"
   ],
+  "tagEvidence": {
+   "coats & jackets": "The Ventile® Mac - Caramel Long Coat AW24_SALE BFCM24 Bunker",
+   "tweed & woven goods": "The Ashley Zip Polo Jersey AW23 SALE AW24_SALE BFCM23 Bunker",
+   "shirts": "The Chelsea Cuban Collar Shirt - Brick Shirting AW24_SALE BF",
+   "suits & trousers": "The Diplomat Trousers - Indigo Ink Trousers bunker material_",
+   "cashmere & merino": "The Cashmere Crew Jacket - Ink Short Jackets AW24_SALE Bunke",
+   "knitwear": "The Merino Knitted Jacket - Charcoal Knitwear AW24_SALE BFCM",
+   "vests & waistcoats": "The Panama Wadded Gilet - Ink Short Jackets Bunker material_",
+   "bags & leather goods": "The Captain's Suit Bag - Alabaster Accessories YGroup_thecap",
+   "hats & caps": "The Wax Bucket Hat - Vicuna Accessories AW24_SALE BFCM24 Bun",
+   "scarves & accessories": "The Commando Scarf - Ink Accessories AW24_SALE BFCM24 catego",
+   "watches": "The Commando Watch Cap - Midnight Accessories category_tag:1"
+  },
   "observedTypes": [
    "Accessories",
    "Apparel & Accessories",
@@ -320,7 +605,6 @@
    "braces & belts",
    "cashmere & merino",
    "coats & jackets",
-   "dairy & cheese",
    "scarves & accessories",
    "shirts",
    "suits & trousers",
@@ -328,6 +612,17 @@
    "vests & waistcoats",
    "womenswear"
   ],
+  "tagEvidence": {
+   "womenswear": "Letty Straight Blue Skirt Skirt blue skirt fine wool skirt p",
+   "coats & jackets": "Purple Jacket Jackets, Sale,",
+   "tweed & woven goods": "Jo G | Green Pure Wool Knee Length Skirt Skirt British skirt",
+   "cashmere & merino": "Grey and Red herringbone Waistcoats with Cashmere fronts",
+   "vests & waistcoats": "Red Velvet Waistcoat Waistcoat",
+   "braces & belts": "Elizabeth Blue Jacket Jacket 3 poclkt blue jacket Blue Jacke",
+   "scarves & accessories": "Tiz Long Sheepskin Scarf Accessories black scarf brown scarf",
+   "shirts": "Flower Print Shirts Shirts Floral Print Shirt Floral Shirt F",
+   "suits & trousers": "Alice Jacket Jacket Blue Jacket Blue Jacket with Stone Trim "
+  },
   "observedTypes": [
    "Accessories",
    "Cape",
@@ -370,6 +665,16 @@
    "vests & waistcoats",
    "womenswear"
   ],
+  "tagEvidence": {
+   "vests & waistcoats": "Sharpshooter Ladies Shooting Gilet Tweed Gilets & Waistcoats",
+   "womenswear": "Sharpshooter Ladies Shooting Gilet Tweed Gilets & Waistcoats",
+   "tweed & woven goods": "Sharpshooter Ladies Shooting Gilet Tweed Gilets & Waistcoats",
+   "coats & jackets": "Plum Jacket Tweed Coats & Jackets Country Pursuits Countrysi",
+   "braces & belts": "Houndstooth Brace Tweed Shooting Coat Tweed Coats & Jackets ",
+   "hats & caps": "The Patriot Cap Hats Accessories Patriot",
+   "bags & leather goods": "Button patch mini clutch bag Accessories Accessories",
+   "scarves & accessories": "The Grey Stripe Scarf Scarves Accessories"
+  },
   "observedTypes": [
    "Accessories",
    "Gloves & Mittens",
@@ -404,6 +709,14 @@
    "tweed & woven goods",
    "womenswear"
   ],
+  "tagEvidence": {
+   "bags & leather goods": "Madeleine Bucket Bag - Canvas",
+   "lamb": "Add second Leg O mutton  (+£150.00) add-on",
+   "suits & trousers": "Cargo Suit Carrier Accessories All Cargo Bag Cargo Range Col",
+   "footwear & boots": "Cargo Boot Bag Accessories All Cargo Bag Cargo Range Colour:",
+   "womenswear": "Ladies Saddle Bag Handbag All Saddle Bag Womens",
+   "tweed & woven goods": "Chapman Tweed Bag  All Business Trip Country Life Overnight "
+  },
   "observedTypes": [
    "Accessories",
    "Bag",
@@ -467,6 +780,11 @@
    "braces & belts",
    "coats & jackets"
   ],
+  "tagEvidence": {
+   "bags & leather goods": "Icon Messenger Bag",
+   "braces & belts": "50th Anniversary Belt Key Fob Keyring 107 207 225 25 Rucksac",
+   "coats & jackets": "Billingham Photovest Photographic Jacket _badge-For Referenc"
+  },
   "observedTypes": [
    "Accessories",
    "Accessories for Camera Bag",
@@ -517,7 +835,6 @@
   "tags": [
    "bags & leather goods",
    "bowls",
-   "childrenswear",
    "cutlery & knives",
    "dresses",
    "game & venison",
@@ -526,6 +843,17 @@
    "scarves & accessories",
    "tableware"
   ],
+  "tagEvidence": {
+   "bags & leather goods": "BD11 Wash Bag, X-Pac, Navy",
+   "scarves & accessories": "Elm Compact Wallet & Key Wrap Gift Set - Black",
+   "game & venison": "Petit Collage - Magnetic Travel Game - In the Park Bingo",
+   "dresses": "Petit Collage - Shine Bright Magnetic Dress Up Toys - Music ",
+   "tableware": "Black + Blum - Cutlery Set",
+   "cutlery & knives": "Black + Blum - Cutlery Set",
+   "mugs": "Studio Mug - Small - Eden Green Mug",
+   "bowls": "Ume - White Onyx Incense Bowl",
+   "hats & caps": "Park Beanie - Navy"
+  },
   "observedTypes": [
    "Camera Wrist Strap",
    "Christmas Decoration",
@@ -579,6 +907,21 @@
    "poultry",
    "womenswear"
   ],
+  "tagEvidence": {
+   "fruit & veg": "Trafo Organic Provenciale Potato Chips 125g  Deli Drinks & S",
+   "dairy & cheese": "Organic Raw Milk Subscription - Weekly  Offer Eligible Raw M",
+   "pork & bacon": "Organic Nitrate Free Bacon Mince  Offer Eligible Pork Bacon",
+   "bread & bakery": "Island Bakery Organic Apple Crumble Biscuits  Deli Drinks & ",
+   "beef": "Organic Sausages - Paleo Beef (Gluten Free)  Beef Sausages O",
+   "lamb": "Organic Sausages - Lamb and Mint (Gluten Free) Lamb Lamb Sau",
+   "drinks & spirits": "Karma Gingerella Ale Bottle  Deli Drinks & Snacks Offer Elig",
+   "game & venison": "Wild Venison Shank  Offer Eligible",
+   "poultry": "Organic Chicken Wings  Offer Eligible",
+   "bags & leather goods": "Amaizin Organic Natural Corn Chips Value Bag  Deli Drinks & ",
+   "jeans & denim": "DOc Mon Grenache Jean-Claude Mas  Offer Eligible Wine",
+   "womenswear": "Organic Beef Skirt Steak  Beef Steaks Offer Eligible",
+   "jewellery": "Organic Sausage Rings - Cumberland (Gluten Free)  Offer Elig"
+  },
   "observedTypes": [
    "Beef",
    "Chicken",
@@ -609,6 +952,13 @@
    "poultry",
    "womenswear"
   ],
+  "tagEvidence": {
+   "poultry": "Christmas Turkey Organic Free-Range Turkey all-sold-out Orga",
+   "beef": "Beef Chuck Steak 100% Grass-Fed Beef 100% Grass-Fed Beef 100",
+   "lamb": "Lamb Neck Fillet 100% Grass-Fed Lamb & Mutton 100% Grass-Fed",
+   "hats & caps": "Beef Picanha (Rump Cap) 100% Grass-Fed Beef 100% Grass-Fed B",
+   "womenswear": "Beef Skirt Steak 100% Grass-Fed Beef 100% Grass-Fed Beef 100"
+  },
   "observedTypes": [
    "100% Grass-Fed Beef",
    "100% Grass-Fed Lamb & Mutton",
@@ -634,7 +984,6 @@
   "productCount": 232,
   "tags": [
    "beef",
-   "childrenswear",
    "dairy & cheese",
    "drinks & spirits",
    "fruit & veg",
@@ -644,6 +993,17 @@
    "pork & bacon",
    "poultry"
   ],
+  "tagEvidence": {
+   "poultry": "Organic Chicken Mince, Previously Frozen Chicken chicken Fro",
+   "pork & bacon": "Honey & Sweet Chilli Pork Sausage",
+   "lamb": "Organic Lamb, Mint & Rosemary Burgers Lamb 6 days bbq Dietar",
+   "beef": "Beef & Cracked Black Pepper Sausage Beef 6 days bbq beef Bee",
+   "game & venison": "Wild Venison & Juniper Burgers Wild Game",
+   "drinks & spirits": "Luscombe Hot Ginger Beer",
+   "dairy & cheese": "Organic Halloumi Cheese",
+   "fruit & veg": "Organic Pork Apple & Cider Sausage Pork",
+   "plates": "Godminster Vintage Oak-Smoked Cheddar Cheese christmas chees"
+  },
   "observedTypes": [
    "Beef",
    "Broth and Stock",
@@ -701,6 +1061,21 @@
    "pork & bacon",
    "poultry"
   ],
+  "tagEvidence": {
+   "poultry": "Garlic & Herb Properly Free Range Spatchcock Chicken Chicken",
+   "pork & bacon": "Smoked Hickory Pork Belly Strips Pork new-arrival",
+   "dairy & cheese": "White Lake, Glastonbrie Cheese new-arrival",
+   "coats & jackets": "Mac and Cheese with Pulled Gammon & Vintage Cheddar Pies & R",
+   "beef": "Grass Fed Beef, Blue Cheese & Red Onion Burger Beef sausage-",
+   "game & venison": "Wild Venison Osso Buco Venison back-in-stock:mid-oct pfs:hid",
+   "bowls": "Natural Cocktail Sausages Pork out-season sausage-burger sau",
+   "drinks & spirits": "Braised Red Cabbage with Apple & Cider Sides seasonal side d",
+   "fruit & veg": "Braised Red Cabbage with Apple & Cider Sides seasonal side d",
+   "lamb": "Cull Yaw Mutton Meat Box Meat Box",
+   "bread & bakery": "Hot Cross Buns Bakery staycation-breakfast",
+   "plates": "Somerset Charcuterie, Mixed Charcuterie Platter Charcuterie ",
+   "childrenswear": "Native Breed Baby Back Pork Ribs Pork bbq-low-slow sticker-p"
+  },
   "observedTypes": [
    "Artisan Pasta",
    "Bakery",
@@ -759,12 +1134,17 @@
   "tags": [
    "bags & leather goods",
    "braces & belts",
-   "dairy & cheese",
-   "drinks & spirits",
    "footwear & boots",
    "game & venison",
    "womenswear"
   ],
+  "tagEvidence": {
+   "footwear & boots": "Stow Country Boot - Burgundy Museum Country Boot 4497s aw26 ",
+   "womenswear": "Anne Brogue Country Shoe - Black Ecopel Country Shoe 6230 an",
+   "braces & belts": "TRICKER'S LEATHER PLAITED BELT - Black Belt accessories back",
+   "game & venison": "PHEASANT VELVET SLIPPER Slipper christmas men slippers",
+   "bags & leather goods": "Tricker's shoe bags Dust Cloth Bag care cloth shoecare"
+  },
   "observedTypes": [
    "Applicator Brush",
    "Badge Accessory",
@@ -812,8 +1192,6 @@
    "bags & leather goods",
    "braces & belts",
    "coats & jackets",
-   "dairy & cheese",
-   "drinks & spirits",
    "footwear & boots",
    "game & venison",
    "knitwear",
@@ -821,6 +1199,17 @@
    "watches",
    "womenswear"
   ],
+  "tagEvidence": {
+   "footwear & boots": "Men's Shoe Trees Accessory COLLECTION|Calf & Grain Shoe Care",
+   "bags & leather goods": "Camden Sage Green Nubuck Shoe COLLECTION|Main Collection COU",
+   "braces & belts": "Finchley 2 Black Calf Shoe COLLECTION|Main Collection COLLEC",
+   "womenswear": "Women's Shoe Trees Accessory COLLECTION|Calf & Grain Shoe Ca",
+   "game & venison": "Pheasant Navy Velvet Shoe COLLECTION|Evening wear COLLECTION",
+   "knitwear": "Windermere Seaweed Suede Shoe COLLECTION|Main Collection COL",
+   "coats & jackets": "Highbury 2 Dark Brown Calf Suede Shoe COLLECTION|Hand Grade ",
+   "tweed & woven goods": "Christmas Tree Black Velvet Shoe COLLECTION|Main Collection ",
+   "watches": "Christmas Tree Black Velvet Shoe COLLECTION|Main Collection "
+  },
   "observedTypes": [
    "Accessory",
    "Belt",
@@ -867,7 +1256,6 @@
   "tags": [
    "cashmere & merino",
    "coats & jackets",
-   "dairy & cheese",
    "dresses",
    "hats & caps",
    "jewellery",
@@ -881,6 +1269,22 @@
    "watches",
    "womenswear"
   ],
+  "tagEvidence": {
+   "cashmere & merino": "Diffused Stripe Merino Wool Throw in Blue Throw age_processe",
+   "tweed & woven goods": "Diffused Stripe Merino Wool Throw in Blue Throw age_processe",
+   "knitwear": "Beatrice Blue Superfine Cashmere Jumper Jumper 2026 age_proc",
+   "womenswear": "Beatrice Blue Superfine Cashmere Jumper Jumper 2026 age_proc",
+   "shirts": "Euna Navy Blue Superfine Cashmere T-Shirt T-shirt 2026 age_p",
+   "suits & trousers": "Macara Dark Blue Pleated Trousers Trouser 2026 age_processed",
+   "coats & jackets": "Brodie Wool Car Coat | Red Herringbone Coat 2026 age_process",
+   "scarves & accessories": "Baird Red Brushed Cashmere-Silk Scarf Scarf 2026 ACCESSORIES",
+   "hats & caps": "Lovat Purple Cashmere Hat Beanie 2026 ACCESSORIES age_proces",
+   "vests & waistcoats": "Ribbed Superfine Cashmere Vest Tank 3-ply age_processed arch",
+   "dresses": "Wide Grey Dress Stewart Tartan Cashmere Scarf Scarf 2026 ACC",
+   "watches": "Grey Watch Dress Tartan Cashmere Scarf Scarf 2026 ACCESSORIE",
+   "jewellery": "Leith Grey & Brown Ringer Superfine Cashmere Jumper Jumper -",
+   "underwear & nightwear": "Light Grey Cashmere Pyjama Lounge Set Loungewear -Mens age_p"
+  },
   "observedTypes": [
    "Beanie",
    "Cape",
@@ -930,6 +1334,4576 @@
    "Mack Grey Brushed Cashmere-Silk Cardigan",
    "Iris Classic Purple Cashmere Cardigan",
    "Iris Classic Purple Cashmere Tank"
+  ],
+  "checked": "2026-07-31"
+ },
+ "begg-x-co": {
+  "id": "begg-x-co",
+  "shopify": true,
+  "productCount": 413,
+  "tags": [
+   "cashmere & merino",
+   "childrenswear",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "socks",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Andrew Shawl Collar Cardigans CHINA KNITWEAR MALE SS26",
+   "scarves & accessories": "Andrew Shawl Collar Cardigans CHINA KNITWEAR MALE SS26",
+   "vests & waistcoats": "Abbie Vest FEMALE KNITWEAR SS26",
+   "childrenswear": "Cona Block Baby Blankets 2026 INTERIORS INTERIORS26",
+   "womenswear": "Midsummer Annabelle Skirt FEMALE JASON GLASSER KNITWEAR SS26",
+   "shirts": "Abbie T-Shirt CHINA DROP1 DROP1.5 FEMALE KNITWEAR SS26",
+   "cashmere & merino": "Cashmere Care Kit Scarves BURLINGTON",
+   "socks": "Lounge Sock Socks ACCESSORIES BURLINGTON CORE",
+   "tweed & woven goods": "Chalet Blanket Throws BURLINGTON INTERIORS SS24"
+  },
+  "observedTypes": [
+   "Baby Blankets",
+   "Blankets",
+   "Bottoms",
+   "Cardigans",
+   "Crew Neck Sweaters",
+   "Cushions",
+   "Hats",
+   "Hoodie",
+   "Poloshirt",
+   "Poncho",
+   "Roll Neck Sweaters",
+   "Scarves",
+   "Shawl Collar Cardigans",
+   "Skirt",
+   "Socks",
+   "Squares",
+   "Stoles",
+   "T-Shirt",
+   "Throws",
+   "V-Neck Sweaters",
+   "Vest",
+   "Zip Neck Sweaters"
+  ],
+  "sample": [
+   "Valatzu Saltire",
+   "Andrew",
+   "Arran Solid",
+   "Arran Reversible",
+   "Mossband Harmony",
+   "Mossband Soul",
+   "Dallas Marquet",
+   "Vivan Envelop"
+  ],
+  "checked": "2026-07-31"
+ },
+ "william-lockie": {
+  "id": "william-lockie",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "corgi": {
+  "id": "corgi",
+  "shopify": true,
+  "productCount": 395,
+  "tags": [
+   "activewear",
+   "bags & leather goods",
+   "cashmere & merino",
+   "childrenswear",
+   "coats & jackets",
+   "dresses",
+   "footwear & boots",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "socks",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "watches",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Bespoke Order Payment Knitwear Gift Box",
+   "cashmere & merino": "Men's Micro Striped Cashmere Blend Socks Socks - Mens Heavy ",
+   "womenswear": "Women's Cotton Crew Sweater Knitwear - Ladies Collection: Ju",
+   "coats & jackets": "Women's Cashmere Blend Cardigan Knitwear - Womens AgeGroup: ",
+   "footwear & boots": "Men's Donegal Wool Welly Socks Socks - Mens Heavy Wool/Cotto",
+   "hats & caps": "Unisex Bespoke Wool Beanie Hats - Unisex AgeGroup: Adult Bes",
+   "scarves & accessories": "Unisex Bespoke Wool Beanie Hats - Unisex AgeGroup: Adult Bes",
+   "activewear": "Men's Cycling Cotton Socks Socks - Mens Fine Cotton/Nylon Ag",
+   "socks": "Women's Fair Isle Wool & Cotton Sock & Gift Box Socks - Ladi",
+   "dresses": "Men's 4-Pair Navy Dress Socks Socks - Mens Pk 4's Fine Cotto",
+   "shirts": "Men's Striped Polo Shirt Knitwear - Mens AgeGroup: Adult Bes",
+   "tweed & woven goods": "Monkstone Blanket Blankets - Wool AgeGroup: Adult Collection",
+   "vests & waistcoats": "Men's V-Neck Waistcoat Knitwear - Mens AgeGroup: Adult Bespo",
+   "bags & leather goods": "'Rescue Me' Scent Bags  AgeGroup: Adult Collection: Care Pro",
+   "childrenswear": "Baby Cashmere Romper Sweater - Childrens Cash AgeGroup: Babi",
+   "watches": "'Watch Out World' Baby Cashmere Sweater Sweater - Childrens "
+  },
+  "observedTypes": [
+   "Blankets - Wool",
+   "COTTON / CASHMERE",
+   "Garment Care",
+   "Gift Box",
+   "Gift Cards",
+   "Hats - Ladies Cashmere",
+   "Hats - Mens Cashmere",
+   "Hats - Mens Wool",
+   "Hats - Unisex",
+   "Hats - Womens Wool",
+   "Hats - Wool",
+   "Knitwear - Ladies",
+   "Knitwear - Mens",
+   "Knitwear - Womens",
+   "Poncho/Wrap - Ladies Cash",
+   "SOCKS - MENS FG MERC COTTON",
+   "Scarves - Ladies Cashmere",
+   "Scarves - Mens Cashmere",
+   "Scarves - Mens Wool",
+   "Scarves - Womens Wool",
+   "Socks - Childrens",
+   "Socks - Heavy Cotton",
+   "Socks - Ladies Cash Cable",
+   "Socks - Ladies FG Trainer Cotton/Nylon",
+   "Socks - Ladies Fine Cash/Silk",
+   "Socks - Ladies Fine Cotton/Nylon",
+   "Socks - Ladies Heavy Cash",
+   "Socks - Ladies Heavy Cash/Cotton",
+   "Socks - Ladies Heavy Cotton",
+   "Socks - Ladies Heavy Wool/Cotton",
+   "Socks - Mens Cash Cable",
+   "Socks - Mens FG Trainer - COTT/NYL",
+   "Socks - Mens Fine Cash/Silk",
+   "Socks - Mens Fine Cotton/Nylon",
+   "Socks - Mens Fine Wool/Nylon",
+   "Socks - Mens Heavy British Wool",
+   "Socks - Mens Heavy Cash",
+   "Socks - Mens Heavy Cash/Cotton",
+   "Socks - Mens Heavy Cotton",
+   "Socks - Mens Heavy Wool/Cotton"
+  ],
+  "sample": [
+   "Bespoke Order Payment Knitwear",
+   "Men's Formal Patterned Cotton Socks",
+   "Men's Micro Striped Cashmere Blend Socks",
+   "Women's Cotton Crew Sweater",
+   "Women's Cashmere Blend Cardigan",
+   "Women's Lightweight Fair Isle Sweater",
+   "Men's 2-Pair William Morris Socks",
+   "Women's 2-Pair William Morris Socks"
+  ],
+  "checked": "2026-07-31"
+ },
+ "pantherella": {
+  "id": "pantherella",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "peregrine": {
+  "id": "peregrine",
+  "shopify": true,
+  "productCount": 75,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "footwear & boots",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Birchall Quarter Zip Jumper Men's Knitwear Country of Origin",
+   "cashmere & merino": "Birchall Quarter Zip Jumper Men's Knitwear Country of Origin",
+   "suits & trousers": "Belmont Capsule Blazer Men's Coats & Jackets Country of Orig",
+   "coats & jackets": "Windsor Linen Bomber Jacket Men's Coats & Jackets Country of",
+   "scarves & accessories": "Knitted Neck Tie Accessories Country of Origin:United Kingdo",
+   "womenswear": "Bearing Crew Jumper Women's Knitwear AW25 AW25 Womens badge:",
+   "shirts": "Hayle Polo Shirt Men's Polo Shirts Country of Origin:United ",
+   "hats & caps": "Porter Beret Women's Accessories 100% wool AW25 AW25 Accesso",
+   "tweed & woven goods": "Union Jack Wool Blanket Wool Blankets Accessories blanket Co",
+   "footwear & boots": "British Wool Boot Socks Unisex Accessories badge:British Woo"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Garment Care",
+   "Gift Card",
+   "Men's Accessories",
+   "Men's Coats & Jackets",
+   "Men's Knitwear",
+   "Men's Overshirts",
+   "Men's Polo Shirts",
+   "Men's Shirts",
+   "Men's Shorts",
+   "Men's T-Shirts",
+   "Men's Trousers",
+   "Unisex Accessories",
+   "Women's Accessories",
+   "Women's Coats & Jackets",
+   "Women's Knitwear",
+   "Wool Blankets"
+  ],
+  "sample": [
+   "Birchall Quarter Zip Jumper",
+   "Belmont Capsule Blazer",
+   "Ford Crew Jumper",
+   "Windsor Linen Trousers",
+   "Windsor Linen Shorts",
+   "Windsor Linen Shacket",
+   "Windsor Linen Bomber Jacket",
+   "Windsor Linen Blazer"
+  ],
+  "checked": "2026-07-31"
+ },
+ "mackintosh": {
+  "id": "mackintosh",
+  "shopify": true,
+  "productCount": 697,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "coats & jackets",
+   "dresses",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "umbrellas",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Junya Watanabe Man Hooded Jacket  Combined Listing",
+   "shirts": "Sheer Sleeveless T-Shirt",
+   "hats & caps": "Sheer Dolman Cap Sleeve T-Shirt",
+   "knitwear": "Fine Rib Cotton Cardigan",
+   "suits & trousers": "Polmood Wool Pleated Trousers",
+   "jeans & denim": "Humbie Cropped Sleeve Studded Denim Jacket",
+   "cashmere & merino": "Midlem Superfine 100 Merino Wool Trousers",
+   "dresses": "Thornhill 8oz Denim Dress",
+   "womenswear": "Cashmere Round-neck Jumper Women's Knitwear",
+   "vests & waistcoats": "Caban Rubberised Coat with Cashmere Waistcoat  Original",
+   "scarves & accessories": "Mohair Wool Scarf  Scarf Women",
+   "tweed & woven goods": "Sanquhar Harris Tweed Cape",
+   "bags & leather goods": "Annan Leopard Print Bucket Bag  US-block",
+   "umbrellas": "Heriot Whangee Handle Stick Umbrella Solid  Combined Listing"
+  },
+  "observedTypes": [
+   "Men's Knitwear",
+   "Women's Knitwear"
+  ],
+  "sample": [
+   "Junya Watanabe Man Hooded Jacket",
+   "Sheer Sleeveless T-Shirt",
+   "Sheer Sleeveless T-Shirt",
+   "Sheer Sleeveless T-Shirt",
+   "Sheer Dolman Cap Sleeve T-Shirt",
+   "Sheer Dolman Cap Sleeve T-Shirt",
+   "Sheer Dolman Cap Sleeve T-Shirt",
+   "Fine Rib Cotton Cardigan"
+  ],
+  "checked": "2026-07-31"
+ },
+ "hiut-denim": {
+  "id": "hiut-denim",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "chatsworth-farm-shop": {
+  "id": "chatsworth-farm-shop",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "ludlow-food-centre": {
+  "id": "ludlow-food-centre",
+  "shopify": false,
+  "reason": "timeout",
+  "checked": "2026-07-31"
+ },
+ "balgove-larder": {
+  "id": "balgove-larder",
+  "shopify": true,
+  "productCount": 134,
+  "tags": [
+   "bags & leather goods",
+   "beef",
+   "bowls",
+   "bread & bakery",
+   "cutlery & knives",
+   "dairy & cheese",
+   "drinks & spirits",
+   "footwear & boots",
+   "fruit & veg",
+   "knitwear",
+   "lamb",
+   "mugs",
+   "plates",
+   "pork & bacon",
+   "pottery",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "fruit & veg": "Fife Strawberries Fruit Fruit",
+   "dairy & cheese": "Wine & Cheese Hamper Gifts Gifts Hamper",
+   "mugs": "Crail Earthenware Mugs Dishes Crail Dining Dishes Drink Eart",
+   "bowls": "Crail Earthenware Mugs Dishes Crail Dining Dishes Drink Eart",
+   "pottery": "Crail Earthenware Mugs Dishes Crail Dining Dishes Drink Eart",
+   "beef": "T-Bone Steak Beef Beef Steak T-Bone",
+   "cutlery & knives": "Steak Fork Cutlery Cutlery Dining Kitchen Steak Fork",
+   "pork & bacon": "Traditional Pork Sausages Processed Butchery",
+   "poultry": "Marinated Kebabs Kebab Chicken Kebab",
+   "bread & bakery": "Scottish Sourdough Bread 630g Bread Bakery Bread Sourdough",
+   "footwear & boots": "Shoe Brush Brush Brush Cleaning Household Shoe Brush",
+   "lamb": "Noisettes Lamb",
+   "knitwear": "Knit Hand Puppets Toys Hand Puppet Kids Knit Puppet Toys",
+   "plates": "Crail Earthenware Plates Dishes Crail Dining Dishes Earthenw",
+   "bags & leather goods": "Balgove Jute Shopper Bag Bag Household Jute",
+   "drinks & spirits": "2 Pint Beer Stein Dishes Beer Dishes Drink Glass Kitchen Ste"
+  },
+  "observedTypes": [
+   "Bag",
+   "Beef",
+   "Bread",
+   "Brush",
+   "Butchery",
+   "Candle",
+   "Cheese",
+   "Coffee",
+   "Cutlery",
+   "Dairy",
+   "Deli",
+   "Dishes",
+   "Eggs",
+   "Firewood",
+   "Flower arranging, Floral Workshops, Wreath",
+   "Flowers",
+   "Fruit",
+   "Gardening",
+   "Gift Voucher",
+   "Gifts",
+   "Granola",
+   "Horn/Antler",
+   "Kebab",
+   "Lamb",
+   "Oats",
+   "Pizza Dough",
+   "Pork",
+   "Preserves",
+   "Processed Butchery",
+   "Ready Meal",
+   "Scone",
+   "Shell",
+   "Tape",
+   "Toiletries",
+   "Toys",
+   "Utensil",
+   "Utility",
+   "Vegetable",
+   "coffee"
+  ],
+  "sample": [
+   "Twice Baked Soufflé",
+   "Fife Strawberries",
+   "Balgove Afternoon Tea for Two Voucher",
+   "Luxury Hamper",
+   "Kippo Farm Hamper",
+   "Pusk Farm Hamper",
+   "Strathtyrum Farm Hamper",
+   "Fife Hamper"
+  ],
+  "checked": "2026-07-31"
+ },
+ "fodder": {
+  "id": "fodder",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "gloucester-services": {
+  "id": "gloucester-services",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "rhug-estate": {
+  "id": "rhug-estate",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "goodwood-farm-shop": {
+  "id": "goodwood-farm-shop",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "riverford": {
+  "id": "riverford",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "fox-brothers": {
+  "id": "fox-brothers",
+  "shopify": true,
+  "productCount": 625,
+  "tags": [
+   "bags & leather goods",
+   "coats & jackets",
+   "dresses",
+   "drinks & spirits",
+   "jeans & denim",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "tweed & woven goods": "FD192 : Truffle Tweed Fox Drop Fox Drop new",
+   "dresses": "CC11 : Cocktail Collection Dress Cocktail Check Barathea Coc",
+   "jeans & denim": "CL2-12 : Classic Flannel Plain Denim Blue Classic Flannel __",
+   "bags & leather goods": "Fox Brothers Ecru Tote Shopper Bag Bags __tab1:provenance-ca",
+   "drinks & spirits": "SP21 : Ginger Ale, Ink Black & English Red Puppytooth (with ",
+   "coats & jackets": "CT25 : Fox's Great Coat Coating __tab1:provenance-coating co"
+  },
+  "observedTypes": [
+   "1772 Flannel",
+   "Authentic Flannel",
+   "Bags",
+   "Buttons",
+   "Classic Flannel",
+   "Coating",
+   "Cocktail Collection",
+   "Exmoor Overcoating",
+   "Fabric",
+   "Fox Air",
+   "Fox City",
+   "Fox Drop",
+   "Fox Jacketing",
+   "Fox Linen",
+   "Fox Tweed",
+   "Golden Fox",
+   "Samples",
+   "Somerset Jacketing",
+   "Sports Jacketing",
+   "Worsted Classics",
+   "Worsted Flannel",
+   "fox khaki",
+   "fox sport"
+  ],
+  "sample": [
+   "FD192 : Truffle Tweed",
+   "TD22 : Char-Navy Twill Tweed",
+   "CT15 : Fox Classic Midnight Coating",
+   "FA2-37 : Navy Stripe",
+   "FL30 : Fox Linen Hopsack Navy",
+   "FD190 : The Exmoor Gun Club",
+   "FD162 : The Tuscan Glen Check",
+   "FA2-47 : Mid Grey Mélange"
+  ],
+  "checked": "2026-07-31"
+ },
+ "lavenham": {
+  "id": "lavenham",
+  "shopify": true,
+  "productCount": 281,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "coats & jackets",
+   "fruit & veg",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "vests & waistcoats": "Rug Cotton Worker Split Gilet clothing",
+   "coats & jackets": "Lavenster Cruiser Jacket Jackets",
+   "workwear & aprons": "Workwear Button Mickfield (Old Fit) Gilets",
+   "womenswear": "Unwadded Gathered Waist Denston Women's Jackets",
+   "scarves & accessories": "Tie Up Gilet Gilets",
+   "shirts": "Jackman Cotton Quilt Pocket T-shirt clothing",
+   "bags & leather goods": "Quilted Tote Bag Accessories",
+   "fruit & veg": "John Derian Apple Tie Up Gilet Gilets",
+   "tweed & woven goods": "Horse Rug Quilt Blanket Accessories",
+   "braces & belts": "Lavenham X Taylor Kent & Co Belt Accessories",
+   "suits & trousers": "Hiut Denim Black Unisex Jeans Trousers",
+   "jeans & denim": "Hiut Denim Black Unisex Jeans Trousers",
+   "knitwear": "Jackman G G Sweat Pullover clothing",
+   "hats & caps": "Jackman Waffle Beanie Accessories Category_Default Category/"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Gilet",
+   "Gilets",
+   "Jackets",
+   "Trousers",
+   "clothing"
+  ],
+  "sample": [
+   "Rug Cotton Worker Split Gilet",
+   "Kosuke Tsumura Gilet",
+   "Beams Easy Gilet",
+   "Clean Line Dublin",
+   "Lavenster Gathered Waist Brundon",
+   "Lavenster Cruiser Jacket",
+   "Lavenster Coach Jacket",
+   "Clean Line Oversized Dublin"
+  ],
+  "checked": "2026-07-31"
+ },
+ "christys": {
+  "id": "christys",
+  "shopify": true,
+  "productCount": 128,
+  "tags": [
+   "cashmere & merino",
+   "hats & caps",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "hats & caps": "Wide Brim Straw Hat Boaters",
+   "tweed & woven goods": "Balmoral Tweed Flat Cap in Z524 Caps Flat Cap",
+   "cashmere & merino": "8 piece Cashmere Flat Cap in navy Caps"
+  },
+  "observedTypes": [
+   "Boaters",
+   "Bowlers",
+   "Boxes",
+   "Caps",
+   "Fedoras",
+   "Hat Boxes",
+   "Panama",
+   "Panamas",
+   "Top Hats",
+   "Trilbies",
+   "Tweeds",
+   "cap"
+  ],
+  "sample": [
+   "Trilby Superfino Panama",
+   "Christys' NEW Sorrento Panama",
+   "Christys' NEW Elba Panama",
+   "Christys' NEW Ibiza Panama",
+   "Christys' Capri Panama",
+   "Sefton Loden Baseball",
+   "Wide Brim Straw Hat",
+   "Evelyn Cloche"
+  ],
+  "checked": "2026-07-31"
+ },
+ "ettinger": {
+  "id": "ettinger",
+  "shopify": true,
+  "productCount": 180,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "coats & jackets",
+   "cufflinks & signets",
+   "footwear & boots",
+   "game & venison",
+   "jewellery",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "watches"
+  ],
+  "tagEvidence": {
+   "jewellery": "Capra Pill Case Set Gift Set Accessories badge_save 10% Best",
+   "tweed & woven goods": "Campbell's of Beauly x Ettinger Tweed 8oz Hunter Flask Leath",
+   "bags & leather goods": "Capra Poo Bag Dispenser Pet Accessories Accessories CAPRA Fo",
+   "coats & jackets": "Long Wallet with Zipped Pocket Leather Wallet Coat Wallets D",
+   "scarves & accessories": "Hunters & Frankau X Ettinger Leather Cigar Wrap Leather Ciga",
+   "game & venison": "Capra Single Playing Cards Case Leather Game Set Accessories",
+   "braces & belts": "35mm Waxy Leather Belt Leather Belt Accessories BELTS Gifts ",
+   "cufflinks & signets": "Capra Ecru Small Jewellery / Cufflink Box Leather Jewellery ",
+   "watches": "Capra Ecru Small Jewellery / Cufflink Box Leather Jewellery ",
+   "footwear & boots": "Bridle Hide Small Shoehorn Leather Shoe Horn Accessories BRI"
+  },
+  "observedTypes": [
+   "Briefcase",
+   "Gift Card",
+   "Gift Set",
+   "Golf Accessory",
+   "Leather Belt",
+   "Leather Bookmark",
+   "Leather Card Case",
+   "Leather Care",
+   "Leather Cash Clip",
+   "Leather Cigar Pouch",
+   "Leather Coin Purse",
+   "Leather Flask",
+   "Leather Game Set",
+   "Leather Glasses Case",
+   "Leather Jewellery Box",
+   "Leather Jewellery Roll",
+   "Leather Key Case",
+   "Leather Key Ring",
+   "Leather Keyring",
+   "Leather Laptop Case",
+   "Leather Luggage Tag",
+   "Leather Notebook Cover",
+   "Leather Passport Case",
+   "Leather Pen Case",
+   "Leather Pencil Case",
+   "Leather Pill Case",
+   "Leather Pouch",
+   "Leather Purse",
+   "Leather Shoe Horn",
+   "Leather Valet Tray",
+   "Leather Wallet",
+   "Leather Wash Bag",
+   "Leather Watch Roll",
+   "Leather Zip Box",
+   "Leather Zip Pouch",
+   "Leather Zipped Wallet",
+   "Pens",
+   "Pet Accessories",
+   "Pet Accessory",
+   "Refills"
+  ],
+  "sample": [
+   "Leather Care Set",
+   "Capra Pill Case Set",
+   "Gift Wrapping",
+   "Bosco Laptop Case",
+   "Capra AirTag Accessories Set",
+   "Capra Everyday Set",
+   "Sterling Everyday Set",
+   "Bridle Hide Everyday Set"
+  ],
+  "checked": "2026-07-31"
+ },
+ "barbour": {
+  "id": "barbour",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "new-balance-uk": {
+  "id": "new-balance-uk",
+  "shopify": false,
+  "reason": "http-403",
+  "checked": "2026-07-31"
+ },
+ "globe-trotter": {
+  "id": "globe-trotter",
+  "shopify": true,
+  "productCount": 1000,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "childrenswear",
+   "jewellery",
+   "plates",
+   "suits & trousers",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "watches"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "ETRO · Large Check-In - 4 Wheels | Arnica/Black/Black Luggag",
+   "suits & trousers": "Restoration Edit · XL Suitcase - 2 Wheels | Marmalade/Brown/",
+   "cashmere & merino": "Home Collection · Cashmere Blanket Accessories B2B_ACTIVE B2",
+   "tweed & woven goods": "Home Collection · Cashmere Blanket Accessories B2B_ACTIVE B2",
+   "watches": "Home Collection · 6-Slot Watch Case | Chalk/Moss/Chrome For ",
+   "underwear & nightwear": "Jet · Large Brief | Black Bags Christmas Delivery collection",
+   "childrenswear": "Jet · Luggage Tag | Baby Pink/Ivory/Chrome Extras B2B_ACTIVE",
+   "plates": "007 Goldfinger · British Number Plate Charm Accessories BOND",
+   "jewellery": "The Vampires Wife · Jewellery Case | Ivory/Ivory/Gold Sold O"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Bags",
+   "Configurable",
+   "Extras",
+   "For Home",
+   "Luggage",
+   "Personalisation",
+   "Sold Out"
+  ],
+  "sample": [
+   "Abercrombie & Kent · The Sundower Trunk | Marmalade/Brown/Gold",
+   "ETRO · Large Check-In - 4 Wheels | Arnica/Black/Black",
+   "ETRO · Carry-On - 4 Wheels | Arnica/Black/Black",
+   "Restoration Edit · XL Suitcase - 2 Wheels | Marmalade/Brown/Gold | 001",
+   "Restoration Edit · XL Suitcase - 2 Wheels | Brown/Natural/Gold | 0011",
+   "Restoration Edit · XL Suitcase - 2 Wheels | Ivory/Natural/Gold | 0016",
+   "Restoration Edit · XL Suitcase - 2 Wheels | Brown/Natural/Gold | 0009",
+   "Restoration Edit · ML Suitcase - 2 Wheels | Red/Caramel/Gold | 0013"
+  ],
+  "checked": "2026-07-31"
+ },
+ "tusting": {
+  "id": "tusting",
+  "shopify": true,
+  "productCount": 80,
+  "tags": [
+   "bags & leather goods",
+   "suits & trousers"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "Clara Floral Handbag handbags Outer Bag 2 signature TU Box 1",
+   "suits & trousers": "The Suit Fold Luggage carry-on Outer Bag 4 Raja CAD29"
+  },
+  "observedTypes": [
+   "Accessory",
+   "Backpack",
+   "Business Bags",
+   "Gift Voucher",
+   "Handbag",
+   "Luggage",
+   "Special Service",
+   "Tote"
+  ],
+  "sample": [
+   "Leather Shoulder Strap (Replacement)",
+   "Clara Floral",
+   "Mini Holly Bow",
+   "Ida",
+   "Leather Pouch",
+   "Passport Holder",
+   "Canvas Easy Tote - Black",
+   "Leather Air-Tag Holder"
+  ],
+  "checked": "2026-07-31"
+ },
+ "emma-willis": {
+  "id": "emma-willis",
+  "shopify": true,
+  "productCount": 424,
+  "tags": [
+   "coats & jackets",
+   "jeans & denim",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "underwear & nightwear"
+  ],
+  "tagEvidence": {
+   "shirts": "Kingfisher Linen Shirt Bespoke Shirt Online Product SS26 - W",
+   "jeans & denim": "Ink Denim Twill Linen Shirt - New Ready to Wear Shirt Online",
+   "suits & trousers": "White Herringbone Linen Trousers - New Trousers Herringbone ",
+   "underwear & nightwear": "Chocolate Linen Dressing Gown - New Nightwear Online Product",
+   "scarves & accessories": "Navy Grenadine Silk Tie Tie Online Product Website",
+   "coats & jackets": "Antique Paisley Wool Smoking Jacket Nightwear 2025 Gift Guid"
+  },
+  "observedTypes": [
+   "Bespoke Fabric",
+   "Bespoke Shirt",
+   "Boxer Shorts",
+   "Gift Card",
+   "Made to Measure Fabric",
+   "Made to Measure Shirt",
+   "Nightwear",
+   "Pocket Square",
+   "Polo Shirt",
+   "Ready to Wear Shirt",
+   "Ready to wear Shirt",
+   "Ready to wear shirt",
+   "SHOPSTORM_HIDDEN_PRODUCT",
+   "Stock - Ready to Wear Shirt",
+   "Stock - Ready to wear shirt",
+   "Swimming Trunks",
+   "T-Shirt",
+   "Tie",
+   "Trousers",
+   "Womens Shirt",
+   "Womens shirt",
+   "wrapin"
+  ],
+  "sample": [
+   "Kingfisher Linen Shirt",
+   "Kingfisher Linen Shirt",
+   "Ink Denim Twill Linen Shirt - New",
+   "White Herringbone Linen Trousers - New",
+   "Tobacco Linen Trousers - New",
+   "Ink Denim Twill Linen Trousers - New",
+   "White Superior",
+   "Sky Superior"
+  ],
+  "checked": "2026-07-31"
+ },
+ "turnbull-asser": {
+  "id": "turnbull-asser",
+  "shopify": true,
+  "productCount": 1000,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "childrenswear",
+   "coats & jackets",
+   "cufflinks & signets",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "silverware",
+   "suits & trousers",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "Checked Blue Pocket Square in Silk",
+   "jeans & denim": "Polka dot Denim Pocket Square in Silk P SQs POCKET SQUARES",
+   "shirts": "Windsor Navy Regular Fit Shirt in Cotton Shirts FP ProductCo",
+   "coats & jackets": "Henley Pinecone Jacket in Linen BLAZERS & JACKETS BLAZERS FP",
+   "suits & trousers": "Henley Pinecone Jacket in Linen BLAZERS & JACKETS BLAZERS FP",
+   "bags & leather goods": "Navy Full-Grain Leather Trifold Wallet ACCESSORIES SLGs Coll",
+   "cashmere & merino": "Ivory Cashmere Silk Long Socks  Collection:PressLoan FP",
+   "cufflinks & signets": "STERLING SILVER ART CUFFLINKS ACCESSORIES CUFFLINKS Colour:S",
+   "silverware": "STERLING SILVER ART CUFFLINKS ACCESSORIES CUFFLINKS Colour:S",
+   "underwear & nightwear": "Gold Paisley Traditional Silk Jacquard Gown NIGHTWEAR + U/W ",
+   "tweed & woven goods": "Pale Blue Wool and Cashmere Lily Blanket ACCESSORIES HOME 70",
+   "knitwear": "Russet Cashmere Roll Neck Clark Jumper KNITWEAR KNITWEAR HAN",
+   "childrenswear": "Lilac Pin Check Mayfair Shirt SHIRTS SHIRTS REGULAR FIT 100%",
+   "vests & waistcoats": "Wine Red Padded Gilet CLOTHING OTHER VESTS 100% Cotton Outer",
+   "womenswear": "Ladies' Lilac Cotton-Cashmere Pyjama Set NIGHTWEAR + U/W PJS",
+   "braces & belts": "Red Classic Calf Leather Satin Belt ACCESSORIES BELTS Colour"
+  },
+  "observedTypes": [
+   "ACCESSORIES ACCS OTHER",
+   "ACCESSORIES BELTS",
+   "ACCESSORIES BRACES",
+   "ACCESSORIES CUFFLINKS",
+   "ACCESSORIES HOME",
+   "ACCESSORIES SCARVES",
+   "ACCESSORIES SLGs",
+   "BLAZERS & JACKETS BLAZERS",
+   "BLAZERS & JACKETS FORMAL JACKETS",
+   "BLAZERS & JACKETS SPORTS JACKETS",
+   "CLOTHING OTHER VESTS",
+   "Clothing Alterations",
+   "KNITWEAR JERSEY",
+   "KNITWEAR KNITWEAR CASHMERE",
+   "KNITWEAR KNITWEAR HANDMADE",
+   "KNITWEAR KNITWEAR MERINO",
+   "KNITWEAR KNITWEAR OTHER",
+   "MTM SHIRTS MTM SHIRTS",
+   "MTM SHIRTS MTM SHIRTS ALL",
+   "MTM SHIRTS SHIRTS WEEKEND FIT",
+   "NIGHTWEAR + U/W BOXERS",
+   "NIGHTWEAR + U/W PJS",
+   "NIGHTWEAR + U/W PJS WOMENS",
+   "NIGHTWEAR + U/W ROBES",
+   "OUTERWEAR OUTERWEAR",
+   "OUTERWEAR OUTERWEAR CASUAL",
+   "OUTERWEAR OUTERWEAR FORMAL",
+   "OUTERWEAR OUTERWEAR OTHER",
+   "P SQs HANDKERCHIEFS",
+   "P SQs POCKET SQUARES",
+   "SHIRTS SHIRTS HOLIDAY FIT",
+   "SHIRTS SHIRTS OVERSHIRT",
+   "SHIRTS SHIRTS REGULAR FIT",
+   "SHIRTS SHIRTS TAILORED FIT",
+   "SHIRTS SHIRTS WEEKEND FIT",
+   "SHIRTS WESTMINSTER",
+   "SHIRTS WINDSOR",
+   "SOCKS CASHMERE SOCKS",
+   "SOCKS COTTON SOCKS",
+   "SOCKS SILK SOCKS"
+  ],
+  "sample": [
+   "Checked Blue Pocket Square in Silk",
+   "Checked Lilac Pocket Square in Silk",
+   "Checked Yellow Pocket Square in Silk",
+   "Checked Blue On Navy Pocket Square in Silk",
+   "Checked Navy On White Pocket Square in Silk",
+   "Checked Pink Pocket Square in Silk",
+   "Checked Burgundy Pocket Square in Silk",
+   "Floral Yellow Pocket Square in Silk"
+  ],
+  "checked": "2026-07-31"
+ },
+ "keelham": {
+  "id": "keelham",
+  "shopify": false,
+  "reason": "net-ENOTFOUND",
+  "checked": "2026-07-31"
+ },
+ "cannon-hall-farm": {
+  "id": "cannon-hall-farm",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "farmer-copleys": {
+  "id": "farmer-copleys",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "hollis-mead": {
+  "id": "hollis-mead",
+  "shopify": false,
+  "reason": "net-ERR_TLS_CERT_ALTNAME_INVALID",
+  "checked": "2026-07-31"
+ },
+ "loch-arthur": {
+  "id": "loch-arthur",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "macknade": {
+  "id": "macknade",
+  "shopify": true,
+  "productCount": 117,
+  "tags": [
+   "dairy & cheese",
+   "footwear & boots",
+   "fruit & veg"
+  ],
+  "tagEvidence": {
+   "dairy & cheese": "Kent Cheesemakers Gift Box HAMPERS christmas cheese collecti",
+   "footwear & boots": "Boot Fair & Flea Market 2026  Date|21-06-2026 Date|23-08-202",
+   "fruit & veg": "National Soft Fruit & Cherry Show  Date|14-07-2023 Date|15-0"
+  },
+  "observedTypes": [
+   "ALCOHOLIC",
+   "Event",
+   "Events",
+   "GROCERIES",
+   "HAMPERS",
+   "OUTDOOR COOKING SOLUTIONS"
+  ],
+  "sample": [
+   "Sunday Hop Shed Sessions - Live Music with Get Carter",
+   "Sunday Hop Shed Sessions - Live Music with Martyn Ellis",
+   "Drag Bingo Night!",
+   "Sunday Hop Shed Sessions - Live Music with Chris Barwell",
+   "Mountain Wines of Argentina: An Evening with Zuccardi",
+   "The Big Macknade Quiz with Jimbo",
+   "Ferragosto Italian Supper Club",
+   "SUMMER FUN : Kids Pizza Workshop"
+  ],
+  "checked": "2026-07-31"
+ },
+ "secretts": {
+  "id": "secretts",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "jamiesons-shetland": {
+  "id": "jamiesons-shetland",
+  "shopify": true,
+  "productCount": 912,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "childrenswear",
+   "coats & jackets",
+   "dresses",
+   "footwear & boots",
+   "fruit & veg",
+   "hats & caps",
+   "jewellery",
+   "knitwear",
+   "lamb",
+   "poultry",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "vests & waistcoats"
+  ],
+  "tagEvidence": {
+   "hats & caps": "Bonnie Isle Hat - Shetland Wool Week 2022 - Linda Shearer Pa",
+   "scarves & accessories": "Bonnie Isle Hat - Shetland Wool Week 2022 - Linda Shearer Pa",
+   "bags & leather goods": "Zipped Pouch Bag bestseller Knitting Accessories & Needles",
+   "knitwear": "North Star Sweater - Mandy Moore - Olach Designs Pattern Boo",
+   "dresses": "Mrs Manson's Dress - Mandy Moore - Olach Designs Pattern Boo",
+   "vests & waistcoats": "Myrdesgyill Pattern Patterns & Shadecards > Vest Patterns",
+   "childrenswear": "Norsk Sommer Shawl / Baby Blanket  - Tori Seierstad (Torirot",
+   "tweed & woven goods": "Norsk Sommer Shawl / Baby Blanket  - Tori Seierstad (Torirot",
+   "coats & jackets": "Cable Yoke Jacket - Child's Pattern Books Patterns & Shadeca",
+   "lamb": "Lamb  - Tina Vejlø Andersen - Kastaniestrik Pattern Patterns",
+   "poultry": "1000 Duck Egg Marl Chunky Marl Chunky Yarn Jamieson's of She",
+   "footwear & boots": "Apple Shoe by Tina Vejlø Andersen - Kastaniestrik Pattern Pa",
+   "fruit & veg": "Apple Shoe by Tina Vejlø Andersen - Kastaniestrik Pattern Pa",
+   "braces & belts": "Knitting Belt Accessories Knitting Accessories & Needles",
+   "jewellery": "2114 Jewel Marl Chunky Marl Chunky Yarn Jamieson's of Shetla"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Bag",
+   "Books",
+   "Cobweb Yarn",
+   "Double Knitting Yarn",
+   "Gift Box",
+   "Gift Voucher",
+   "Heather Aran Yarn",
+   "Marl Chunky Yarn",
+   "Needles & Crochet Hooks",
+   "Pattern",
+   "Shadecard",
+   "Spindrift Yarn",
+   "Stitch Markers",
+   "Ultra Yarn",
+   "Weaving Yarn"
+  ],
+  "sample": [
+   "Shetland Wool Week Annual 2025",
+   "Bonnie Isle Hat - Shetland Wool Week 2022 - Linda Shearer",
+   "Shetland Wool Week 2026 Hat Kit - Birsie Beanny",
+   "Jamieson's Digital Gift Voucher",
+   "Zipped Pouch",
+   "North Star Sweater - Mandy Moore - Olach Designs",
+   "Kellister - Gudrun Johnson",
+   "Connections Beanie - Mandy Moore - Olach Designs"
+  ],
+  "checked": "2026-07-31"
+ },
+ "melin-tregwynt": {
+  "id": "melin-tregwynt",
+  "shopify": true,
+  "productCount": 127,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "childrenswear",
+   "coats & jackets",
+   "dresses",
+   "hats & caps",
+   "scarves & accessories",
+   "tableware",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "tweed & woven goods": "Cambrian Wool Diamond Tweed 160cm fabric Upholstery fabrics ",
+   "cashmere & merino": "Patagonia throws and blankets Blanket Blanket Lambswool New ",
+   "bags & leather goods": "Knot Garden Lavender Bag Lavender bags Any Category: Gift Ca",
+   "vests & waistcoats": "Adfer Vest Knitting Pattern Wool Any Bought In Wool",
+   "scarves & accessories": "Cerigyn Scarf Scarf Any Category: Gift Category: Gifts Fashi",
+   "childrenswear": "Mondo Baby Blankets Blanket Blanket Category: Baby Category:",
+   "underwear & nightwear": "Vintage Star Dressing Gown Collar Dressing Gown Clothing Dre",
+   "hats & caps": "Diamond Tweed Flat Cap Hat Category: Menswear Fabric: Diamon",
+   "tableware": "Knot Garden Set of 6 Coasters Coasters Any Category: Home pr",
+   "coats & jackets": "Knot Garden Cape Ladieswear Category: Ladieswear Category: V",
+   "dresses": "Vintage Rose Lambswool 60`s Dress Ladieswear Category: Ladie",
+   "womenswear": "Vintage Rose Lambswool Pashmina Scarf Any Category: Valentin"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Backpack bag",
+   "Blanket",
+   "Chair",
+   "Coasters",
+   "Cube",
+   "Cushion",
+   "Doorstop",
+   "Doublecloth",
+   "Dressing Gown",
+   "Hat",
+   "Hottie",
+   "Ladieswear",
+   "Lampshade",
+   "Lavender bags",
+   "Miscellanous",
+   "Notebook",
+   "Pet Accessories",
+   "Purse",
+   "Sample swatches",
+   "Scarf",
+   "Singlecloth blanket",
+   "Tablemats (set of 6)",
+   "Throw",
+   "Tote bag",
+   "Toys",
+   "Upholstery fabrics",
+   "Wool"
+  ],
+  "sample": [
+   "Adfer Heddle Accessories Knitting Pattern",
+   "Vintage Rose Shoreditch High Back Chair",
+   "Vintage Rose Hoxton Armchair",
+   "Cambrian Wool Diamond Tweed 160cm fabric",
+   "Hopsack Upholstery fabric 160cm",
+   "Patagonia throws and blankets",
+   "Patagonia cushions",
+   "Arluniaeth Throws and Blankets"
+  ],
+  "checked": "2026-07-31"
+ },
+ "eribe": {
+  "id": "eribe",
+  "shopify": true,
+  "productCount": 601,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "dresses",
+   "game & venison",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "Alloa Open Mitt - Velvet Glove Alloa Accessories core stock ",
+   "womenswear": "Alloa Open Mitt - Velvet Glove Alloa Accessories core stock ",
+   "cashmere & merino": "Montrose Top - Sage Top _badge: New In AW26 Merino Wool Mont",
+   "knitwear": "Corry Hoody Sweater - Aubergine Hooded Sweater clearance",
+   "shirts": "Corry T-Shirt Sweater Honesty Sweater clearance",
+   "vests & waistcoats": "Corry V-Neck Vest Gazelle Vest clearance",
+   "hats & caps": "Alpine Beanie - Winter Hat alpine Alpine Accessories alpine ",
+   "coats & jackets": "Montrose Blanket Coat - Bramble Coat core stock ERIBÉ Montro",
+   "tweed & woven goods": "Montrose Blanket Coat - Bramble Coat core stock ERIBÉ Montro",
+   "dresses": "Alpine Dress in Taurus Dress alpine Alpine Collection alpine",
+   "game & venison": "Herd Womens Jacket - Pheasant Jacket 100% wool core stock ec",
+   "jeans & denim": "Vaila Lace Sweater - Denim Blue Sweater core stock lace summ"
+  },
+  "observedTypes": [
+   "Cardigan",
+   "Coat",
+   "Dress",
+   "Gift card",
+   "Glove",
+   "Hat",
+   "Hooded Sweater",
+   "Jacket",
+   "Scarf",
+   "Snood",
+   "Sweater",
+   "Tank top",
+   "Top",
+   "Tunic",
+   "Vest",
+   "Waistcoat"
+  ],
+  "sample": [
+   "Alloa Open Mitt - Velvet",
+   "Montrose Top - Sage",
+   "Montrose Top - Hunter",
+   "Montrose Top - Bracken",
+   "Corry Top - Rouge",
+   "Corry Top - Rosehip",
+   "Corry Top - Rusty",
+   "Corry Hoody Sweater - Aubergine"
+  ],
+  "checked": "2026-07-31"
+ },
+ "sunspel": {
+  "id": "sunspel",
+  "shopify": true,
+  "productCount": 972,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "coats & jackets",
+   "dresses",
+   "footwear & boots",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "shirts": "Men's Silk Cotton T-shirt in Black Mens T-Shirt category:t-s",
+   "suits & trousers": "Men's Corduroy Trouser in Dark Chocolate Mens Trousers categ",
+   "tweed & woven goods": "Men's Donegal Tweed Trouser in Anthracite Melange Mens Trous",
+   "underwear & nightwear": "Men's Long Sleeve Tencel™ T-shirt in Black Mens Underwear To",
+   "cashmere & merino": "Men's Wool Cashmere Tie in Navy Accessories colour-group:cor",
+   "scarves & accessories": "Men's Wool Cashmere Tie in Navy Accessories colour-group:cor",
+   "coats & jackets": "Men's Suede Overshirt in Dark Brown Mens Coat & Jacket categ",
+   "knitwear": "Men's Cashmere Half Zip Jumper in Swansdown Mens Knitwear ca",
+   "jeans & denim": "Men's Lambswool Knitted Polo Shirt in Denim Twist Mens Knitw",
+   "hats & caps": "Men's Boiled Wool Cap in Truffle Accessories category:hats_s",
+   "vests & waistcoats": "Men's Wool Cashmere Flannel Gilet in Navy Mens Coat & Jacket",
+   "womenswear": "Women's Cotton Shirt in White Womens Shirt category:shirts_a",
+   "dresses": "Women's Cotton Slip in White Womens Dress category:loungewea",
+   "braces & belts": "Men's Elasticated Braided Belt in Black Accessories colour-g",
+   "footwear & boots": "Men's Suede Loafer in Navy Accessories category:footwear col",
+   "bags & leather goods": "Printed Tote Bag in Ecru Accessories category:bags_and_walle"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Gift Box",
+   "Mens Coat & Jacket",
+   "Mens Knitwear",
+   "Mens Loopback",
+   "Mens Loungewear",
+   "Mens Polo Shirt",
+   "Mens Shirt",
+   "Mens Shorts",
+   "Mens Sleepwear",
+   "Mens Suits",
+   "Mens Swimwear",
+   "Mens T-Shirt",
+   "Mens Trousers",
+   "Mens Underwear Bottom",
+   "Mens Underwear Top",
+   "Womens Dress",
+   "Womens Loopback",
+   "Womens Shirt",
+   "Womens T-Shirt",
+   "Womens Underwear",
+   "Womens Underwear Bottom",
+   "Womens Underwear Top"
+  ],
+  "sample": [
+   "Men's Silk Cotton T-shirt in Black",
+   "Men's Silk Cotton T-shirt in White",
+   "Men's Riviera Midweight T-shirt in Slate Blue",
+   "Men's Corduroy Trouser in Dark Chocolate",
+   "Men's Donegal Tweed Trouser in Anthracite Melange",
+   "Men's Cotton Socks in Chestnut",
+   "Men's Cotton Drill Trouser in Loden Green",
+   "Men's Long Sleeve Tencel™ T-shirt in Black"
+  ],
+  "checked": "2026-07-31"
+ },
+ "drakes": {
+  "id": "drakes",
+  "shopify": true,
+  "productCount": 1000,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "coats & jackets",
+   "cufflinks & signets",
+   "footwear & boots",
+   "hats & caps",
+   "jeans & denim",
+   "jewellery",
+   "knitwear",
+   "mugs",
+   "poultry",
+   "scarves & accessories",
+   "shirts",
+   "silverware",
+   "suits & trousers",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "watches"
+  ],
+  "tagEvidence": {
+   "suits & trousers": "Brown Linen Drawstring Trousers Trouser Brand_Drake's Own Co",
+   "footwear & boots": "Kovalam Burgundy Leather One Strap Sandal Footwear Brand_Thi",
+   "hats & caps": "Red 'Cafe Cecil' Cotton Baseball Cap Hats Brand_Drake's Own ",
+   "shirts": "Plum Madras Check Cotton Two-Pocket Work Shirt Casual Shirts",
+   "coats & jackets": "Indigo Cotton Smock Casual Shirts Brand_Drake's Own Collecti",
+   "vests & waistcoats": "Washed Red Cotton Urban Safari Vest Jackets Brand_Drake's Ow",
+   "knitwear": "Ecru Wool-Cotton Knit Sweatshirt Sweatshirts Brand_Drake's O",
+   "braces & belts": "Monitaly Extended 1\" Black Leather Belt Belts Brand_Third Pa",
+   "jewellery": "Codis Maya Sterling Silver Fine Bracelet Accessories Brand_C",
+   "silverware": "Codis Maya Sterling Silver Fine Bracelet Accessories Brand_C",
+   "cufflinks & signets": "Codis Maya Rhodium Bow Cufflinks Accessories Brand_Codis May",
+   "tweed & woven goods": "Chamula Tan Leather Durango Woven Sandal Footwear Brand_Cham",
+   "jeans & denim": "Indigo Rinse Denim Button-Down Shirt Casual Shirts Brand_Dra",
+   "scarves & accessories": "Purple Flowers and Diamonds Print Silk Self Tipped Tie Patte",
+   "bags & leather goods": "Mayumi Y. for Drake’s Cotton Tote Bag Accessories Brand_Drak",
+   "poultry": "Burgundy 'D Duck' Cotton Twill Baseball Cap Hats Brand_Drake",
+   "cashmere & merino": "Blue Pure Cashmere Solid Tipped Tie Plain Ties Collection_Ac",
+   "mugs": "Green Classic Mughal Print Wool Silk Scarf Scarves Brand_Dra",
+   "underwear & nightwear": "Red Stripe Cotton Pyjama Set Pyjamas Brand_Drake's Own Colle",
+   "watches": "Il Bisonte Leather Watch Case Accessories Collection_Accesso"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Bags",
+   "Bandanas",
+   "Belts",
+   "Boots",
+   "Bow Tie",
+   "Casual Shirts",
+   "Chore Jackets",
+   "Chukkas",
+   "Coats & Jackets",
+   "Espadrilles",
+   "Fleeces",
+   "Footwear",
+   "Formal Shirts",
+   "Games Blazer",
+   "Games Trouser",
+   "Gloves",
+   "Hats",
+   "Jackets",
+   "Jeans",
+   "Knitwear",
+   "Loafers",
+   "Patterned Tie",
+   "Patterned Ties",
+   "Plain Ties",
+   "Pocket Squares",
+   "Polos",
+   "Pyjamas",
+   "Raglan Coats",
+   "Rugby Shirts",
+   "Sartorial Blazer",
+   "Sartorial Trouser",
+   "Scarves",
+   "Shorts",
+   "Socks",
+   "Striped Tie",
+   "Striped Ties",
+   "Sunglasses",
+   "Sweatshirts",
+   "Swim Shorts"
+  ],
+  "sample": [
+   "Brown Linen Drawstring Shorts",
+   "Green Linen Drawstring Shorts",
+   "Brown Linen Drawstring Trousers",
+   "Epperson Mountaineering Coyote Brown Large Climb Pack",
+   "Kovalam Burgundy Leather One Strap Sandal",
+   "Kovalam Black Leather One Strap Sandal",
+   "New Balance 'Vaporous Grey' Made in UK Allerdale Trainers",
+   "New Balance 'Vibrant Chroma' Fire Whirl Made in UK 991v2 Trainers"
+  ],
+  "checked": "2026-07-31"
+ },
+ "solovair": {
+  "id": "solovair",
+  "shopify": true,
+  "productCount": 377,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "footwear & boots",
+   "hats & caps",
+   "jewellery",
+   "knitwear",
+   "shirts",
+   "socks"
+  ],
+  "tagEvidence": {
+   "footwear & boots": "Black Hi-Shine Platform Dealer Boot Footwear 409-half all Bl",
+   "bags & leather goods": "Side Bag Accessories accessories all Bags Black colour-black",
+   "shirts": "Solovair S/S Logo T-Shirt - Black Accessories all Black Clot",
+   "knitwear": "Solovair L/S Logo Pullover Hoodie - Grey Accessories all Clo",
+   "hats & caps": "Solovair Beanie Accessories accessories all Beanie Black Blu",
+   "jewellery": "Replacement Ski Hook & D-ring Accessories all Replacement",
+   "socks": "Cushioned Alpaca Socks Accessories accessories all blue Gift",
+   "braces & belts": "Leather Belt Accessories accessories Belt Black Brown Brown "
+  },
+  "observedTypes": [
+   "Accessories",
+   "Footwear",
+   "Gift Card"
+  ],
+  "sample": [
+   "Black Hi-Shine Platform Dealer Boot",
+   "Black Greasy Platform Dealer Boot",
+   "Black Greasy Platform Tassel Loafer",
+   "Gaucho Crazy Horse 8 Eye Zip Commando Derby Boot",
+   "Black Greasy Steel Toe Capped Dealer Boot",
+   "Black Greasy 10 Eye Steel Toe Capped Zip Twin Strap Derby Boot",
+   "Gaucho Crazy Horse Shearling Lined 8 Eye Derby Boot",
+   "Gaucho Crazy Horse Shearling Lined 6 Eye Astronaut Boot"
+  ],
+  "checked": "2026-07-31"
+ },
+ "drmartens-mie": {
+  "id": "drmartens-mie",
+  "shopify": false,
+  "reason": "http-403",
+  "checked": "2026-07-31"
+ },
+ "low-sizergh-barn": {
+  "id": "low-sizergh-barn",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "trevaskis-farm": {
+  "id": "trevaskis-farm",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "lobbs-farm-shop": {
+  "id": "lobbs-farm-shop",
+  "shopify": true,
+  "productCount": 466,
+  "tags": [
+   "beef",
+   "bread & bakery",
+   "dairy & cheese",
+   "drinks & spirits",
+   "fruit & veg",
+   "lamb",
+   "mugs",
+   "pork & bacon",
+   "poultry",
+   "womenswear",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "poultry": "Barn Reared Chicken - Leg Quarter (with optional coating) Ch",
+   "dairy & cheese": "Curds & Croust - Miss Wenna Cornish Brie Cheese Brie Cornish",
+   "drinks & spirits": "Moorland Distillery - Cornish Apple Brandy 500ml Beers, Wine",
+   "fruit & veg": "Moorland Distillery - Cornish Apple Brandy 500ml Beers, Wine",
+   "bread & bakery": "Wessex Mill - Wholemeal Bread Flour 1.5kg  Bread flour Whole",
+   "beef": "Lobbs Own Grass Fed Beef - Forerib on the Bone Beef Beef Rib",
+   "pork & bacon": "Lobbs Butchery - Hogs Pudding Pork Hogs Pudding Made in Corn",
+   "mugs": "Lobbs Exclusive - Vickie Price Mevagissey Mug  Mug",
+   "lamb": "Lobbs Own Grass Fed Lamb - Loin Chop - Single or Double Lamb",
+   "workwear & aprons": "Lobbs Farm Shop 100% Recycled Canvas Cook's Apron  Apron",
+   "womenswear": "Lobbs Own Grass Fed Beef - Skirt Beef Beef Skirt"
+  },
+  "observedTypes": [
+   "Beef",
+   "Beers, Wines & Spirits",
+   "Biscuits & Crackers",
+   "Breakfast Cereal",
+   "Breakfast Cereals",
+   "Cheese",
+   "Chicken",
+   "Chocolate & Sweets",
+   "Christmas",
+   "Chutneys, Pickles & Relishes",
+   "Condiments, Dressings & Marinades",
+   "Cooking Sauces",
+   "Crisps, Snacks & Nuts",
+   "Herbs, Oils & Vinegars",
+   "Jam, Marmalade, Honey & Spreads",
+   "Lamb",
+   "Pork",
+   "Tea, Coffee & Soft Drinks",
+   "Tins, Cans & Packets"
+  ],
+  "sample": [
+   "Barn Reared Chicken - Leg Quarter (with optional coating)",
+   "Curds & Croust - Miss Wenna Cornish Brie",
+   "Lobbs Milk Bottle",
+   "Tracklements - Fresh Mint Jelly 220g",
+   "Popti Cornish Bakehouse - Cracker Selection 330g",
+   "Moorland Distillery - Cornish Apple Brandy 500ml",
+   "Knightor Winery - Trevannion White Wine 75cl",
+   "Healeys Cornish Cyder Farm - Pear Rattler 500ml"
+  ],
+  "checked": "2026-07-31"
+ },
+ "ardross-farm": {
+  "id": "ardross-farm",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "brocksbushes": {
+  "id": "brocksbushes",
+  "shopify": true,
+  "productCount": 11,
+  "tags": [
+   "bread & bakery",
+   "pork & bacon"
+  ],
+  "tagEvidence": {
+   "bread & bakery": "Mother's Day Celebration Cake",
+   "pork & bacon": "Homemade Sausage Rolls  Deli"
+  },
+  "observedTypes": [],
+  "sample": [
+   "Deli Picnic Box to-go (Family - 3/4 people)",
+   "Deli Picnic Box to-go (2 person)",
+   "French Fancies (Box of 4)",
+   "Mother's Day Celebration Cake",
+   "Homemade Cheesecakes",
+   "Homemade Sausage Rolls",
+   "Homemade Whole Quiche",
+   "Homemade Whole Pies"
+  ],
+  "checked": "2026-07-31"
+ },
+ "hollies-farm-shop": {
+  "id": "hollies-farm-shop",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "cobbs-farm-shop": {
+  "id": "cobbs-farm-shop",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "essington-farm": {
+  "id": "essington-farm",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "abraham-moon": {
+  "id": "abraham-moon",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "hawico": {
+  "id": "hawico",
+  "shopify": true,
+  "productCount": 90,
+  "tags": [
+   "cashmere & merino",
+   "dresses",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "Brisk - Ice White  Accessories Accessories > Lightweight Sca",
+   "cashmere & merino": "Cashmere Care Kit",
+   "knitwear": "Double Zipper Cardigan  golf",
+   "vests & waistcoats": "Carnoustie Gilet  golf",
+   "tweed & woven goods": "Highland Botanical Blanket  interiors",
+   "womenswear": "Corum Large Classic Ladies Scarf  2 ply Accessories Accessor",
+   "hats & caps": "Cliona Multicolour Hat  Accessories",
+   "dresses": "Castel Cashmere Dress  Ladies"
+  },
+  "observedTypes": [
+   "variation"
+  ],
+  "sample": [
+   "Brisk - Ice White",
+   "Brisk - Peony",
+   "Brisk - Olive",
+   "Brisk - Serge",
+   "Brisk - Black",
+   "Brisk - Navy",
+   "Breeze - Abstract Thistle - Pinks",
+   "Breeze - Floral"
+  ],
+  "checked": "2026-07-31"
+ },
+ "carrier-company": {
+  "id": "carrier-company",
+  "shopify": true,
+  "productCount": 375,
+  "tags": [
+   "bags & leather goods",
+   "bowls",
+   "braces & belts",
+   "cashmere & merino",
+   "coats & jackets",
+   "dresses",
+   "drinks & spirits",
+   "footwear & boots",
+   "fruit & veg",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "poultry",
+   "scarves & accessories",
+   "shirts",
+   "socks",
+   "suits & trousers",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "watches",
+   "womenswear",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "workwear & aprons": "The Dungaree Black Men's Dungarees Gender_Mens Rosanna Type_",
+   "hats & caps": "Corduroy Baseball Cap  BF23",
+   "bowls": "Dish-Dash  Gender_Mens Gender_Womens GG25 Rosanna Type_Sleep",
+   "knitwear": "Brushed Shetland Lambswool Jumper Pea Green Lambswool Jumper",
+   "cashmere & merino": "Brushed Shetland Lambswool Jumper Pea Green Lambswool Jumper",
+   "womenswear": "Brushed Shetland Lambswool Jumper Pea Green Lambswool Jumper",
+   "scarves & accessories": "Tubular Silk Scarf  Gender_Mens Gender_Womens GG25 Type_Acce",
+   "coats & jackets": "Celtic Wool Jacket in Houndstooth Celtic Wool Jacket Gender_",
+   "suits & trousers": "Dutch Trouser in Stone Cotton Twill  Gender_Womens GG25 Rosa",
+   "shirts": "Shirt Wrap Dress  Gender_Womens GG25 Rosanna Type_Skirt",
+   "dresses": "Shirt Wrap Dress  Gender_Womens GG25 Rosanna Type_Skirt",
+   "watches": "Merino Watch Cap Wool Hat Gender_Mens Gender_Womens GG25 Gif",
+   "bags & leather goods": "Hemp Tote Bag  Bags Collection_Bags Rosanna",
+   "tweed & woven goods": "Blanket Jacket Celtic Wool Jacket Gender_Mens Gender_Womens ",
+   "socks": "Tri- Colour Donegal Sock Socks Gender_Mens Gender_Womens Ros",
+   "underwear & nightwear": "Tobacco Striped Irish Linen Pyjamas Pyjamas Gender_Mens Gend",
+   "poultry": "Waxed Duck Cotton Jacket  Gender_Mens Gender_Womens GG25 Typ",
+   "jeans & denim": "Dutch Trouser in Denim  Gender_Womens Rosanna scorpio Type_T",
+   "braces & belts": "Oak Bark Submariner Belt  Gender_Mens Gender_Womens Men's Ac",
+   "vests & waistcoats": "Men's Wool Waistcoat Men's Waistcoat BF23 Type_Tops Type_Wai",
+   "drinks & spirits": "Duration Brewing Collab Work Jacket Work Jacket Duration Bee",
+   "footwear & boots": "Loot & Boot Zip Traveller  Bags Collection_Bags Rosanna",
+   "fruit & veg": "Potato Bag  Collection_Bags Collection_Garden Garden Rosanna"
+  },
+  "observedTypes": [
+   "Celtic Wool Jacket",
+   "Children's Smock",
+   "Children's Work Jacket",
+   "Collarless Shirt",
+   "Cropped Trousers",
+   "Denim Collar Shirt",
+   "Dog Beds",
+   "Fisherman's Jumper",
+   "Gift Cards",
+   "Grandpa Shorts",
+   "Irish Collar Shirt",
+   "Jerkin",
+   "Knitwear",
+   "Ladies Trousers",
+   "Ladies shorts",
+   "Lambswool Jumper",
+   "Long Rain Cape",
+   "Men's Dungarees",
+   "Men's Waistcoat",
+   "Men's Work Trousers",
+   "Mum Skirt",
+   "Picnic Blankets",
+   "Pyjamas",
+   "Rain Cape",
+   "Socks",
+   "Traditional Slop",
+   "V-Neck Smock",
+   "WOMEN'S TROUSER",
+   "Wax / Cotton Hat",
+   "Women's Dungarees",
+   "Women's Waistcoat",
+   "Women's Work Trousers",
+   "Wool Gown",
+   "Wool Hat",
+   "Wool Jacket",
+   "Work Jacket"
+  ],
+  "sample": [
+   "The Dungaree Black",
+   "The Dungarees in Olive",
+   "Gardener's Pail",
+   "Garden Kneeler",
+   "Corduroy Baseball Cap",
+   "Dish-Dash",
+   "Brushed Shetland Lambswool Jumper Pea Green",
+   "Rainbow Floof Wool Warmer"
+  ],
+  "checked": "2026-07-31"
+ },
+ "blackhorse-lane": {
+  "id": "blackhorse-lane",
+  "shopify": true,
+  "productCount": 265,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "coats & jackets",
+   "footwear & boots",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "pottery",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "womenswear",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "shirts": "E18 Japanese Twill Uniform Shirt Brown Shirts Brown E18 Unif",
+   "suits & trousers": "W14 Wide Double Pleated Twill Mens Chino Navy Chinos _tab_ca",
+   "coats & jackets": "SE4 Shawl Collar Deck Jacket Japanese 10oz Hickory Jackets 1",
+   "scarves & accessories": "SE4 Shawl Collar Deck Jacket Japanese 10oz Hickory Jackets 1",
+   "knitwear": "SE28 LODEN GREEN BRITISH WOOL GUERNSEY UNISEX SWEATER Knitwe",
+   "jeans & denim": "W8 TYPE II SELVEDGE DENIM JACKET IN ITALIAN 14.5OZ 'STAY BLA",
+   "cashmere & merino": "Men's Extra Fine Merino Wool Long Sleeve Polo Blue Shirts & ",
+   "womenswear": "W9 Women's Type II Denim Jacket 13oz Japanese Rinse Selvedge",
+   "footwear & boots": "SANDERS ALDWYCH POLO SNUFF SUEDE PENNY LOAFER Shoes _sanders",
+   "braces & belts": "Brown Belt with Brass Buckle Belts Accessories Belts",
+   "workwear & aprons": "Soho Ecru Canvas Apron Aprons _tab1_soho-construction-detail",
+   "pottery": "Shoes Like Pottery 01JP Low Sneaker - Red Sneakers _tab_moon",
+   "bags & leather goods": "Taco Leather Cardholder Wallet Card Holder Accessories Black",
+   "hats & caps": "Mechanics Green Denim Cap Caps Accessories Caps Denim Green "
+  },
+  "observedTypes": [
+   "Aprons",
+   "Bags",
+   "Bandana",
+   "Belts",
+   "Books",
+   "Braces",
+   "Caps",
+   "Card Holder",
+   "Chinos",
+   "Denim Care",
+   "Fabrics",
+   "Footwear",
+   "Gift Card",
+   "Jackets",
+   "Jeans",
+   "Knitwear",
+   "Pocket Square",
+   "Posters",
+   "Scarf",
+   "Shirts",
+   "Shirts & Tops",
+   "Shoe Care",
+   "Shoes",
+   "Shorts",
+   "Sneakers",
+   "Socks",
+   "Sweatshirt",
+   "T-Shirt",
+   "Tools",
+   "Trousers",
+   "Washing Equipment"
+  ],
+  "sample": [
+   "E18 Japanese Twill Uniform Shirt Brown",
+   "E18 Japanese Twill Uniform Shirt Red",
+   "E18 Japanese Twill Uniform Shirt Stone",
+   "W14 Wide Double Pleated Twill Mens Chino Navy",
+   "W14 Wide Double Pleated Twill Mens Chino Beige",
+   "SE4 Shawl Collar Deck Jacket Japanese 10oz Hickory",
+   "One Ear Brand - Kiku Bandana",
+   "SE28 LODEN GREEN BRITISH WOOL GUERNSEY UNISEX SWEATER"
+  ],
+  "checked": "2026-07-31"
+ },
+ "norman-walsh": {
+  "id": "norman-walsh",
+  "shopify": true,
+  "productCount": 115,
+  "tags": [
+   "dairy & cheese"
+  ],
+  "tagEvidence": {
+   "dairy & cheese": "Dorset - Ecru Milk Tea  25ssensign Hot sales lifestyle NEW"
+  },
+  "observedTypes": [],
+  "sample": [
+   "Dorset - Ecru Dusty Blue",
+   "Dorset - Ecru Milk Tea",
+   "Alta - Ecru Gun Metal",
+   "Alta - Smoky Light Brown",
+   "Alta - Ecru Brown",
+   "Tornado - White Grey",
+   "Tornado - Navy Blue",
+   "Tornado - Orange White Blue"
+  ],
+  "checked": "2026-07-31"
+ },
+ "gonalston": {
+  "id": "gonalston",
+  "shopify": false,
+  "reason": "net-ERR_TLS_CERT_ALTNAME_INVALID",
+  "checked": "2026-07-31"
+ },
+ "denstone-hall": {
+  "id": "denstone-hall",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "loch-levens-larder": {
+  "id": "loch-levens-larder",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "cowdray-farm-shop": {
+  "id": "cowdray-farm-shop",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "garsons": {
+  "id": "garsons",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "stansted-park": {
+  "id": "stansted-park",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "emmetts-peasenhall": {
+  "id": "emmetts-peasenhall",
+  "shopify": true,
+  "productCount": 196,
+  "tags": [
+   "bags & leather goods",
+   "bread & bakery",
+   "dairy & cheese",
+   "fruit & veg",
+   "pork & bacon"
+  ],
+  "tagEvidence": {
+   "pork & bacon": "Packets of Emmett's Cooked Ham Ham Black Jasmine Tea Ham Chr",
+   "bags & leather goods": "Emmett's Shopping Bag Selection  MCC",
+   "fruit & veg": "Emmett's Crystallised/Glacé Fruit Pig Crystalised Fruits Amb",
+   "dairy & cheese": "Colston Bassett Smoked Stilton Cheese",
+   "bread & bakery": "Emmett's Cheese and Bread Gift Box Gifts Non-Ambient"
+  },
+  "observedTypes": [
+   "Bacon",
+   "Charcuterie",
+   "Cheese",
+   "Confectionery",
+   "Crystalised Fruits",
+   "Drinks",
+   "Fortified Wine",
+   "Gift",
+   "Gifts",
+   "Groceries & Larder",
+   "Ham",
+   "Hampers",
+   "Juices",
+   "MCC Ham",
+   "Non Smokehouse Ham",
+   "Orange Hams",
+   "Tea",
+   "Wine",
+   "food gifts"
+  ],
+  "sample": [
+   "Soler Romero Organic Extra Virgin Olive Oil",
+   "Packets of Emmett's Cooked Ham",
+   "Martelli Pasta",
+   "Emmett's Gift Voucher",
+   "Emmett's Unsmoked Ham",
+   "Emmett's Valencia Almonds",
+   "Emmett's Naturally Cured Ribs",
+   "Emmett's Truffle Pig"
+  ],
+  "checked": "2026-07-31"
+ },
+ "maple-farm-kelsale": {
+  "id": "maple-farm-kelsale",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "north-sea-clothing": {
+  "id": "north-sea-clothing",
+  "shopify": true,
+  "productCount": 137,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "coats & jackets",
+   "footwear & boots",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "suits & trousers",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "THE EXPEDITION CARDIGAN -  BLACK Wool Knitwear AW18 Cardigan",
+   "scarves & accessories": "THE EXPEDITION CARDIGAN -  BLACK Wool Knitwear AW18 Cardigan",
+   "footwear & boots": "MARINE TYPE 2 DECK SHOE NAVY/ECRU Shoes Deck Ecru Marine Nav",
+   "vests & waistcoats": "BODY WARMER TYPE 2 - OLIVE GREEN, sample sale",
+   "hats & caps": "NS2 HAT - BLACK  Accsessories Deck Hat Knitwear Navy Winter ",
+   "bags & leather goods": "NSC Heavy Tote bag - Cream/Navy blue  Accsessories Cotton He",
+   "suits & trousers": "1952 TROUSER - FRENCH BLUE",
+   "coats & jackets": "1952 PATTERN  COAT - MEN'S",
+   "womenswear": "1952 PATTERN COAT - WOMEN'S",
+   "cashmere & merino": "The \"Aviemore\" Ladies cardigan Navy Blue & Cream Wool Knitwe"
+  },
+  "observedTypes": [
+   "Shoes",
+   "Wool Knitwear"
+  ],
+  "sample": [
+   "THE EXPEDITION CARDIGAN -  BLACK",
+   "THE VOYAGER CARDIGAN - BLACK",
+   "THE VOYAGER CARDIGAN - ORANGE",
+   "THE VOYAGER CARDIGAN - ECRU",
+   "MARINE TYPE 2 DECK SHOE NAVY/ECRU",
+   "MARINE TYPE 2 DECK SHOE ECRU/ORANGE",
+   "BODY WARMER TYPE 2 - OLIVE GREEN, sample sale",
+   "CADET HEAVY LONG SLEEVED CREW WITH POCKET"
+  ],
+  "checked": "2026-07-31"
+ },
+ "genevieve-sweeney": {
+  "id": "genevieve-sweeney",
+  "shopify": true,
+  "productCount": 309,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "childrenswear",
+   "dresses",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "socks",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
+   "cashmere & merino": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
+   "vests & waistcoats": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
+   "womenswear": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
+   "scarves & accessories": "Lambswool Triangle Scarf Bright Red Triangle Scarf Autumn Hu",
+   "tweed & woven goods": "Lambswool Cashmere Tweed Triangle Scarf Teal Blue Triangle S",
+   "shirts": "Maud Lambswool Cashmere Knitted T-shirt in Black Pink Tweed ",
+   "socks": "Mystery Sock Box - 6 pairs mystery sock box Last Chance Last",
+   "jeans & denim": "Sotto Organic Cotton Sock Light Denim Blue Cotton Sock Back ",
+   "dresses": "Aster Jacquard Knitted Dress Olive Womens Dress Sale Sale Wo",
+   "hats & caps": "Lambswool Beanie Caspian Beanie Autumn Hues Beanies British ",
+   "bags & leather goods": "Geometric Lambswool Bag Limited Edition Knitted Bag British ",
+   "childrenswear": "Baby Lambswool Geometric Blanket Gift Set Mint Baby Blanket "
+  },
+  "observedTypes": [
+   "Avis-add-charge",
+   "Baby Blanket Set",
+   "Beanie",
+   "Cotton Sock",
+   "Cotton Walking Sock",
+   "Fingerless Gloves",
+   "Gift Card",
+   "Hood",
+   "Kids Beanie",
+   "Knitted Bag",
+   "Knitwear care",
+   "Long Merino Walking Socks",
+   "Mens Sweater",
+   "Mens Vest",
+   "Merino Alpaca Socks",
+   "Merino Wool Sock",
+   "Merino Wool Walking Socks",
+   "Moss stitch gloves",
+   "Oversized Scarf",
+   "Sock Gift set",
+   "Sparkly Socks",
+   "Triangle Scarf",
+   "Womens Cardigan",
+   "Womens Dress",
+   "Womens Long Socks",
+   "Womens Skirt",
+   "Womens Sweater",
+   "Womens Tshirt",
+   "Womens Vest",
+   "cashmere sock",
+   "gift wrap",
+   "monogram",
+   "mystery sock box",
+   "sock subscription",
+   "womens sweater"
+  ],
+  "sample": [
+   "Soar Merino Wool Textured Stitch Knitted Vest Rose",
+   "Lynn Brushed Wool Sweater Pearl Blue",
+   "Lambswool Triangle Scarf Bright Red",
+   "Lambswool Cashmere Tweed Triangle Scarf Teal Blue",
+   "Lambswool Cashmere Tweed Triangle Scarf Black Pink",
+   "Mauden Lambswool Cashmere V-neck Sweater Teal Blue Tweed",
+   "Mauden Lambswool Cashmere Sweater Teal Blue Tweed",
+   "Mauden Lambswool Cashmere V-neck Sweater Black Tweed"
+  ],
+  "checked": "2026-07-31"
+ },
+ "henry-poole": {
+  "id": "henry-poole",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "anderson-sheppard": {
+  "id": "anderson-sheppard",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "gaziano-girling": {
+  "id": "gaziano-girling",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "llwynhelyg": {
+  "id": "llwynhelyg",
+  "shopify": false,
+  "reason": "http-400",
+  "checked": "2026-07-31"
+ },
+ "knitsley": {
+  "id": "knitsley",
+  "shopify": false,
+  "reason": "http-400",
+  "checked": "2026-07-31"
+ },
+ "tablehurst-farm": {
+  "id": "tablehurst-farm",
+  "shopify": false,
+  "reason": "http-400",
+  "checked": "2026-07-31"
+ },
+ "plumgarths": {
+  "id": "plumgarths",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "otterton-mill": {
+  "id": "otterton-mill",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "weetons": {
+  "id": "weetons",
+  "shopify": true,
+  "productCount": 80,
+  "tags": [
+   "beef",
+   "dairy & cheese",
+   "drinks & spirits",
+   "fruit & veg",
+   "game & venison",
+   "lamb",
+   "plates",
+   "pork & bacon",
+   "poultry",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "pork & bacon": "Yorkshire Gammon Joint  LuxuryDining",
+   "drinks & spirits": "Yorkshire Steak and Ale Pie  LuxuryDining",
+   "fruit & veg": "Apple Tart Dessert LuxuryDining",
+   "game & venison": "Classic Game Pie Side LuxuryDining",
+   "poultry": "Duck Fat Yorkshire Puddings Side LuxuryDining",
+   "dairy & cheese": "Cauliflower Cheese Side LuxuryDining",
+   "lamb": "Carvery Lamb Leg with Rosemary & Garlic Meat LuxuryDining",
+   "beef": "Rolled Sirloin Meat LuxuryDining",
+   "plates": "Fishmonger Platter Fish LuxuryDining",
+   "womenswear": "The Ladies Classic Hamper Hampers Hampers"
+  },
+  "observedTypes": [
+   "Canape",
+   "Cheeseboard",
+   "Dessert",
+   "Fish",
+   "Hampers",
+   "Main",
+   "Meat",
+   "Side",
+   "Starter"
+  ],
+  "sample": [
+   "The Party Hamper",
+   "The Everything Weetons Hamper",
+   "The Gardeners Hamper",
+   "The Time For Tea Hamper",
+   "The Chocolate Lover Giftbag",
+   "The Celebration Giftbag",
+   "The Yorkshire Specialities Giftbag",
+   "The Tea & Coffee Giftbag"
+  ],
+  "checked": "2026-07-31"
+ },
+ "denby-pottery": {
+  "id": "denby-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "burleigh-pottery": {
+  "id": "burleigh-pottery",
+  "shopify": true,
+  "productCount": 30,
+  "tags": [
+   "bowls",
+   "dairy & cheese",
+   "fruit & veg",
+   "mugs",
+   "plates",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "mugs": "Blue Felicity Sandringham Mug Half Pint 284ml/0.5pt Seconds ",
+   "plates": "Pale Blue Calico Plate 21.5cm/8.5\" Seconds Plate Calico Seco",
+   "tableware": "Blue Regal Peacock Mini Teapot Tray Teapot Tray Blue Regal P",
+   "bowls": "Black & White Asiatic Pheasants Small Footed Bowl 16cm Secon",
+   "fruit & veg": "Black & White Asiatic Pheasants Plate 17.5cm/7\" Seconds Plat",
+   "dairy & cheese": "Black & White Asiatic Pheasants Butter Pat 12cm/4.7\" Seconds"
+  },
+  "observedTypes": [
+   "Breakfast Cup",
+   "Breakfast Saucer",
+   "Butter Pat Dish",
+   "Cereal Bowl",
+   "Cow Creamer",
+   "Espresso Cup",
+   "Espresso Saucer",
+   "Footed Bowl",
+   "Half Pint Mug",
+   "Mini Tankard Jug",
+   "Mug",
+   "Plate",
+   "Sandringham Mug",
+   "Sugar Bowl",
+   "Tankard Jug",
+   "Tea Saucer",
+   "Teacup",
+   "Teapot",
+   "Teapot Tray"
+  ],
+  "sample": [
+   "Blue Calico Cow Creamer 150ml/0.25pt Seconds",
+   "Blue Felicity Sandringham Mug Half Pint 284ml/0.5pt Seconds",
+   "Pale Blue Calico Plate 21.5cm/8.5\" Seconds",
+   "Blue Regal Peacock Mini Teapot Tray",
+   "Blue Calico Mini Teapot Tray",
+   "Blue Asiatic Pheasants Mini Teapot Tray",
+   "Pale Blue Felicity Mini Teapot Tray",
+   "Pink Asiatic Pheasants Mini Teapot Tray"
+  ],
+  "checked": "2026-07-31"
+ },
+ "moorcroft": {
+  "id": "moorcroft",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "leach-pottery": {
+  "id": "leach-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "whichford-pottery": {
+  "id": "whichford-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "highland-stoneware": {
+  "id": "highland-stoneware",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "royal-crown-derby": {
+  "id": "royal-crown-derby",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "1882-ltd": {
+  "id": "1882-ltd",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "portmeirion": {
+  "id": "portmeirion",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "emma-alington": {
+  "id": "emma-alington",
+  "shopify": true,
+  "productCount": 76,
+  "tags": [
+   "bowls",
+   "dairy & cheese",
+   "flowerpots",
+   "fruit & veg",
+   "jewellery",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "bowls": "Indigo Vine - Pasta Bowl Pasta Bowl Bowl",
+   "mugs": "Indigo Vine - Mug Large Mug Mug",
+   "pottery": "Hand-Thrown Black Stoneware Planter, Medium Plant Pot Black ",
+   "flowerpots": "Hand-Thrown Black Stoneware Planter, Medium Plant Pot Black ",
+   "tableware": "Milk Jug, 22k Gold Stripes Milk Jug Gold Stripes",
+   "dairy & cheese": "Milk Jug, 22k Gold Stripes Milk Jug Gold Stripes",
+   "plates": "Small Plate, 22k Gold Stripes Small Plate Gold",
+   "fruit & veg": "Salad Plate, Black Earth Salad Plate Black Earth",
+   "jewellery": "Ring Bowls - COMING SOON"
+  },
+  "observedTypes": [
+   "Breakfast Bowl",
+   "Candle",
+   "Dinner Plate",
+   "Espresso",
+   "Gift",
+   "Large Bowl",
+   "Large Mug",
+   "Medium Bowl",
+   "Medium Cup",
+   "Milk Jug",
+   "Pasta Bowl",
+   "Pet Bowl",
+   "Plant Pot",
+   "Salad Plate",
+   "Side Plate",
+   "Small Bowl",
+   "Small Plate",
+   "Soap Dish"
+  ],
+  "sample": [
+   "Indigo Vine - Pasta Bowl",
+   "Indigo Vine - Breakfast Bowl",
+   "Indigo Vine - Coffee Cup",
+   "Indigo Vine - Mug",
+   "Gift Note",
+   "Hand-Thrown Black Stoneware Planter, Medium",
+   "Milk Jug, 22k Gold Stripes",
+   "Large Bowl, 22k Gold Stripes"
+  ],
+  "checked": "2026-07-31"
+ },
+ "feldspar": {
+  "id": "feldspar",
+  "shopify": true,
+  "productCount": 200,
+  "tags": [
+   "bowls",
+   "bread & bakery",
+   "dairy & cheese",
+   "fruit & veg",
+   "jewellery",
+   "mugs",
+   "plates",
+   "tableware",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "tableware": "Russet Teapot - 1l Drinkware tea",
+   "bowls": "Russet Shallow Serving Bowl Tableware",
+   "plates": "Russet Cake Plate Dinnerware plates tableware",
+   "bread & bakery": "Russet Cake Plate Dinnerware plates tableware",
+   "mugs": "12oz Russet Tea Mug Drinkware Drinkware",
+   "dairy & cheese": "Russet Butter Dish Kitchenware kitchenware",
+   "jewellery": "Large Canelé Pendant Homeware Candle Candles & Lighting home",
+   "fruit & veg": "Tanya Ling  x Feldspar Fruit Bowl Tableware bowls tableware",
+   "tweed & woven goods": "Moor Blanket Homeware blankets homeware"
+  },
+  "observedTypes": [
+   "Colander",
+   "Dinnerware",
+   "Drinkware",
+   "Gifting",
+   "Homeware",
+   "Kitchenware",
+   "Sale",
+   "Serveware",
+   "Sets",
+   "Tableware"
+  ],
+  "sample": [
+   "Giant Footed Vase",
+   "Big Eared Vase",
+   "Tubby Vase",
+   "Russet Teapot - 1l",
+   "Russet Shallow Serving Bowl",
+   "Russet Cake Plate",
+   "12oz Russet Tea Mug",
+   "Russet Pasta Bowl"
+  ],
+  "checked": "2026-07-31"
+ },
+ "rye-pottery": {
+  "id": "rye-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "dunoon-ceramics": {
+  "id": "dunoon-ceramics",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "linda-bloomfield": {
+  "id": "linda-bloomfield",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "sue-pryke": {
+  "id": "sue-pryke",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "brickett-davda": {
+  "id": "brickett-davda",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "gwili-pottery": {
+  "id": "gwili-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "edinbane-pottery": {
+  "id": "edinbane-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "sytch-farm-studios": {
+  "id": "sytch-farm-studios",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "belleek-pottery": {
+  "id": "belleek-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "clive-bowen": {
+  "id": "clive-bowen",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "jim-malone": {
+  "id": "jim-malone",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "matthew-blakely": {
+  "id": "matthew-blakely",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "fitch-and-mcandrew": {
+  "id": "fitch-and-mcandrew",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "bridge-pottery": {
+  "id": "bridge-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "brookhouse-pottery": {
+  "id": "brookhouse-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "maze-hill-pottery": {
+  "id": "maze-hill-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "sasha-wardell": {
+  "id": "sasha-wardell",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "jane-hamlyn": {
+  "id": "jane-hamlyn",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "walter-keeler": {
+  "id": "walter-keeler",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "sandy-brown": {
+  "id": "sandy-brown",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "john-pollex": {
+  "id": "john-pollex",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "penny-simpson": {
+  "id": "penny-simpson",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "chris-keenan": {
+  "id": "chris-keenan",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "sue-paraskeva": {
+  "id": "sue-paraskeva",
+  "shopify": false,
+  "reason": "net-EPROTO",
+  "checked": "2026-07-31"
+ },
+ "akiko-hirai": {
+  "id": "akiko-hirai",
+  "shopify": false,
+  "reason": "net-ERR_TLS_CERT_ALTNAME_INVALID",
+  "checked": "2026-07-31"
+ },
+ "james-tilla-waters": {
+  "id": "james-tilla-waters",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "jack-doherty": {
+  "id": "jack-doherty",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "adam-buick": {
+  "id": "adam-buick",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "nicola-werner": {
+  "id": "nicola-werner",
+  "shopify": true,
+  "productCount": 164,
+  "tags": [
+   "bowls",
+   "fruit & veg",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "pottery": "Handmade Ceramic Trio Of 6\" Tiles - Mistletoe Lime Teal + Li",
+   "bowls": "Large Handmade Ceramic Flat Bowl - Clementines Coral Flat Bo",
+   "fruit & veg": "Large Handmade Ceramic Salad Bowl - Fuchsia Yellow + Yellow ",
+   "tableware": "Small Handmade Ceramic Rounded Jug - Strawberry Teal Jug",
+   "mugs": "Small Handmade Ceramic Mug - Strawberry in Lime Mug",
+   "plates": "Handmade Ceramic Sideplate - Strawberry in Yellow Side Plate"
+  },
+  "observedTypes": [
+   "Breakfast Plate",
+   "Cachepot",
+   "Cereal Bowl",
+   "Dinner Plate",
+   "Flat Bowl",
+   "Jug",
+   "Lamp",
+   "Mat",
+   "Mug",
+   "Online Gift Voucher",
+   "Pasta Bowl",
+   "Platter",
+   "Rimmed Bowl",
+   "Salad Bowl",
+   "Side Plate",
+   "Small Bowl",
+   "Tile",
+   "Vase"
+  ],
+  "sample": [
+   "Handmade Ceramic Trio Of 6\" Tiles - Mistletoe Lime Teal + Lime Hen",
+   "Large Handmade Ceramic Lamp - Cherries in Purple",
+   "Large Handmade Ceramic Flat Bowl - Clementines Coral",
+   "Handmade Ceramic Cereal Bowl - Fuchsia Purple",
+   "Large Handmade Ceramic Salad Bowl - Fuchsia Yellow + Yellow Hen",
+   "Large Handmade Ceramic Lamp - Irises Yellow",
+   "Small Handmade Ceramic Salad Bowl - Mistletoe Lime Teal",
+   "Small Handmade Ceramic Rounded Jug - Strawberry Teal"
+  ],
+  "checked": "2026-07-31"
+ },
+ "katharina-klug": {
+  "id": "katharina-klug",
+  "shopify": false,
+  "reason": "net-ENOTFOUND",
+  "checked": "2026-07-31"
+ },
+ "churchill-china": {
+  "id": "churchill-china",
+  "shopify": true,
+  "productCount": 461,
+  "tags": [
+   "bowls",
+   "mugs",
+   "plates",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "plates": "Raku Topaz Blue Square Plate 25.2cm Plate Made From: Churchi",
+   "mugs": "Bluberry Blue Mug 34cl/12oz Mug Made From: Churchill Super V",
+   "bowls": "Nutmeg Coupe Bowl 18.2cm Bowl Made From: Churchill Super Vit",
+   "poultry": "Stonecast Duck Egg Blue Noodle Bowl 107.5cl Bowl Range: Ston"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Bowl",
+   "Cup",
+   "Gift Cards",
+   "Mug",
+   "Plate",
+   "Saucer"
+  ],
+  "sample": [
+   "Raku Topaz Blue Square Plate 25.2cm",
+   "Bluberry Blue Mug 34cl/12oz",
+   "Petal Pink Mug 34cl/12oz",
+   "Nutmeg Coupe Bowl 18.2cm",
+   "Nutmeg Coupe Bowl 31cm",
+   "Nutmeg Coupe Bowl 24.8cm",
+   "Nutmeg Coupe Plate 16.5cm",
+   "Nutmeg Coupe Plate 21.7cm"
+  ],
+  "checked": "2026-07-31"
+ },
+ "cornishware-tg-green": {
+  "id": "cornishware-tg-green",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "littlethorpe-potteries": {
+  "id": "littlethorpe-potteries",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "errington-reay": {
+  "id": "errington-reay",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "anta": {
+  "id": "anta",
+  "shopify": true,
+  "productCount": 989,
+  "tags": [
+   "bags & leather goods",
+   "bowls",
+   "cashmere & merino",
+   "childrenswear",
+   "dairy & cheese",
+   "fruit & veg",
+   "game & venison",
+   "mugs",
+   "plates",
+   "pottery",
+   "poultry",
+   "scarves & accessories",
+   "suits & trousers",
+   "tableware",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "Freddie Clunes Carpet Bag Carpet Bag AUGBAG25 AUGSALECARPETB",
+   "plates": "Holly Side Plate Plate ANTA10 Clearance Design: Holly FULL P",
+   "mugs": "Holly Beaker Beaker ANTA10 Clearance Design: Holly FULL PRIC",
+   "tableware": "Holly Small Milk Jug Jug ANTA10 Clearance Colour: Cream Colo",
+   "pottery": "Holly Small Milk Jug Jug ANTA10 Clearance Colour: Cream Colo",
+   "dairy & cheese": "Holly Small Milk Jug Jug ANTA10 Clearance Colour: Cream Colo",
+   "bowls": "Holly Baking Dish Dish Advent24 ANTA10 Clearance Colour: Cre",
+   "fruit & veg": "Holly Salad Bowl Bowl Advent24 Advent: Day 18 ANTA10 Clearan",
+   "tweed & woven goods": "Ben Ghlas Lowland Wool Tweed Fabric ANTA10 Colour: Purple De",
+   "cashmere & merino": "Shandwick Scottish Lambswool Throw Cushion Cover Cushion ANT",
+   "game & venison": "Bunny Rabbit Small Mug Mug ANTA10 design: bunny rabbit QF di",
+   "poultry": "Duck Feather Cushion Pad Cushion Pad ANTA10 FULL PRICE WN24",
+   "scarves & accessories": "Nutini Wool Cotton Scarf Scarf Advent: Day 8 ANTA10 FULL PRI",
+   "childrenswear": "Rowan Baby Blanket Baby Shawl ANTA10 Colour: Blue Colour: Re",
+   "suits & trousers": "Blue Green Check Linen Baby Trousers Baby Trouser AW25 Baby "
+  },
+  "observedTypes": [
+   "Baby Shawl",
+   "Baby Trouser",
+   "Beaker",
+   "Binding",
+   "Book",
+   "Bowl",
+   "Candle",
+   "Card",
+   "Carpet",
+   "Carpet Bag",
+   "Carpet Rug",
+   "Chair",
+   "Cheese Dome",
+   "Cube",
+   "Cushion",
+   "Cushion Pad",
+   "Decoration",
+   "Dish",
+   "Dog Bed",
+   "Doorstop",
+   "Fabric",
+   "Furniture",
+   "Gift Cards",
+   "Jigsaw",
+   "Jug",
+   "Lamp",
+   "Lampshade",
+   "Mug",
+   "Paint",
+   "Pet Accessories",
+   "Plate",
+   "Salad Servers",
+   "Sample",
+   "Scarf",
+   "Shipping",
+   "Sofa",
+   "Table",
+   "Teapot",
+   "Throw",
+   "Tie"
+  ],
+  "sample": [
+   "Carpet Bench",
+   "Carpet Small Stool",
+   "Carpet Medium Stool",
+   "Carpet Large Stool",
+   "Freddie Clunes Carpet Bag",
+   "Poolewe Carpet Bag",
+   "Stella Stewart Carpet Bag",
+   "Holly Side Plate"
+  ],
+  "checked": "2026-07-31"
+ },
+ "crail-pottery": {
+  "id": "crail-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "ballydougan-pottery": {
+  "id": "ballydougan-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "ola-gorie": {
+  "id": "ola-gorie",
+  "shopify": true,
+  "productCount": 407,
+  "tags": [
+   "cufflinks & signets",
+   "jewellery",
+   "suits & trousers",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "jewellery": "Chanticleer Pendant Pendant 4020 Chanticleer Contemporary Je",
+   "womenswear": "Tryst Ladies Ring Ring 4020 Made To Order metafield_processe",
+   "suits & trousers": "Sirius Wedding Suite Rings Ring 4020 Classic Jewellery Made ",
+   "cufflinks & signets": "Thistle Cufflinks - Gents Cufflinks 4020 Cufflinks Made To O"
+  },
+  "observedTypes": [
+   "Bracelet",
+   "Brooch",
+   "Chain",
+   "Charm",
+   "Cufflinks",
+   "Earrings",
+   "Gift Cards",
+   "Gift Wrapping",
+   "Kilt Pin",
+   "Locket",
+   "Necklet",
+   "Neckwear",
+   "Pendant",
+   "Ring"
+  ],
+  "sample": [
+   "Curb Chain - Gold",
+   "Curb Chain - Silver",
+   "Chanticleer Pendant",
+   "North Star Necklet",
+   "Puffin Drop Earrings",
+   "Cloudberry Black Pearl Pendant",
+   "Echo Amethyst Ring",
+   "Cloudberry Long Stud Earrings"
+  ],
+  "checked": "2026-07-31"
+ },
+ "deakin-and-francis": {
+  "id": "deakin-and-francis",
+  "shopify": true,
+  "productCount": 1000,
+  "tags": [
+   "bags & leather goods",
+   "childrenswear",
+   "cufflinks & signets",
+   "dresses",
+   "footwear & boots",
+   "fruit & veg",
+   "game & venison",
+   "hats & caps",
+   "jeans & denim",
+   "jewellery",
+   "mugs",
+   "plates",
+   "poultry",
+   "scarves & accessories",
+   "silverware",
+   "suits & trousers",
+   "tableware",
+   "tweed & woven goods",
+   "umbrellas",
+   "watches",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "cufflinks & signets": "Cufflinks Cleaning Set Cleaning",
+   "silverware": "Sterling Silver Mother of Pearl and Sapphire Round Cufflinks",
+   "jewellery": "Yellow Gold Oval Signet Ring (12x10mm) Signet Ring auto-pre-",
+   "mugs": "Sterling Silver 7oz Hip Flask Beakers auto-pre-order Barware",
+   "watches": "Cufflinks And Watches Gun Case Homeware auto-pre-order Homew",
+   "hats & caps": "Sterling Silver Pheasant Cufflinks with Cap & Ear Defenders ",
+   "game & venison": "Sterling Silver Pheasant Cufflinks with Cap & Ear Defenders ",
+   "fruit & veg": "Sterling Silver Art Deco Nouveau Fruit Cufflinks Cufflinks A",
+   "dresses": "Sterling Silver Onyx Inlay Dress Set With Diamond Centre Dre",
+   "plates": "Rose Gold Plated Sterling Silver Skull Cufflinks With Diamon",
+   "poultry": "Sterling Silver Christmas Turkey Cufflinks Cufflinks Animal ",
+   "footwear & boots": "Travel Size Pheasant Head Shoehorn Shoe Horn Accessories aut",
+   "tableware": "Sterling Silver Old English Drinking Beaker Beakers auto-pre",
+   "scarves & accessories": "Sterling Silver Enamel Cufflinks and Tie Slide Set Cufflinks",
+   "suits & trousers": "Sterling Silver Grey Suit Businessman Cufflinks Cufflinks au",
+   "umbrellas": "Small Black Umbrella With Stag Head Handle In Silver Finish ",
+   "jeans & denim": "Sterling Silver Lilac and Denim Blue Enamel Pattern Cufflink",
+   "bags & leather goods": "Sterling Silver Blue Golf Bag Cufflinks Cufflinks auto-pre-o",
+   "childrenswear": "Sterling Silver Mother and Baby Elephant Cufflinks Cufflinks",
+   "womenswear": "Sterling Silver Ladies Facetted Bangle Bracelet auto-pre-ord",
+   "tweed & woven goods": "Sterling Silver Woven Effect Bangle Bracelet Accessories aut"
+  },
+  "observedTypes": [
+   "Beakers",
+   "Bracelet",
+   "Card Holder",
+   "Cleaning",
+   "Corkscrew",
+   "Cufflinks",
+   "Decanter",
+   "Dress Sets",
+   "Earrings",
+   "Gift Card",
+   "Homeware",
+   "Key Ring",
+   "Lapel Pin",
+   "Money Clip",
+   "Necklace",
+   "Ring Size",
+   "Shoe Horn",
+   "Signet Ring",
+   "Tie Slide",
+   "Tumbler",
+   "Umbrella",
+   "Walking Stick",
+   "Wallet",
+   "Wine Cooler",
+   "ring"
+  ],
+  "sample": [
+   "Cufflinks Cleaning Set",
+   "Sterling Silver Mother of Pearl and Sapphire Round Cufflinks",
+   "Sterling Silver Hand-Enamelled American Flag Lapel Pin",
+   "Sterling Silver Hand-Enamelled USA Flag Shield Lapel Pin",
+   "Oval Sterling Silver Hand-Enamelled USA Flag Lapel Pin",
+   "Yellow Gold Oval Signet Ring (12x10mm)",
+   "Yellow Gold Cushion Signet Ring (12x10mm)",
+   "Yellow Gold Oval Signet Ring (10.5x8.5mm)"
+  ],
+  "checked": "2026-07-31"
+ },
+ "hamilton-and-inches": {
+  "id": "hamilton-and-inches",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "alex-monroe": {
+  "id": "alex-monroe",
+  "shopify": true,
+  "productCount": 245,
+  "tags": [
+   "childrenswear",
+   "cufflinks & signets",
+   "fruit & veg",
+   "game & venison",
+   "jewellery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "jewellery": "Leek Pin Brooch Brooch back-in-stock Bountiful Treasures Lea",
+   "childrenswear": "18ct Solid Gold Baby Bee Necklace Necklace Animal Favourites",
+   "cufflinks & signets": "Ammonite Cufflink Cufflink Beyond The Sea Groom Menswear New",
+   "fruit & veg": "Apple Blossom Cocktail Ring Ring Animal Favourites backorder",
+   "game & venison": "White Rabbit Necklace Necklace Animal Favourites Personalise",
+   "tableware": "Teeny Tiny Teapot Necklace Necklace Animal Favourites Bestse"
+  },
+  "observedTypes": [
+   "Book",
+   "Bracelet",
+   "Brooch",
+   "Cufflink",
+   "Earring",
+   "Gift Voucher",
+   "Necklace",
+   "Notebook",
+   "Ring",
+   "Wallpaper"
+  ],
+  "sample": [
+   "Leek Pin Brooch",
+   "Cherry Blossom Branch Inline Necklace",
+   "Tiny Daisy Stud Earrings with Teeny Weeny Bee Drop",
+   "Mini Heart Seed Flower Stud Earrings",
+   "Geometric Sprouting Rosette Necklace",
+   "Watering Can Pouring Chain Hook Earrings",
+   "Small Sprouting Rosette Necklace",
+   "Heart Seed Flower Stud Earrings"
+  ],
+  "checked": "2026-07-31"
+ },
+ "cw-sellors": {
+  "id": "cw-sellors",
+  "shopify": true,
+  "productCount": 1000,
+  "tags": [
+   "activewear",
+   "dresses",
+   "fruit & veg",
+   "game & venison",
+   "jewellery",
+   "plates",
+   "pottery",
+   "scarves & accessories",
+   "silverware",
+   "watches",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "womenswear": "Faberge Heritage Forever Mini Fluted Ruby Pendant Pendant 0.",
+   "jewellery": "Faberge Heritage Forever Mini Fluted Ruby Pendant Pendant 0.",
+   "plates": "Shaun Leane Talon 18ct Yellow Gold Plated Sterling Silver La",
+   "silverware": "Shaun Leane Talon 18ct Yellow Gold Plated Sterling Silver La",
+   "pottery": "Shaun Leane Sabre Deco Sterling Silver Ceramic Chain Bracele",
+   "dresses": "Shaun Leane Sabre Deco Sterling Silver Ceramic Crossover Rin",
+   "watches": "Clogau Brenig Sports Mens Watch Watch Bracelet/ Strap: Stain",
+   "scarves & accessories": "Shaun Leane Quill Sterling Silver Black Wrap Bracelet Bracel",
+   "game & venison": "Art In Bronze Pheasant by Butler & Peach Gift 2076 Brand: Ar",
+   "activewear": "Art In Bronze Fox Running by Butler & Peach Gift 2015 Brand:",
+   "fruit & veg": "Art In Bronze Mouse in Apple by Butler & Peach Gift 2063 Bra"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Bracelet",
+   "Brooch",
+   "Charm",
+   "Earring",
+   "Earrings",
+   "Figurine",
+   "Gift",
+   "Giftware",
+   "Keyring",
+   "Necklace",
+   "Necklet",
+   "Pendant",
+   "Ring",
+   "Watch"
+  ],
+  "sample": [
+   "Faberge Heritage Forever Mini Fluted Ruby Pendant",
+   "Shaun Leane Talon 18ct Yellow Gold Plated Sterling Silver Large Hoop E",
+   "Thomas Sabo Sterling Silver Cubic Zirconia Heart Stud Earrings",
+   "9ct Yellow Gold Whitby Jet Marquise Drop Necklace",
+   "Sterling Silver Blue John Four Stone Curved Oblong Necklace",
+   "Sterling Silver Turquoise Four Stone Curved Oblong Necklace",
+   "Sterling Silver Turquoise Marquise Necklace",
+   "9ct Yellow Gold Blue John Marquise Necklace"
+  ],
+  "checked": "2026-07-31"
+ },
+ "rhiannon": {
+  "id": "rhiannon",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "hebridean-jewellery": {
+  "id": "hebridean-jewellery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "roger-w-smith": {
+  "id": "roger-w-smith",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "charles-frodsham": {
+  "id": "charles-frodsham",
+  "shopify": false,
+  "reason": "not-json",
+  "checked": "2026-07-31"
+ },
+ "garrick-watchmakers": {
+  "id": "garrick-watchmakers",
+  "shopify": true,
+  "productCount": 30,
+  "tags": [
+   "watches"
+  ],
+  "tagEvidence": {
+   "watches": "S3 Deadbeat Seconds - Power Reserve  Watches"
+  },
+  "observedTypes": [],
+  "sample": [
+   "S3 Deadbeat Seconds - Power Reserve",
+   "S7 Timepiece",
+   "Vintage Suede Watch Strap",
+   "Toad Skin Watch Strap",
+   "Toad Skin Strap",
+   "Suede Crocodile Skin Watch Strap",
+   "Shark Skin Watch Strap",
+   "Python Watch Strap"
+  ],
+  "checked": "2026-07-31"
+ },
+ "anordain": {
+  "id": "anordain",
+  "shopify": true,
+  "productCount": 57,
+  "tags": [
+   "pottery",
+   "watches"
+  ],
+  "tagEvidence": {
+   "watches": "Handmade watch strap specification",
+   "pottery": "Model 2 Porcelain - Medium Watch"
+  },
+  "observedTypes": [
+   "Watch",
+   "Watches"
+  ],
+  "sample": [
+   "Handmade watch strap specification",
+   "Handmade watch strap",
+   "Model 1 Payne's Grey Fumé – all sizes",
+   "Model 1 Blue Fumé – all sizes",
+   "Model 1 Plum Fumé – all sizes",
+   "Model 1 Green Fumé – all sizes",
+   "Model 2 Porcelain - Medium",
+   "Letters from Assynt"
+  ],
+  "checked": "2026-07-31"
+ },
+ "bremont": {
+  "id": "bremont",
+  "shopify": true,
+  "productCount": 129,
+  "tags": [
+   "jewellery",
+   "pottery",
+   "watches",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "watches": "Supernova 41mm Chronograph Hawking Edition Rubber Strap Watc",
+   "jewellery": "Supernova 41mm Chronograph Hawking Edition Bracelet Watches ",
+   "womenswear": "Terra Nova 38 Jumping Hour, Stealth Black Watches | Mens | T",
+   "pottery": "Supermarine Full Ceramic, Polar White Watches | Mens | Super"
+  },
+  "observedTypes": [
+   "Accessories | Straps | Mens | Leather",
+   "Accessories | Straps | Rubber",
+   "Accessories | Wayfinder | Bracelet | Stainless Steel",
+   "Tour",
+   "Watches | Mens | Altitude",
+   "Watches | Mens | HMAF",
+   "Watches | Mens | Supermarine",
+   "Watches | Mens | Supernova",
+   "Watches | Mens | Terra Nova",
+   "Watches | Mens | Terra Nova | Discontinued",
+   "Wayfinder | Accessories | Straps | NATO"
+  ],
+  "sample": [
+   "Supernova 41mm Chronograph Hawking Edition Rubber Strap",
+   "Supernova 41mm Chronograph Hawking Edition Bracelet",
+   "Terra Nova 42.5MM HRR Chronograph Leather Strap",
+   "Terra Nova 42.5MM HRR Chronograph Bracelet",
+   "Terra Nova 40.5mm Jumping Hour 1776 Bracelet",
+   "Terra Nova 40.5mm Jumping Hour 1776 Leather Strap",
+   "HMAF Commemorative Watch Box Set",
+   "HMAF Terra Nova 40.5mm Date Bracelet"
+  ],
+  "checked": "2026-07-31"
+ },
+ "fears-watches": {
+  "id": "fears-watches",
+  "shopify": true,
+  "productCount": 97,
+  "tags": [
+   "hats & caps",
+   "jewellery",
+   "plates",
+   "watches"
+  ],
+  "tagEvidence": {
+   "hats & caps": "180th Anniversary Baseball Cap",
+   "jewellery": "Brunswick 38 'De Stijl Edition' (exclusively for Ace Jeweler",
+   "plates": "Brunswick Midas II  __tab1:brunswick-midas-ii-specification ",
+   "watches": "Archival 1930  __tab1:specification-archival-1930 __tab2:shi"
+  },
+  "observedTypes": [
+   "Case",
+   "Limited Edition Prints"
+  ],
+  "sample": [
+   "180th Anniversary Baseball Cap",
+   "Brunswick 40 'Helmsman' ES",
+   "MING Polymesh",
+   "Brunswick 40.5 Jump Hour 'China Blue'",
+   "Redcliff 39.5 Sherbet Yellow",
+   "Redcliff 39.5 Soft Peach",
+   "Redcliff 39.5 Pale Lilac",
+   "Brunswick 40 Filton 'Raven Black'"
+  ],
+  "checked": "2026-07-31"
+ },
+ "mourne-textiles": {
+  "id": "mourne-textiles",
+  "shopify": true,
+  "productCount": 337,
+  "tags": [
+   "bags & leather goods",
+   "poultry",
+   "scarves & accessories",
+   "suits & trousers",
+   "tableware",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "Wildflower Scarf Collection - Flax Flower Blue Scarves wildf",
+   "tweed & woven goods": "Tweed Emphasize Neck Warmer - Graphic Grey Scarf neck warmer",
+   "suits & trousers": "Mourne Heritage Offcut- Blazer Fabric Curtain Mourne Classic",
+   "tableware": "Mourne Check Placemats - Slate Tableware placemat",
+   "poultry": "Mourne Classic Blanket - Duck Egg Blanket blanket",
+   "bags & leather goods": "Woven Tote Bag"
+  },
+  "observedTypes": [
+   "Blanket",
+   "Cushion",
+   "Fabric",
+   "For Children",
+   "Gift Card",
+   "Homeware",
+   "Neck Warmer",
+   "Scarf",
+   "Scarves",
+   "Tableware",
+   "scarves"
+  ],
+  "sample": [
+   "Wildflower Scarf Collection - Flax Flower Blue",
+   "Tweed Emphasize Neck Warmer - Graphic Grey",
+   "Mourne Heritage Offcut- Blazer",
+   "Mourne Mist Offcut- 203/3",
+   "Mourne Mist Offcut- 203/2",
+   "Mourne Mist Offcut- 202/20",
+   "Mourne Mist Offcut- 202/8",
+   "Mourne Mist Offcut- 202/6"
+  ],
+  "checked": "2026-07-31"
+ },
+ "thomas-ferguson-linen": {
+  "id": "thomas-ferguson-linen",
+  "shopify": true,
+  "productCount": 133,
+  "tags": [
+   "bags & leather goods",
+   "childrenswear",
+   "jewellery",
+   "poultry",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "The Kells Linen Laundry Bag  Natural Paul Costelloe Paul Cos",
+   "tweed & woven goods": "Kells Woolen Throw - Light Fawn  Light Fawn Paul Costelloe P",
+   "scarves & accessories": "Goth Linen Scarf Sun Bed Towel 100% Linen Black Fergusons Go",
+   "womenswear": "Ladies Linen Handkerchiefs Handkerchiefs Claddagh Fergusons ",
+   "poultry": "Duck Tea Towels Tea Towels Natural Navy Tea Towels Timeless",
+   "childrenswear": "Baby Shamrock Tea Towel - Green Tea Towel Green Irish Herita",
+   "jewellery": "Irish Linen Wedding Ring Cushion Special Gifts 100% Linen Cl"
+  },
+  "observedTypes": [
+   "012 Bed Sheets",
+   "012 Cocktail Mats",
+   "012 Duvet Covers",
+   "012 Lace-edge Tablecloths",
+   "012 Napkins",
+   "012 Pillowcases",
+   "012 Placemats",
+   "012 Tablecloths",
+   "8/2 Chambray Napkins",
+   "8/8 Classic Linen Coasters",
+   "8/8 Classic Linen Napkins",
+   "8/8 Classic Linen Placemats",
+   "8/8 Classic Linen Runners",
+   "8/8 Classic Linen Tablecloths",
+   "Apparel",
+   "Blanket",
+   "Blankets",
+   "Christmas",
+   "Damask Napkins",
+   "Damask Placemats",
+   "Damask Runners",
+   "Damask Tablecloths",
+   "Double Damask Napkins",
+   "Double Damask Placemats",
+   "Double Damask Tablecloths",
+   "Fabric by the Metre",
+   "Handkerchiefs",
+   "Huck Towels",
+   "Laundry Bags",
+   "Linen Bag",
+   "Linen Bedding",
+   "Linen Blankets",
+   "Linen Table Centres",
+   "Linen/Cotton Towels",
+   "Packaging",
+   "Pillow case",
+   "Special Gifts",
+   "Stable Rubbers",
+   "Sun Bed Towel",
+   "Tea Towel"
+  ],
+  "sample": [
+   "Kells Pillowcase (Oyster)",
+   "Kells Duvet Cover (Oyster)",
+   "The Kells Linen Laundry Bag",
+   "Kells Damask Pillowcase (Natural)",
+   "Kells Damask Duvet Cover (Natural)",
+   "Kells Woolen Throw - Light Fawn",
+   "Flax Pickers Woolen Throw",
+   "Paul Costelloe Classic Throws"
+  ],
+  "checked": "2026-07-31"
+ },
+ "ballylagan-organic": {
+  "id": "ballylagan-organic",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "eden-pottery": {
+  "id": "eden-pottery",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "steensons": {
+  "id": "steensons",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "faller": {
+  "id": "faller",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "nomadic-watches": {
+  "id": "nomadic-watches",
+  "shopify": true,
+  "productCount": 80,
+  "tags": [
+   "jewellery",
+   "watches"
+  ],
+  "tagEvidence": {
+   "watches": "Céad 126 - Crimson Dawn - Chronograph Watches",
+   "jewellery": "Aerolink (Jubilee) Bracelet Accessory accessory"
+  },
+  "observedTypes": [
+   "Accessory",
+   "Special Project",
+   "Straps",
+   "Watches"
+  ],
+  "sample": [
+   "Seol Black Deployant Strap",
+   "Céad 126 - Crimson Dawn - Chronograph",
+   "Céad 126 - Deep Ocean Blue - Chronograph",
+   "Emerald Abyss - Maraí 401 - 40mm Dive Watch (2026 Edition)",
+   "Classic Black and Gold - Maraí 401 - 40mm Dive Watch (2026 Edition)",
+   "Deep Ocean Blue - Maraí 401 - 40mm Dive Watch (2026 Edition)",
+   "Crimson Dawn - Maraí 401 - 40mm Dive Watch (2026 Edition)",
+   "Pitch Black - Maraí 401 - 40mm Dive Watch (2026 Edition)"
+  ],
+  "checked": "2026-07-31"
+ },
+ "yarmouth-oilskins": {
+  "id": "yarmouth-oilskins",
+  "shopify": true,
+  "productCount": 87,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "coats & jackets",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "vests & waistcoats",
+   "watches",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "watches": "The Winter Watchcap Hats accessories Hats Oilskins",
+   "coats & jackets": "The Champion Jacket - Navy  aw octmen Oilskins outerwear win",
+   "suits & trousers": "The Steadfast Trousers - Natural Trousers Trousers winter",
+   "shirts": "The Deck Shirt - Stripe Shirts exclusive julymen sale Shirt ",
+   "knitwear": "The 'Industry' Submariner Knit - Navy Knitwear christmas kni",
+   "workwear & aprons": "The Yarmouth Apron - Navy  accessories apron artisan aw chri",
+   "scarves & accessories": "The Shawl Collar Smock - Ecru Smocks exclusive febmen1 julyw",
+   "bags & leather goods": "The Market Bag Bags accessories Bags christmas",
+   "braces & belts": "The Everyday Belt  accessories august christmas marmen marwo",
+   "vests & waistcoats": "The Reversible Vest - Fern Vests aw christmas exclusive may ",
+   "hats & caps": "The Original Sou'wester Hat Hats accessories christmas Hats "
+  },
+  "observedTypes": [
+   "Bags",
+   "Dungarees",
+   "Hats",
+   "Jackets",
+   "Knitwear",
+   "Oilskins",
+   "Shirts",
+   "Shorts",
+   "Smocks",
+   "Trousers",
+   "Vests",
+   "coats"
+  ],
+  "sample": [
+   "Yarmouth Oilskins Gift Card",
+   "The Winter Watchcap",
+   "The Champion Jacket - Navy",
+   "The All English Tee",
+   "The Drivers Jacket - Natural",
+   "The Drivers Jacket - Navy",
+   "The Drivers Jacket - Khaki",
+   "The Steadfast Trousers - Natural"
+  ],
+  "checked": "2026-07-31"
+ },
+ "farfield-clothing": {
+  "id": "farfield-clothing",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "troy-london": {
+  "id": "troy-london",
+  "shopify": true,
+  "productCount": 8,
+  "tags": [
+   "coats & jackets",
+   "vests & waistcoats"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Men's Wax Jacket in Camo Jacket Modatrova outletmen",
+   "vests & waistcoats": "Men's Suede Gilet in Chocolate Gilet"
+  },
+  "observedTypes": [
+   "Gilet",
+   "Jacket"
+  ],
+  "sample": [
+   "Men's Wax Jacket in Camo",
+   "Men's Suede Gilet in Chocolate",
+   "Men's Suede Gilet in Navy",
+   "Men's Suede Gilet in Tan",
+   "Men's Wax Jacket in Navy",
+   "Men's Wax Jacket in Khaki",
+   "Men's Wax Jacket in Military Green",
+   "Wax Parka in Camo"
+  ],
+  "checked": "2026-07-31"
+ },
+ "mcnair-shirts": {
+  "id": "mcnair-shirts",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "fieldware-co": {
+  "id": "fieldware-co",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "hegarty-london": {
+  "id": "hegarty-london",
+  "shopify": true,
+  "productCount": 28,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "coats & jackets",
+   "jeans & denim",
+   "scarves & accessories",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "cashmere & merino": "CASHMERE BOMBER JACKET Bomber Varsity",
+   "coats & jackets": "CASHMERE BOMBER JACKET Bomber Varsity",
+   "scarves & accessories": "LIGHT GREY LAMBSWOOL SCARF Scarf",
+   "tweed & woven goods": "TAN CHECK BLUE TARTAN LAMBSWOOL SCARF Scarf",
+   "jeans & denim": "SELVEDGE DENIM TOTE BAG BAG",
+   "bags & leather goods": "SELVEDGE DENIM TOTE BAG BAG"
+  },
+  "observedTypes": [
+   "BAG",
+   "Biker Jacket",
+   "Bomber Varsity",
+   "Cloak",
+   "Coat",
+   "Denim Jacket",
+   "Denim Trucker Jacket",
+   "Double Breasted Cashmere and Wool Overcoat",
+   "Pea Coat",
+   "Scarf",
+   "Trench Coat"
+  ],
+  "sample": [
+   "CASHMERE BOMBER JACKET",
+   "WIDE LEG MID RISE INDIGO JEANS",
+   "WIDE LEG MID RISE INDIGO JEANS",
+   "TRENCH COAT",
+   "LIGHT GREY LAMBSWOOL SCARF",
+   "DOUBLE BREASTED CASHMERE & WOOL OVERCOAT",
+   "CASHMERE & WOOL PEA COAT",
+   "NAVY BLUE LAMBSWOOL SCARF"
+  ],
+  "checked": "2026-07-31"
+ },
+ "lochcarron": {
+  "id": "lochcarron",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "berk": {
+  "id": "berk",
+  "shopify": true,
+  "productCount": 164,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "footwear & boots",
+   "game & venison",
+   "hats & caps",
+   "knitwear",
+   "poultry",
+   "scarves & accessories",
+   "shirts",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Superfine Geelong™ 1 Ply - Cardigan Merino Crew Merino Crew ",
+   "cashmere & merino": "Superfine Geelong™ 1 Ply - Cardigan Merino Crew Merino Crew ",
+   "coats & jackets": "Seberg Cashmere Cable 4 Ply Cashmere Jacket 4 ply Cashmere s",
+   "womenswear": "Seberg Cashmere Cable 4 Ply Cashmere Jacket 4 ply Cashmere s",
+   "hats & caps": "Adele  Cashmere Cable Hat II - 3 Ply 3 ply Hat",
+   "poultry": "Duck Albert Slippers",
+   "footwear & boots": "Club Slipper II Albert Slippers Plain womens-master",
+   "scarves & accessories": "Innerleithen Wrap 75\"/28\" LG Cashmere Stole",
+   "tweed & woven goods": "Innerleithen  Cashmere Throw 75\"/55\" EXL Cashmere Throw",
+   "game & venison": "Pleasant Pheasant Albert Slippers Albert Slippers Bang Duck!",
+   "vests & waistcoats": "Superfine Geelong™ 1 Ply - Waistcoat/Vest Waistcoat size-men",
+   "shirts": "Pullman  Cashmere  Polo 1 Ply Polo Shirt Cashmere Polo shirt"
+  },
+  "observedTypes": [
+   "1 Ply Vee Neck",
+   "1 ply Cashmere Crew Neck",
+   "2 Ply Vee Neck",
+   "2 ply vee neck sweater",
+   "3 ply Hat",
+   "4 ply vee neck sweater",
+   "Accessories",
+   "Adrian Sea Island Cotton",
+   "Albert Slippers",
+   "Belper Extra Fine Merino",
+   "Bespoke Monogram Slippers",
+   "Blenheim Extra Fine Merino",
+   "Bobby 30-Gauge Sea Island Cotton",
+   "Bradwell 30-Gauge Sea Island Cotton",
+   "Cable Crew Neck Sweater",
+   "Cardigan",
+   "Carly 30-Gauge Sea Island Cotton",
+   "Cashmere Cable Sweater",
+   "Cashmere Cardigan",
+   "Cashmere Jacket",
+   "Cashmere Scarf",
+   "Cashmere Stole",
+   "Cashmere Sweater",
+   "Cashmere Throw",
+   "Cashmere Vest",
+   "Cashmere Wrap",
+   "Cassandra Sea Island Cotton",
+   "Catkin Extra Fine Merino",
+   "Classic Cashmere Scarf",
+   "Crew Neck Cashmere Sweater",
+   "Crew Neck Sweater",
+   "Daniella 30-Gauge Sea Island Cotton",
+   "Dorset 30-Gauge Sea Island Cotton",
+   "Finchley 30-Gauge Sea Island Cotton",
+   "Gloves",
+   "Harcourt 30-Gauge Sea Island Cotton",
+   "Hatfield 30-Gauge Sea Island Cotton",
+   "Hawley 30-Gauge Sea Island Cotton",
+   "Isis 30-Gauge Sea Island Cotton",
+   "Islington 30-Gauge Sea Island Cotton"
+  ],
+  "sample": [
+   "Fleur-de-lys' White (Copy)",
+   "Superfine Geelong™ 1 Ply - Cardigan",
+   "Superfine Geelong™ 1 PLY- Vee Neck",
+   "Sola - Sea Island Cotton",
+   "Yasmin 30-Gauge Sea Island Cotton",
+   "EMMA - SEA ISLAND COTTON)",
+   "EVONNE - SEA ISLAND COTTON",
+   "ANNE - SEA ISLAND COTTON"
+  ],
+  "checked": "2026-07-31"
+ },
+ "colhays": {
+  "id": "colhays",
+  "shopify": true,
+  "productCount": 85,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "knitwear",
+   "scarves & accessories",
+   "shirts"
+  ],
+  "tagEvidence": {
+   "cashmere & merino": "Merino sport shirt in vintage cream  Merino",
+   "shirts": "Merino sport shirt in vintage cream  Merino",
+   "knitwear": "Cashmere painter's shawl collar cardigan in dark brown  Cash",
+   "scarves & accessories": "Cashmere painter's shawl collar cardigan in dark brown  Cash",
+   "coats & jackets": "Superfine lambswool shawl coat in navy  Lambswool"
+  },
+  "observedTypes": [],
+  "sample": [
+   "Merino sport shirt in vintage cream",
+   "Merino sport shirt in olive",
+   "Merino sport shirt in navy",
+   "Merino sport shirt in camel",
+   "Extra-long Staple Cotton Coach Polo in Grey",
+   "Extra-long Staple Cotton Coach Polo in Brown",
+   "Extra-long Staple Cotton Coach Polo in Black",
+   "Cashmere painter's shawl collar cardigan in dark brown"
+  ],
+  "checked": "2026-07-31"
+ },
+ "mallochs": {
+  "id": "mallochs",
+  "shopify": true,
+  "productCount": 46,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "shirts"
+  ],
+  "tagEvidence": {
+   "knitwear": "Navy Preston Superfine Lambswool Crew Neck Jumper  fine knit",
+   "cashmere & merino": "Navy Preston Superfine Lambswool Crew Neck Jumper  fine knit",
+   "shirts": "Malloch's x John Smedley Light Grey Cromford Sea Island Cott",
+   "jeans & denim": "Ecru Denim Shopping Tote Tote Bag tote",
+   "bags & leather goods": "Ecru Denim Shopping Tote Tote Bag tote",
+   "hats & caps": "Navy Grange Lambswool Hat Hat beanie hat lambswool made in s"
+  },
+  "observedTypes": [
+   "Hat",
+   "Jumper",
+   "Tote Bag"
+  ],
+  "sample": [
+   "Navy Preston Superfine Lambswool Crew Neck Jumper",
+   "Navy Kelso \"Shaggy Dog\" Brushed Shetland Jumper",
+   "Brown Kelso \"Shaggy Dog\" Brushed Shetland Jumper",
+   "Malloch's x John Smedley Light Grey Cromford Sea Island Cotton Polo Sh",
+   "Malloch's x John Smedley Brown Cromford Sea Island Cotton Polo Shirt",
+   "Malloch's x John Smedley Khaki Green Cromford Sea Island Cotton Polo S",
+   "Malloch's x John Smedley French Navy Cromford Sea Island Cotton Polo S",
+   "Malloch's x John Smedley Navy Cromford Sea Island Cotton Polo Shirt"
+  ],
+  "checked": "2026-07-31"
+ },
+ "glenbrae": {
+  "id": "glenbrae",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "michael-ross-knitwear": {
+  "id": "michael-ross-knitwear",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "mars-knitwear": {
+  "id": "mars-knitwear",
+  "shopify": true,
+  "productCount": 349,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "fruit & veg",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "plates",
+   "scarves & accessories",
+   "shirts",
+   "tweed & woven goods",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "watches",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "British Wool - Shooting Jumper - 648 - Brown Shirts & Tops _",
+   "cashmere & merino": "Lambswool - Seamless Crew - 804 - Navy Shirts & Tops _tab9_w",
+   "tweed & woven goods": "British Wool Throw - 769 - Aran Cable - Ecru Blankets _tab9_",
+   "womenswear": "Lambswool - Ladies - Seamless Crew Piece Unique - 798 Shirts",
+   "coats & jackets": "Lambswool Chore Jacket - 800 - Purple  _tab9_wash-care-wool ",
+   "vests & waistcoats": "Lambswool - Ribbed Vest - 567 - Tartan Shirts & Tops _tab9_w",
+   "hats & caps": "Seamless Lambswool Beanie 2.0 - Navy White Hats _tab9_wash-c",
+   "underwear & nightwear": "Recycled Cotton - Socks - Grey / Tartan Green Apparel & Acce",
+   "fruit & veg": "British Wool Quarter Zip - Brunel - Dark Apple Shirts & Tops",
+   "jeans & denim": "British Wool Long Honeycomb Scarf - Denim Scarves _tab9_wash",
+   "scarves & accessories": "British Wool Long Honeycomb Scarf - Denim Scarves _tab9_wash",
+   "plates": "British Wool Throw - Chevron - Plated Grey Blankets _tab9_wa",
+   "shirts": "Recycled Organic Cotton T-Shirt - Kinda Navy T-Shirts _tab9_",
+   "watches": "Merino Wool Signature Watch Cap - Navy Hats _tab9_wash-care-"
+  },
+  "observedTypes": [
+   "Apparel & Accessories > Clothing > Underwear & Socks > Socks",
+   "Blankets",
+   "Gift Card",
+   "Hats",
+   "Jumpers",
+   "Poncho",
+   "Scarves",
+   "Shirts & Tops",
+   "T-Shirts"
+  ],
+  "sample": [
+   "Geelong Seamless Crew - 459 - Piece Unique",
+   "Geelong Seamless Crew - 455 - Piece Unique",
+   "British Wool - Shooting Jumper - 648 - Brown",
+   "Lambswool - Seamless Crew - 804 - Navy",
+   "Lambswool - Seamless Crew - 805 - Light Navy",
+   "Lambswool - Seamless Crew - 806 - Green",
+   "Lambswool - Seamless Crew - 807 - Cream",
+   "Lambswool - Seamless Crew - 808 - Cream"
+  ],
+  "checked": "2026-07-31"
+ },
+ "glencroft": {
+  "id": "glencroft",
+  "shopify": true,
+  "productCount": 186,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "childrenswear",
+   "coats & jackets",
+   "footwear & boots",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "tweed & woven goods",
+   "watches",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "cashmere & merino": "100% Cashmere Stole Scarf Plain Colours",
+   "scarves & accessories": "100% Cashmere Stole Scarf Plain Colours",
+   "tweed & woven goods": "100% Cashmere Tartan Plaid Scarf - Scottish Made",
+   "hats & caps": "Waxed Cotton Ladies Bow Wide Brim Hat Wax Hat hats wax hats",
+   "womenswear": "Waxed Cotton Ladies Bow Wide Brim Hat Wax Hat hats wax hats",
+   "knitwear": "Clapdale Wool Knit Kit - Fingerless Gloves  clapdale",
+   "bags & leather goods": "Traceable Clapdale Wool Dalesbred Zip Pouch Bag  bags clapda",
+   "childrenswear": "Real Sheepskin Baby Bootees  kids slippers",
+   "shirts": "Glencroft Ingleborough Sheep T-Shirt  knitwear men women",
+   "braces & belts": "British Made Real Leather Belt - Wide",
+   "watches": "100% Wool Tartan Travel Rug - Black Watch",
+   "footwear & boots": "Real Sheepskin Mule Slipper with Sole - Sizes 3 and 12 ONLY ",
+   "coats & jackets": "Sheepskin Aviator Flying Jacket  jackets"
+  },
+  "observedTypes": [
+   "Beanie Hat",
+   "Flat Cap",
+   "Sheepskin Hat",
+   "Tweed Hat",
+   "Wax Hat"
+  ],
+  "sample": [
+   "100% Cashmere Stole Scarf Plain Colours",
+   "Scottish 100% Cashmere Wide Scarf Herringbone Pattern",
+   "Tottenham Enourmous Natural Grey and Cream Icelandic Sheepskin Rug",
+   "Whetstone Enormous Natural Grey and Cream Icelandic Sheepskin Rug",
+   "Brook Brown Spotty Jacob Sheepskin Rug",
+   "Stanmore Jacob Breed Spotty British Sheepskin Rug",
+   "Temple Spotty Jacob Breed Jacob Sheepskin Rug",
+   "Sudbury Jacob Breed Spotty British Sheepskin Rug"
+  ],
+  "checked": "2026-07-31"
+ },
+ "izzy-lane": {
+  "id": "izzy-lane",
+  "shopify": true,
+  "productCount": 0,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [],
+  "sample": [],
+  "checked": "2026-07-31"
+ },
+ "eas-fors": {
+  "id": "eas-fors",
+  "shopify": true,
+  "productCount": 31,
+  "tags": [
+   "bowls",
+   "cashmere & merino",
+   "childrenswear",
+   "hats & caps",
+   "scarves & accessories",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "Eorsa Scarf Mist Scarves eorsa scarf",
+   "hats & caps": "Benmore Beanie Mist Hats hat new",
+   "cashmere & merino": "Lambswool Socks Ink Blue Socks MadeScotland",
+   "childrenswear": "Lambswool Baby Blanket Blanket baby blanket homeware kids",
+   "tweed & woven goods": "Lambswool Baby Blanket Blanket baby blanket homeware kids",
+   "bowls": "Organic Cotton Cleaning Cloth Dish Cloth dishcloth homeware "
+  },
+  "observedTypes": [
+   "Blanket",
+   "Dish Cloth",
+   "Gift Cards",
+   "Hand Warmers",
+   "Hats",
+   "Scarves",
+   "Shawls",
+   "Socks"
+  ],
+  "sample": [
+   "Eorsa Scarf Mist",
+   "Cearcall Scarf Mono",
+   "Feàrna Shawl Grey",
+   "Benmore Beanie Mist",
+   "Cowl Scarf Cherry",
+   "Cearcall Scarf Natural",
+   "Cearcall Scarf Sea Green",
+   "Feàrna Shawl Sea Green"
+  ],
+  "checked": "2026-07-31"
+ },
+ "carnwear": {
+  "id": "carnwear",
+  "shopify": false,
+  "reason": "http-400",
+  "checked": "2026-07-31"
+ },
+ "quinton-chadwick": {
+  "id": "quinton-chadwick",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "croft-house": {
+  "id": "croft-house",
+  "shopify": true,
+  "productCount": 322,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "poultry",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Womens Geelong Superfine Lambswool V Neck Jumper - Oatmeal D",
+   "cashmere & merino": "Womens Geelong Superfine Lambswool V Neck Jumper - Oatmeal D",
+   "womenswear": "Womens Geelong Superfine Lambswool V Neck Jumper - Oatmeal D",
+   "hats & caps": "Tweed Fair isle beanie hat - Navy Gold Default Migrated Cate",
+   "tweed & woven goods": "Tweed Fair isle beanie hat - Navy Gold Default Migrated Cate",
+   "scarves & accessories": "Tweed Fair isle scarf - Charcoal Grey Default Migrated Categ",
+   "jeans & denim": "Womens Chunky cuffed jumper - Denim Default Migrated Categor",
+   "bags & leather goods": "Recycled Tote Bag  Category_Default Category Migrated/Men/Ac",
+   "poultry": "Womens Aviemore Yoke Fair Isle Jumper - Duck Egg Default Mig"
+  },
+  "observedTypes": [
+   "Colour Configurable Migrated",
+   "Default Migrated"
+  ],
+  "sample": [
+   "Clothes moth deterrent natural hanging sachets x5 - May Chang",
+   "Clothes moth deterrent natural drawer sachets x4 - May Chang",
+   "Clothes moth deterrent natural reed diffuser - May Chang",
+   "Natural wool wash with clothes moth deterrent oils",
+   "Natural pheromone clothes moth trap",
+   "Natural pheromone clothes moth trap refill pack x2",
+   "Chrysanthemum natural clothes moth killer spray",
+   "Clothes moth deterrent natural hanging sachets x5 - Vetivert"
+  ],
+  "checked": "2026-07-31"
+ },
+ "goral": {
+  "id": "goral",
+  "shopify": true,
+  "productCount": 112,
+  "tags": [
+   "bags & leather goods",
+   "coats & jackets",
+   "footwear & boots",
+   "hats & caps",
+   "jeans & denim",
+   "scarves & accessories",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Rose Anvil X GORAL Shearling Aviator Jacket Horween Chromexc",
+   "footwear & boots": "Rose Anvil X GORAL SMUGS High Top Sneaker 2.0 - Shell Cordov",
+   "scarves & accessories": "MELLOR II Sneaker - Horween Ink Leather Shoes Arrival_Made-T",
+   "workwear & aprons": "PORTER Barefoot Apron Boot - Natural Horween Chromexcel Leat",
+   "jeans & denim": "MELLOR GORAL x Naked & Famous Denim Sneakers - 32 oz Japanes",
+   "hats & caps": "SCC Baseball Cap  Arrival_In-Stock not customizable",
+   "bags & leather goods": "Off-White Organic Cotton Tote Bag  Arrival_In-Stock not cust"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Gift Card",
+   "Insoles",
+   "Laces",
+   "Services",
+   "Shoes",
+   "Sneakers",
+   "UNLISTED PRODUCTS"
+  ],
+  "sample": [
+   "Rose Anvil X GORAL Shearling Aviator Jacket Horween Chromexcel Leather",
+   "Rose Anvil X GORAL Shearling Aviator Jacket Horween Chromexcel Leather",
+   "Rose Anvil X GORAL SMUGS High Top Sneaker 2.0 - Shell Cordovan Black",
+   "Rose Anvil X GORAL SMUGS High Top Sneaker 2.0 - Shell Cordovan Bourbon",
+   "Rose Anvil X GORAL SMUGS High Top Sneaker 2.0 - Shell Cordovan No.8",
+   "Rose Anvil X GORAL SMUGS High Top Sneaker 2.0 - Shell Cordovan Reverse",
+   "TUGGS Rose Anvil X GORAL Pull On Boot - Horween Chromexcel Dark Brown ",
+   "TUGGS Rose Anvil X GORAL Pull On Boot - Blood Core PRE-ORDER"
+  ],
+  "checked": "2026-07-31"
+ },
+ "billy-tannery": {
+  "id": "billy-tannery",
+  "shopify": true,
+  "productCount": 30,
+  "tags": [
+   "bags & leather goods",
+   "footwear & boots",
+   "scarves & accessories",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "The Forager Bags Bag",
+   "footwear & boots": "The Desert Boot Shoes Boots sd_partial sd_preorder",
+   "scarves & accessories": "The Key Wrap Key Cases",
+   "workwear & aprons": "The Leather Apron Aprons"
+  },
+  "observedTypes": [
+   "Aprons",
+   "Bags",
+   "Gift Cards",
+   "Glasses Cases",
+   "Key Cases",
+   "Leather Care",
+   "Pouches",
+   "Shoes",
+   "Stationery",
+   "Wallets"
+  ],
+  "sample": [
+   "The Forager",
+   "The Large Pouch",
+   "The Small Pouch",
+   "The Holdall",
+   "The Green Garden Fork - Wrapped",
+   "The Red Garden Fork - Wrapped",
+   "The Garden Trowel - Wrapped",
+   "Billy x Cheaney Boots"
+  ],
+  "checked": "2026-07-31"
+ },
+ "cherchbi": {
+  "id": "cherchbi",
+  "shopify": true,
+  "productCount": 14,
+  "tags": [
+   "bags & leather goods",
+   "tweed & woven goods",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "Squires Holdall Medium Holdall Hainsworth Holdall Luggage Tr",
+   "workwear & aprons": "Barrett Slim Briefcase Briefcase Briefcase facebook Hainswor",
+   "tweed & woven goods": "Norwich Satchel Medium Satchel Herdwyck Tweed"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Briefcase",
+   "Holdall",
+   "Rucksack",
+   "Satchel",
+   "Sleeve",
+   "Tote Bag"
+  ],
+  "sample": [
+   "British Flora Key Fob, Solid Brass,",
+   "Squires Holdall Medium",
+   "Squires Holdall Large",
+   "Large Library Tote",
+   "Haversack",
+   "Black Sail Rucksack",
+   "Barrett Sleeve",
+   "Barrett Slim Briefcase"
+  ],
+  "checked": "2026-07-31"
+ },
+ "mcrostie": {
+  "id": "mcrostie",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "english-fine-cottons": {
+  "id": "english-fine-cottons",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "ghhurt": {
+  "id": "ghhurt",
+  "shopify": true,
+  "productCount": 193,
+  "tags": [
+   "cashmere & merino",
+   "childrenswear",
+   "fruit & veg",
+   "hats & caps",
+   "jewellery",
+   "knitwear",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "knitwear": "Cashmere Baby Booties - White Knitwear Baby Cashmere euro us",
+   "cashmere & merino": "Cashmere Baby Booties - White Knitwear Baby Cashmere euro us",
+   "childrenswear": "Cashmere Baby Booties - White Knitwear Baby Cashmere euro us",
+   "scarves & accessories": "Large Plain Knit Lambswool Triangle Scarf - Dark Brown Scarf",
+   "hats & caps": "Baby Fawn Hat - White Baby Clothing euro usa",
+   "womenswear": "Ladies Lambswool Plain Knit Scarf - Brass Scarf euro usa Wom",
+   "fruit & veg": "Apple of my Eye Baby Shawl - Soft Jade Babywear Baby Baby Sh",
+   "tweed & woven goods": "Supersoft Lambswool Baby Blanket - Natural Babywear Baby eur",
+   "jewellery": "Jewel Cashmere Scarf - Claret Scarf Cashmere Jewel euro usa "
+  },
+  "observedTypes": [
+   "Baby Clothing",
+   "Babywear",
+   "Knitwear",
+   "Scarf"
+  ],
+  "sample": [
+   "Cashmere Baby Booties - White",
+   "Cashmere Baby Booties - Pink",
+   "Cashmere Baby Booties - Blue",
+   "Cashmere Baby Leggings - White",
+   "Cashmere Baby Leggings - Pink",
+   "Cashmere Baby Leggings - Blue",
+   "Luxuriously Soft Lambswool Snood - Derby Grey",
+   "Large Plain Knit Lambswool Triangle Scarf - Dark Brown"
+  ],
+  "checked": "2026-07-31"
+ },
+ "house-of-cheviot": {
+  "id": "house-of-cheviot",
+  "shopify": true,
+  "productCount": 289,
+  "tags": [
+   "cashmere & merino",
+   "fruit & veg",
+   "game & venison",
+   "hats & caps",
+   "jeans & denim",
+   "scarves & accessories",
+   "socks",
+   "tweed & woven goods",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "womenswear": "Ladies Fairisle Socks ~ Boom",
+   "tweed & woven goods": "Fairisle Socks ~ Tartan Green",
+   "cashmere & merino": "Ladies Cashmere Lounge Socks ~ Grey Flannel",
+   "jeans & denim": "Ladies Welly Socks ~ Denim",
+   "scarves & accessories": "Ladies Cashmere Cable Scarf ~ Plum",
+   "hats & caps": "Ladies Cashmere Cable Beanie ~ Mocha",
+   "socks": "Lowes Sock ~ Flaxen",
+   "game & venison": "Pheasant Cotton Socks ~ Spruce",
+   "fruit & veg": "Lady Glenmore Socks ~ Apple Green"
+  },
+  "observedTypes": [
+   "Women's Socks"
+  ],
+  "sample": [
+   "Lady Rannoch Socks ~ Navy",
+   "Ladies Fairisle Socks ~ Boom",
+   "Ladies Fairisle Socks ~ Thistle",
+   "Fairisle Socks ~ Mulberry",
+   "Fairisle Socks ~ Tartan Green",
+   "Ladies Cashmere Lounge Socks ~ Grey Flannel",
+   "Ladies Cashmere Lounge Socks ~ Chalk",
+   "Ladies Cashmere Lounge Socks ~ Powder Blue"
+  ],
+  "checked": "2026-07-31"
+ },
+ "and-daughter": {
+  "id": "and-daughter",
+  "shopify": true,
+  "productCount": 112,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "knitwear": "Tahra Cashmere V-Neck in Pale Pink V-NECK &Daughter british ",
+   "cashmere & merino": "Tahra Cashmere V-Neck in Pale Pink V-NECK &Daughter british ",
+   "shirts": "Emer Cashmere T-Shirt in Lilac T-SHIRTS &Daughter cashmere c",
+   "scarves & accessories": "Fionn XL Cashmere Foulard in Pale Pink SCARVES 100% Cashmere",
+   "tweed & woven goods": "Patchwork Hand Intarsia Blanket in Multi Accessories Accesso",
+   "coats & jackets": "Cashel Chore Jacket in Derby Grey JACKETS 100% Lambswool 5gg",
+   "hats & caps": "Rib Trim Cashmere Hat in Port and Punch Mouliné HATS AW26 Ca"
+  },
+  "observedTypes": [
+   "Accessories",
+   "CARDIGAN",
+   "CREWNECK",
+   "Cardigan",
+   "Crewneck",
+   "Gift Card",
+   "HATS",
+   "HIGH NECK",
+   "JACKETS",
+   "MENS",
+   "POLO SHIRT",
+   "Polo Shirt",
+   "SCARVES",
+   "SOCKS",
+   "Service",
+   "T-SHIRTS",
+   "V-NECK",
+   "V-Neck"
+  ],
+  "sample": [
+   "Tahra Cashmere V-Neck in Pale Pink",
+   "Emer Cashmere T-Shirt in Lilac",
+   "Aoife Cashmere Polo Shirt in Canvas",
+   "Aoife Cashmere Polo Shirt in Pale Pink",
+   "Rooney Rib Crewneck in Vintage Blue",
+   "Fionn XL Cashmere Foulard in Pale Pink",
+   "Sligo Crewneck in Poppy Red",
+   "Sligo Crewneck in Hazelnut"
+  ],
+  "checked": "2026-07-31"
+ },
+ "woolkind": {
+  "id": "woolkind",
+  "shopify": true,
+  "productCount": 57,
+  "tags": [
+   "cashmere & merino",
+   "scarves & accessories",
+   "tweed & woven goods",
+   "vests & waistcoats"
+  ],
+  "tagEvidence": {
+   "cashmere & merino": "Custom Merino Wool Tank Top Garment colour block colour clas",
+   "vests & waistcoats": "Custom Merino Wool Tank Top Garment colour block colour clas",
+   "scarves & accessories": "Self-Coloured Skinny Scarf Narrow Scarf colour pop gift neut",
+   "tweed & woven goods": "Not a Tartan Head Warmer Headband gift neutral Off Kilter Re"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Fingerless Mittens",
+   "Garment",
+   "Headband",
+   "Infinity Scarf",
+   "Narrow Scarf",
+   "Neck Warmer",
+   "Standard Scarf",
+   "Wrap"
+  ],
+  "sample": [
+   "Custom Merino Wool Tank Top",
+   "Self-Coloured Skinny Scarf",
+   "Limited Edition Love is Love Scarf",
+   "Merino Wool Neckerchief",
+   "Merino Wool Poncho",
+   "Custom Skinny Motif Scarf",
+   "Skinny Love Heart Scarf",
+   "Skinny Sunshine Scarf"
+  ],
+  "checked": "2026-07-31"
+ },
+ "london-tradition": {
+  "id": "london-tradition",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "grenfell": {
+  "id": "grenfell",
+  "shopify": true,
+  "productCount": 94,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Despatch Riders Coat Two-Tone Gabardine Sage  collection_tre",
+   "cashmere & merino": "Chatham Peacoat Merino Wool Navy Coat collection_casual colo"
+  },
+  "observedTypes": [
+   "Coat",
+   "Jacket",
+   "Parka Coat",
+   "Parka Jacket",
+   "Rain Coat"
+  ],
+  "sample": [
+   "Despatch Riders Coat Two-Tone Gabardine Sage",
+   "Shooter Cotton Gabardine Laundered Sage",
+   "Shooter Grenfell Cloth Laundered Green",
+   "Scafell Grenfell Cloth Navy",
+   "Scafell Grenfell Cloth Green",
+   "Tourer Grenfell Cloth Green",
+   "Labrador Corduroy Tan",
+   "Labrador Grenfell Cloth Black"
+  ],
+  "checked": "2026-07-31"
+ },
+ "gloverall": {
+  "id": "gloverall",
+  "shopify": true,
+  "productCount": 134,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "coats & jackets",
+   "dresses",
+   "footwear & boots",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "watches",
+   "womenswear",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Men's Original Monty Duffle Coat Duffle Coat heritage mens-o",
+   "womenswear": "Women's Original Monty Duffle Coat Duffle Coat heritage wome",
+   "footwear & boots": "Men's Robert Loafers Shoe accessory Further Reduction mens-r",
+   "jeans & denim": "Men's Dawson Denim Type II Trucker Jacket Denim Jacket jacke",
+   "vests & waistcoats": "Men's Roger Gilet Gilet Further Reduction jacket mens-roger-",
+   "tweed & woven goods": "Men's Hynes Harris Tweed® Overcoat Overcoat AW25 AW26 herita",
+   "scarves & accessories": "Unisex Fisherman Scarf Scarf accessory gift unisex-fisherman",
+   "cashmere & merino": "Unisex Cashmere Scarf Scarf accessory gift unisex-cashmere-s",
+   "bags & leather goods": "Unisex Gloverall x Minnessak Cross Body Bag Bag accessory gi",
+   "hats & caps": "Unisex Merino Wool Watch Cap Beanie accessory gift unisex-me",
+   "watches": "Unisex Merino Wool Watch Cap Beanie accessory gift unisex-me",
+   "shirts": "Men's 'G' Print T-shirt T-Shirt mens-g-print-t-shirt SS26 to",
+   "knitwear": "Men's Fisherman Jumper Jumper jumper-cardigan knitwear mens-",
+   "workwear & aprons": "Men's Miles Overall Overall mens-miles-overall SS25 surplus",
+   "suits & trousers": "Men's Dawson Denim Wide Leg Fit Jeans Washed Indigo Trousers",
+   "dresses": "Women's Shirt Dress Check Shirt Dress surplus womens-shirt-d"
+  },
+  "observedTypes": [
+   "Anorak",
+   "Badge",
+   "Bag",
+   "Beanie",
+   "Cagoule",
+   "Cap",
+   "Car Coat",
+   "Cardigan",
+   "Care & Repair",
+   "Chore Jacket",
+   "Denim Jacket",
+   "Donkey Jacket",
+   "Duffle Coat",
+   "Duffle Jacket",
+   "Field Jacket",
+   "Fleece",
+   "Gift Card",
+   "Gilet",
+   "Hoodie",
+   "Jacket",
+   "Jumper",
+   "Liner Jacket",
+   "Overall",
+   "Overcoat",
+   "Packable Jacket",
+   "Parka",
+   "Peacoat",
+   "Polo Shirt",
+   "Quilted Jacket",
+   "Raincoat",
+   "Scarf",
+   "Shirt",
+   "Shirt Dress",
+   "Shoe",
+   "Sweatshirt",
+   "T-Shirt",
+   "Trench Coat",
+   "Trousers",
+   "Varsity Jacket"
+  ],
+  "sample": [
+   "Men's Original Monty Duffle Coat",
+   "Men's Morris Duffle Coat",
+   "Men's Mid-Length Monty Duffle Coat",
+   "Men's Morris Mid-Length Duffle Coat",
+   "Women's Original Monty Duffle Coat",
+   "Women's Freda Short Slim Fit Duffle Coat",
+   "Women's Freda Long Slim Fit Duffle Coat",
+   "Women's Freda Duffle Coat Silver"
+  ],
+  "checked": "2026-07-31"
+ },
+ "yarmo": {
+  "id": "yarmo",
+  "shopify": true,
+  "productCount": 13,
+  "tags": [
+   "braces & belts",
+   "cashmere & merino",
+   "coats & jackets",
+   "knitwear",
+   "shirts",
+   "suits & trousers",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "knitwear": "Aran Woollen Mills Knitted Merino Wool Polo Neck Sweater - B",
+   "cashmere & merino": "Aran Woollen Mills Knitted Merino Wool Polo Neck Sweater - B",
+   "coats & jackets": "Yarmo Mens Sailcloth Zip Up Jacket, Navy - JK184 Jacket Casu",
+   "braces & belts": "Yarmo Bib and Brace Overalls, Sailcloth Cotton, Navy - BB011",
+   "suits & trousers": "Yarmo Sailcloth Work Trousers, Navy - TR011 Work Trousers In",
+   "workwear & aprons": "Yarmo Sailcloth Work Trousers, Navy - TR011 Work Trousers In",
+   "shirts": "Yarmo Shirt, Men's Long Sleeve Sailcloth Cotton Work Shirt ,"
+  },
+  "observedTypes": [
+   "Bib and Brace",
+   "Jacket",
+   "Jumper",
+   "Shirt",
+   "Smock",
+   "Work Trousers"
+  ],
+  "sample": [
+   "Aran Woollen Mills Knitted Merino Wool Polo Neck Sweater - B406",
+   "Aran Woollen Mills Traditional Aran 100% Merino Wool Sweater - A823",
+   "Yarmo Mens Sailcloth Zip Up Jacket, Navy - JK184",
+   "Yarmo Mens Sailcloth Cotton Engineers Jacket, Navy - JK011",
+   "Yarmo Fishermans Sailcloth Cotton Smock Round Neck, Breton Red- SM0102",
+   "Yarmo Fishermans Sailcloth Cotton Smock Round Neck, Navy- SM0102",
+   "Yarmo Bib and Brace Overalls, Sailcloth Cotton, Navy - BB011",
+   "Yarmo Cotton Storemans Warehouse, Open All Hours Shopkeepers Coat, Dus"
+  ],
+  "checked": "2026-07-31"
+ },
+ "buffalo-systems": {
+  "id": "buffalo-systems",
+  "shopify": true,
+  "productCount": 42,
+  "tags": [
+   "coats & jackets",
+   "hats & caps",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Men's Belay Jacket - Anthracite w/ Patch  Cold Weather Featu",
+   "shirts": "Men's Mountain Shirt - Anthracite w/ Patch Shirt Clothing Me",
+   "womenswear": "Women's O3 Jacket  Featured Jacket Light Insulation Lightwei",
+   "vests & waistcoats": "Women's Teclite Gilet  Featured Light Insulation new-arrival",
+   "hats & caps": "Olive Kendal Cap - Red Shield Patch",
+   "tweed & woven goods": "The Buffalo Field Blanket Blanket Blanket Cold Weather Essen",
+   "suits & trousers": "Special 6 Trousers Trousers Clothing Cold Weather Mens Mid-w"
+  },
+  "observedTypes": [
+   "Blanket",
+   "Coat",
+   "Shirt",
+   "Trousers"
+  ],
+  "sample": [
+   "Men's Belay Jacket - Anthracite w/ Patch",
+   "Men's Mountain Shirt - Anthracite w/ Patch",
+   "Buffalo Systems Plum Logo T-Shirt",
+   "Women's O3 Jacket",
+   "Women's Teclite Gilet",
+   "Men's O3 Jacket",
+   "Buffalo Systems Functional Outdoor Clothing Tee",
+   "Olive Kendal Cap - Red Shield Patch"
+  ],
+  "checked": "2026-07-31"
+ },
+ "aero-leather": {
+  "id": "aero-leather",
+  "shopify": false,
+  "reason": "http-404",
+  "checked": "2026-07-31"
+ },
+ "fox-umbrellas": {
+  "id": "fox-umbrellas",
+  "shopify": true,
+  "productCount": 250,
+  "tags": [
+   "dresses",
+   "game & venison",
+   "poultry",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "womenswear": "WLT7 Nickel Dragon Head (NEW 2026) mws_apo_generated Ladies ",
+   "game & venison": "WLT7 Nickel Rabbit Head (NEW 2026) mws_apo_generated Ladies ",
+   "poultry": "FWS2 Nickel Finish Duck Head Walking Stick (NEW 2026) mws_ap",
+   "dresses": "EWS4 Vine Silver Top Dress Stick mws_apo_generated mws_apo_g"
+  },
+  "observedTypes": [
+   "Gents Tube",
+   "Ladies Tube",
+   "Parasols",
+   "Telescopic",
+   "Walking Stick",
+   "mws_apo_generated"
+  ],
+  "sample": [
+   "WLT7 Nickel Dragon Head (NEW 2026)",
+   "NWS4 Bark Chestnut Crook",
+   "TEL16 (8 Rib) Brown Finish Horse Head (NEW 2026)",
+   "WLT5 Brown Finish Fox Head (NEW 2026)",
+   "TEL9 (10 Rib) Nickel Horse Head (NEW 2026)",
+   "FWS2 Nickel Finish Dragon Head Walking Stick (NEW 2026)",
+   "TEL7 (10 Rib) Brown Finish Horse Head (NEW 2026)",
+   "WLT7 Nickel Rabbit Head (NEW 2026)"
+  ],
+  "checked": "2026-07-31"
+ },
+ "budd-shirts": {
+  "id": "budd-shirts",
+  "shopify": true,
+  "productCount": 1000,
+  "tags": [
+   "braces & belts",
+   "cashmere & merino",
+   "childrenswear",
+   "coats & jackets",
+   "cufflinks & signets",
+   "dairy & cheese",
+   "dresses",
+   "game & venison",
+   "hats & caps",
+   "jeans & denim",
+   "jewellery",
+   "knitwear",
+   "mugs",
+   "scarves & accessories",
+   "shirts",
+   "silverware",
+   "socks",
+   "suits & trousers",
+   "tweed & woven goods",
+   "umbrellas",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "shirts": "Classic Fit Hand Pleated Silk Double Cuff Dress Shirt in Cre",
+   "scarves & accessories": "Classic Fit Hand Pleated Silk Double Cuff Dress Shirt in Cre",
+   "dresses": "Round Sterling Silver and Mother of Pearl Cufflinks Cufflink",
+   "cufflinks & signets": "Round Sterling Silver and Mother of Pearl Cufflinks Cufflink",
+   "silverware": "Round Sterling Silver and Mother of Pearl Cufflinks Cufflink",
+   "underwear & nightwear": "WM Brown Oxford Dressing Gown in Gio Blue Dressing Gowns Blu",
+   "knitwear": "Holt Cotton Fine Knit Long Sleeve Polo Shirt in Navy Knitwea",
+   "tweed & woven goods": "Prince of Wales Check Georgette Silk Tie in Sage Green Ties ",
+   "jeans & denim": "Miniature Polka Dot Silk and Linen Tie in Denim Blue Ties Ac",
+   "cashmere & merino": "Pure Cashmere Knitted Tie in Black Ties Accessories Cashmere",
+   "suits & trousers": "Fine Knitted Silk Tie in Natural Ties Accessories Gifts Unde",
+   "childrenswear": "Plain Linen in Baby Pink Made To Measure Shirts hide-preorde",
+   "mugs": "Mughal Hunt Silk and Wool Pocket Square in Navy Pocket Squar",
+   "vests & waistcoats": "Leven Fine Merino Quarter Zip Gilet in Navy Knitwear Outlet ",
+   "hats & caps": "Scottish Cashmere Thick Ribbed Beanie Hat in Ruby Red Hats O",
+   "coats & jackets": "English Wool Flannel Chore Jacket in Loden Green Shirts Gree",
+   "womenswear": "Cotton and Cashmere Ladies Pyjamas in Pink Womens Pyjamas Gi",
+   "braces & belts": "Wigmore Bridle Leather Belt in Black and Silver Belts Access",
+   "game & venison": "Find The Pheasant Silk and Wool Pocket Square in Light Green",
+   "socks": "Plain Sock Suspenders in Black Socks Accessories Socks Store",
+   "jewellery": "Funky Star Silver Cloisonne Chain Cufflinks in Grey Cufflink",
+   "dairy & cheese": "Plain Linen in Milk Made To Measure Shirts hide-preorder-btn",
+   "umbrellas": "Maple Handle Town Umbrella in Black Twill Umbrellas Accessor"
+  },
+  "observedTypes": [
+   "Belts",
+   "Bow Ties Day",
+   "Bow Ties Dress",
+   "Braces",
+   "Casual Shirts",
+   "Collars",
+   "Cravats",
+   "Cufflinks",
+   "Cummerbunds",
+   "Day Shirts",
+   "Dress Shirts",
+   "Dress Waistcoats",
+   "Dressing Gowns",
+   "Gloves",
+   "Half Suites",
+   "Handkerchiefs",
+   "Hats",
+   "Knitwear",
+   "Made To Measure Shirts",
+   "Made to Measure Shirts",
+   "Neckerchief",
+   "Nightshirts",
+   "Other Accessories",
+   "Pocket Squares",
+   "Pyjamas",
+   "Scarves",
+   "Shirt Studs",
+   "Shirts",
+   "Silk Squares",
+   "Socks",
+   "Ties",
+   "Umbrellas",
+   "Underwear",
+   "Women's Shirts",
+   "Womens Pyjamas"
+  ],
+  "sample": [
+   "Classic Fit Hand Pleated Silk Double Cuff Dress Shirt in Cream",
+   "Classic Fit Plain Silk Double Cuff Dress Shirt in Cream",
+   "Paisley Madder Silk Adjustable Bow Tie in Navy and Sky",
+   "Paisley Madder Silk Adjustable Bow Tie in Sky and Red",
+   "Round Sterling Silver and Mother of Pearl Cufflinks",
+   "WM Brown Oxford Dressing Gown in Gio Blue",
+   "Exclusive Budd Stripe Chairman Boxer Shorts in Pink",
+   "Exclusive Budd Stripe Classic Boxer Shorts in Pink"
+  ],
+  "checked": "2026-07-31"
+ },
+ "fortis-clothing": {
+  "id": "fortis-clothing",
+  "shopify": true,
+  "productCount": 245,
+  "tags": [
+   "activewear",
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "coats & jackets",
+   "hats & caps",
+   "knitwear",
+   "mugs",
+   "shirts",
+   "socks",
+   "suits & trousers",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "suits & trousers": "Womens Apex Outdoor Leggings Green  Trousers",
+   "cashmere & merino": "Mens Ventus Merino Base Layer Short Sleeve",
+   "activewear": "Mens Ventus Merino Base Layer Short Sleeve",
+   "coats & jackets": "Womens Jackal Jacket Black  Breathable Coat Lightweight migr",
+   "womenswear": "Womens Jackal Jacket Black  Breathable Coat Lightweight migr",
+   "hats & caps": "SF Black Beanie  Hats",
+   "bags & leather goods": "Atlas Green Rucksack",
+   "vests & waistcoats": "Field Vest Combo Classic  Dog Training Vest Vest",
+   "knitwear": "Womens Element Sherpa Jumper Orange  Fleece Jumper",
+   "shirts": "Ursus Rugby Shirt Orange  T-Shirt",
+   "mugs": "Enamel Mug  Mug",
+   "socks": "SF Sock  Socks",
+   "braces & belts": "Mens Bib and Brace Olive Green  Lightweight migration_color_"
+  },
+  "observedTypes": [],
+  "sample": [
+   "Womens Apex Outdoor Leggings Green",
+   "Womens Apex Outdoor Leggings Black",
+   "Mens Ventus Merino Base Layer Short Sleeve",
+   "Mens Ventus Merino Base Layer Long Sleeve",
+   "Womens Ventus Merino Base Layer Short Sleeve",
+   "Womens Ventus Merino Base Layer Long Sleeve",
+   "Womens Jackal Jacket Black",
+   "Womens Jackal Jacket Coyote"
+  ],
+  "checked": "2026-07-31"
+ },
+ "gushlow-cole": {
+  "id": "gushlow-cole",
+  "shopify": true,
+  "productCount": 290,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "cashmere & merino",
+   "childrenswear",
+   "coats & jackets",
+   "footwear & boots",
+   "hats & caps",
+   "jewellery",
+   "knitwear",
+   "scarves & accessories",
+   "shirts",
+   "tweed & woven goods",
+   "vests & waistcoats"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "Suede Slouch Bag  material_suede",
+   "hats & caps": "Shearling Beanie Hat  material_curly_merino material_toscana",
+   "vests & waistcoats": "Natural Edge Mid-Length Shearling Gilet Gilet",
+   "coats & jackets": "Hooded Shearling Coat Coat material_curly_merino",
+   "jewellery": "Studio Agaea Warp Ring in Silver  sterling_silver",
+   "shirts": "Suede T-Shirt Top  material_suede",
+   "childrenswear": "Sheepskin Baby Boots Childrens footwear",
+   "knitwear": "Lightweight Short Sleeve Shearling Cardigan Jacket material_",
+   "scarves & accessories": "Mixed Texture shearling Scarf Scarf material_merino material",
+   "cashmere & merino": "Merino Soft Shearling Clutch Bag material_merino",
+   "braces & belts": "Mongolian Scarf With Belt Scarf material_mongolian",
+   "tweed & woven goods": "Woven Cashmere Triangle Scarf Scarf",
+   "footwear & boots": "Teddy Shearling Slipper Boots Slippers material_teddy_merini"
+  },
+  "observedTypes": [
+   "Bag",
+   "Childrens footwear",
+   "Coat",
+   "Cushion",
+   "Gift card",
+   "Gilet",
+   "Gloves",
+   "Hat",
+   "Hot Water Bottle Cover",
+   "Jacket",
+   "Kids Gilet",
+   "Mittens",
+   "Pram liner",
+   "Rug",
+   "Scarf",
+   "Seat Pad",
+   "Slippers",
+   "Throw"
+  ],
+  "sample": [
+   "Suede Slouch Bag",
+   "Half Moon Sheepskin Cushion",
+   "Shearling Beanie Hat",
+   "Shearling Beanie Hat",
+   "Natural Edge Mid-Length Shearling Gilet",
+   "Natural Edge Mid-Length Shearling Gilet",
+   "Hooded Shearling Coat",
+   "Teddy Slouch Bag"
   ],
   "checked": "2026-07-31"
  }

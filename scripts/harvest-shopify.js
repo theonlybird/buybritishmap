@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 /**
- * Shopify product harvest — Phase 2 of product-level search.
+ * Product harvest — Phase 2 of product-level search.
+ *
+ * Tries four sources per business, in order of data quality:
+ *   1. Shopify   /products.json
+ *   2. WooCommerce  /wp-json/wc/store/products
+ *   3. Squarespace  /shop?format=json
+ *   4. Sitemap   product names read from URL slugs (no page fetches)
  *
  * Shopify stores expose a public, structured product feed at /products.json.
  * This walks every business in data/businesses.json, tries that endpoint, and
@@ -164,27 +170,118 @@ function fetchJson(url, redirectsLeft = 3) {
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+// Fetch raw text (sitemaps, HTML). Same politeness as fetchJson.
+function fetchText(url, redirectsLeft = 3) {
+  return new Promise(resolve => {
+    let u;
+    try { u = new URL(url); } catch (e) { return resolve({ ok: false, reason: 'bad-url' }); }
+    const lib = u.protocol === 'http:' ? http : https;
+    const req = lib.request(
+      { hostname: u.hostname, path: u.pathname + u.search, method: 'GET',
+        headers: { 'User-Agent': UA, 'Accept': '*/*' }, timeout: TIMEOUT_MS },
+      res => {
+        if ([301,302,303,307,308].includes(res.statusCode) && res.headers.location && redirectsLeft > 0) {
+          res.resume();
+          return resolve(fetchText(new URL(res.headers.location, url).toString(), redirectsLeft - 1));
+        }
+        if (res.statusCode !== 200) { res.resume(); return resolve({ ok:false, reason:'http-'+res.statusCode }); }
+        let body = '';
+        res.on('data', c => { body += c; if (body.length > 4e6) req.destroy(); });
+        res.on('end', () => resolve({ ok: true, body }));
+      });
+    req.on('timeout', () => { req.destroy(); resolve({ ok:false, reason:'timeout' }); });
+    req.on('error', e => resolve({ ok:false, reason:'net-'+(e.code||'error') }));
+    req.end();
+  });
+}
+
+// --- WooCommerce Store API (public on modern WooCommerce) -------------------
+async function tryWooCommerce(base) {
+  const r = await fetchJson(`${base}/wp-json/wc/store/products?per_page=100`);
+  if (!r.ok || !Array.isArray(r.data) || !r.data.length) return null;
+  return {
+    platform: 'woocommerce',
+    items: r.data.map(p => ({
+      title: p.name || '',
+      type: (p.categories || []).map(c => c.name).join(' '),
+      tags: ''
+    }))
+  };
+}
+
+// --- Squarespace: any collection URL returns JSON with ?format=json ---------
+async function trySquarespace(base) {
+  for (const pathTry of ['/shop', '/store', '/products', '/all']) {
+    const r = await fetchJson(`${base}${pathTry}?format=json`);
+    if (!r.ok) continue;
+    const items = (r.data && (r.data.items || [])) || [];
+    if (!items.length) continue;
+    return {
+      platform: 'squarespace',
+      items: items.map(i => ({
+        title: i.title || '',
+        type: (i.categories || []).join(' '),
+        tags: (i.tags || []).join(' ')
+      }))
+    };
+  }
+  return null;
+}
+
+// --- Sitemap fallback: product names live in the URL slug ------------------
+// Cheapest possible signal — no product pages are fetched at all.
+async function trySitemap(base) {
+  const seen = new Set();
+  const urls = [];
+  const roots = [`${base}/sitemap.xml`, `${base}/sitemap_index.xml`, `${base}/product-sitemap.xml`];
+  for (const root of roots) {
+    const r = await fetchText(root);
+    if (!r.ok) continue;
+    const locs = [...r.body.matchAll(/<loc>([^<]+)<\/loc>/gi)].map(m => m[1]);
+    // one level of sitemap-index expansion, product sitemaps only
+    const nested = locs.filter(l => /\.xml$/i.test(l) && /(product|shop|store|collection)/i.test(l)).slice(0, 3);
+    for (const n of nested) {
+      await sleep(DELAY_MS);
+      const rn = await fetchText(n);
+      if (rn.ok) [...rn.body.matchAll(/<loc>([^<]+)<\/loc>/gi)].forEach(m => urls.push(m[1]));
+    }
+    locs.filter(l => !/\.xml$/i.test(l)).forEach(l => urls.push(l));
+    if (urls.length) break;
+    await sleep(DELAY_MS);
+  }
+  const productUrls = urls.filter(u => /\/(product|products|shop|store|collections?)\//i.test(u));
+  if (productUrls.length < 3) return null;
+  const items = [];
+  for (const u of productUrls.slice(0, 400)) {
+    const slug = decodeURIComponent(u.split('?')[0].replace(/\/$/, '').split('/').pop() || '');
+    const title = slug.replace(/[-_]+/g, ' ').trim();
+    if (title && !seen.has(title)) { seen.add(title); items.push({ title, type: '', tags: '' }); }
+  }
+  return items.length >= 3 ? { platform: 'sitemap', items } : null;
+}
+
+
 function origin(website) {
   try { const u = new URL(website); return u.origin; } catch (e) { return null; }
 }
 
 async function harvestOne(biz) {
   const base = origin(biz.website);
-  if (!base) return { id: biz.id, shopify: false, reason: 'no-website' };
+  if (!base) return { id: biz.id, shopify: false, platform: null, reason: 'no-website' };
 
   const seenTypes = new Set();
   const evidence = {};
   const sample = [];
   let count = 0;
+  let platform = null;
 
+  // 1. Shopify — richest source, try first and paginate.
   for (let page = 1; page <= 4; page++) {
     const r = await fetchJson(`${base}/products.json?limit=250&page=${page}`);
-    if (!r.ok) {
-      if (page === 1) return { id: biz.id, shopify: false, reason: r.reason };
-      break;
-    }
+    if (!r.ok) break;
     const products = (r.data && r.data.products) || [];
     if (!products.length) break;
+    platform = 'shopify';
     for (const p of products) {
       count++;
       if (p.product_type) seenTypes.add(String(p.product_type).trim());
@@ -192,11 +289,33 @@ async function harvestOne(biz) {
       const text = [p.title, p.product_type, (p.tags || []).join(' ')].join(' ');
       mapWithEvidence(text).forEach(([t, ev]) => {
         seenTypes.add('::' + t);
-        if (!evidence[t]) evidence[t] = ev;   // first example that produced this tag
+        if (!evidence[t]) evidence[t] = ev;
       });
     }
     if (products.length < 250) break;
     await sleep(DELAY_MS);
+  }
+
+  // 2. Fall through the other platforms only if Shopify gave nothing.
+  if (!platform) {
+    let result = null;
+    for (const attempt of [tryWooCommerce, trySquarespace, trySitemap]) {
+      await sleep(DELAY_MS);
+      try { result = await attempt(base); } catch (e) { result = null; }
+      if (result) break;
+    }
+    if (!result) return { id: biz.id, shopify: false, platform: null, reason: 'no-feed-found' };
+
+    platform = result.platform;
+    for (const it of result.items) {
+      count++;
+      if (it.type) seenTypes.add(String(it.type).trim());
+      if (sample.length < 8 && it.title) sample.push(String(it.title).slice(0, 70));
+      mapWithEvidence([it.title, it.type, it.tags].join(' ')).forEach(([t, ev]) => {
+        seenTypes.add('::' + t);
+        if (!evidence[t]) evidence[t] = ev;
+      });
+    }
   }
 
   const mapped = [...seenTypes].filter(t => t.startsWith('::')).map(t => t.slice(2)).sort();
@@ -204,12 +323,13 @@ async function harvestOne(biz) {
 
   return {
     id: biz.id,
-    shopify: true,
+    shopify: platform === 'shopify',
+    platform,
     productCount: count,
-    tags: mapped,          // controlled vocabulary, safe to merge into the site
-    tagEvidence: evidence, // tag -> the product text that triggered it, for audit
-    observedTypes: rawTypes, // their own product_type values, for review
-    sample,                // a few real titles, as evidence the harvest is genuine
+    tags: mapped,
+    tagEvidence: evidence,
+    observedTypes: rawTypes,
+    sample,
   };
 }
 
@@ -239,9 +359,9 @@ async function main() {
     index[biz.id] = res;
     done++;
 
-    if (res.shopify) {
+    if (res.platform) {
       shopify++;
-      console.log(`  OK   ${biz.id.padEnd(28)} ${String(res.productCount).padStart(4)} products -> ${res.tags.join(', ') || '(no vocab match)'}`);
+      console.log(`  OK   ${biz.id.padEnd(26)} ${String(res.platform).padEnd(12)} ${String(res.productCount).padStart(4)} items -> ${res.tags.join(', ') || '(no vocab match)'}`);
     } else {
       failed++;
       console.log(`  --   ${biz.id.padEnd(28)} ${res.reason}`);
