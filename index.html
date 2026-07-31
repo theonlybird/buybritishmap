@@ -69,46 +69,32 @@
   .tag.cat.clothing{background:#e4edf5;color:#234e74}
   .tag.cat.ceramics{background:#f5e9e1;color:#8a4a24}
   .tag.cat.jewellery{background:#efe7f5;color:#5a3d73}
-  .tag.cat.cutlery{background:#e5e7eb;color:#1f2937}
+  .tag.cat.cutlery{background:#e5e7eb;color:#1f2937}  /* AI Search Styles */
+  .search-row{display:flex;gap:6px;align-items:center}
+  #search{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;outline:none}
+  #search:focus{border-color:var(--navy)}
+  .btn-ai{background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 50%,#d946ef 100%);color:#fff;border:none;padding:9px 12px;border-radius:8px;font-size:12.5px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;box-shadow:0 2px 6px rgba(99,102,241,0.25);transition:.15s}
+  .btn-ai:hover{filter:brightness(1.1);transform:translateY(-1px)}
+  .btn-key{background:none;border:1px solid var(--line);padding:7px;border-radius:8px;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;justify-content:center}
+  .btn-key:hover{border-color:var(--navy);color:var(--navy)}
 
-  /* Map */
-  #map{flex:1;height:100%}
-  .legend{background:#fff;padding:10px 12px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:12px;line-height:1.7}
-  .legend .row{display:flex;align-items:center;gap:7px}
-  .legend .sw{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #ccc}
+  .ai-card{margin:12px 14px 4px;padding:12px 14px;border-radius:10px;background:linear-gradient(135deg,#f5f3ff 0%,#fdf4ff 100%);border:1px solid #ddd6fe;position:relative}
+  .ai-card .ai-title{font-size:12px;font-weight:700;color:#6d28d9;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;justify-content:space-between}
+  .ai-card .ai-reason{font-size:12.5px;color:#4c1d95;margin-top:6px;line-height:1.4}
+  .ai-card .ai-clear{cursor:pointer;color:#7c3aed;font-weight:600;font-size:11.5px;text-decoration:underline}
 
-  /* Markers */
-  .pin{width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35);position:relative}
-  .pin::after{content:"";position:absolute;inset:5px;background:#fff;border-radius:50%}
-  .pin.tier-gold::after{background:var(--gold)}
-  .pin.tier-silver::after{background:#fff}
+  .item .ai-match-reason{font-size:11.5px;color:#6d28d9;background:#f3e8ff;padding:4px 8px;border-radius:5px;margin-top:6px;line-height:1.35}
 
-  /* Popup */
-  .leaflet-popup-content{margin:0;width:262px!important}
-  .pop{font-family:inherit}
-  .pop .head{display:flex;gap:11px;padding:13px 14px 10px;align-items:center}
-  .pop .plogo{width:46px;height:46px;border-radius:9px;flex:0 0 46px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;background:var(--navy);overflow:hidden}
-  .pop .plogo img{width:100%;height:100%;object-fit:contain;background:#fff}
-  .pop h3{margin:0;font-size:15.5px}
-  .pop .pmeta{font-size:11.5px;color:var(--muted);margin-top:3px}
-  .pop .badges{padding:0 14px 8px}
-  .pop .desc{padding:2px 14px 10px;font-size:12.5px;line-height:1.45;color:#39434e}
-  .pop .rows{padding:0 14px 12px;font-size:12.5px}
-  .pop .rows a{color:var(--navy);text-decoration:none;font-weight:600}
-  .pop .rows a:hover{text-decoration:underline}
-  .pop .addr{color:var(--muted);font-size:11.5px;padding:0 14px 12px;display:flex;gap:6px}
-  .pop .links{display:flex;gap:8px;padding:0 14px 13px}
-  .pop .links a{flex:1;text-align:center;padding:7px;border-radius:7px;font-size:12px;font-weight:600;text-decoration:none}
-  .pop .links a.web{background:var(--navy);color:#fff}
-  .pop .links a.ig{background:#f0f2f5;color:var(--ink)}
-
-  @media (max-width:760px){
-    #app{flex-direction:column}
-    #sidebar{width:100%;min-width:0;height:46%}
-    #map{height:54%}
-    #topbar .flag{width:130px}
-    .site-title{font-size:19px}
-  }
+  /* Modal */
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:2000;display:flex;align-items:center;justify-content:center;padding:16px}
+  .modal-box{background:#fff;border-radius:12px;padding:22px;width:100%;max-width:440px;box-shadow:0 12px 32px rgba(0,0,0,.2)}
+  .modal-box h3{margin:0 0 8px;font-size:18px;color:var(--navy)}
+  .modal-box p{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.45}
+  .modal-box input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;margin-bottom:14px}
+  .modal-box .actions{display:flex;gap:8px;justify-content:flex-end}
+  .modal-box button{padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:none}
+  .modal-box .btn-cancel{background:var(--bg);color:var(--ink)}
+  .modal-box .btn-save{background:var(--navy);color:#fff}
 </style>
 </head>
 <body>
@@ -136,7 +122,11 @@
 <div id="app">
   <aside id="sidebar">
     <div class="controls">
-      <input id="search" type="text" placeholder="Search by name, town or type…" autocomplete="off" />
+      <div class="search-row">
+        <input id="search" type="text" placeholder="Search by name, town or type…" autocomplete="off" />
+        <button id="aiBtn" class="btn-ai" title="Search using Gemini AI natural language understanding">✨ Ask AI</button>
+        <button id="keyBtn" class="btn-key" title="Set Gemini API Key for local testing">⚙️</button>
+      </div>
       <div class="filter-group">
         <div class="lbl">Category</div>
         <div class="chips" id="catChips">
@@ -155,6 +145,13 @@
         </div>
       </div>
     </div>
+    <div id="aiCard" class="ai-card" style="display:none">
+      <div class="ai-title">
+        <span>✨ AI Matches</span>
+        <span class="ai-clear" id="aiClearBtn">Clear AI Search</span>
+      </div>
+      <div class="ai-reason" id="aiReasonText"></div>
+    </div>
     <div class="countrow">
       <div class="count" id="count"></div>
       <button id="sortBtn" title="Sort alphabetically">A–Z ↓</button>
@@ -162,6 +159,21 @@
     <div id="list"></div>
   </aside>
   <div id="map"></div>
+</div>
+
+<!-- API Key Modal -->
+<div id="keyModal" class="modal-overlay" style="display:none">
+  <div class="modal-box">
+    <h3>⚙️ Gemini API Key Settings</h3>
+    <p>Enter your Gemini API key from <a href="https://aistudio.google.com/" target="_blank" rel="noopener">Google AI Studio</a> for live local testing. When deployed to Vercel, serverless environment variables take over automatically.</p>
+    <input id="keyInput" type="password" placeholder="AIzaSy..." autocomplete="off" />
+    <div class="actions">
+      <button class="btn-cancel" id="keyCancelBtn">Cancel</button>
+      <button class="btn-save" id="keySaveBtn">Save Key</button>
+    </div>
+  </div>
+</div>
+>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -270,34 +282,55 @@ function popupHtml(b){
 }
 
 // --- Filters + list ---
-const state = { q:'', cats:new Set(['farm','clothing','ceramics','jewellery','cutlery']), tiers:new Set(['gold','silver']), sortAsc:true };
+const state = { q:'', cats:new Set(['farm','clothing','ceramics','jewellery','cutlery']), tiers:new Set(['gold','silver']), sortAsc:true, aiActive:false, aiReasoning:'', aiMatches:new Map() };
 const listEl = document.getElementById('list');
 const countEl = document.getElementById('count');
+const aiCardEl = document.getElementById('aiCard');
+const aiReasonTextEl = document.getElementById('aiReasonText');
+const aiClearBtn = document.getElementById('aiClearBtn');
 
 function visible(){
+  if (state.aiActive) {
+    return BUSINESSES.filter(b => state.aiMatches.has(b.id));
+  }
   const q = state.q.toLowerCase();
   return BUSINESSES.filter(b=>
     state.cats.has(b.category) && state.tiers.has(b.tier) &&
-    (q==='' || (b.name+' '+b.town+' '+(b.subcategory||'')+' '+b.category).toLowerCase().includes(q))
+    (q==='' || (b.name+' '+b.town+' '+(b.subcategory||'')+' '+b.category+' '+(b.description||'')).toLowerCase().includes(q))
   );
 }
 function render(){
   const vis = visible();
-  vis.sort((a,b)=> state.sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
-  const ids = new Set(vis.map(b=>b.id));
+  if (!state.aiActive) {
+    vis.sort((a,b)=> state.sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
+  }
   cluster.clearLayers();
   vis.forEach(b=>cluster.addLayer(markers[b.id]));
-  countEl.innerHTML = `Showing <b>${vis.length}</b> of ${BUSINESSES.length} businesses`;
-  listEl.innerHTML = vis.map(b=>`
-    <div class="item" data-id="${b.id}">
+  countEl.innerHTML = state.aiActive ? `Found <b>${vis.length}</b> AI matching makers` : `Showing <b>${vis.length}</b> of ${BUSINESSES.length} businesses`;
+  
+  if (state.aiActive && vis.length > 0) {
+    const coords = vis.map(b => [b.lat, b.lng]);
+    if (coords.length > 1) {
+      map.flyToBounds(L.latLngBounds(coords), { padding: [40, 40], maxZoom: 13, duration: 0.8 });
+    } else if (coords.length === 1) {
+      map.flyTo(coords[0], 11, { duration: 0.8 });
+    }
+  }
+
+  listEl.innerHTML = vis.map(b=>{
+    const reasonText = state.aiActive && state.aiMatches.has(b.id) ? `<div class="ai-match-reason">✨ ${state.aiMatches.get(b.id)}</div>` : '';
+    return `<div class="item" data-id="${b.id}">
       ${logoHtml(b,'logo')}
       <div class="meta">
         <div class="nm">${b.name}</div>
         <div class="sub">${b.town}</div>
         <span class="tag ${b.tier}">${b.tier}</span>
         <span class="tag cat ${b.category}">${CAT[b.category].label}</span>
+        ${reasonText}
       </div>
-    </div>`).join('') || '<div style="padding:24px 16px;color:var(--muted);font-size:13px">No matches. Try clearing a filter.</div>';
+    </div>`;
+  }).join('') || '<div style="padding:24px 16px;color:var(--muted);font-size:13px">No matches found. Try asking another question!</div>';
+  
   listEl.querySelectorAll('.item').forEach(el=>{
     el.addEventListener('click',()=>focus(el.dataset.id));
   });
@@ -309,18 +342,27 @@ function focus(id){
   setTimeout(()=>{ if(cluster.hasLayer(m)){ cluster.zoomToShowLayer(m,()=>m.openPopup()); } }, 650);
 }
 
-document.getElementById('search').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.getElementById('search').addEventListener('input',e=>{
+  if (state.aiActive) clearAiSearch();
+  state.q=e.target.value; render();
+});
+document.getElementById('search').addEventListener('keydown',e=>{
+  if (e.key === 'Enter' && e.target.value.length > 3 && !state.aiActive) {
+    executeAiSearch(e.target.value);
+  }
+});
+
 document.getElementById('sortBtn').addEventListener('click',()=>{
   state.sortAsc = !state.sortAsc;
   document.getElementById('sortBtn').textContent = state.sortAsc ? 'A–Z ↓' : 'Z–A ↑';
   render();
 });
 
-// Chip behaviour: all on by default; first click isolates that filter,
-// further clicks add/remove; removing the last one restores all.
+// Chip behaviour
 const ALL_CATS = ['farm','clothing','ceramics','jewellery','cutlery'];
 const ALL_TIERS = ['gold','silver'];
 function chipClick(set, all, key){
+  if (state.aiActive) clearAiSearch();
   if (set.size === all.length) { set.clear(); set.add(key); }
   else if (set.has(key)) { set.delete(key); if (set.size === 0) all.forEach(k => set.add(k)); }
   else { set.add(key); }
@@ -336,6 +378,142 @@ document.querySelectorAll('#tierChips .chip').forEach(c => c.addEventListener('c
   chipClick(state.tiers, ALL_TIERS, c.dataset.tier); syncChips(); render();
 }));
 
+// --- AI Search Logic ---
+const aiBtn = document.getElementById('aiBtn');
+const keyBtn = document.getElementById('keyBtn');
+const keyModal = document.getElementById('keyModal');
+const keyInput = document.getElementById('keyInput');
+const keySaveBtn = document.getElementById('keySaveBtn');
+const keyCancelBtn = document.getElementById('keyCancelBtn');
+
+function getStoredKey() { return localStorage.getItem('GEMINI_API_KEY') || ''; }
+
+keyBtn.addEventListener('click', () => {
+  keyInput.value = getStoredKey();
+  keyModal.style.display = 'flex';
+});
+keyCancelBtn.addEventListener('click', () => keyModal.style.display = 'none');
+keySaveBtn.addEventListener('click', () => {
+  localStorage.setItem('GEMINI_API_KEY', keyInput.value.trim());
+  keyModal.style.display = 'none';
+  alert('Gemini API Key saved for local testing!');
+});
+
+aiBtn.addEventListener('click', () => {
+  const query = document.getElementById('search').value.trim();
+  if (!query) {
+    alert('Please type what you are looking for in the search bar (e.g. "kitchen knife in Yorkshire" or "woolen jumper from Scotland").');
+    document.getElementById('search').focus();
+    return;
+  }
+  executeAiSearch(query);
+});
+
+aiClearBtn.addEventListener('click', clearAiSearch);
+
+function clearAiSearch() {
+  state.aiActive = false;
+  state.aiReasoning = '';
+  state.aiMatches.clear();
+  aiCardEl.style.display = 'none';
+  render();
+}
+
+async function executeAiSearch(query) {
+  aiBtn.disabled = true;
+  aiBtn.innerHTML = '✨ Thinking...';
+  
+  try {
+    let result = null;
+    // 1. Try Vercel Serverless Function /api/ai-search first
+    try {
+      const res = await fetch('/api/ai-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
+      });
+      if (res.ok) {
+        result = await res.json();
+      }
+    } catch (e) {}
+
+    // 2. Fallback to client-side direct Gemini API call if local API key is provided
+    if (!result) {
+      const storedKey = getStoredKey();
+      if (!storedKey) {
+        keyInput.value = '';
+        keyModal.style.display = 'flex';
+        throw new Error('Please enter your Gemini API Key for local testing, or set GEMINI_API_KEY in Vercel environment variables.');
+      }
+
+      const compact = BUSINESSES.map(b => ({
+        i: b.id, n: b.name, c: b.category, s: b.subcategory || '', t: b.town, d: b.description, tr: b.tier
+      }));
+      const catalogStr = JSON.stringify(compact);
+      
+      const systemInstruction = `You are the Buy British AI Search Assistant.
+Analyze the user's natural language request and find the best matching British makers from the provided catalog.
+
+CRITICAL INSTRUCTIONS:
+1. Understand regional synonyms (e.g. Yorkshire = Sheffield/Hathersage/Leeds; Scotland = Hawick/Edinburgh/Glasgow/Highlands; Wales = Gwynedd/Monmouthshire; Cotswolds = Chipping Campden).
+2. Match materials, craft techniques, and product synonyms (e.g. kitchen knife = forged cutlery/blades; jumper = knitwear/cashmere/wool; cookware = cast iron/spun iron/copper pans).
+3. Return ONLY a valid JSON object matching this exact structure:
+{
+  "query": "${query.replace(/"/g, '\\"')}",
+  "reasoning": "1-2 sentence explanation of what the user is looking for and the regional/material context.",
+  "matches": [
+    {
+      "id": "exact-business-id-from-catalog",
+      "reason": "1-sentence specific rationale explaining why this business matches the query."
+    }
+  ]
+}
+4. Limit matches to the top 1-12 most relevant businesses.
+
+BUSINESS CATALOG:
+${catalogStr}`;
+
+      const payload = {
+        contents: [{ parts: [{ text: systemInstruction }, { text: `User Search Query: "${query}"` }] }],
+        generationConfig: { temperature: 0.2, maxOutputTokens: 2000 }
+      };
+
+      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${storedKey}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!geminiRes.ok) {
+        throw new Error(`Gemini API call failed with status ${geminiRes.status}`);
+      }
+
+      const gData = await geminiRes.json();
+      const rawText = gData.candidates[0].content.parts[0].text;
+      const cleanJson = rawText.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
+      result = JSON.parse(cleanJson);
+    }
+
+    if (result && result.matches) {
+      state.aiActive = true;
+      state.aiReasoning = result.reasoning || `Matching businesses for "${query}"`;
+      state.aiMatches.clear();
+      result.matches.forEach(m => {
+        state.aiMatches.set(m.id, m.reason || 'Relevant match');
+      });
+
+      aiReasonTextEl.innerHTML = `<b>${state.aiReasoning}</b>`;
+      aiCardEl.style.display = 'block';
+      render();
+    }
+  } catch (err) {
+    alert(`AI Search Notice: ${err.message}`);
+  } finally {
+    aiBtn.disabled = false;
+    aiBtn.innerHTML = '✨ Ask AI';
+  }
+}
+
 // --- Load data, then boot ---
 fetch('data/businesses.json')
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
@@ -346,3 +524,4 @@ fetch('data/businesses.json')
 </script>
 </body>
 </html>
+

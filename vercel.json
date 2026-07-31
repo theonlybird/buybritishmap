@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/ai-search.js", "use": "@vercel/node" },
+    { "src": "**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/ai-search", "dest": "/api/ai-search.js" }
+  ]
+}
