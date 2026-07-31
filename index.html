@@ -577,6 +577,7 @@ async function executeAiSearch(query) {
   loader.style.display = 'flex';
 
   try {
+    let result = null;
     let lastApiError = '';
     // 1. Primary: Serverless API endpoint /api/ai-search
     try {
