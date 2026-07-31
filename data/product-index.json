@@ -195,6 +195,7 @@
  "oubas": {
   "id": "oubas",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 178,
   "tags": [
    "activewear",
@@ -208,9 +209,9 @@
    "vests & waistcoats"
   ],
   "tagEvidence": {
+   "knitwear": "The Lugh British Wool Cable Sweater in Steel Grey",
    "vests & waistcoats": "The Morvan Organic Cotton Waistcoat in French Navy / Chalk",
    "scarves & accessories": "The Morvan Organic Cotton Triangle Scarf in Blush/Chalk",
-   "knitwear": "Eden Fine Merino Wrap Cardigan in Chestnut  dup-review-publi",
    "cashmere & merino": "Eden Fine Merino Wrap Cardigan in Chestnut  dup-review-publi",
    "activewear": "'Tricot de Peau' Fine Merino Base Layer in Mushroom",
    "dresses": "The Seasgair Naturally Dyed Merino Wool Maxi Dress in Mushro",
@@ -229,14 +230,14 @@
    "scarf, knitwear"
   ],
   "sample": [
+   "The Lugh British Wool Cable Sweater in Steel Grey",
    "The Morvan Organic Cotton Waistcoat in French Navy / Chalk",
    "Organic Cotton Quadrant Vest French Navy / Chalk",
    "Organic Cotton Quadrant Vest in Lemon / Chalk",
    "The Morvan Organic Cotton Triangle Scarf in Blush/Chalk",
    "The Morvan Organic Cotton Triangle Scarf in Lemon/Chalk",
    "The Morvan Organic Cotton Triangle Scarf in French Navy/Chalk",
-   "The Freyja British Wool Cable Vest in Ecru",
-   "The Freyja British Wool Cable Vest in Navy"
+   "The Freyja British Wool Cable Vest in Ecru"
   ],
   "checked": "2026-07-31"
  },
@@ -348,6 +349,7 @@
  "navygrey": {
   "id": "navygrey",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 161,
   "tags": [
    "bags & leather goods",
@@ -6987,18 +6989,21 @@
  "glenbrae": {
   "id": "glenbrae",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "michael-ross-knitwear": {
   "id": "michael-ross-knitwear",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "mars-knitwear": {
   "id": "mars-knitwear",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 349,
   "tags": [
    "cashmere & merino",
@@ -7058,6 +7063,7 @@
  "glencroft": {
   "id": "glencroft",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 186,
   "tags": [
    "bags & leather goods",
@@ -7110,17 +7116,38 @@
  },
  "izzy-lane": {
   "id": "izzy-lane",
-  "shopify": true,
-  "productCount": 0,
-  "tags": [],
-  "tagEvidence": {},
+  "shopify": false,
+  "platform": "sitemap",
+  "productCount": 13,
+  "tags": [
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "mens shawl cadign",
+   "knitwear": "izzy lane mens sweater dark olive",
+   "tweed & woven goods": "izzy lane arran throw",
+   "hats & caps": "izzy lane beanie and scarf"
+  },
   "observedTypes": [],
-  "sample": [],
+  "sample": [
+   "mens shawl cadign",
+   "izzy lane mens sweater dark olive",
+   "izzy lane arran throw",
+   "mansfield sweater dark turquoise",
+   "izzy lane mens sweater natural grey",
+   "mansfield sweater dark olive",
+   "mansfield sweater grey",
+   "izzy lane beanie and scarf"
+  ],
   "checked": "2026-07-31"
  },
  "eas-fors": {
   "id": "eas-fors",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 31,
   "tags": [
    "bowls",
@@ -7163,18 +7190,46 @@
  "carnwear": {
   "id": "carnwear",
   "shopify": false,
-  "reason": "http-400",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "quinton-chadwick": {
   "id": "quinton-chadwick",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "squarespace",
+  "productCount": 31,
+  "tags": [
+   "cashmere & merino",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "cashmere & merino": "Fingerless Wild and Free Gloves in Teal and Aqua  Gloves Fin",
+   "scarves & accessories": "Brushed Block Scarf in Hyper Nature Colours  checked scarf m",
+   "tweed & woven goods": "Brushed Block Scarf in Hyper Nature Colours  checked scarf m",
+   "knitwear": "Chunky Swing Sweater with Split Hem in Pagoda  lambswool sup",
+   "hats & caps": "Tuck Stitch Angora Beanie Hat in Tangerine  Hats beanie hat "
+  },
+  "observedTypes": [],
+  "sample": [
+   "Fingerless Wild and Free Gloves in Teal and Aqua",
+   "Love and Hope Fingerless Gloves in shocking pink Colours",
+   "Brushed Block Scarf in Hyper Nature Colours",
+   "Chunky Swing Sweater with Split Hem in Pagoda",
+   "Love and Hope Gloves in Hyper Nature Colours",
+   "Chunky Swing Sweater with Split Hem in Poppy",
+   "Patterned Gloves in Hyper Nature Colours",
+   "Tuck Stitch Angora Beanie Hat in Tangerine"
+  ],
   "checked": "2026-07-31"
  },
  "croft-house": {
   "id": "croft-house",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 322,
   "tags": [
    "bags & leather goods",
@@ -7217,6 +7272,7 @@
  "goral": {
   "id": "goral",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 112,
   "tags": [
    "bags & leather goods",
@@ -7261,6 +7317,7 @@
  "billy-tannery": {
   "id": "billy-tannery",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 30,
   "tags": [
    "bags & leather goods",
@@ -7301,6 +7358,7 @@
  "cherchbi": {
   "id": "cherchbi",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 14,
   "tags": [
    "bags & leather goods",
@@ -7336,18 +7394,57 @@
  "mcrostie": {
   "id": "mcrostie",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 77,
+  "tags": [
+   "bags & leather goods",
+   "jewellery",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "womenswear": "MINI McLAIRD Accessories &amp; Gifts Key rings Women",
+   "jewellery": "MINI McLAIRD Accessories &amp; Gifts Key rings Women",
+   "bags & leather goods": "McVOYAGE Tech and Travel Wallet Accessories &amp; Gifts Tech"
+  },
+  "observedTypes": [
+   "Accessories &amp; Gifts Bags Women",
+   "Accessories &amp; Gifts Hip Flasks Men Women",
+   "Accessories &amp; Gifts Homewear Men Women",
+   "Accessories &amp; Gifts Key rings",
+   "Accessories &amp; Gifts Key rings Women",
+   "Accessories &amp; Gifts Tech",
+   "Accessories &amp; Gifts Wallets",
+   "Belts Men Mens Belts",
+   "Belts Womens Belts",
+   "Gift Vouchers",
+   "Highlandwear Kilt Belts",
+   "Highlandwear Sporrans",
+   "Men Mens Belts",
+   "Women Womens Belts"
+  ],
+  "sample": [
+   "CUSTOM 1.5&#8243; GLENAVON",
+   "Custom_INGRAM_C.Geipel",
+   "Custom_Parnie_90cm_S.Ambries",
+   "Custom_Glenavon_LaurenDay",
+   "Custom_Boy&#8217;s belt_0.75&#8243;",
+   "Custom_Calgary_Jennifer King",
+   "Custom_Clyde_Y. Fukuta",
+   "MINI McLAIRD"
+  ],
   "checked": "2026-07-31"
  },
  "english-fine-cottons": {
   "id": "english-fine-cottons",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "ghhurt": {
   "id": "ghhurt",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 193,
   "tags": [
    "cashmere & merino",
@@ -7392,6 +7489,7 @@
  "house-of-cheviot": {
   "id": "house-of-cheviot",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 289,
   "tags": [
    "cashmere & merino",
@@ -7433,6 +7531,7 @@
  "and-daughter": {
   "id": "and-daughter",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 112,
   "tags": [
    "cashmere & merino",
@@ -7487,6 +7586,7 @@
  "woolkind": {
   "id": "woolkind",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 57,
   "tags": [
    "cashmere & merino",
