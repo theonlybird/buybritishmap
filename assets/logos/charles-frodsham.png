@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://frodsham.com/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	<script src="https://frodsham.com/js/modernizr.js"></script> <!-- Modernizr -->
+    <script type="text/javascript">
+		function toggleDiv(divId) {
+		   $("#"+divId).toggle();
+		}
+	</script>
+	<title> Charles Frodsham and Co Ltd.</title>
+    <meta name="description" content="Charles Frodsham and Co Ltd. Chronometer, Watch & Clock makers.">
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111441801-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111441801-1');
+    </script>
+    -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="cd-main-header">
+            <div class="row noMargin">
+                <div class="column noPad centre">
+                    <a href="https://frodsham.com/index.php"><img src="https://frodsham.com/images/logo2.png" alt="Charles Frodsham Ltd" /></a>
+                </div>
+            </div>
+        </header>
+        
+        <nav class="primary-nav">
+            <ul>
+                <li ><a href="https://frodsham.com/wristwatch/index.php">Wristwatch</a></li>
+                <li ><a href="https://frodsham.com/heritage/index.php">Heritage</a></li>
+                <li ><a href="https://frodsham.com/commissions/index.php">Commissions</a></li>
+                <li ><a href="https://frodsham.com/services/index.php">Services</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero-image">
+            <figure class="full-width">
+                <img alt="Charles Frodsham Ltd Wristwatch" src="images/home-hero-watch.jpg">
+            </figure>
+        </section>
+        <section class="subSectionOne">
+            <div class="row">
+                <div class="one-half column fill noPad">
+                    <figure class="full-width">
+                        <a href="heritage/dating/"><img alt="#" src="images/content-images/dating-home.jpg"></a>
+                    </figure>
+                    <div class="landingBox">
+                        <a href="heritage/dating/">Dating pieces</a>
+                    </div>
+                </div>
+                <div class="one-half column fill noPad">
+                    <figure class="full-width">
+                        <a href="heritage/"><img alt="#" src="images/content-images/heritage-home.jpg"></a>
+                    </figure>
+                    <div class="landingBox">
+                        <a href="heritage/">Heritage</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bgImage">
+            <div class="row">
+                <div class="one-half column noPad">
+                    <header>
+                        <h2>Location</h2>
+                    </header>
+                    <a href="https://www.google.co.uk/maps/place/Charles+Frodsham+%26+Co+Ltd/@51.506691,-0.1406023,17z/data=!3m1!4b1!4m5!3m4!1s0x487604d7a8feaa4f:0x6b97fb8346e2208d!8m2!3d51.506691!4d-0.1384136"><img src="images/map.jpg" alt="map" /></a>
+                    <p>32 Bury Street, London, SW1Y 6AU, UK</p>
+                    <p><a href="https://www.google.co.uk/maps/place/Charles+Frodsham+%26+Co+Ltd/@51.506691,-0.1406023,17z/data=!3m1!4b1!4m5!3m4!1s0x487604d7a8feaa4f:0x6b97fb8346e2208d!8m2!3d51.506691!4d-0.1384136">Directions</a></p>
+                </div>
+                <div class="one-half column noPad last">
+                    <header>
+                        <h2><a name="contact"></a>Contact us</h2>
+                    </header>
+                    <form name="contactform" method="post" action="form2.php">
+                        <label for="full_name">Name:*</label> 
+                        <input id="full_name" placeholder="Name" name="full_name" type="text" required />
+                        <label for="email">Email:*</label> 
+                        <input id="email" placeholder="Email" name="email" type="text" required />
+                        <label for="message">Message:*</label> 
+                        <textarea id="message" placeholder="Your message..." name="message" type="text" required></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LeRp0MUAAAAAFtZVLCQnPl5lN44fci6D-wQm2Uf"></div>
+                        <input class="button bottomMargin" id="submit" type="submit" value="Submit" />
+                    </form>
+                    <p>Or call us on +44 (0)20 7839 1234</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+<div class="footerWrapper">
+    <footer>
+        <div class="row">
+            <div class="one-half column noPad">
+                <p>Charles Frodsham &amp; Co Ltd<br />Chronometer, Watch and Clock Makers<br />Tel: +44 (0)20 7839 1234</p>
+            </div>
+            <div class="one-half column noPad right-text">
+                <p><a href="https://frodsham.com/privacy/">Privacy and cookies</a></p>
+                <p>&copy; Charles Frodsham &amp; Co Ltd.</p>
+                <p>Site design by <a href="https://richardhirst.com">Richard Hirst</a></p>
+            </div>
+        </div>			
+    </footer>
+</div>
+<div id="cookieWrapper">
+</div>
+<script src="https://frodsham.com/js/jquery-2.1.1.js"></script>
+<script src="https://frodsham.com/js/jquery.mobile.custom.min.js"></script>
+<script src="https://frodsham.com/js/main.js"></script>
+<script type="text/javascript" src="https://frodsham.com/js/jquery.cookie.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111441801-1"></script>
+    
+    <script type="text/javascript">
+        // check if the cookie has already been set, if not display the notice
+        cookieValue = $.cookie('Frodshamaccept');
+        if(cookieValue != 'Yes') {
+            $("<div id='cookieNotice'><a href='#' class='cookieButton' onClick='acceptCookieNotice()'>Accept cookies</a> <a href='#' class='cookieButton' onClick='declineCookieNotice()'>Decline cookies</a><p>We use cookies to improve your experience of our website. <a href='https://frodsham.com/privacy/'>Privacy Policy</a></p></div>").appendTo("div#cookieWrapper");
+            $('#cookieNotice').hide().fadeIn(2000);
+        } 
+        // if the user accepts the cookie notice hide the div and set a cookie to remember that decision
+        function acceptCookieNotice(){
+            $.cookie('Frodshamaccept', 'Yes', { expires: 1000, path: '/' });
+            document.getElementById("cookieNotice").className += "hide";
+            
+            // we have consent so use GA now
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-111441801-1');
+        }
+        
+        
+        // decline - don't set any cookies, just hide the notice
+        function declineCookieNotice(){
+            document.getElementById("cookieNotice").className += "hide";
+        }
+        </script>
+</body>
+</html>
