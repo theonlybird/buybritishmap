@@ -66,7 +66,7 @@ const VOCAB = [
   ['activewear',           /\b(activewear|sportswear|base ?layer|cycling|running|legging)\b/i],
   ['dresses',              /\b(dress(?!ing\b|\s*stud|\s*shirt)(es)?\b|frock|ball ?gown|wedding gown)/i],
   ['womenswear',           /\b(women|ladies|blouse|skirt)\b/i],
-  ['childrenswear',        /\b(child|kids|baby|infant|toddler)\b/i],
+  ['childrenswear',        /\b(child(ren)?s?wear|kids ?wear|babygrow|romper|toddler|infant)\b|\bbaby(?! ?(leaf|leaves|potato|carrot|corn|beet|spinach|kale|gem|plum|new))/i],
   ['tweed & woven goods',  /\b(tweed|tartan|blanket|throw|woven|cloth by the metre)\b/i],
   ['workwear & aprons',    /\b(apron|workwear|overall|dungaree|boiler ?suit)\b/i],
   ['jewellery',            /\b(ring|necklace|pendant|earring|bracelet|brooch|jewel)/i],
@@ -85,10 +85,38 @@ const VOCAB = [
   ['fruit & veg',          /\b(vegetable|veg box|fruit|potato|apple|salad)\b/i],
 ];
 
+// Words that appear in product titles as COLOURS, MATERIALS or CARE PRODUCTS
+// rather than as the thing being sold. Stripped before matching, because
+// "Shoe Cream" is not dairy and "Whiskey Nubuck" is not a spirit.
+const NOISE = new RegExp('\\b(' + [
+  // colours & finishes
+  'cream','whiskey','whisky','wine','burgundy','port','chocolate','coffee','honey',
+  'oatmeal','biscuit','caramel','mustard','olive','plum','cherry','peach','oxblood',
+  'chestnut','walnut','almond','butterscotch','champagne','sand','stone','ivory',
+  'charcoal','navy','tan','natural','black','brown','green','blue','red','grey','gray',
+  // leather / material words that collide with food or product tags
+  'calf','kid','kidskin','buck','doe','hide','suede','nubuck','shell','cordovan',
+  // care products & extras
+  'polish','wax','cream cleaner','shoe tree','gift card','gift voucher','sample',
+  'swatch','care kit','conditioner','spare','refill','repair'
+].join('|') + ')\\b', 'gi');
+
 function mapToVocab(text) {
+  const cleaned = String(text || '').replace(NOISE, ' ');
   const hits = new Set();
-  for (const [tag, re] of VOCAB) if (re.test(text)) hits.add(tag);
+  for (const [tag, re] of VOCAB) if (re.test(cleaned)) hits.add(tag);
   return [...hits];
+}
+
+// Same, but records WHICH string produced each tag so every tag is auditable.
+function mapWithEvidence(text) {
+  const cleaned = String(text || '').replace(NOISE, ' ');
+  const out = [];
+  for (const [tag, re] of VOCAB) {
+    const m = cleaned.match(re);
+    if (m) out.push([tag, String(text).trim().slice(0, 60)]);
+  }
+  return out;
 }
 
 // ---------------------------------------------------------------------------
@@ -145,6 +173,7 @@ async function harvestOne(biz) {
   if (!base) return { id: biz.id, shopify: false, reason: 'no-website' };
 
   const seenTypes = new Set();
+  const evidence = {};
   const sample = [];
   let count = 0;
 
@@ -161,7 +190,10 @@ async function harvestOne(biz) {
       if (p.product_type) seenTypes.add(String(p.product_type).trim());
       if (sample.length < 8 && p.title) sample.push(String(p.title).slice(0, 70));
       const text = [p.title, p.product_type, (p.tags || []).join(' ')].join(' ');
-      mapToVocab(text).forEach(t => seenTypes.add('::' + t)); // '::' marks a mapped vocab tag
+      mapWithEvidence(text).forEach(([t, ev]) => {
+        seenTypes.add('::' + t);
+        if (!evidence[t]) evidence[t] = ev;   // first example that produced this tag
+      });
     }
     if (products.length < 250) break;
     await sleep(DELAY_MS);
@@ -175,6 +207,7 @@ async function harvestOne(biz) {
     shopify: true,
     productCount: count,
     tags: mapped,          // controlled vocabulary, safe to merge into the site
+    tagEvidence: evidence, // tag -> the product text that triggered it, for audit
     observedTypes: rawTypes, // their own product_type values, for review
     sample,                // a few real titles, as evidence the harvest is genuine
   };
