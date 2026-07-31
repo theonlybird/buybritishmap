@@ -590,7 +590,11 @@ async function executeAiSearch(query) {
       if (res.ok) {
         result = data;
       } else {
-        lastApiError = data.error || data.details || `HTTP ${res.status}`;
+        // Surface the real diagnosis rather than a generic "check your key".
+        lastApiError = data.error || `HTTP ${res.status}`;
+        if (data.googleMessage) lastApiError += ` — Google says: ${data.googleMessage}`;
+        if (data.fix) lastApiError += ` — Fix: ${data.fix}`;
+        console.error('AI search failed:', data);
       }
     } catch (e) {
       lastApiError = e.message;
