@@ -547,6 +547,9 @@ function renderMapList(){
 
 function renderGrid(){
   const vis = visible();
+  if (!state.aiActive) {
+    vis.sort((a,b)=> state.sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
+  }
   if (state.aiActive) {
     gridAiBanner.innerHTML = state.aiHeadline || 'Here are some UK businesses we think you&rsquo;ll love';
   } else {
@@ -785,11 +788,6 @@ ${catalogStr}`;
 }
 
 // Controls listeners
-document.getElementById('sortBtn').addEventListener('click', () => {
-  state.sortAsc = !state.sortAsc;
-  document.getElementById('sortBtn').textContent = state.sortAsc ? 'A–Z ↓' : 'Z–A ↑';
-  if (state.currentView === 'grid') renderGrid(); else renderMapList();
-});
 
 const ALL_CATS = ['farm','clothing','ceramics','jewellery','cutlery'];
 const ALL_TIERS = ['gold','silver'];
@@ -863,13 +861,14 @@ function bindChipEvents() {
 bindChipEvents();
 
 // Sort buttons sync
-document.querySelectorAll('#sortBtn, .sortBtn').forEach(btn => {
+document.querySelectorAll('#sortBtn, #gridSortBtn, .sortBtn, .btn-sort').forEach(btn => {
   btn.addEventListener('click', () => {
     state.sortAsc = !state.sortAsc;
-    document.querySelectorAll('#sortBtn, .sortBtn').forEach(b => {
+    document.querySelectorAll('#sortBtn, #gridSortBtn, .sortBtn, .btn-sort').forEach(b => {
       b.textContent = state.sortAsc ? 'A–Z ↓' : 'Z–A ↑';
     });
-    if (state.currentView === 'grid') renderGrid(); else renderMapList();
+    renderGrid();
+    renderMapList();
   });
 });
 
