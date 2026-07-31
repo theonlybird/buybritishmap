@@ -119,8 +119,8 @@
   /* Full Page Grid View */
   #gridView{position:absolute;inset:0;background:var(--bg);overflow-y:auto;z-index:900;display:none;padding:24px}
   .grid-header{max-width:1240px;margin:0 auto 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-  .grid-header .ai-banner{background:linear-gradient(135deg,#f5f3ff 0%,#fdf4ff 100%);border:1px solid #ddd6fe;padding:12px 16px;border-radius:10px;color:#4c1d95;font-size:13.5px;line-height:1.45;flex:1;min-width:280px}
-  .grid-header .ai-banner b{color:#6d28d9}
+  .grid-header .ai-banner{background:#f4f7fa;border:1px solid #d8e2ec;border-left:3px solid var(--navy);padding:13px 17px;border-radius:10px;color:#33445c;font-size:13.5px;line-height:1.5;flex:1;min-width:280px}
+  .grid-header .ai-banner b{color:var(--navy)}
 
   .grid-container{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
   .grid-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.03);display:flex;flex-direction:column;justify-content:space-between;transition:.2s}
@@ -131,7 +131,7 @@
   .grid-card .g-title{font-size:16px;font-weight:700;line-height:1.2}
   .grid-card .g-sub{font-size:12.5px;color:var(--muted);margin-top:3px}
   .grid-card .g-badges{margin-top:10px}
-  .grid-card .g-ai-reason{font-size:12px;color:#6d28d9;background:#f3e8ff;padding:6px 10px;border-radius:7px;margin-top:10px;line-height:1.35;font-weight:500}
+  .grid-card .g-ai-reason{font-size:12px;color:var(--navy);background:#eef3f8;border-left:2px solid #c3d3e2;padding:7px 11px;border-radius:6px;margin-top:10px;line-height:1.4;font-weight:500}
   .grid-card .g-desc{font-size:13px;line-height:1.45;color:#39434e;margin:12px 0}
   .grid-card .g-addr{font-size:12px;color:var(--muted);margin-bottom:14px}
   .grid-card .g-links{display:flex;gap:8px;margin-top:auto}
@@ -142,9 +142,9 @@
 
   /* Loader */
   .loader-overlay{position:fixed;inset:0;background:rgba(255,255,255,0.85);z-index:3000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
-  .spinner{width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#6366f1;border-radius:50%;animation:spin 0.8s linear infinite}
+  .spinner{width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:var(--navy);border-radius:50%;animation:spin 0.8s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
-  .loader-text{font-size:15px;font-weight:600;color:#4c1d95}
+  .loader-text{font-size:15px;font-weight:600;color:var(--navy)}
 
   @media (max-width:760px){
     #topbar{padding:0 10px}
@@ -230,7 +230,7 @@
   <div id="gridView">
     <div class="grid-header">
       <div class="ai-banner" id="gridAiBanner">
-        ✨ <b>Gemini AI Search Results</b>
+        <b>Here are some UK businesses we think you&rsquo;ll love</b>
       </div>
     </div>
     <div class="grid-container" id="gridCards"></div>
@@ -240,7 +240,7 @@
 <!-- Loading Overlay -->
 <div id="loader" class="loader-overlay" style="display:none">
   <div class="spinner"></div>
-  <div class="loader-text">✨ Gemini AI is finding the best UK makers...</div>
+  <div class="loader-text">Finding the best match across UK growers and makers&hellip;</div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -357,7 +357,7 @@ const state = {
   sortAsc: true,
   currentView: 'map', // 'map' or 'grid'
   aiActive: false,
-  aiReasoning: '',
+  aiReasoning: '', aiHeadline: '',
   aiMatches: new Map() // id -> 1-sentence rationale
 };
 
@@ -369,6 +369,36 @@ const countEl = document.getElementById('count');
 const gridAiBanner = document.getElementById('gridAiBanner');
 const gridCards = document.getElementById('gridCards');
 const loader = document.getElementById('loader');
+
+// Builds the sentence above the results. Honest about how good the match is.
+function buildHeadline(result) {
+  const esc = t => String(t).replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+  const quality = (result && result.matchQuality) || 'exact';
+  const verb    = (result && result.madeOrGrown === 'grown') ? 'grown' : 'made';
+  const product = result && result.productTerm ? esc(result.productTerm) : '';
+  const place   = result && result.locationTerm ? esc(result.locationTerm) : '';
+  const none    = !result || !result.matches || result.matches.length === 0;
+
+  if (none) {
+    if (product && place) return `We couldn&rsquo;t find any British ${verb} ${product} in ${place} just yet.`;
+    if (product)          return `We couldn&rsquo;t find any British ${verb} ${product} just yet.`;
+    return 'We couldn&rsquo;t find a good match for that just yet.';
+  }
+  if (quality === 'exact') {
+    return 'Here are some UK businesses we think you&rsquo;ll love';
+  }
+  // Went wider than they asked for — say so plainly.
+  if (product && place) {
+    return `We couldn&rsquo;t find you any British ${verb} ${product} in ${place}, but think you&rsquo;ll love these businesses a bit further afield.`;
+  }
+  if (place) {
+    return `We couldn&rsquo;t find a match in ${place}, but think you&rsquo;ll love these businesses a bit further afield.`;
+  }
+  if (product) {
+    return `We couldn&rsquo;t find an exact match for British ${verb} ${product}, but think you&rsquo;ll love these.`;
+  }
+  return 'Here are some UK businesses we think you&rsquo;ll love';
+}
 const searchInput = document.getElementById('search');
 const autocompleteDropdown = document.getElementById('autocompleteDropdown');
 
@@ -422,7 +452,7 @@ function renderMapList(){
   }
 
   listEl.innerHTML = vis.map(b => {
-    const reasonText = state.aiActive && state.aiMatches.has(b.id) ? `<div class="ai-match-reason">✨ ${state.aiMatches.get(b.id)}</div>` : '';
+    const reasonText = state.aiActive && state.aiMatches.has(b.id) ? `<div class="ai-match-reason">${state.aiMatches.get(b.id)}</div>` : '';
     return `<div class="item" data-id="${b.id}">
       ${logoHtml(b,'logo')}
       <div class="meta">
@@ -443,13 +473,15 @@ function renderMapList(){
 function renderGrid(){
   const vis = visible();
   if (state.aiActive) {
-    gridAiBanner.innerHTML = `✨ <b>Gemini AI Summary</b>: ${state.aiReasoning}`;
+    gridAiBanner.innerHTML = state.aiHeadline
+      ? `<b>${state.aiHeadline}</b>${state.aiReasoning ? ` ${state.aiReasoning}` : ''}`
+      : `<b>Here are some UK businesses we think you&rsquo;ll love</b> ${state.aiReasoning || ''}`;
   } else {
     gridAiBanner.innerHTML = `Showing <b>${vis.length}</b> British makers & producers`;
   }
 
   gridCards.innerHTML = vis.map(b => {
-    const aiReason = state.aiActive && state.aiMatches.has(b.id) ? `<div class="g-ai-reason">✨ ${state.aiMatches.get(b.id)}</div>` : '';
+    const aiReason = state.aiActive && state.aiMatches.has(b.id) ? `<div class="g-ai-reason">${state.aiMatches.get(b.id)}</div>` : '';
     const igRow = b.instagram ? `<a class="ig" href="${b.instagram}" target="_blank" rel="noopener">Instagram</a>` : '';
 
     return `<div class="grid-card">
@@ -655,7 +687,8 @@ ${catalogStr}`;
 
     if (result && result.matches && result.matches.length > 0) {
       state.aiActive = true;
-      state.aiReasoning = result.reasoning || `Matching businesses for "${query}"`;
+      state.aiHeadline = buildHeadline(result);
+      state.aiReasoning = result.reasoning || '';
       state.aiMatches.clear();
       result.matches.forEach(m => {
         state.aiMatches.set(m.id, m.reason || 'Relevant match');
@@ -664,7 +697,14 @@ ${catalogStr}`;
       // Switch view to Grid Results View
       toggleView('grid');
     } else {
-      alert(`No AI matches found for "${query}". Try searching another item or region.`);
+      // Nothing at all came back — still show a useful page rather than an alert.
+      state.aiActive = true;
+      state.aiHeadline = buildHeadline(
+        Object.assign({ matchQuality: 'none' }, result || {}, { matches: [] })
+      );
+      state.aiReasoning = 'Try a broader search, or browse the categories on the map.';
+      state.aiMatches.clear();
+      toggleView('grid');
     }
   } catch (err) {
     console.error("AI Search Error:", err);

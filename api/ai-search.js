@@ -97,20 +97,31 @@ CRITICAL INSTRUCTIONS:
 {
   "query": ${JSON.stringify(query)},
   "reasoning": "1-2 sentence explanation of what the user is looking for and the regional/material context.",
+  "productTerm": "the plural everyday noun for what they want, e.g. jumpers, watches, jewellery, venison, mugs. Lowercase. Null if they named no product.",
+  "locationTerm": "the place they asked for exactly as a person would say it, e.g. Darlington, Norfolk, Cornwall. Null if they named no place.",
+  "madeOrGrown": "made or grown - use grown for food, produce, meat and farm goods; made for everything else",
+  "matchQuality": "exact if you found businesses that genuinely satisfy BOTH the product and the location; wider if you found the right product but had to go outside the requested area; loose if you could only find loosely related businesses",
   "matches": [
     { "id": "exact-business-id-from-catalog", "reason": "1-sentence specific rationale." }
   ]
 }
 4. Limit matches to the top 1-12 most relevant businesses.
+4a. IMPORTANT: never return an empty matches array. If nothing matches well, set matchQuality to "wider" or "loose" and still return the closest alternatives you can find, so the user always has somewhere to go.
+4b. Be honest in matchQuality. If the user asked for a town and the nearest match is a county away, that is "wider", not "exact".
 5. DO NOT include markdown formatting like \`\`\`json. Return raw JSON string only.
 
 BUSINESS CATALOG:
 ${catalogStr}`;
 
-  const payload = JSON.stringify({
-    contents: [{ parts: [{ text: systemInstruction }, { text: `User Search Query: "${query}"` }] }],
-    generationConfig: { temperature: 0.2, maxOutputTokens: 8192 }
-  });
+  function buildPayload(model) {
+    const generationConfig = { temperature: 0.2, maxOutputTokens: 8192 };
+    // 2.5/3.x models burn latency on internal reasoning; this is a lookup task, so turn it off.
+    if (/^gemini-(2\.5|3)/.test(model)) generationConfig.thinkingConfig = { thinkingBudget: 0 };
+    return JSON.stringify({
+      contents: [{ parts: [{ text: systemInstruction }, { text: `User Search Query: "${query}"` }] }],
+      generationConfig
+    });
+  }
 
   let lastStatus = 0, lastBody = '', triedModels = [];
 
@@ -120,7 +131,7 @@ ${catalogStr}`;
     try {
       apiRes = await httpsJson(
         `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
-        'POST', payload
+        'POST', buildPayload(model)
       );
     } catch (err) {
       return res.status(502).json({ error: 'Could not reach the Gemini API.', details: err.message });
