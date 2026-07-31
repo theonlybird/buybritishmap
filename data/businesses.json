@@ -84,7 +84,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/community-clothing.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "maquien",
@@ -837,7 +839,11 @@
   "tier_confidence": "high",
   "logo": "assets/logos/ludlow-food-centre.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "farm shop & deli",
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "balgove-larder",
@@ -880,7 +886,11 @@
   "tier_confidence": "high",
   "logo": "assets/logos/fodder.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "farm shop & deli",
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "gloucester-services",
@@ -1259,7 +1269,11 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/farmer-copleys.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "farm shop & deli",
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "hollis-mead",
@@ -1326,7 +1340,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/macknade.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "farm shop & deli",
+   "fruit & veg"
+  ]
  },
  {
   "id": "secretts",
@@ -1703,7 +1720,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/abraham-moon.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "tweed & woven goods",
+   "scarves & accessories"
+  ]
  },
  {
   "id": "hawico",
@@ -3706,7 +3726,10 @@
   "instagram": "https://www.instagram.com/fergusonsirishlinen.ni/",
   "logo": "assets/logos/thomas-ferguson-linen.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "tweed & woven goods",
+   "tableware"
+  ]
  },
  {
   "id": "ballylagan-organic",
@@ -4406,7 +4429,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/english-fine-cottons.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "ghhurt",
@@ -4651,7 +4676,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/fox-umbrellas.png",
   "source": "verified-batch-2026-07",
-  "product_tags": []
+  "product_tags": [
+   "umbrellas",
+   "scarves & accessories"
+  ]
  },
  {
   "id": "budd-shirts",
@@ -5542,7 +5570,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/albert-thurston.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "braces & belts"
+  ]
  },
  {
   "id": "bennett-winch",
@@ -5850,7 +5880,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/british-boxers.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "underwear & nightwear"
+  ]
  },
  {
   "id": "charl-knitwear",
@@ -5892,7 +5924,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/oliver-spencer.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "marwood",
@@ -6185,7 +6219,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/moloh.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "tiffany-rose",
@@ -6205,7 +6241,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/tiffany-rose.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "lambland",
@@ -6314,7 +6353,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/justine-tabak.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "colenimo",
@@ -6379,7 +6420,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/sub-zero.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "underwear & nightwear",
+   "knitwear"
+  ]
  },
  {
   "id": "withnell",
@@ -6399,7 +6443,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/withnell.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "garstin-1871",
@@ -6687,7 +6733,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/rolf-skeldon.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "underwear & nightwear",
+   "everyday wear"
+  ]
  },
  {
   "id": "blue-nude",
@@ -6707,7 +6756,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/blue-nude.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "the-cotton-london",
@@ -6796,7 +6847,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/crease-studios.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "underwear & nightwear"
+  ]
  },
  {
   "id": "wildsole",
@@ -6838,7 +6892,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/daffodil-and-leek.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "worn-to-threads",
@@ -6858,7 +6914,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/worn-to-threads.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "o-pioneers",
@@ -6878,7 +6936,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/o-pioneers.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "paul-brown",
@@ -6921,7 +6982,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/hemingsworth.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "waring-brooke",
@@ -7232,7 +7295,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/reflekt-clothing.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "suits & trousers",
+   "everyday wear"
+  ]
  },
  {
   "id": "tropel-kids",
@@ -7252,7 +7318,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/tropel-kids.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "childrenswear"
+  ]
  },
  {
   "id": "amy-britton",
@@ -7316,7 +7384,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/homebody.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "underwear & nightwear",
+   "knitwear"
+  ]
  },
  {
   "id": "the-rugby-company",
@@ -7585,7 +7656,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/harriet-eccleston.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "hettie",
@@ -7605,7 +7678,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/hettie.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "elwin",
@@ -7691,7 +7766,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/mille-saisons.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "sarvin",
@@ -7711,7 +7788,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/sarvin.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "soma-sportswear",
@@ -7731,7 +7811,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/soma-sportswear.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "activewear"
+  ]
  },
  {
   "id": "rock-and-ruby",
@@ -7774,7 +7856,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/dreaming-of-ivy.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "cara-and-the-sky",
@@ -7816,7 +7901,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/lola-starr.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "activewear"
+  ]
  },
  {
   "id": "pittch",
@@ -7860,7 +7947,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/the-well-worn.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "adkn",
@@ -7880,7 +7969,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/adkn.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "been-london",
@@ -7922,7 +8013,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/lottie-and-lysh.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "childrenswear"
+  ]
  },
  {
   "id": "red-shoes-ruth-emily-davey",
@@ -7964,7 +8057,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/lady-v-london.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "j-alex-swift",
@@ -8029,7 +8125,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/tutti-frutti-clothing.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "childrenswear"
+  ]
  },
  {
   "id": "gina",
@@ -8071,7 +8169,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "foxology",
@@ -8136,7 +8236,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/sami-k.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "reworked-348",
@@ -8178,7 +8280,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/vivien-of-holloway.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "alie-street",
@@ -8198,7 +8303,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/alie-street.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "ella-griffee",
@@ -8218,7 +8326,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/ella-griffee.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "orraman-leather",
@@ -8282,7 +8392,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/cocoove.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "kipper",
@@ -8324,7 +8436,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/meandthee.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "clare-haggas",
@@ -8432,7 +8546,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/geoff-stocker.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "scarves & accessories",
+   "underwear & nightwear"
+  ]
  },
  {
   "id": "abe-house",
@@ -8452,7 +8569,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/abe-house.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "stalf",
@@ -8472,7 +8591,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/stalf.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "big-fox-apparel",
@@ -8626,7 +8747,10 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/fawn-and-freda.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "childrenswear",
+   "womenswear"
+  ]
  },
  {
   "id": "rach-x",
@@ -8668,7 +8792,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/nadinoo.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "kaely-russell",
@@ -8688,7 +8814,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/kaely-russell.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "the-bathrobe-company",
@@ -8708,7 +8836,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/the-bathrobe-company.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "underwear & nightwear"
+  ]
  },
  {
   "id": "violets-in-may",
@@ -8728,7 +8858,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/violets-in-may.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "faith-rowan-leeves",
@@ -8748,7 +8880,10 @@
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear",
+   "dresses"
+  ]
  },
  {
   "id": "lilyberry",
@@ -8768,7 +8903,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/lilyberry.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "childrenswear"
+  ]
  },
  {
   "id": "leah-may-tailors",
@@ -8924,7 +9061,9 @@
   "tier_confidence": "high",
   "logo": "assets/logos/otway-orford.png",
   "source": "britishmadeclothing.co.uk queue",
-  "product_tags": []
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "barrington-ayre",
@@ -8989,7 +9128,9 @@
   "tier_confidence": "medium",
   "logo": "assets/logos/libby-london.png",
   "source": "unrecorded — verify before relying on",
-  "product_tags": []
+  "product_tags": [
+   "womenswear"
+  ]
  },
  {
   "id": "ivy-and-rigg",
