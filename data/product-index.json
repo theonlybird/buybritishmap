@@ -2,6 +2,7 @@
  "emma-bridgewater": {
   "id": "emma-bridgewater",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 722,
   "tags": [
    "bags & leather goods",
@@ -104,6 +105,7 @@
  "community-clothing": {
   "id": "community-clothing",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 893,
   "tags": [
    "activewear",
@@ -241,6 +243,7 @@
  "trakke": {
   "id": "trakke",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 32,
   "tags": [
    "activewear",
@@ -295,6 +298,7 @@
  "sheila-fleet": {
   "id": "sheila-fleet",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "bags & leather goods",
@@ -404,6 +408,7 @@
  "tanner-bates": {
   "id": "tanner-bates",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 74,
   "tags": [
    "bags & leather goods",
@@ -449,6 +454,7 @@
  "carradice": {
   "id": "carradice",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 114,
   "tags": [
    "bags & leather goods",
@@ -476,6 +482,7 @@
  "seh-kelly": {
   "id": "seh-kelly",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 56,
   "tags": [
    "coats & jackets",
@@ -531,12 +538,35 @@
  "united-overalls": {
   "id": "united-overalls",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "squarespace",
+  "productCount": 8,
+  "tags": [
+   "footwear & boots",
+   "jeans & denim",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "jeans & denim": "United Overalls Jean Sticker",
+   "footwear & boots": "British Wool Boot Socks",
+   "workwear & aprons": "British Selvedge Denim Work Apron"
+  },
+  "observedTypes": [],
+  "sample": [
+   "British Stencil Sweatshirt",
+   "United Overalls Sewing Machine Sticker",
+   "United Overalls Jean Sticker",
+   "United Overalls ED-2 Cinch Back Selvedge Denim",
+   "United Overalls ED-1 Selvedge Denim",
+   "British Wool Boot Socks",
+   "Gift Card",
+   "British Selvedge Denim Work Apron"
+  ],
   "checked": "2026-07-31"
  },
  "private-white-vc": {
   "id": "private-white-vc",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 364,
   "tags": [
    "bags & leather goods",
@@ -600,6 +630,7 @@
  "maquien": {
   "id": "maquien",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 74,
   "tags": [
    "braces & belts",
@@ -654,6 +685,7 @@
  "maude-and-fox": {
   "id": "maude-and-fox",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 92,
   "tags": [
    "bags & leather goods",
@@ -700,6 +732,7 @@
  "chapman-bags": {
   "id": "chapman-bags",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 68,
   "tags": [
    "bags & leather goods",
@@ -756,24 +789,106 @@
  "barnes-and-moore": {
   "id": "barnes-and-moore",
   "shopify": false,
-  "reason": "timeout",
+  "platform": "sitemap",
+  "productCount": 259,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "jeans & denim",
+   "watches"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "merchant coin purse fern green",
+   "jeans & denim": "denim repair patch",
+   "braces & belts": "japanese shonan belt style no 3 glazed black",
+   "watches": "nato watch band deep honey"
+  },
+  "observedTypes": [],
+  "sample": [
+   "shop",
+   "field notes mixed kraft notebook 3 pack",
+   "yardman ii natural key fob",
+   "yardman ii deep honey key fob",
+   "yardman ii harness tan key fob",
+   "yardman black brass key fob 2",
+   "merchant coin purse fern green",
+   "tillerman card holder navy blue leather edition"
+  ],
   "checked": "2026-07-31"
  },
  "john-smedley": {
   "id": "john-smedley",
   "shopify": false,
-  "reason": "http-429",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "hebtroco": {
   "id": "hebtroco",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 397,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "bread & bakery",
+   "cashmere & merino",
+   "coats & jackets",
+   "cutlery & knives",
+   "dairy & cheese",
+   "drinks & spirits",
+   "footwear & boots",
+   "fruit & veg",
+   "hats & caps",
+   "jeans & denim",
+   "knitwear",
+   "mugs",
+   "scarves & accessories",
+   "shirts",
+   "suits & trousers",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "watches"
+  ],
+  "tagEvidence": {
+   "vests & waistcoats": "pata negra riders vest",
+   "knitwear": "forest nep jumper",
+   "cutlery & knives": "army knife folding single blade",
+   "shirts": "cotton skull t shirt",
+   "coats & jackets": "jacksnipe over jacket",
+   "scarves & accessories": "shawl collar cardigan mossy green",
+   "bags & leather goods": "minimus leather wallet dark veg tan",
+   "jeans & denim": "r14 regenagri selvedge denim jeans indigo",
+   "cashmere & merino": "merino menace socks",
+   "mugs": "woke mug",
+   "dairy & cheese": "raglan sweatshirt milk choc",
+   "fruit & veg": "apple polishing cloth",
+   "tweed & woven goods": "fraction blanket",
+   "braces & belts": "blacksmith belt black",
+   "hats & caps": "hoyk hat burgundy marl",
+   "watches": "merino bifold watch cap teal",
+   "footwear & boots": "derby boot",
+   "suits & trousers": "mili chinos navy bedford cord",
+   "drinks & spirits": "hebtroco beer mat coaster pack",
+   "bread & bakery": "sheffield bread knife 8 inch"
+  },
+  "observedTypes": [],
+  "sample": [
+   "shop",
+   "heavy sweatshirt cobalt blue",
+   "cork for coffee tea cans",
+   "pata negra riders vest",
+   "heavy hoodie black",
+   "squad shorts",
+   "forest nep jumper",
+   "pink wafer jumper"
+  ],
   "checked": "2026-07-31"
  },
  "billingham": {
   "id": "billingham",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 251,
   "tags": [
    "bags & leather goods",
@@ -831,6 +946,7 @@
  "campbell-cole": {
   "id": "campbell-cole",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 182,
   "tags": [
    "bags & leather goods",
@@ -879,18 +995,85 @@
  "carl-stuart-tailors": {
   "id": "carl-stuart-tailors",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "knepp-wild-range": {
   "id": "knepp-wild-range",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "beef",
+   "dairy & cheese",
+   "fruit & veg",
+   "game & venison",
+   "hats & caps",
+   "mugs",
+   "plates",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "pork & bacon": "Marinated &amp; Cold Smoked Pork Ribs Partner Pork Wild Rang",
+   "fruit & veg": "Pork &amp; Apple Sausages Partner Pork Wild Range BBQ Meat",
+   "dairy & cheese": "Beef &amp; Cheese Sausages Beef Wild Range BBQ Meat",
+   "beef": "Beef &amp; Cheese Sausages Beef Wild Range BBQ Meat",
+   "poultry": "Pasture Raised Chicken Hearts Partner Poultry Wild Range Mea",
+   "game & venison": "Fallow Venison Cumberland Sausages Venison Wild Range BBQ Me",
+   "mugs": "Beaver Mug Gifts",
+   "hats & caps": "Rewilding Revolution Cap Gifts",
+   "plates": "Pasture to Plate Safari Safaris Wilding Kitchen"
+  },
+  "observedTypes": [
+   "Author Suppers Events",
+   "Beef",
+   "Beef Wild Range BBQ Meat",
+   "Beef Wild Range BBQ Meat Wild Range Meat",
+   "Cabins",
+   "Charcuterie",
+   "Charcuterie Meat Box",
+   "Charcuterie Partner Pork Wild Range Meat",
+   "Events",
+   "Events For Kids",
+   "Events Garden Visits Wilding Kitchen",
+   "Events Garden Visits Workshops",
+   "Events Wilding Kitchen",
+   "Events Workshops",
+   "Garden Visits",
+   "Garden Visits Workshops",
+   "Gift Vouchers",
+   "Gifts",
+   "Knepp Tamworth pork Wild Range Meat",
+   "Meat Box",
+   "Memberships",
+   "Partner Pork",
+   "Partner Pork Wild Range BBQ Meat",
+   "Partner Pork Wild Range BBQ Meat Wild Range Meat",
+   "Partner Pork Wild Range Meat",
+   "Partner Poultry Wild Range BBQ Meat Wild Range Meat",
+   "Partner Poultry Wild Range Meat",
+   "Safaris",
+   "Safaris Wilding Kitchen",
+   "Venison Wild Range BBQ Meat"
+  ],
+  "sample": [
+   "Hand-tied Bouquet Workshop",
+   "Rewild Your Child (Ages 7-11) 17 August (pm)",
+   "Rewild your Child (Ages 7-11) 6 August",
+   "Rewild Your Child (Ages 3-6) 17th August (am)",
+   "Market Garden Tour",
+   "Marinated &amp; Cold Smoked Pork Ribs",
+   "Pork Cumberland Sausages",
+   "Pork &amp; Apple Sausages"
+  ],
   "checked": "2026-07-31"
  },
  "gazegill-organics": {
   "id": "gazegill-organics",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 670,
   "tags": [
    "bags & leather goods",
@@ -944,6 +1127,7 @@
  "farm2fork": {
   "id": "farm2fork",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 78,
   "tags": [
    "beef",
@@ -981,6 +1165,7 @@
  "eversfield-organic": {
   "id": "eversfield-organic",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 232,
   "tags": [
    "beef",
@@ -1039,12 +1224,14 @@
  "iow-tomatoes": {
   "id": "iow-tomatoes",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "pipers-farm": {
   "id": "pipers-farm",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 529,
   "tags": [
    "beef",
@@ -1124,12 +1311,14 @@
  "daylesford": {
   "id": "daylesford",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "trickers": {
   "id": "trickers",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 278,
   "tags": [
    "bags & leather goods",
@@ -1187,6 +1376,7 @@
  "crockett-jones": {
   "id": "crockett-jones",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 795,
   "tags": [
    "bags & leather goods",
@@ -1234,24 +1424,67 @@
  "joseph-cheaney": {
   "id": "joseph-cheaney",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "loake": {
   "id": "loake",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 399,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "footwear & boots",
+   "game & venison",
+   "jeans & denim",
+   "poultry",
+   "suits & trousers"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "satchel green canvas",
+   "braces & belts": "finedon belt black",
+   "footwear & boots": "socks grey multi striped boot",
+   "suits & trousers": "london suit carrier brown",
+   "poultry": "socks duck",
+   "jeans & denim": "socks arran denim",
+   "game & venison": "socks pheasant navy"
+  },
+  "observedTypes": [],
+  "sample": [
+   "product",
+   "cadogan black",
+   "cadogan mahogany",
+   "hebden black waxy",
+   "209 black",
+   "260 black",
+   "262 black",
+   "302 dark brown g"
+  ],
   "checked": "2026-07-31"
  },
  "edward-green": {
   "id": "edward-green",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 5,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [],
+  "sample": [
+   "shop",
+   "accessories.html",
+   "new arrivals.html",
+   "jermyn st",
+   "boulevard st germain"
+  ],
   "checked": "2026-07-31"
  },
  "johnstons-of-elgin": {
   "id": "johnstons-of-elgin",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "cashmere & merino",
@@ -1340,6 +1573,7 @@
  "begg-x-co": {
   "id": "begg-x-co",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 413,
   "tags": [
    "cashmere & merino",
@@ -1402,12 +1636,50 @@
  "william-lockie": {
   "id": "william-lockie",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 50,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "hats & caps",
+   "knitwear",
+   "scarves & accessories",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "womenswear": "LADIES SOCKS ACCESSORIES",
+   "scarves & accessories": "RIBBED SCARF ACCESSORIES",
+   "hats & caps": "RIBBED HAT ACCESSORIES",
+   "cashmere & merino": "SEED FUNNEL NECK 100% CASHMERE",
+   "knitwear": "CANDICE VEE CARDIGAN with 2 pockets and all over cable 100% ",
+   "coats & jackets": "CLAUDIA JACKET with 4 pockets 100% CASHMERE",
+   "vests & waistcoats": "GORDON WAISTCOAT with 2 pockets GEELONG"
+  },
+  "observedTypes": [
+   "100% CASHMERE",
+   "ACCESSORIES",
+   "CAMELHAIR",
+   "CASHMERE",
+   "GEELONG",
+   "LAMBSWOOL"
+  ],
+  "sample": [
+   "MENS SOCKS",
+   "LADIES SOCKS",
+   "CABLE BEDSOCK",
+   "PLAIN GLOVES",
+   "CABLE GLOVES",
+   "RIBBED SCARF",
+   "CABLE SCARF",
+   "RIBBED HAT"
+  ],
   "checked": "2026-07-31"
  },
  "corgi": {
   "id": "corgi",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 395,
   "tags": [
    "activewear",
@@ -1502,12 +1774,14 @@
  "pantherella": {
   "id": "pantherella",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "peregrine": {
   "id": "peregrine",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 75,
   "tags": [
    "cashmere & merino",
@@ -1567,6 +1841,7 @@
  "mackintosh": {
   "id": "mackintosh",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 697,
   "tags": [
    "bags & leather goods",
@@ -1619,24 +1894,58 @@
  "hiut-denim": {
   "id": "hiut-denim",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 10,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "jeans & denim"
+  ],
+  "tagEvidence": {
+   "braces & belts": "barnes moore leather belt",
+   "bags & leather goods": "billy tannery wallet the bifold zipped",
+   "jeans & denim": "hiut denim store credit"
+  },
+  "observedTypes": [],
+  "sample": [
+   "gift voucher",
+   "barnes moore leather belt",
+   "billy tannery wallet the bifold zipped",
+   "deja blue",
+   "hiut denim store credit",
+   "leuchtturm 1917 do one thing well bullet journal",
+   "repair shipping",
+   "yearbook 6"
+  ],
   "checked": "2026-07-31"
  },
  "chatsworth-farm-shop": {
   "id": "chatsworth-farm-shop",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 4,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [],
+  "sample": [
+   "shop",
+   "farmyard shop",
+   "stables shop",
+   "orangery shop"
+  ],
   "checked": "2026-07-31"
  },
  "ludlow-food-centre": {
   "id": "ludlow-food-centre",
   "shopify": false,
-  "reason": "timeout",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "balgove-larder": {
   "id": "balgove-larder",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 134,
   "tags": [
    "bags & leather goods",
@@ -1730,36 +2039,174 @@
  "fodder": {
   "id": "fodder",
   "shopify": false,
-  "reason": "not-json",
+  "platform": "woocommerce",
+  "productCount": 20,
+  "tags": [
+   "game & venison",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "poultry": "Free Range Herb Fed Boned &amp; Rolled Turkey Breast and Leg",
+   "pork & bacon": "Plain Pork Pie",
+   "game & venison": "Game Pie"
+  },
+  "observedTypes": [
+   "Events",
+   "Gift Cards",
+   "Hampers"
+  ],
+  "sample": [
+   "Wild Garlic Potatoes",
+   "Free Range Herb Fed Boned &amp; Rolled Turkey Breast and Leg Joint",
+   "Great Yorkshire Feast",
+   "Late Night Shopping",
+   "Cook with Owen &#8211; Curry Night",
+   "Plain Pork Pie",
+   "Game Pie",
+   "Afternoon Tea Gift Card"
+  ],
   "checked": "2026-07-31"
  },
  "gloucester-services": {
   "id": "gloucester-services",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "rhug-estate": {
   "id": "rhug-estate",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "bread & bakery",
+   "dairy & cheese",
+   "drinks & spirits",
+   "fruit & veg",
+   "jewellery",
+   "lamb",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "poultry": "Organic Chicken Breast 10 x Pack The BBQ Summer Sale Click &",
+   "lamb": "Lamb &#038; Mint Koftas Organic Meat Barbecue Click &amp; Co",
+   "bread & bakery": "Charlie &#038; Ivy&#8217;s White Balsamic, Tarragon and Whit",
+   "dairy & cheese": "Cotteswold Dairy Semi-Skimmed Milk Click &amp; Collect",
+   "drinks & spirits": "Beeble British Honey Whiskey Liqueur Beeble Click &amp; Coll",
+   "fruit & veg": "Willy&#8217;s Apple Cider Vinegar No 2. Eureka Turmeric Cond",
+   "bowls": "Sir Woofchester&#8217;s Fish and Chips Dog Bowl Pet Care New",
+   "jewellery": "Alex Monroe Chrysanthemum Flower Stud Earrings Jewellery Gif"
+  },
+  "observedTypes": [
+   "All Click &amp; Collect Organic Christmas Chicken Organic Free-Range Chicken Organic Meat",
+   "Bakery",
+   "Beeble Click &amp; Collect Spirits",
+   "Beeble Spirits",
+   "Beer",
+   "Biscuits",
+   "Biscuits Gifts",
+   "Biscuits Gifts Tea &amp; Coffee",
+   "Champagne",
+   "Chocolate and Sweets Gifts",
+   "Chocolate and Sweets Gifts For Her Gifts For Him Wickedly Welsh",
+   "Click &amp; Collect",
+   "Condiments",
+   "Condiments Charlie and Ivys",
+   "Condiments Click &amp; Collect Halen Mon",
+   "Condiments Halen Mon",
+   "Delicatessen",
+   "Delicatessen Free From",
+   "Delicatessen Pasta and Rice",
+   "Free From Condiments",
+   "Free From Pantry Pasta and Rice",
+   "Gifts",
+   "Gifts For Her",
+   "Honey Spirits",
+   "Jewellery Gifts For Her",
+   "Lifestyle",
+   "Mother's Day Skincare Wild Beauty",
+   "Organic Free-Range Turkeys All Christmas Meats &amp; Roasting Joints Organic Christmas Chicken Organic Free-Range Chicken Organic Meat",
+   "Organic Meat Barbecue Click &amp; Collect Organic Christmas Lamb Organic Welsh Lamb",
+   "Pantry Pasta and Rice",
+   "Penderyn Chocolate and Sweets Gifts For Her Gifts For Him",
+   "Penderyn Gift Sets Gifts For Him Spirits",
+   "Pet Care",
+   "Pet Care New Arrivals",
+   "Skincare Gift Sets Mother's Day Wild Beauty",
+   "Skincare Gifts Mother's Day Wild Beauty",
+   "Spirits",
+   "Spirits Free From",
+   "Spirits Gifts",
+   "Tea &amp; Coffee"
+  ],
+  "sample": [
+   "Rhug Wild Beauty Daily Essentials Set",
+   "Rhug Wild Beauty Sweet Dreams Set",
+   "Rhug Wild Beauty High Performance Trio Set",
+   "Rhug Wild Beauty Hand Wash &#038; Lotion Duo",
+   "Organic Chicken Breast 10 x Pack",
+   "Lamb &#038; Mint Koftas",
+   "Organic Diced Chicken",
+   "Organic Frozen Turkey"
+  ],
   "checked": "2026-07-31"
  },
  "goodwood-farm-shop": {
   "id": "goodwood-farm-shop",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "riverford": {
   "id": "riverford",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 310,
+  "tags": [
+   "bags & leather goods",
+   "beef",
+   "bread & bakery",
+   "childrenswear",
+   "dairy & cheese",
+   "drinks & spirits",
+   "fruit & veg",
+   "lamb",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "dairy & cheese": "brue valley butter",
+   "poultry": "chicken extra large",
+   "pork & bacon": "pork sausages gluten free",
+   "beef": "beef burgers gluten free",
+   "fruit & veg": "seasonal veg box small",
+   "bags & leather goods": "salad bag",
+   "childrenswear": "tomatoes baby mixed",
+   "bread & bakery": "sourdough bread",
+   "drinks & spirits": "organic vintage cider",
+   "lamb": "lamb loin chops"
+  },
+  "observedTypes": [],
+  "sample": [
+   "blueberries",
+   "brue valley butter",
+   "chillies mixed",
+   "tomatillos",
+   "peppers padron",
+   "plums",
+   "raspberries",
+   "red grapes seedless"
+  ],
   "checked": "2026-07-31"
  },
  "fox-brothers": {
   "id": "fox-brothers",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 625,
   "tags": [
    "bags & leather goods",
@@ -1817,6 +2264,7 @@
  "lavenham": {
   "id": "lavenham",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 281,
   "tags": [
    "bags & leather goods",
@@ -1873,6 +2321,7 @@
  "christys": {
   "id": "christys",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 128,
   "tags": [
    "cashmere & merino",
@@ -1913,6 +2362,7 @@
  "ettinger": {
   "id": "ettinger",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 180,
   "tags": [
    "bags & leather goods",
@@ -1995,18 +2445,21 @@
  "barbour": {
   "id": "barbour",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "new-balance-uk": {
   "id": "new-balance-uk",
   "shopify": false,
-  "reason": "http-403",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "globe-trotter": {
   "id": "globe-trotter",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "bags & leather goods",
@@ -2055,6 +2508,7 @@
  "tusting": {
   "id": "tusting",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 80,
   "tags": [
    "bags & leather goods",
@@ -2089,6 +2543,7 @@
  "emma-willis": {
   "id": "emma-willis",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 424,
   "tags": [
    "coats & jackets",
@@ -2145,6 +2600,7 @@
  "turnbull-asser": {
   "id": "turnbull-asser",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "bags & leather goods",
@@ -2239,36 +2695,111 @@
  "keelham": {
   "id": "keelham",
   "shopify": false,
-  "reason": "net-ENOTFOUND",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "cannon-hall-farm": {
   "id": "cannon-hall-farm",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "farmer-copleys": {
   "id": "farmer-copleys",
   "shopify": false,
-  "reason": "not-json",
+  "platform": "woocommerce",
+  "productCount": 76,
+  "tags": [
+   "beef",
+   "bread & bakery",
+   "dairy & cheese",
+   "fruit & veg",
+   "plates",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "bread & bakery": "Coffee Cream Cake Farmhouse Catering Tray Bakes &amp; Sliced",
+   "fruit & veg": "Naked Victoria Sponge Topped with Seasonal Fruit Farmhouse C",
+   "plates": "Farmhouse Kitchen Mixed Charcuterie Platter Charcuterie &amp",
+   "dairy & cheese": "Farmhouse Kitchen Mixed Charcuterie Platter Charcuterie &amp",
+   "pork & bacon": "Cheese &#038; Bacon Filled Jackets Farmhouse Catering Filled",
+   "poultry": "Chicken, Leek &#038; Bacon Pie Farmhouse Catering Oven Share",
+   "beef": "Chef&#8217;s Beef Lasagne Farmhouse Catering Oven Sharers"
+  },
+  "observedTypes": [
+   "Afternoon Teas",
+   "BBQ Time Farmhouse Catering",
+   "Boxes",
+   "Brunch Farmhouse Catering",
+   "Charcuterie &amp; Cheese Farmhouse Catering",
+   "Farmhouse Catering",
+   "Farmhouse Catering Filled Jackets",
+   "Farmhouse Catering Individual Quiches",
+   "Farmhouse Catering Oven Sharers",
+   "Farmhouse Catering Personalised Pastries",
+   "Farmhouse Catering Ready to Eat Buffets &amp; Platters",
+   "Farmhouse Catering Rise &amp; Shine",
+   "Farmhouse Catering Tray Bakes &amp; Sliced Cakes",
+   "Gift Cards",
+   "Hampers",
+   "Hampers Pumpkins"
+  ],
+  "sample": [
+   "Mum’s Ultimate Celebration Hamper",
+   "Mum’s Finest Treats Hamper",
+   "Mum’s Little Luxuries Hamper",
+   "Lemon Tart",
+   "Coffee Cream Cake",
+   "Biscoff Cheesecake",
+   "Basque Cheesecake",
+   "Lemon Drizzle Square Cake"
+  ],
   "checked": "2026-07-31"
  },
  "hollis-mead": {
   "id": "hollis-mead",
   "shopify": false,
-  "reason": "net-ERR_TLS_CERT_ALTNAME_INVALID",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "loch-arthur": {
   "id": "loch-arthur",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 12,
+  "tags": [
+   "bags & leather goods",
+   "dairy & cheese"
+  ],
+  "tagEvidence": {
+   "dairy & cheese": "A Spirited, Scottish Celebration Cheese Baskets &amp; Hamper",
+   "bags & leather goods": "The Loch Arthur Goody Bag Cheese Baskets &amp; Hampers"
+  },
+  "observedTypes": [
+   "Cheese",
+   "Cheese Baskets &amp; Hampers",
+   "Gift Vouchers"
+  ],
+  "sample": [
+   "A Spirited, Scottish Celebration",
+   "The Loch Arthur Goody Bag",
+   "In-Store Gift Voucher",
+   "Create Your Own Gift &#8211; and name your own price! Call us to discu",
+   "The Raw Cheese Box",
+   "The Loch Arthur Breakfast Bag",
+   "A Very Loch Arthur Christmas",
+   "The Scottish Selection"
+  ],
   "checked": "2026-07-31"
  },
  "macknade": {
   "id": "macknade",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 117,
   "tags": [
    "dairy & cheese",
@@ -2303,12 +2834,14 @@
  "secretts": {
   "id": "secretts",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "jamiesons-shetland": {
   "id": "jamiesons-shetland",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 912,
   "tags": [
    "bags & leather goods",
@@ -2377,6 +2910,7 @@
  "melin-tregwynt": {
   "id": "melin-tregwynt",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 127,
   "tags": [
    "bags & leather goods",
@@ -2451,6 +2985,7 @@
  "eribe": {
   "id": "eribe",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 601,
   "tags": [
    "cashmere & merino",
@@ -2513,6 +3048,7 @@
  "sunspel": {
   "id": "sunspel",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 972,
   "tags": [
    "bags & leather goods",
@@ -2590,6 +3126,7 @@
  "drakes": {
   "id": "drakes",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "bags & leather goods",
@@ -2692,6 +3229,7 @@
  "solovair": {
   "id": "solovair",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 377,
   "tags": [
    "bags & leather goods",
@@ -2733,24 +3271,46 @@
  "drmartens-mie": {
   "id": "drmartens-mie",
   "shopify": false,
-  "reason": "http-403",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "low-sizergh-barn": {
   "id": "low-sizergh-barn",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 23,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [
+   "LSB Kitchen",
+   "Lake District Patches",
+   "Vouchers",
+   "Wild Swimming"
+  ],
+  "sample": [
+   "Haystacks",
+   "Scafell Pike Patch",
+   "Coniston Patch",
+   "Rannerdale Knotts badge",
+   "Grisedale Pike badge",
+   "Skiddaw badge",
+   "Great Gable badge",
+   "Pavey Ark Badge"
+  ],
   "checked": "2026-07-31"
  },
  "trevaskis-farm": {
   "id": "trevaskis-farm",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "lobbs-farm-shop": {
   "id": "lobbs-farm-shop",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 466,
   "tags": [
    "beef",
@@ -2814,12 +3374,47 @@
  "ardross-farm": {
   "id": "ardross-farm",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 30,
+  "tags": [
+   "bags & leather goods",
+   "beef",
+   "dairy & cheese",
+   "fruit & veg",
+   "lamb"
+  ],
+  "tagEvidence": {
+   "bags & leather goods": "Ardross Jute Bag Gifts &amp; Hampers",
+   "beef": "Everyday Essentials Beef Box Grass-fed Meat",
+   "lamb": "Lamb Box &#8211; half     *out of season* Grass-fed Meat",
+   "fruit & veg": "Grass-fed Tallow Soap Apple &#038; Cinnamon Tallow Products",
+   "dairy & cheese": "Whipped Tallow Butter &#8211; Aloe &#038; Prickly Pear Tallo"
+  },
+  "observedTypes": [
+   "Gifts &amp; Hampers",
+   "Gifts &amp; Hampers Seasonal Specialties",
+   "Gifts &amp; Hampers Tallow Products",
+   "Grass-fed Meat",
+   "Grass-fed Meat Seasonal Specialties",
+   "Seasonal Specialties",
+   "Tallow Products"
+  ],
+  "sample": [
+   "Behind the Scenes at Ardross Farm: Follow the Journey of Your Food",
+   "Ardross Hand-Tied Wheat Bunches",
+   "Ardross Gift Vouchers",
+   "Ardross Jute Bag",
+   "Ardross Jute Shoulder Bag",
+   "Fields &#038; Forest Candle",
+   "Everyday Essentials Beef Box",
+   "Farmer’s Grill Box"
+  ],
   "checked": "2026-07-31"
  },
  "brocksbushes": {
   "id": "brocksbushes",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 11,
   "tags": [
    "bread & bakery",
@@ -2845,30 +3440,69 @@
  "hollies-farm-shop": {
   "id": "hollies-farm-shop",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "cobbs-farm-shop": {
   "id": "cobbs-farm-shop",
   "shopify": false,
-  "reason": "not-json",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "essington-farm": {
   "id": "essington-farm",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "abraham-moon": {
   "id": "abraham-moon",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "dresses",
+   "jeans & denim"
+  ],
+  "tagEvidence": {
+   "dresses": "Antique Dress Stewart Interiors Plaids &amp; Tartans",
+   "jeans & denim": "Donegal &#8211; Denim Contract Donegal Contract Interiors"
+  },
+  "observedTypes": [
+   "Contract Donegal Contract",
+   "Contract Donegal Contract Interiors",
+   "Contract Parquet Contract",
+   "Donegal Contract Interiors",
+   "Donegal Heritage II Collection Interiors Plain Wool Fabrics",
+   "Donegal Interiors Plain Wool Fabrics",
+   "Donegal Interiors Warm Neutrals",
+   "Heritage II Collection Interiors",
+   "Heritage II Collection Interiors Plain Wool Fabrics",
+   "Heritage II Collection Interiors Warm Neutrals",
+   "Interiors",
+   "Interiors Plaids &amp; Tartans",
+   "Parquet",
+   "Plaids &amp; Tartans"
+  ],
+  "sample": [
+   "Royal Stewart",
+   "Rob Roy &#8211; Red Natural",
+   "Rob Roy &#8211; Red",
+   "Ombre &#8211; Teal",
+   "Ombre &#8211; Red",
+   "Ombre &#8211; Natural",
+   "Malham &#8211; Green",
+   "Lindsay"
+  ],
   "checked": "2026-07-31"
  },
  "hawico": {
   "id": "hawico",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 90,
   "tags": [
    "cashmere & merino",
@@ -2908,6 +3542,7 @@
  "carrier-company": {
   "id": "carrier-company",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 375,
   "tags": [
    "bags & leather goods",
@@ -3012,6 +3647,7 @@
  "blackhorse-lane": {
   "id": "blackhorse-lane",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 265,
   "tags": [
    "bags & leather goods",
@@ -3093,6 +3729,7 @@
  "norman-walsh": {
   "id": "norman-walsh",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 115,
   "tags": [
    "dairy & cheese"
@@ -3116,42 +3753,165 @@
  "gonalston": {
   "id": "gonalston",
   "shopify": false,
-  "reason": "net-ERR_TLS_CERT_ALTNAME_INVALID",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "denstone-hall": {
   "id": "denstone-hall",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 2,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [],
+  "sample": [
+   "Afternoon Tea for Two Voucher",
+   "Denstone Hall Gift Card"
+  ],
   "checked": "2026-07-31"
  },
  "loch-levens-larder": {
   "id": "loch-levens-larder",
   "shopify": false,
-  "reason": "not-json",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "cowdray-farm-shop": {
   "id": "cowdray-farm-shop",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "beef",
+   "game & venison",
+   "lamb",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "beef": "Cowdray Beef Braising Steak Cowdray Estate Beef",
+   "pork & bacon": "Dry Cured Smoked Back Bacon Free Range Pork",
+   "poultry": "Free Range Chicken (With Giblets) Free Range Chicken And Pou",
+   "game & venison": "Boneless Fallow Venison Haunch Cowdray Estate Venison",
+   "lamb": "Cowdray Rolled Lamb Breast Cowdray Estate Lamb"
+  },
+  "observedTypes": [
+   "Butchery Boxes",
+   "Cowdray Estate Beef",
+   "Cowdray Estate Lamb",
+   "Cowdray Estate Venison",
+   "Event Tickets",
+   "Free Range Chicken And Poultry",
+   "Free Range Pork"
+  ],
+  "sample": [
+   "Autumn Retreat: Saturday 3rd October",
+   "Ride, Rest &amp; Restore Ticket",
+   "Maize Maze Spin Evening: 7:45pm Session",
+   "Maize Maze Spin Evening: 6:30pm Session",
+   "November Evening Dining",
+   "October Evening Dining",
+   "Cowdray Ruins Tour (Adult)",
+   "Cowdray Ruins Tour (Child)"
+  ],
   "checked": "2026-07-31"
  },
  "garsons": {
   "id": "garsons",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 12,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [],
+  "sample": [
+   "weber",
+   "bramblecrest",
+   "life",
+   "hartman",
+   "garsons",
+   "garden impressions",
+   "w garden living",
+   "supremo lesuire"
+  ],
   "checked": "2026-07-31"
  },
  "stansted-park": {
   "id": "stansted-park",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bread & bakery",
+   "dairy & cheese",
+   "drinks & spirits",
+   "flowerpots",
+   "fruit & veg",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "bread & bakery": "Pumpkin Seed Sourdough Bread &#8211; 800g Bakery",
+   "flowerpots": "Flower Pots Beer Beer",
+   "drinks & spirits": "Flower Pots Beer Beer",
+   "dairy & cheese": "Wyfe of Bath Cheese",
+   "pork & bacon": "Smoked Gammon Christmas Gammon Pork",
+   "fruit & veg": "Stansted Farm Shop Gift Voucher Butcher Christmas Deli Drink",
+   "poultry": "Free Range Bronze Turkey Crown (Heart of England) Poultry Tu"
+  },
+  "observedTypes": [
+   "Andrea Martin Gift Cards",
+   "Annelise Gift Cards",
+   "Auntie Vals",
+   "Bakery",
+   "Beer",
+   "Biscuits",
+   "Butcher Christmas Deli Drinks Fish Fruit &amp; Veg Larder",
+   "Charcuterie Christmas",
+   "Cheese",
+   "Cheese Cheese Deli Fine Food Packs",
+   "Chocolate &amp; Sweets",
+   "Chris Gilbert Gift Cards",
+   "Christmas",
+   "Christmas Gammon Pork",
+   "Christmas Hampers Deli",
+   "Christmas Vegetables",
+   "Condiments Salts &amp; Rubs Sauces Soft Drinks",
+   "Create your own Hamper",
+   "Deli",
+   "Dome Outdoor Oven Outdoor Kitchen",
+   "Dome Outdoor Oven Outdoor Kitchen Roccbox",
+   "Fine Food Packs",
+   "Fruit &amp; Veg",
+   "Home-made pastries",
+   "Larder",
+   "Outdoor Kitchen",
+   "Outdoor Kitchen Roccbox",
+   "Pies",
+   "Pork",
+   "Poultry Turkey",
+   "Spirits",
+   "Tickets",
+   "Tins &amp; Packets"
+  ],
+  "sample": [
+   "Lunch at the Producers&#039; Market",
+   "Sample ticket 2",
+   "Pumpkin Seed Sourdough Bread &#8211; 800g",
+   "Knepp Charcuterie",
+   "Christmas Taster Evening",
+   "Mud Pies",
+   "Firetree Chocolate &#8211; Bean to Bar",
+   "Cannoli Gift Boxes"
+  ],
   "checked": "2026-07-31"
  },
  "emmetts-peasenhall": {
   "id": "emmetts-peasenhall",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 196,
   "tags": [
    "bags & leather goods",
@@ -3203,12 +3963,34 @@
  "maple-farm-kelsale": {
   "id": "maple-farm-kelsale",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 8,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [
+   "Flour Rye",
+   "Flour Spelt",
+   "Flour Wheat",
+   "Grain Rye",
+   "Grain Spelt",
+   "Grain Wheat"
+  ],
+  "sample": [
+   "Organic Unbleached White Flour",
+   "Organic Wholemeal Flour",
+   "Organic Rye Grain",
+   "Organic Spelt Grain",
+   "Organic Wheat Grain",
+   "Organic Wholegrain Spelt Flour",
+   "Organic White Spelt Flour",
+   "Organic Rye Flour"
+  ],
   "checked": "2026-07-31"
  },
  "north-sea-clothing": {
   "id": "north-sea-clothing",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 137,
   "tags": [
    "bags & leather goods",
@@ -3253,7 +4035,8 @@
  "genevieve-sweeney": {
   "id": "genevieve-sweeney",
   "shopify": true,
-  "productCount": 309,
+  "platform": "shopify",
+  "productCount": 312,
   "tags": [
    "bags & leather goods",
    "cashmere & merino",
@@ -3270,10 +4053,10 @@
    "womenswear"
   ],
   "tagEvidence": {
-   "knitwear": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
-   "cashmere & merino": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
-   "vests & waistcoats": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
-   "womenswear": "Soar Merino Wool Textured Stitch Knitted Vest Rose Womens Sw",
+   "knitwear": "Soar Merino Wool Textured Stitch Knitted Vest Bright Red Wom",
+   "cashmere & merino": "Soar Merino Wool Textured Stitch Knitted Vest Bright Red Wom",
+   "vests & waistcoats": "Soar Merino Wool Textured Stitch Knitted Vest Bright Red Wom",
+   "womenswear": "Soar Merino Wool Textured Stitch Knitted Vest Bright Red Wom",
    "scarves & accessories": "Lambswool Triangle Scarf Bright Red Triangle Scarf Autumn Hu",
    "tweed & woven goods": "Lambswool Cashmere Tweed Triangle Scarf Teal Blue Triangle S",
    "shirts": "Maud Lambswool Cashmere Knitted T-shirt in Black Pink Tweed ",
@@ -3322,68 +4105,202 @@
    "womens sweater"
   ],
   "sample": [
+   "Soar Merino Wool Textured Stitch Knitted Vest Bright Red",
+   "Soar Merino Wool Textured Stitch Knitted Vest Grey Melange",
+   "Soar Merino Wool Textured Stitch Knitted Vest Indigo Blue",
    "Soar Merino Wool Textured Stitch Knitted Vest Rose",
    "Lynn Brushed Wool Sweater Pearl Blue",
    "Lambswool Triangle Scarf Bright Red",
    "Lambswool Cashmere Tweed Triangle Scarf Teal Blue",
-   "Lambswool Cashmere Tweed Triangle Scarf Black Pink",
-   "Mauden Lambswool Cashmere V-neck Sweater Teal Blue Tweed",
-   "Mauden Lambswool Cashmere Sweater Teal Blue Tweed",
-   "Mauden Lambswool Cashmere V-neck Sweater Black Tweed"
+   "Lambswool Cashmere Tweed Triangle Scarf Black Pink"
   ],
   "checked": "2026-07-31"
  },
  "henry-poole": {
   "id": "henry-poole",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bags & leather goods",
+   "cashmere & merino",
+   "cufflinks & signets",
+   "plates",
+   "scarves & accessories",
+   "silverware",
+   "umbrellas"
+  ],
+  "tagEvidence": {
+   "scarves & accessories": "Archibald Primrose Tie &#8211; Tan Ties",
+   "cufflinks & signets": "The Napoleon III Collection Ties Pocket Squares Cufflinks",
+   "cashmere & merino": "Plain cashmere navy scarf Scarves",
+   "umbrellas": "Polished Chestnut solid golf umbrella Umbrellas",
+   "silverware": "Sterling silver plain green and clear enamel cufflinks Cuffl",
+   "plates": "Gold plated sterling gold chain cufflinks with cognac Baltic",
+   "bags & leather goods": "Black credit card wallet Henry Poole Collection Wallets"
+  },
+  "observedTypes": [
+   "Bow ties",
+   "Bow ties Sale",
+   "Braces",
+   "Braces Bow ties Sale Cufflinks",
+   "Braces Sale",
+   "Cufflinks",
+   "Henry Poole Collection",
+   "Henry Poole Collection Bow ties",
+   "Henry Poole Collection Cufflinks",
+   "Henry Poole Collection Wallets",
+   "Pocket Squares",
+   "Pocket Squares Henry Poole Collection",
+   "Scarves",
+   "Ties",
+   "Ties Henry Poole Collection",
+   "Ties Pocket Squares Cufflinks",
+   "Ties Sale",
+   "Umbrellas",
+   "Wallets Henry Poole Collection"
+  ],
+  "sample": [
+   "Archibald Primrose Tie &#8211; Tan",
+   "Adelina Patti &#8211; Green",
+   "Adelina Patti &#8211; Taupe",
+   "Adelina Patti &#8211; Light Blue",
+   "Art Deco Burnt Green",
+   "Lucius Beebe &#8211; Cream",
+   "Lucius Beebe &#8211; Burnt Orange",
+   "James Brudenell Brown Multi Stripe"
+  ],
   "checked": "2026-07-31"
  },
  "anderson-sheppard": {
   "id": "anderson-sheppard",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "gaziano-girling": {
   "id": "gaziano-girling",
   "shopify": false,
-  "reason": "not-json",
+  "platform": "sitemap",
+  "productCount": 80,
+  "tags": [
+   "braces & belts",
+   "footwear & boots"
+  ],
+  "tagEvidence": {
+   "braces & belts": "leather belt black calf",
+   "footwear & boots": "portofino loafer in navy suede"
+  },
+  "observedTypes": [],
+  "sample": [
+   "products",
+   "burnham in vintage oak calf tg73",
+   "leather belt black calf",
+   "leather belt vintage cedar",
+   "leather belt vintage cherry",
+   "leather belt vintage chestnut",
+   "leather belt vintage oak",
+   "leather belt vintage rioja"
+  ],
   "checked": "2026-07-31"
  },
  "llwynhelyg": {
   "id": "llwynhelyg",
   "shopify": false,
-  "reason": "http-400",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "knitsley": {
   "id": "knitsley",
   "shopify": false,
-  "reason": "http-400",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "tablehurst-farm": {
   "id": "tablehurst-farm",
   "shopify": false,
-  "reason": "http-400",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "plumgarths": {
   "id": "plumgarths",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "beef",
+   "bread & bakery",
+   "drinks & spirits",
+   "fruit & veg",
+   "lamb",
+   "pork & bacon",
+   "poultry"
+  ],
+  "tagEvidence": {
+   "pork & bacon": "Handmade Pork &#038; Apple Burgers (4 pack) Handmade Burgers",
+   "fruit & veg": "Handmade Pork &#038; Apple Burgers (4 pack) Handmade Burgers",
+   "poultry": "2.5kg Box Chicken Fillets Chicken Fillets",
+   "drinks & spirits": "Witherslack Orchards Damson Gin Liqueur Beers, Wines &amp; S",
+   "bread & bakery": "Mint Drinks Co. Kendal Mint Cake Vodka Beers, Wines &amp; Sp",
+   "lamb": "Lamb Meatloaves Ready Meals",
+   "beef": "Mature Sirloin Roast (Boned &#038; Rolled) Roasting Joints"
+  },
+  "observedTypes": [
+   "1kg Packs",
+   "Bacon",
+   "Beers, Wines &amp; Spirits",
+   "Butchers Counter Multibuys",
+   "Chicken Fillets",
+   "Frozen Pies, Ready Meals, Chips etc",
+   "Fruit, Veg and Salad Boxes",
+   "Handmade Burgers",
+   "Handmade Sausages",
+   "Lakes Ice Cream",
+   "Local Free Range Eggs",
+   "Multibuys",
+   "Pasta",
+   "Quality Meat Packs",
+   "Ready Meals",
+   "Roasting Joints"
+  ],
+  "sample": [
+   "Winter Warmer Pack",
+   "Big Breakfast Pack",
+   "BBQ Pack",
+   "Mega Value Pack",
+   "Slimmers Pack",
+   "Meat for a Week (Couple)",
+   "Meat for a Week (Family)",
+   "Handmade Steak Burgers (4 pack)"
+  ],
   "checked": "2026-07-31"
  },
  "otterton-mill": {
   "id": "otterton-mill",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 6,
+  "tags": [],
+  "tagEvidence": {},
+  "observedTypes": [],
+  "sample": [
+   "Otterton Mill Gift Voucher.html",
+   "Otterton Mill Gift Voucher Piccolo.html",
+   "Otterton Mill Gift Voucher Lyme Bay Special.html",
+   "Otterton Mill Gift Voucher Cream tea.html",
+   "Featured Products.html",
+   "Gift Vouchers Otterton Mill"
+  ],
   "checked": "2026-07-31"
  },
  "weetons": {
   "id": "weetons",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 80,
   "tags": [
    "beef",
@@ -3435,12 +4352,45 @@
  "denby-pottery": {
   "id": "denby-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 400,
+  "tags": [
+   "bowls",
+   "cutlery & knives",
+   "dairy & cheese",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware",
+   "tweed & woven goods"
+  ],
+  "tagEvidence": {
+   "plates": "Imperial Blue Dinner Plate 001010005",
+   "bowls": "Imperial Blue Cereal Bowl 001010007",
+   "tableware": "Imperial Blue Teapot 001010009",
+   "mugs": "Imperial Blue Coffee Beaker Mug 001010018",
+   "cutlery & knives": "Spice 16 Piece Cutlery Set 052010225",
+   "dairy & cheese": "James Martin Cook Butter Box 144014500",
+   "pottery": "Kiln Blue Ceramic Candle 239043528",
+   "tweed & woven goods": "Denby Imperial Blue Woven Placemat 334012156"
+  },
+  "observedTypes": [],
+  "sample": [
+   "testnew52535",
+   "Imperial Blue Dinner Plate 001010005",
+   "Imperial Blue Tea Coffee Saucer 001010002",
+   "Imperial Blue Tea Coffee Cup 001010001",
+   "Imperial Blue Medium Plate 001010004",
+   "Imperial Blue Small Plate 001010003",
+   "Imperial Blue Cereal Bowl 001010007",
+   "Imperial Blue Shallow Rimmed Bowl 001010008"
+  ],
   "checked": "2026-07-31"
  },
  "burleigh-pottery": {
   "id": "burleigh-pottery",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 30,
   "tags": [
    "bowls",
@@ -3494,48 +4444,233 @@
  "moorcroft": {
   "id": "moorcroft",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "leach-pottery": {
   "id": "leach-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "whichford-pottery": {
   "id": "whichford-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "highland-stoneware": {
   "id": "highland-stoneware",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "dairy & cheese",
+   "mugs",
+   "plates",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "tableware": "Replacement &#8211; Elphin Replacement Service All Tableware",
+   "bowls": "Butter Dish &#8211; Sheep Cheese and butter dishes All Homew",
+   "dairy & cheese": "Butter Dish &#8211; Sheep Cheese and butter dishes All Homew",
+   "mugs": "1/2 pint mug &#8211; Kids Robin Mugs All Homeware",
+   "plates": "Large pebble plate &#8211; Morefield Tableware All Tableware"
+  },
+  "observedTypes": [
+   "All Homeware Cheese and butter dishes",
+   "All Homeware Decorative bowls &amp; dishes",
+   "All Homeware For Children Mugs",
+   "All Homeware Lamps",
+   "All Homeware Last Minute Gifts Mugs",
+   "All Homeware Mugs",
+   "All Homeware Squares &amp; Rectangles",
+   "All Homeware Utensil Holders",
+   "All Homeware Vases",
+   "All Tableware &amp; Cookware Cookware",
+   "All Tableware &amp; Cookware Gifts Tableware Cups and Saucers Recommended Gifts",
+   "Cheese and butter dishes All Homeware",
+   "Coasters &amp; Trivets All Homeware",
+   "Cups and Saucers Tableware All Tableware &amp; Cookware",
+   "Decorative bowls &amp; dishes All Homeware",
+   "Featured Gifts Recommended Gifts",
+   "Geo Tableware All Tableware &amp; Cookware",
+   "Gifts All Homeware Mugs",
+   "Gifts All Homeware Recommended Gifts For Her Mugs",
+   "Gifts All Homeware Recommended Gifts Lamps",
+   "Gifts Recommended Gifts",
+   "Gifts Recommended Gifts For Her",
+   "Lamps All Homeware",
+   "Mug of the Year Gifts All Homeware Recommended Gifts Mugs",
+   "Mugs All Homeware",
+   "Quaich All Homeware",
+   "Recommended Gifts Gifts All Homeware Mugs",
+   "Recommended Gifts Gifts Featured Gifts",
+   "Replacement Service All Tableware &amp; Cookware",
+   "Second Quality Homeware Outlet",
+   "Second Quality Mugs Outlet",
+   "Squares &amp; Rectangles",
+   "Squares &amp; Rectangles All Homeware",
+   "Tableware All Tableware &amp; Cookware",
+   "Tableware Cups and Saucers All Tableware &amp; Cookware",
+   "Vases Gifts All Homeware"
+  ],
+  "sample": [
+   "Replacement &#8211; Elphin",
+   "Replacement &#8211; Poppy",
+   "Small Jug &#8211; Fishing Fly",
+   "Butter Dish &#8211; Sheep",
+   "1/2 pint mug &#8211; Kids Robin",
+   "Butter dish &#8211; Thistle",
+   "Egg Saucer &#8211; Blue Edge",
+   "Lungo Cup &#038; Saucer &#8211; Seascape"
+  ],
   "checked": "2026-07-31"
  },
  "royal-crown-derby": {
   "id": "royal-crown-derby",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "bread & bakery",
+   "fruit & veg",
+   "mugs",
+   "plates",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "plates": "Aves Green Accent Plate (21cm) Accent Plates",
+   "fruit & veg": "Primrose Salad Plate (21cm) Primrose Salad and Dessert Plate",
+   "tableware": "Primrose Covered Sugar (8.5oz) Primrose Teapots Creamers and",
+   "bowls": "Primrose Oval Dish (37.5cm) Primrose Serving Bowls and Dishe",
+   "mugs": "Effervesce Pearl Mug (12oz) Effervesce Pearl Mugs",
+   "bread & bakery": "Aves Palladium Three Tier Cake Stand (34cm) Aves Palladium C"
+  },
+  "observedTypes": [
+   "Accent Plates",
+   "Aves Palladium Bowls",
+   "Aves Palladium Cake Plates",
+   "Aves Palladium Coffee Cups and Saucers",
+   "Aves Palladium Mugs",
+   "Aves Palladium Platters and Trays",
+   "Aves Palladium Sauce Boats",
+   "Aves Palladium Serving Bowls and Dishes",
+   "Aves Palladium Tea Cups and Saucers",
+   "Aves Palladium Teapots Creamers and Sugar Bowls",
+   "Build A Dinner Service",
+   "Charger Plates Service Plates",
+   "Effervesce Pearl Bowls",
+   "Effervesce Pearl Charger Plates",
+   "Effervesce Pearl Coffee Cups and Saucers",
+   "Effervesce Pearl Dinner Plates",
+   "Effervesce Pearl Mugs",
+   "Effervesce Pearl Pasta Bowls",
+   "Effervesce Pearl Salad and Dessert Plates",
+   "Effervesce Pearl Side Plates",
+   "Effervesce Pearl Tea Cups and Saucers",
+   "Effervesce Pearl Teapots Creamers and Sugar Bowls",
+   "Interior Items Aves Gold",
+   "Majestic Mint Green Teapots Creamers and Sugar Bowls Teaware Majestic",
+   "Majestic Navy Blue Teapots Creamers and Sugar Bowls Teaware Majestic",
+   "Majestic White Teapots Creamers and Sugar Bowls Teaware Majestic",
+   "Primrose Accent Plates",
+   "Primrose Bowls",
+   "Primrose Charger Plates",
+   "Primrose Dinner Plates",
+   "Primrose Salad and Dessert Plates",
+   "Primrose Serving Bowls and Dishes",
+   "Primrose Side Plates",
+   "Primrose Soup Bowls",
+   "Primrose Tea Cups and Saucers",
+   "Primrose Teapots Creamers and Sugar Bowls",
+   "Riviera Dream Mint Green Teapots Creamers and Sugar Bowls Teaware Riviera Dream",
+   "Riviera Dream Navy Blue Teapots Creamers and Sugar Bowls Teaware Riviera Dream",
+   "Riviera Dream White Teapots Creamers and Sugar Bowls Teaware Riviera Dream",
+   "Service Plates Charger Plates"
+  ],
+  "sample": [
+   "Primrose Black Build A Dinner Service",
+   "Primrose White Build A Dinner Service",
+   "Aves Green Accent Plate (21cm)",
+   "Aves Pink Accent Plate (21cm)",
+   "Aves Black Accent Plate (21cm)",
+   "Service Plates Red Charger Plate (30cm)",
+   "Service Plates Neutral Charger Plate (30cm)",
+   "Service Plates Eau de nil Charger Plate (30cm)"
+  ],
   "checked": "2026-07-31"
  },
  "1882-ltd": {
   "id": "1882-ltd",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "plates": "4 Piece Plate Set &#8211; Unity with Kim Thomé Archive Sale",
+   "bowls": "4 Piece Bowl Set &#8211; Unity with Kim Thomé Archive Sale",
+   "tableware": "4 Piece Dinner Set with Peter Pilotto Archive Sale Peter Pil",
+   "mugs": "Set of 4 mugs &#8211; Flare with Pinch Archive Sale",
+   "pottery": "Glazed &#038; Confused Ceramic Inklings"
+  },
+  "observedTypes": [
+   "1882 Ltd. Vases",
+   "Archive Sale",
+   "Archive Sale Peter Pilotto",
+   "Big Vase 1 &amp; 2",
+   "Ceramic Column",
+   "Ceramic Inklings",
+   "Crockery Black",
+   "Crockery Chairs",
+   "Crockery Pink",
+   "Flower",
+   "Hello I'm...",
+   "Kitchen Knobs",
+   "Macbeth",
+   "Mystery Boxes",
+   "Pickle Tower",
+   "Places That Build Their Dreams",
+   "Prick",
+   "Smaller Flower",
+   "The Adventures of Lilyfoot",
+   "Valentine's the 1882 Way",
+   "Venus"
+  ],
+  "sample": [
+   "4 Piece Plate Set &#8211; Unity with Kim Thomé",
+   "4 Piece Bowl Set &#8211; Unity with Kim Thomé",
+   "Bowl (Nude) &#8211; Standard Ware with Fort Standard",
+   "Bowl (Stone) &#8211; Standard Ware with Fort Standard",
+   "Large Deep Bowl (Stone) &#8211; Standard Ware with Fort Standard",
+   "Large Deep Bowl (Nude) &#8211; Standard Ware with Fort Standard",
+   "Pitcher (Nude) &#8211; Standard Ware with Fort Standard",
+   "Pitcher (Stone) &#8211; Standard Ware with Fort Standard"
+  ],
   "checked": "2026-07-31"
  },
  "portmeirion": {
   "id": "portmeirion",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "emma-alington": {
   "id": "emma-alington",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 76,
   "tags": [
    "bowls",
@@ -3594,6 +4729,7 @@
  "feldspar": {
   "id": "feldspar",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 200,
   "tags": [
    "bowls",
@@ -3644,174 +4780,772 @@
  "rye-pottery": {
   "id": "rye-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 227,
+  "tags": [
+   "activewear",
+   "bowls",
+   "bread & bakery",
+   "flowerpots",
+   "fruit & veg",
+   "game & venison",
+   "lamb",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware",
+   "watches"
+  ],
+  "tagEvidence": {
+   "tableware": "cottage stripe jugs",
+   "pottery": "rye pottery at the 1951 festival of britain",
+   "lamb": "ewe lamb",
+   "bowls": "girl sweet bowl",
+   "flowerpots": "round planter",
+   "bread & bakery": "the rye pastry cook",
+   "fruit & veg": "salad fruit serving bowl",
+   "game & venison": "black white spotted rye rabbit",
+   "watches": "watch the wife of bath being painted",
+   "mugs": "childs mug",
+   "plates": "small striped plates child adult",
+   "activewear": "running hare with leaf green base"
+  },
+  "observedTypes": [],
+  "sample": [
+   "product",
+   "test product",
+   "cottage stripe jugs",
+   "rye pottery at the 1951 festival of britain",
+   "the batsman fuller pilch of kent",
+   "rye pottery boy girl",
+   "leaf corners flowers",
+   "flowers in circles"
+  ],
   "checked": "2026-07-31"
  },
  "dunoon-ceramics": {
   "id": "dunoon-ceramics",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "linda-bloomfield": {
   "id": "linda-bloomfield",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 55,
+  "tags": [
+   "bowls",
+   "bread & bakery",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "pottery": "Lichen-effect medium grey form Lichen effect porcelain",
+   "bowls": "Lichen-effect small grey bowl One-off pieces",
+   "mugs": "Handmade short mug black Mugs &amp; cups",
+   "tableware": "Bone China teapot with cosy Manufactured tableware",
+   "plates": "Handmade porcelain dinner set Bowls Handmade porcelain Plate",
+   "bread & bakery": "Handmade cake stand Handmade porcelain Plates &amp; cakestan"
+  },
+  "observedTypes": [
+   "Bowls Handmade porcelain",
+   "Bowls Handmade porcelain Plates &amp; cakestands",
+   "Handmade porcelain Jugs",
+   "Handmade porcelain Jugs Vases &amp; bottles",
+   "Handmade porcelain Mugs &amp; cups",
+   "Handmade porcelain Plates &amp; cakestands",
+   "Handmade porcelain Teapots &amp; tea ware",
+   "Handmade porcelain Vases &amp; bottles",
+   "Lichen effect porcelain",
+   "Manufactured tableware",
+   "Mugs &amp; cups",
+   "One-off pieces"
+  ],
+  "sample": [
+   "Lichen-effect medium grey form",
+   "Lichen-effect small grey bowl",
+   "Handmade Fat Fluted Bottle",
+   "Lichen-effect small grey bowl",
+   "Lichen-effect small grey jar",
+   "Lichen-effect medium bowl",
+   "Lichen-effect small black jar",
+   "Lichen-effect small grey salt"
+  ],
   "checked": "2026-07-31"
  },
  "sue-pryke": {
   "id": "sue-pryke",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "squarespace",
+  "productCount": 25,
+  "tags": [
+   "bowls",
+   "bread & bakery",
+   "dairy & cheese",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "mugs": "Mr & Mrs Mug Fired Cups Tea Mugs Valentines Staff Picks tead",
+   "tableware": "Mr & Mrs Mug Fired Cups Tea Mugs Valentines Staff Picks tead",
+   "pottery": "Mr & Mrs Mug Fired Cups Tea Mugs Valentines Staff Picks tead",
+   "bowls": "Pedestal Bowl Cake plate centre piece Giftware Dinnerware Ta",
+   "plates": "Pedestal Bowl Cake plate centre piece Giftware Dinnerware Ta",
+   "bread & bakery": "Pedestal Bowl Cake plate centre piece Giftware Dinnerware Ta",
+   "dairy & cheese": "Condiment dish Fired Valentines Bowls 20%offseptember tapas "
+  },
+  "observedTypes": [
+   "Books",
+   "Cake plate centre piece Giftware Dinnerware Tableware Mother's Day",
+   "Cake plate centre piece Giftware Dinnerware Tableware Mother's Day Wedding Gifts",
+   "Fired",
+   "Fired Bowls",
+   "Fired Bowls 20%offseptember",
+   "Fired Breakfast Cups",
+   "Fired Cups",
+   "Fired Cups Tea Mugs Valentines Staff Picks",
+   "Fired Cups Tea Mugs new products",
+   "Fired Jugs 20%offseptember",
+   "Fired Jugs Valentines",
+   "Fired Tea Jugs Valentines 20%offseptember",
+   "Fired Teapot Tea Valentines",
+   "Fired Valentines",
+   "Fired Valentines Bowls 20%offseptember",
+   "Jugs Valentines",
+   "centre piece Christmas Dinnerware Giftware large bowl Serving bowl"
+  ],
+  "sample": [
+   "Mr & Mrs Mug",
+   "Mr & Mrs Teapot",
+   "Pedestal Bowl",
+   "Cake Stand",
+   "Centrepiece Bowl",
+   "Large Mr & Mrs Mug",
+   "2 Cup Teapot",
+   "Brass Handled Teapot"
+  ],
   "checked": "2026-07-31"
  },
  "brickett-davda": {
   "id": "brickett-davda",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 15,
+  "tags": [
+   "flowerpots"
+  ],
+  "tagEvidence": {
+   "flowerpots": "vases and planters"
+  },
+  "observedTypes": [],
+  "sample": [
+   "vases and planters",
+   "classic terracotta",
+   "smith black",
+   "classic white",
+   "smith white",
+   "garden",
+   "9",
+   "8"
+  ],
   "checked": "2026-07-31"
  },
  "gwili-pottery": {
   "id": "gwili-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "edinbane-pottery": {
   "id": "edinbane-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 85,
+  "tags": [
+   "bowls",
+   "bread & bakery",
+   "dairy & cheese",
+   "mugs",
+   "plates",
+   "poultry",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "tableware": "Ebb &#038; Flow Jug Ebb &amp; Flow Jugs",
+   "plates": "Storm Platter Plates Storm Series",
+   "bowls": "Storm Bowl Storm Series",
+   "mugs": "Land and Sea Mugs Land and Sea Mugs",
+   "dairy & cheese": "Wood Ash Butter Dish Wood Ash",
+   "poultry": "Wood Ash Chicken Brick Showcase Wood Ash",
+   "bread & bakery": "Blue Waves Bread Crock"
+  },
+  "observedTypes": [
+   "Bowls",
+   "Bowls Ebb &amp; Flow",
+   "Bowls Land and Sea",
+   "Bowls Sea Salt",
+   "Bowls Wood Ash",
+   "Ebb &amp; Flow",
+   "Ebb &amp; Flow Egg cups",
+   "Ebb &amp; Flow Goblets",
+   "Ebb &amp; Flow Jugs",
+   "Ebb &amp; Flow Jugs Teapots",
+   "Ebb &amp; Flow Lamp Bases",
+   "Ebb &amp; Flow Mugs",
+   "Ebb &amp; Flow Plates",
+   "Ebb &amp; Flow Serving dish",
+   "Ebb &amp; Flow Serving dish Showcase",
+   "Ebb &amp; Flow Showcase Star Lamps",
+   "Ebb &amp; Flow Teapots",
+   "Egg cups",
+   "Gift Cards",
+   "Goblets Wood Ash",
+   "Jugs",
+   "Lamp Bases",
+   "Land and Sea Mugs",
+   "Mugs",
+   "Mugs Sea Salt",
+   "Plates",
+   "Plates Sea Salt",
+   "Plates Storm Series",
+   "Sea Salt",
+   "Sea Salt Showcase",
+   "Sea Salt Teapots",
+   "Serving dish",
+   "Showcase",
+   "Showcase Wood Ash",
+   "Storm Series",
+   "Teapots",
+   "Wood Ash"
+  ],
+  "sample": [
+   "Blue Waves Mortar and Pestle",
+   "Ebb &#038; Flow Goblet",
+   "Ebb &#038; Flow Jug",
+   "Blue Waves Wine Coaster",
+   "Gift Card &#8211; Sent by Post",
+   "Storm Bottle",
+   "Storm Platter",
+   "Storm Bowl"
+  ],
   "checked": "2026-07-31"
  },
  "sytch-farm-studios": {
   "id": "sytch-farm-studios",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "belleek-pottery": {
   "id": "belleek-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "clive-bowen": {
   "id": "clive-bowen",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "jim-malone": {
   "id": "jim-malone",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "mugs"
+  ],
+  "tagEvidence": {
+   "bowls": "AT488Y564 Small Cup/Bowl Charcoal Bowls Under £50",
+   "mugs": "AT488Y560 Tall Cup Pebble Mugs &amp; Drinking Vessels Under "
+  },
+  "observedTypes": [
+   "Bottles",
+   "Bowls",
+   "Bowls Under £50",
+   "Functional",
+   "Jars",
+   "Mugs &amp; Drinking Vessels Under £100 Vessels",
+   "Tiles &amp; Wall Art",
+   "Under £100",
+   "Under £100 Vessels",
+   "Under £50",
+   "Vessels"
+  ],
+  "sample": [
+   "AB326Y806 Miniature Landscape Study",
+   "AB326Y807 Miniature Landscape Study",
+   "AB326Y801 Miniature Landscape Study",
+   "AB326Y799 Miniature Landscape Study",
+   "AB326Y800 Miniature Landscape Study",
+   "AB326Y802 Miniature Landscape Study",
+   "AB326Y803 Miniature Landscape Study",
+   "AB326Y805 Miniature Landscape Study"
+  ],
   "checked": "2026-07-31"
  },
  "matthew-blakely": {
   "id": "matthew-blakely",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 51,
+  "tags": [
+   "bowls",
+   "mugs"
+  ],
+  "tagEvidence": {
+   "mugs": "Granite Mug Mugs",
+   "bowls": "Granite bowl 2 Bowls"
+  },
+  "observedTypes": [
+   "Bowls",
+   "Cups",
+   "Cups Place specific pots",
+   "Glaze book",
+   "Japan",
+   "Lidded Jars and bottles",
+   "Mugs",
+   "Place specific pots"
+  ],
+  "sample": [
+   "Dartmoor Jar",
+   "Dartmoor Sphere 2",
+   "Granite Mug",
+   "Waisted Black and blue mug",
+   "Rugged Dartmoor Sphere",
+   "Small Black and blue mug 2",
+   "Small Black and blue mug 1",
+   "Shino crawl mug"
+  ],
   "checked": "2026-07-31"
  },
  "fitch-and-mcandrew": {
   "id": "fitch-and-mcandrew",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "game & venison",
+   "plates",
+   "poultry",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "tableware": "Tapered heart jug Doug Fitch jug",
+   "plates": "Abundance of hope charger charger Hannah McAndrew",
+   "bowls": "Abstract dish dish Doug Fitch",
+   "poultry": "Chicken dish dish Doug Fitch",
+   "game & venison": "Pheasant dish dish Doug Fitch"
+  },
+  "observedTypes": [
+   "Doug Fitch &amp; Hannah McAndrew vase",
+   "Doug Fitch jug",
+   "Doug Fitch moneybox",
+   "Doug Fitch tyg",
+   "Hannah McAndrew",
+   "Hannah McAndrew jug",
+   "Hannah McAndrew pill box",
+   "Hannah McAndrew plate",
+   "Hannah McAndrew tyg",
+   "Hannah McAndrew vase",
+   "bowl Hannah McAndrew",
+   "candlestick Doug Fitch &amp; Hannah McAndrew",
+   "charger Hannah McAndrew",
+   "dish Doug Fitch",
+   "dish Hannah McAndrew",
+   "flower brick Hannah McAndrew"
+  ],
+  "sample": [
+   "Obelisk flower vase, black",
+   "Obelisk flower vase",
+   "Tapered heart jug",
+   "Winter vase",
+   "Tall baluster jug",
+   "Abundance of hope charger",
+   "Flock of birds tyg",
+   "Dahlia box, small"
+  ],
   "checked": "2026-07-31"
  },
  "bridge-pottery": {
   "id": "bridge-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "brookhouse-pottery": {
   "id": "brookhouse-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "mugs"
+  ],
+  "tagEvidence": {
+   "bowls": "AT488Y564 Small Cup/Bowl Charcoal Bowls Under £50",
+   "mugs": "AT488Y560 Tall Cup Pebble Mugs &amp; Drinking Vessels Under "
+  },
+  "observedTypes": [
+   "Bottles",
+   "Bowls",
+   "Bowls Under £50",
+   "Functional",
+   "Jars",
+   "Mugs &amp; Drinking Vessels Under £100 Vessels",
+   "Tiles &amp; Wall Art",
+   "Under £100",
+   "Under £100 Vessels",
+   "Under £50",
+   "Vessels"
+  ],
+  "sample": [
+   "AB326Y806 Miniature Landscape Study",
+   "AB326Y807 Miniature Landscape Study",
+   "AB326Y801 Miniature Landscape Study",
+   "AB326Y799 Miniature Landscape Study",
+   "AB326Y800 Miniature Landscape Study",
+   "AB326Y802 Miniature Landscape Study",
+   "AB326Y803 Miniature Landscape Study",
+   "AB326Y805 Miniature Landscape Study"
+  ],
   "checked": "2026-07-31"
  },
  "maze-hill-pottery": {
   "id": "maze-hill-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "sasha-wardell": {
   "id": "sasha-wardell",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "squarespace",
+  "productCount": 27,
+  "tags": [
+   "bowls",
+   "dairy & cheese",
+   "jewellery",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "jewellery": "SPARKLE PENDANT LIGHT Lighting",
+   "bowls": "SPARKLE GLOBE BOWL Lighting",
+   "tableware": "Shoal Tea Pot Tea Sets teapot",
+   "dairy & cheese": "Shoal Tea Set incl two cups, saucers &amp; milk jug Tea Sets",
+   "pottery": "Porcelain and Bone China Second Edition Books"
+  },
+  "observedTypes": [
+   "Books",
+   "Bowls & Vases",
+   "Coffee Sets",
+   "Lighting",
+   "Tea Sets"
+  ],
+  "sample": [
+   "SPARKLE PENDANT LIGHT",
+   "Urchin Pendant Light",
+   "Pendant Light (Space)",
+   "WALL LIGHT (Shoal)",
+   "Globe Table Lamp",
+   "Tall Shoal Pendant Light",
+   "Urchin Tea Lights",
+   "SPARKLE GLOBE BOWL"
+  ],
   "checked": "2026-07-31"
  },
  "jane-hamlyn": {
   "id": "jane-hamlyn",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "mugs"
+  ],
+  "tagEvidence": {
+   "bowls": "AT488Y564 Small Cup/Bowl Charcoal Bowls Under £50",
+   "mugs": "AT488Y560 Tall Cup Pebble Mugs &amp; Drinking Vessels Under "
+  },
+  "observedTypes": [
+   "Bottles",
+   "Bowls",
+   "Bowls Under £50",
+   "Functional",
+   "Jars",
+   "Mugs &amp; Drinking Vessels Under £100 Vessels",
+   "Tiles &amp; Wall Art",
+   "Under £100",
+   "Under £100 Vessels",
+   "Under £50",
+   "Vessels"
+  ],
+  "sample": [
+   "AB326Y806 Miniature Landscape Study",
+   "AB326Y807 Miniature Landscape Study",
+   "AB326Y801 Miniature Landscape Study",
+   "AB326Y799 Miniature Landscape Study",
+   "AB326Y800 Miniature Landscape Study",
+   "AB326Y802 Miniature Landscape Study",
+   "AB326Y803 Miniature Landscape Study",
+   "AB326Y805 Miniature Landscape Study"
+  ],
   "checked": "2026-07-31"
  },
  "walter-keeler": {
   "id": "walter-keeler",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "mugs"
+  ],
+  "tagEvidence": {
+   "bowls": "AT488Y564 Small Cup/Bowl Charcoal Bowls Under £50",
+   "mugs": "AT488Y560 Tall Cup Pebble Mugs &amp; Drinking Vessels Under "
+  },
+  "observedTypes": [
+   "Bottles",
+   "Bowls",
+   "Bowls Under £50",
+   "Functional",
+   "Jars",
+   "Mugs &amp; Drinking Vessels Under £100 Vessels",
+   "Tiles &amp; Wall Art",
+   "Under £100",
+   "Under £100 Vessels",
+   "Under £50",
+   "Vessels"
+  ],
+  "sample": [
+   "AB326Y806 Miniature Landscape Study",
+   "AB326Y807 Miniature Landscape Study",
+   "AB326Y801 Miniature Landscape Study",
+   "AB326Y799 Miniature Landscape Study",
+   "AB326Y800 Miniature Landscape Study",
+   "AB326Y802 Miniature Landscape Study",
+   "AB326Y803 Miniature Landscape Study",
+   "AB326Y805 Miniature Landscape Study"
+  ],
   "checked": "2026-07-31"
  },
  "sandy-brown": {
   "id": "sandy-brown",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "john-pollex": {
   "id": "john-pollex",
   "shopify": false,
-  "reason": "not-json",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "penny-simpson": {
   "id": "penny-simpson",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "squarespace",
+  "productCount": 53,
+  "tags": [
+   "bowls",
+   "cutlery & knives",
+   "dairy & cheese",
+   "flowerpots",
+   "fruit & veg",
+   "mugs",
+   "plates",
+   "pottery",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "pottery": "Garlic pot Blue Collection Storage Garlic Pot earthenwarepot",
+   "plates": "Large Platter Blue Collection platter Plate blue tableware l",
+   "tableware": "Large Platter Blue Collection platter Plate blue tableware l",
+   "dairy & cheese": "Medium Jug - cat design Blue Collection Dishwasher Safe eart",
+   "cutlery & knives": "Cutlery Drainer Blue Collection Dishwasher Safe slipware ear",
+   "bowls": "Soup/Cereal bowl - blue and turquoise Blue Collection Bowl D",
+   "flowerpots": "Wall Pot - Cat design Blue Collection wall pot planter Plant",
+   "mugs": "Mug Blue Collection Mug Mug Blue Cat Fish Dragonfly",
+   "fruit & veg": "Salad Bowl Bowl Country Collection Salad Salad Bowl"
+  },
+  "observedTypes": [
+   "Blue Collection Bowl Dishwasher Safe Ovenproof",
+   "Blue Collection Dishwasher Safe",
+   "Blue Collection Dishwasher Safe Ovenproof Bowl",
+   "Blue Collection Jug",
+   "Blue Collection Mug",
+   "Blue Collection Storage",
+   "Blue Collection platter Plate",
+   "Blue Collection wall pot planter",
+   "Bowl Country Collection",
+   "Bowl Country Collection Dishwasher Safe",
+   "Bowl Earthscape Collection Dishwasher Safe",
+   "Country Collection",
+   "Country Collection Bowl Dishwasher Safe Ovenproof",
+   "Country Collection Dish",
+   "Country Collection Dishwasher Safe",
+   "Country Collection Dishwasher Safe Dish",
+   "Country Collection Jug",
+   "Country Collection Plate",
+   "Country Collection Plate Dishwasher Safe Ovenproof",
+   "Country Collection Tiles Coasters",
+   "Country Collection Wall pot",
+   "Country Collection platter Plate",
+   "Dish Bowl Ovenproof",
+   "Dish Ovenproof Country Collection",
+   "Dishwasher Safe Bowl Earthscape Collection",
+   "Dishwasher Safe Earthscape Collection Mug",
+   "Dishwasher Safe Earthscape Collection Ovenproof Bowl Dish",
+   "Dishwasher Safe Earthscape Collection Ovenproof Dish",
+   "Earthscape Collection Bowl",
+   "Earthscape Collection Dishwasher Safe Bowl Ovenproof",
+   "Earthscape Collection Jug",
+   "Earthscape Collection Mug",
+   "Earthscape Collection Planter",
+   "Earthscape Collection Plate",
+   "Earthscape Collection Plate Dishwasher Safe Ovenproof",
+   "Earthscape Collection Pot",
+   "Earthscape Collection Pot Dishwasher Safe",
+   "Earthscape Collection vase",
+   "Jug Blue Collection",
+   "Mug Country Collection"
+  ],
+  "sample": [
+   "Garlic pot",
+   "Large Platter",
+   "Large Jug",
+   "Medium Jug - cat design",
+   "Small Jug",
+   "Cutlery Drainer",
+   "Soup/Cereal bowl - blue and turquoise",
+   "Soup/Cereal bowl"
+  ],
   "checked": "2026-07-31"
  },
  "chris-keenan": {
   "id": "chris-keenan",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 169,
+  "tags": [
+   "coats & jackets",
+   "drinks & spirits",
+   "jewellery"
+  ],
+  "tagEvidence": {
+   "drinks & spirits": "the rum kitchen",
+   "coats & jackets": "fur coat no knickers",
+   "jewellery": "joy everley fine jewellers"
+  },
+  "observedTypes": [],
+  "sample": [
+   "antidote",
+   "carnaby burger co",
+   "carnaby restaurant @ courthouse hotel",
+   "central and co",
+   "cha cha moon",
+   "cinnamon soho",
+   "comptoir libanais",
+   "dehesa"
+  ],
   "checked": "2026-07-31"
  },
  "sue-paraskeva": {
   "id": "sue-paraskeva",
   "shopify": false,
-  "reason": "net-EPROTO",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "akiko-hirai": {
   "id": "akiko-hirai",
   "shopify": false,
-  "reason": "net-ERR_TLS_CERT_ALTNAME_INVALID",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "james-tilla-waters": {
   "id": "james-tilla-waters",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 99,
+  "tags": [
+   "bowls",
+   "mugs",
+   "plates",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "tableware": "large green teapot (1.25 litres) teapots",
+   "mugs": "grey coffee can (almost square) coffee mugs &amp; cups",
+   "bowls": "pale grey tea bowl bowls",
+   "plates": "large white plate (29 cm) plates"
+  },
+  "observedTypes": [
+   "beakers",
+   "bowls",
+   "breakfast large mugs &amp; cups",
+   "breakfast mugs &amp; cups",
+   "coffee espresso mugs &amp; cups",
+   "coffee mugs &amp; cups",
+   "coffee mugs &amp; cups small",
+   "jars",
+   "jugs &amp; pourers",
+   "large mugs &amp; cups",
+   "mugs &amp; cups small",
+   "plates",
+   "teapots",
+   "vases / bottles"
+  ],
+  "sample": [
+   "large green teapot (1.25 litres)",
+   "medium tenmoku teapot (850ml)",
+   "yellow14cm vase",
+   "persimmon 15cm vase",
+   "slightly red 14cm vase",
+   "grey 14cm vase",
+   "grey (crackle) 16cm vase",
+   "dark red 16cm vase"
+  ],
   "checked": "2026-07-31"
  },
  "jack-doherty": {
   "id": "jack-doherty",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "adam-buick": {
   "id": "adam-buick",
   "shopify": false,
-  "reason": "not-json",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "nicola-werner": {
   "id": "nicola-werner",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 164,
   "tags": [
    "bowls",
@@ -3864,12 +5598,14 @@
  "katharina-klug": {
   "id": "katharina-klug",
   "shopify": false,
-  "reason": "net-ENOTFOUND",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "churchill-china": {
   "id": "churchill-china",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 461,
   "tags": [
    "bowls",
@@ -3907,24 +5643,91 @@
  "cornishware-tg-green": {
   "id": "cornishware-tg-green",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 19,
+  "tags": [
+   "mugs",
+   "tableware"
+  ],
+  "tagEvidence": {
+   "mugs": "valentines 10oz mug",
+   "tableware": "valentine s cornish blue 5oz jug"
+  },
+  "observedTypes": [],
+  "sample": [
+   "cornish blue garlic keeper",
+   "cornish red garlic keeper",
+   "cornish blue mortar pestle 8x15cm",
+   "ukb 852737cb4",
+   "ukb 852739cb",
+   "adder green dip dis",
+   "ukb 852744cr4",
+   "ukb 852744cb4"
+  ],
   "checked": "2026-07-31"
  },
  "littlethorpe-potteries": {
   "id": "littlethorpe-potteries",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "errington-reay": {
   "id": "errington-reay",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "bowls",
+   "childrenswear",
+   "flowerpots",
+   "footwear & boots",
+   "mugs",
+   "plates",
+   "pottery"
+  ],
+  "tagEvidence": {
+   "flowerpots": "Weathered white planter Large Special Big Pots Above 50cm",
+   "bowls": "Lava bowl Special Pots Below 50cm",
+   "mugs": "Embleton mug 2 Art Pieces",
+   "plates": "Moroccan Plate Moroccan Plates",
+   "footwear & boots": "Wellington boot planter Farmyard Featured",
+   "pottery": "Pottery pot feet Accessories",
+   "childrenswear": "Baby shoe pot feet Accessories"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Art Pieces",
+   "Bowls Featured Moroccan",
+   "Combo Deals",
+   "Elemental Round Planter",
+   "Elemental Trough &amp; Low Bowls",
+   "Farmyard Featured",
+   "Featured Special Big Pots Above 50cm",
+   "Garden Decor",
+   "Moroccan Planter",
+   "Moroccan Plates",
+   "Moroccan Vases",
+   "Special Big Pots Above 50cm",
+   "Special Pots Below 50cm"
+  ],
+  "sample": [
+   "Weathered white planter Large",
+   "Lava striped planter",
+   "Coco trough medium",
+   "Salt glazed ribbed combo",
+   "Jade combo",
+   "Quartz combo",
+   "Rust combo",
+   "Jade garland urn combo"
+  ],
   "checked": "2026-07-31"
  },
  "anta": {
   "id": "anta",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 989,
   "tags": [
    "bags & leather goods",
@@ -4017,18 +5820,21 @@
  "crail-pottery": {
   "id": "crail-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "ballydougan-pottery": {
   "id": "ballydougan-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "ola-gorie": {
   "id": "ola-gorie",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 407,
   "tags": [
    "cufflinks & signets",
@@ -4073,6 +5879,7 @@
  "deakin-and-francis": {
   "id": "deakin-and-francis",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "bags & leather goods",
@@ -4162,12 +5969,14 @@
  "hamilton-and-inches": {
   "id": "hamilton-and-inches",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "alex-monroe": {
   "id": "alex-monroe",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 245,
   "tags": [
    "childrenswear",
@@ -4212,6 +6021,7 @@
  "cw-sellors": {
   "id": "cw-sellors",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "activewear",
@@ -4227,13 +6037,13 @@
    "womenswear"
   ],
   "tagEvidence": {
-   "womenswear": "Faberge Heritage Forever Mini Fluted Ruby Pendant Pendant 0.",
-   "jewellery": "Faberge Heritage Forever Mini Fluted Ruby Pendant Pendant 0.",
+   "jewellery": "Franck Muller Vanguard Sfumato Slim Watch Bezel: Fixed Brace",
+   "watches": "Franck Muller Vanguard Sfumato Slim Watch Bezel: Fixed Brace",
+   "womenswear": "Palladium 6mm Modern Court Wedding Ring Ring Band Width: 6mm",
    "plates": "Shaun Leane Talon 18ct Yellow Gold Plated Sterling Silver La",
    "silverware": "Shaun Leane Talon 18ct Yellow Gold Plated Sterling Silver La",
    "pottery": "Shaun Leane Sabre Deco Sterling Silver Ceramic Chain Bracele",
    "dresses": "Shaun Leane Sabre Deco Sterling Silver Ceramic Crossover Rin",
-   "watches": "Clogau Brenig Sports Mens Watch Watch Bracelet/ Strap: Stain",
    "scarves & accessories": "Shaun Leane Quill Sterling Silver Black Wrap Bracelet Bracel",
    "game & venison": "Art In Bronze Pheasant by Butler & Peach Gift 2076 Brand: Ar",
    "activewear": "Art In Bronze Fox Running by Butler & Peach Gift 2015 Brand:",
@@ -4257,44 +6067,99 @@
    "Watch"
   ],
   "sample": [
-   "Faberge Heritage Forever Mini Fluted Ruby Pendant",
-   "Shaun Leane Talon 18ct Yellow Gold Plated Sterling Silver Large Hoop E",
-   "Thomas Sabo Sterling Silver Cubic Zirconia Heart Stud Earrings",
-   "9ct Yellow Gold Whitby Jet Marquise Drop Necklace",
-   "Sterling Silver Blue John Four Stone Curved Oblong Necklace",
-   "Sterling Silver Turquoise Four Stone Curved Oblong Necklace",
-   "Sterling Silver Turquoise Marquise Necklace",
-   "9ct Yellow Gold Blue John Marquise Necklace"
+   "Franck Muller Vanguard Sfumato Slim",
+   "Franck Muller Vanguard Sfumato Slim",
+   "Franck Muller Vanguard Racing",
+   "Franck Muller Vanguard Krypton Racing",
+   "Franck Muller Vanguard Crazy Hours",
+   "Franck Muller Vanguard Crazy Hours",
+   "Franck Muller Vanguard",
+   "Franck Muller Vanguard"
   ],
   "checked": "2026-07-31"
  },
  "rhiannon": {
   "id": "rhiannon",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "hebridean-jewellery": {
   "id": "hebridean-jewellery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "cufflinks & signets",
+   "jewellery"
+  ],
+  "tagEvidence": {
+   "jewellery": "R152SilverPeridot Stone Set Rings",
+   "cufflinks & signets": "Isle of Benbecula Cufflinks Silver Celtic Cufflinks Kilt Acc"
+  },
+  "observedTypes": [
+   "Bracelets/Bangles Gold Charm Bracelet",
+   "Bracelets/Bangles Multilink Bracelets",
+   "Bracelets/Bangles Silver Celtic Bangle",
+   "Celtic Charms",
+   "Celtic Charms Pendants",
+   "Celtic Necklaces",
+   "Celtic Rings Rings/Bands",
+   "Celtic Single Charm Bracelets Bracelets/Bangles",
+   "Circle Pendants Pendants",
+   "Gift Vouchers",
+   "Gold Celtic Charm",
+   "Gold Celtic Charm Pendants",
+   "Gold Celtic Earrings",
+   "Gold Celtic Rings Celtic Rings",
+   "Gold Celtic Rings Celtic Rings Celtic Wedding Bands",
+   "Mini Torc Bangle Bracelets/Bangles Mini Torc",
+   "Pendants",
+   "Rings/Bands Stone Set Rings",
+   "Scottish Island Pendant Gold Gold Celtic Charm Pendants",
+   "Scottish Island Pendant Pendants",
+   "Silver Celtic Brooch",
+   "Silver Celtic Cufflinks Kilt Accessories",
+   "Silver Celtic Earrings",
+   "Silver Celtic Kilt Pins Kilt Accessories",
+   "Silver Celtic Rings Celtic Rings",
+   "Silver Celtic Rings Celtic Rings Celtic Wedding Bands",
+   "Special",
+   "Special Bracelets/Bangles",
+   "Stone Set Celtic Earrings",
+   "Stone Set Rings"
+  ],
+  "sample": [
+   "R152SilverPeridot",
+   "Mini Enya Silver Carnelian Earrings",
+   "Hebridean Celtic Star Kiltpin",
+   "Machair Flowers Silver Earrings",
+   "Machair Flowers Silver Pendant",
+   "Clachan Ring Garnet 9ct Gold",
+   "Enya Blue Agate Silver Necklace",
+   "Enya Blue Agate Silver Earrings"
+  ],
   "checked": "2026-07-31"
  },
  "roger-w-smith": {
   "id": "roger-w-smith",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "charles-frodsham": {
   "id": "charles-frodsham",
   "shopify": false,
-  "reason": "not-json",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "garrick-watchmakers": {
   "id": "garrick-watchmakers",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 30,
   "tags": [
    "watches"
@@ -4318,6 +6183,7 @@
  "anordain": {
   "id": "anordain",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 57,
   "tags": [
    "pottery",
@@ -4346,6 +6212,7 @@
  "bremont": {
   "id": "bremont",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 129,
   "tags": [
    "jewellery",
@@ -4387,6 +6254,7 @@
  "fears-watches": {
   "id": "fears-watches",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 97,
   "tags": [
    "hats & caps",
@@ -4419,6 +6287,7 @@
  "mourne-textiles": {
   "id": "mourne-textiles",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 337,
   "tags": [
    "bags & leather goods",
@@ -4464,6 +6333,7 @@
  "thomas-ferguson-linen": {
   "id": "thomas-ferguson-linen",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 133,
   "tags": [
    "bags & leather goods",
@@ -4540,30 +6410,97 @@
  "ballylagan-organic": {
   "id": "ballylagan-organic",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "eden-pottery": {
   "id": "eden-pottery",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "steensons": {
   "id": "steensons",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "faller": {
   "id": "faller",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "cufflinks & signets",
+   "dresses",
+   "jewellery"
+  ],
+  "tagEvidence": {
+   "jewellery": "Opal &#038; Diamond 18ct Yellow Gold Pendant 18ct Gold Jewel",
+   "dresses": "Blue Sapphire &#038; Diamond 18ct Yellow Gold &#038; Platinu",
+   "cufflinks & signets": "18ct Yellow Gold Oval Signet Ring 18ct Gold Jewellery Dress "
+  },
+  "observedTypes": [
+   "18ct Gold Jewellery Amethyst Jewellery Gemstone Dress Rings Trios Jewellery",
+   "18ct Gold Jewellery Amethyst Jewellery Gemstone Pendants Pendants",
+   "18ct Gold Jewellery Aquamarine Jewellery Engagement Rings - Gemstone Dress Rings Platinum Jewellery",
+   "18ct Gold Jewellery Aquamarine Jewellery Gemstone Dress Rings Trios Jewellery",
+   "18ct Gold Jewellery Brides Embrace Jewellery Gemstone Pendants Pearl Jewellery Pendants",
+   "18ct Gold Jewellery Carnelian Jewellery Gemstone Dress Rings",
+   "18ct Gold Jewellery Carnelian Jewellery Gemstone Dress Rings Trios Jewellery",
+   "18ct Gold Jewellery Carnelian Jewellery Gemstone Pendants Pendants",
+   "18ct Gold Jewellery Chrysoberyl Jewellery Gemstone Dress Rings",
+   "18ct Gold Jewellery Citrine Jewellery Earrings Gemstone Earrings Trios Jewellery",
+   "18ct Gold Jewellery Diamond Dress Rings Diamond Jewellery Dress Rings",
+   "18ct Gold Jewellery Diamond Dress Rings Engagement Rings -",
+   "18ct Gold Jewellery Diamond Earrings Diamond Jewellery Earrings",
+   "18ct Gold Jewellery Diamond Engagement Rings Diamond Jewellery Engagement Rings - Platinum Jewellery",
+   "18ct Gold Jewellery Diamond Jewellery Diamond Pendants Eternal Circle Jewellery Pendants",
+   "18ct Gold Jewellery Diamond Jewellery Diamond Pendants Irish Icon Jewellery Pendants",
+   "18ct Gold Jewellery Diamond Jewellery Diamond Pendants Pendants",
+   "18ct Gold Jewellery Diamond Jewellery Eternal Circle Jewellery",
+   "18ct Gold Jewellery Dress Rings Gemstone Dress Rings Morganite Jewellery",
+   "18ct Gold Jewellery Dress Rings Gifts for Him No Stone Dress Rings No Stone Signet Rings Signet Rings",
+   "18ct Gold Jewellery Earrings Echinacea Jewellery Gemstone Earrings Ruby Jewellery",
+   "18ct Gold Jewellery Embrace Jewellery Gemstone Dress Rings Opal Jewellery",
+   "18ct Gold Jewellery Emerald Jewellery Engagement Rings - Gemstone Dress Rings",
+   "18ct Gold Jewellery Emerald Jewellery Engagement Rings - Gemstone Dress Rings Platinum Jewellery",
+   "18ct Gold Jewellery Emerald Jewellery Engagement Rings - Gemstone Dress Rings Trinity Knot Jewellery",
+   "18ct Gold Jewellery Emerald Jewellery Gemstone Dress Rings",
+   "18ct Gold Jewellery Emerald Jewellery Gemstone Pendants Pendants",
+   "18ct Gold Jewellery Engagement Rings - Garnet Jewellery Gemstone Dress Rings",
+   "18ct Gold Jewellery Engagement Rings - Gemstone Dress Rings Natural Spinel Jewellery Platinum Jewellery",
+   "18ct Gold Jewellery Engagement Rings - Gemstone Dress Rings Platinum Jewellery Sapphire Jewellery",
+   "18ct Gold Jewellery Engagement Rings - Gemstone Dress Rings Zircon Jewellery",
+   "18ct Gold Jewellery Garnet Jewellery Gemstone Dress Rings Trinity Knot Jewellery",
+   "18ct Gold Jewellery Garnet Jewellery Gemstone Dress Rings Trios Jewellery",
+   "18ct Gold Jewellery Garnet Jewellery Gemstone Pendants Pendants",
+   "18ct Gold Jewellery Garnet Jewellery Gemstone Pendants Pendants Trinity Knot Jewellery",
+   "18ct Gold Jewellery Gemstone Dress Rings Golden Beryl Jewellery",
+   "18ct Gold Jewellery Gemstone Dress Rings Morganite Jewellery",
+   "18ct Gold Jewellery Gemstone Dress Rings Platinum Jewellery Sapphire Jewellery",
+   "18ct Gold Jewellery Gemstone Dress Rings Ruby Jewellery",
+   "18ct Gold Jewellery Gemstone Dress Rings Tanzanite Jewellery"
+  ],
+  "sample": [
+   "Opal &#038; Diamond 18ct Yellow Gold Pendant",
+   "Opal &#038; Diamond 18ct Yellow Gold Pendant",
+   "18ct Yellow Gold Turquoise Pendant",
+   "9x7mm Turquoise 18ct Yellow Gold Pendulum Pendant",
+   "Tanzanite &#038; Diamond 18ct Yellow Gold &#038; Platinum Pendant",
+   "18ct Yellow Gold Diamond Pendant 1.11ct",
+   "Blue Sapphire &#038; Diamond 18ct Yellow Gold &#038; Platinum Cluster ",
+   "Oval Diamond 18ct Yellow Gold &#038; Platinum Solitaire Ring 0.70ct"
+  ],
   "checked": "2026-07-31"
  },
  "nomadic-watches": {
   "id": "nomadic-watches",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 80,
   "tags": [
    "jewellery",
@@ -4594,6 +6531,7 @@
  "yarmouth-oilskins": {
   "id": "yarmouth-oilskins",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 87,
   "tags": [
    "bags & leather goods",
@@ -4650,12 +6588,66 @@
  "farfield-clothing": {
   "id": "farfield-clothing",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 100,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "hats & caps",
+   "jeans & denim",
+   "lamb",
+   "tweed & woven goods",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Ladies A50 Fleece Jacket Natural Red Squirrel Ladies Jackets",
+   "womenswear": "Ladies A50 Fleece Jacket Natural Red Squirrel Ladies Jackets",
+   "lamb": "Sherpa Fleece Jacket  Natural Sheep and Lamb Ladies Ladies S",
+   "vests & waistcoats": "Ladies Sherpa Fleece Vest Horses Ladies Vests/Gilets",
+   "jeans & denim": "LADIES  A/50 Fleece Jacket Denim Blue Ladies Ladies A/50 Pol",
+   "tweed & woven goods": "Sherpa Fleece Blanket/Throws Blanket/Throw",
+   "cashmere & merino": "Mans Sherpa Fleece Jacket CASHMERE RED Men's Mens Jackets",
+   "hats & caps": "Ladies Faux Fur Hat Ladies Accessories Accessories"
+  },
+  "observedTypes": [
+   "Blanket/Throw",
+   "Children Jackets",
+   "Ladies Accessories Accessories",
+   "Ladies Faux Fur Range",
+   "Ladies Jackets Animal Prints",
+   "Ladies Jackets Animal Prints Ladies A/50 Micro Velour Fleece Jackets",
+   "Ladies Ladies A/30 Polyester Fleece Semi Fitted Jackets",
+   "Ladies Ladies A/50 Micro Velour Fleece Jackets",
+   "Ladies Ladies A/50 Micro Velour Fleece Jackets Sale",
+   "Ladies Ladies A/50 Polyester Fleece Jackets",
+   "Ladies Ladies Sherpa Fleece Jacket",
+   "Ladies Ladies Sherpa Fleece Jacket Jackets Animal Prints",
+   "Ladies Ladies Sherpa Fleece Jacket Jackets Animal Prints Sale",
+   "Ladies Ladies Sherpa Fleece Jacket Sale",
+   "Ladies Smock/Tunic",
+   "Ladies Vests/Gilets",
+   "Men's Mans Vest",
+   "Men's Men's Polyester Fleece Jackets",
+   "Men's Mens Jackets",
+   "Men's Mens Jackets Animal Print"
+  ],
+  "sample": [
+   "Ladies A50 Fleece Jacket Natural Red Squirrel",
+   "Mans Sherpa Fleece Jacket Black Melange",
+   "Ladies Sherpa Fleece Jacket Union Jack",
+   "Ladies Multi Design Jacket in Red, Green &amp; Black",
+   "Ladies Sherpa Off White Fleece Jacket with splashes of black",
+   "Ladies Plain Sherpa Fleece Jacket Toffee/Tan",
+   "Plain Sherpa Fleece Jacket Brown",
+   "Sherpa Fleece Jacket  Natural Sheep and Lamb"
+  ],
   "checked": "2026-07-31"
  },
  "troy-london": {
   "id": "troy-london",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 8,
   "tags": [
    "coats & jackets",
@@ -4684,18 +6676,108 @@
  "mcnair-shirts": {
   "id": "mcnair-shirts",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "woocommerce",
+  "productCount": 98,
+  "tags": [
+   "cashmere & merino",
+   "coats & jackets",
+   "hats & caps",
+   "shirts",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "coats & jackets": "Women’s made-to-measure Lightweight Canvas Work Jacket Made ",
+   "womenswear": "Women’s made-to-measure Lightweight Canvas Work Jacket Made ",
+   "vests & waistcoats": "Men&#8217;s moleskin Mill Gilet – Made to Measure Made to Me",
+   "shirts": "Men’s PlasmaDry Plains heavyweight corduroy shirt – made to ",
+   "cashmere & merino": "Women&#8217;s Merino Moonraker Jacket &#8211; made to measur",
+   "hats & caps": "Men&#8217;s Standedge 360° merino hat Accessories"
+  },
+  "observedTypes": [
+   "Accessories",
+   "Canvas Made to Measure Men's Jackets Men's Made to Measure Men's Made to Measure Jackets Men's Made to Measure PlasmaDry Shirts &amp; Jackets Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Canvas Men's Jackets Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Canvas Men's Shirts Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Canvas PlasmaDry™ Shirts Women's Jackets Women's Shirts &amp; Jackets",
+   "Canvas PlasmaDry™ Shirts Women's Shirts &amp; Jackets",
+   "Cavalry Twill Cavalry Twill Men's Jackets Men's Made to Measure Jackets Men's Shirts &amp; Jackets PlasmaDry™ Shirts Women's Jackets Women's Made to Measure Jackets Women's Shirts &amp; Jackets",
+   "Cavalry Twill Men's Jackets Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Corduroy Men's Jackets Men's Shirts &amp; Jackets",
+   "Corduroy Men's Shirts Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Corduroy PlasmaDry™ Shirts Women's Shirts &amp; Jackets",
+   "Corduroy Women's Jackets Women's Made to Measure Women's Made to Measure Jackets Women's Made to Measure PlasmaDry Shirts &amp; Jackets Women's Shirts &amp; Jackets",
+   "Corduroy Women's Jackets Women's Shirts &amp; Jackets",
+   "Gift Vouchers",
+   "Gift Vouchers Virtual Voucher",
+   "Gilets Made to Measure Men's Made to Measure Gilets",
+   "Gilets Made to Measure Women's Made to Measure Gilets",
+   "Gilets Men's Shirts &amp; Jackets",
+   "Gilets Women's Shirts &amp; Jackets",
+   "Half Panama Men's Jackets Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Half Panama PlasmaDry™ Shirts Women's Jackets Women's Shirts &amp; Jackets",
+   "Made to Measure Men's Jackets Men's Made to Measure Jackets Men's Shirts &amp; Jackets Moleskin PlasmaDry™ Shirts",
+   "Made to Measure Men's Made to Measure Gilets",
+   "Made to Measure Men's Made to Measure Jackets",
+   "Made to Measure Men's Made to Measure Jackets Men's Shirts &amp; Jackets",
+   "Made to Measure Men's Made to Measure Jackets Merino Jackets",
+   "Made to Measure Men's Made to Measure Men's Made to Measure Jackets Men's Made to Measure PlasmaDry Shirts &amp; Jackets",
+   "Made to Measure Men's Made to Measure Men's Shirts",
+   "Made to Measure Men's Made to Measure Men's Shirts Men's Shirts &amp; Jackets",
+   "Made to Measure Men's Made to Measure PlasmaDry Shirts &amp; Jackets Men's Shirts Men's Shirts &amp; Jackets PlasmaDry™ Shirts",
+   "Made to Measure PlasmaDry™ Shirts Women's Jackets Women's Made to Measure Jackets Women's Shirts &amp; Jackets",
+   "Made to Measure PlasmaDry™ Shirts Women's Made to Measure",
+   "Made to Measure PlasmaDry™ Shirts Women's Made to Measure Women's Made to Measure PlasmaDry Shirts &amp; Jackets",
+   "Made to Measure Women's Jackets Women's Made to Measure Gilets Women's Shirts &amp; Jackets",
+   "Made to Measure Women's Jackets Women's Made to Measure Jackets",
+   "Made to Measure Women's Jackets Women's Made to Measure Women's Made to Measure Jackets Women's Made to Measure PlasmaDry Shirts &amp; Jackets",
+   "Made to Measure Women's Made to Measure Women's Shirts &amp; Jackets",
+   "Made to Measure Women's Made to Measure Women's Shirts Women's Shirts &amp; Jackets",
+   "Men's Jackets Men's Shirts &amp; Jackets Merino Jackets",
+   "Men's Jackets Men's Shirts &amp; Jackets Moleskin"
+  ],
+  "sample": [
+   "Women’s made-to-measure Lightweight Canvas Work Jacket",
+   "Women’s PlasmaDry Lightweight Canvas Work Jacket",
+   "Men’s PlasmaDry Lightweight Canvas Work Jacket – Made to Measure",
+   "Men’s PlasmaDry Lightweight Canvas Work Jacket",
+   "Men&#8217;s moleskin Mill Gilet – Made to Measure",
+   "Chadwick Jacket in PlasmaDry Cavalry Twill – Made to Measure",
+   "Men&#8217;s moleskin Mill Gilet",
+   "Chadwick Jacket in PlasmaDry Cavalry Twill"
+  ],
   "checked": "2026-07-31"
  },
  "fieldware-co": {
   "id": "fieldware-co",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "squarespace",
+  "productCount": 14,
+  "tags": [
+   "cutlery & knives",
+   "workwear & aprons"
+  ],
+  "tagEvidence": {
+   "workwear & aprons": "Original Full Bib Apron - Classic Waxed Cotton",
+   "cutlery & knives": "Knife Roll - Dry Waxed Cotton"
+  },
+  "observedTypes": [],
+  "sample": [
+   "Original Full Bib - Dry Waxed Cotton",
+   "Makers Full Bib - Dry Waxed Cotton",
+   "Original Full Bib Apron - Classic Waxed Cotton",
+   "Makers Full Bib Apron - Classic Waxed Cotton",
+   "Craft Apron - Classic Waxed Cotton",
+   "Original Waist Apron - Classic Waxed Cotton",
+   "Makers Waist Apron - Classic Waxed Cotton",
+   "Utility Waist Apron - Classic Waxed Cotton"
+  ],
   "checked": "2026-07-31"
  },
  "hegarty-london": {
   "id": "hegarty-london",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 28,
   "tags": [
    "bags & leather goods",
@@ -4741,12 +6823,14 @@
  "lochcarron": {
   "id": "lochcarron",
   "shopify": false,
-  "reason": "http-404",
+  "platform": null,
+  "reason": "no-feed-found",
   "checked": "2026-07-31"
  },
  "berk": {
   "id": "berk",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 164,
   "tags": [
    "cashmere & merino",
@@ -4833,6 +6917,7 @@
  "colhays": {
   "id": "colhays",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 85,
   "tags": [
    "cashmere & merino",
@@ -4864,6 +6949,7 @@
  "mallochs": {
   "id": "mallochs",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 46,
   "tags": [
    "bags & leather goods",
