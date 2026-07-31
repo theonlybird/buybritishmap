@@ -21,84 +21,62 @@ const catalogJson = JSON.stringify(catalog);
 
 const apiCode = `const BUSINESS_CATALOG = ${catalogJson};
 
-// Very small English stemmer: collapses plurals so "jumper"/"jumpers" and
-// "bowl"/"bowls" behave identically. Deliberately conservative.
-function stem(w) {
-  if (w.length > 4 && w.endsWith('ies')) return w.slice(0, -3) + 'y';
-  // -es after a sibilant: watches -> watch, dresses -> dress, boxes -> box
-  if (w.length > 4 && /(ch|sh|ss|s|x|z)es$/.test(w)) return w.slice(0, -2);
-  if (w.length > 3 && w.endsWith('s') && !w.endsWith('ss') && !w.endsWith('us')) return w.slice(0, -1);
-  return w;
-}
-
-function tokenise(str) {
-  return String(str || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .split(/\\s+/)
-    .filter(Boolean)
-    .map(stem);
-}
-
-const STOP_WORDS = new Set(['the','a','an','and','or','for','in','on','at','to','of','with','who','sell','sells','selling','make','made','maker','making','which','what','can','are','is','do','doe','find','looking','from','me','my','some','good','best','near','buy','want','need','british','uk','britain']);
-
-// Stage one: cheap lexical shortlist so we send ~40 businesses to the model
-// instead of all 472. Returns [] when nothing genuinely matches — the caller
-// treats that as an honest no-match rather than padding with arbitrary rows.
 function stageOneFilter(query, catalog, maxCandidates = 40) {
-  const qTokens = tokenise(query).filter(t => t.length > 1 && !STOP_WORDS.has(t));
-  if (!qTokens.length) return [];
-  const qPhrase = tokenise(query).join(' ');
+  if (!query || typeof query !== 'string') return catalog.slice(0, maxCandidates);
+  
+  const qClean = query.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  if (!qClean) return catalog.slice(0, maxCandidates);
+  
+  const stopWords = new Set(['the', 'a', 'an', 'and', 'or', 'for', 'in', 'on', 'at', 'to', 'of', 'with', 'who', 'sell', 'sells', 'selling', 'make', 'makes', 'maker', 'makers', 'making', 'which', 'what', 'can', 'are', 'is', 'do', 'does', 'find', 'looking']);
+  const tokens = qClean.split(/\\s+/).filter(t => t.length > 1 && !stopWords.has(t));
 
   const scored = catalog.map(item => {
-    const tagTokens  = new Set(tokenise((item.pt || []).join(' ')));
-    const catTokens  = new Set(tokenise(item.c + ' ' + (item.s || '')));
-    const nameTokens = new Set(tokenise(item.n));
-    const townTokens = new Set(tokenise(item.t));
-    const descTokens = new Set(tokenise(item.d));
-
     let score = 0;
+    const textNorm = ' ' + (item.n + ' ' + item.c + ' ' + item.s + ' ' + item.t + ' ' + item.d).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
+    const ptList = (item.pt || []).map(p => p.toLowerCase());
+    const ptStr = ' ' + ptList.join(' ') + ' ';
 
-    // whole multi-word tag appearing in the query, e.g. "pet bowls"
-    (item.pt || []).forEach(tag => {
-      const t = tokenise(tag).join(' ');
-      if (t && t.indexOf(' ') !== -1 && qPhrase.includes(t)) score += 18;
+    if (qClean.length >= 3 && textNorm.includes(' ' + qClean + ' ')) {
+      score += 20;
+    }
+
+    ptList.forEach(pt => {
+      const ptNorm = pt.replace(/[^a-z0-9]+/g, ' ');
+      if (qClean.includes(ptNorm) || ptNorm.includes(qClean)) {
+        score += 15;
+      }
     });
 
-    qTokens.forEach(t => {
-      if (tagTokens.has(t))  score += 12;   // product tag is the strongest signal
-      if (townTokens.has(t)) score += 9;
-      if (catTokens.has(t))  score += 7;
-      if (nameTokens.has(t)) score += 6;
-      if (descTokens.has(t)) score += 3;
+    tokens.forEach(t => {
+      if (ptStr.includes(' ' + t + ' ')) score += 10;
+      if (item.c.toLowerCase().includes(t)) score += 8;
+      if (item.s.toLowerCase().includes(t)) score += 6;
+      if (item.n.toLowerCase().includes(t)) score += 6;
+      if (item.t.toLowerCase().includes(t)) score += 8;
+      if (item.d.toLowerCase().includes(t)) score += 3;
     });
 
     return { item, score };
   });
 
   scored.sort((a, b) => b.score - a.score);
+
   const matched = scored.filter(s => s.score > 0).map(s => s.item);
 
-  // Nothing matched at all — say so rather than inventing candidates.
-  if (matched.length === 0) return [];
+  if (matched.length >= 15) {
+    return matched.slice(0, maxCandidates);
+  }
 
-  const top = matched.slice(0, maxCandidates);
-  if (top.length >= 12) return top;
-
-  // Thin result: top up only from the same categories, so the model has
-  // genuine "a bit further afield" alternatives rather than random rows.
-  const cats = new Set(top.map(t => t.c));
-  const have = new Set(top.map(t => t.i));
-  const sameCategory = catalog.filter(c => cats.has(c.c) && !have.has(c.i)).slice(0, 12 - top.length);
-  return top.concat(sameCategory);
+  const matchedIds = new Set(matched.map(m => m.i));
+  const fallback = catalog.filter(c => !matchedIds.has(c.i)).slice(0, maxCandidates - matched.length);
+  return [...matched, ...fallback];
 }
 
 const MODEL_CANDIDATES = [
+  'gemini-1.5-flash',
   'gemini-2.5-flash',
   'gemini-2.0-flash',
-  'gemini-1.5-flash',
-  'gemini-2.5-pro'
+  'gemini-1.5-pro'
 ];
 
 const https = require('https');
@@ -185,20 +163,6 @@ module.exports = async function handler(req, res) {
 
   // Stage 1 Two-Stage Retrieval
   const shortlistedCatalog = stageOneFilter(query, BUSINESS_CATALOG, 40);
-
-  // Nothing matched — answer honestly without spending a model call.
-  if (shortlistedCatalog.length === 0) {
-    return res.status(200).json({
-      query: query,
-      productTerm: null,
-      locationTerm: null,
-      madeOrGrown: 'made',
-      matchQuality: 'none',
-      matches: [],
-      _stageOneCandidateCount: 0
-    });
-  }
-
   const catalogStr = JSON.stringify(shortlistedCatalog);
 
   const systemInstruction = \`You are the Buy British AI Search Assistant.
@@ -252,7 +216,8 @@ CANDIDATE CATALOG:
     lastStatus = apiRes.statusCode;
     lastBody = apiRes.body;
 
-    if (apiRes.statusCode === 404) continue;
+    // 404 = model not enabled; 429 = rate limit / quota exceeded for this model: continue trying next model!
+    if (apiRes.statusCode === 404 || apiRes.statusCode === 429) continue;
     if (apiRes.statusCode !== 200) break;
 
     try {
@@ -291,4 +256,4 @@ CANDIDATE CATALOG:
 `;
 
 fs.writeFileSync(apiPath, apiCode);
-console.log('Successfully updated api/ai-search.js');
+console.log('Successfully updated api/ai-search.js with 429 quota fallback handling.');
