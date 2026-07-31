@@ -96,13 +96,12 @@ CRITICAL INSTRUCTIONS:
 3. Return ONLY a valid JSON object matching this exact structure:
 {
   "query": ${JSON.stringify(query)},
-  "reasoning": "1-2 sentence explanation of what the user is looking for and the regional/material context.",
   "productTerm": "the plural everyday noun for what they want, e.g. jumpers, watches, jewellery, venison, mugs. Lowercase. Null if they named no product.",
   "locationTerm": "the place they asked for exactly as a person would say it, e.g. Darlington, Norfolk, Cornwall. Null if they named no place.",
   "madeOrGrown": "made or grown - use grown for food, produce, meat and farm goods; made for everything else",
   "matchQuality": "exact if you found businesses that genuinely satisfy BOTH the product and the location; wider if you found the right product but had to go outside the requested area; loose if you could only find loosely related businesses",
   "matches": [
-    { "id": "exact-business-id-from-catalog", "reason": "1-sentence specific rationale." }
+    { "id": "exact-business-id-from-catalog" }
   ]
 }
 4. Limit matches to the top 1-12 most relevant businesses.
