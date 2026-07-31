@@ -168,7 +168,19 @@
   .grid-sidebar { width: 240px; min-width: 240px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); position: sticky; top: 0; }
   .grid-main { flex: 1; min-width: 0; }
   .grid-header { margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-  .grid-container { width: 100%; max-width: none; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+  .grid-container { width: 100%; max-width: none; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .btn-sort { border: 1px solid var(--line); background: #fff; border-radius: 9px; padding: 8px 14px; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.03); transition: .15s; white-space: nowrap; align-self: center; }
+  .btn-sort:hover { border-color: var(--navy); background: var(--bg); }
+
+  @media (max-width: 1400px) {
+    .grid-container { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 1020px) {
+    .grid-container { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .grid-container { grid-template-columns: 1fr; }
+  }
 
   .mobile-filter-toggle { display: none; width: 100%; padding: 10px 14px; background: #fff; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; text-align: left; align-items: center; justify-content: space-between; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
   .mobile-filter-toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; transition: transform 0.2s; }
@@ -226,7 +238,7 @@
       <div class="controls">
         <div class="filter-group">
           <div class="lbl">Category</div>
-          <div class="chips" id="catChips">
+          <div class="chips cat-chips" id="catChips">
             <span class="chip active" data-cat="farm"><span class="dot" style="background:var(--farm)"></span>Farm shops</span>
             <span class="chip active" data-cat="clothing"><span class="dot" style="background:var(--clothing)"></span>Clothing</span>
             <span class="chip active" data-cat="ceramics"><span class="dot" style="background:var(--ceramics)"></span>Ceramics</span>
@@ -236,7 +248,7 @@
         </div>
         <div class="filter-group">
           <div class="lbl">Standard</div>
-          <div class="chips" id="tierChips">
+          <div class="chips tier-chips" id="tierChips">
             <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
             <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
           </div>
@@ -276,7 +288,6 @@
         </div>
         <div class="countrow" style="margin-top:16px; padding:10px 0 0 0; border-top:1px solid var(--line); background:transparent;">
           <div class="count" id="gridCount"></div>
-          <button class="sortBtn" title="Sort alphabetically">A–Z ↓</button>
         </div>
       </aside>
       <main class="grid-main">
@@ -288,6 +299,7 @@
           <div class="ai-banner" id="gridAiBanner">
             Here are some UK businesses we think you&rsquo;ll love
           </div>
+          <button id="gridSortBtn" class="btn-sort sortBtn" title="Sort alphabetically">A–Z ↓</button>
         </div>
         <div class="grid-container" id="gridCards"></div>
       </main>
@@ -832,7 +844,8 @@ function bindChipEvents() {
       if (c.classList.contains('disabled')) return;
       chipClick(state.cats, ALL_CATS, c.dataset.cat);
       syncChips();
-      if (state.currentView === 'grid') renderGrid(); else renderMapList();
+      renderMapList();
+      renderGrid();
     });
   });
 
@@ -841,7 +854,8 @@ function bindChipEvents() {
       if (c.classList.contains('disabled')) return;
       chipClick(state.tiers, ALL_TIERS, c.dataset.tier);
       syncChips();
-      if (state.currentView === 'grid') renderGrid(); else renderMapList();
+      renderMapList();
+      renderGrid();
     });
   });
 }
