@@ -16,7 +16,10 @@
   "evidence_note": "Sources all fabrics, buttons and trims from regional British mills/makers; made in British Isles.",
   "tier_confidence": "high",
   "logo": "assets/logos/seh-kelly.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "united-overalls",
@@ -35,7 +38,11 @@
   "evidence_note": "UK-woven selvedge denim (Hewitt Heritage, Lancashire); sewn at Blackhorse Lane Ateliers, London.",
   "tier_confidence": "high",
   "logo": "assets/logos/united-overalls.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jeans & denim",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "private-white-vc",
@@ -54,7 +61,10 @@
   "evidence_note": "~90% of raw materials within 50km of Manchester factory; British mills.",
   "tier_confidence": "high",
   "logo": "assets/logos/private-white-vc.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "community-clothing",
@@ -73,7 +83,8 @@
   "evidence_note": "UK mill/factory co-operative; fabric spun, knitted and woven in the UK.",
   "tier_confidence": "high",
   "logo": "assets/logos/community-clothing.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "maquien",
@@ -92,7 +103,11 @@
   "evidence_note": "Cloths sourced solely in Britain; wools/cashmere woven in UK; made in England.",
   "tier_confidence": "high",
   "logo": "assets/logos/maquien.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "cashmere & merino",
+   "suits & trousers"
+  ]
  },
  {
   "id": "maude-and-fox",
@@ -111,7 +126,10 @@
   "evidence_note": "100% British tweed (Yorkshire/Scotland); each piece hand-made in Dorset.",
   "tier_confidence": "high",
   "logo": "assets/logos/maude-and-fox.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "chapman-bags",
@@ -130,7 +148,11 @@
   "evidence_note": "Lancashire canvas, Borders tweed, English leather, British woven/dyed canvas.",
   "tier_confidence": "high",
   "logo": "assets/logos/chapman-bags.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods",
+   "bags & leather goods"
+  ]
  },
  {
   "id": "trakke",
@@ -149,7 +171,11 @@
   "evidence_note": "Waxed cotton from Halley Stevensons (Dundee); handmade in Glasgow. (Hardware e.g. zips imported.)",
   "tier_confidence": "high",
   "logo": "assets/logos/trakke.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "bags & leather goods"
+  ]
  },
  {
   "id": "carradice",
@@ -168,7 +194,12 @@
   "evidence_note": "Handcrafted in Nelson; sources as many materials as possible from UK suppliers. CONFIRM waxed cotton duck is UK-woven for full Gold.",
   "tier_confidence": "medium",
   "logo": "assets/logos/carradice.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "bags & leather goods",
+   "poultry"
+  ]
  },
  {
   "id": "barnes-and-moore",
@@ -187,7 +218,11 @@
   "evidence_note": "Belts from English oak-bark tanned leather + British brass. NOTE: some smaller goods use imported veg-tan leather.",
   "tier_confidence": "medium",
   "logo": "assets/logos/barnes-and-moore.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods",
+   "fruit & veg"
+  ]
  },
  {
   "id": "john-smedley",
@@ -206,7 +241,11 @@
   "evidence_note": "Knitted in England since 1784. (Raw fibre imported, as all UK knitwear; knitted/finished in UK.)",
   "tier_confidence": "medium",
   "logo": "assets/logos/john-smedley.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "hebtroco",
@@ -225,7 +264,12 @@
   "evidence_note": "Made in UK; uses 'the best fabrics and trims they can get' (mix of British and imported cloth). Some lines may qualify Gold.",
   "tier_confidence": "medium",
   "logo": "assets/logos/hebtroco.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jeans & denim",
+   "suits & trousers",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "billingham",
@@ -244,7 +288,10 @@
   "evidence_note": "Made in England, real leather + solid brass. Canvas is cotton/polyester and FibreNyte is 100% polyester — fabric not clearly UK-milled, hence Silver.",
   "tier_confidence": "medium",
   "logo": "assets/logos/billingham.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "campbell-cole",
@@ -263,7 +310,10 @@
   "evidence_note": "Made in England but from Italian vegetable-tanned leather — imported main material, hence Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/campbell-cole.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "carl-stuart-tailors",
@@ -282,7 +332,11 @@
   "evidence_note": "Construction wholly in UK; cloth chosen by client (British and imported, e.g. Italian) — hence Silver by default.",
   "tier_confidence": "medium",
   "logo": "assets/logos/carl-stuart-tailors.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "suits & trousers",
+   "shirts"
+  ]
  },
  {
   "id": "knepp-wild-range",
@@ -301,7 +355,12 @@
   "evidence_note": "Own organic rewilding estate produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/knepp-wild-range.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "beef",
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "gazegill-organics",
@@ -320,7 +379,12 @@
   "evidence_note": "Own organic farm; butchery, dairy, deli.",
   "tier_confidence": "high",
   "logo": "assets/logos/gazegill-organics.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "farm2fork",
@@ -339,7 +403,13 @@
   "evidence_note": "Own organic Devon farm; grass-fed/pasture-raised.",
   "tier_confidence": "high",
   "logo": "assets/logos/farm2fork.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "poultry",
+   "fresh meat"
+  ]
  },
  {
   "id": "eversfield-organic",
@@ -358,7 +428,11 @@
   "evidence_note": "Own organic Devon farm; consolidated with Coombe Farm Organic (Crewkerne, Somerset) in 2023.",
   "tier_confidence": "high",
   "logo": "assets/logos/eversfield-organic.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "iow-tomatoes",
@@ -377,7 +451,10 @@
   "evidence_note": "Own-grown produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/iow-tomatoes.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "pipers-farm",
@@ -396,7 +473,10 @@
   "evidence_note": "Network of small British farms; grass-fed, native-breed meat.",
   "tier_confidence": "high",
   "logo": "assets/logos/pipers-farm.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat"
+  ]
  },
  {
   "id": "daylesford",
@@ -415,7 +495,12 @@
   "evidence_note": "Own organic farm produce, but stocks specialist imports (wine, deli) — hence Silver.",
   "tier_confidence": "medium",
   "logo": "assets/logos/daylesford.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg",
+   "drinks & spirits"
+  ]
  },
  {
   "id": "trickers",
@@ -434,7 +519,10 @@
   "evidence_note": "Made in Northampton. Silver: shoe leather (calf) typically imported from European tanneries.",
   "tier_confidence": "medium",
   "logo": "assets/logos/trickers.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "crockett-jones",
@@ -453,7 +541,10 @@
   "evidence_note": "Made in Northampton since 1879. Silver: calf leather typically imported.",
   "tier_confidence": "medium",
   "logo": "assets/logos/crockett-jones.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "joseph-cheaney",
@@ -472,7 +563,10 @@
   "evidence_note": "Made in Desborough. Silver: calf leather typically imported.",
   "tier_confidence": "medium",
   "logo": "assets/logos/joseph-cheaney.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "loake",
@@ -491,7 +585,10 @@
   "evidence_note": "Core Goodyear-welted ranges made in Kettering. Silver: leather imported; some lines made overseas — confirm range.",
   "tier_confidence": "medium",
   "logo": "assets/logos/loake.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "edward-green",
@@ -510,7 +607,10 @@
   "evidence_note": "Made in Northampton. Silver: calf leather imported.",
   "tier_confidence": "medium",
   "logo": "assets/logos/edward-green.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "johnstons-of-elgin",
@@ -529,7 +629,11 @@
   "evidence_note": "Spun/woven/knitted in Scotland (Elgin & Hawick). Gold by UK-milled rule (fibre imported, as all cashmere).",
   "tier_confidence": "high",
   "logo": "assets/logos/johnstons-of-elgin.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "begg-x-co",
@@ -548,7 +652,12 @@
   "evidence_note": "Woven in Scotland (Ayr/Hawick mills). Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/begg-x-co.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino",
+   "scarves & accessories"
+  ]
  },
  {
   "id": "william-lockie",
@@ -567,7 +676,11 @@
   "evidence_note": "Knitted in Hawick. Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/william-lockie.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "corgi",
@@ -586,7 +699,11 @@
   "evidence_note": "Knitted in Wales. Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/corgi.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "pantherella",
@@ -605,7 +722,11 @@
   "evidence_note": "Knitted in Leicester. Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/pantherella.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "peregrine",
@@ -624,7 +745,11 @@
   "evidence_note": "Knitted/made in England. Gold by UK-milled rule. Confirm exact site.",
   "tier_confidence": "medium",
   "logo": "assets/logos/peregrine.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "coats & jackets"
+  ]
  },
  {
   "id": "mackintosh",
@@ -643,7 +768,10 @@
   "evidence_note": "Hand-made in Scotland, but the bonded cotton is produced in Japan — imported fabric, hence Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/mackintosh.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "hiut-denim",
@@ -662,7 +790,12 @@
   "evidence_note": "Cut and sewn in Wales; denim typically imported (e.g. Japan/Italy), hence Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/hiut-denim.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "jeans & denim",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "chatsworth-farm-shop",
@@ -681,7 +814,10 @@
   "evidence_note": "Estate + Derbyshire suppliers (mostly <30 miles).",
   "tier_confidence": "high",
   "logo": "assets/logos/chatsworth-farm-shop.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "ludlow-food-centre",
@@ -700,7 +836,8 @@
   "evidence_note": "80% from Shropshire & surrounding counties; half made on premises.",
   "tier_confidence": "high",
   "logo": "assets/logos/ludlow-food-centre.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "balgove-larder",
@@ -719,7 +856,11 @@
   "evidence_note": "Own/local Scottish produce; butchery on site.",
   "tier_confidence": "high",
   "logo": "assets/logos/balgove-larder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "fodder",
@@ -738,7 +879,8 @@
   "evidence_note": "Locally sourced North Yorkshire suppliers; FARMA-listed.",
   "tier_confidence": "high",
   "logo": "assets/logos/fodder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "gloucester-services",
@@ -757,7 +899,10 @@
   "evidence_note": "Local-sourcing USP; some range items may be wider — generally local British.",
   "tier_confidence": "medium",
   "logo": "assets/logos/gloucester-services.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "rhug-estate",
@@ -776,7 +921,11 @@
   "evidence_note": "Own organic estate produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/rhug-estate.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "goodwood-farm-shop",
@@ -795,7 +944,13 @@
   "evidence_note": "Self-sustaining organic Home Farm produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/goodwood-farm-shop.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg",
+   "drinks & spirits"
+  ]
  },
  {
   "id": "riverford",
@@ -814,7 +969,10 @@
   "evidence_note": "Organic and largely British, but imports out-of-season produce (e.g. citrus) — hence Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/riverford.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "fox-brothers",
@@ -833,7 +991,10 @@
   "evidence_note": "Cloth woven in England (Wellington). Gold: UK-milled fabric.",
   "tier_confidence": "high",
   "logo": "assets/logos/fox-brothers.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "lavenham",
@@ -852,7 +1013,10 @@
   "evidence_note": "Made in Suffolk; British wadding + UK-mill fabrics. Gold (confirm shell origin per range).",
   "tier_confidence": "medium",
   "logo": "assets/logos/lavenham.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "christys",
@@ -871,7 +1035,10 @@
   "evidence_note": "Felt made in UK (Stockport), blocked in Witney. Gold: UK-made felt.",
   "tier_confidence": "medium",
   "logo": "assets/logos/christys.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "hats & caps"
+  ]
  },
  {
   "id": "ettinger",
@@ -890,7 +1057,10 @@
   "evidence_note": "Signature range uses English bridle leather (UK-tanned). Gold; note some ranges use imported leather.",
   "tier_confidence": "medium",
   "logo": "assets/logos/ettinger.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "barbour",
@@ -909,7 +1079,10 @@
   "evidence_note": "Waxed jackets made in South Shields; many other products imported, so Silver brand-wide.",
   "tier_confidence": "high",
   "logo": "assets/logos/barbour.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "new-balance-uk",
@@ -928,7 +1101,10 @@
   "evidence_note": "Assembled in Flimby; materials (suede/mesh) imported, so Silver (footwear precedent).",
   "tier_confidence": "high",
   "logo": "assets/logos/new-balance-uk.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "globe-trotter",
@@ -947,7 +1123,10 @@
   "evidence_note": "Made in UK; fibreboard body UK-made but leather trim imported, so Silver under strict rule.",
   "tier_confidence": "medium",
   "logo": "assets/logos/globe-trotter.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "tusting",
@@ -966,7 +1145,10 @@
   "evidence_note": "Made in UK; uses a mix of English and Italian leather, so Silver under strict rule.",
   "tier_confidence": "medium",
   "logo": "assets/logos/tusting.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "emma-willis",
@@ -985,7 +1167,10 @@
   "evidence_note": "Made in Gloucester; cloth typically Swiss/Italian cotton, so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/emma-willis.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "shirts"
+  ]
  },
  {
   "id": "turnbull-asser",
@@ -1004,7 +1189,10 @@
   "evidence_note": "Made in Gloucester; cloth imported (Italian/Swiss), so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/turnbull-asser.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "shirts"
+  ]
  },
  {
   "id": "keelham",
@@ -1023,7 +1211,10 @@
   "evidence_note": "Sources from 250+ Yorkshire producers; own butchery. Gold (British-focused).",
   "tier_confidence": "medium",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat"
+  ]
  },
  {
   "id": "cannon-hall-farm",
@@ -1042,7 +1233,13 @@
   "evidence_note": "Own farm-produced meat.",
   "tier_confidence": "high",
   "logo": "assets/logos/cannon-hall-farm.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "fresh meat"
+  ]
  },
  {
   "id": "farmer-copleys",
@@ -1061,7 +1258,8 @@
   "evidence_note": "Locally sourced, traceable British food.",
   "tier_confidence": "medium",
   "logo": "assets/logos/farmer-copleys.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "hollis-mead",
@@ -1080,7 +1278,11 @@
   "evidence_note": "Own organic dairy produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "loch-arthur",
@@ -1099,7 +1301,12 @@
   "evidence_note": "Own organic farm; creamery, bakery, butchery.",
   "tier_confidence": "high",
   "logo": "assets/logos/loch-arthur.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "dairy & cheese",
+   "bread & bakery"
+  ]
  },
  {
   "id": "macknade",
@@ -1118,7 +1325,8 @@
   "evidence_note": "Strong local sourcing but large continental/imported fine-food range, so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/macknade.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "secretts",
@@ -1137,7 +1345,10 @@
   "evidence_note": "Grows own produce but wide gourmet/imported range, so Silver.",
   "tier_confidence": "medium",
   "logo": "assets/logos/secretts.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "jamiesons-shetland",
@@ -1156,7 +1367,10 @@
   "evidence_note": "Cleaned, dyed, spun and knitted in Shetland from Shetland wool. Gold (fully UK incl. British wool).",
   "tier_confidence": "high",
   "logo": "assets/logos/jamiesons-shetland.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "melin-tregwynt",
@@ -1175,7 +1389,10 @@
   "evidence_note": "Woven in Wales; British (Yorkshire) yarn. Gold: UK-milled fabric.",
   "tier_confidence": "high",
   "logo": "assets/logos/melin-tregwynt.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "eribe",
@@ -1194,7 +1411,10 @@
   "evidence_note": "Knitted in Scotland. Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/eribe.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "sunspel",
@@ -1213,7 +1433,11 @@
   "evidence_note": "Made in Long Eaton; cotton fibre imported and fabric origin not clearly UK-knitted, so Silver. (Some 'Made in Britain' lines.)",
   "tier_confidence": "medium",
   "logo": "assets/logos/sunspel.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "shirts",
+   "everyday wear"
+  ]
  },
  {
   "id": "drakes",
@@ -1232,7 +1456,11 @@
   "evidence_note": "Made in England; silk/cloth imported (e.g. Italian), so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/drakes.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "shirts",
+   "scarves & accessories"
+  ]
  },
  {
   "id": "solovair",
@@ -1251,7 +1479,10 @@
   "evidence_note": "Made in Wollaston; leather imported, so Silver (footwear precedent).",
   "tier_confidence": "high",
   "logo": "assets/logos/solovair.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "drmartens-mie",
@@ -1270,7 +1501,10 @@
   "evidence_note": "MIE line made in Wollaston; leather imported, so Silver (and brand largely imported).",
   "tier_confidence": "high",
   "logo": "assets/logos/drmartens-mie.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "low-sizergh-barn",
@@ -1289,7 +1523,11 @@
   "evidence_note": "Own farm milk/cheese + on-site veg.",
   "tier_confidence": "high",
   "logo": "assets/logos/low-sizergh-barn.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "trevaskis-farm",
@@ -1308,7 +1546,11 @@
   "evidence_note": "Own farm produce + PYO + butchery.",
   "tier_confidence": "high",
   "logo": "assets/logos/trevaskis-farm.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "lobbs-farm-shop",
@@ -1327,7 +1569,10 @@
   "evidence_note": "Supplied by own three farms.",
   "tier_confidence": "high",
   "logo": "assets/logos/lobbs-farm-shop.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat"
+  ]
  },
  {
   "id": "ardross-farm",
@@ -1346,7 +1591,10 @@
   "evidence_note": "Own farm + local Scottish produce; FARMA-listed.",
   "tier_confidence": "high",
   "logo": "assets/logos/ardross-farm.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "brocksbushes",
@@ -1365,7 +1613,11 @@
   "evidence_note": "Local produce + own butchery/PYO.",
   "tier_confidence": "medium",
   "logo": "assets/logos/brocksbushes.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "hollies-farm-shop",
@@ -1384,7 +1636,10 @@
   "evidence_note": "70+ local suppliers but explicitly complemented by food 'from other regions and abroad', so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/hollies-farm-shop.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat"
+  ]
  },
  {
   "id": "cobbs-farm-shop",
@@ -1403,7 +1658,10 @@
   "evidence_note": "Local + own produce but broad general range — Silver pending produce-mix check.",
   "tier_confidence": "medium",
   "logo": "assets/logos/cobbs-farm-shop.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "essington-farm",
@@ -1422,7 +1680,10 @@
   "evidence_note": "Own farm produce + PYO. Gold pending range check.",
   "tier_confidence": "medium",
   "logo": "assets/logos/essington-farm.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "abraham-moon",
@@ -1441,7 +1702,8 @@
   "evidence_note": "Vertically woven in Yorkshire. Gold: UK-milled fabric.",
   "tier_confidence": "high",
   "logo": "assets/logos/abraham-moon.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "hawico",
@@ -1460,7 +1722,11 @@
   "evidence_note": "Knitted in Hawick. Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/hawico.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "tanner-bates",
@@ -1479,7 +1745,10 @@
   "evidence_note": "Handmade in Devon, near the J&FJ Baker oak-bark tannery; uses English leather. Gold (confirm leather per range).",
   "tier_confidence": "medium",
   "logo": "assets/logos/tanner-bates.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "carrier-company",
@@ -1498,7 +1767,11 @@
   "evidence_note": "Made by hand in Norfolk; fabric origin not clearly UK, so Silver under strict rule.",
   "tier_confidence": "medium",
   "logo": "assets/logos/carrier-company.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "blackhorse-lane",
@@ -1517,7 +1790,12 @@
   "evidence_note": "Made in London; denim mostly imported (Turkey/Japan/Italy), so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/blackhorse-lane.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jeans & denim",
+   "workwear & aprons",
+   "poultry"
+  ]
  },
  {
   "id": "norman-walsh",
@@ -1536,7 +1814,10 @@
   "evidence_note": "Made in Bolton; materials imported, so Silver (footwear precedent).",
   "tier_confidence": "high",
   "logo": "assets/logos/norman-walsh.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "gonalston",
@@ -1555,7 +1836,11 @@
   "evidence_note": "Fresh/local produce, meat direct from farm.",
   "tier_confidence": "medium",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "denstone-hall",
@@ -1574,7 +1859,10 @@
   "evidence_note": "Family-run farm shop; local produce focus.",
   "tier_confidence": "medium",
   "logo": "assets/logos/denstone-hall.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "loch-levens-larder",
@@ -1593,7 +1881,10 @@
   "evidence_note": "On working farm; Scottish produce focus.",
   "tier_confidence": "medium",
   "logo": "assets/logos/loch-levens-larder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "cowdray-farm-shop",
@@ -1612,7 +1903,11 @@
   "evidence_note": "Estate butchery + local, but deli/fine-food range includes wider/continental lines, so Silver.",
   "tier_confidence": "medium",
   "logo": "assets/logos/cowdray-farm-shop.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "dairy & cheese"
+  ]
  },
  {
   "id": "garsons",
@@ -1631,7 +1926,10 @@
   "evidence_note": "Grows own PYO produce but wide garden-centre/general range, so Silver.",
   "tier_confidence": "medium",
   "logo": "assets/logos/garsons.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "stansted-park",
@@ -1650,7 +1948,11 @@
   "evidence_note": "Strong local sourcing but deli/charcuterie/cheese range, so Silver.",
   "tier_confidence": "medium",
   "logo": "assets/logos/stansted-park.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "dairy & cheese"
+  ]
  },
  {
   "id": "emmetts-peasenhall",
@@ -1669,7 +1971,11 @@
   "evidence_note": "Own-cured British ham/bacon since 1820.",
   "tier_confidence": "high",
   "logo": "assets/logos/emmetts-peasenhall.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pork & bacon",
+   "fresh meat"
+  ]
  },
  {
   "id": "maple-farm-kelsale",
@@ -1688,7 +1994,11 @@
   "evidence_note": "Own organic produce (veg, flour, honey, eggs).",
   "tier_confidence": "medium",
   "logo": "assets/logos/maple-farm-kelsale.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg",
+   "bread & bakery"
+  ]
  },
  {
   "id": "north-sea-clothing",
@@ -1707,7 +2017,10 @@
   "evidence_note": "Knitted in England. Gold by UK-milled rule (confirm wool origin).",
   "tier_confidence": "medium",
   "logo": "assets/logos/north-sea-clothing.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "genevieve-sweeney",
@@ -1726,7 +2039,10 @@
   "evidence_note": "Knitted in the UK by heritage manufacturers. Gold by UK-milled rule.",
   "tier_confidence": "high",
   "logo": "assets/logos/genevieve-sweeney.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "henry-poole",
@@ -1745,7 +2061,10 @@
   "evidence_note": "Bespoke, cut and made in London; cloth is client's choice (British or imported), so Silver by default.",
   "tier_confidence": "medium",
   "logo": "assets/logos/henry-poole.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "anderson-sheppard",
@@ -1764,7 +2083,10 @@
   "evidence_note": "Bespoke, made in London; cloth client's choice, so Silver by default.",
   "tier_confidence": "medium",
   "logo": "assets/logos/anderson-sheppard.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "gaziano-girling",
@@ -1783,7 +2105,10 @@
   "evidence_note": "Made in Kettering; leather imported, so Silver (footwear precedent).",
   "tier_confidence": "high",
   "logo": "assets/logos/gaziano-girling.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "llwynhelyg",
@@ -1802,7 +2127,11 @@
   "evidence_note": "Own-grown produce + local Welsh growers; renowned Welsh cheese range.",
   "tier_confidence": "medium",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "knitsley",
@@ -1821,7 +2150,11 @@
   "evidence_note": "Own farm + locally sourced; butchery/deli/bakery.",
   "tier_confidence": "medium",
   "logo": "assets/logos/knitsley.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "bread & bakery"
+  ]
  },
  {
   "id": "tablehurst-farm",
@@ -1840,7 +2173,13 @@
   "evidence_note": "Own biodynamic/organic produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/tablehurst-farm.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "poultry",
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "plumgarths",
@@ -1859,7 +2198,11 @@
   "evidence_note": "Local/Cumbrian produce; traditional butchery.",
   "tier_confidence": "medium",
   "logo": "assets/logos/plumgarths.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "otterton-mill",
@@ -1878,7 +2221,11 @@
   "evidence_note": "Own bakery + local Devon produce.",
   "tier_confidence": "medium",
   "logo": "assets/logos/otterton-mill.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg",
+   "bread & bakery"
+  ]
  },
  {
   "id": "weetons",
@@ -1897,7 +2244,10 @@
   "evidence_note": "Strong local sourcing but food-hall/garden-centre range, so Silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/weetons.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "emma-bridgewater",
@@ -1916,7 +2266,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/emma_bridgewater/",
   "logo": "assets/logos/emma-bridgewater.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "denby-pottery",
@@ -1935,7 +2289,10 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/denby-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "burleigh-pottery",
@@ -1954,7 +2311,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/burleighpottery/",
   "logo": "assets/logos/burleigh-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "moorcroft",
@@ -1973,7 +2333,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/moorcroftpottery/",
   "logo": "assets/logos/moorcroft.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "leach-pottery",
@@ -1992,7 +2355,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/theleachpottery/",
   "logo": "assets/logos/leach-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "whichford-pottery",
@@ -2011,7 +2377,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/whichfordpottery/",
   "logo": "assets/logos/whichford-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "flowerpots",
+   "pottery"
+  ]
  },
  {
   "id": "highland-stoneware",
@@ -2030,7 +2400,10 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/highland-stoneware.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "royal-crown-derby",
@@ -2049,7 +2422,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/royalcrownderby/",
   "logo": "assets/logos/royal-crown-derby.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "1882-ltd",
@@ -2068,7 +2445,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/1882ltd/",
   "logo": "assets/logos/1882-ltd.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "portmeirion",
@@ -2087,7 +2467,13 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/portmeirion.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "mugs",
+   "bowls",
+   "plates",
+   "pottery"
+  ]
  },
  {
   "id": "emma-alington",
@@ -2106,7 +2492,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/emmaalington/",
   "logo": "assets/logos/emma-alington.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "feldspar",
@@ -2125,7 +2515,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/feldsparstudio/",
   "logo": "assets/logos/feldspar.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "rye-pottery",
@@ -2144,7 +2537,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/ryepottery/",
   "logo": "assets/logos/rye-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "dunoon-ceramics",
@@ -2163,7 +2559,11 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/dunoon-ceramics.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "mugs",
+   "pottery"
+  ]
  },
  {
   "id": "linda-bloomfield",
@@ -2182,7 +2582,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/lindathepotter/",
   "logo": "assets/logos/linda-bloomfield.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "sue-pryke",
@@ -2201,7 +2605,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/suepryke/",
   "logo": "assets/logos/sue-pryke.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "brickett-davda",
@@ -2220,7 +2628,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/brickettdavda/",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "gwili-pottery",
@@ -2239,7 +2651,11 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/gwili-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "mugs",
+   "pottery"
+  ]
  },
  {
   "id": "edinbane-pottery",
@@ -2258,7 +2674,10 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/edinbane-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "sytch-farm-studios",
@@ -2277,7 +2696,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/sytchfarmstudio/",
   "logo": "assets/logos/sytch-farm-studios.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "belleek-pottery",
@@ -2296,7 +2718,10 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/belleek-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "clive-bowen",
@@ -2315,7 +2740,10 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "jim-malone",
@@ -2334,7 +2762,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/ceramicscentre/",
   "logo": "assets/logos/jim-malone.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "matthew-blakely",
@@ -2353,7 +2784,10 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/matthew-blakely.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "fitch-and-mcandrew",
@@ -2372,7 +2806,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/fitchandmcandrew/",
   "logo": "assets/logos/fitch-and-mcandrew.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "bridge-pottery",
@@ -2391,7 +2828,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/mickischloessingk/",
   "logo": "assets/logos/bridge-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "brookhouse-pottery",
@@ -2410,7 +2850,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/ceramicscentre/",
   "logo": "assets/logos/brookhouse-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "maze-hill-pottery",
@@ -2429,7 +2872,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/lisahammondpottery/",
   "logo": "assets/logos/maze-hill-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "sasha-wardell",
@@ -2448,7 +2894,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/sashawardell/",
   "logo": "assets/logos/sasha-wardell.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "jane-hamlyn",
@@ -2467,7 +2916,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/ceramicscentre/",
   "logo": "assets/logos/jane-hamlyn.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "walter-keeler",
@@ -2486,7 +2938,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/ceramicscentre/",
   "logo": "assets/logos/walter-keeler.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "sandy-brown",
@@ -2505,7 +2960,11 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/sandy-brown.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "john-pollex",
@@ -2524,7 +2983,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/johnpollex/",
   "logo": "assets/logos/john-pollex.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "penny-simpson",
@@ -2543,7 +3005,11 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/penny_simpson_ceramics/",
   "logo": "assets/logos/penny-simpson.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "chris-keenan",
@@ -2562,7 +3028,12 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/chris-keenan.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bowls",
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "sue-paraskeva",
@@ -2581,7 +3052,11 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "akiko-hirai",
@@ -2600,7 +3075,10 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "james-tilla-waters",
@@ -2619,7 +3097,11 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/james_and_tilla_waters/",
   "logo": "assets/logos/james-tilla-waters.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "jack-doherty",
@@ -2638,7 +3120,10 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/dohertyporcelain/",
   "logo": "assets/logos/jack-doherty.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "adam-buick",
@@ -2657,7 +3142,10 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/adam-buick.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "nicola-werner",
@@ -2676,7 +3164,11 @@
   "subcategory": "Studio pottery",
   "instagram": "https://www.instagram.com/nicolawernerpots/",
   "logo": "assets/logos/nicola-werner.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "katharina-klug",
@@ -2695,7 +3187,10 @@
   "subcategory": "Studio pottery",
   "instagram": "",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "churchill-china",
@@ -2714,7 +3209,11 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/churchillhomeuk/",
   "logo": "assets/logos/churchill-china.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "cornishware-tg-green",
@@ -2733,7 +3232,10 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/cornishware-tg-green.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "littlethorpe-potteries",
@@ -2752,7 +3254,11 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/littlethorpe-potteries.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "flowerpots",
+   "pottery"
+  ]
  },
  {
   "id": "errington-reay",
@@ -2771,7 +3277,10 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/erringtonreaypottery/",
   "logo": "assets/logos/errington-reay.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "anta",
@@ -2790,7 +3299,12 @@
   "category": "ceramics",
   "instagram": "https://www.instagram.com/anta_scotland/",
   "logo": "assets/logos/anta.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tableware",
+   "pottery",
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "crail-pottery",
@@ -2809,7 +3323,11 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/crail-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "flowerpots",
+   "pottery"
+  ]
  },
  {
   "id": "ballydougan-pottery",
@@ -2828,7 +3346,10 @@
   "category": "ceramics",
   "instagram": "",
   "logo": "assets/logos/ballydougan-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "sheila-fleet",
@@ -2847,7 +3368,10 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/sheilafleetjewellery/",
   "logo": "assets/logos/sheila-fleet.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "ola-gorie",
@@ -2866,7 +3390,10 @@
   "category": "jewellery",
   "instagram": "",
   "logo": "assets/logos/ola-gorie.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "deakin-and-francis",
@@ -2885,7 +3412,11 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/deakin_francis/",
   "logo": "assets/logos/deakin-and-francis.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "cufflinks & signets",
+   "jewellery"
+  ]
  },
  {
   "id": "hamilton-and-inches",
@@ -2904,7 +3435,10 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/hamiltoninches/",
   "logo": "assets/logos/hamilton-and-inches.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "alex-monroe",
@@ -2923,7 +3457,10 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/alexmonroejewellery/",
   "logo": "assets/logos/alex-monroe.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "cw-sellors",
@@ -2942,7 +3479,10 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/cwsellorsjewellers/",
   "logo": "assets/logos/cw-sellors.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "rhiannon",
@@ -2961,7 +3501,10 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/rhiannontregaron/",
   "logo": "assets/logos/rhiannon.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "hebridean-jewellery",
@@ -2980,7 +3523,10 @@
   "category": "jewellery",
   "instagram": "",
   "logo": "assets/logos/hebridean-jewellery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "roger-w-smith",
@@ -2999,7 +3545,11 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/rogerwsmithltd/",
   "logo": "assets/logos/roger-w-smith.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "charles-frodsham",
@@ -3018,7 +3568,11 @@
   "category": "jewellery",
   "instagram": "",
   "logo": "assets/logos/charles-frodsham.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "garrick-watchmakers",
@@ -3037,7 +3591,11 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/garrickwatchco/",
   "logo": "assets/logos/garrick-watchmakers.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "anordain",
@@ -3056,7 +3614,11 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/anordain/",
   "logo": "assets/logos/anordain.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "bremont",
@@ -3075,7 +3637,11 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/bremontwatches/",
   "logo": "assets/logos/bremont.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "fears-watches",
@@ -3094,7 +3660,11 @@
   "category": "jewellery",
   "instagram": "https://www.instagram.com/fearswatches/",
   "logo": "assets/logos/fears-watches.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "mourne-textiles",
@@ -3113,7 +3683,10 @@
   "tier_confidence": "high",
   "instagram": "https://www.instagram.com/mournetextiles/",
   "logo": "assets/logos/mourne-textiles.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "thomas-ferguson-linen",
@@ -3132,7 +3705,8 @@
   "tier_confidence": "high",
   "instagram": "https://www.instagram.com/fergusonsirishlinen.ni/",
   "logo": "assets/logos/thomas-ferguson-linen.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "ballylagan-organic",
@@ -3151,7 +3725,12 @@
   "tier_confidence": "medium",
   "instagram": "https://www.instagram.com/ballylaganorganicfarm/",
   "logo": "assets/logos/ballylagan-organic.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "beef",
+   "pork & bacon",
+   "fruit & veg"
+  ]
  },
  {
   "id": "eden-pottery",
@@ -3170,7 +3749,10 @@
   "tier_confidence": "medium",
   "instagram": "https://www.instagram.com/eden_pottery/",
   "logo": "assets/logos/eden-pottery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "steensons",
@@ -3189,7 +3771,12 @@
   "tier_confidence": "high",
   "instagram": "https://www.instagram.com/steensonsjewellers/",
   "logo": "assets/logos/steensons.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery",
+   "game & venison"
+  ]
  },
  {
   "id": "faller",
@@ -3208,7 +3795,10 @@
   "tier_confidence": "high",
   "instagram": "https://www.instagram.com/faller_the_jeweller/",
   "logo": "assets/logos/faller.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "nomadic-watches",
@@ -3227,7 +3817,11 @@
   "tier_confidence": "high",
   "instagram": "https://www.instagram.com/nomadic.watches/",
   "logo": "assets/logos/nomadic-watches.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "yarmouth-oilskins",
@@ -3246,7 +3840,12 @@
   "evidence_note": "Made in its own Great Yarmouth factory; cotton from UK mills incl. Carrington Textiles (Lancashire), dyed by Pincroft, Adlington.",
   "tier_confidence": "high",
   "logo": "assets/logos/yarmouth-oilskins.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "suits & trousers",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "farfield-clothing",
@@ -3265,7 +3864,11 @@
   "evidence_note": "Manufactured in Sedbergh from fabric made exclusively for them by one of the last remaining Yorkshire mills.",
   "tier_confidence": "high",
   "logo": "assets/logos/farfield-clothing.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "vests & waistcoats",
+   "coats & jackets"
+  ]
  },
  {
   "id": "troy-london",
@@ -3284,7 +3887,10 @@
   "evidence_note": "Wax jackets made entirely in the UK from 100% cotton milled in England with a dry wax finish.",
   "tier_confidence": "medium",
   "logo": "assets/logos/troy-london.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "mcnair-shirts",
@@ -3303,7 +3909,11 @@
   "evidence_note": "Cloth dyed, spun, woven, milled and finished within 10 miles of the Slaithwaite atelier where the shirts are made.",
   "tier_confidence": "high",
   "logo": "assets/logos/mcnair-shirts.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "cashmere & merino",
+   "shirts"
+  ]
  },
  {
   "id": "fieldware-co",
@@ -3322,7 +3932,11 @@
   "evidence_note": "Handcrafted in Somerset from waxed cotton milled by Halley Stevensons of Dundee, weaving and waxing since 1864.",
   "tier_confidence": "high",
   "logo": "assets/logos/fieldware-co.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "hegarty-london",
@@ -3341,7 +3955,11 @@
   "evidence_note": "All garments made in London using English fabrics — e.g. the overcoat in 100% English wool tweed.",
   "tier_confidence": "medium",
   "logo": "assets/logos/hegarty-london.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods",
+   "coats & jackets"
+  ]
  },
  {
   "id": "lochcarron",
@@ -3360,7 +3978,10 @@
   "evidence_note": "Yarn spun in Yorkshire, then dyed, warped, woven and finished at Lochcarron's own Selkirk mill.",
   "tier_confidence": "high",
   "logo": "assets/logos/lochcarron.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "berk",
@@ -3379,7 +4000,11 @@
   "evidence_note": "Cashmere spun in Scotland and knitted stitch-by-stitch on frames in the Borders by former Ballantyne hands; 48 hand processes.",
   "tier_confidence": "medium",
   "logo": "assets/logos/berk.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "colhays",
@@ -3398,7 +4023,11 @@
   "evidence_note": "Yarn spun by Todd & Duncan at Loch Leven, knitted and hand-linked by a Hawick knitter (a few pieces made in Japan).",
   "tier_confidence": "high",
   "logo": "assets/logos/colhays.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "mallochs",
@@ -3417,7 +4046,10 @@
   "evidence_note": "Knitted in Hawick from yarn spun by Todd & Duncan (Kinross), Z. Hinchliffe (Denby Dale) and J.C. Rennie (Aberdeenshire).",
   "tier_confidence": "high",
   "logo": "assets/logos/mallochs.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "glenbrae",
@@ -3436,7 +4068,11 @@
   "evidence_note": "Designed and manufactured in England by Spectrum Yarns at Spa Mill, which spins its own Spirol lambswool/merino yarn on site.",
   "tier_confidence": "high",
   "logo": "assets/logos/glenbrae.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "michael-ross-knitwear",
@@ -3455,7 +4091,10 @@
   "evidence_note": "Hand-frame knitted in Thatcham using wool from Yorkshire, Scotland and Ireland.",
   "tier_confidence": "medium",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "oubas",
@@ -3474,7 +4113,10 @@
   "evidence_note": "Knitted in their own Ulverston studio; certified British Wool manufacturing partner using local fleece and UK woollen mills.",
   "tier_confidence": "high",
   "logo": "assets/logos/oubas.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "mars-knitwear",
@@ -3493,7 +4135,10 @@
   "evidence_note": "Knitted and finished in-house at Wigston since 1994 using 100% British wool yarn from local British spinners.",
   "tier_confidence": "high",
   "logo": "assets/logos/mars-knitwear.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "glencroft",
@@ -3512,7 +4157,10 @@
   "evidence_note": "Own-brand knitwear made in Britain from Clapdale yarn scoured, carded and spun in Yorkshire from local farms. Shop also stocks imported goods.",
   "tier_confidence": "high",
   "logo": "assets/logos/glencroft.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "izzy-lane",
@@ -3531,7 +4179,10 @@
   "evidence_note": "Wool from her own rescued flock, spun by a Calderdale worsted spinner, made up in West Yorkshire and the Scottish Borders.",
   "tier_confidence": "high",
   "logo": "assets/logos/izzy-lane.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "navygrey",
@@ -3550,7 +4201,11 @@
   "evidence_note": "Signature jumpers use 100% Scottish-spun lambswool, knitted and hand-finished in Britain; newer linen/cotton lines less clearly UK-made.",
   "tier_confidence": "medium",
   "logo": "assets/logos/navygrey.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "eas-fors",
@@ -3569,7 +4224,11 @@
   "evidence_note": "Machine knitted and hand finished entirely on Mull using lambswool spun on the banks of Loch Leven.",
   "tier_confidence": "high",
   "logo": "assets/logos/eas-fors.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "carnwear",
@@ -3588,7 +4247,10 @@
   "evidence_note": "Made in their own Penzance studio (finer gauges knitted 8 miles away in St Ives); many products British Wool certified.",
   "tier_confidence": "high",
   "logo": "assets/logos/carnwear.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "quinton-chadwick",
@@ -3607,7 +4269,11 @@
   "evidence_note": "Knitted at heritage mills in Scotland, Nottingham and Devon; company states it uses British mills for yarn supplies.",
   "tier_confidence": "medium",
   "logo": "assets/logos/quinton-chadwick.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "croft-house",
@@ -3626,7 +4292,11 @@
   "evidence_note": "Made in Scotland using only natural wool and cashmere spun in British mills.",
   "tier_confidence": "medium",
   "logo": "assets/logos/croft-house.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "goral",
@@ -3645,7 +4315,10 @@
   "evidence_note": "Every pair handmade in the family's Sheffield workshop with leather from Charles F. Stead's tannery in Leeds.",
   "tier_confidence": "high",
   "logo": "assets/logos/goral.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "billy-tannery",
@@ -3664,7 +4337,10 @@
   "evidence_note": "Tans British goat and deer skins itself at its own micro-tannery, then has bags handmade in Britain; Heritage Crafts sustainability award 2025.",
   "tier_confidence": "high",
   "logo": "assets/logos/billy-tannery.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "cherchbi",
@@ -3683,7 +4359,12 @@
   "evidence_note": "Made by Mowbray Leather Goods, Melton Mowbray, from its own Herdwyck No.10 tweed (Cumbrian Herdwick wool woven in Wales) and English veg-tanned saddle leather.",
   "tier_confidence": "high",
   "logo": "assets/logos/cherchbi.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "tweed & woven goods",
+   "bags & leather goods",
+   "fruit & veg"
+  ]
  },
  {
   "id": "mcrostie",
@@ -3702,7 +4383,10 @@
   "evidence_note": "Every bag and belt made to order in Scotland from traditionally pit-tanned British bridle leather.",
   "tier_confidence": "high",
   "logo": "assets/logos/mcrostie.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "english-fine-cottons",
@@ -3721,7 +4405,8 @@
   "evidence_note": "UK spinning ceased when the parent company was liquidated in 2024; relaunched 2026 as clothing designed, cut, sewn and finished in the UK from bought-in fabric.",
   "tier_confidence": "high",
   "logo": "assets/logos/english-fine-cottons.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "ghhurt",
@@ -3740,7 +4425,11 @@
   "evidence_note": "Knitted and hand-finished in their Nottingham factory, but merino yarn comes from spinners in both Britain and Italy — UK yarn not assured.",
   "tier_confidence": "high",
   "logo": "assets/logos/ghhurt.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "house-of-cheviot",
@@ -3759,7 +4448,12 @@
   "evidence_note": "Made in Hawick, but the Australian merino is spun in Italy and the cashmere combed in Mongolia.",
   "tier_confidence": "high",
   "logo": "assets/logos/house-of-cheviot.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino",
+   "socks"
+  ]
  },
  {
   "id": "and-daughter",
@@ -3778,7 +4472,10 @@
   "evidence_note": "Yarn spun by Todd & Duncan in Scotland, but knitting is split across makers in the Scottish Borders and Donegal, Ireland — UK share unproven.",
   "tier_confidence": "medium",
   "logo": "assets/logos/and-daughter.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "woolkind",
@@ -3797,7 +4494,11 @@
   "evidence_note": "Knitted to order in their Marchmont studio, but the superfine merino is washed, dyed and spun in Biella, Italy.",
   "tier_confidence": "high",
   "logo": "assets/logos/woolkind.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "london-tradition",
@@ -3816,7 +4517,10 @@
   "evidence_note": "Cut, sewn and finished by hand at the Wallis Road factory, but the signature double-faced duffle cloth is Italian.",
   "tier_confidence": "high",
   "logo": "assets/logos/london-tradition.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "grenfell",
@@ -3835,7 +4539,10 @@
   "evidence_note": "All garments made in Grenfell's own east London factory; no current evidence that Grenfell Cloth is still woven in Britain since Lodge Mill, Burnley.",
   "tier_confidence": "medium",
   "logo": "assets/logos/grenfell.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "gloverall",
@@ -3854,7 +4561,10 @@
   "evidence_note": "Only the Heritage Collection is stated as made in England, and the Original Monty uses Italian wool; the wider range is not UK-made.",
   "tier_confidence": "high",
   "logo": "assets/logos/gloverall.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "yarmo",
@@ -3873,7 +4583,11 @@
   "evidence_note": "Manufactured in Great Yarmouth since 1898, but no published evidence of UK-milled cloth for the current range.",
   "tier_confidence": "medium",
   "logo": "assets/logos/yarmo.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "buffalo-systems",
@@ -3892,7 +4606,10 @@
   "evidence_note": "Everything still sewn at the Sheffield factory, but Pertex has been made in Japan since Perseverance Mills, Padiham closed in 2005.",
   "tier_confidence": "high",
   "logo": "assets/logos/buffalo-systems.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "aero-leather",
@@ -3911,7 +4628,10 @@
   "evidence_note": "Jackets hand-made at Greenbank Mill, Galashiels, but hides are American front-quarter and Italian vegetable-tanned horsehide.",
   "tier_confidence": "high",
   "logo": "assets/logos/aero-leather.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "fox-umbrellas",
@@ -3930,7 +4650,8 @@
   "evidence_note": "Each umbrella hand-made to order at the Croydon factory, but the canopy cloth has no evidenced UK weaving origin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/fox-umbrellas.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": []
  },
  {
   "id": "budd-shirts",
@@ -3949,7 +4670,10 @@
   "evidence_note": "Ready-to-wear and made-to-measure shirts cut and sewn at Budd's Andover workroom; shirtings from Swiss and Italian mills.",
   "tier_confidence": "high",
   "logo": "assets/logos/budd-shirts.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "shirts"
+  ]
  },
  {
   "id": "fortis-clothing",
@@ -3968,7 +4692,11 @@
   "evidence_note": "Handmade to order in Devon; the company states only that it 'aims' to buy all fabric in the UK.",
   "tier_confidence": "medium",
   "logo": "assets/logos/fortis-clothing.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "gushlow-cole",
@@ -3987,7 +4715,10 @@
   "evidence_note": "All design, sampling and production in their Kent workshop or within 30 miles, but shearling is tanned by Iberian tanneries.",
   "tier_confidence": "high",
   "logo": "assets/logos/gushlow-cole.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "british-sheepskin",
@@ -4006,7 +4737,11 @@
   "evidence_note": "Every coat hand-cut and made to order in Somerset, but skins are imported merino, Toscana and Mongolian shearling.",
   "tier_confidence": "high",
   "logo": "assets/logos/british-sheepskin.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "cashmere & merino",
+   "coats & jackets"
+  ]
  },
  {
   "id": "lockwood-smocks",
@@ -4025,7 +4760,10 @@
   "evidence_note": "Handmade in Barnstaple, but the main fabric is PU-coated Cordura nylon with no evidenced UK weaving.",
   "tier_confidence": "high",
   "logo": "assets/logos/lockwood-smocks.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "darzi",
@@ -4044,7 +4782,10 @@
   "evidence_note": "Made in England since 2015, but cloth is sourced from independent mills across the UK and Europe, so UK milling isn't established.",
   "tier_confidence": "medium",
   "logo": "assets/logos/darzi.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "thorndale",
@@ -4063,7 +4804,11 @@
   "evidence_note": "Handcrafted in their own Staffordshire factory; waxed styles use British waxed cotton but the ballistic nylon's origin is unstated.",
   "tier_confidence": "medium",
   "logo": "assets/logos/thorndale.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "bags & leather goods"
+  ]
  },
  {
   "id": "palava",
@@ -4082,7 +4827,11 @@
   "evidence_note": "Made in a family-run Barking factory, but the printed fabrics are woven, dyed and printed in Turkey.",
   "tier_confidence": "high",
   "logo": "assets/logos/palava.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "coats & jackets",
+   "poultry"
+  ]
  },
  {
   "id": "crown-northampton",
@@ -4101,7 +4850,10 @@
   "evidence_note": "Made in their own Northampton factory, but uppers are sourced from tanneries worldwide including Horween (Chicago) alongside C.F. Stead.",
   "tier_confidence": "high",
   "logo": "assets/logos/crown-northampton.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "sanders-sanders",
@@ -4120,7 +4872,10 @@
   "evidence_note": "Entire collection Goodyear-welted at the family's Spencer Road factory; no evidence of UK-tanned upper leather.",
   "tier_confidence": "high",
   "logo": "assets/logos/sanders-sanders.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "william-lennon",
@@ -4139,7 +4894,10 @@
   "evidence_note": "Made in the Old Corn Mill since 1904, but upper leather now comes from Horween, Chicago (formerly Bridge of Weir); only sole leather is Northampton-tanned.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "john-lobb-ltd",
@@ -4158,7 +4916,10 @@
   "evidence_note": "Wholly hand-made in the London workshop; calf bought in from Continental tanneries, no UK tannery evidenced.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "dartmoor-shoemakers",
@@ -4177,7 +4938,10 @@
   "evidence_note": "Hand-made to order in the Devon workshop, but the firm states it uses Italian leather.",
   "tier_confidence": "high",
   "logo": "assets/logos/dartmoor-shoemakers.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "owen-barry",
@@ -4196,7 +4960,10 @@
   "evidence_note": "Cut and sewn at the Street factory since 1948; materials described only as British or European from unnamed tanneries.",
   "tier_confidence": "medium",
   "logo": "assets/logos/owen-barry.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "cambridge-satchel",
@@ -4215,7 +4982,10 @@
   "evidence_note": "Bags made in their own Leicestershire factory, but leather comes from a Dutch supplier as well as two UK tanneries.",
   "tier_confidence": "high",
   "logo": "assets/logos/cambridge-satchel.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "leather-satchel-co",
@@ -4234,7 +5004,10 @@
   "evidence_note": "Hand-made in the family Knowsley workshop, but leathers come from British, Italian and Dutch tanneries plus Horween cordovan.",
   "tier_confidence": "high",
   "logo": "assets/logos/leather-satchel-co.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "broadland-slippers",
@@ -4253,7 +5026,10 @@
   "evidence_note": "Hand-cut and lasted in Norwich using traditional methods; no origin evidence for the velvets and leathers used.",
   "tier_confidence": "medium",
   "logo": "assets/logos/broadland-slippers.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "barnwell-footwear",
@@ -4272,7 +5048,10 @@
   "evidence_note": "Made in their own Kettering workshop, claiming all components sourced in the UK, but no tannery is named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/barnwell-footwear.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "zatchels",
@@ -4291,7 +5070,10 @@
   "evidence_note": "Handmade to order in Leicester by Britannia Hide, which cites leather from 'a Scottish tannery' — tannery unnamed, so Gold not evidenced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/zatchels.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "juju-footwear",
@@ -4310,7 +5092,10 @@
   "evidence_note": "Injection-moulded in JuJu's own Northampton factory; materials described as 'sourced in England' rather than UK-produced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/juju-footwear.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "swaine",
@@ -4329,7 +5114,10 @@
   "evidence_note": "Hand-stitched at the Sawston factory and Brigg umbrellas made in Cambridgeshire; 'English bridle leather' claimed but no tannery named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/swaine.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "de-winter",
@@ -4348,7 +5136,10 @@
   "evidence_note": "No factory of its own; boots hand-cut and Goodyear-welted by Northamptonshire contract makers, leather unspecified.",
   "tier_confidence": "medium",
   "logo": "assets/logos/de-winter.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "percy-stride",
@@ -4367,7 +5158,10 @@
   "evidence_note": "Made for the brand by a small family-run Northampton factory; leather origin unstated.",
   "tier_confidence": "medium",
   "logo": "assets/logos/percy-stride.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "arthur-sleep",
@@ -4386,7 +5180,11 @@
   "evidence_note": "Hand-made by artisans in Northampton; velvet, cashmere and suede origins unevidenced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/arthur-sleep.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "cashmere & merino",
+   "footwear & boots"
+  ]
  },
  {
   "id": "jadd-shoes",
@@ -4405,7 +5203,10 @@
   "evidence_note": "Made in the Suffolk family workshop, but headline models explicitly use Horween (Chicago) leather.",
   "tier_confidence": "high",
   "logo": "assets/logos/jadd-shoes.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "everbound-goods",
@@ -4424,7 +5225,11 @@
   "evidence_note": "Belts hand-cut in Bristol; despite a 'British tanneries only' claim, the Tuscany belt uses Italian veg-tan imported via a UK merchant.",
   "tier_confidence": "medium",
   "logo": "assets/logos/everbound-goods.png",
-  "source": "verified-batch-2026-07"
+  "source": "verified-batch-2026-07",
+  "product_tags": [
+   "bags & leather goods",
+   "fruit & veg"
+  ]
  },
  {
   "id": "lanx",
@@ -4443,7 +5248,10 @@
   "evidence_note": "Own Whalley factory; leather from Charles F. Stead of Leeds, including a leather made exclusively for Lanx.",
   "tier_confidence": "high",
   "logo": "assets/logos/lanx.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "draper-of-glastonbury",
@@ -4462,7 +5270,10 @@
   "evidence_note": "Hand-made at their own Glastonbury factory since 1937; sheepskins tanned at a UK (Devon) tannery from British-origin skins.",
   "tier_confidence": "medium",
   "logo": "assets/logos/draper-of-glastonbury.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "herd",
@@ -4481,7 +5292,10 @@
   "evidence_note": "Bags handcrafted in Lincolnshire from British Pasture Leather — a named, traceable supplier vegetable-tanning UK hides from British farms.",
   "tier_confidence": "high",
   "logo": "assets/logos/herd.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "beorma-leather-company",
@@ -4500,7 +5314,10 @@
   "evidence_note": "Handmade in Walsall using vegetable-tanned English bridle leather from English tanneries.",
   "tier_confidence": "medium",
   "logo": "assets/logos/beorma-leather-company.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "cornelia-james",
@@ -4519,7 +5336,10 @@
   "evidence_note": "Gloves handmade in the East Sussex workshop using leather from Pittards, the UK tannery in Yeovil. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/cornelia-james.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "laird-hatters",
@@ -4538,7 +5358,11 @@
   "evidence_note": "Caps made at the Tottenham and Hertfordshire workshops from Harris Tweed and Yorkshire mill cloth named at product level. Note: linen, loden and baseball styles carry no UK-weave claim.",
   "tier_confidence": "medium",
   "logo": "assets/logos/laird-hatters.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tweed & woven goods",
+   "hats & caps"
+  ]
  },
  {
   "id": "anise-cashmere",
@@ -4557,7 +5381,12 @@
   "evidence_note": "Company names Todd & Duncan at Loch Leven as spinner and Hawick as the knitting town — both checkable.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino",
+   "scarves & accessories"
+  ]
  },
  {
   "id": "rove-knitwear",
@@ -4576,7 +5405,11 @@
   "evidence_note": "Each piece knitted in 100% British-spun wool at ROVE's own Margate micro-factory; socks knitted in Derbyshire.",
   "tier_confidence": "high",
   "logo": "assets/logos/rove-knitwear.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "brora",
@@ -4595,7 +5428,11 @@
   "evidence_note": "Cashmere spun, dyed, woven or knitted at Scottish mills in Hawick and hand-finished by Scottish craftspeople. Gold applies to the cashmere line, which is the core range.",
   "tier_confidence": "medium",
   "logo": "assets/logos/brora.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "kinloch-anderson",
@@ -4614,7 +5451,11 @@
   "evidence_note": "Every kilt made to measure in their Edinburgh workshop from at least 8 yards of pure wool tartan woven in Britain.",
   "tier_confidence": "high",
   "logo": "assets/logos/kinloch-anderson.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tweed & woven goods",
+   "suits & trousers"
+  ]
  },
  {
   "id": "gordon-nicolson-kiltmakers",
@@ -4633,7 +5474,11 @@
   "evidence_note": "Kilts created in the heart of Edinburgh using Scottish-woven tartan; one of the few Highland-wear firms that has not gone down the import route.",
   "tier_confidence": "medium",
   "logo": "assets/logos/gordon-nicolson-kiltmakers.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tweed & woven goods",
+   "suits & trousers"
+  ]
  },
  {
   "id": "campbells-of-beauly",
@@ -4652,7 +5497,10 @@
   "evidence_note": "Every bespoke garment cut, sewn and finished by hand in their Beauly workrooms, using tweeds from British mills, all woven in the UK.",
   "tier_confidence": "high",
   "logo": "assets/logos/campbells-of-beauly.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "bowhill-and-elliott",
@@ -4671,7 +5519,10 @@
   "evidence_note": "All clicking, closing and hand-lasting done in the Norwich workshop, but the velvet and leather uppers are not evidenced as UK-milled or UK-tanned.",
   "tier_confidence": "medium",
   "logo": "assets/logos/bowhill-and-elliott.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "albert-thurston",
@@ -4690,7 +5541,8 @@
   "evidence_note": "Braces made and finished in Leicester; some jacquard silk facings are woven in Devon, but the elastic webbing that forms the main material is unevidenced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/albert-thurston.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "bennett-winch",
@@ -4709,7 +5561,10 @@
   "evidence_note": "Made in England (Hackney workshop and a Carlisle factory) but the leather is Tuscan hide from Italian tanneries.",
   "tier_confidence": "medium",
   "logo": "assets/logos/bennett-winch.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "george-cleverley",
@@ -4728,7 +5583,10 @@
   "evidence_note": "Shoes cut and made in the Mayfair workshop, but no evidence the calf and exotic leathers are UK-tanned.",
   "tier_confidence": "medium",
   "logo": "assets/logos/george-cleverley.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "lock-and-co-hatters",
@@ -4747,7 +5605,10 @@
   "evidence_note": "Hats prepared and finished in the London shop, but the firm states it works with hat manufacturers in Spain, Belgium and the UK, so felt body manufacture is not confirmed UK.",
   "tier_confidence": "medium",
   "logo": "assets/logos/lock-and-co-hatters.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "hats & caps"
+  ]
  },
  {
   "id": "cordings",
@@ -4766,7 +5627,10 @@
   "evidence_note": "The signature covert coat is made in England from cloth woven for Cordings by Fox Brothers of Somerset, but the wider range uses mills and makers both in Britain and abroad.",
   "tier_confidence": "medium",
   "logo": "assets/logos/cordings.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "dents",
@@ -4785,7 +5649,10 @@
   "evidence_note": "Heritage gloves handmade at their own Warminster factory, but leathers are mixed-origin — deerskin from New York tanneries and lambskin from India, with only hairsheep tanned in the UK.",
   "tier_confidence": "medium",
   "logo": "assets/logos/dents.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "the-british-belt-company",
@@ -4804,7 +5671,10 @@
   "evidence_note": "Designed and manufactured end-to-end at the Rutland factory, but leather is sourced from Leather Working Group approved tanneries generally, with no UK tannery named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/the-british-belt-company.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "risdon-and-risdon",
@@ -4823,7 +5693,11 @@
   "evidence_note": "Aprons designed and handmade in the Shrewsbury workshop with British foundry-made metalware, but the denim comes from the Candiani mill near Milan.",
   "tier_confidence": "medium",
   "logo": "assets/logos/risdon-and-risdon.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jeans & denim",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "churchs",
@@ -4842,7 +5716,10 @@
   "evidence_note": "Men's welted shoes still wholly manufactured at the Northampton factory, but uppers use Western European calf rather than UK-tanned hide.",
   "tier_confidence": "high",
   "logo": "assets/logos/churchs.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "grenson",
@@ -4861,7 +5738,10 @@
   "evidence_note": "The G:One and G:Zero collections are made wholly at the Rushden factory, but other lines have uppers sewn in India, so only part of the range is England-made.",
   "tier_confidence": "medium",
   "logo": "assets/logos/grenson.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "barker-shoes",
@@ -4880,7 +5760,10 @@
   "evidence_note": "Hand-lasted and hand-sewn at the Earls Barton factory, but uppers are European calf and soles are cut from Italian-tanned bends.",
   "tier_confidence": "medium",
   "logo": "assets/logos/barker-shoes.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "alt-berg",
@@ -4899,7 +5782,10 @@
   "evidence_note": "Company states it makes boots in two factories — Richmond, Yorkshire and Treviso, Italy — with Richmond handling specialist and small-batch orders; leather origin unevidenced.",
   "tier_confidence": "high",
   "logo": "assets/logos/alt-berg.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "mamnick",
@@ -4918,7 +5804,10 @@
   "evidence_note": "Founder states the majority of inventory is manufactured in South Yorkshire, but a Black Label line is made in Japan and no UK tannery is evidenced for the leather.",
   "tier_confidence": "medium",
   "logo": "assets/logos/mamnick.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "bridgedale",
@@ -4937,7 +5826,11 @@
   "evidence_note": "Socks knitted and finished at the company's own Newtownards factory, but the yarn origin is not evidenced as UK-spun.",
   "tier_confidence": "medium",
   "logo": "assets/logos/bridgedale.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "british-boxers",
@@ -4956,7 +5849,8 @@
   "evidence_note": "Company states products are manufactured in both Great Britain and Europe, and no UK fabric-milling evidence was found.",
   "tier_confidence": "medium",
   "logo": "assets/logos/british-boxers.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "charl-knitwear",
@@ -4975,7 +5869,10 @@
   "evidence_note": "Pieces crafted in England and Italy — UK knitting done at a small Nottinghamshire factory, with other pieces knitted in Perugia. Pin is at the UK knitting county.",
   "tier_confidence": "medium",
   "logo": "assets/logos/charl-knitwear.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "oliver-spencer",
@@ -4994,7 +5891,8 @@
   "evidence_note": "Own sustainability page states it manufactures primarily in the UK and Portugal, with a named British Made collection but no all-UK claim.",
   "tier_confidence": "medium",
   "logo": "assets/logos/oliver-spencer.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "marwood",
@@ -5013,7 +5911,10 @@
   "evidence_note": "Leavers lace produced near Nottingham and woven cloth developed and produced at a historic Suffolk mill, then hand cut and hand made in the UK. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/marwood.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "john-partridge",
@@ -5032,7 +5933,10 @@
   "evidence_note": "Wax jackets cut, sewn and constructed at their own factory using waxed cotton from Halley Stevensons of Dundee. Same Scottish cloth basis as Fieldware Co.",
   "tier_confidence": "high",
   "logo": "assets/logos/john-partridge.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "the-cambridge-sock-company",
@@ -5051,7 +5955,12 @@
   "evidence_note": "Socks knitted in Britain, but the About page names fibre origins (Peru, South Africa, Portugal) precisely while keeping the British spinners and knitters anonymous — no mill named.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-cambridge-sock-company.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino",
+   "socks"
+  ]
  },
  {
   "id": "arbon-socks",
@@ -5070,7 +5979,11 @@
   "evidence_note": "Knitted in the UK from British wools including Exmoor Blueface and Blue Faced Leicester from Cumbria and the Yorkshire Dales. Spinner not named — Gold rests on the British-wool sourcing claim.",
   "tier_confidence": "medium",
   "logo": "assets/logos/arbon-socks.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "ratcatcher",
@@ -5089,7 +6002,11 @@
   "evidence_note": "Exclusive tweeds woven at Yorkshire mills and all tailoring undertaken within a 20-mile radius of the West Yorkshire HQ. Evidence is press/interview rather than a company page.",
   "tier_confidence": "medium",
   "logo": "assets/logos/ratcatcher.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods",
+   "suits & trousers"
+  ]
  },
  {
   "id": "tyler-and-tyler",
@@ -5108,7 +6025,11 @@
   "evidence_note": "Cufflinks die-struck, hand-enamelled and hand-finished at their own Birmingham factory. Same basis as Deakin & Francis.",
   "tier_confidence": "high",
   "logo": "assets/logos/tyler-and-tyler.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "cufflinks & signets",
+   "jewellery"
+  ]
  },
  {
   "id": "banton-frameworks",
@@ -5127,7 +6048,11 @@
   "evidence_note": "Frames designed and entirely manufactured in their own workshop at Banton Loch near Kilsyth. First eyewear listing — worn accessory, treated like belts and gloves.",
   "tier_confidence": "high",
   "logo": "assets/logos/banton-frameworks.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "scarves & accessories",
+   "bags & leather goods"
+  ]
  },
  {
   "id": "david-nieper",
@@ -5146,7 +6071,10 @@
   "evidence_note": "Design and manufacture take place entirely in their own Alfreton factory — never offshored, 2020 Queen's Award for British Manufacturer of the Year — but the fabric mills are not named.",
   "tier_confidence": "high",
   "logo": "assets/logos/david-nieper.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "freddies-of-pinewood",
@@ -5165,7 +6093,11 @@
   "evidence_note": "Garments labelled Made in England and manufactured at the Essex address, but the denim cloth is not evidenced as UK-milled.",
   "tier_confidence": "medium",
   "logo": "assets/logos/freddies-of-pinewood.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "jeans & denim",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "peper-harow",
@@ -5184,7 +6116,12 @@
   "evidence_note": "Socks knitted at their own West Sussex factory, but the cotton and cashmere yarn origin is not evidenced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/peper-harow.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino",
+   "socks"
+  ]
  },
  {
   "id": "benson-and-clegg",
@@ -5203,7 +6140,10 @@
   "evidence_note": "Garments entirely made in England, hand cut and hand made at their own Piccadilly Arcade workrooms, but merchant cloth is not confirmed UK-woven.",
   "tier_confidence": "medium",
   "logo": "assets/logos/benson-and-clegg.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "pickett-london",
@@ -5222,7 +6162,10 @@
   "evidence_note": "Made in England from start to finish in small specialist workshops, and British bridle hide is used for larger items, but much of the range uses New Zealand deerskin and other imported skins.",
   "tier_confidence": "high",
   "logo": "assets/logos/pickett-london.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "moloh",
@@ -5241,7 +6184,8 @@
   "evidence_note": "Exclusively designed and manufactured in the UK since 2003, drawing on British mill archives, but no current UK mill is named. GL7 area pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/moloh.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "tiffany-rose",
@@ -5260,7 +6204,8 @@
   "evidence_note": "Produced by a small team of garment specialists at their own Surrey studio, but the jersey, silk and chiffon fabric origins are not evidenced.",
   "tier_confidence": "high",
   "logo": "assets/logos/tiffany-rose.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "lambland",
@@ -5279,7 +6224,10 @@
   "evidence_note": "Union-flagged products are manufactured in Britain, but their own British Made page states the materials may be sourced from rest of world.",
   "tier_confidence": "high",
   "logo": "assets/logos/lambland.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "sheepland",
@@ -5298,7 +6246,10 @@
   "evidence_note": "Handmade start to finish at the Somerset workshop using genuine British sheepskin, but no UK tannery is named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/sheepland.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "the-bradford-sock-company",
@@ -5317,7 +6268,11 @@
   "evidence_note": "Socks knitted on site at their own Bradford mill, but the wool yarn origin is not evidenced.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-bradford-sock-company.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "elgar-shirts",
@@ -5336,7 +6291,10 @@
   "evidence_note": "Handmade in their own UK workshop (moved from Halifax to Abergavenny in Dec 2024) using natural fabrics, but no fabric origin claim is made. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/elgar-shirts.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "shirts"
+  ]
  },
  {
   "id": "justine-tabak",
@@ -5355,7 +6313,8 @@
   "evidence_note": "States all collections are made in England, but fabrics span multiple sources with no single main fabric evidenced as UK-milled. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/justine-tabak.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "colenimo",
@@ -5374,7 +6333,10 @@
   "evidence_note": "Most pieces made in the UK with a small number of makers and workshops; the Irish linen, tweed and sheepskin are not evidenced as UK-milled.",
   "tier_confidence": "medium",
   "logo": "assets/logos/colenimo.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "findra-clothing",
@@ -5393,7 +6355,11 @@
   "evidence_note": "Their own manufacturing page states 60% of the range is made in the UK and 30% in China; Seamless Performance wool is Australian and spun in Italy. Listed on the UK-made majority, with the split noted openly.",
   "tier_confidence": "high",
   "logo": "assets/logos/findra-clothing.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods",
+   "coats & jackets"
+  ]
  },
  {
   "id": "sub-zero",
@@ -5412,7 +6378,8 @@
   "evidence_note": "Base layers manufactured on seamless circular knitting machines at their own Leicestershire factory, but the polyamide yarn origin is not evidenced as UK.",
   "tier_confidence": "high",
   "logo": "assets/logos/sub-zero.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "withnell",
@@ -5431,7 +6398,8 @@
   "evidence_note": "Cut, sewn and handmade in the Lancashire studio, but fabrics are bought through UK fabric houses and merchants rather than stated as UK-milled.",
   "tier_confidence": "medium",
   "logo": "assets/logos/withnell.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "garstin-1871",
@@ -5450,7 +6418,10 @@
   "evidence_note": "Handmade in their Gloucestershire workshop, but the leather is tanned at the La Perla Azzurra tannery in Tuscany. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/garstin-1871.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "hackney-gt",
@@ -5469,7 +6440,10 @@
   "evidence_note": "Jerseys and kit made at a Lancashire factory the brand has partnered with since 2014, but the fabric is sourced from a pro-team supplier in Belgium.",
   "tier_confidence": "medium",
   "logo": "assets/logos/hackney-gt.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "kate-sheridan",
@@ -5488,7 +6462,10 @@
   "evidence_note": "Cut at a Dalston factory and assembled in the Clapton workshop with makers in Kent and Suffolk, but the leather is Italian vegetable-tanned.",
   "tier_confidence": "high",
   "logo": "assets/logos/kate-sheridan.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "blackshore",
@@ -5507,7 +6484,10 @@
   "evidence_note": "Manufactured in their own atelier (moved Southwold to Holt in 2023); the vast majority of fabrics come from British cloth mills and some from British-spun yarn. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/blackshore.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "sam-brown-london",
@@ -5526,7 +6506,10 @@
   "evidence_note": "Handcrafted at the Brixham workshop using vegetable-tanned leather from named UK tanneries including Thomas Ware of Bristol, plus Chesterfield and Walsall. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/sam-brown-london.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "weskit",
@@ -5545,7 +6528,12 @@
   "evidence_note": "Cut, made and finished by Musa Apparel in East London using British-woven cloths named as Fox Brothers, AW Hainsworth and Carloway Mill Harris Tweed.",
   "tier_confidence": "high",
   "logo": "assets/logos/weskit.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "vests & waistcoats",
+   "tweed & woven goods",
+   "suits & trousers"
+  ]
  },
  {
   "id": "meccanica-clothing",
@@ -5564,7 +6552,10 @@
   "evidence_note": "Product pages state the cotton piqué is knitted in England and the garment made in Britain. Evidence is product-level rather than a company-wide statement.",
   "tier_confidence": "medium",
   "logo": "assets/logos/meccanica-clothing.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "pajotten",
@@ -5583,7 +6574,10 @@
   "evidence_note": "Every garment hand-cut and hand-sewn by the founders, but 'a mill in Leicestershire' is unnamed and supplies only part of the cloth; hemp, tencel and linen carry no UK weaving claim.",
   "tier_confidence": "high",
   "logo": "assets/logos/pajotten.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "workwear & aprons"
+  ]
  },
  {
   "id": "elizabeth-martin-tweed",
@@ -5602,7 +6596,11 @@
   "evidence_note": "Designed and made in Scotland using Scottish tweed sourced from the Borders and the Outer Hebrides (Harris Tweed).",
   "tier_confidence": "high",
   "logo": "assets/logos/elizabeth-martin-tweed.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods",
+   "coats & jackets"
+  ]
  },
  {
   "id": "berties-of-bay",
@@ -5621,7 +6619,11 @@
   "evidence_note": "Ganseys knitted in 100% British oiled wool; reported as the only business still knitting traditional local-pattern ganseys. Spinner not named, as with Arbon Socks.",
   "tier_confidence": "medium",
   "logo": "assets/logos/berties-of-bay.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "tim-hardy",
@@ -5640,7 +6642,10 @@
   "evidence_note": "Hand-stitched using named English bridle leathers from J & FJ Baker (oak bark tanned), J & E Sedgwick and Pittards, with fittings from Abbey England of Walsall.",
   "tier_confidence": "high",
   "logo": "assets/logos/tim-hardy.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "monkstone-knitwear",
@@ -5659,7 +6664,10 @@
   "evidence_note": "Wool from their own Trevayne Farm flock in Pembrokeshire, washed and spun, then knitted by Corgi in neighbouring Carmarthenshire.",
   "tier_confidence": "high",
   "logo": "assets/logos/monkstone-knitwear.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "rolf-skeldon",
@@ -5678,7 +6686,8 @@
   "evidence_note": "Product pages state items are proudly made in Wales from GOTS organic cotton, but the fabric-milling location is not given. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/rolf-skeldon.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "blue-nude",
@@ -5697,7 +6706,8 @@
   "evidence_note": "Sustainability page names its UK makers — Fabrika, London Sewing Services, Adamley of Langley, Loop Studio and Another Knitted Thing of Manchester — but does not evidence UK-milled fabric.",
   "tier_confidence": "high",
   "logo": "assets/logos/blue-nude.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "the-cotton-london",
@@ -5716,7 +6726,12 @@
   "evidence_note": "Their own page states cotton is grown in the USA and spun, woven and dyed in Turkey, then cut and stitched in Leicester and embroidered in Nottingham. Applies to the Made in England collection only, not the wider range — listed on the Portmeirion precedent.",
   "tier_confidence": "medium",
   "logo": "assets/logos/the-cotton-london.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "shirts",
+   "everyday wear",
+   "poultry"
+  ]
  },
  {
   "id": "oxford-blue",
@@ -5735,7 +6750,10 @@
   "evidence_note": "Named wax jackets are manufactured in Birmingham using British Millerain waxed cotton milled in Lancashire, but the wider range is sourced from China, Pakistan, India and Portugal. Silver on the Portmeirion precedent rather than Gold.",
   "tier_confidence": "medium",
   "logo": "assets/logos/oxford-blue.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "cwt-clothing",
@@ -5754,7 +6772,11 @@
   "evidence_note": "Manufacturing in their own family Leicester factory since 1972 using Supima and organic cotton, but the fabric-milling location is not evidenced as UK.",
   "tier_confidence": "high",
   "logo": "assets/logos/cwt-clothing.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "shirts",
+   "everyday wear"
+  ]
  },
  {
   "id": "crease-studios",
@@ -5773,7 +6795,8 @@
   "evidence_note": "Handmade at the named Deptford studio in peace silk and organic cotton, but no UK mill is named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/crease-studios.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "wildsole",
@@ -5792,7 +6815,10 @@
   "evidence_note": "Sandals handmade in Yorkshire by co-founder Tom from animal-free materials, with no UK material source evidenced. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/wildsole.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "daffodil-and-leek",
@@ -5811,7 +6837,8 @@
   "evidence_note": "Founder states each piece is designed, patterned, cut and sewn by her in a North Yorkshire home studio, using vintage and reclaimed cloth of unstated original origin. County-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/daffodil-and-leek.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "worn-to-threads",
@@ -5830,7 +6857,8 @@
   "evidence_note": "Made in a Bristol studio from reclaimed, deadstock and offset textiles; original cloth origin not applicable or unevidenced. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/worn-to-threads.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "o-pioneers",
@@ -5849,7 +6877,8 @@
   "evidence_note": "Founded and hand-crafted in Camden via small London ateliers and seamstresses, using Liberty prints and heritage deadstock whose weaving origin is not evidenced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/o-pioneers.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "paul-brown",
@@ -5868,7 +6897,11 @@
   "evidence_note": "Hand cut and sewn at their own Brandon factory, but their blog names the shirting mills as Monti (Italy), Sotkas (Turkey) and Brisbane Moss (England) — mostly imported cloth.",
   "tier_confidence": "high",
   "logo": "assets/logos/paul-brown.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "shirts",
+   "poultry"
+  ]
  },
  {
   "id": "hemingsworth",
@@ -5887,7 +6920,8 @@
   "evidence_note": "Around 90% of garments produced at their own London factory, but trade reporting states the fabrics are woven in Portugal with trims from Italy.",
   "tier_confidence": "high",
   "logo": "assets/logos/hemingsworth.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "waring-brooke",
@@ -5906,7 +6940,10 @@
   "evidence_note": "Every garment knitted, linked, washed and pressed in-house on their own STOLL machine in Nottinghamshire, but the yarn is not evidenced as UK-spun — Silver on the House of Cheviot precedent. County-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/waring-brooke.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "umpie-handbags",
@@ -5925,7 +6962,10 @@
   "evidence_note": "Each bag handcrafted by the owner in her Northallerton studio, but the William Morris and kilim-print fabrics and leather straps have no named UK mill or tannery.",
   "tier_confidence": "high",
   "logo": "assets/logos/umpie-handbags.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "hurdwick-handmade-bag-company",
@@ -5944,7 +6984,10 @@
   "evidence_note": "Hand cut and made at the Tavistock workshop with hides bought from family firms in Somerset and Twickenham, but neither supplier is confirmed to be a tannery. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/hurdwick-handmade-bag-company.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "english-utopia",
@@ -5963,7 +7006,11 @@
   "evidence_note": "Every jacket designed, patterned, cut and sewn by hand in their own York workshops, but waxed cotton, Ventile and tweed are sourced from 'Europe's best mills', not confirmed UK. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/english-utopia.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods",
+   "coats & jackets"
+  ]
  },
  {
   "id": "goodnight-irene",
@@ -5982,7 +7029,10 @@
   "evidence_note": "Handmade in London in silk and heritage tweed, but no UK weaving mill is named and some materials are deadstock of unspecified origin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/goodnight-irene.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "empire-jeans",
@@ -6001,7 +7051,11 @@
   "evidence_note": "Their site states they are based in the Midlands and make roughly 1,000 pairs of jeans a week, but no UK denim mill is named. County-level pin — exact town not established.",
   "tier_confidence": "medium",
   "logo": "assets/logos/empire-jeans.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "jeans & denim",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "joe-and-co-denim",
@@ -6020,7 +7074,11 @@
   "evidence_note": "One line is woven on 1950s Northrop shuttle looms in Lancashire and cut and stitched in NW England, but other lines use Japanese and Italian mill cloth — Silver rather than Gold on the Gloverall precedent.",
   "tier_confidence": "medium",
   "logo": "assets/logos/joe-and-co-denim.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "jeans & denim",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "torramor",
@@ -6039,7 +7097,10 @@
   "evidence_note": "Their Our Story page states the range is designed, tested and made in the UK from recycled material and organic cotton, but no UK mill or weaver is named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/torramor.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "the-moleskin-jeans-co",
@@ -6058,7 +7119,12 @@
   "evidence_note": "Their About page states they have manufactured jeans in the North of England since the 1990s, sourcing cloth from unnamed mills. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-moleskin-jeans-co.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "jeans & denim",
+   "suits & trousers",
+   "workwear & aprons"
+  ]
  },
  {
   "id": "awling",
@@ -6077,7 +7143,10 @@
   "evidence_note": "Cut, sewn and assembled by hand in Derbyshire with buckles cast at a northern English foundry, but the leather is Italian vegetable-tanned. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/awling.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "charles-laurie",
@@ -6096,7 +7165,10 @@
   "evidence_note": "Founder designs and manufactures everything by hand at his own Rutland workshop, but no UK tannery or leather source is named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/charles-laurie.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "ednerat",
@@ -6115,7 +7187,10 @@
   "evidence_note": "Cut, made and finished by hand in their London workshop using tweeds, flannels, linens and brocades woven in Cumbria, Yorkshire, Somerset and Suffolk. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/ednerat.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "kerriealdo",
@@ -6134,7 +7209,10 @@
   "evidence_note": "Handmade in their Dundee studio using waxed cotton from Halley Stevensons, the 150-year-old mill in the same city. Same cloth basis as Fieldware Co and John Partridge.",
   "tier_confidence": "high",
   "logo": "assets/logos/kerriealdo.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "coats & jackets"
+  ]
  },
  {
   "id": "reflekt-clothing",
@@ -6153,7 +7231,8 @@
   "evidence_note": "Armoured Knit is 100% English wool sourced from UK farms via Shepley Yarns, a family mill in Saddleworth, with garments made across specialist UK factories. Evidence is product-level.",
   "tier_confidence": "medium",
   "logo": "assets/logos/reflekt-clothing.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "tropel-kids",
@@ -6172,7 +7251,8 @@
   "evidence_note": "Fabrics are mostly 100% cotton with the majority milled in the UK, made by a partnered UK manufacturer. The 'majority' hedge keeps confidence at medium. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/tropel-kids.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "amy-britton",
@@ -6191,7 +7271,10 @@
   "evidence_note": "Harris Tweed handwoven on a Hattersley loom by the named Adabrock Weaving Company in the Outer Hebrides, with products crafted by the team in Stirling.",
   "tier_confidence": "high",
   "logo": "assets/logos/amy-britton.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "good-measure",
@@ -6210,7 +7293,10 @@
   "evidence_note": "Knits its own fabric and constructs nearby, corroborated by stockists, but the mill is unnamed and sources disagree on its region — worth re-checking.",
   "tier_confidence": "medium",
   "logo": "assets/logos/good-measure.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "everyday wear"
+  ]
  },
  {
   "id": "homebody",
@@ -6229,7 +7315,8 @@
   "evidence_note": "Fabric knitted, finished and dyed in the UK via a British dye house, with 100% of the current collection made at their own UK factory. Pin uses the company's published London telephone contact — the factory location is not disclosed.",
   "tier_confidence": "medium",
   "logo": "assets/logos/homebody.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "the-rugby-company",
@@ -6248,7 +7335,10 @@
   "evidence_note": "Raw cotton spun and loomed into jersey in their own Midlands facility, with all jerseys made within 30 miles of Rugby.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-rugby-company.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "shirts"
+  ]
  },
  {
   "id": "the-goat-company",
@@ -6267,7 +7357,11 @@
   "evidence_note": "Mohair comes from their own Angora goats at Daren Farm, hand-dyed and processed grass to garment.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-goat-company.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "oldfield-outfitters",
@@ -6286,7 +7380,11 @@
   "evidence_note": "Corduroy milled in Yorkshire, Fair Isle garments in Scottish lambswool crafted in Shetland, and the first production order placed with a Yorkshire factory. Area-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/oldfield-outfitters.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "moda-de-la-maria",
@@ -6305,7 +7403,10 @@
   "evidence_note": "Signature tweed woven by Ardalanish on the Isle of Mull on Victorian looms from native Hebridean wool, with garments hand-crafted in the London atelier. Third-party source.",
   "tier_confidence": "medium",
   "logo": "assets/logos/moda-de-la-maria.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods"
+  ]
  },
  {
   "id": "mackenzie-and-george",
@@ -6324,7 +7425,10 @@
   "evidence_note": "Handmade in their Shropshire workshop using leather from J & FJ Baker, the only oak bark tannery remaining in the UK. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/mackenzie-and-george.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "thomas-fortin",
@@ -6343,7 +7447,10 @@
   "evidence_note": "Jacquard silk brocades woven at Vanners of Sudbury (est. 1740), twill silk printed at Adamley in Macclesfield, braces handmade by Albert Thurston in Leicester. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/thomas-fortin.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "frimble",
@@ -6362,7 +7469,11 @@
   "evidence_note": "Jackets made in Lancashire, hand-cut from tweeds sourced mainly from Scotland with some from Yorkshire. Evidence is press coverage rather than a company page.",
   "tier_confidence": "medium",
   "logo": "assets/logos/frimble.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "tweed & woven goods",
+   "coats & jackets"
+  ]
  },
  {
   "id": "julian-road",
@@ -6381,7 +7492,12 @@
   "evidence_note": "Made in independent UK tailoring units using cloth selected from British mills, including Harris Tweed from the Isle of Harris and lambswool from Abraham Moon. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/julian-road.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "cashmere & merino",
+   "tweed & woven goods",
+   "suits & trousers"
+  ]
  },
  {
   "id": "pinpiuma",
@@ -6400,7 +7516,12 @@
   "evidence_note": "Tweed twill woven in Yorkshire and leather sourced from Dorset, with materials sourced, manufactured and tailored in the UK. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/pinpiuma.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "vests & waistcoats",
+   "tweed & woven goods",
+   "coats & jackets"
+  ]
  },
  {
   "id": "green-thomas",
@@ -6419,7 +7540,10 @@
   "evidence_note": "Knitwear credibly made in Scotland and RWS-certified, but the spinner is described only as 'a Scottish yarn mill since 1876' and never named.",
   "tier_confidence": "high",
   "logo": "assets/logos/green-thomas.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "the-pattern-guild",
@@ -6438,7 +7562,10 @@
   "evidence_note": "Made in England and screen-printed in the London studio, but 'woven in England' and 'spun in England' are unattributed — no mill, town or partner named.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-pattern-guild.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "harriet-eccleston",
@@ -6457,7 +7584,8 @@
   "evidence_note": "Names the full chain: cotton spun in Dukinfield, woven in Burnley, finished in Rochdale, or wool spun, dyed and woven in Yorkshire, with garments sewn in the Sheffield studio.",
   "tier_confidence": "high",
   "logo": "assets/logos/harriet-eccleston.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "hettie",
@@ -6476,7 +7604,8 @@
   "evidence_note": "Family business stating they make their products in Britain from British woven wool. No mill named, so confidence is medium. County-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/hettie.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "elwin",
@@ -6495,7 +7624,10 @@
   "evidence_note": "Bluefaced Leicester British wool sourced and spun in the UK, certified and traceable to farm by British Wool, with garments made within five miles of the East London studio.",
   "tier_confidence": "high",
   "logo": "assets/logos/elwin.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "katie-cotmarsh",
@@ -6514,7 +7646,10 @@
   "evidence_note": "Wool from their own flock of 350+ rare-breed sheep at Great Cotmarsh Farm, with knitwear made within 130 miles in England. Area-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/katie-cotmarsh.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "talou",
@@ -6533,7 +7668,10 @@
   "evidence_note": "Fully-fashioned panels knitted and hand-linked in a small London studio from deadstock yarns sourced from UK factories. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/talou.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "mille-saisons",
@@ -6552,7 +7690,8 @@
   "evidence_note": "Made in small batches in the founder's Sussex studio from Grade A mulberry silk, with no UK milling claim. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/mille-saisons.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "sarvin",
@@ -6571,7 +7710,8 @@
   "evidence_note": "Made locally in Manchester by an in-house dressmaking team, using fabrics handpicked from around the world. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/sarvin.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "soma-sportswear",
@@ -6590,7 +7730,8 @@
   "evidence_note": "UKFT member profile states products are UK manufactured in London, using TENCEL Modal fibres sourced from European forests. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/soma-sportswear.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "rock-and-ruby",
@@ -6609,7 +7750,11 @@
   "evidence_note": "Made in the UK with craftspeople who have been making socks for decades, using organic cotton and wool from unnamed certified suppliers.",
   "tier_confidence": "medium",
   "logo": "assets/logos/rock-and-ruby.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "dreaming-of-ivy",
@@ -6628,7 +7773,8 @@
   "evidence_note": "Each dress hand-made to order in the founder's Devon studio from 100% cotton of unstated origin. County-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/dreaming-of-ivy.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "cara-and-the-sky",
@@ -6647,7 +7793,10 @@
   "evidence_note": "Made in the UK at a SEDEX-approved manufacturer in Leicester, using acrylic/nylon or recycled cotton yarns not claimed to be UK-spun.",
   "tier_confidence": "high",
   "logo": "assets/logos/cara-and-the-sky.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "lola-starr",
@@ -6666,7 +7815,8 @@
   "evidence_note": "Manufactures in the UK and produces bespoke pieces in-house in Liverpool with two UK partners, using imported ECONYL regenerated nylon and TENCEL Modal.",
   "tier_confidence": "high",
   "logo": "assets/logos/lola-starr.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "pittch",
@@ -6685,7 +7835,12 @@
   "evidence_note": "States a decision to use only British manufacturers for its merino socks, but the wool spinning and milling origin is not evidenced.",
   "tier_confidence": "medium",
   "logo": "assets/logos/pittch.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino",
+   "socks"
+  ]
  },
  {
   "id": "the-well-worn",
@@ -6704,7 +7859,8 @@
   "evidence_note": "Cut, sewn and finished in-house at their own Winchester studio, but the fabric is deadstock and vintage material of unspecified milling origin.",
   "tier_confidence": "high",
   "logo": "assets/logos/the-well-worn.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "adkn",
@@ -6723,7 +7879,8 @@
   "evidence_note": "Established its own design and production studio in London in 2018, but fabrics are sourced from Europe with some accessories from Asia. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/adkn.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "been-london",
@@ -6742,7 +7899,10 @@
   "evidence_note": "Most products handmade at their own East London workshop with a long-standing bag maker, but the recycled leather, nylon and polyester have no named origin.",
   "tier_confidence": "high",
   "logo": "assets/logos/been-london.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "lottie-and-lysh",
@@ -6761,7 +7921,8 @@
   "evidence_note": "Handmade in-house by their own team of seamstresses in Cornwall, but fabrics come from unnamed family-run print houses. County-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/lottie-and-lysh.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "red-shoes-ruth-emily-davey",
@@ -6780,7 +7941,10 @@
   "evidence_note": "Ruth Emily Davey hand-cuts and makes the shoes herself in Wales, but the main upper leather is imported Italian full-grain; soles are English-tanned. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/red-shoes-ruth-emily-davey.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "lady-v-london",
@@ -6799,7 +7963,8 @@
   "evidence_note": "Has worked with the same London factory since 2013 with in-house pattern cutters and machinists, but the stretch jersey origin is unspecified. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/lady-v-london.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "j-alex-swift",
@@ -6818,7 +7983,11 @@
   "evidence_note": "Socks traditionally machine-knitted at their own Hathern factory on vintage and modern machines, but the yarn is not evidenced as UK-spun — Silver on the Bradford Sock Company precedent.",
   "tier_confidence": "high",
   "logo": "assets/logos/j-alex-swift.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "socks"
+  ]
  },
  {
   "id": "batch-ldn",
@@ -6837,7 +8006,10 @@
   "evidence_note": "Garments hand made to order in London, but with premium Italian fabrics.",
   "tier_confidence": "high",
   "logo": "assets/logos/batch-ldn.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "tutti-frutti-clothing",
@@ -6856,7 +8028,8 @@
   "evidence_note": "Designed, cut and sewn in the founder's Letchworth studio with a seamstress in Watford, but the organic cotton jersey has no UK mill named.",
   "tier_confidence": "high",
   "logo": "assets/logos/tutti-frutti-clothing.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "gina",
@@ -6875,7 +8048,10 @@
   "evidence_note": "All footwear hand-crafted at their own London factory, but explicitly using the finest Italian leathers.",
   "tier_confidence": "high",
   "logo": "assets/logos/gina.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "footwear & boots"
+  ]
  },
  {
   "id": "marvin-browne",
@@ -6894,7 +8070,8 @@
   "evidence_note": "Designed and made by Marvin and his small team in London, using fabrics sourced from the UK and Italy in an unspecified mix.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "foxology",
@@ -6913,7 +8090,11 @@
   "evidence_note": "Manufactures 100% of products in the UK with knitting done in Leicester in merino yarn, but the yarn is not evidenced as UK-spun — Silver on the House of Cheviot precedent.",
   "tier_confidence": "high",
   "logo": "assets/logos/foxology.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear",
+   "cashmere & merino"
+  ]
  },
  {
   "id": "moghrabi",
@@ -6932,7 +8113,10 @@
   "evidence_note": "Bespoke suits made in England with full canvas construction and extensive hand-sewing, but the cloth mill is never named. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/moghrabi.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "sami-k",
@@ -6951,7 +8135,8 @@
   "evidence_note": "Made in the designer's Cornwall home studio, but the GOTS-certified fabrics are produced by a family mill in Kerala, India.",
   "tier_confidence": "high",
   "logo": "assets/logos/sami-k.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "reworked-348",
@@ -6970,7 +8155,10 @@
   "evidence_note": "Cut and sewn in Derby on vintage machines using archived cloths from heritage mills across the UK and Europe — an unspecified mix. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/reworked-348.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "workwear & aprons"
+  ]
  },
  {
   "id": "vivien-of-holloway",
@@ -6989,7 +8177,8 @@
   "evidence_note": "FAQ states plainly that all garments are made in London, but no fabric mill is named.",
   "tier_confidence": "high",
   "logo": "assets/logos/vivien-of-holloway.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "alie-street",
@@ -7008,7 +8197,8 @@
   "evidence_note": "The entire dress collection is made in Britain at Surrey studios with named UK garment specialists, but only some jerseys come from British mills and none is named. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/alie-street.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "ella-griffee",
@@ -7027,7 +8217,8 @@
   "evidence_note": "The designer makes every garment herself at her Falmouth studio from linen and organic cotton, but no UK mill is named.",
   "tier_confidence": "high",
   "logo": "assets/logos/ella-griffee.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "orraman-leather",
@@ -7046,7 +8237,10 @@
   "evidence_note": "Hand-cut, stitched and finished at their own Ardrishaig workshop, but the leather is from Badalassi Carlo in Italy or Horween in the USA. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/orraman-leather.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "furious-goose",
@@ -7065,7 +8259,10 @@
   "evidence_note": "Printed and finished in the UK by printers based in Macclesfield, but the base cloth is not stated to be UK-woven. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/furious-goose.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "cocoove",
@@ -7084,7 +8281,8 @@
   "evidence_note": "Made in the UK at their own studio plus British manufacturers with the majority of fabrics sourced in the North West, but the claim is on a third-party profile rather than their own site.",
   "tier_confidence": "medium",
   "logo": "assets/logos/cocoove.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "kipper",
@@ -7103,7 +8301,10 @@
   "evidence_note": "States all pieces are made in London, but no UK mill is named for its linen and stripe cloths. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/kipper.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "meandthee",
@@ -7122,7 +8323,8 @@
   "evidence_note": "Patterns designed and all garment production taking place in their West Yorkshire studio, but fabrics come from the UK and Europe including Italy. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/meandthee.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "clare-haggas",
@@ -7141,7 +8343,10 @@
   "evidence_note": "Hand-finished with hems rolled by a team of artisans in England, but the silk itself has no UK weaving mill named.",
   "tier_confidence": "high",
   "logo": "assets/logos/clare-haggas.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "cravat-club",
@@ -7160,7 +8365,10 @@
   "evidence_note": "Claims manufacture from start to finish in England including weaving from raw silk, but no mill or facility is named to verify the weaving stage.",
   "tier_confidence": "medium",
   "logo": "assets/logos/cravat-club.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "scarves & accessories"
+  ]
  },
  {
   "id": "hyde-and-hare",
@@ -7179,7 +8387,10 @@
   "evidence_note": "Hand cut and handcrafted in England, but the hides are explicitly sourced from suppliers across the globe with no UK tannery named. Area-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/hyde-and-hare.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "macangus-and-wainwright",
@@ -7198,7 +8409,10 @@
   "evidence_note": "Garments handmade in London to an individual pattern cut for each client, but no cloth mill or supplier is named. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/macangus-and-wainwright.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "geoff-stocker",
@@ -7217,7 +8431,8 @@
   "evidence_note": "Silks digitally printed by R A Smart of Macclesfield and dressing gowns constructed by Fabrika London, but the base silk's weaving origin is not stated. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/geoff-stocker.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "abe-house",
@@ -7236,7 +8451,8 @@
   "evidence_note": "States every step from fabric sourcing to final stitch happens within the UK and names its pattern cutter, but no factory or fabric mill is named. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/abe-house.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "stalf",
@@ -7255,7 +8471,8 @@
   "evidence_note": "Every garment hand-cut, sewn, finished and packed at their Caistor studio, mainly in GOTS organic cotton whose milling location is not stated.",
   "tier_confidence": "high",
   "logo": "assets/logos/stalf.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "big-fox-apparel",
@@ -7274,7 +8491,11 @@
   "evidence_note": "Handmade in the North East of England using fabrics sourced in the UK via a small independent local manufacturer, but no mill confirms the fabric is UK-milled rather than merely bought here.",
   "tier_confidence": "medium",
   "logo": "assets/logos/big-fox-apparel.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "shirts",
+   "everyday wear"
+  ]
  },
  {
   "id": "daltons-england",
@@ -7293,7 +8514,10 @@
   "evidence_note": "Wholly handmade in the Milton, Somerset workshop and London, but hides are explicitly Italian calf. Area-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/daltons-england.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "des-merrion",
@@ -7312,7 +8536,10 @@
   "evidence_note": "Des Merrion personally cuts and makes every bespoke garment on site, but cloth comes from a mix of merchants that are not all UK-milled.",
   "tier_confidence": "medium",
   "logo": "assets/logos/des-merrion.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "nattily-dressed",
@@ -7331,7 +8558,11 @@
   "evidence_note": "Manufacturing moved to Leicester in 2021 and the founder regularly visits the factory, but garments use Polartec recycled polyester with no UK milling evidence.",
   "tier_confidence": "medium",
   "logo": "assets/logos/nattily-dressed.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "vests & waistcoats",
+   "coats & jackets"
+  ]
  },
  {
   "id": "wildish",
@@ -7350,7 +8581,10 @@
   "evidence_note": "Made by named UK makers in Suffolk, Leeds and Glasgow, but the signature canvas is grown and milled in India and only proofed and dyed by British Millerain in Rochdale. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/wildish.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "iona-montgomery",
@@ -7369,7 +8603,10 @@
   "evidence_note": "Hand finished in London by the milliner herself, but the wool felt and silk have no named UK source. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/iona-montgomery.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "hats & caps"
+  ]
  },
  {
   "id": "fawn-and-freda",
@@ -7388,7 +8625,8 @@
   "evidence_note": "All garments made in London with the designer hand-smocking and embroidering pieces herself, but no fabric mill is named. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/fawn-and-freda.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "rach-x",
@@ -7407,7 +8645,10 @@
   "evidence_note": "FAQ states most garments are made in Bishop Auckland and Birmingham, while explicitly noting the fabric is currently imported. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/rach-x.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "workwear & aprons"
+  ]
  },
  {
   "id": "nadinoo",
@@ -7426,7 +8667,8 @@
   "evidence_note": "Cut and sewn in-house in their Rutland studio, but the linen comes from a supplier's factory in Lithuania.",
   "tier_confidence": "high",
   "logo": "assets/logos/nadinoo.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "kaely-russell",
@@ -7445,7 +8687,8 @@
   "evidence_note": "Designed and handmade in Devon in linen, Tencel and wool including end-of-roll fabrics, with no UK mill named. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/kaely-russell.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "the-bathrobe-company",
@@ -7464,7 +8707,8 @@
   "evidence_note": "Trading as Makin & Lloyd since 1946; robes described as designed in Italy and handmade in England, with no UK mill named for the towelling.",
   "tier_confidence": "medium",
   "logo": "assets/logos/the-bathrobe-company.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "violets-in-may",
@@ -7483,7 +8727,8 @@
   "evidence_note": "Founder hand-makes each piece herself in the UK, but the tiki and Hawaiian prints are sourced from around the world including Hawaii. Town-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/violets-in-may.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "faith-rowan-leeves",
@@ -7502,7 +8747,8 @@
   "evidence_note": "Orders cut by hand in the Brighton studio and sewn by home-based seamstresses, but the hero 100% flax fabric is designed and made by a Lithuanian supplier.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "lilyberry",
@@ -7521,7 +8767,8 @@
   "evidence_note": "Handmade in Sussex, but the printed jersey and French terry fabrics have no UK mill or knitter named. County-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/lilyberry.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "leah-may-tailors",
@@ -7540,7 +8787,10 @@
   "evidence_note": "Made by hand in their own Hertfordshire workshop, but no UK cloth mill is named for the suiting. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/leah-may-tailors.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "suits & trousers"
+  ]
  },
  {
   "id": "wear-london",
@@ -7559,7 +8809,14 @@
   "evidence_note": "Outerwear and trousers made in East London, denim in West Bromwich and T-shirts in Golders Green, but fabric comes mainly from Prato and Como in Italy.",
   "tier_confidence": "high",
   "logo": "assets/logos/wear-london.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "jeans & denim",
+   "coats & jackets",
+   "suits & trousers",
+   "shirts",
+   "everyday wear"
+  ]
  },
  {
   "id": "mhulot",
@@ -7578,7 +8835,10 @@
   "evidence_note": "Made in England by a Margate maker and a Leicestershire factory, but the main collection uses vegetable-tanned leather processed in Tuscany. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/mhulot.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "jane-hopkinson",
@@ -7597,7 +8857,10 @@
   "evidence_note": "Jane and her husband make everything from start to finish in the workshop, but using leathers obtained from Italy.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "lpol",
@@ -7616,7 +8879,10 @@
   "evidence_note": "Handmade in London and Kent workshops from vegetable-tanned leather sourced from unnamed specialist suppliers in the UK and Europe, with no named UK tannery.",
   "tier_confidence": "high",
   "logo": "assets/logos/lpol.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "heather-borg",
@@ -7635,7 +8901,10 @@
   "evidence_note": "Handmade in the designer's Manchester studio, but using named Badalassi Carlo leather from Italy. Town-level pin.",
   "tier_confidence": "medium",
   "logo": "assets/logos/heather-borg.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "bags & leather goods"
+  ]
  },
  {
   "id": "otway-orford",
@@ -7654,7 +8923,8 @@
   "evidence_note": "Digitally printed and hand-rolled and hand-sewn by a leading Macclesfield pocket square maker, but the mulberry silk twill is not stated to be UK-woven.",
   "tier_confidence": "high",
   "logo": "assets/logos/otway-orford.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": []
  },
  {
   "id": "barrington-ayre",
@@ -7673,7 +8943,11 @@
   "evidence_note": "Cut and made by a Savile Row-trained tailor in the Cirencester workroom, including cloth from the William Bliss mill in Wiltshire, but bespoke shirts are explicitly made in France. Area-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/barrington-ayre.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "suits & trousers",
+   "shirts"
+  ]
  },
  {
   "id": "paul-james-knitwear",
@@ -7692,7 +8966,10 @@
   "evidence_note": "States knitwear is crafted in their family-owned factories in England and India, so production is not exclusively UK despite a distinct Made in England range — Portmeirion precedent.",
   "tier_confidence": "high",
   "logo": "assets/logos/paul-james-knitwear.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "libby-london",
@@ -7711,7 +8988,8 @@
   "evidence_note": "States over 70% of clothes are made in the UK with a dedicated British Made collection, but no factory or fabric mill is named.",
   "tier_confidence": "medium",
   "logo": "assets/logos/libby-london.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": []
  },
  {
   "id": "ivy-and-rigg",
@@ -7730,7 +9008,10 @@
   "evidence_note": "The British range is knitted by a named family mill in the Midlands from wool via a North Pennines spinner, but other items are made in Bangladesh and China — Silver on the Portmeirion precedent. County-level pin.",
   "tier_confidence": "high",
   "logo": "assets/logos/ivy-and-rigg.png",
-  "source": "britishmadeclothing.co.uk queue"
+  "source": "britishmadeclothing.co.uk queue",
+  "product_tags": [
+   "knitwear"
+  ]
  },
  {
   "id": "craigies-farm",
@@ -7749,7 +9030,11 @@
   "evidence_note": "Food-hall model — Brodies teas and coffees, wines, gins and gift lines alongside its own fruit, veg and butchery.",
   "tier_confidence": "high",
   "logo": "assets/logos/craigies-farm.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "kilnford-farm-shop",
@@ -7768,7 +9053,13 @@
   "evidence_note": "Own Galloway beef and lamb, but the deli carries speciality cheeses and olives plus a crafts and gifts range; self-described food hub.",
   "tier_confidence": "high",
   "logo": "assets/logos/kilnford-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "fresh meat",
+   "dairy & cheese"
+  ]
  },
  {
   "id": "gloagburn-farm-shop",
@@ -7787,7 +9078,12 @@
   "evidence_note": "Own beef, pork and eggs alongside a bought-in national grocery range, wines, coffee shop and separate gift shop.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "pork & bacon",
+   "fruit & veg"
+  ]
  },
  {
   "id": "newton-farm-foods",
@@ -7806,7 +9102,13 @@
   "evidence_note": "Home-reared meat alongside delicatessen lines, artisan pantry staples, wines, spirits, crafts and homewares. NOTE: location unconfirmed — the trading business of this name appears to be at Newton St Loe near Bath, not Forfar; pin needs checking.",
   "tier_confidence": "medium",
   "logo": "assets/logos/newton-farm-foods.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "fresh meat"
+  ]
  },
  {
   "id": "mains-of-glassaugh",
@@ -7825,7 +9127,11 @@
   "evidence_note": "Saturday-only shop of home-grown veg, own eggs, fruit, meat and family-made jams, with a few Scottish additions; no deli or grocery range.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "Ernespie-farm-shop",
@@ -7844,7 +9150,11 @@
   "evidence_note": "The retail offer is a garden centre, gift shop and café rather than an own-produce farm shop.",
   "tier_confidence": "high",
   "logo": "assets/logos/Ernespie-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "bodnant-welsh-food",
@@ -7863,7 +9173,14 @@
   "evidence_note": "Estate produce, but the wine cellar stocks premium varieties from all over the world, plus restaurant and cookery school.",
   "tier_confidence": "high",
   "logo": "assets/logos/bodnant-welsh-food.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg",
+   "bread & bakery",
+   "drinks & spirits"
+  ]
  },
  {
   "id": "forage-farm-shop",
@@ -7882,7 +9199,14 @@
   "evidence_note": "Own butchery, but the deli counter explicitly offers Welsh, British and Continental cheeses and charcuterie.",
   "tier_confidence": "high",
   "logo": "assets/logos/forage-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "fresh meat",
+   "dairy & cheese"
+  ]
  },
  {
   "id": "hawarden-estate-farm-shop",
@@ -7901,7 +9225,11 @@
   "evidence_note": "Own veg, milk and honey, but also a bought-in Provision Merchant grocery range, imported enamelware, homewares and gift shop.",
   "tier_confidence": "high",
   "logo": "assets/logos/hawarden-estate-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "beacons-farm-shop",
@@ -7920,7 +9248,15 @@
   "evidence_note": "Own venison, beef, lamb and pork dominate; deli is British/Welsh cheeses and the gift range is non-food.",
   "tier_confidence": "high",
   "logo": "assets/logos/beacons-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "game & venison",
+   "fresh meat",
+   "dairy & cheese"
+  ]
  },
  {
   "id": "caws-cenarth-farm-shop",
@@ -7939,7 +9275,10 @@
   "evidence_note": "Producer's own shop selling its own Caerffili, Perl Wen, Perl Las and Golden Cenarth plus cheeseboards and crackers.",
   "tier_confidence": "high",
   "logo": "assets/logos/caws-cenarth-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "dairy & cheese"
+  ]
  },
  {
   "id": "broughgammon-farm",
@@ -7958,7 +9297,11 @@
   "evidence_note": "Own free-range kid goat, rose veal and homegrown veg; everything else from named Irish makers (Abernethy, Corleggy, Young Buck, Corndale).",
   "tier_confidence": "high",
   "logo": "assets/logos/broughgammon-farm.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "castlescreen-farm",
@@ -7977,7 +9320,14 @@
   "evidence_note": "Organic own Dexter beef, lamb, pork, eggs and seasonal venison; pies and traybakes made from their own cattle.",
   "tier_confidence": "high",
   "logo": "assets/logos/castlescreen-farm.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "game & venison",
+   "fresh meat"
+  ]
  },
  {
   "id": "pheasants-hill-farm",
@@ -7996,7 +9346,16 @@
   "evidence_note": "Pre-order butchery of own rare-breed pork, beef, lamb and poultry plus preserves from their own fruit; no grocery range.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "poultry",
+   "game & venison",
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "mckees-country-store",
@@ -8015,7 +9374,15 @@
   "evidence_note": "Self-described one-stop shop for bakery, dairy, deli, groceries and frozen foods alongside its own beef, pork and veg.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "pork & bacon",
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg",
+   "bread & bakery"
+  ]
  },
  {
   "id": "farndon-fields-farm-shop",
@@ -8034,7 +9401,10 @@
   "evidence_note": "One of England's largest farm shops: specialist wines, dips and mustards, bedding plants and a full restaurant alongside own produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/farndon-fields-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "welbeck-farm-shop",
@@ -8053,7 +9423,14 @@
   "evidence_note": "Large cheese counter, a good choice of wines, Dark Woods coffee and imported chocolate ranges alongside estate produce.",
   "tier_confidence": "high",
   "logo": "assets/logos/welbeck-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "lamb",
+   "game & venison",
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "strawberry-fields-farm-shop",
@@ -8072,7 +9449,12 @@
   "evidence_note": "Large own-produce base, but the deli sells olives and there is a full pantry grocery collection, gifts and hampers.",
   "tier_confidence": "high",
   "logo": "assets/logos/strawberry-fields-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "fruit & veg"
+  ]
  },
  {
   "id": "lower-clopton-farm-shop",
@@ -8091,7 +9473,15 @@
   "evidence_note": "Own beef, lamb and veg from surrounding fields, deli of British cheeses and self-made pies; states 99% of produce is British.",
   "tier_confidence": "high",
   "logo": "assets/logos/lower-clopton-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "lamb",
+   "pork & bacon",
+   "fresh meat",
+   "dairy & cheese",
+   "fruit & veg"
+  ]
  },
  {
   "id": "goat-shed-farm-shop",
@@ -8110,7 +9500,12 @@
   "evidence_note": "Own goat's cheese is one line within a one-stop shop of bought-in shelves, freezers, gifts and skincare.",
   "tier_confidence": "high",
   "logo": "assets/logos/goat-shed-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "dairy & cheese",
+   "fruit & veg",
+   "bread & bakery"
+  ]
  },
  {
   "id": "hutchinson-hobbs",
@@ -8129,7 +9524,11 @@
   "evidence_note": "Farm butchery hanging and curing its own meat, with a shop of local and regional products from around 70 named local suppliers.",
   "tier_confidence": "high",
   "logo": "assets/logos/hutchinson-hobbs.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "darts-farm",
@@ -8148,7 +9547,12 @@
   "evidence_note": "Pioneer UK farm shop growing own vegetables and Ruby Red cattle, but expanded into a large food hall with some imported artisan lines — Silver on the Daylesford model.",
   "tier_confidence": "high",
   "logo": "assets/logos/darts-farm.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "beef",
+   "fruit & veg",
+   "drinks & spirits"
+  ]
  },
  {
   "id": "canalside-farm-shop",
@@ -8167,7 +9571,10 @@
   "evidence_note": "FRA Lifetime Achievement 2026. Family farm growing own soft fruit, bedding plants and seasonal vegetables for over 35 years.",
   "tier_confidence": "high",
   "logo": "assets/logos/canalside-farm-shop.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fruit & veg"
+  ]
  },
  {
   "id": "sharnfold-farm",
@@ -8186,7 +9593,11 @@
   "evidence_note": "Sussex farm growing own PYO fruit and vegetables, butchery sourcing Sussex meats from local livestock farms.",
   "tier_confidence": "high",
   "logo": "assets/logos/sharnfold-farm.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "priory-farm-estate",
@@ -8205,7 +9616,11 @@
   "evidence_note": "Surrey estate producing seasonal crops and local farm meats, with a broad food hall selection — Silver on the Daylesford model.",
   "tier_confidence": "high",
   "logo": "assets/logos/priory-farm-estate.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "fruit & veg"
+  ]
  },
  {
   "id": "wemyss-ware",
@@ -8224,7 +9639,10 @@
   "evidence_note": "Hand-cast and hand-painted in Ceres studio using clay prepared by Valentine Clays in Stoke.",
   "tier_confidence": "high",
   "logo": "assets/logos/wemyss-ware.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "tain-pottery",
@@ -8243,7 +9661,10 @@
   "evidence_note": "Hand-thrown and decorated in their Tain studio; clay origin unevidenced — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/tain-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "borgh-pottery",
@@ -8262,7 +9683,10 @@
   "evidence_note": "Made at the Borgh Pottery workshop, Isle of Lewis, since 1974; clay-body origin not stated — Silver pending confirmation.",
   "tier_confidence": "medium",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "ewenny-pottery",
@@ -8281,7 +9705,10 @@
   "evidence_note": "Established 1610; 8th generation family potters throwing earthenware using UK-blended clay prepared by Potclays.",
   "tier_confidence": "high",
   "logo": "assets/logos/ewenny-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "glosters-pottery",
@@ -8300,7 +9727,10 @@
   "evidence_note": "Hand-thrown in Porthmadog workshop; clay body unevidenced — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/glosters-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "winchcombe-pottery",
@@ -8319,7 +9749,10 @@
   "evidence_note": "Founded 1926; hand-throws domestic stoneware using UK-blended clay bodies from Potclays.",
   "tier_confidence": "high",
   "logo": "assets/logos/winchcombe-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "grayshott-pottery",
@@ -8338,7 +9771,11 @@
   "evidence_note": "Est. 1956; hand-crafting stoneware tableware using UK-prepared clay from Potclays and Valentine Clays.",
   "tier_confidence": "high",
   "logo": "assets/logos/grayshott-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "pottery-west",
@@ -8357,7 +9794,11 @@
   "evidence_note": "Wheel-thrown in Sheffield studio using UK-prepared clay bodies from Valentine Clays in Stoke.",
   "tier_confidence": "high",
   "logo": "assets/logos/pottery-west.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tableware",
+   "pottery"
+  ]
  },
  {
   "id": "reiko-kaneko",
@@ -8376,7 +9817,10 @@
   "evidence_note": "Cast and fired in Stoke-on-Trent using Cornish bone china clay.",
   "tier_confidence": "high",
   "logo": "assets/logos/reiko-kaneko.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "maham-anjum",
@@ -8395,7 +9839,12 @@
   "evidence_note": "Hand-made in UK studios using terracotta and stoneware clay bodies from Potclays Stoke.",
   "tier_confidence": "high",
   "logo": "assets/logos/maham-anjum.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tableware",
+   "flowerpots",
+   "pottery"
+  ]
  },
  {
   "id": "dartington-pottery",
@@ -8414,7 +9863,10 @@
   "evidence_note": "Hand-thrown in Devon using Devon ball clay and Cornish china clay bodies.",
   "tier_confidence": "high",
   "logo": "assets/logos/dartington-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "cotswold-pottery",
@@ -8433,7 +9885,10 @@
   "evidence_note": "Thrown and fired in Bourton-on-the-Water studio; clay origin unevidenced — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/cotswold-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "isle-of-wight-pottery",
@@ -8452,7 +9907,10 @@
   "evidence_note": "Working pottery and teaching studio at Freshwater, Isle of Wight; clay-body origin not stated — Silver pending confirmation.",
   "tier_confidence": "medium",
   "logo": "assets/logos/isle-of-wight-pottery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "pottery"
+  ]
  },
  {
   "id": "ortak-jewellery",
@@ -8471,7 +9929,10 @@
   "evidence_note": "Handmade in Kirkwall workshop using 100% UK-refined silver and gold from Cooksongold.",
   "tier_confidence": "high",
   "logo": "assets/logos/ortak-jewellery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "alison-moore-designs",
@@ -8490,7 +9951,10 @@
   "evidence_note": "Hand-fabricated in Stromness studio using 100% recycled UK silver and gold from Betts Metals.",
   "tier_confidence": "high",
   "logo": "assets/logos/alison-moore-designs.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "paulin-watches",
@@ -8509,7 +9973,11 @@
   "evidence_note": "Designed and hand-assembled in Glasgow studio; movement imported — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/paulin-watches.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "marloe-watch-company",
@@ -8528,7 +9996,11 @@
   "evidence_note": "Designed and tested in Perthshire; movements imported — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/marloe-watch-company.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "mari-thomas-jewellery",
@@ -8547,7 +10019,10 @@
   "evidence_note": "Handmade in Llandeilo studio using UK-refined recycled precious metals and certified Welsh gold.",
   "tier_confidence": "high",
   "logo": "assets/logos/mari-thomas-jewellery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "janis-morgan-jewellery",
@@ -8566,7 +10041,11 @@
   "evidence_note": "Handcrafted in Anglesey studio using 100% recycled UK silver from Cooksongold.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery",
+   "silverware"
+  ]
  },
  {
   "id": "tregaron-goldsmiths",
@@ -8585,7 +10064,10 @@
   "evidence_note": "Casting and goldsmithing in Tregaron using pure Welsh gold and UK-refined precious metals.",
   "tier_confidence": "high",
   "logo": "assets/logos/tregaron-goldsmiths.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "robinson-jewellery-belfast",
@@ -8604,7 +10086,10 @@
   "evidence_note": "Handmade in Belfast workshop using UK-refined gold, platinum and hallmarked metals.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "justin-duance",
@@ -8623,7 +10108,10 @@
   "evidence_note": "100% handmade in St Agnes workshop using 100% recycled UK precious metals from Betts Metals.",
   "tier_confidence": "high",
   "logo": "assets/logos/justin-duance.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "erin-cox-jewellery",
@@ -8642,7 +10130,10 @@
   "evidence_note": "Handmade in Exeter workshop using Fairtrade UK-refined gold and recycled silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/erin-cox-jewellery.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "pruden-and-smith",
@@ -8661,7 +10152,11 @@
   "evidence_note": "Established 1988; handmade in Ditchling workshop using recycled UK gold and silver.",
   "tier_confidence": "high",
   "logo": "assets/logos/pruden-and-smith.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tableware",
+   "jewellery"
+  ]
  },
  {
   "id": "harriet-kelsall",
@@ -8680,7 +10175,10 @@
   "evidence_note": "Bespoke design and goldsmithing in Hitchin workshop using Fairtrade UK-refined precious metals.",
   "tier_confidence": "high",
   "logo": "assets/logos/harriet-kelsall.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "stephen-webster",
@@ -8699,7 +10197,10 @@
   "evidence_note": "Crafted in London workshop using 100% Fairmined and recycled UK-refined gold.",
   "tier_confidence": "high",
   "logo": "assets/logos/stephen-webster.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "hockley-mint",
@@ -8718,7 +10219,10 @@
   "evidence_note": "Cast and hallmarked in Birmingham Jewellery Quarter using 100% UK-refined gold and platinum.",
   "tier_confidence": "high",
   "logo": "assets/logos/hockley-mint.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "elliot-brown-watches",
@@ -8737,7 +10241,11 @@
   "evidence_note": "Designed, tested and assembled in Poole workshop; Swiss/Japanese movement — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/elliot-brown-watches.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "pinion-watches",
@@ -8756,7 +10264,11 @@
   "evidence_note": "Designed and hand-finished in Oxfordshire; movements imported — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/pinion-watches.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "loomes-and-co",
@@ -8775,7 +10287,11 @@
   "evidence_note": "Robins & Loomes standard: 100% British machined cases, dials and modified movements made in Stamford.",
   "tier_confidence": "high",
   "logo": "assets/logos/placeholder.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "farer-watches",
@@ -8794,7 +10310,11 @@
   "evidence_note": "Designed in Oxfordshire; Swiss movement & assembly — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/farer-watches.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "duckworth-prestex",
@@ -8813,7 +10333,11 @@
   "evidence_note": "Designed and tested in Bolton; movements imported — Silver default.",
   "tier_confidence": "high",
   "logo": "assets/logos/duckworth-prestex.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "watches",
+   "jewellery"
+  ]
  },
  {
   "id": "pobjoy-mint",
@@ -8832,7 +10356,10 @@
   "evidence_note": "Mints and strikes coins and precious metal jewellery in Surrey using UK-refined bullion.",
   "tier_confidence": "high",
   "logo": "assets/logos/pobjoy-mint.png",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "jewellery"
+  ]
  },
  {
   "id": "david-mellor",
@@ -8851,7 +10378,11 @@
   "description": "Famous Peak District & Sheffield cutlery design house and factory hand-crafting iconic British steel cutlery.",
   "evidence_note": "Own Round Building factory at Hathersage since 1990 — but the stainless strip origin is not published and no UK stainless strip mill remains, so British material is unproven.",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tableware",
+   "cutlery & knives"
+  ]
  },
  {
   "id": "samuel-staniforth",
@@ -8870,7 +10401,11 @@
   "description": "One of Sheffield's last remaining traditional manufacturers of 100% fully forged chef and butcher knives.",
   "evidence_note": "Genuine forging and finishing at Smithfield Works, Sheffield since 1864, but the only specific sourcing evidence points to French blade steel.",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "fresh meat",
+   "cutlery & knives"
+  ]
  },
  {
   "id": "netherton-foundry",
@@ -8889,7 +10424,10 @@
   "description": "Shropshire iron foundry crafting sustainable spun iron skillets, cast iron casseroles and copper pans.",
   "evidence_note": "Spun in-house on 1920s lathes in Shropshire with British oak handles, but the origin of the iron sheet itself is never stated.",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "cutlery & knives"
+  ]
  },
  {
   "id": "samuel-groves",
@@ -8908,7 +10446,10 @@
   "description": "Historic Birmingham cookware manufacturer (est. 1817) pressing and spinning copper, stainless steel and cast iron pans.",
   "evidence_note": "Manufactured at the Birmingham works since 1817, but the tri-ply clad sheet supplier is undisclosed and no UK clad-strip producer exists.",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "cutlery & knives"
+  ]
  },
  {
   "id": "savernake-knives",
@@ -8927,7 +10468,10 @@
   "description": "Wiltshire custom knifemakers blending aerospace precision with hand-finishing and British hardwood handles.",
   "evidence_note": "Hand-crafted at a converted sawmill near Marlborough with British timber handles; blade steel is Swedish Sandvik/RWL34 (only the small DNA range uses Stocksbridge British steel).",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "cutlery & knives"
+  ]
  },
  {
   "id": "inigo-jones-slate",
@@ -8946,7 +10490,12 @@
   "description": "Historic Welsh slate works (est. 1861) hand-crafting Welsh slate placemats, cheese boards and kitchenware.",
   "evidence_note": "Prefabricated on site at Tudor Slate Works, Y Groeslon since 1861 from natural Welsh slate quarried across North Wales.",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "tableware",
+   "dairy & cheese",
+   "cutlery & knives"
+  ]
  },
  {
   "id": "taylors-eye-witness",
@@ -8965,6 +10514,9 @@
   "description": "Historic Sheffield cutlery maker (est. 1838) hand-grinding and manufacturing kitchen knives and pocket knives.",
   "evidence_note": "Much output still Sheffield-made, but sources confirm significant offshore production of lower-value lines and there is no evidence of British steel.",
   "tier_confidence": "high",
-  "source": "unrecorded — verify before relying on"
+  "source": "unrecorded — verify before relying on",
+  "product_tags": [
+   "cutlery & knives"
+  ]
  }
 ]
