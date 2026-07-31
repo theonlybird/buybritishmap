@@ -109,7 +109,7 @@ ${catalogStr}`;
 
   const payload = JSON.stringify({
     contents: [{ parts: [{ text: systemInstruction }, { text: `User Search Query: "${query}"` }] }],
-    generationConfig: { temperature: 0.2, maxOutputTokens: 2000 }
+    generationConfig: { temperature: 0.2, maxOutputTokens: 8192 }
   });
 
   let lastStatus = 0, lastBody = '', triedModels = [];
@@ -139,6 +139,13 @@ ${catalogStr}`;
       const geminiData = JSON.parse(apiRes.body);
       const text =
         geminiData.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      if (!text) {
+        return res.status(502).json({
+          error: 'Gemini returned no text. This usually means the output token budget was exhausted (2.5 models spend tokens on internal reasoning) or the response was blocked.',
+          finishReason: geminiData.candidates?.[0]?.finishReason || null,
+          usage: geminiData.usageMetadata || null
+        });
+      }
       const clean = text.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
       const parsed = JSON.parse(clean);
       parsed._model = model;
