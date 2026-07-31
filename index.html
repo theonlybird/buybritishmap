@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Buy British — Map of UK Makers & Producers</title>
+<title>Buy British — Map & Directory of UK Makers</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -14,52 +14,72 @@
     --line:#e3e8ee; --bg:#f6f8fa;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink)}
+  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 
-  /* Top banner */
-  #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
-  #topbar .flag{position:absolute;left:0;top:0;bottom:0;width:230px;opacity:.16;pointer-events:none;
-    -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%);
-    mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%)}
+  /* Top Header */
+  #topbar{position:relative;height:70px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:1100}
+  #topbar .flag-container{display:flex;align-items:center;gap:12px;height:100%}
+  #topbar .flag{width:70px;height:42px;border-radius:6px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.15)}
   #topbar .flag svg{width:100%;height:100%;display:block}
-  .site-title{margin:0;font-size:24px;letter-spacing:1px;color:var(--navy);font-weight:800}
-  .site-title span{color:var(--red)}
-  .site-title a{color:inherit;text-decoration:none}
-  #burger{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid var(--line);border-radius:9px;background:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+
+  /* Centered Search Wrapper */
+  .search-wrapper{position:relative;flex:1;max-width:560px;margin:0 16px}
+  .search-input-box{position:relative;display:flex;align-items:center}
+  .search-input-box svg{position:absolute;left:14px;width:18px;height:18px;fill:none;stroke:var(--muted);stroke-width:2}
+  #search{width:100%;padding:11px 14px 11px 42px;border:1px solid var(--line);border-radius:10px;font-size:14px;outline:none;background:#fcfdfe;box-shadow:0 2px 8px rgba(0,0,0,0.04);transition:.2s}
+  #search:focus{border-color:var(--navy);background:#fff;box-shadow:0 3px 12px rgba(31,58,95,0.15)}
+
+  /* Autocomplete Dropdown */
+  #autocompleteDropdown{position:absolute;left:0;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,0.14);max-height:360px;overflow-y:auto;z-index:1500;display:none}
+  .ac-item{padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;align-items:center;gap:10px;transition:.12s}
+  .ac-item:last-child{border-bottom:none}
+  .ac-item:hover{background:var(--bg)}
+  .ac-logo{width:32px;height:32px;border-radius:6px;overflow:hidden;flex:0 0 32px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px}
+  .ac-logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .ac-meta{min-width:0;flex:1}
+  .ac-name{font-size:13.5px;font-weight:600;line-height:1.2}
+  .ac-sub{font-size:11.5px;color:var(--muted);margin-top:2px}
+
+  /* Header Right Actions */
+  .header-actions{display:flex;align-items:center;gap:10px}
+  .btn-view-toggle{background:var(--navy);color:#fff;border:none;padding:9px 14px;border-radius:9px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:.15s}
+  .btn-view-toggle:hover{filter:brightness(1.1)}
+
+  #burger{width:42px;height:42px;border:1px solid var(--line);border-radius:9px;background:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
   #burger:hover{border-color:var(--navy)}
   #burger .bar{width:20px;height:2px;background:var(--navy);border-radius:2px}
-  #menu{position:absolute;right:10px;top:60px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 8px 24px rgba(0,0,0,.13);min-width:210px;padding:6px;z-index:1200}
+  #menu{position:absolute;right:16px;top:66px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 8px 24px rgba(0,0,0,.13);min-width:210px;padding:6px;z-index:1200}
   #menu a{display:block;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
   #menu a:hover{background:var(--bg);color:var(--navy)}
   #menu a.cta{background:var(--red);color:#fff;margin-top:4px;text-align:center}
-  #menu a.cta:hover{filter:brightness(1.08)}
 
-  #app{display:flex;height:calc(100vh - 64px);overflow:hidden}
+  /* App Layout */
+  #app{height:calc(100vh - 70px);position:relative;overflow:hidden}
 
-  /* Sidebar */
-  #sidebar{width:340px;min-width:340px;height:100%;display:flex;flex-direction:column;background:#fff;border-right:1px solid var(--line);z-index:1000}
-  .controls{padding:12px 14px;border-bottom:1px solid var(--line)}
-  #search{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
-  #search:focus{border-color:var(--navy)}
-  .filter-group{margin-top:12px}
+  /* Split View (Sidebar + Map) */
+  #splitView{display:flex;width:100%;height:100%}
+  #sidebar{width:360px;min-width:360px;height:100%;display:flex;flex-direction:column;background:#fff;border-right:1px solid var(--line);z-index:1000}
+  .controls{padding:14px;border-bottom:1px solid var(--line)}
+  .filter-group{margin-top:10px}
+  .filter-group:first-child{margin-top:0}
   .filter-group .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:6px}
   .chips{display:flex;flex-wrap:wrap;gap:6px}
-  .chip{cursor:pointer;user-select:none;border:1px solid var(--line);background:#fff;padding:5px 10px;border-radius:999px;font-size:12.5px;display:inline-flex;align-items:center;gap:6px;transition:.15s}
-  .chip .dot{width:9px;height:9px;border-radius:50%}
+  .chip{cursor:pointer;user-select:none;border:1px solid var(--line);background:#fff;padding:5px 10px;border-radius:999px;font-size:12px;display:inline-flex;align-items:center;gap:6px;transition:.15s}
+  .chip .dot{width:8px;height:8px;border-radius:50%}
   .chip.active{border-color:var(--navy);background:var(--navy);color:#fff}
   .chip.active.tier-gold{background:var(--gold);border-color:var(--gold);color:#3a2e0a}
   .chip.active.tier-silver{background:var(--silver);border-color:var(--silver);color:#1d2733}
-  .countrow{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 16px;border-bottom:1px solid var(--line)}
+  .countrow{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 16px;border-bottom:1px solid var(--line);background:#fafbfc}
   .count{font-size:12px;color:var(--muted)}
   .count b{color:var(--ink)}
-  #sortBtn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:4px 9px;font-size:11.5px;font-weight:600;color:var(--navy);cursor:pointer;white-space:nowrap}
-  #sortBtn:hover{border-color:var(--navy)}
+  #sortBtn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:4px 9px;font-size:11.5px;font-weight:600;color:var(--navy);cursor:pointer}
+
   #list{flex:1;overflow-y:auto}
-  .item{padding:11px 16px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;gap:11px;align-items:flex-start}
+  .item{padding:12px 16px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;gap:11px;align-items:flex-start}
   .item:hover{background:var(--bg)}
-  .logo{width:38px;height:38px;border-radius:8px;flex:0 0 38px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;overflow:hidden;background:var(--navy)}
+  .logo{width:40px;height:40px;border-radius:8px;flex:0 0 40px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;overflow:hidden;background:var(--navy)}
   .logo img{width:100%;height:100%;object-fit:contain;background:#fff}
-  .item .meta{min-width:0}
+  .item .meta{min-width:0;flex:1}
   .item .nm{font-size:14px;font-weight:600;line-height:1.2}
   .item .sub{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:4px;margin-top:5px}
@@ -69,49 +89,103 @@
   .tag.cat.clothing{background:#e4edf5;color:#234e74}
   .tag.cat.ceramics{background:#f5e9e1;color:#8a4a24}
   .tag.cat.jewellery{background:#efe7f5;color:#5a3d73}
-  .tag.cat.cutlery{background:#e5e7eb;color:#1f2937}  /* AI Search Styles */
-  .search-row{display:flex;gap:6px;align-items:center}
-  #search{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;outline:none}
-  #search:focus{border-color:var(--navy)}
-  .btn-ai{background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 50%,#d946ef 100%);color:#fff;border:none;padding:9px 12px;border-radius:8px;font-size:12.5px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;box-shadow:0 2px 6px rgba(99,102,241,0.25);transition:.15s}
-  .btn-ai:hover{filter:brightness(1.1);transform:translateY(-1px)}
-  .btn-key{background:none;border:1px solid var(--line);padding:7px;border-radius:8px;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;justify-content:center}
-  .btn-key:hover{border-color:var(--navy);color:var(--navy)}
+  .tag.cat.cutlery{background:#e5e7eb;color:#1f2937}
 
-  .ai-card{margin:12px 14px 4px;padding:12px 14px;border-radius:10px;background:linear-gradient(135deg,#f5f3ff 0%,#fdf4ff 100%);border:1px solid #ddd6fe;position:relative}
-  .ai-card .ai-title{font-size:12px;font-weight:700;color:#6d28d9;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;justify-content:space-between}
-  .ai-card .ai-reason{font-size:12.5px;color:#4c1d95;margin-top:6px;line-height:1.4}
-  .ai-card .ai-clear{cursor:pointer;color:#7c3aed;font-weight:600;font-size:11.5px;text-decoration:underline}
+  #map{flex:1;height:100%}
+  .legend{background:#fff;padding:10px 12px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:12px;line-height:1.7}
+  .legend .row{display:flex;align-items:center;gap:7px}
+  .legend .sw{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #ccc}
 
-  .item .ai-match-reason{font-size:11.5px;color:#6d28d9;background:#f3e8ff;padding:4px 8px;border-radius:5px;margin-top:6px;line-height:1.35}
+  .pin{width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35);position:relative}
+  .pin::after{content:"";position:absolute;inset:5px;background:#fff;border-radius:50%}
+  .pin.tier-gold::after{background:var(--gold)}
+  .pin.tier-silver::after{background:#fff}
 
-  /* Modal */
-  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:2000;display:flex;align-items:center;justify-content:center;padding:16px}
-  .modal-box{background:#fff;border-radius:12px;padding:22px;width:100%;max-width:440px;box-shadow:0 12px 32px rgba(0,0,0,.2)}
-  .modal-box h3{margin:0 0 8px;font-size:18px;color:var(--navy)}
-  .modal-box p{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.45}
-  .modal-box input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;margin-bottom:14px}
-  .modal-box .actions{display:flex;gap:8px;justify-content:flex-end}
-  .modal-box button{padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:none}
-  .modal-box .btn-cancel{background:var(--bg);color:var(--ink)}
-  .modal-box .btn-save{background:var(--navy);color:#fff}
+  .leaflet-popup-content{margin:0;width:262px!important}
+  .pop{font-family:inherit}
+  .pop .head{display:flex;gap:11px;padding:13px 14px 10px;align-items:center}
+  .pop .plogo{width:46px;height:46px;border-radius:9px;flex:0 0 46px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;background:var(--navy);overflow:hidden}
+  .pop .plogo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .pop h3{margin:0;font-size:15.5px}
+  .pop .pmeta{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .pop .badges{padding:0 14px 8px}
+  .pop .desc{padding:2px 14px 10px;font-size:12.5px;line-height:1.45;color:#39434e}
+  .pop .addr{color:var(--muted);font-size:11.5px;padding:0 14px 12px;display:flex;gap:6px}
+  .pop .links{display:flex;gap:8px;padding:0 14px 13px}
+  .pop .links a{flex:1;text-align:center;padding:7px;border-radius:7px;font-size:12px;font-weight:600;text-decoration:none}
+  .pop .links a.web{background:var(--navy);color:#fff}
+  .pop .links a.ig{background:#f0f2f5;color:var(--ink)}
+
+  /* Full Page Grid View */
+  #gridView{position:absolute;inset:0;background:var(--bg);overflow-y:auto;z-index:900;display:none;padding:24px}
+  .grid-header{max-width:1240px;margin:0 auto 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .grid-header .ai-banner{background:linear-gradient(135deg,#f5f3ff 0%,#fdf4ff 100%);border:1px solid #ddd6fe;padding:12px 16px;border-radius:10px;color:#4c1d95;font-size:13.5px;line-height:1.45;flex:1;min-width:280px}
+  .grid-header .ai-banner b{color:#6d28d9}
+
+  .grid-container{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+  .grid-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.03);display:flex;flex-direction:column;justify-content:space-between;transition:.2s}
+  .grid-card:hover{box-shadow:0 8px 24px rgba(0,0,0,0.08);transform:translateY(-2px);border-color:#cbd5e1}
+  .grid-card .g-head{display:flex;gap:12px;align-items:flex-start}
+  .grid-card .g-logo{width:48px;height:48px;border-radius:10px;flex:0 0 48px;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;background:var(--navy)}
+  .grid-card .g-logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .grid-card .g-title{font-size:16px;font-weight:700;line-height:1.2}
+  .grid-card .g-sub{font-size:12.5px;color:var(--muted);margin-top:3px}
+  .grid-card .g-badges{margin-top:10px}
+  .grid-card .g-ai-reason{font-size:12px;color:#6d28d9;background:#f3e8ff;padding:6px 10px;border-radius:7px;margin-top:10px;line-height:1.35;font-weight:500}
+  .grid-card .g-desc{font-size:13px;line-height:1.45;color:#39434e;margin:12px 0}
+  .grid-card .g-addr{font-size:12px;color:var(--muted);margin-bottom:14px}
+  .grid-card .g-links{display:flex;gap:8px;margin-top:auto}
+  .grid-card .g-links a{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:12.5px;font-weight:600;text-decoration:none}
+  .grid-card .g-links a.web{background:var(--navy);color:#fff}
+  .grid-card .g-links a.ig{background:#f0f2f5;color:var(--ink)}
+  .grid-card .g-links a.map-link{background:#f1f5f9;color:var(--navy)}
+
+  /* Loader */
+  .loader-overlay{position:fixed;inset:0;background:rgba(255,255,255,0.85);z-index:3000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+  .spinner{width:40px;height:40px;border:4px solid #e2e8f0;border-top-color:#6366f1;border-radius:50%;animation:spin 0.8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .loader-text{font-size:15px;font-weight:600;color:#4c1d95}
+
+  @media (max-width:760px){
+    #topbar{padding:0 10px}
+    .search-wrapper{margin:0 8px;max-width:none}
+    #splitView{flex-direction:column}
+    #sidebar{width:100%;min-width:0;height:46%}
+    #map{height:54%}
+    #gridView{padding:14px}
+  }
 </style>
 </head>
 <body>
 <header id="topbar">
-  <div class="flag" aria-hidden="true">
-    <svg viewBox="0 0 60 36" preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <rect width="60" height="36" fill="#012169"/>
-      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#fff" stroke-width="7"/>
-      <path d="M0,0 L60,36 M60,0 L0,36" stroke="#C8102E" stroke-width="3"/>
-      <path d="M30,0 V36 M0,18 H60" stroke="#fff" stroke-width="12"/>
-      <path d="M30,0 V36 M0,18 H60" stroke="#C8102E" stroke-width="7"/>
-    </svg>
+  <div class="flag-container">
+    <div class="flag" aria-hidden="true">
+      <svg viewBox="0 0 60 36" preserveAspectRatio="xMinYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <rect width="60" height="36" fill="#012169"/>
+        <path d="M0,0 L60,36 M60,0 L0,36" stroke="#fff" stroke-width="7"/>
+        <path d="M0,0 L60,36 M60,0 L0,36" stroke="#C8102E" stroke-width="3"/>
+        <path d="M30,0 V36 M0,18 H60" stroke="#fff" stroke-width="12"/>
+        <path d="M30,0 V36 M0,18 H60" stroke="#C8102E" stroke-width="7"/>
+      </svg>
+    </div>
   </div>
-  <h1 class="site-title"><a href="index.html">BUY <span>BRITISH</span></a></h1>
-  <button id="burger" aria-label="Menu" aria-expanded="false">
-    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-  </button>
+
+  <!-- Centered Search Bar -->
+  <div class="search-wrapper">
+    <div class="search-input-box">
+      <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+      <input id="search" type="text" placeholder="Search makers, towns, or ask AI (e.g. 'woolen jumper from Scotland')..." autocomplete="off" />
+    </div>
+    <div id="autocompleteDropdown"></div>
+  </div>
+
+  <div class="header-actions">
+    <button id="viewToggleBtn" class="btn-view-toggle">🗺️ Show on Map</button>
+    <button id="burger" aria-label="Menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+
   <nav id="menu" hidden>
     <a href="about.html">About</a>
     <a href="faqs.html">FAQs</a>
@@ -119,61 +193,54 @@
     <a class="cta" href="submit.html">+ Suggest a Business</a>
   </nav>
 </header>
-<div id="app">
-  <aside id="sidebar">
-    <div class="controls">
-      <div class="search-row">
-        <input id="search" type="text" placeholder="Search by name, town or type…" autocomplete="off" />
-        <button id="aiBtn" class="btn-ai" title="Search using Gemini AI natural language understanding">✨ Ask AI</button>
-        <button id="keyBtn" class="btn-key" title="Set Gemini API Key for local testing">⚙️</button>
-      </div>
-      <div class="filter-group">
-        <div class="lbl">Category</div>
-        <div class="chips" id="catChips">
-          <span class="chip active" data-cat="farm"><span class="dot" style="background:var(--farm)"></span>Farm shops</span>
-          <span class="chip active" data-cat="clothing"><span class="dot" style="background:var(--clothing)"></span>Clothing</span>
-          <span class="chip active" data-cat="ceramics"><span class="dot" style="background:var(--ceramics)"></span>Ceramics</span>
-          <span class="chip active" data-cat="jewellery"><span class="dot" style="background:var(--jewellery)"></span>Jewellery &amp; Watches</span>
-          <span class="chip active" data-cat="cutlery"><span class="dot" style="background:var(--cutlery)"></span>Cutlery &amp; Cookware</span>
-        </div>
-      </div>
-      <div class="filter-group">
-        <div class="lbl">Standard</div>
-        <div class="chips" id="tierChips">
-          <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
-          <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
-        </div>
-      </div>
-    </div>
-    <div id="aiCard" class="ai-card" style="display:none">
-      <div class="ai-title">
-        <span>✨ AI Matches</span>
-        <span class="ai-clear" id="aiClearBtn">Clear AI Search</span>
-      </div>
-      <div class="ai-reason" id="aiReasonText"></div>
-    </div>
-    <div class="countrow">
-      <div class="count" id="count"></div>
-      <button id="sortBtn" title="Sort alphabetically">A–Z ↓</button>
-    </div>
-    <div id="list"></div>
-  </aside>
-  <div id="map"></div>
-</div>
 
-<!-- API Key Modal -->
-<div id="keyModal" class="modal-overlay" style="display:none">
-  <div class="modal-box">
-    <h3>⚙️ Gemini API Key Settings</h3>
-    <p>Enter your Gemini API key from <a href="https://aistudio.google.com/" target="_blank" rel="noopener">Google AI Studio</a> for live local testing. When deployed to Vercel, serverless environment variables take over automatically.</p>
-    <input id="keyInput" type="password" placeholder="AIzaSy..." autocomplete="off" />
-    <div class="actions">
-      <button class="btn-cancel" id="keyCancelBtn">Cancel</button>
-      <button class="btn-save" id="keySaveBtn">Save Key</button>
+<div id="app">
+  <!-- Split View (Sidebar + Leaflet Map) -->
+  <div id="splitView">
+    <aside id="sidebar">
+      <div class="controls">
+        <div class="filter-group">
+          <div class="lbl">Category</div>
+          <div class="chips" id="catChips">
+            <span class="chip active" data-cat="farm"><span class="dot" style="background:var(--farm)"></span>Farm shops</span>
+            <span class="chip active" data-cat="clothing"><span class="dot" style="background:var(--clothing)"></span>Clothing</span>
+            <span class="chip active" data-cat="ceramics"><span class="dot" style="background:var(--ceramics)"></span>Ceramics</span>
+            <span class="chip active" data-cat="jewellery"><span class="dot" style="background:var(--jewellery)"></span>Jewellery &amp; Watches</span>
+            <span class="chip active" data-cat="cutlery"><span class="dot" style="background:var(--cutlery)"></span>Cutlery &amp; Cookware</span>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="lbl">Standard</div>
+          <div class="chips" id="tierChips">
+            <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
+            <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
+          </div>
+        </div>
+      </div>
+      <div class="countrow">
+        <div class="count" id="count"></div>
+        <button id="sortBtn" title="Sort alphabetically">A–Z ↓</button>
+      </div>
+      <div id="list"></div>
+    </aside>
+    <div id="map"></div>
+  </div>
+
+  <!-- Full Page Grid Results View -->
+  <div id="gridView">
+    <div class="grid-header">
+      <div class="ai-banner" id="gridAiBanner">
+        ✨ <b>Gemini AI Search Results</b>
+      </div>
     </div>
+    <div class="grid-container" id="gridCards"></div>
   </div>
 </div>
->
+
+<!-- Loading Overlay -->
+<div id="loader" class="loader-overlay" style="display:none">
+  <div class="spinner"></div>
+  <div class="loader-text">✨ Gemini AI is finding the best UK makers...</div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -192,46 +259,47 @@ document.addEventListener('click', e => {
 });
 
 let BUSINESSES = [];
-const CAT = { farm:{label:'Farm shop', color:getCss('--farm')}, clothing:{label:'Clothing', color:getCss('--clothing')}, ceramics:{label:'Ceramics', color:getCss('--ceramics')}, jewellery:{label:'Jewellery & Watches', color:getCss('--jewellery')}, cutlery:{label:'Cutlery & Cookware', color:getCss('--cutlery')} };
-function getCss(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
-function domain(url){try{return new URL(url).hostname.replace(/^www\./,'');}catch(e){return '';}}
-function initials(name){return name.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(0,2).map(s=>s[0]).join('').toUpperCase();}
+const CAT = {
+  farm: { label: 'Farm shop', color: getCss('--farm') },
+  clothing: { label: 'Clothing', color: getCss('--clothing') },
+  ceramics: { label: 'Ceramics', color: getCss('--ceramics') },
+  jewellery: { label: 'Jewellery & Watches', color: getCss('--jewellery') },
+  cutlery: { label: 'Cutlery & Cookware', color: getCss('--cutlery') }
+};
+function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+function domain(url){ try{ return new URL(url).hostname.replace(/^www\./,''); }catch(e){ return ''; } }
+function initials(name){ return name.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(0,2).map(s=>s[0]).join('').toUpperCase(); }
 function logoHtml(b, cls){
   const d = domain(b.website);
   const bg = CAT[b.category].color;
-  // Cascade: local override (assets/logos/{id}.png) -> Google favicon service -> initials tile
   const initialsFallback = `this.onerror=null;this.parentNode.style.background='${bg}';this.replaceWith(document.createTextNode('${initials(b.name)}'))`;
   const tryFavicon = `this.onerror=function(){${initialsFallback}};this.src='https://www.google.com/s2/favicons?domain=${d}&amp;sz=128'`;
   return `<div class="${cls}" style="background:${bg}"><img src="assets/logos/${b.id}.png" alt="" onerror="${tryFavicon}"></div>`;
 }
 
-// --- Map (locked to the UK, framed by ocean/edge of Europe) ---
-const UK_BOUNDS  = L.latLngBounds([49.7, -8.8], [61.1, 2.1]);   // SW: Scilly/Channel, NE: Shetland
-const MAX_BOUNDS = L.latLngBounds([46.5, -16.0], [63.5, 10.5]); // breathing room: ocean + edge of Europe
+// --- Map Setup ---
+const UK_BOUNDS  = L.latLngBounds([49.7, -8.8], [61.1, 2.1]);
+const MAX_BOUNDS = L.latLngBounds([46.5, -16.0], [63.5, 10.5]);
 const map = L.map('map', {
   zoomControl:true,
-  zoomSnap: 0.25,             // finer zoom steps so the min-zoom limit sits snugly
+  zoomSnap: 0.25,
   maxBounds: MAX_BOUNDS,
-  maxBoundsViscosity: 0.8,    // soft wall — drag past the edge springs gently back
-  bounceAtZoomLimits: true    // pinch/zoom past the limit bounces back
+  maxBoundsViscosity: 0.8,
+  bounceAtZoomLimits: true
 });
 map.fitBounds(UK_BOUNDS);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
   attribution:'&copy; OpenStreetMap, &copy; CARTO', maxZoom:19, noWrap:true
 }).addTo(map);
 
-// Never let the viewport outgrow the tiled area: the lowest allowed zoom is
-// the one where MAX_BOUNDS still covers the whole screen — so no grey, ever.
-function clampMinZoom(){
-  map.setMinZoom(map.getBoundsZoom(MAX_BOUNDS, true));
-}
+function clampMinZoom(){ map.setMinZoom(map.getBoundsZoom(MAX_BOUNDS, true)); }
 map.whenReady(clampMinZoom);
 map.on('resize', clampMinZoom);
 
 const cluster = L.markerClusterGroup({maxClusterRadius:45, showCoverageOnHover:false});
 map.addLayer(cluster);
 
-// legend
+// Legend
 const legend = L.control({position:'bottomright'});
 legend.onAdd = function(){
   const d = L.DomUtil.create('div','legend');
@@ -247,7 +315,7 @@ legend.onAdd = function(){
 };
 legend.addTo(map);
 
-// build markers
+// Build markers
 const markers = {};
 function buildMarkers(){
   BUSINESSES.forEach(b=>{
@@ -281,25 +349,61 @@ function popupHtml(b){
   </div>`;
 }
 
-// --- Filters + list ---
-const state = { q:'', cats:new Set(['farm','clothing','ceramics','jewellery','cutlery']), tiers:new Set(['gold','silver']), sortAsc:true, aiActive:false, aiReasoning:'', aiMatches:new Map() };
+// --- State & View Control ---
+const state = {
+  q: '',
+  cats: new Set(['farm','clothing','ceramics','jewellery','cutlery']),
+  tiers: new Set(['gold','silver']),
+  sortAsc: true,
+  currentView: 'map', // 'map' or 'grid'
+  aiActive: false,
+  aiReasoning: '',
+  aiMatches: new Map() // id -> 1-sentence rationale
+};
+
+const splitView = document.getElementById('splitView');
+const gridView = document.getElementById('gridView');
+const viewToggleBtn = document.getElementById('viewToggleBtn');
 const listEl = document.getElementById('list');
 const countEl = document.getElementById('count');
-const aiCardEl = document.getElementById('aiCard');
-const aiReasonTextEl = document.getElementById('aiReasonText');
-const aiClearBtn = document.getElementById('aiClearBtn');
+const gridAiBanner = document.getElementById('gridAiBanner');
+const gridCards = document.getElementById('gridCards');
+const loader = document.getElementById('loader');
+const searchInput = document.getElementById('search');
+const autocompleteDropdown = document.getElementById('autocompleteDropdown');
+
+viewToggleBtn.addEventListener('click', () => {
+  toggleView(state.currentView === 'map' ? 'grid' : 'map');
+});
+
+function toggleView(view) {
+  state.currentView = view;
+  if (view === 'grid') {
+    splitView.style.display = 'none';
+    gridView.style.display = 'block';
+    viewToggleBtn.textContent = '🗺️ Show on Map';
+    renderGrid();
+  } else {
+    gridView.style.display = 'none';
+    splitView.style.display = 'flex';
+    viewToggleBtn.textContent = '☰ Grid View';
+    map.invalidateSize();
+    renderMapList();
+  }
+}
 
 function visible(){
   if (state.aiActive) {
     return BUSINESSES.filter(b => state.aiMatches.has(b.id));
   }
   const q = state.q.toLowerCase();
-  return BUSINESSES.filter(b=>
+  return BUSINESSES.filter(b =>
     state.cats.has(b.category) && state.tiers.has(b.tier) &&
     (q==='' || (b.name+' '+b.town+' '+(b.subcategory||'')+' '+b.category+' '+(b.description||'')).toLowerCase().includes(q))
   );
 }
-function render(){
+
+function renderMapList(){
   const vis = visible();
   if (!state.aiActive) {
     vis.sort((a,b)=> state.sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
@@ -307,7 +411,7 @@ function render(){
   cluster.clearLayers();
   vis.forEach(b=>cluster.addLayer(markers[b.id]));
   countEl.innerHTML = state.aiActive ? `Found <b>${vis.length}</b> AI matching makers` : `Showing <b>${vis.length}</b> of ${BUSINESSES.length} businesses`;
-  
+
   if (state.aiActive && vis.length > 0) {
     const coords = vis.map(b => [b.lat, b.lng]);
     if (coords.length > 1) {
@@ -317,7 +421,7 @@ function render(){
     }
   }
 
-  listEl.innerHTML = vis.map(b=>{
+  listEl.innerHTML = vis.map(b => {
     const reasonText = state.aiActive && state.aiMatches.has(b.id) ? `<div class="ai-match-reason">✨ ${state.aiMatches.get(b.id)}</div>` : '';
     return `<div class="item" data-id="${b.id}">
       ${logoHtml(b,'logo')}
@@ -329,103 +433,150 @@ function render(){
         ${reasonText}
       </div>
     </div>`;
-  }).join('') || '<div style="padding:24px 16px;color:var(--muted);font-size:13px">No matches found. Try asking another question!</div>';
-  
+  }).join('') || '<div style="padding:24px 16px;color:var(--muted);font-size:13px">No matches found.</div>';
+
   listEl.querySelectorAll('.item').forEach(el=>{
     el.addEventListener('click',()=>focus(el.dataset.id));
   });
 }
+
+function renderGrid(){
+  const vis = visible();
+  if (state.aiActive) {
+    gridAiBanner.innerHTML = `✨ <b>Gemini AI Summary</b>: ${state.aiReasoning}`;
+  } else {
+    gridAiBanner.innerHTML = `Showing <b>${vis.length}</b> British makers & producers`;
+  }
+
+  gridCards.innerHTML = vis.map(b => {
+    const aiReason = state.aiActive && state.aiMatches.has(b.id) ? `<div class="g-ai-reason">✨ ${state.aiMatches.get(b.id)}</div>` : '';
+    const igRow = b.instagram ? `<a class="ig" href="${b.instagram}" target="_blank" rel="noopener">Instagram</a>` : '';
+
+    return `<div class="grid-card">
+      <div>
+        <div class="g-head">
+          ${logoHtml(b, 'g-logo')}
+          <div>
+            <div class="g-title">${b.name}</div>
+            <div class="g-sub">${b.town}</div>
+          </div>
+        </div>
+        <div class="g-badges">
+          <span class="tag ${b.tier}">${b.tier} standard</span>
+          <span class="tag cat ${b.category}">${CAT[b.category].label}</span>
+        </div>
+        ${aiReason}
+        <div class="g-desc">${b.description}</div>
+      </div>
+      <div>
+        <div class="g-addr">📍 ${b.address}</div>
+        <div class="g-links">
+          <a class="web" href="${b.website}" target="_blank" rel="noopener">Website</a>
+          ${igRow}
+          <a class="map-link" href="#" onclick="selectBusinessOnMap('${b.id}'); return false;">Map Pin</a>
+        </div>
+      </div>
+    </div>`;
+  }).join('') || '<div style="padding:40px;color:var(--muted);font-size:15px;grid-column:1/-1;text-align:center">No businesses found matching your request.</div>';
+}
+
 function focus(id){
   const b = BUSINESSES.find(x=>x.id===id); if(!b) return;
+  toggleView('map');
   map.flyTo([b.lat,b.lng], 11, {duration:.6});
   const m = markers[id];
   setTimeout(()=>{ if(cluster.hasLayer(m)){ cluster.zoomToShowLayer(m,()=>m.openPopup()); } }, 650);
 }
 
-document.getElementById('search').addEventListener('input',e=>{
-  if (state.aiActive) clearAiSearch();
-  state.q=e.target.value; render();
-});
-document.getElementById('search').addEventListener('keydown',e=>{
-  if (e.key === 'Enter' && e.target.value.length > 3 && !state.aiActive) {
-    executeAiSearch(e.target.value);
-  }
-});
-
-document.getElementById('sortBtn').addEventListener('click',()=>{
-  state.sortAsc = !state.sortAsc;
-  document.getElementById('sortBtn').textContent = state.sortAsc ? 'A–Z ↓' : 'Z–A ↑';
-  render();
-});
-
-// Chip behaviour
-const ALL_CATS = ['farm','clothing','ceramics','jewellery','cutlery'];
-const ALL_TIERS = ['gold','silver'];
-function chipClick(set, all, key){
-  if (state.aiActive) clearAiSearch();
-  if (set.size === all.length) { set.clear(); set.add(key); }
-  else if (set.has(key)) { set.delete(key); if (set.size === 0) all.forEach(k => set.add(k)); }
-  else { set.add(key); }
+function selectBusinessOnMap(id) {
+  focus(id);
 }
-function syncChips(){
-  document.querySelectorAll('#catChips .chip').forEach(c => c.classList.toggle('active', state.cats.has(c.dataset.cat)));
-  document.querySelectorAll('#tierChips .chip').forEach(c => c.classList.toggle('active', state.tiers.has(c.dataset.tier)));
-}
-document.querySelectorAll('#catChips .chip').forEach(c => c.addEventListener('click', () => {
-  chipClick(state.cats, ALL_CATS, c.dataset.cat); syncChips(); render();
-}));
-document.querySelectorAll('#tierChips .chip').forEach(c => c.addEventListener('click', () => {
-  chipClick(state.tiers, ALL_TIERS, c.dataset.tier); syncChips(); render();
-}));
 
-// --- AI Search Logic ---
-const aiBtn = document.getElementById('aiBtn');
-const keyBtn = document.getElementById('keyBtn');
-const keyModal = document.getElementById('keyModal');
-const keyInput = document.getElementById('keyInput');
-const keySaveBtn = document.getElementById('keySaveBtn');
-const keyCancelBtn = document.getElementById('keyCancelBtn');
-
-function getStoredKey() { return localStorage.getItem('GEMINI_API_KEY') || ''; }
-
-keyBtn.addEventListener('click', () => {
-  keyInput.value = getStoredKey();
-  keyModal.style.display = 'flex';
-});
-keyCancelBtn.addEventListener('click', () => keyModal.style.display = 'none');
-keySaveBtn.addEventListener('click', () => {
-  localStorage.setItem('GEMINI_API_KEY', keyInput.value.trim());
-  keyModal.style.display = 'none';
-  alert('Gemini API Key saved for local testing!');
-});
-
-aiBtn.addEventListener('click', () => {
-  const query = document.getElementById('search').value.trim();
-  if (!query) {
-    alert('Please type what you are looking for in the search bar (e.g. "kitchen knife in Yorkshire" or "woolen jumper from Scotland").');
-    document.getElementById('search').focus();
+// --- Autocomplete & Hybrid Search Engine ---
+searchInput.addEventListener('input', e => {
+  const val = e.target.value.trim().toLowerCase();
+  if (val.length < 2) {
+    autocompleteDropdown.style.display = 'none';
+    if (state.aiActive) clearAiSearch();
+    state.q = val;
+    renderMapList();
+    if (state.currentView === 'grid') renderGrid();
     return;
   }
-  executeAiSearch(query);
+
+  // Find exact keyword matches for autocomplete dropdown
+  const directMatches = BUSINESSES.filter(b =>
+    b.name.toLowerCase().includes(val) ||
+    b.town.toLowerCase().includes(val) ||
+    (b.subcategory && b.subcategory.toLowerCase().includes(val))
+  ).slice(0, 6);
+
+  if (directMatches.length > 0) {
+    autocompleteDropdown.innerHTML = directMatches.map(b => `
+      <div class="ac-item" data-id="${b.id}">
+        ${logoHtml(b, 'ac-logo')}
+        <div class="ac-meta">
+          <div class="ac-name">${b.name}</div>
+          <div class="ac-sub">${b.town} · ${CAT[b.category].label}</div>
+        </div>
+      </div>`).join('');
+    autocompleteDropdown.style.display = 'block';
+
+    autocompleteDropdown.querySelectorAll('.ac-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const id = item.dataset.id;
+        const b = BUSINESSES.find(x => x.id === id);
+        if (b) {
+          searchInput.value = b.name;
+          autocompleteDropdown.style.display = 'none';
+          focus(id);
+        }
+      });
+    });
+  } else {
+    autocompleteDropdown.style.display = 'none';
+  }
 });
 
-aiClearBtn.addEventListener('click', clearAiSearch);
+document.addEventListener('click', e => {
+  if (!autocompleteDropdown.contains(e.target) && e.target !== searchInput) {
+    autocompleteDropdown.style.display = 'none';
+  }
+});
+
+searchInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    const val = searchInput.value.trim();
+    autocompleteDropdown.style.display = 'none';
+
+    // Check if query matches an exact business name directly
+    const exactMatch = BUSINESSES.find(b => b.name.toLowerCase() === val.toLowerCase());
+    if (exactMatch) {
+      focus(exactMatch.id);
+      return;
+    }
+
+    // Otherwise, trigger Gemini AI Natural Language Search & Grid View
+    if (val.length > 2) {
+      executeAiSearch(val);
+    }
+  }
+});
 
 function clearAiSearch() {
   state.aiActive = false;
   state.aiReasoning = '';
   state.aiMatches.clear();
-  aiCardEl.style.display = 'none';
-  render();
+  renderMapList();
+  if (state.currentView === 'grid') renderGrid();
 }
 
 async function executeAiSearch(query) {
-  aiBtn.disabled = true;
-  aiBtn.innerHTML = '✨ Thinking...';
-  
+  loader.style.display = 'flex';
+
   try {
     let result = null;
-    // 1. Try Vercel Serverless Function /api/ai-search first
+    // 1. Primary: Serverless API endpoint /api/ai-search
     try {
       const res = await fetch('/api/ai-search', {
         method: 'POST',
@@ -437,13 +588,11 @@ async function executeAiSearch(query) {
       }
     } catch (e) {}
 
-    // 2. Fallback to client-side direct Gemini API call if local API key is provided
+    // 2. Fallback: Direct Gemini API call if local key stored
     if (!result) {
-      const storedKey = getStoredKey();
+      const storedKey = localStorage.getItem('GEMINI_API_KEY') || '';
       if (!storedKey) {
-        keyInput.value = '';
-        keyModal.style.display = 'flex';
-        throw new Error('Please enter your Gemini API Key for local testing, or set GEMINI_API_KEY in Vercel environment variables.');
+        throw new Error('Could not connect to /api/ai-search and no GEMINI_API_KEY found in localStorage.');
       }
 
       const compact = BUSINESSES.map(b => ({
@@ -484,17 +633,15 @@ ${catalogStr}`;
         body: JSON.stringify(payload)
       });
 
-      if (!geminiRes.ok) {
-        throw new Error(`Gemini API call failed with status ${geminiRes.status}`);
+      if (geminiRes.ok) {
+        const gData = await geminiRes.json();
+        const rawText = gData.candidates[0].content.parts[0].text;
+        const cleanJson = rawText.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
+        result = JSON.parse(cleanJson);
       }
-
-      const gData = await geminiRes.json();
-      const rawText = gData.candidates[0].content.parts[0].text;
-      const cleanJson = rawText.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
-      result = JSON.parse(cleanJson);
     }
 
-    if (result && result.matches) {
+    if (result && result.matches && result.matches.length > 0) {
       state.aiActive = true;
       state.aiReasoning = result.reasoning || `Matching businesses for "${query}"`;
       state.aiMatches.clear();
@@ -502,26 +649,56 @@ ${catalogStr}`;
         state.aiMatches.set(m.id, m.reason || 'Relevant match');
       });
 
-      aiReasonTextEl.innerHTML = `<b>${state.aiReasoning}</b>`;
-      aiCardEl.style.display = 'block';
-      render();
+      // Switch view to Grid Results View
+      toggleView('grid');
+    } else {
+      alert(`No AI matches found for "${query}". Try searching another item or region.`);
     }
   } catch (err) {
+    console.error("AI Search Error:", err);
     alert(`AI Search Notice: ${err.message}`);
   } finally {
-    aiBtn.disabled = false;
-    aiBtn.innerHTML = '✨ Ask AI';
+    loader.style.display = 'none';
   }
 }
 
-// --- Load data, then boot ---
+// Controls listeners
+document.getElementById('sortBtn').addEventListener('click', () => {
+  state.sortAsc = !state.sortAsc;
+  document.getElementById('sortBtn').textContent = state.sortAsc ? 'A–Z ↓' : 'Z–A ↑';
+  if (state.currentView === 'grid') renderGrid(); else renderMapList();
+});
+
+const ALL_CATS = ['farm','clothing','ceramics','jewellery','cutlery'];
+const ALL_TIERS = ['gold','silver'];
+function chipClick(set, all, key){
+  if (state.aiActive) clearAiSearch();
+  if (set.size === all.length) { set.clear(); set.add(key); }
+  else if (set.has(key)) { set.delete(key); if (set.size === 0) all.forEach(k => set.add(k)); }
+  else { set.add(key); }
+}
+function syncChips(){
+  document.querySelectorAll('#catChips .chip').forEach(c => c.classList.toggle('active', state.cats.has(c.dataset.cat)));
+  document.querySelectorAll('#tierChips .chip').forEach(c => c.classList.toggle('active', state.tiers.has(c.dataset.tier)));
+}
+document.querySelectorAll('#catChips .chip').forEach(c => c.addEventListener('click', () => {
+  chipClick(state.cats, ALL_CATS, c.dataset.cat); syncChips(); if (state.currentView==='grid') renderGrid(); else renderMapList();
+}));
+document.querySelectorAll('#tierChips .chip').forEach(c => c.addEventListener('click', () => {
+  chipClick(state.tiers, ALL_TIERS, c.dataset.tier); syncChips(); if (state.currentView==='grid') renderGrid(); else renderMapList();
+}));
+
+// --- Load data & Boot ---
 fetch('data/businesses.json')
-  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data=>{ BUSINESSES = data; buildMarkers(); render(); })
-  .catch(()=>{
-    countEl.innerHTML = 'Could not load listings. If you opened this file directly, run a local server (e.g. <code>python3 -m http.server</code>) — browsers block local data files.';
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    BUSINESSES = data;
+    buildMarkers();
+    toggleView('map');
+  })
+  .catch(() => {
+    countEl.innerHTML = 'Could not load listings. Run local server (e.g. <code>python3 -m http.server</code>).';
   });
 </script>
 </body>
 </html>
-
