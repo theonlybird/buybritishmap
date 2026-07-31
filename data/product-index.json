@@ -1,0 +1,217 @@
+{
+ "emma-bridgewater": {
+  "id": "emma-bridgewater",
+  "shopify": true,
+  "productCount": 250,
+  "tags": [
+   "bowls",
+   "dairy & cheese",
+   "mugs",
+   "plates",
+   "tableware"
+  ],
+  "observedTypes": [
+   "Serving Plates & Bowls",
+   "Plates",
+   "Mugs",
+   "Bowls",
+   "Tablecloths",
+   "Tea Towels & Oven Gloves",
+   "Storage Tins",
+   "Trays",
+   "Napkins",
+   "Pots & Pans",
+   "Roasting Trays",
+   "Tureens",
+   "Soup Plates",
+   "Egg Cups",
+   "Butter Dishes",
+   "Teapots",
+   "Travel Cups & Insulated Bottles",
+   "Jars Vases & Plant Pots",
+   "Table & Serveware",
+   "Jugs & Carafes"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "community-clothing": {
+  "id": "community-clothing",
+  "shopify": true,
+  "productCount": 250,
+  "tags": [
+   "dresses",
+   "knitwear",
+   "suits & trousers",
+   "underwear & nightwear",
+   "vests & waistcoats",
+   "womenswear"
+  ],
+  "observedTypes": [
+   "Shorts",
+   "Knitwear",
+   "T-Shirts",
+   "Trousers",
+   "Shirts",
+   "Jeans",
+   "Loungewear",
+   "Tops",
+   "Skirts",
+   "Dresses",
+   "Vest",
+   "Socks",
+   "Women's Underwear",
+   "Sweatshirt",
+   "Rugby Shirts",
+   "Footwear",
+   "Sweatpants",
+   "Polos",
+   "Accessories",
+   "Jackets",
+   "Outerwear",
+   "Knitted Accessories"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "oubas": {
+  "id": "oubas",
+  "shopify": true,
+  "productCount": 178,
+  "tags": [
+   "knitwear",
+   "scarves & accessories",
+   "tweed & woven goods"
+  ],
+  "observedTypes": [
+   "scarf",
+   "knitwear",
+   "Cardigan",
+   "jumper",
+   "Headwrap",
+   "cushion",
+   "blanket"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "trakke": {
+  "id": "trakke",
+  "shopify": true,
+  "productCount": 32,
+  "tags": [
+   "bags & leather goods"
+  ],
+  "observedTypes": [
+   "Messengers",
+   "Backpacks",
+   "Sling Bag",
+   "Backpack",
+   "Accessory",
+   "Messenger Bag"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "zatchels": {
+  "id": "zatchels",
+  "shopify": true,
+  "productCount": 250,
+  "tags": [
+   "bags & leather goods"
+  ],
+  "observedTypes": [
+   "Backpack",
+   "Clutch Bag",
+   "Satchel",
+   "Saddle Bag",
+   "Micro Satchel",
+   "Cross Body Bag",
+   "Midi Satchel",
+   "Barrel Bag",
+   "Tote",
+   "Accessories"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "sheila-fleet": {
+  "id": "sheila-fleet",
+  "shopify": true,
+  "productCount": 250,
+  "tags": [
+   "cufflinks & signets",
+   "jewellery"
+  ],
+  "observedTypes": [
+   "Earrings",
+   "Necklace",
+   "Pendant",
+   "Bracelet",
+   "Brooch",
+   "Bangle",
+   "Ring",
+   "Cufflinks",
+   "Lapel Pin",
+   "Ring Set"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "navygrey": {
+  "id": "navygrey",
+  "shopify": true,
+  "productCount": 161,
+  "tags": [
+   "knitwear",
+   "shirts"
+  ],
+  "observedTypes": [
+   "Jumper",
+   "Linen Jersey",
+   "Cardigan",
+   "Sweatshirt",
+   "Shorts",
+   "Top",
+   "Cotton Jersey",
+   "Tank",
+   "Shirt",
+   "Accessory"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "tanner-bates": {
+  "id": "tanner-bates",
+  "shopify": true,
+  "productCount": 74,
+  "tags": [
+   "bags & leather goods",
+   "braces & belts",
+   "watches"
+  ],
+  "observedTypes": [
+   "Belt",
+   "Watch Strap",
+   "Bag",
+   "Notebook",
+   "Bookmark",
+   "Small Leather Goods",
+   "Wallet",
+   "Leather Care",
+   "Travel Accessories",
+   "Place Mats and Coasters"
+  ],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ },
+ "carradice": {
+  "id": "carradice",
+  "shopify": true,
+  "productCount": 114,
+  "tags": [],
+  "observedTypes": [],
+  "checked": "2026-07-31",
+  "method": "browser-validation-run"
+ }
+}
