@@ -7626,12 +7626,33 @@
  "london-tradition": {
   "id": "london-tradition",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 20,
+  "tags": [
+   "coats & jackets",
+   "womenswear"
+  ],
+  "tagEvidence": {
+   "womenswear": "women",
+   "coats & jackets": "duffle coat"
+  },
+  "observedTypes": [],
+  "sample": [
+   "women",
+   "men",
+   "duffle coat",
+   "pea coat",
+   "camel",
+   "french navy",
+   "pearl grey",
+   "black"
+  ],
   "checked": "2026-07-31"
  },
  "grenfell": {
   "id": "grenfell",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 94,
   "tags": [
    "cashmere & merino",
@@ -7663,6 +7684,7 @@
  "gloverall": {
   "id": "gloverall",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 134,
   "tags": [
    "bags & leather goods",
@@ -7756,6 +7778,7 @@
  "yarmo": {
   "id": "yarmo",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 13,
   "tags": [
    "braces & belts",
@@ -7798,6 +7821,7 @@
  "buffalo-systems": {
   "id": "buffalo-systems",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 42,
   "tags": [
    "coats & jackets",
@@ -7838,12 +7862,37 @@
  "aero-leather": {
   "id": "aero-leather",
   "shopify": false,
-  "reason": "http-404",
+  "platform": "sitemap",
+  "productCount": 34,
+  "tags": [
+   "jeans & denim",
+   "knitwear",
+   "mugs",
+   "suits & trousers"
+  ],
+  "tagEvidence": {
+   "jeans & denim": "denim",
+   "knitwear": "knitwear",
+   "suits & trousers": "trousers",
+   "mugs": "mugs"
+  },
+  "observedTypes": [],
+  "sample": [
+   "jackets made to order",
+   "military",
+   "clothing",
+   "footwear",
+   "accessories",
+   "jackets ready to wear",
+   "mens",
+   "denim"
+  ],
   "checked": "2026-07-31"
  },
  "fox-umbrellas": {
   "id": "fox-umbrellas",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 250,
   "tags": [
    "dresses",
@@ -7880,6 +7929,7 @@
  "budd-shirts": {
   "id": "budd-shirts",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 1000,
   "tags": [
    "braces & belts",
@@ -7983,6 +8033,7 @@
  "fortis-clothing": {
   "id": "fortis-clothing",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 245,
   "tags": [
    "activewear",
@@ -8030,6 +8081,7 @@
  "gushlow-cole": {
   "id": "gushlow-cole",
   "shopify": true,
+  "platform": "shopify",
   "productCount": 290,
   "tags": [
    "bags & leather goods",
