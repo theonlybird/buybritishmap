@@ -577,7 +577,7 @@ async function executeAiSearch(query) {
   loader.style.display = 'flex';
 
   try {
-    let result = null;
+    let lastApiError = '';
     // 1. Primary: Serverless API endpoint /api/ai-search
     try {
       const res = await fetch('/api/ai-search', {
@@ -585,16 +585,21 @@ async function executeAiSearch(query) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query })
       });
+      const data = await res.json().catch(() => ({}));
       if (res.ok) {
-        result = await res.json();
+        result = data;
+      } else {
+        lastApiError = data.error || data.details || `HTTP ${res.status}`;
       }
-    } catch (e) {}
+    } catch (e) {
+      lastApiError = e.message;
+    }
 
     // 2. Fallback: Direct Gemini API call if local key stored
     if (!result) {
       const storedKey = localStorage.getItem('GEMINI_API_KEY') || '';
       if (!storedKey) {
-        throw new Error('Could not connect to /api/ai-search and no GEMINI_API_KEY found in localStorage.');
+        throw new Error(lastApiError ? `API Error: ${lastApiError}` : 'Could not connect to /api/ai-search and no GEMINI_API_KEY found in localStorage.');
       }
 
       const compact = BUSINESSES.map(b => ({
