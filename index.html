@@ -429,8 +429,13 @@ const state = {
   currentView: 'map', // 'map' or 'grid'
   aiActive: false,
   aiHeadline: '',
+  notice: '',            // shown above the full grid when a search found nothing
   aiMatches: new Map() // id -> 1-sentence rationale
 };
+
+function escapeHtml(t) {
+  return String(t).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+}
 
 const splitView = document.getElementById('splitView');
 const gridView = document.getElementById('gridView');
@@ -552,6 +557,8 @@ function renderGrid(){
   }
   if (state.aiActive) {
     gridAiBanner.innerHTML = state.aiHeadline || 'Here are some UK businesses we think you&rsquo;ll love';
+  } else if (state.notice) {
+    gridAiBanner.innerHTML = state.notice;
   } else {
     gridAiBanner.innerHTML = `Showing <b>${vis.length}</b> British makers & producers`;
   }
@@ -675,9 +682,131 @@ searchInput.addEventListener('keydown', e => {
 
 function clearAiSearch() {
   state.aiActive = false;
+  state.notice = '';
   state.aiMatches.clear();
   renderMapList();
   if (state.currentView === 'grid') renderGrid();
+}
+
+/* ---------------------------------------------------------------------------
+   Local fallback search.
+
+   Runs entirely in the browser and is used whenever the AI call fails, so an
+   outage or a rate limit degrades quietly instead of throwing an alert at the
+   user. It also fixes the two typo cases the AI used to handle by luck:
+   words run together ("wooltrousers") and small misspellings ("jumpper").
+--------------------------------------------------------------------------- */
+
+const STOP_WORDS = new Set(['the','a','an','and','or','for','in','on','at','to','of','with',
+  'who','sell','sells','selling','make','makes','maker','makers','making','which','what',
+  'can','are','is','do','does','find','looking','me','my','i','want','need','buy','british','uk']);
+
+// Every distinct word the catalogue actually contains. Built once, lazily.
+let SEARCH_VOCAB = null;
+function buildVocab() {
+  if (SEARCH_VOCAB) return SEARCH_VOCAB;
+  const words = new Set();
+  BUSINESSES.forEach(b => {
+    const text = [b.name, b.town, b.category, b.subcategory, b.description,
+                  (b.product_tags || []).join(' ')].join(' ').toLowerCase();
+    text.replace(/[^a-z0-9]+/g, ' ').split(' ').forEach(w => {
+      if (w.length > 2 && !STOP_WORDS.has(w)) words.add(w);
+    });
+  });
+  SEARCH_VOCAB = words;
+  return words;
+}
+
+function editDistance(a, b) {
+  if (Math.abs(a.length - b.length) > 2) return 99;
+  const prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    let last = prev[0];
+    prev[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = prev[j];
+      prev[j] = Math.min(
+        prev[j] + 1,
+        prev[j - 1] + 1,
+        last + (a[i - 1] === b[j - 1] ? 0 : 1)
+      );
+      last = tmp;
+    }
+  }
+  return prev[b.length];
+}
+
+// Longer words tolerate more error; short ones must be near-exact, or
+// "hat" would match "bat", "vat" and half the catalogue.
+function fuzzyHit(token, vocab) {
+  if (vocab.has(token)) return token;
+  const budget = token.length >= 7 ? 2 : token.length >= 4 ? 1 : 0;
+  if (!budget) return null;
+  let best = null, bestD = 99;
+  for (const w of vocab) {
+    if (Math.abs(w.length - token.length) > budget) continue;
+    const d = editDistance(token, w);
+    if (d <= budget && d < bestD) { best = w; bestD = d; if (d === 1) break; }
+  }
+  return best;
+}
+
+// "wooltrousers" -> ["wool","trousers"]. Only accepts splits where BOTH halves
+// are real catalogue words, so it can't invent a reading of gibberish.
+function splitJoined(token, vocab) {
+  if (token.length < 6) return null;
+  for (let i = 3; i <= token.length - 3; i++) {
+    const left = token.slice(0, i), right = token.slice(i);
+    if (vocab.has(left) && vocab.has(right)) return [left, right];
+  }
+  // one fuzzy half is allowed, but not two
+  for (let i = 3; i <= token.length - 3; i++) {
+    const left = token.slice(0, i), right = token.slice(i);
+    if (vocab.has(left)) { const r = fuzzyHit(right, vocab); if (r) return [left, r]; }
+    if (vocab.has(right)) { const l = fuzzyHit(left, vocab); if (l) return [l, right]; }
+  }
+  return null;
+}
+
+// Turn whatever the user typed into terms the catalogue understands.
+function normaliseQuery(query) {
+  const vocab = buildVocab();
+  const raw = String(query).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/);
+  const terms = [];
+  let understood = 0;
+  raw.forEach(tok => {
+    if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
+    if (vocab.has(tok)) { terms.push(tok); understood++; return; }
+    const split = splitJoined(tok, vocab);
+    if (split) { terms.push(...split); understood++; return; }
+    const near = fuzzyHit(tok, vocab);
+    if (near) { terms.push(near); understood++; return; }
+    terms.push(tok); // keep it, but it counts as not understood
+  });
+  return { terms, understood };
+}
+
+function localSearch(query) {
+  const { terms, understood } = normaliseQuery(query);
+  if (!terms.length || !understood) return { matches: [], terms, understood };
+
+  const scored = BUSINESSES.map(b => {
+    const name = (b.name || '').toLowerCase();
+    const town = (b.town || '').toLowerCase();
+    const tags = (b.product_tags || []).map(t => t.toLowerCase());
+    const body = [b.category, b.subcategory, b.description].join(' ').toLowerCase();
+    let score = 0;
+    terms.forEach(t => {
+      if (name.includes(t)) score += 10;
+      if (town.includes(t)) score += 8;
+      if (tags.some(tag => tag.includes(t) || t.includes(tag))) score += 7;
+      if (body.includes(t)) score += 3;
+    });
+    return { b, score };
+  }).filter(s => s.score > 0);
+
+  scored.sort((x, y) => y.score - x.score || x.b.name.localeCompare(y.b.name));
+  return { matches: scored.slice(0, 12).map(s => s.b), terms, understood };
 }
 
 async function executeAiSearch(query) {
@@ -710,9 +839,11 @@ async function executeAiSearch(query) {
     // 2. Fallback: Direct Gemini API call if local key stored
     if (!result) {
       const storedKey = localStorage.getItem('GEMINI_API_KEY') || '';
+      // No key for the direct-call path is normal for real visitors; it is not
+      // an error worth interrupting them over. Fall through to local search.
       if (!storedKey) {
-        throw new Error(lastApiError ? `API Error: ${lastApiError}` : 'Could not connect to /api/ai-search and no GEMINI_API_KEY found in localStorage.');
-      }
+        if (lastApiError) console.warn('AI search unavailable:', lastApiError);
+      } else {
 
       const compact = BUSINESSES.map(b => ({
         i: b.id, n: b.name, c: b.category, s: b.subcategory || '', t: b.town, d: b.description, tr: b.tier
@@ -746,7 +877,9 @@ ${catalogStr}`;
         generationConfig: { temperature: 0.2, maxOutputTokens: 2000 }
       };
 
-      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${storedKey}`, {
+      // gemini-flash-latest is an alias Google keeps pointing at a current
+      // model, so this path doesn't break every time one is retired.
+      const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${storedKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -754,14 +887,16 @@ ${catalogStr}`;
 
       if (geminiRes.ok) {
         const gData = await geminiRes.json();
-        const rawText = gData.candidates[0].content.parts[0].text;
+        const rawText = gData.candidates?.[0]?.content?.parts?.[0]?.text || '';
         const cleanJson = rawText.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
-        result = JSON.parse(cleanJson);
+        try { result = JSON.parse(cleanJson); } catch (e) { result = null; }
+      }
       }
     }
 
     if (result && result.matches && result.matches.length > 0) {
       state.aiActive = true;
+      state.notice = '';
       state.aiHeadline = buildHeadline(result);
       state.aiMatches.clear();
       result.matches.forEach(m => {
@@ -770,18 +905,45 @@ ${catalogStr}`;
 
       // Switch view to Grid Results View
       toggleView('grid');
-    } else {
-      // Nothing at all came back — still show a useful page rather than an alert.
-      state.aiActive = true;
-      state.aiHeadline = buildHeadline(
-        Object.assign({ matchQuality: 'none' }, result || {}, { matches: [] })
-      );
-      state.aiMatches.clear();
-      toggleView('grid');
+      return;
     }
+
+    // The AI either failed or found nothing. Try locally before giving up:
+    // this is what turns an outage into a slightly worse search rather than
+    // a broken one, and it handles run-together and misspelt words.
+    const local = localSearch(query);
+
+    if (local.matches.length) {
+      state.aiActive = true;
+      state.notice = '';
+      state.aiMatches.clear();
+      local.matches.forEach(b => state.aiMatches.set(b.id, 'Matched on ' + local.terms.join(', ')));
+      // If the AI understood the query but found nothing itself, keep its
+      // reading of the query and use the honest "further afield" wording.
+      // Pass the local matches in, or buildHeadline reads it as a dead end and
+      // says "we couldn't find any" above a page full of results.
+      state.aiHeadline = result
+        ? buildHeadline(Object.assign({}, result, { matchQuality: 'wider', matches: local.matches }))
+        : `Showing the closest matches we could find for &ldquo;${escapeHtml(query)}&rdquo;.`;
+      toggleView('grid');
+      return;
+    }
+
+    // Nothing understood and nothing found: say so plainly and show everything,
+    // so the user always has somewhere to go next.
+    state.aiActive = false;
+    state.aiMatches.clear();
+    state.q = '';
+    if (searchInput) searchInput.value = '';
+    state.notice = `No results for &ldquo;${escapeHtml(query)}&rdquo;. Showing all British makers and producers instead.`;
+    toggleView('grid');
   } catch (err) {
-    console.error("AI Search Error:", err);
-    alert(`AI Search Notice: ${err.message}`);
+    // Never interrupt the user. Worst case they get the full catalogue.
+    console.error('AI Search Error:', err);
+    state.aiActive = false;
+    state.aiMatches.clear();
+    state.notice = 'Search is having a moment &mdash; showing all British makers and producers instead.';
+    toggleView('grid');
   } finally {
     loader.style.display = 'none';
   }

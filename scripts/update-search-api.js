@@ -72,14 +72,32 @@ function stageOneFilter(query, catalog, maxCandidates = 40) {
   return [...matched, ...fallback];
 }
 
-// Only models that are currently live on the Gemini API.
-// The 1.5 family was retired and returns 404, which masked the real error.
-const MODEL_CANDIDATES = [
-  'gemini-2.5-flash',
-  'gemini-2.5-flash-lite',
+// Preference order, not a fixed list. Google retires models and restricts old
+// ones to existing users without warning, which is what broke this twice: the
+// 1.5 family went first, then 2.5-flash became unavailable to new keys.
+//
+// So we ASK the API which models this key can actually use (ListModels) and
+// intersect that with this order. Anything unknown but matching the fallback
+// pattern is appended, so a future rename can't take search offline again.
+// Cheapest-capable first. The 2.5 family is deliberately near the BOTTOM: it
+// is listed to every key but 404s for projects created after Google restricted
+// it, so putting it first just buys a wasted round trip on every cold start.
+const MODEL_PREFERENCE = [
+  'gemini-flash-lite-latest',
+  'gemini-3.5-flash-lite',
+  'gemini-3.1-flash-lite',
+  'gemini-flash-latest',
+  'gemini-3-flash-preview',
   'gemini-2.0-flash',
-  'gemini-flash-latest'
+  'gemini-2.5-flash-lite',
+  'gemini-2.5-flash'
 ];
+
+// Discovery is cached in module scope: Vercel keeps the container warm between
+// requests, so this usually costs one extra call per cold start, not per search.
+let cachedModels = null;
+let cachedAt = 0;
+const MODEL_CACHE_MS = 10 * 60 * 1000;
 
 const https = require('https');
 
@@ -124,6 +142,52 @@ async function listUsableModels(apiKey) {
   }
 }
 
+// Models that ListModels advertises but that actually 404 on generateContent.
+// Google lists the 2.5 family to every key, then refuses the call for projects
+// created after it was restricted ("no longer available to new users"). So
+// being listed does NOT mean being usable, and the only way to find out is to
+// try. Once a model has refused us, stop paying a round trip to ask it again.
+const deadModels = new Set();
+
+// Build the ordered list of models to try, from what the key can actually use.
+async function resolveCandidates(apiKey) {
+  const now = Date.now();
+  if (cachedModels && (now - cachedAt) < MODEL_CACHE_MS) {
+    return liveOnly(cachedModels);
+  }
+
+  const usable = await listUsableModels(apiKey);
+  let ordered;
+
+  if (!usable || !usable.length) {
+    // Discovery failed; fall back to the static preference order.
+    ordered = MODEL_PREFERENCE.slice();
+  } else {
+    const preferred = MODEL_PREFERENCE.filter(m => usable.includes(m));
+    // Any other plain flash model the key can see, newest-looking first, as a
+    // backstop against Google renaming everything again. Excludes image, tts,
+    // audio, robotics and research variants, which can't do this job.
+    const extras = usable
+      .filter(m => /^gemini-[\\d.]+-flash(-lite)?$/.test(m) && !preferred.includes(m))
+      .sort()
+      .reverse();
+    ordered = [...preferred, ...extras];
+  }
+
+  cachedModels = ordered;
+  cachedAt = now;
+  return liveOnly(ordered);
+}
+
+// Never hand back an empty list: if everything has been blacklisted, the
+// blacklist is more likely stale than the truth, so clear it and try again.
+function liveOnly(list) {
+  const live = list.filter(m => !deadModels.has(m));
+  if (live.length) return live;
+  deadModels.clear();
+  return list;
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -141,13 +205,18 @@ module.exports = async function handler(req, res) {
   }
 
   if (req.method === 'GET') {
+    // no-store: this endpoint exists for diagnosis, and a cached copy showing
+    // yesterday's model list is worse than useless when search is broken.
+    res.setHeader('Cache-Control', 'no-store, max-age=0');
     const models = await listUsableModels(apiKey);
+    const candidates = await resolveCandidates(apiKey);
     return res.status(200).json({
       keyPresent: true,
       keyLength: String(apiKey).length,
       modelsVisibleToThisKey: models,
-      configuredCandidates: MODEL_CANDIDATES,
-      willUse: models ? MODEL_CANDIDATES.find(m => models.includes(m)) || null : null
+      preferenceOrder: MODEL_PREFERENCE,
+      resolvedCandidates: candidates,
+      willUse: candidates[0] || null
     });
   }
 
@@ -194,7 +263,13 @@ CANDIDATE CATALOG:
 
   function buildPayload(model) {
     const generationConfig = { temperature: 0.2, maxOutputTokens: 8192 };
-    if (/^gemini-(2\\.5|3)/.test(model)) generationConfig.thinkingConfig = { thinkingBudget: 0 };
+    // Disable thinking everywhere it is supported. Thinking tokens bill as
+    // OUTPUT, which is the expensive side, and this task is retrieval over a
+    // 40-item shortlist — it gains nothing from deliberation.
+    // NB: matching on model names missed 'gemini-flash-latest', which left
+    // thinking ON for the default model. Invert the test instead: only the
+    // older families lack the parameter.
+    if (!/^gemini-(1\\.5|2\\.0)/.test(model)) generationConfig.thinkingConfig = { thinkingBudget: 0 };
     return JSON.stringify({
       contents: [{ parts: [{ text: systemInstruction }, { text: \`User Search Query: "\${query}"\` }] }],
       generationConfig
@@ -202,6 +277,8 @@ CANDIDATE CATALOG:
   }
 
   let lastStatus = 0, lastBody = '', triedModels = [], attempts = [];
+
+  const MODEL_CANDIDATES = await resolveCandidates(apiKey);
 
   for (const model of MODEL_CANDIDATES) {
     triedModels.push(model);
@@ -222,8 +299,10 @@ CANDIDATE CATALOG:
     try { attemptMsg = JSON.parse(apiRes.body)?.error?.message || ''; } catch (e) {}
     attempts.push({ model, status: apiRes.statusCode, message: attemptMsg.slice(0, 200) });
 
-    // 404 = model not enabled; 429 = rate limit / quota exceeded for this model: continue trying next model!
-    if (apiRes.statusCode === 404 || apiRes.statusCode === 429) continue;
+    // 404 means this key may never call this model — remember it, so we stop
+    // wasting a round trip on it. 429 is temporary, so don't blacklist it.
+    if (apiRes.statusCode === 404) { deadModels.add(model); continue; }
+    if (apiRes.statusCode === 429) continue;
     if (apiRes.statusCode !== 200) break;
 
     try {
@@ -266,7 +345,10 @@ CANDIDATE CATALOG:
   } else if (notFound) {
     reportStatus = 404;
     reportMessage = notFound.message || googleMessage;
-    fix = 'No configured model is available to this API key. GET /api/ai-search to see which models the key can use, then update MODEL_CANDIDATES.';
+    fix = 'None of the models this key can use accepted the request. GET /api/ai-search to see the resolved candidate list.';
+    // A stale cache is the likeliest cause of every candidate 404ing, so force
+    // rediscovery on the next request rather than staying broken until restart.
+    cachedModels = null;
   } else if (lastStatus === 400) {
     fix = 'The API key was rejected or the request was malformed. Check GEMINI_API_KEY in Vercel.';
   } else if (lastStatus === 403) {
