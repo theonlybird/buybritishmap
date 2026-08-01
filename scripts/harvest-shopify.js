@@ -38,92 +38,20 @@ const OUT = path.join(ROOT, 'data', 'product-index.json');
 
 const CONTACT = 'hello@buybritishmap.uk';
 const UA = `BuyBritishMapBot/1.0 (+https://buybritishmap.uk; ${CONTACT})`;
-const DELAY_MS = 1500;
-const TIMEOUT_MS = 12000;
+const DELAY_MS = Number(process.env.HARVEST_DELAY_MS || 1500);
+// Sites that hang rather than refuse can burn the whole cascade on timeouts
+// (Squarespace alone tries four paths). Lower this to get a quick verdict.
+const TIMEOUT_MS = Number(process.env.HARVEST_TIMEOUT_MS || 12000);
+// Shopify's products.json embeds every variant and image, so a mid-sized shop
+// can run to tens of MB. Generous, because this is a one-off batch job.
+const MAX_BODY = Number(process.env.HARVEST_MAX_BODY || 40e6);
 
 // ---------------------------------------------------------------------------
-// Controlled vocabulary. Maps words seen in a shop's own product data onto the
-// tag set already used by the site. Deliberately conservative — anything that
-// doesn't match a rule is kept as a raw observed type for manual review rather
-// than being guessed at.
+// Controlled vocabulary now lives in scripts/lib/product-vocab.js so that this
+// harvester and scripts/rescore-product-index.js can never drift apart. It
+// carries the category gating and head-noun rules as well as the word lists.
 // ---------------------------------------------------------------------------
-const VOCAB = [
-  ['mugs',                 /\b(mug|beaker)/i],
-  ['bowls',                /\b(bowl|dish(es)?)\b/i],
-  ['plates',               /\b(plate|platter|charger)/i],
-  ['tableware',            /\b(tableware|dinner ?set|teapot|jug|cup and saucer|cutlery set)/i],
-  ['pottery',              /\b(pottery|ceramic|stoneware|porcelain|earthenware)/i],
-  ['flowerpots',           /\b(flower ?pot|planter|garden pot|terracotta pot)/i],
-  ['knitwear',             /\b(jumper|sweater|knitwear|cardigan|pullover|knit)\b/i],
-  ['cashmere & merino',    /\b(cashmere|merino|lambswool)\b/i],
-  ['vests & waistcoats',   /\b(waistcoat|gilet|body ?warmer|vest)\b/i],
-  ['coats & jackets',      /\b(coat|jacket|parka|anorak|mac|smock)\b/i],
-  ['shirts',               /\b(shirt)\b/i],
-  ['suits & trousers',     /\b(suit|trouser|chino|blazer|jacket and trouser)/i],
-  ['jeans & denim',        /\b(jean|denim)\b/i],
-  ['socks',                /\b(sock|hosiery)\b/i],
-  ['hats & caps',          /\b(hat|cap|beanie|beret)\b/i],
-  ['scarves & accessories',/\b(scarf|scarves|shawl|glove|mitten|tie|pocket ?square|wrap)\b/i],
-  ['bags & leather goods', /\b(bag|satchel|rucksack|backpack|holdall|wallet|purse|luggage)\b/i],
-  ['braces & belts',       /\b(brace|belt|suspender)\b/i],
-  ['umbrellas',            /\b(umbrella)\b/i],
-  ['footwear & boots',     /\b(shoe|boot|slipper|sandal|trainer|sneaker|loafer|brogue)\b/i],
-  ['underwear & nightwear',/\b(boxer|underwear|pyjama|nightwear|loungewear|robe|dressing gown|brief)\b/i],
-  ['activewear',           /\b(activewear|sportswear|base ?layer|cycling|running|legging)\b/i],
-  ['dresses',              /\b(dress(?!ing\b|\s*stud|\s*shirt)(es)?\b|frock|ball ?gown|wedding gown)/i],
-  ['womenswear',           /\b(women|ladies|blouse|skirt)\b/i],
-  ['childrenswear',        /\b(child(ren)?s?wear|kids ?wear|babygrow|romper|toddler|infant)\b|\bbaby(?! ?(leaf|leaves|potato|carrot|corn|beet|spinach|kale|gem|plum|new))/i],
-  ['tweed & woven goods',  /\b(tweed|tartan|blanket|throw|woven|cloth by the metre)\b/i],
-  ['workwear & aprons',    /\b(apron|workwear|overall|dungaree|boiler ?suit)\b/i],
-  ['jewellery',            /\b(ring|necklace|pendant|earring|bracelet|brooch|jewel)/i],
-  ['cufflinks & signets',  /\b(cufflink|signet)/i],
-  ['silverware',           /\b(silverware|sterling silver|hallmark)/i],
-  ['watches',              /\b(watch|chronometer|timepiece)/i],
-  ['cutlery & knives',     /\b(knife|knive|cutlery|blade|cleaver)/i],
-  ['drinks & spirits',     /\b(gin|whisky|whiskey|beer|ale|cider|wine|rum|vodka|liqueur)\b/i],
-  ['bread & bakery',       /\b(bread|loaf|cake|pastry|bakery|scone)\b/i],
-  ['dairy & cheese',       /\b(cheese|butter|milk|yoghurt|cream)\b/i],
-  ['beef',                 /\b(beef|brisket|sirloin|ribeye|rib-eye)\b/i],
-  ['lamb',                 /\b(lamb|mutton|hogget)\b/i],
-  ['pork & bacon',         /\b(pork|bacon|sausage|gammon|ham)\b/i],
-  ['poultry',              /\b(chicken|turkey|duck|goose|poultry)\b/i],
-  ['game & venison',       /\b(venison|game|pheasant|partridge|rabbit)\b/i],
-  ['fruit & veg',          /\b(vegetable|veg box|fruit|potato|apple|salad)\b/i],
-];
-
-// Words that appear in product titles as COLOURS, MATERIALS or CARE PRODUCTS
-// rather than as the thing being sold. Stripped before matching, because
-// "Shoe Cream" is not dairy and "Whiskey Nubuck" is not a spirit.
-const NOISE = new RegExp('\\b(' + [
-  // colours & finishes
-  'cream','whiskey','whisky','wine','burgundy','port','chocolate','coffee','honey',
-  'oatmeal','biscuit','caramel','mustard','olive','plum','cherry','peach','oxblood',
-  'chestnut','walnut','almond','butterscotch','champagne','sand','stone','ivory',
-  'charcoal','navy','tan','natural','black','brown','green','blue','red','grey','gray',
-  // leather / material words that collide with food or product tags
-  'calf','kid','kidskin','buck','doe','hide','suede','nubuck','shell','cordovan',
-  // care products & extras
-  'polish','wax','cream cleaner','shoe tree','gift card','gift voucher','sample',
-  'swatch','care kit','conditioner','spare','refill','repair'
-].join('|') + ')\\b', 'gi');
-
-function mapToVocab(text) {
-  const cleaned = String(text || '').replace(NOISE, ' ');
-  const hits = new Set();
-  for (const [tag, re] of VOCAB) if (re.test(cleaned)) hits.add(tag);
-  return [...hits];
-}
-
-// Same, but records WHICH string produced each tag so every tag is auditable.
-function mapWithEvidence(text) {
-  const cleaned = String(text || '').replace(NOISE, ' ');
-  const out = [];
-  for (const [tag, re] of VOCAB) {
-    const m = cleaned.match(re);
-    if (m) out.push([tag, String(text).trim().slice(0, 60)]);
-  }
-  return out;
-}
+const { mapWithEvidence, mapToVocab, isTagAllowed, VOCAB_VERSION } = require('./lib/product-vocab');
 
 // ---------------------------------------------------------------------------
 function fetchJson(url, redirectsLeft = 3) {
@@ -155,8 +83,20 @@ function fetchJson(url, redirectsLeft = 3) {
           return resolve({ ok: false, reason: 'not-json' });
         }
         let body = '';
-        res.on('data', c => { body += c; if (body.length > 6e6) req.destroy(); });
+        let aborted = false;
+        res.on('data', c => {
+          body += c;
+          // Big Shopify catalogues can exceed this. Resolve explicitly rather
+          // than just destroying the request: an unresolved promise here hangs
+          // the whole harvest forever.
+          if (body.length > MAX_BODY && !aborted) {
+            aborted = true;
+            req.destroy();
+            resolve({ ok: false, reason: 'too-large' });
+          }
+        });
         res.on('end', () => {
+          if (aborted) return;
           try { resolve({ ok: true, data: JSON.parse(body) }); }
           catch (e) { resolve({ ok: false, reason: 'parse-error' }); }
         });
@@ -186,8 +126,17 @@ function fetchText(url, redirectsLeft = 3) {
         }
         if (res.statusCode !== 200) { res.resume(); return resolve({ ok:false, reason:'http-'+res.statusCode }); }
         let body = '';
-        res.on('data', c => { body += c; if (body.length > 4e6) req.destroy(); });
-        res.on('end', () => resolve({ ok: true, body }));
+        let aborted = false;
+        res.on('data', c => {
+          body += c;
+          // Same hazard as fetchJson: always resolve, never just destroy.
+          if (body.length > MAX_BODY && !aborted) {
+            aborted = true;
+            req.destroy();
+            resolve({ ok: true, body });   // a truncated sitemap is still usable
+          }
+        });
+        res.on('end', () => { if (!aborted) resolve({ ok: true, body }); });
       });
     req.on('timeout', () => { req.destroy(); resolve({ ok:false, reason:'timeout' }); });
     req.on('error', e => resolve({ ok:false, reason:'net-'+(e.code||'error') }));
@@ -270,10 +219,24 @@ async function harvestOne(biz) {
   if (!base) return { id: biz.id, shopify: false, platform: null, reason: 'no-website' };
 
   const seenTypes = new Set();
-  const evidence = {};
+  const evidence = {};       // tag -> example string
+  const tagCounts = {};      // tag -> how many products supported it
+  const strongTags = new Set(); // tags seen in the shop's own product_type
   const sample = [];
   let count = 0;
   let platform = null;
+
+  // Record a match. `fromType` means it came from the shop's own taxonomy,
+  // which is far more reliable than a free-text title.
+  const record = (text, fromType) => {
+    for (const r of mapWithEvidence(text)) {
+      if (r.suppressed) continue;
+      seenTypes.add('::' + r.tag);
+      tagCounts[r.tag] = (tagCounts[r.tag] || 0) + 1;
+      if (fromType) strongTags.add(r.tag);
+      if (!evidence[r.tag]) evidence[r.tag] = r.evidence;
+    }
+  };
 
   // 1. Shopify — richest source, try first and paginate.
   for (let page = 1; page <= 4; page++) {
@@ -284,13 +247,12 @@ async function harvestOne(biz) {
     platform = 'shopify';
     for (const p of products) {
       count++;
-      if (p.product_type) seenTypes.add(String(p.product_type).trim());
+      if (p.product_type) {
+        seenTypes.add(String(p.product_type).trim());
+        record(p.product_type, true);
+      }
       if (sample.length < 8 && p.title) sample.push(String(p.title).slice(0, 70));
-      const text = [p.title, p.product_type, (p.tags || []).join(' ')].join(' ');
-      mapWithEvidence(text).forEach(([t, ev]) => {
-        seenTypes.add('::' + t);
-        if (!evidence[t]) evidence[t] = ev;
-      });
+      record([p.title, (p.tags || []).join(' ')].join(' '), false);
     }
     if (products.length < 250) break;
     await sleep(DELAY_MS);
@@ -309,25 +271,44 @@ async function harvestOne(biz) {
     platform = result.platform;
     for (const it of result.items) {
       count++;
-      if (it.type) seenTypes.add(String(it.type).trim());
+      if (it.type) {
+        seenTypes.add(String(it.type).trim());
+        record(it.type, true);
+      }
       if (sample.length < 8 && it.title) sample.push(String(it.title).slice(0, 70));
-      mapWithEvidence([it.title, it.type, it.tags].join(' ')).forEach(([t, ev]) => {
-        seenTypes.add('::' + t);
-        if (!evidence[t]) evidence[t] = ev;
-      });
+      record([it.title, it.tags].join(' '), false);
     }
   }
 
-  const mapped = [...seenTypes].filter(t => t.startsWith('::')).map(t => t.slice(2)).sort();
+  // Category gating: drop anything implausible for this business's category
+  // before it is ever written to disk.
+  const gated = [];
+  const mapped = [...seenTypes]
+    .filter(t => t.startsWith('::'))
+    .map(t => t.slice(2))
+    .filter(t => {
+      if (isTagAllowed(t, biz.category)) return true;
+      gated.push(t);
+      return false;
+    })
+    .sort();
+
   const rawTypes = [...seenTypes].filter(t => !t.startsWith('::')).sort().slice(0, 40);
+
+  const confidence = {};
+  mapped.forEach(t => { confidence[t] = strongTags.has(t) ? 'strong' : 'weak'; });
 
   return {
     id: biz.id,
     shopify: platform === 'shopify',
     platform,
+    vocabVersion: VOCAB_VERSION,
     productCount: count,
     tags: mapped,
+    tagConfidence: confidence,
+    tagCounts,
     tagEvidence: evidence,
+    gatedOut: gated.sort(),
     observedTypes: rawTypes,
     sample,
   };
@@ -352,27 +333,54 @@ async function main() {
 
   console.log(`Harvesting ${queue.length} businesses (${Object.keys(index).length} already done)\n`);
 
+  // Concurrency is across DIFFERENT domains, so politeness is unaffected: each
+  // individual site still sees one request at a time with DELAY_MS between them
+  // (enforced inside harvestOne's pagination loop). Default stays 1 so the
+  // script behaves exactly as before unless asked otherwise.
+  const concurrency = getArg('--concurrency') ? parseInt(getArg('--concurrency'), 10) : 1;
+
   let shopify = 0, failed = 0, done = 0;
-  for (const biz of queue) {
-    const res = await harvestOne(biz);
-    res.checked = new Date().toISOString().slice(0, 10);
-    index[biz.id] = res;
-    done++;
+  let cursor = 0;
 
-    if (res.platform) {
-      shopify++;
-      console.log(`  OK   ${biz.id.padEnd(26)} ${String(res.platform).padEnd(12)} ${String(res.productCount).padStart(4)} items -> ${res.tags.join(', ') || '(no vocab match)'}`);
-    } else {
-      failed++;
-      console.log(`  --   ${biz.id.padEnd(28)} ${res.reason}`);
-    }
+  const save = () => fs.writeFileSync(OUT, JSON.stringify(index, null, 1));
 
-    // save as we go, so an interrupted run loses nothing
-    if (done % 10 === 0) fs.writeFileSync(OUT, JSON.stringify(index, null, 1));
-    await sleep(DELAY_MS);
+  // Sites that are slow to fail can outlast the caller's patience. Flush what
+  // we have on interrupt so a resumed run doesn't repeat the same dead ends.
+  for (const sig of ['SIGTERM', 'SIGINT']) {
+    process.on(sig, () => { save(); console.log(`\n[${sig}] saved ${Object.keys(index).length} entries.`); process.exit(0); });
   }
 
-  fs.writeFileSync(OUT, JSON.stringify(index, null, 1));
+  async function worker() {
+    while (cursor < queue.length) {
+      const biz = queue[cursor++];
+      let res;
+      try {
+        res = await harvestOne(biz);
+      } catch (e) {
+        res = { id: biz.id, shopify: false, platform: null, reason: 'error-' + (e.code || e.message || 'unknown') };
+      }
+      res.checked = new Date().toISOString().slice(0, 10);
+      index[biz.id] = res;
+      done++;
+
+      if (res.platform) {
+        shopify++;
+        console.log(`  OK   ${biz.id.padEnd(26)} ${String(res.platform).padEnd(12)} ${String(res.productCount).padStart(4)} items -> ${res.tags.join(', ') || '(no vocab match)'}`);
+      } else {
+        failed++;
+        console.log(`  --   ${biz.id.padEnd(28)} ${res.reason}`);
+      }
+
+      // Save often: this script gets interrupted, and a resumed run skips
+      // anything already in the index.
+      if (done % 5 === 0) save();
+      await sleep(DELAY_MS);
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.max(1, concurrency) }, worker));
+
+  save();
   console.log(`\nDone. Shopify: ${shopify}  |  not available: ${failed}  |  index now ${Object.keys(index).length} entries`);
   console.log(`Written to ${path.relative(ROOT, OUT)}`);
   console.log(`\nNothing has been merged into businesses.json — review the index first,`);

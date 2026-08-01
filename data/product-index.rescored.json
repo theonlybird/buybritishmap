@@ -153,7 +153,9 @@
    "Spell Books 1/2 Pint Mug",
    "Witches' Feet 1/2 Pint Mug"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "community-clothing": {
   "id": "community-clothing",
@@ -285,7 +287,9 @@
    "Men's Short Sleeve T Shirt Plastic Free - Ghost",
    "MENS GRAPHIC ICE CREAM CONE T-SHIRT"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "oubas": {
   "id": "oubas",
@@ -366,7 +370,9 @@
    "The Morvan Organic Cotton Triangle Scarf in French Navy/Chalk",
    "The Freyja British Wool Cable Vest in Ecru"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "trakke": {
   "id": "trakke",
@@ -405,15 +411,15 @@
    "Merchant Tote",
    "Micro Foulden Pouch"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "zatchels": {
   "id": "zatchels",
   "shopify": true,
   "productCount": 250,
-  "tags": [
-   "bags & leather goods"
-  ],
+  "tags": [],
   "observedTypes": [
    "Backpack",
    "Clutch Bag",
@@ -427,7 +433,9 @@
    "Accessories"
   ],
   "checked": "2026-07-31",
-  "method": "browser-validation-run"
+  "method": "browser-validation-run",
+  "tagConfidence": {},
+  "rescored": true
  },
  "sheila-fleet": {
   "id": "sheila-fleet",
@@ -496,7 +504,9 @@
    "Daisies at Dawn Occasion Necklace in SCAA Enamel",
    "Daisies at Dawn Stretch Bracelet in SCAA Enamel"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "navygrey": {
   "id": "navygrey",
@@ -587,7 +597,9 @@
    "The Linen / The Boatneck - Harbour Blue / Archive Sale",
    "The Linen / The Boatneck - White / Archive Sale"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tanner-bates": {
   "id": "tanner-bates",
@@ -650,7 +662,9 @@
    "Bellever Bespoke Leather Watch Strap",
    "Travel Watch Pouch"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "carradice": {
   "id": "carradice",
@@ -694,7 +708,9 @@
    "Odyssey Expedition Bundle",
    "Cambrian Bikepacking Bundle"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "seh-kelly": {
   "id": "seh-kelly",
@@ -777,7 +793,9 @@
    "Duster in hadal blue",
    "Field trousers in dark navy"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "united-overalls": {
   "id": "united-overalls",
@@ -821,7 +839,9 @@
    "Gift Card",
    "British Selvedge Denim Work Apron"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "private-white-vc": {
   "id": "private-white-vc",
@@ -921,7 +941,9 @@
    "The Chelsea Cuban Collar Shirt - Brick",
    "The Combat Jacket - British Khaki"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "maquien": {
   "id": "maquien",
@@ -1000,7 +1022,9 @@
    "Luxe Short Velvet Jacket in Teal Green",
    "Grey and Red herringbone Waistcoats with Cashmere fronts"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "maude-and-fox": {
   "id": "maude-and-fox",
@@ -1069,7 +1093,9 @@
    "Houndstooth Brace Tweed Shooting Coat",
    "The Sage - lightweight Tweed Gilet"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "chapman-bags": {
   "id": "chapman-bags",
@@ -1144,7 +1170,9 @@
    "Chelsea Floral Harvest Bag",
    "Chelsea Floral Gardening Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "barnes-and-moore": {
   "id": "barnes-and-moore",
@@ -1154,14 +1182,12 @@
   "tags": [
    "bags & leather goods",
    "braces & belts",
-   "jeans & denim",
-   "watches"
+   "jeans & denim"
   ],
   "tagEvidence": {
    "bags & leather goods": "merchant coin purse fern green",
    "jeans & denim": "denim repair patch",
-   "braces & belts": "japanese shonan belt style no 3 glazed black",
-   "watches": "nato watch band deep honey"
+   "braces & belts": "japanese shonan belt style no 3 glazed black"
   },
   "observedTypes": [],
   "sample": [
@@ -1174,14 +1200,29 @@
    "merchant coin purse fern green",
    "tillerman card holder navy blue leather edition"
   ],
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tagConfidence": {
+   "bags & leather goods": "weak",
+   "jeans & denim": "weak",
+   "braces & belts": "weak"
+  },
+  "previousTags": [
+   "bags & leather goods",
+   "braces & belts",
+   "jeans & denim",
+   "watches"
+  ],
+  "rescored": true
  },
  "john-smedley": {
   "id": "john-smedley",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "hebtroco": {
   "id": "hebtroco",
@@ -1273,7 +1314,9 @@
    "BRTR-14 Selvedge Denim Jeans / Indigo",
    "OS Shirt / Olive Linen"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "billingham": {
   "id": "billingham",
@@ -1343,7 +1386,9 @@
    "Notify me when available : Test",
    "SL Camera Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "campbell-cole": {
   "id": "campbell-cole",
@@ -1412,14 +1457,19 @@
    "Paper Fan, Lace, 20cm - White",
    "Petit Collage - Two-sided On The Go Puzzle - Ballerinas"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "carl-stuart-tailors": {
   "id": "carl-stuart-tailors",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "knepp-wild-range": {
   "id": "knepp-wild-range",
@@ -1512,7 +1562,9 @@
    "Marinated &amp; Cold Smoked Pork Ribs",
    "Pork Cumberland Sausages"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gazegill-organics": {
   "id": "gazegill-organics",
@@ -1610,7 +1662,9 @@
    "Clearspring Organic Fruit Apple & Blueberry 100g",
    "Littleover Organic Wildflower Honey with Royal Jelly"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "farm2fork": {
   "id": "farm2fork",
@@ -1667,7 +1721,9 @@
    "Lamb Neck Fillet",
    "Lamb Shank"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "eversfield-organic": {
   "id": "eversfield-organic",
@@ -1750,14 +1806,19 @@
    "Organic Pork Knuckle Joint",
    "Organic Family BBQ Box"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "iow-tomatoes": {
   "id": "iow-tomatoes",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "pipers-farm": {
   "id": "pipers-farm",
@@ -1884,14 +1945,19 @@
    "Stuffed Turkey Breast & Leg - Cranberry & Hazelnut",
    "Stuffed Turkey Breast & Leg - Apricots & Hazelnuts"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "daylesford": {
   "id": "daylesford",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "trickers": {
   "id": "trickers",
@@ -1968,7 +2034,9 @@
    "Stow Country Boot - Whiskey Hydro Nubuck",
    "Havard Penny Loafer - Espresso Burnished Calf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "crockett-jones": {
   "id": "crockett-jones",
@@ -2046,14 +2114,19 @@
    "Boston 2 Black Country Calf",
    "Harvard 2 Black Calf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "joseph-cheaney": {
   "id": "joseph-cheaney",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "loake": {
   "id": "loake",
@@ -2115,7 +2188,9 @@
    "262 black",
    "302 dark brown g"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "edward-green": {
   "id": "edward-green",
@@ -2136,7 +2211,9 @@
    "jermyn st",
    "boulevard st germain"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "johnstons-of-elgin": {
   "id": "johnstons-of-elgin",
@@ -2266,7 +2343,9 @@
    "Iris Classic Purple Cashmere Cardigan",
    "Iris Classic Purple Cashmere Tank"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "begg-x-co": {
   "id": "begg-x-co",
@@ -2365,7 +2444,9 @@
    "Dallas Marquet",
    "Vivan Envelop"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "william-lockie": {
   "id": "william-lockie",
@@ -2432,7 +2513,9 @@
    "CABLE SCARF",
    "RIBBED HAT"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "corgi": {
   "id": "corgi",
@@ -2565,14 +2648,19 @@
    "Men's 2-Pair William Morris Socks",
    "Women's 2-Pair William Morris Socks"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pantherella": {
   "id": "pantherella",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "peregrine": {
   "id": "peregrine",
@@ -2662,7 +2750,9 @@
    "Windsor Linen Bomber Jacket",
    "Windsor Linen Blazer"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mackintosh": {
   "id": "mackintosh",
@@ -2753,7 +2843,9 @@
    "Sheer Dolman Cap Sleeve T-Shirt",
    "Fine Rib Cotton Cardigan"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hiut-denim": {
   "id": "hiut-denim",
@@ -2793,7 +2885,9 @@
    "repair shipping",
    "yearbook 6"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "chatsworth-farm-shop": {
   "id": "chatsworth-farm-shop",
@@ -2813,14 +2907,19 @@
    "stables shop",
    "orangery shop"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "ludlow-food-centre": {
   "id": "ludlow-food-centre",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "balgove-larder": {
   "id": "balgove-larder",
@@ -2959,7 +3058,9 @@
    "Strathtyrum Farm Hamper",
    "Fife Hamper"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fodder": {
   "id": "fodder",
@@ -3007,14 +3108,19 @@
    "Game Pie",
    "Afternoon Tea Gift Card"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gloucester-services": {
   "id": "gloucester-services",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "rhug-estate": {
   "id": "rhug-estate",
@@ -3117,14 +3223,19 @@
    "Organic Diced Chicken",
    "Organic Frozen Turkey"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "goodwood-farm-shop": {
   "id": "goodwood-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "riverford": {
   "id": "riverford",
@@ -3205,7 +3316,9 @@
    "raspberries",
    "red grapes seedless"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fox-brothers": {
   "id": "fox-brothers",
@@ -3281,7 +3394,9 @@
    "FD162 : The Tuscan Glen Check",
    "FA2-47 : Mid Grey Mélange"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lavenham": {
   "id": "lavenham",
@@ -3368,7 +3483,9 @@
    "Lavenster Coach Jacket",
    "Clean Line Oversized Dublin"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "christys": {
   "id": "christys",
@@ -3421,7 +3538,9 @@
    "Wide Brim Straw Hat",
    "Evelyn Cloche"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ettinger": {
   "id": "ettinger",
@@ -3534,21 +3653,29 @@
    "Sterling Everyday Set",
    "Bridle Hide Everyday Set"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "barbour": {
   "id": "barbour",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "new-balance-uk": {
   "id": "new-balance-uk",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "globe-trotter": {
   "id": "globe-trotter",
@@ -3618,7 +3745,9 @@
    "Restoration Edit · XL Suitcase - 2 Wheels | Brown/Natural/Gold | 0009",
    "Restoration Edit · ML Suitcase - 2 Wheels | Red/Caramel/Gold | 0013"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tusting": {
   "id": "tusting",
@@ -3663,7 +3792,9 @@
    "Canvas Easy Tote - Black",
    "Leather Air-Tag Holder"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "emma-willis": {
   "id": "emma-willis",
@@ -3742,7 +3873,9 @@
    "White Superior",
    "Sky Superior"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "turnbull-asser": {
   "id": "turnbull-asser",
@@ -3881,21 +4014,29 @@
    "Checked Burgundy Pocket Square in Silk",
    "Floral Yellow Pocket Square in Silk"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "keelham": {
   "id": "keelham",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "cannon-hall-farm": {
   "id": "cannon-hall-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "farmer-copleys": {
   "id": "farmer-copleys",
@@ -3979,14 +4120,19 @@
    "Basque Cheesecake",
    "Lemon Drizzle Square Cake"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hollis-mead": {
   "id": "hollis-mead",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "loch-arthur": {
   "id": "loch-arthur",
@@ -4026,7 +4172,9 @@
    "A Very Loch Arthur Christmas",
    "The Scottish Selection"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "macknade": {
   "id": "macknade",
@@ -4085,14 +4233,19 @@
    "Ferragosto Italian Supper Club",
    "SUMMER FUN : Kids Pizza Workshop"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "secretts": {
   "id": "secretts",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "jamiesons-shetland": {
   "id": "jamiesons-shetland",
@@ -4201,7 +4354,9 @@
    "Kellister - Gudrun Johnson",
    "Connections Beanie - Mandy Moore - Olach Designs"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "melin-tregwynt": {
   "id": "melin-tregwynt",
@@ -4314,7 +4469,9 @@
    "Patagonia cushions",
    "Arluniaeth Throws and Blankets"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "eribe": {
   "id": "eribe",
@@ -4407,7 +4564,9 @@
    "Corry Top - Rusty",
    "Corry Hoody Sweater - Aubergine"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sunspel": {
   "id": "sunspel",
@@ -4535,7 +4694,9 @@
    "Men's Cotton Drill Trouser in Loden Green",
    "Men's Long Sleeve Tencel™ T-shirt in Black"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "drakes": {
   "id": "drakes",
@@ -4690,7 +4851,9 @@
    "New Balance 'Vaporous Grey' Made in UK Allerdale Trainers",
    "New Balance 'Vibrant Chroma' Fire Whirl Made in UK 991v2 Trainers"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "solovair": {
   "id": "solovair",
@@ -4761,14 +4924,19 @@
    "Gaucho Crazy Horse Shearling Lined 8 Eye Derby Boot",
    "Gaucho Crazy Horse Shearling Lined 6 Eye Astronaut Boot"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "drmartens-mie": {
   "id": "drmartens-mie",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "low-sizergh-barn": {
   "id": "low-sizergh-barn",
@@ -4805,14 +4973,19 @@
    "Great Gable badge",
    "Pavey Ark Badge"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "trevaskis-farm": {
   "id": "trevaskis-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "lobbs-farm-shop": {
   "id": "lobbs-farm-shop",
@@ -4919,7 +5092,9 @@
    "Knightor Winery - Trevannion White Wine 75cl",
    "Healeys Cornish Cyder Farm - Pear Rattler 500ml"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ardross-farm": {
   "id": "ardross-farm",
@@ -4978,7 +5153,9 @@
    "Everyday Essentials Beef Box",
    "Farmer’s Grill Box"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "brocksbushes": {
   "id": "brocksbushes",
@@ -5014,28 +5191,39 @@
    "Homemade Whole Quiche",
    "Homemade Whole Pies"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hollies-farm-shop": {
   "id": "hollies-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "cobbs-farm-shop": {
   "id": "cobbs-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "essington-farm": {
   "id": "essington-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "abraham-moon": {
   "id": "abraham-moon",
@@ -5090,7 +5278,9 @@
    "Malham &#8211; Green",
    "Lindsay"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hawico": {
   "id": "hawico",
@@ -5152,7 +5342,9 @@
    "Breeze - Abstract Thistle - Pinks",
    "Breeze - Floral"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "carrier-company": {
   "id": "carrier-company",
@@ -5302,7 +5494,9 @@
    "Brushed Shetland Lambswool Jumper Pea Green",
    "Rainbow Floof Wool Warmer"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "blackhorse-lane": {
   "id": "blackhorse-lane",
@@ -5422,7 +5616,9 @@
    "One Ear Brand - Kiku Bandana",
    "SE28 LODEN GREEN BRITISH WOOL GUERNSEY UNISEX SWEATER"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "norman-walsh": {
   "id": "norman-walsh",
@@ -5435,9 +5631,7 @@
   "tagCounts": {
    "dairy & cheese": 2
   },
-  "tagEvidence": {
-   "dairy & cheese": "Dorset - Ecru Milk Tea 25ssensign Hot sales lifestyle NEW"
-  },
+  "tagEvidence": {},
   "gatedOut": [
    "dairy & cheese"
   ],
@@ -5452,14 +5646,19 @@
    "Tornado - Navy Blue",
    "Tornado - Orange White Blue"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "gonalston": {
   "id": "gonalston",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "denstone-hall": {
   "id": "denstone-hall",
@@ -5477,14 +5676,19 @@
    "Afternoon Tea for Two Voucher",
    "Denstone Hall Gift Card"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "loch-levens-larder": {
   "id": "loch-levens-larder",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "cowdray-farm-shop": {
   "id": "cowdray-farm-shop",
@@ -5540,7 +5744,9 @@
    "Cowdray Ruins Tour (Adult)",
    "Cowdray Ruins Tour (Child)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "garsons": {
   "id": "garsons",
@@ -5564,7 +5770,9 @@
    "w garden living",
    "supremo lesuire"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "stansted-park": {
   "id": "stansted-park",
@@ -5662,7 +5870,9 @@
    "Firetree Chocolate &#8211; Bean to Bar",
    "Cannoli Gift Boxes"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "emmetts-peasenhall": {
   "id": "emmetts-peasenhall",
@@ -5734,7 +5944,9 @@
    "Emmett's Naturally Cured Ribs",
    "Emmett's Truffle Pig"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "maple-farm-kelsale": {
   "id": "maple-farm-kelsale",
@@ -5773,7 +5985,9 @@
    "Organic White Spelt Flour",
    "Organic Rye Flour"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "north-sea-clothing": {
   "id": "north-sea-clothing",
@@ -5844,7 +6058,9 @@
    "BODY WARMER TYPE 2 - OLIVE GREEN, sample sale",
    "CADET HEAVY LONG SLEEVED CREW WITH POCKET"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "genevieve-sweeney": {
   "id": "genevieve-sweeney",
@@ -5960,7 +6176,9 @@
    "Lambswool Triangle Scarf Bright Red",
    "Lambswool Cashmere Tweed Triangle Scarf Teal Blue"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "henry-poole": {
   "id": "henry-poole",
@@ -6035,14 +6253,19 @@
    "Lucius Beebe &#8211; Burnt Orange",
    "James Brudenell Brown Multi Stripe"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "anderson-sheppard": {
   "id": "anderson-sheppard",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "gaziano-girling": {
   "id": "gaziano-girling",
@@ -6082,28 +6305,39 @@
    "leather belt vintage oak",
    "leather belt vintage rioja"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "llwynhelyg": {
   "id": "llwynhelyg",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "knitsley": {
   "id": "knitsley",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "tablehurst-farm": {
   "id": "tablehurst-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "plumgarths": {
   "id": "plumgarths",
@@ -6180,7 +6414,9 @@
    "Meat for a Week (Family)",
    "Handmade Steak Burgers (4 pack)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "otterton-mill": {
   "id": "otterton-mill",
@@ -6202,7 +6438,9 @@
    "Featured Products.html",
    "Gift Vouchers Otterton Mill"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "weetons": {
   "id": "weetons",
@@ -6282,7 +6520,9 @@
    "The Yorkshire Specialities Giftbag",
    "The Tea & Coffee Giftbag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "denby-pottery": {
   "id": "denby-pottery",
@@ -6354,7 +6594,9 @@
    "Imperial Blue Cereal Bowl 001010007",
    "Imperial Blue Shallow Rimmed Bowl 001010008"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "burleigh-pottery": {
   "id": "burleigh-pottery",
@@ -6431,28 +6673,39 @@
    "Black & White Asiatic Pheasants Small Tankard Jug 284ml/0.5pt Seconds",
    "Black & White Asiatic Pheasants Medium Tankard Jug 568ml/1pt Seconds"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "moorcroft": {
   "id": "moorcroft",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "leach-pottery": {
   "id": "leach-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "whichford-pottery": {
   "id": "whichford-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "highland-stoneware": {
   "id": "highland-stoneware",
@@ -6541,7 +6794,9 @@
    "Egg Saucer &#8211; Blue Edge",
    "Lungo Cup &#038; Saucer &#8211; Seascape"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "royal-crown-derby": {
   "id": "royal-crown-derby",
@@ -6634,7 +6889,9 @@
    "Service Plates Neutral Charger Plate (30cm)",
    "Service Plates Eau de nil Charger Plate (30cm)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "1882-ltd": {
   "id": "1882-ltd",
@@ -6708,14 +6965,19 @@
    "Pitcher (Nude) &#8211; Standard Ware with Fort Standard",
    "Pitcher (Stone) &#8211; Standard Ware with Fort Standard"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "portmeirion": {
   "id": "portmeirion",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "emma-alington": {
   "id": "emma-alington",
@@ -6794,7 +7056,9 @@
    "Milk Jug, 22k Gold Stripes",
    "Large Bowl, 22k Gold Stripes"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "feldspar": {
   "id": "feldspar",
@@ -6864,7 +7128,9 @@
    "12oz Russet Tea Mug",
    "Russet Pasta Bowl"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "rye-pottery": {
   "id": "rye-pottery",
@@ -6936,14 +7202,19 @@
    "leaf corners flowers",
    "flowers in circles"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "dunoon-ceramics": {
   "id": "dunoon-ceramics",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "linda-bloomfield": {
   "id": "linda-bloomfield",
@@ -7008,7 +7279,9 @@
    "Lichen-effect small black jar",
    "Lichen-effect small grey salt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sue-pryke": {
   "id": "sue-pryke",
@@ -7075,7 +7348,9 @@
    "2 Cup Teapot",
    "Brass Handled Teapot"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "brickett-davda": {
   "id": "brickett-davda",
@@ -7111,14 +7386,19 @@
    "9",
    "8"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gwili-pottery": {
   "id": "gwili-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "edinbane-pottery": {
   "id": "edinbane-pottery",
@@ -7215,28 +7495,39 @@
    "Storm Platter",
    "Storm Bowl"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sytch-farm-studios": {
   "id": "sytch-farm-studios",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "belleek-pottery": {
   "id": "belleek-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "clive-bowen": {
   "id": "clive-bowen",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "jim-malone": {
   "id": "jim-malone",
@@ -7299,7 +7590,9 @@
    "AL286Y1541 Tea Cup",
    "AL286Y1539 Tea Cup"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "matthew-blakely": {
   "id": "matthew-blakely",
@@ -7344,7 +7637,9 @@
    "Small Black and blue mug 1",
    "Shino crawl mug"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fitch-and-mcandrew": {
   "id": "fitch-and-mcandrew",
@@ -7409,14 +7704,19 @@
    "Flock of birds tyg",
    "Dahlia box, small"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "bridge-pottery": {
   "id": "bridge-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "brookhouse-pottery": {
   "id": "brookhouse-pottery",
@@ -7479,14 +7779,19 @@
    "AL286Y1541 Tea Cup",
    "AL286Y1539 Tea Cup"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "maze-hill-pottery": {
   "id": "maze-hill-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "sasha-wardell": {
   "id": "sasha-wardell",
@@ -7540,7 +7845,9 @@
    "Urchin Tea Lights",
    "SPARKLE GLOBE BOWL"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "jane-hamlyn": {
   "id": "jane-hamlyn",
@@ -7603,7 +7910,9 @@
    "AL286Y1541 Tea Cup",
    "AL286Y1539 Tea Cup"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "walter-keeler": {
   "id": "walter-keeler",
@@ -7666,21 +7975,29 @@
    "AL286Y1541 Tea Cup",
    "AL286Y1539 Tea Cup"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sandy-brown": {
   "id": "sandy-brown",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "john-pollex": {
   "id": "john-pollex",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "penny-simpson": {
   "id": "penny-simpson",
@@ -7781,7 +8098,9 @@
    "Soup/Cereal bowl - blue and turquoise",
    "Soup/Cereal bowl"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "chris-keenan": {
   "id": "chris-keenan",
@@ -7798,13 +8117,7 @@
    "jewellery": 1,
    "footwear & boots": 1
   },
-  "tagEvidence": {
-   "drinks & spirits": "the rum kitchen",
-   "coats & jackets": "fur coat no knickers",
-   "jeans & denim": "pepe jeans london",
-   "jewellery": "joy everley fine jewellers",
-   "footwear & boots": "boots"
-  },
+  "tagEvidence": {},
   "gatedOut": [
    "coats & jackets",
    "drinks & spirits",
@@ -7823,21 +8136,29 @@
    "comptoir libanais",
    "dehesa"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "sue-paraskeva": {
   "id": "sue-paraskeva",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "akiko-hirai": {
   "id": "akiko-hirai",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "james-tilla-waters": {
   "id": "james-tilla-waters",
@@ -7900,21 +8221,29 @@
    "grey (crackle) 16cm vase",
    "dark red 16cm vase"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "jack-doherty": {
   "id": "jack-doherty",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "adam-buick": {
   "id": "adam-buick",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "nicola-werner": {
   "id": "nicola-werner",
@@ -7985,14 +8314,19 @@
    "Small Handmade Ceramic Salad Bowl - Mistletoe Lime Teal",
    "Small Handmade Ceramic Rounded Jug - Strawberry Teal"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "katharina-klug": {
   "id": "katharina-klug",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "churchill-china": {
   "id": "churchill-china",
@@ -8040,7 +8374,9 @@
    "Nutmeg Coupe Plate 16.5cm",
    "Nutmeg Coupe Plate 21.7cm"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cornishware-tg-green": {
   "id": "cornishware-tg-green",
@@ -8076,14 +8412,19 @@
    "ukb 852744cr4",
    "ukb 852744cb4"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "littlethorpe-potteries": {
   "id": "littlethorpe-potteries",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "errington-reay": {
   "id": "errington-reay",
@@ -8161,7 +8502,9 @@
    "Rust combo",
    "Jade garland urn combo"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "anta": {
   "id": "anta",
@@ -8280,21 +8623,29 @@
    "Stella Stewart Carpet Bag",
    "Holly Side Plate"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "crail-pottery": {
   "id": "crail-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "ballydougan-pottery": {
   "id": "ballydougan-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "ola-gorie": {
   "id": "ola-gorie",
@@ -8349,7 +8700,9 @@
    "Echo Amethyst Ring",
    "Cloudberry Long Stud Earrings"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "deakin-and-francis": {
   "id": "deakin-and-francis",
@@ -8474,14 +8827,19 @@
    "Yellow Gold Oval Signet Ring (12x10mm)",
    "Yellow Gold Cushion Signet Ring (12x10mm)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hamilton-and-inches": {
   "id": "hamilton-and-inches",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "alex-monroe": {
   "id": "alex-monroe",
@@ -8541,7 +8899,9 @@
    "Small Sprouting Rosette Necklace",
    "Heart Seed Flower Stud Earrings"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cw-sellors": {
   "id": "cw-sellors",
@@ -8619,14 +8979,19 @@
    "Franck Muller Vanguard",
    "Franck Muller Vanguard"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "rhiannon": {
   "id": "rhiannon",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "hebridean-jewellery": {
   "id": "hebridean-jewellery",
@@ -8693,21 +9058,29 @@
    "Enya Blue Agate Silver Necklace",
    "Enya Blue Agate Silver Earrings"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "roger-w-smith": {
   "id": "roger-w-smith",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "charles-frodsham": {
   "id": "charles-frodsham",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "garrick-watchmakers": {
   "id": "garrick-watchmakers",
@@ -8739,7 +9112,9 @@
    "Shark Skin Watch Strap",
    "Python Watch Strap"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "anordain": {
   "id": "anordain",
@@ -8781,7 +9156,9 @@
    "Model 2 Porcelain - Medium",
    "Letters from Assynt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "bremont": {
   "id": "bremont",
@@ -8836,7 +9213,9 @@
    "HMAF Commemorative Watch Box Set",
    "HMAF Terra Nova 40.5mm Date Bracelet"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fears-watches": {
   "id": "fears-watches",
@@ -8879,7 +9258,9 @@
    "Redcliff 39.5 Pale Lilac",
    "Brunswick 40 Filton 'Raven Black'"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mourne-textiles": {
   "id": "mourne-textiles",
@@ -8943,7 +9324,9 @@
    "Mourne Mist Offcut- 202/8",
    "Mourne Mist Offcut- 202/6"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "thomas-ferguson-linen": {
   "id": "thomas-ferguson-linen",
@@ -9044,28 +9427,39 @@
    "Flax Pickers Woolen Throw",
    "Paul Costelloe Classic Throws"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ballylagan-organic": {
   "id": "ballylagan-organic",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "eden-pottery": {
   "id": "eden-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "steensons": {
   "id": "steensons",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "faller": {
   "id": "faller",
@@ -9152,7 +9546,9 @@
    "Blue Sapphire &#038; Diamond 18ct Yellow Gold &#038; Platinum Cluster ",
    "Oval Diamond 18ct Yellow Gold &#038; Platinum Solitaire Ring 0.70ct"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "nomadic-watches": {
   "id": "nomadic-watches",
@@ -9193,7 +9589,9 @@
    "Deep Ocean Blue - Maraí 401 - 40mm Dive Watch (2026 Edition)",
    "Crimson Dawn - Maraí 401 - 40mm Dive Watch (2026 Edition)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "yarmouth-oilskins": {
   "id": "yarmouth-oilskins",
@@ -9274,7 +9672,9 @@
    "The Drivers Jacket - Khaki",
    "The Steadfast Trousers - Natural"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "farfield-clothing": {
   "id": "farfield-clothing",
@@ -9355,7 +9755,9 @@
    "Plain Sherpa Fleece Jacket Brown",
    "Sherpa Fleece Jacket  Natural Sheep and Lamb"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "troy-london": {
   "id": "troy-london",
@@ -9394,7 +9796,9 @@
    "Men's Wax Jacket in Military Green",
    "Wax Parka in Camo"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mcnair-shirts": {
   "id": "mcnair-shirts",
@@ -9487,7 +9891,9 @@
    "Men&#8217;s moleskin Mill Gilet",
    "Chadwick Jacket in PlasmaDry Cavalry Twill"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fieldware-co": {
   "id": "fieldware-co",
@@ -9523,7 +9929,9 @@
    "Makers Waist Apron - Classic Waxed Cotton",
    "Utility Waist Apron - Classic Waxed Cotton"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hegarty-london": {
   "id": "hegarty-london",
@@ -9591,14 +9999,19 @@
    "CASHMERE & WOOL PEA COAT",
    "NAVY BLUE LAMBSWOOL SCARF"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lochcarron": {
   "id": "lochcarron",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "berk": {
   "id": "berk",
@@ -9718,7 +10131,9 @@
    "EVONNE - SEA ISLAND COTTON",
    "ANNE - SEA ISLAND COTTON"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "colhays": {
   "id": "colhays",
@@ -9766,7 +10181,9 @@
    "Extra-long Staple Cotton Coach Polo in Black",
    "Cashmere painter's shawl collar cardigan in dark brown"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mallochs": {
   "id": "mallochs",
@@ -9822,21 +10239,29 @@
    "Malloch's x John Smedley French Navy Cromford Sea Island Cotton Polo S",
    "Malloch's x John Smedley Navy Cromford Sea Island Cotton Polo Shirt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "glenbrae": {
   "id": "glenbrae",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "michael-ross-knitwear": {
   "id": "michael-ross-knitwear",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "mars-knitwear": {
   "id": "mars-knitwear",
@@ -9929,7 +10354,9 @@
    "Lambswool - Seamless Crew - 807 - Cream",
    "Lambswool - Seamless Crew - 808 - Cream"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "glencroft": {
   "id": "glencroft",
@@ -10019,7 +10446,9 @@
    "Temple Spotty Jacob Breed Jacob Sheepskin Rug",
    "Sudbury Jacob Breed Spotty British Sheepskin Rug"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "izzy-lane": {
   "id": "izzy-lane",
@@ -10063,7 +10492,9 @@
    "mansfield sweater grey",
    "izzy lane beanie and scarf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "eas-fors": {
   "id": "eas-fors",
@@ -10132,14 +10563,19 @@
    "Cearcall Scarf Sea Green",
    "Feàrna Shawl Sea Green"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "carnwear": {
   "id": "carnwear",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "quinton-chadwick": {
   "id": "quinton-chadwick",
@@ -10187,7 +10623,9 @@
    "Patterned Gloves in Hyper Nature Colours",
    "Tuck Stitch Angora Beanie Hat in Tangerine"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "croft-house": {
   "id": "croft-house",
@@ -10254,7 +10692,9 @@
    "Chrysanthemum natural clothes moth killer spray",
    "Clothes moth deterrent natural hanging sachets x5 - Vetivert"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "goral": {
   "id": "goral",
@@ -10323,7 +10763,9 @@
    "TUGGS Rose Anvil X GORAL Pull On Boot - Horween Chromexcel Dark Brown ",
    "TUGGS Rose Anvil X GORAL Pull On Boot - Blood Core PRE-ORDER"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "billy-tannery": {
   "id": "billy-tannery",
@@ -10378,7 +10820,9 @@
    "The Garden Trowel - Wrapped",
    "Billy x Cheaney Boots"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cherchbi": {
   "id": "cherchbi",
@@ -10426,7 +10870,9 @@
    "Barrett Sleeve",
    "Barrett Slim Briefcase"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mcrostie": {
   "id": "mcrostie",
@@ -10485,14 +10931,19 @@
    "Custom_Clyde_Y. Fukuta",
    "MINI McLAIRD"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "english-fine-cottons": {
   "id": "english-fine-cottons",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-07-31"
+  "checked": "2026-07-31",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "ghhurt": {
   "id": "ghhurt",
@@ -10568,7 +11019,9 @@
    "Luxuriously Soft Lambswool Snood - Derby Grey",
    "Large Plain Knit Lambswool Triangle Scarf - Dark Brown"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "house-of-cheviot": {
   "id": "house-of-cheviot",
@@ -10626,7 +11079,9 @@
    "Ladies Cashmere Lounge Socks ~ Chalk",
    "Ladies Cashmere Lounge Socks ~ Powder Blue"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "and-daughter": {
   "id": "and-daughter",
@@ -10709,7 +11164,9 @@
    "Sligo Crewneck in Poppy Red",
    "Sligo Crewneck in Hazelnut"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "woolkind": {
   "id": "woolkind",
@@ -10763,7 +11220,9 @@
    "Skinny Love Heart Scarf",
    "Skinny Sunshine Scarf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "london-tradition": {
   "id": "london-tradition",
@@ -10799,7 +11258,9 @@
    "pearl grey",
    "black"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "grenfell": {
   "id": "grenfell",
@@ -10841,7 +11302,9 @@
    "Labrador Corduroy Tan",
    "Labrador Grenfell Cloth Black"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gloverall": {
   "id": "gloverall",
@@ -10973,7 +11436,9 @@
    "Women's Freda Long Slim Fit Duffle Coat",
    "Women's Freda Duffle Coat Silver"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "yarmo": {
   "id": "yarmo",
@@ -11036,7 +11501,9 @@
    "Yarmo Bib and Brace Overalls, Sailcloth Cotton, Navy - BB011",
    "Yarmo Cotton Storemans Warehouse, Open All Hours Shopkeepers Coat, Dus"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "buffalo-systems": {
   "id": "buffalo-systems",
@@ -11097,7 +11564,9 @@
    "Buffalo Systems Functional Outdoor Clothing Tee",
    "Olive Kendal Cap - Red Shield Patch"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "aero-leather": {
   "id": "aero-leather",
@@ -11165,7 +11634,9 @@
    "mens",
    "denim"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fox-umbrellas": {
   "id": "fox-umbrellas",
@@ -11235,7 +11706,9 @@
    "TEL7 (10 Rib) Brown Finish Horse Head (NEW 2026)",
    "WLT7 Nickel Rabbit Head (NEW 2026)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "budd-shirts": {
   "id": "budd-shirts",
@@ -11383,7 +11856,9 @@
    "Exclusive Budd Stripe Chairman Boxer Shorts in Pink",
    "Exclusive Budd Stripe Classic Boxer Shorts in Pink"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fortis-clothing": {
   "id": "fortis-clothing",
@@ -11471,7 +11946,9 @@
    "Womens Jackal Jacket Black",
    "Womens Jackal Jacket Coyote"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gushlow-cole": {
   "id": "gushlow-cole",
@@ -11574,7 +12051,9 @@
    "Hooded Shearling Coat",
    "Teddy Slouch Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "thorndale": {
   "id": "thorndale",
@@ -11625,7 +12104,9 @@
    "Brocton Olive Green Rucksack",
    "Drayton Beige Nylon Rucksack Tote"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lockwood-smocks": {
   "id": "lockwood-smocks",
@@ -11680,7 +12161,9 @@
    "Ladies’ Knightsbridge",
    "Gentleman's Knightsbridge"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "darzi": {
   "id": "darzi",
@@ -11724,7 +12207,9 @@
    "The Hillgate - Heavyweight Midnight Blue Merino",
    "The Nehru - Navy Cashmere Blend"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "british-sheepskin": {
   "id": "british-sheepskin",
@@ -11814,7 +12299,9 @@
    "&#8216;Aged&#8217; Sheepskin Flying Jacket",
    "Long Length Merino Sheepskin Bodywarmer"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "william-lennon": {
   "id": "william-lennon",
@@ -11855,7 +12342,9 @@
    "S40L All-terrain Boot",
    "108 Steel Toe All-Terrain Boot"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cambridge-satchel": {
   "id": "cambridge-satchel",
@@ -11958,14 +12447,19 @@
    "The Meadow Bag - Salmon Pink",
    "The Meadow Bag - Sky Blue"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "john-lobb-ltd": {
   "id": "john-lobb-ltd",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "leather-satchel-co": {
   "id": "leather-satchel-co",
@@ -12017,7 +12511,9 @@
    "Expedited Crafting Service",
    "(FREE?) Leather Swatches / Samples"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "palava": {
   "id": "palava",
@@ -12181,14 +12677,19 @@
    "Archive Sale - Children's Classic Cardigan - Sparkly Gold",
    "Archive Sale - Baby Classic Cardigan - Ivory"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "dartmoor-shoemakers": {
   "id": "dartmoor-shoemakers",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "owen-barry": {
   "id": "owen-barry",
@@ -12301,14 +12802,19 @@
    "Sheepskin Rug/Throw Soft Grey | Double by Owen Barry",
    "Sheepskin Rug/Throw Steel Grey | Double by Owen Barry"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sanders-sanders": {
   "id": "sanders-sanders",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "broadland-slippers": {
   "id": "broadland-slippers",
@@ -12348,7 +12854,9 @@
    "Mens Tapestry Slippers",
    "Mens Patent Leather Evening Pumps"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "juju-footwear": {
   "id": "juju-footwear",
@@ -12391,7 +12899,9 @@
    "NINO",
    "NINO"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "everbound-goods": {
   "id": "everbound-goods",
@@ -12432,7 +12942,9 @@
    "Holstein 001 Glasses Case",
    "Holstein 001 Key Organiser"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "jadd-shoes": {
   "id": "jadd-shoes",
@@ -12471,7 +12983,9 @@
    "Desert Hi-Top Hunter Black",
    "Desert Boot Tobacco Suede"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "de-winter": {
   "id": "de-winter",
@@ -12521,7 +13035,9 @@
    "Alnwick in Black Calf, Rubber Soles",
    "Warwick in Cedar Grain Calf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "barnwell-footwear": {
   "id": "barnwell-footwear",
@@ -12545,7 +13061,9 @@
    "72",
    "73"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "arthur-sleep": {
   "id": "arthur-sleep",
@@ -12612,7 +13130,9 @@
    "Top-Handle Clutch Bag in Black Crocodile Leather",
    "Oxford in Brown Calf Leather"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "draper-of-glastonbury": {
   "id": "draper-of-glastonbury",
@@ -12699,7 +13219,9 @@
    "LUCAS MENS SHEEPSKIN SLIPPERS",
    "ALEX MENS LEATHER MULE SLIPPERS"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "swaine": {
   "id": "swaine",
@@ -12840,7 +13362,9 @@
    "Diana's Key Fob Shoe Lift - Jaguar Green",
    "Diana's Key Holder - Jaguar Green"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lanx": {
   "id": "lanx",
@@ -12922,7 +13446,9 @@
    "MITTON // BROWN & KHAKI",
    "SHIREBURN // TAN & KHAKI"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "beorma-leather-company": {
   "id": "beorma-leather-company",
@@ -12965,7 +13491,9 @@
    "Personalisation",
    "Double Ring Webbing Belt 30mm"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "herd": {
   "id": "herd",
@@ -13064,7 +13592,9 @@
    "Fleetwood Jumper in Damson with Mist & Ecru",
    "Fleetwood Cardigan in Plum with Loam & Ecru"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cornelia-james": {
   "id": "cornelia-james",
@@ -13119,7 +13649,9 @@
    "Phoebe |  Satin Opera Glove",
    "Sofia | Tulle Opera Glove"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "laird-hatters": {
   "id": "laird-hatters",
@@ -13207,7 +13739,9 @@
    "Laird herringbone shirt",
    "Large Oval Hat Box"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "rove-knitwear": {
   "id": "rove-knitwear",
@@ -13303,7 +13837,9 @@
    "Organic Cotton Knit Top | Chocolate",
    "Organic Cotton Knit Top | Olive"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "anise-cashmere": {
   "id": "anise-cashmere",
@@ -13338,14 +13874,19 @@
    "Classic Wrap",
    "Short Cut Cashmere Wrap"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "percy-stride": {
   "id": "percy-stride",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "bennett-winch": {
   "id": "bennett-winch",
@@ -13391,7 +13932,9 @@
    "Shoulder Strap - Olive",
    "Wet Bag-SC-Brown"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "bowhill-and-elliott": {
   "id": "bowhill-and-elliott",
@@ -13507,14 +14050,19 @@
    "Harvard 2 - Black Milled Calf",
    "Biarritz Buckle Sandal in Tan"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "albert-thurston": {
   "id": "albert-thurston",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "campbells-of-beauly": {
   "id": "campbells-of-beauly",
@@ -13671,7 +14219,9 @@
    "Go Wild Candle",
    "Highland Candle"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "george-cleverley": {
   "id": "george-cleverley",
@@ -13711,7 +14261,9 @@
    "Edward in Black Calf",
    "Reuben in Black Calf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gordon-nicolson-kiltmakers": {
   "id": "gordon-nicolson-kiltmakers",
@@ -13849,7 +14401,9 @@
    "Celtic Cone Dress Sporran",
    "Gift Voucher (Greetings Card Style)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "kinloch-anderson": {
   "id": "kinloch-anderson",
@@ -13885,7 +14439,9 @@
    "below the knee tartan skirt",
    "day waistcoat"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-british-belt-company": {
   "id": "the-british-belt-company",
@@ -13970,7 +14526,9 @@
    "Mainlander 3-in-1 Tech Bag",
    "Navigator Cross Body Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "risdon-and-risdon": {
   "id": "risdon-and-risdon",
@@ -14025,7 +14583,9 @@
    "Black Collection Small Canvas & Leather Tool Roll",
    "Black Collection British Dry Waxed Canvas Artist Roll"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lock-and-co-hatters": {
   "id": "lock-and-co-hatters",
@@ -14094,14 +14654,19 @@
    "Margot Seersucker Sun Hat",
    "Adjustable Cashmere Green Baseball Cap"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "brora": {
   "id": "brora",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "mamnick": {
   "id": "mamnick",
@@ -14223,7 +14788,9 @@
    "Outdoor Leisure T-Shirt (Dark Porter)",
    "Outdoor Leisure T-Shirt (Navy LS)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "bridgedale": {
   "id": "bridgedale",
@@ -14273,7 +14840,9 @@
    "Women's Trail Run Ultralight Zero Merino Sport Crew",
    "Men's Trail Run Ultralight Zero Merino Sport Low"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "barker-shoes": {
   "id": "barker-shoes",
@@ -14340,14 +14909,19 @@
    "Harris - Burgundy Grain",
    "Faxton - Pegasus Pull Up"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "alt-berg": {
   "id": "alt-berg",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "dents": {
   "id": "dents",
@@ -14439,21 +15013,29 @@
    "Women’s Long Opera Satin Gloves with Buttons",
    "Women's Plaid Check Blanket Scarf with Tassels"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cordings": {
   "id": "cordings",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "grenson": {
   "id": "grenson",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "the-cambridge-sock-company": {
   "id": "the-cambridge-sock-company",
@@ -14509,7 +15091,9 @@
    "The Wicken II Merino Boot Sock 2 pair Bundle ",
    "Mohair Boot Sock - The Christi"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "john-partridge": {
   "id": "john-partridge",
@@ -14634,7 +15218,9 @@
    "Derwent Handbag - Aqua | By Glen Appin",
    "Sock Gift Box - Woodland Animal"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "british-boxers": {
   "id": "british-boxers",
@@ -14746,7 +15332,9 @@
    "Women's Twill Cotton Strappy Nightdress – Armoury Grey Herringbone",
    "Women's Brushed Cotton Nightshirt – Midnight Tartan"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "oliver-spencer": {
   "id": "oliver-spencer",
@@ -14883,7 +15471,9 @@
    "Southwell Pink Laurel Suit",
    "Arnold Sand Laurel Suit"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "charl-knitwear": {
   "id": "charl-knitwear",
@@ -14984,7 +15574,9 @@
    "Dowsey",
    "Teddy"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ratcatcher": {
   "id": "ratcatcher",
@@ -15058,7 +15650,9 @@
    "Tayside Shooting Socks With Garters in Ochre",
    "Tayside shooting sock Brick Red With Garters"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "arbon-socks": {
   "id": "arbon-socks",
@@ -15106,7 +15700,9 @@
    "Somerset Contrast Sock",
    "Cashmere Lounger"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "marwood": {
   "id": "marwood",
@@ -15170,7 +15766,9 @@
    "marwood printed polke spot tie grey black spots",
    "marwood persian star silk tie gunmetal aqua"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tyler-and-tyler": {
   "id": "tyler-and-tyler",
@@ -15277,7 +15875,9 @@
    "TYLER & TYLER Capsule Support British Farming Lapel Pin",
    "TYLER & TYLER Luxury Men's Woven Silk Pocket Square Gift Set Stripe"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "banton-frameworks": {
   "id": "banton-frameworks",
@@ -15318,7 +15918,9 @@
    "Linea A | Graphite Grey Sun",
    "Linea A | Onyx Black / Havana"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "moloh": {
   "id": "moloh",
@@ -15414,7 +16016,9 @@
    "Bonaparte Tailcoat Sundance",
    "Antibes Shirt Sundance"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pickett-london": {
   "id": "pickett-london",
@@ -15530,14 +16134,19 @@
    "Medium Marseillan Bag",
    "Small Marseillan Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "david-nieper": {
   "id": "david-nieper",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "benson-and-clegg": {
   "id": "benson-and-clegg",
@@ -15624,7 +16233,9 @@
    "Sterling Silver Hobnail Chain Cufflinks",
    "22ct Gold Plated Sterling Silver Hobnail Chain Cufflinks"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "peper-harow": {
   "id": "peper-harow",
@@ -15693,7 +16304,9 @@
    "Women's Gym Socks Bundle - Aero Black",
    "Women's Gym Socks Bundle - Aero Beige"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sheepland": {
   "id": "sheepland",
@@ -15803,7 +16416,9 @@
    "100% Undyed Rare Breed Icelandic Sheepskin Double &#8211; Black &#038;",
    "100% British Undyed Rare Breed Sheepskin in Buttermilk Hearth &#8211; "
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lambland": {
   "id": "lambland",
@@ -15924,14 +16539,19 @@
    "Percy The Pig Soft Toy",
    "Grace &#8211; Sheepskin Mules"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tiffany-rose": {
   "id": "tiffany-rose",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "justine-tabak": {
   "id": "justine-tabak",
@@ -16030,14 +16650,19 @@
    "Pembroke Pinafore in Madras Check Irish Linen",
    "Haworth Skirt in Red Stripe Irish Linen and Nottingham Lace"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-bradford-sock-company": {
   "id": "the-bradford-sock-company",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "colenimo": {
   "id": "colenimo",
@@ -16135,7 +16760,9 @@
    "Sleeveless Ribbon Top / Windowpane Check",
    "Typewriter Cotton Dress / Pale Mauve"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "findra-clothing": {
   "id": "findra-clothing",
@@ -16251,7 +16878,9 @@
    "gift card",
    "Ossian Soft Shell Jacket"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "freddies-of-pinewood": {
   "id": "freddies-of-pinewood",
@@ -16335,7 +16964,9 @@
    "silver lurex 1950s t",
    "test"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "withnell": {
   "id": "withnell",
@@ -16404,7 +17035,9 @@
    "HOWCROFT | pleated culotte in fine needlecord",
    "PAULA  | long sleeve linen dress |scalloped front"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sam-brown-london": {
   "id": "sam-brown-london",
@@ -16484,7 +17117,9 @@
    "Compact Traveller Bag in White & Green Box Calf Leather with Ivory Sti",
    "Classic Tan Jean Belt with Polished Brass Buckle 30mm Width"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hackney-gt": {
   "id": "hackney-gt",
@@ -16580,7 +17215,9 @@
    "Love Wins Keeper organic hoodie.  Black, grey, navy, stone blue",
    "Love Wins Keeper organic tee, black, navy, grey , white, denim"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "meccanica-clothing": {
   "id": "meccanica-clothing",
@@ -16645,7 +17282,9 @@
    "Selvedge Denim Apron with Adjustable Cotton Strap",
    "Alderley Sedgwick 1900 Deep Black Belt - Brass or Nickel Buckle"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pajotten": {
   "id": "pajotten",
@@ -16735,7 +17374,9 @@
    "Studio Dress - light weight denim",
    "Yard Shirt in striped linen"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "elgar-shirts": {
   "id": "elgar-shirts",
@@ -16807,14 +17448,19 @@
    "Ladies wool waistcoat in heavy black wool",
    "Ladies Regency cotton sateen chemise"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "garstin-1871": {
   "id": "garstin-1871",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "blackshore": {
   "id": "blackshore",
@@ -16870,7 +17516,9 @@
    "chore jacket",
    "short chore jacket"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sub-zero": {
   "id": "sub-zero",
@@ -17043,7 +17691,9 @@
    "Lifeventure Protective Sunglasses Case",
    "Whitby Gear Pocket Monocular 8x21"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "rolf-skeldon": {
   "id": "rolf-skeldon",
@@ -17082,7 +17732,9 @@
    "Slim Fit Organic Cotton Cargo Joggers",
    "Slim Fit Organic Cotton Joggers"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "kate-sheridan": {
   "id": "kate-sheridan",
@@ -17264,14 +17916,19 @@
    "Sophie Alda Oatmeal Eucalyptus Cup",
    "Bottle Vase in Oatmeal Eucalyptus"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "weskit": {
   "id": "weskit",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "blue-nude": {
   "id": "blue-nude",
@@ -17374,7 +18031,9 @@
    "Enso Curved Tote Bag - Cream",
    "Solange Wide Headband in Pearl Silk"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cwt-clothing": {
   "id": "cwt-clothing",
@@ -17418,28 +18077,39 @@
    "Essential Hoodie",
    "Heritage T-shirt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "monkstone-knitwear": {
   "id": "monkstone-knitwear",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "elizabeth-martin-tweed": {
   "id": "elizabeth-martin-tweed",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "tim-hardy": {
   "id": "tim-hardy",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "the-cotton-london": {
   "id": "the-cotton-london",
@@ -17560,7 +18230,9 @@
    "The Cotton Original Three Peaks Hoodie - Black",
    "The Cotton Original Mountain Hoodie - Black"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "crease-studios": {
   "id": "crease-studios",
@@ -17615,14 +18287,19 @@
    "Pale Pink Scalloped Bandeau Silk Bra",
    "Pale Pink Scalloped Silk Knickers"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "berties-of-bay": {
   "id": "berties-of-bay",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "oxford-blue": {
   "id": "oxford-blue",
@@ -17737,7 +18414,9 @@
    "Womens Socks Dog & Spots - Lime Green",
    "Womens Socks Cosy Cats - Mustard"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "o-pioneers": {
   "id": "o-pioneers",
@@ -17837,7 +18516,9 @@
    "Amy Camisole CocoWolf Collab",
    "Sally Shorts - Yellow"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "wildsole": {
   "id": "wildsole",
@@ -17861,7 +18542,9 @@
    "FOOT FUNDAMENTALS COURSE",
    "HERON"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "previousTags": [],
+  "rescored": true
  },
  "umpie-handbags": {
   "id": "umpie-handbags",
@@ -17909,7 +18592,9 @@
    "Velvet Hobo Bag, Leopard Strap",
    "Purple Brocade Shoulder Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "daffodil-and-leek": {
   "id": "daffodil-and-leek",
@@ -17972,7 +18657,9 @@
    "The Dytam Shirt - Short Sleeve Embroidered #54 | Medium",
    "The Poppy Dress - Tan Gingham | Large"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "goodnight-irene": {
   "id": "goodnight-irene",
@@ -18014,7 +18701,9 @@
    "Cindy - Blue",
    "Sinclair Button Cover Scarf - Jane Fondas Hair"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "waring-brooke": {
   "id": "waring-brooke",
@@ -18115,7 +18804,9 @@
    "OUTLET: Boxing Hare Tie Navy/Tan",
    "OUTLET: Heads and Tails Handwarmer"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "joe-and-co-denim": {
   "id": "joe-and-co-denim",
@@ -18223,21 +18914,29 @@
    "Paxton 55 Brushed Cotton Candy Stripe Over Shirt",
    "Paxton 54  Cotton Ticking Stripe Over Shirt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "paul-brown": {
   "id": "paul-brown",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "english-utopia": {
   "id": "english-utopia",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "awling": {
   "id": "awling",
@@ -18277,14 +18976,19 @@
    "Baslow Belt - Walnut Brown / Pewter",
    "Rowarth Belt - Chocolate Brown Suede / Brass"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "worn-to-threads": {
   "id": "worn-to-threads",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "hurdwick-handmade-bag-company": {
   "id": "hurdwick-handmade-bag-company",
@@ -18324,7 +19028,9 @@
    "Multicolour Cowhide Leather Bag",
    "Siphon Leopard Print on Cowhide Clutch"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "reflekt-clothing": {
   "id": "reflekt-clothing",
@@ -18385,7 +19091,9 @@
    "Signature T-Shirt",
    "Blank T-Shirt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "empire-jeans": {
   "id": "empire-jeans",
@@ -18459,14 +19167,19 @@
    "Empire Leather Belt",
    "Jude Navy Rubber Print Hoodie"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "torramor": {
   "id": "torramor",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "ednerat": {
   "id": "ednerat",
@@ -18553,7 +19266,9 @@
    "The Waisted A-Line Skirt in Chocolate Brown Merino Flannel",
    "18 – Fitted Hourglass Coat in Pale Blue Silk Matka Weave"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-moleskin-jeans-co": {
   "id": "the-moleskin-jeans-co",
@@ -18593,7 +19308,9 @@
    "made in britain mens english shorts",
    "17rzwgpjyf38hr4qhlje7cp8zpszpw"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "kerriealdo": {
   "id": "kerriealdo",
@@ -18706,7 +19423,9 @@
    "MADE TO ORDER // Unisex 'White Clay' Jacket",
    "MADE TO ORDER // Unisex Mosaic Tapestry Jacket"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "amy-britton": {
   "id": "amy-britton",
@@ -18774,7 +19493,9 @@
    "Play Press Shaun the Sheep Playset",
    "Play Press Gruffalo Pop-Out Playset"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "good-measure": {
   "id": "good-measure",
@@ -18810,7 +19531,9 @@
    "Good Measure \"Riz\" Logo T-Shirt in Indigo",
    "Good Measure \"Riz\" Logo T-Shirt in Pink Cadillac"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "charles-laurie": {
   "id": "charles-laurie",
@@ -18846,7 +19569,9 @@
    "theweekenderblack",
    "theweekenderblue"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "homebody": {
   "id": "homebody",
@@ -18911,7 +19636,9 @@
    "Flippy Shorts",
    "Mini Marlin Dress"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "oldfield-outfitters": {
   "id": "oldfield-outfitters",
@@ -19013,7 +19740,9 @@
    "WIDE OLD BLUE & BURGUNDY STRIPE BRACE",
    "WIDE KHAKI BRACE"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "moda-de-la-maria": {
   "id": "moda-de-la-maria",
@@ -19118,7 +19847,9 @@
    "Ash & Ivory Luxury Cashmere Colour-Block Scarf",
    "Silver & Charcoal Luxury 100% Pure Cashmere Scarf"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mackenzie-and-george": {
   "id": "mackenzie-and-george",
@@ -19188,7 +19919,9 @@
    "The Stowfold",
    "Two tone leather biothane collar *custom*"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-rugby-company": {
   "id": "the-rugby-company",
@@ -19230,7 +19963,9 @@
    "Club House Quarter &#8211; Red/White",
    "Club House Quarter &#8211; Navy/White"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "frimble": {
   "id": "frimble",
@@ -19281,7 +20016,9 @@
    "Velvet Navy Pirate",
    "Velvet Emerald Pirate"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "julian-road": {
   "id": "julian-road",
@@ -19365,7 +20102,9 @@
    "Regency Ladies Tweed Waistcoat -Jade Merino Herringbone",
    "India Ladies Tweed Waistcoat -Olive Green Herringbone"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "green-thomas": {
   "id": "green-thomas",
@@ -19431,7 +20170,9 @@
    "GLOVE STEEL",
    "GLOVE NAVY"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-pattern-guild": {
   "id": "the-pattern-guild",
@@ -19485,7 +20226,9 @@
    "Small Chains Case",
    "Large Pi Pattern Record Bag"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hettie": {
   "id": "hettie",
@@ -19548,7 +20291,9 @@
    "Baker boy hat grey",
    "Wool cushion Spa Aqua"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "katie-cotmarsh": {
   "id": "katie-cotmarsh",
@@ -19592,7 +20337,9 @@
    "BOBBLE HAT IN COOKIES & CREAM",
    "RAFTER HOODIE IN COOKIES AND CREAM"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "elwin": {
   "id": "elwin",
@@ -19679,7 +20426,9 @@
    "Ada Donegal Cardigan Chestnut Brown",
    "Raye Cotton Merino Knitted Vest Truffle Brown"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "talou": {
   "id": "talou",
@@ -19715,14 +20464,19 @@
    "Roam Free - Red Wool Beanie",
    "The Explorer - Red Wool Jumper"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-goat-company": {
   "id": "the-goat-company",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "pinpiuma": {
   "id": "pinpiuma",
@@ -19770,7 +20524,9 @@
    "The Partridge Reversible Gilet",
    "The Teal Reversible Gilet"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sarvin": {
   "id": "sarvin",
@@ -19832,7 +20588,9 @@
    "Puff Shoulder Mini Dress",
    "Floral Velvet Backless Jumpsuit"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "soma-sportswear": {
   "id": "soma-sportswear",
@@ -19878,14 +20636,19 @@
    "Zero Waste Thong - Earth Khaki",
    "Square Neck Sports Bra - Pearl Grey"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tropel-kids": {
   "id": "tropel-kids",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "rock-and-ruby": {
   "id": "rock-and-ruby",
@@ -19952,7 +20715,9 @@
    "Linen Marl Sophie Cotton Socks",
    "Plum Sophie Cotton Socks"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "dreaming-of-ivy": {
   "id": "dreaming-of-ivy",
@@ -20030,7 +20795,9 @@
    "Black and white clover Dress (UK 18)",
    "Add..."
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cara-and-the-sky": {
   "id": "cara-and-the-sky",
@@ -20128,14 +20895,19 @@
    "Taz Colour Block Jumper | Purple",
    "Taz Colour Block Jumper - Orange"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "thomas-fortin": {
   "id": "thomas-fortin",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "lola-starr": {
   "id": "lola-starr",
@@ -20198,7 +20970,9 @@
    "THE COURT SKORT",
    "Ultimate Crew Pilates Grip Socks"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "the-well-worn": {
   "id": "the-well-worn",
@@ -20279,7 +21053,9 @@
    "The Sadie Dress - Sunset Stripe",
    "The Matilda Dress - Wildflower Lawn"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "been-london": {
   "id": "been-london",
@@ -20316,7 +21092,9 @@
    "Mini Millais Black Onyx",
    "Annis Sling Bag Desert Tan"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hemingsworth": {
   "id": "hemingsworth",
@@ -20390,14 +21168,19 @@
    "Olive Travel Twill Trousers",
    "Ecru Stripe Crew Neck Jumper"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "harriet-eccleston": {
   "id": "harriet-eccleston",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "lady-v-london": {
   "id": "lady-v-london",
@@ -20474,7 +21257,9 @@
    "Elsie Dress - Mulberry Garden",
    "Elsie Dress - Wisteria Twilight"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "adkn": {
   "id": "adkn",
@@ -20558,7 +21343,9 @@
    "The Aurelius Quarter-Zip Men's Jumper in Beige | Luxury Responsibly-So",
    "The Julian: Men’s Midnight Navy Heritage Ribbed Polo – Classic Dark Bl"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pittch": {
   "id": "pittch",
@@ -20616,7 +21403,9 @@
    "Women&#8217;s Cushioned Ankle Sock",
    "Sparkle Sock"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "batch-ldn": {
   "id": "batch-ldn",
@@ -20720,7 +21509,9 @@
    "Maison Matthieu Meneuvrier - Jardin Interdit - 75ml",
    "Maison Matthieu Meneuvrier - Douce Insolence - 75ml"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tutti-frutti-clothing": {
   "id": "tutti-frutti-clothing",
@@ -20854,14 +21645,19 @@
    "Age 1 - Farm Birthday Card",
    "Age 3 - Sea Print Birthday Card"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mille-saisons": {
   "id": "mille-saisons",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "lottie-and-lysh": {
   "id": "lottie-and-lysh",
@@ -21001,7 +21797,9 @@
    "0-3 months",
    "Newborn"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "foxology": {
   "id": "foxology",
@@ -21058,14 +21856,19 @@
    "Lambswool Scarves",
    "Organic Cotton Parachute Top"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "red-shoes-ruth-emily-davey": {
   "id": "red-shoes-ruth-emily-davey",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "reworked-348": {
   "id": "reworked-348",
@@ -21121,21 +21924,29 @@
    "Herringbone Coverall Jacket Works Grey",
    "Tripster Shirt Mute Orange"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gina": {
   "id": "gina",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "marvin-browne": {
   "id": "marvin-browne",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "j-alex-swift": {
   "id": "j-alex-swift",
@@ -21196,7 +22007,9 @@
    "Merino wool dress socks",
    "Soft Bamboo Socks"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "orraman-leather": {
   "id": "orraman-leather",
@@ -21289,14 +22102,19 @@
    "Monterey Bay Knives Wolverine",
    "Grissom Riverstone"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "moghrabi": {
   "id": "moghrabi",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "sami-k": {
   "id": "sami-k",
@@ -21333,7 +22151,9 @@
    "reversible kay coat",
    "blanket"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "furious-goose": {
   "id": "furious-goose",
@@ -21424,7 +22244,9 @@
    "Henbane – Woodcut",
    "Hemlock Silk-Wool Stole – Rust"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "kipper": {
   "id": "kipper",
@@ -21486,7 +22308,9 @@
    "Peach Melba Heart Necklace",
    "Banana Split Heart Necklace"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "meandthee": {
   "id": "meandthee",
@@ -21533,7 +22357,9 @@
    "Oh My Love",
    "Open-Hearted"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "clare-haggas": {
   "id": "clare-haggas",
@@ -21629,14 +22455,19 @@
    "Turf War Black and Gold Pheasant Large Square Silk Scarf",
    "Grouse Misconduct Teal Green & Aubergine Purple Wool Silk Shawl"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "vivien-of-holloway": {
   "id": "vivien-of-holloway",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "alie-street": {
   "id": "alie-street",
@@ -21668,7 +22499,9 @@
    "accessories.html",
    "all.html"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cocoove": {
   "id": "cocoove",
@@ -21732,7 +22565,9 @@
    "Lullah Maxi Dress in Black",
    "Jaqui Chiffon Midi Dress in Red"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "abe-house": {
   "id": "abe-house",
@@ -21784,14 +22619,19 @@
    "Maia Jacket - Chocolate",
    "Maia Jacket - White"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ella-griffee": {
   "id": "ella-griffee",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "daltons-england": {
   "id": "daltons-england",
@@ -21851,7 +22691,9 @@
    "Sheepskin Crossbody Bag - Leopard Print",
    "Daltons Luxury Sheepskin Dog Bed Rugs"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "nattily-dressed": {
   "id": "nattily-dressed",
@@ -21899,7 +22741,9 @@
    "Kingfisher Blue Knot",
    "Forest Green Knot"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "wildish": {
   "id": "wildish",
@@ -21959,7 +22803,9 @@
    "Beck Bucket Bag",
    "Thymallus Packing Cubes"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "geoff-stocker": {
   "id": "geoff-stocker",
@@ -22022,7 +22868,9 @@
    "THE KUBLA KHAN GOWN",
    "THE DURBAR GOWN"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "des-merrion": {
   "id": "des-merrion",
@@ -22050,7 +22898,9 @@
    "Sample Pack",
    "Gift Experience"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "iona-montgomery": {
   "id": "iona-montgomery",
@@ -22093,7 +22943,9 @@
    "BLUE VELVET BERET",
    "GAL89"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "fawn-and-freda": {
   "id": "fawn-and-freda",
@@ -22145,7 +22997,9 @@
    "Kira Dress",
    "Florence Lounge Set"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "big-fox-apparel": {
   "id": "big-fox-apparel",
@@ -22180,7 +23034,9 @@
    "Signature Olive T Shirt",
    "Signature Yellow T Shirt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "rach-x": {
   "id": "rach-x",
@@ -22239,7 +23095,9 @@
    "Autumn orange short-sleeved cotton tee with oat milk ribbed trim",
    "Light grey short-sleeved cotton tee with mustard ribbed trim"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "kaely-russell": {
   "id": "kaely-russell",
@@ -22305,14 +23163,19 @@
    "Bloom shirt | Vanilla Check",
    "Aster Skirt | Denim blue"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "macangus-and-wainwright": {
   "id": "macangus-and-wainwright",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "hyde-and-hare": {
   "id": "hyde-and-hare",
@@ -22388,7 +23251,9 @@
    "Cowhide Cushion Tricolour - Large",
    "Cowhide Cushion Tricolour - Large"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cravat-club": {
   "id": "cravat-club",
@@ -22426,7 +23291,9 @@
    "KANETO",
    "MUCHEN"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "faith-rowan-leeves": {
   "id": "faith-rowan-leeves",
@@ -22496,7 +23363,9 @@
    "Frankie Dress - Picnic Check Linen - Small - RTS",
    "Molly Dress -  3 Tier - Picnic Check Linen - 32\" - RTS"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "violets-in-may": {
   "id": "violets-in-may",
@@ -22608,7 +23477,9 @@
    "Pandora Dress",
    "Cecilia Sun Dress & Jacket Set"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mhulot": {
   "id": "mhulot",
@@ -22652,14 +23523,19 @@
    "Hilda Leather Tote Bag - Golden Pewter Metallic",
    "Gilbo Bag - Red"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "stalf": {
   "id": "stalf",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "wear-london": {
   "id": "wear-london",
@@ -22741,7 +23617,9 @@
    "Dalston  Heavyweight Cotton T-Shirt - 3 Pack",
    "Trueman T-shirt - Regular Fit - 5 Pack"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "lilyberry": {
   "id": "lilyberry",
@@ -22801,14 +23679,19 @@
    "Cycling Shorts",
    "Twirly Dress"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "nadinoo": {
   "id": "nadinoo",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "lpol": {
   "id": "lpol",
@@ -22863,7 +23746,9 @@
    "Squiggle Shoulder Strap",
    "Handheld Basket Black & Navy"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "leah-may-tailors": {
   "id": "leah-may-tailors",
@@ -22907,7 +23792,9 @@
    "Marcella Shirt",
    "White Button Braces"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "otway-orford": {
   "id": "otway-orford",
@@ -22949,7 +23836,9 @@
    "'Floreat Aula' Oxford College crest silk square in gold, red & blue (6",
    "'Floreat Aula' Oxford College crest silk pocket square in gold, red & "
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ivy-and-rigg": {
   "id": "ivy-and-rigg",
@@ -22998,7 +23887,9 @@
    "Wooler Merino Submariner Jumper - Navy",
    "Merino Wool Knitted Hat"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "paul-james-knitwear": {
   "id": "paul-james-knitwear",
@@ -23144,14 +24035,19 @@
    "Womens Cotton Quilted Gilet",
    "Mens Midweight Cotton Fishermans Polo Shirt"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "jane-hopkinson": {
   "id": "jane-hopkinson",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "libby-london": {
   "id": "libby-london",
@@ -23222,14 +24118,19 @@
    "Canterbury Aubergine Dress",
    "Toronto Red Dress"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "heather-borg": {
   "id": "heather-borg",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "barrington-ayre": {
   "id": "barrington-ayre",
@@ -23362,7 +24263,9 @@
    "Standeven Bunch Discount - Oxbridge",
    "Standeven Bunch Discount - Churchill"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "craigies-farm": {
   "id": "craigies-farm",
@@ -23460,7 +24363,9 @@
    "bolney lychgate red",
    "the little herb farm spinach feta chunky dip"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "kilnford-farm-shop": {
   "id": "kilnford-farm-shop",
@@ -23560,7 +24465,9 @@
    "Galloway Rolled Sirloin 1.2kg",
    "Galloway Rolled Sirloin 2kg"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "newton-farm-foods": {
   "id": "newton-farm-foods",
@@ -23665,14 +24572,19 @@
    "Frankies Fried Chicken Pop-up",
    "Burger and Beer Night!"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "mains-of-glassaugh": {
   "id": "mains-of-glassaugh",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "the-bathrobe-company": {
   "id": "the-bathrobe-company",
@@ -23704,14 +24616,19 @@
    "red diamond 3",
    "renaissance kaftan"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "gloagburn-farm-shop": {
   "id": "gloagburn-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "castlescreen-farm": {
   "id": "castlescreen-farm",
@@ -23767,7 +24684,9 @@
    "Dexter Beef Chump Steak",
    "Family Favourites Meat Box - with free delivery"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "caws-cenarth-farm-shop": {
   "id": "caws-cenarth-farm-shop",
@@ -23829,7 +24748,9 @@
    "Mel Cych Valley Honey clear - 340g",
    "Mel Cych Valley Honey soft set - 340g"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hawarden-estate-farm-shop": {
   "id": "hawarden-estate-farm-shop",
@@ -23861,35 +24782,49 @@
    "A two night stay for up to 10 people in The West End at Hawarden Castl",
    "A two night stay for up to four people in the West End at Hawarden Cas"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "bodnant-welsh-food": {
   "id": "bodnant-welsh-food",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "pheasants-hill-farm": {
   "id": "pheasants-hill-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "mckees-country-store": {
   "id": "mckees-country-store",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "farndon-fields-farm-shop": {
   "id": "farndon-fields-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "strawberry-fields-farm-shop": {
   "id": "strawberry-fields-farm-shop",
@@ -23976,21 +24911,29 @@
    "Monster Academy Maize Maze - Wednesday 28th October 2026",
    "Monster Academy Maize Maze - Tuesday 27th October 2026"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "forage-farm-shop": {
   "id": "forage-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "Ernespie-farm-shop": {
   "id": "Ernespie-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "broughgammon-farm": {
   "id": "broughgammon-farm",
@@ -24057,56 +25000,79 @@
    "Joe&#8217;s Farm Crisps",
    "The Free Range Steak Box"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "sharnfold-farm": {
   "id": "sharnfold-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "hutchinson-hobbs": {
   "id": "hutchinson-hobbs",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "canalside-farm-shop": {
   "id": "canalside-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "darts-farm": {
   "id": "darts-farm",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "lower-clopton-farm-shop": {
   "id": "lower-clopton-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "tain-pottery": {
   "id": "tain-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "borgh-pottery": {
   "id": "borgh-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "welbeck-farm-shop": {
   "id": "welbeck-farm-shop",
@@ -24195,14 +25161,19 @@
    "&#8216;Cuckney&#8217; Cheese Celebration Cake",
    "&#8216;Holbeck&#8217; Cheese Wedding Cake"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "ewenny-pottery": {
   "id": "ewenny-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "glosters-pottery": {
   "id": "glosters-pottery",
@@ -24292,7 +25263,9 @@
    "Speckled Lilac Egg Bowl",
    "Drippy Yellow Egg Bowl"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "wemyss-ware": {
   "id": "wemyss-ware",
@@ -24439,14 +25412,19 @@
    "Cabbage Rose Black Background Mouse",
    "Scottish Bluebell Tiny Cat"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pottery-west": {
   "id": "pottery-west",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "grayshott-pottery": {
   "id": "grayshott-pottery",
@@ -24512,42 +25490,59 @@
    "Tuscan Olive Shallow Bowl",
    "Tuscan Olive Large Round Platter"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "winchcombe-pottery": {
   "id": "winchcombe-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "reiko-kaneko": {
   "id": "reiko-kaneko",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "maham-anjum": {
   "id": "maham-anjum",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "dartington-pottery": {
   "id": "dartington-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "priory-farm-estate": {
   "id": "priory-farm-estate",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "paulin-watches": {
   "id": "paulin-watches",
@@ -24591,7 +25586,9 @@
    "Zapata Night",
    "Zapata Day"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "goat-shed-farm-shop": {
   "id": "goat-shed-farm-shop",
@@ -24627,14 +25624,19 @@
    "natural goats milk hand and body lotion 150ml",
    "goat shed bobble hat"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "cotswold-pottery": {
   "id": "cotswold-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "marloe-watch-company": {
   "id": "marloe-watch-company",
@@ -24681,14 +25683,19 @@
    "Flieger Tan Leather Strap (20mm)",
    "Flieger Black Leather Strap (20mm)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "isle-of-wight-pottery": {
   "id": "isle-of-wight-pottery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "ortak-jewellery": {
   "id": "ortak-jewellery",
@@ -24747,7 +25754,9 @@
    "Mirage Silver Bracelet EBL79",
    "Bali Silver Necklet EN98 Sirocco"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "alison-moore-designs": {
   "id": "alison-moore-designs",
@@ -24838,21 +25847,29 @@
    "Car Perfume - Orkney Sea Salt",
    "Car Perfume - Happy Valley"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "janis-morgan-jewellery": {
   "id": "janis-morgan-jewellery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "robinson-jewellery-belfast": {
   "id": "robinson-jewellery-belfast",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "justin-duance": {
   "id": "justin-duance",
@@ -24903,14 +25920,19 @@
    "Rinsey Cove Treasure Ring - Size P",
    "4mm Sandcast Diamond Star Scatter Ring"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "erin-cox-jewellery": {
   "id": "erin-cox-jewellery",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "mari-thomas-jewellery": {
   "id": "mari-thomas-jewellery",
@@ -24993,14 +26015,19 @@
    "Silver sand band with Australian sapphire by Blae Maddrell",
    "White 7.5mm freshwater teardrop pearl drop earrings"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "tregaron-goldsmiths": {
   "id": "tregaron-goldsmiths",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "elliot-brown-watches": {
   "id": "elliot-brown-watches",
@@ -25066,7 +26093,9 @@
    "ARNE: CALI 606-009 \"WOODIE\"",
    "Chicago SWAT Holton quartz"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pruden-and-smith": {
   "id": "pruden-and-smith",
@@ -25132,14 +26161,19 @@
    "Marquise Cufflinks",
    "Emerald Cut Diamond Bezel Eternity Ring"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "harriet-kelsall": {
   "id": "harriet-kelsall",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "farer-watches": {
   "id": "farer-watches",
@@ -25190,14 +26224,19 @@
    "Barnwell",
    "Curtis"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "hockley-mint": {
   "id": "hockley-mint",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "stephen-webster": {
   "id": "stephen-webster",
@@ -25309,7 +26348,9 @@
    "Classic Link Bracelet - 11mm",
    "Classic Link Bracelet - 8.5mm"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "duckworth-prestex": {
   "id": "duckworth-prestex",
@@ -25348,14 +26389,19 @@
    "Parker Classic",
    "Parker Classic"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "loomes-and-co": {
   "id": "loomes-and-co",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "pinion-watches": {
   "id": "pinion-watches",
@@ -25405,28 +26451,39 @@
    "SE Blue leather strap (20mm)",
    "Blue leather strap (20mm)"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "pobjoy-mint": {
   "id": "pobjoy-mint",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "netherton-foundry": {
   "id": "netherton-foundry",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "samuel-groves": {
   "id": "samuel-groves",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "savernake-knives": {
   "id": "savernake-knives",
@@ -25467,28 +26524,39 @@
    "Matching Honing Steel",
    "BBQ Trio"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "david-mellor": {
   "id": "david-mellor",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "samuel-staniforth": {
   "id": "samuel-staniforth",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "taylors-eye-witness": {
   "id": "taylors-eye-witness",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "inigo-jones-slate": {
   "id": "inigo-jones-slate",
@@ -25560,21 +26628,29 @@
    "Set of 6 Heather Blue Slate Placemats 300mm x 200mm",
    "Honing / Sharpening Stone"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  },
  "churchs": {
   "id": "churchs",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "beacons-farm-shop": {
   "id": "beacons-farm-shop",
   "shopify": false,
   "platform": null,
   "reason": "no-feed-found",
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "tags": [],
+  "tagConfidence": {},
+  "rescored": true
  },
  "crown-northampton": {
   "id": "crown-northampton",
@@ -25638,6 +26714,8 @@
    "Adnitt Gat Shoe - Black Calf - SRE4 48",
    "Everdon Wholecut Mid - Horween Natural Chromexcel - SRE4 47"
   ],
-  "checked": "2026-08-01"
+  "checked": "2026-08-01",
+  "rescored": false,
+  "alreadyGated": true
  }
 }
