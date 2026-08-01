@@ -786,27 +786,136 @@ function normaliseQuery(query) {
   return { terms, understood };
 }
 
+// Words that name a place in this catalogue, so a query term can be told apart
+// from a product term. Built from towns and addresses only.
+let PLACE_VOCAB = null;
+function buildPlaceVocab() {
+  if (PLACE_VOCAB) return PLACE_VOCAB;
+  const places = new Set();
+  BUSINESSES.forEach(b => {
+    [b.town, b.address].join(' ').toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ').split(' ')
+      .forEach(w => { if (w.length > 2) places.add(w); });
+  });
+  // Regions people search for that may not appear verbatim in an address.
+  ['england','scotland','wales','britain','cornwall','yorkshire','devon','cotswolds',
+   'highlands','midlands','shetland','orkney','hebrides','snowdonia','lakes']
+    .forEach(w => places.add(w));
+  PLACE_VOCAB = places;
+  return places;
+}
+
+// Words that name a product. Taken from the curated fields only — descriptions
+// are full of place names and would blur the distinction.
+let PRODUCT_VOCAB = null;
+function buildProductVocab() {
+  if (PRODUCT_VOCAB) return PRODUCT_VOCAB;
+  const prods = new Set();
+  const add = w => {
+    if (w.length < 3) return;
+    prods.add(w);
+    prods.add(w.endsWith('s') ? w.slice(0, -1) : w + 's');
+  };
+  BUSINESSES.forEach(b => {
+    [b.category, b.subcategory, (b.product_tags || []).join(' ')].join(' ')
+      .toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').forEach(add);
+  });
+  ['hat','cap','coat','jacket','jumper','sweater','sock','shirt','boot','shoe','bag',
+   'scarf','glove','belt','wallet','mug','bowl','plate','vase','knife','ring','watch',
+   'leather','wool','woollen','cashmere','tweed','linen','silver','gold','ceramic']
+    .forEach(add);
+  PRODUCT_VOCAB = prods;
+  return prods;
+}
+
+// Match on word boundaries. Substring matching is what made "Chatsworth" a hit
+// for "hat" and put a Derbyshire farm shop top of a hat search.
+function hasWord(haystack, word) {
+  const safe = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp('\\b' + safe + 's?\\b', 'i').test(haystack);
+}
+
+function classifyTerms(terms) {
+  const places = buildPlaceVocab(), prods = buildProductVocab();
+  const product = [], place = [];
+  terms.forEach(t => {
+    // A word that names a product wins even if a town shares the name, because
+    // people search for the thing far more often than the place.
+    if (prods.has(t)) product.push(t);
+    else if (places.has(t)) place.push(t);
+    else product.push(t);
+  });
+  return { product, place };
+}
+
 function localSearch(query) {
   const { terms, understood } = normaliseQuery(query);
-  if (!terms.length || !understood) return { matches: [], terms, understood };
+  if (!terms.length || !understood) {
+    return { matches: [], terms, understood, product: [], place: [], inPlace: 0 };
+  }
+
+  const { product, place } = classifyTerms(terms);
 
   const scored = BUSINESSES.map(b => {
-    const name = (b.name || '').toLowerCase();
-    const town = (b.town || '').toLowerCase();
-    const tags = (b.product_tags || []).map(t => t.toLowerCase());
-    const body = [b.category, b.subcategory, b.description].join(' ').toLowerCase();
-    let score = 0;
-    terms.forEach(t => {
-      if (name.includes(t)) score += 10;
-      if (town.includes(t)) score += 8;
-      if (tags.some(tag => tag.includes(t) || t.includes(tag))) score += 7;
-      if (body.includes(t)) score += 3;
-    });
-    return { b, score };
-  }).filter(s => s.score > 0);
+    const name = b.name || '';
+    const where = [b.town, b.address].join(' ');
+    const tags = (b.product_tags || []).join(' ');
+    const kind = [b.category, b.subcategory].join(' ');
+    const desc = b.description || '';
 
-  scored.sort((x, y) => y.score - x.score || x.b.name.localeCompare(y.b.name));
-  return { matches: scored.slice(0, 12).map(s => s.b), terms, understood };
+    let productScore = 0, placeScore = 0;
+    product.forEach(t => {
+      if (hasWord(tags, t)) productScore += 12;
+      if (hasWord(kind, t)) productScore += 8;
+      if (hasWord(name, t)) productScore += 6;
+      if (hasWord(desc, t)) productScore += 4;
+    });
+    place.forEach(t => {
+      if (hasWord(where, t)) placeScore += 10;
+      else if (hasWord(desc, t)) placeScore += 3;
+    });
+
+    return { b, productScore, placeScore };
+  });
+
+  // The product is the point. If they named one, a business that doesn't make
+  // it can't qualify on location alone — that's how "leather hat cornwall"
+  // ended up showing farm shops.
+  const eligible = product.length
+    ? scored.filter(s => s.productScore > 0)
+    : scored.filter(s => s.placeScore > 0);
+
+  // Product leads, but location still counts for real. 3:2 was chosen against
+  // live queries: it puts London leather makers above Walsall for "leather hat
+  // london" and Sheffield above Marlborough for "knives sheffield", without
+  // ever letting a business in the right town outrank one that makes the thing.
+  const rank = s => s.productScore * 3 + s.placeScore * 2;
+  eligible.sort((x, y) => rank(y) - rank(x) || x.b.name.localeCompare(y.b.name));
+
+  const top = eligible.slice(0, 12);
+  return {
+    matches: top.map(s => s.b),
+    terms, understood, product, place,
+    inPlace: top.filter(s => s.placeScore > 0).length
+  };
+}
+
+// Translate a local result into the shape buildHeadline expects, so both
+// engines produce identical wording.
+function localHeadlineData(local) {
+  const grownWords = /\b(farm|food|produce|veg|fruit|meat|beef|lamb|pork|dairy|cheese|milk|egg|honey|flour|grain|bread)\b/i;
+  const looksGrown = local.matches.length
+    ? local.matches.filter(b => b.category === 'farm').length > local.matches.length / 2
+    : grownWords.test(local.product.join(' '));
+
+  return {
+    productTerm: local.product.length ? local.product.join(' ') : null,
+    locationTerm: local.place.length ? local.place.join(' ') : null,
+    madeOrGrown: looksGrown ? 'grown' : 'made',
+    // Right product but nowhere near the requested place = "further afield".
+    matchQuality: (local.place.length && local.inPlace === 0) ? 'wider' : 'exact',
+    matches: local.matches
+  };
 }
 
 async function executeAiSearch(query) {
@@ -895,6 +1004,9 @@ ${catalogStr}`;
     }
 
     if (result && result.matches && result.matches.length > 0) {
+      // Both engines now word their results identically, which is right for
+      // visitors but leaves no way to tell which one answered. Log it.
+      console.info('[search] AI answered via', result._model || 'unknown model');
       state.aiActive = true;
       state.notice = '';
       state.aiHeadline = buildHeadline(result);
@@ -912,19 +1024,20 @@ ${catalogStr}`;
     // this is what turns an outage into a slightly worse search rather than
     // a broken one, and it handles run-together and misspelt words.
     const local = localSearch(query);
+    console.info('[search] local fallback used —',
+      'product:', local.product, 'place:', local.place, 'matches:', local.matches.length);
 
     if (local.matches.length) {
       state.aiActive = true;
       state.notice = '';
       state.aiMatches.clear();
       local.matches.forEach(b => state.aiMatches.set(b.id, 'Matched on ' + local.terms.join(', ')));
-      // If the AI understood the query but found nothing itself, keep its
-      // reading of the query and use the honest "further afield" wording.
-      // Pass the local matches in, or buildHeadline reads it as a dead end and
-      // says "we couldn't find any" above a page full of results.
+      // Describe the result the same way the AI path would, so a user can't
+      // tell which engine answered — including the "further afield" wording
+      // when we found the right product but not in the place they asked for.
       state.aiHeadline = result
         ? buildHeadline(Object.assign({}, result, { matchQuality: 'wider', matches: local.matches }))
-        : `Showing the closest matches we could find for &ldquo;${escapeHtml(query)}&rdquo;.`;
+        : buildHeadline(localHeadlineData(local));
       toggleView('grid');
       return;
     }
