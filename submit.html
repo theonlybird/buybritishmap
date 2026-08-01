@@ -3,7 +3,8 @@
 <head>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#ffffff" />
 <title>Suggest a Business — Grown and Made UK</title>
 <style>
   :root{
@@ -13,7 +14,7 @@
     --ink:#1d2733; --muted:#6b7682; --line:#e3e8ee; --bg:#f6f8fa;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg)}
+  html,body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
   #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
   #topbar .flag{position:absolute;left:0;top:0;bottom:0;width:230px;opacity:.16;pointer-events:none;
     -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%);
@@ -28,7 +29,6 @@
   #menu{position:absolute;right:10px;top:60px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 8px 24px rgba(0,0,0,.13);min-width:210px;padding:6px;z-index:1200}
   #menu a{display:block;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
   #menu a:hover{background:var(--bg);color:var(--navy)}
-  @media (max-width:760px){#topbar .flag{width:130px}.site-title{font-size:19px}}
   .wrap{max-width:640px;margin:0 auto;padding:28px 18px 60px}
   .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:16px}
   h2{margin:0 0 6px;font-size:18px;color:var(--navy)}
@@ -55,6 +55,52 @@
 
   h1,h2,h3,.brand-logo,.g-title,.pop h3{font-family:var(--font-heading)}
   .brand-logo{font-family:var(--font-heading);font-size:25px;font-weight:700;color:var(--racing-green);letter-spacing:.2px;text-decoration:none;line-height:1;white-space:nowrap}
+
+
+  /* ==========================================================================
+     RESPONSIVE  —  shared across the content pages.
+     The layout is a single column already, so this is about the header,
+     touch targets, comfortable reading measure and iOS input zoom.
+     ========================================================================== */
+  #topbar{padding:0 calc(14px + env(safe-area-inset-right,0px)) 0 calc(14px + env(safe-area-inset-left,0px))}
+  #burger{right:calc(14px + env(safe-area-inset-right,0px))}
+
+  @media (max-width:1099px){
+    .wrap{padding:24px 16px 56px}
+    .card{padding:20px}
+  }
+
+  @media (max-width:767px){
+    #topbar{height:56px;justify-content:flex-start}
+    .brand-logo{font-size:19px;max-width:calc(100% - 60px);overflow:hidden;text-overflow:ellipsis}
+    #burger{width:44px;height:44px;right:calc(12px + env(safe-area-inset-right,0px))}
+    #topbar .flag{width:110px}
+    #menu{top:52px;left:calc(12px + env(safe-area-inset-left,0px));right:calc(12px + env(safe-area-inset-right,0px));min-width:0}
+    #menu a{padding:13px 14px;font-size:15px}
+    .wrap{padding:16px 12px calc(48px + env(safe-area-inset-bottom,0px))}
+    .card{padding:18px 16px;border-radius:12px}
+    h2{font-size:19px}
+    h3{font-size:15.5px}
+    p,li{font-size:15px;line-height:1.7}
+  }
+
+  @media (max-width:359px){
+    .brand-logo{font-size:17px}
+  }
+
+  /* The bare `button` rule further up styles the submit button, but it also
+     catches the burger — which is absolutely positioned, so the margin-top
+     pushed it out of the header. Scope the form rules and undo the leak. */
+  #burger{margin-top:0;width:42px}
+
+  @media (max-width:767px){
+    /* 16px is the threshold below which iOS Safari zooms the page on focus */
+    input[type=text],input[type=email],input[type=url],select,textarea{font-size:16px;padding:12px 12px}
+    label{font-size:13.5px;margin:16px 0 6px}
+    .card button{padding:15px;font-size:16px;min-height:50px}
+    #burger{width:44px;height:44px;min-height:0;padding:0}
+    .standards{font-size:13px}
+  }
 
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />

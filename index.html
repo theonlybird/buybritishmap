@@ -3,7 +3,8 @@
 <head>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#ffffff" />
 <title>Grown and Made UK</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
@@ -15,12 +16,30 @@
     --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#b8c2cc;
     --farm:#3c9d4e; --clothing:#24549c; --ceramics:#b0653a; --jewellery:#7a5296; --cutlery:#374151; --ink:#1d2733; --muted:#6b7682;
     --line:#e3e8ee; --bg:#f6f8fa;
+
+    /* Responsive tokens — overridden per breakpoint at the bottom of this sheet */
+    --topbar-h:70px;      /* height of the header, used to size the app below it */
+    --sheet-peek:150px;   /* how much of the mobile results sheet shows at rest */
+    --safe-b:env(safe-area-inset-bottom,0px);
+    --safe-l:env(safe-area-inset-left,0px);
+    --safe-r:env(safe-area-inset-right,0px);
   }
   *{box-sizing:border-box}
-  html,body{margin:0;height:100%;font-family:var(--font-body);color:var(--ink);background:var(--bg)}
+  html{height:100%}
+  /* Column flex rather than a height calc: the header is two rows tall on a
+     phone and one on desktop, so nothing downstream has to know how tall it is. */
+  body{margin:0;height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden;
+    font-family:var(--font-body);color:var(--ink);background:var(--bg);
+    -webkit-text-size-adjust:100%;overscroll-behavior:none}
 
   /* Top Header */
-  #topbar{position:relative;height:70px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:1100}
+  #topbar{position:relative;flex:0 0 auto;height:var(--topbar-h);background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 calc(16px + var(--safe-r)) 0 calc(16px + var(--safe-l));z-index:1100}
+  /* The two row wrappers collapse to nothing on desktop and become real rows on mobile. */
+  .bar-top,.bar-search{display:contents}
+  .brand-logo{order:1}
+  .search-wrapper{order:2}
+  .header-actions{order:3}
+  #filterBtn{order:4}
   #topbar .flag-container{display:flex;align-items:center;gap:12px;height:100%}
   #topbar .flag{width:70px;height:42px;border-radius:6px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.15)}
   #topbar .flag svg{width:100%;height:100%;display:block}
@@ -57,7 +76,7 @@
   #menu a.cta{background:var(--red);color:#fff;margin-top:4px;text-align:center}
 
   /* App Layout */
-  #app{height:calc(100vh - 70px);position:relative;overflow:hidden}
+  #app{flex:1 1 auto;min-height:0;position:relative;overflow:hidden}
 
   /* Split View (Sidebar + Map) */
   #splitView{display:flex;width:100%;height:100%}
@@ -148,18 +167,9 @@
   @keyframes spin{to{transform:rotate(360deg)}}
   .loader-text{font-size:15px;font-weight:600;color:var(--navy)}
 
-  @media (max-width:760px){
-    #topbar{padding:0 10px}
-    .search-wrapper{margin:0 8px;max-width:none}
-    #splitView{flex-direction:column}
-    #sidebar{width:100%;min-width:0;height:46%}
-    #map{height:54%}
-    #gridView{padding:14px}
-  }
-
   .search-input-box { position: relative; display: flex; align-items: center; }
   #search { width: 100%; padding: 11px 82px 11px 38px; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; outline: none; background: #fcfdfe; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: .2s; }
-  .btn-reset { position: absolute; right: 6px; background: var(--navy); color: #fff; border: none; padding: 6px 11px; border-radius: 7px; font-size: 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: .15s; z-index: 2; }
+  .btn-reset { position: absolute; right: 6px; background: var(--navy); color: #fff; border: none; padding: 6px 11px; border-radius: 7px; font-size: 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: .15s; z-index: 2; font-family: inherit; }
   .btn-reset:hover { background: var(--red); }
   .chip.disabled { opacity: 0.35; pointer-events: none; filter: grayscale(0.85); cursor: not-allowed; }
 
@@ -169,34 +179,183 @@
   .grid-sidebar { width: 240px; min-width: 240px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); position: sticky; top: 0; }
   .grid-main { flex: 1; min-width: 0; }
   .grid-header { margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-  .grid-container { width: 100%; max-width: none; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  /* Fluid card grid — tracks never drop below a readable width, and the row
+     simply fits as many as the container allows. No column-count breakpoints. */
+  .grid-container { width: 100%; max-width: none; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
   .btn-sort { border: 1px solid var(--line); background: #fff; border-radius: 9px; padding: 8px 14px; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.03); transition: .15s; white-space: nowrap; align-self: center; }
   .btn-sort:hover { border-color: var(--navy); background: var(--bg); }
 
-  @media (max-width: 1400px) {
-    .grid-container { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media (max-width: 1020px) {
-    .grid-container { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 640px) {
-    .grid-container { grid-template-columns: 1fr; }
-  }
-
-  .mobile-filter-toggle { display: none; width: 100%; padding: 10px 14px; background: #fff; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; font-weight: 600; color: var(--navy); cursor: pointer; text-align: left; align-items: center; justify-content: space-between; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
-  .mobile-filter-toggle svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; transition: transform 0.2s; }
-
-  @media (max-width: 860px) {
-    #gridView { padding: 14px; }
-    .grid-layout { flex-direction: column; gap: 12px; }
-    .grid-sidebar { width: 100%; min-width: 0; position: static; display: none; margin-bottom: 8px; }
-    .grid-sidebar.open { display: block; }
-    .mobile-filter-toggle { display: flex; }
-  }
-
+  .mobile-filter-toggle { display: none; }
 
   h1,h2,h3,.brand-logo,.g-title,.pop h3{font-family:var(--font-heading)}
   .brand-logo{font-family:var(--font-heading);font-size:25px;font-weight:700;color:var(--racing-green);letter-spacing:.2px;text-decoration:none;line-height:1;white-space:nowrap}
+
+  /* ==========================================================================
+     MOBILE FURNITURE
+     Defined once here, hidden by default, switched on in the mobile query below.
+     ========================================================================== */
+
+  /* Filter button that sits beside the search field on small screens */
+  #filterBtn{display:none;position:relative;align-items:center;justify-content:center;gap:6px;
+    height:46px;padding:0 14px;border:1px solid var(--line);border-radius:11px;background:#fff;
+    font-family:inherit;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;flex:0 0 auto}
+  #filterBtn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+  #filterBtn .fcount{display:none;min-width:18px;height:18px;padding:0 5px;border-radius:9px;
+    background:var(--red);color:#fff;font-size:11px;font-weight:700;line-height:18px;text-align:center}
+  #filterBtn.has-filters .fcount{display:inline-block}
+
+  /* Grab handle for the results sheet */
+  .sheet-grab{display:none;width:100%;border:0;background:transparent;padding:9px 0 7px;cursor:grab;
+    touch-action:none;-webkit-tap-highlight-color:transparent}
+  .sheet-grab i{display:block;width:40px;height:4px;margin:0 auto;border-radius:2px;background:#cfd6de}
+  .sheet-grab:active{cursor:grabbing}
+
+  /* Bottom-sheet filter drawer */
+  #filterDrawer{display:none;position:fixed;inset:0;z-index:2500}
+  #filterDrawer[hidden]{display:none}
+  .drawer-backdrop{position:absolute;inset:0;background:rgba(15,23,32,.42);opacity:0;transition:opacity .26s ease}
+  #filterDrawer.open .drawer-backdrop{opacity:1}
+  .drawer-panel{position:absolute;left:0;right:0;bottom:0;background:#fff;border-radius:20px 20px 0 0;
+    max-height:88dvh;display:flex;flex-direction:column;box-shadow:0 -6px 30px rgba(0,0,0,.22);
+    transform:translateY(100%);transition:transform .28s cubic-bezier(.32,.72,0,1)}
+  #filterDrawer.open .drawer-panel{transform:translateY(0)}
+  .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 10px;border-bottom:1px solid var(--line)}
+  .drawer-head h2{margin:0;font-size:19px;color:var(--navy)}
+  .drawer-close{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    font-size:15px;color:var(--muted);cursor:pointer;line-height:1}
+  .drawer-body{padding:16px 18px;overflow-y:auto;-webkit-overflow-scrolling:touch;flex:1}
+  .drawer-body .filter-group{margin-top:20px}
+  .drawer-body .filter-group:first-child{margin-top:0}
+  .drawer-key{font-size:12.5px;line-height:1.9;color:var(--muted)}
+  .drawer-key .row{display:flex;align-items:center;gap:8px}
+  .drawer-key .sw{width:13px;height:13px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #ccc;flex:0 0 13px}
+  .drawer-foot{display:flex;gap:10px;padding:12px 18px calc(12px + var(--safe-b));border-top:1px solid var(--line);background:#fff}
+  .drawer-foot button{flex:1;height:48px;border-radius:11px;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer}
+  .drawer-foot .ghost{flex:0 0 34%;border:1px solid var(--line);background:#fff;color:var(--navy)}
+  .drawer-foot .primary{border:0;background:var(--navy);color:#fff}
+
+  /* ==========================================================================
+     TABLET  ·  768 – 1099px
+     Single-row header with icon-only actions, narrower sidebars.
+     ========================================================================== */
+  @media (max-width:1099px){
+    :root{--topbar-h:64px}
+    .brand-logo{font-size:21px}
+    #sidebar{width:300px;min-width:300px}
+    .search-wrapper{max-width:none;margin:0 12px}
+    .btn-view-toggle .label{display:none}
+    .btn-view-toggle{padding:0;width:44px;height:44px;justify-content:center;font-size:17px}
+    #gridView{padding:18px}
+    .grid-sidebar{width:210px;min-width:210px;padding:14px}
+    .grid-container{gap:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+    #menu{top:calc(var(--topbar-h) - 4px)}
+  }
+
+  /* ==========================================================================
+     MOBILE  ·  ≤767px
+     Two-row header · full-bleed map with a draggable results sheet ·
+     filters in a bottom drawer · single-column cards.
+     ========================================================================== */
+  @media (max-width:767px){
+    /* ---- Header: brand + actions on row one, search + filters on row two ---- */
+    #topbar{flex-direction:column;align-items:stretch;height:auto;padding:0;gap:0}
+    .bar-top{display:flex;align-items:center;gap:8px;height:52px;
+      padding:0 calc(12px + var(--safe-r)) 0 calc(12px + var(--safe-l))}
+    .bar-search{display:flex;align-items:center;gap:8px;
+      padding:0 calc(12px + var(--safe-r)) 10px calc(12px + var(--safe-l))}
+    .brand-logo{font-size:19px;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+    .header-actions{gap:6px;flex:0 0 auto}
+    .search-wrapper{flex:1 1 auto;min-width:0;margin:0;max-width:none;position:static}
+    #search{height:46px;font-size:16px;padding:0 14px 0 40px;border-radius:11px} /* 16px stops iOS zooming on focus */
+    .search-input-box svg{left:12px}
+    /* Icon-only reset, and only once there is something to reset — the word
+       "Reset" was swallowing a third of an already narrow field. */
+    .btn-reset{display:none;right:5px;width:36px;height:36px;padding:0;justify-content:center;font-size:14px}
+    .btn-reset .rlabel{display:none}
+    body.is-filtered .btn-reset{display:inline-flex}
+    body.is-filtered #search{padding-right:46px}
+    #filterBtn{display:inline-flex}
+    .btn-view-toggle{width:44px;height:44px;padding:0;justify-content:center;font-size:18px;border-radius:11px}
+    .btn-view-toggle .label{display:none}
+    #burger{width:44px;height:44px;border-radius:11px}
+    #menu{top:calc(100% + 4px);right:calc(12px + var(--safe-r));left:calc(12px + var(--safe-l));min-width:0}
+    #menu a{padding:13px 14px;font-size:15px}
+    /* Autocomplete spans the full header width rather than the input's box */
+    #autocompleteDropdown{left:calc(12px + var(--safe-l));right:calc(12px + var(--safe-r));top:auto;
+      margin-top:2px;max-height:60dvh;z-index:2600}
+    .ac-item{padding:13px 14px}
+    .ac-name{font-size:15px}
+    .ac-sub{font-size:12.5px}
+
+    /* ---- Map view: map fills the pane, list becomes a draggable sheet ---- */
+    #splitView{display:block;position:relative;height:100%}
+    #map{position:absolute;inset:0;width:100%;height:100%;flex:none}
+    .legend{display:none}                       /* the key lives in the filter drawer instead */
+    .leaflet-control-zoom{display:none}         /* pinch to zoom; reclaims the corner */
+    .leaflet-control-attribution{font-size:9px}
+
+    #sidebar{position:absolute;left:0;right:0;bottom:0;top:auto;
+      width:auto;min-width:0;height:calc(100% - 10px);
+      border-right:0;border-radius:18px 18px 0 0;
+      box-shadow:0 -5px 26px rgba(0,0,0,.20);
+      transform:translateY(calc(100% - var(--sheet-peek)));
+      transition:transform .30s cubic-bezier(.32,.72,0,1);
+      z-index:1200;will-change:transform;padding-bottom:var(--safe-b)}
+    #sidebar.dragging{transition:none}
+    #sidebar.snap-half{transform:translateY(calc(100% - 52dvh))}
+    #sidebar.snap-full{transform:translateY(0)}
+    #sidebar .controls{display:none}            /* filters moved to the drawer */
+    .sheet-grab{display:block}
+    .countrow{padding:2px 16px 10px;border-bottom:1px solid var(--line);background:#fff;touch-action:none}
+    .count{font-size:13.5px}
+    #sortBtn{padding:8px 12px;font-size:12.5px;border-radius:9px}
+    #list{overscroll-behavior:contain}
+    .item{padding:14px 16px;gap:13px}
+    .item .nm{font-size:15px}
+    .item .sub{font-size:13px}
+    .logo{width:46px;height:46px;flex:0 0 46px}
+
+    /* ---- Popups sized to the viewport ---- */
+    .leaflet-popup-content{width:min(262px,calc(100vw - 74px))!important}
+    .pop .links a{padding:11px 7px}
+
+    /* ---- Grid view: one column, no inline sidebar ---- */
+    #gridView{padding:14px 12px calc(24px + var(--safe-b))}
+    .grid-layout{display:block}
+    .grid-sidebar{display:none}
+    .grid-header{margin-bottom:14px;gap:10px}
+    .grid-header .ai-banner{font-size:14.5px;padding:12px 14px;min-width:0;width:100%;line-height:1.45}
+    #gridSortBtn{width:100%;padding:11px;font-size:14px}
+    .grid-container{grid-template-columns:1fr;gap:14px}
+    .grid-card{padding:16px;border-radius:13px}
+    .grid-card:hover{transform:none}
+    .grid-card .g-links a{padding:12px 8px;font-size:13.5px}
+
+    /* ---- Filter drawer on ---- */
+    #filterDrawer{display:block}
+    #filterDrawer[hidden]{display:none}
+
+    /* ---- Comfortable touch targets everywhere ---- */
+    .chip{padding:9px 14px;font-size:13.5px}
+    .loader-text{font-size:14px;padding:0 24px;text-align:center}
+  }
+
+  /* Very narrow phones — keep the brand from crowding out the buttons */
+  @media (max-width:359px){
+    .brand-logo{font-size:17px}
+    #filterBtn{padding:0 11px}
+    #filterBtn .flabel{display:none}
+  }
+
+  /* Short landscape phones: the sheet would eat the whole map */
+  @media (max-width:900px) and (max-height:480px) and (orientation:landscape){
+    #sidebar{--sheet-peek:64px}
+    #sidebar.snap-half{transform:translateY(calc(100% - 70dvh))}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    #sidebar,.drawer-panel,.drawer-backdrop,.grid-card{transition:none!important}
+  }
 
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -205,22 +364,31 @@
 </head>
 <body>
 <header id="topbar">
-  <a href="index.html" class="brand-logo">Grown and Made UK</a>
-
-  <!-- Centered Search Bar -->
-  <div class="search-wrapper">
-    <div class="search-input-box">
-      <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-      <input id="search" type="text" placeholder="Search makers, towns or whatever you're after (e.g. 'woolen jumper from Scotland')..." autocomplete="off" />
-      <button id="resetBtn" type="button" class="btn-reset" title="Reset search & filters">✕ Reset</button>
+  <!-- On mobile these two wrappers become the header's two rows.
+       On tablet/desktop they are display:contents, so the header stays one row. -->
+  <div class="bar-top">
+    <a href="index.html" class="brand-logo">Grown and Made UK</a>
+    <div class="header-actions">
+      <button id="viewToggleBtn" class="btn-view-toggle"><span class="icon">🗺️</span><span class="label">Show on Map</span></button>
+      <!-- ▦ / 🗺️ rather than ☰, so this never reads as a second burger menu -->
+      <button id="burger" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
     </div>
-    <div id="autocompleteDropdown"></div>
   </div>
 
-  <div class="header-actions">
-    <button id="viewToggleBtn" class="btn-view-toggle">🗺️ Show on Map</button>
-    <button id="burger" aria-label="Menu" aria-expanded="false">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  <div class="bar-search">
+    <div class="search-wrapper">
+      <div class="search-input-box">
+        <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input id="search" type="search" enterkeyhint="search" placeholder="Search makers, towns or whatever you're after (e.g. 'woolen jumper from Scotland')..." autocomplete="off" autocapitalize="off" autocorrect="off" />
+        <button id="resetBtn" type="button" class="btn-reset" title="Reset search &amp; filters" aria-label="Reset search and filters"><span aria-hidden="true">✕</span><span class="rlabel">Reset</span></button>
+      </div>
+      <div id="autocompleteDropdown"></div>
+    </div>
+    <button id="filterBtn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterDrawer">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+      <span class="flabel">Filters</span><span class="fcount" id="filterCount">0</span>
     </button>
   </div>
 
@@ -237,6 +405,7 @@
   <!-- Split View (Sidebar + Leaflet Map) -->
   <div id="splitView">
     <aside id="sidebar">
+      <button type="button" class="sheet-grab" id="sheetGrab" aria-label="Expand results list" aria-expanded="false"><i></i></button>
       <div class="controls">
         <div class="filter-group">
           <div class="lbl">Category</div>
@@ -293,10 +462,6 @@
         </div>
       </aside>
       <main class="grid-main">
-        <button id="mobileFilterToggle" type="button" class="mobile-filter-toggle">
-          <span>Filters &amp; Sort ⚙️</span>
-          <svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
-        </button>
         <div class="grid-header">
           <div class="ai-banner" id="gridAiBanner">
             Here are some UK businesses we think you&rsquo;ll love
@@ -305,6 +470,50 @@
         </div>
         <div class="grid-container" id="gridCards"></div>
       </main>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Filter Drawer — a third copy of the chips. The existing
+     .cat-chips / .tier-chips selectors pick these up automatically, so all
+     three sets of controls stay in step with no extra wiring. -->
+<div id="filterDrawer" hidden>
+  <div class="drawer-backdrop" data-close></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-head">
+      <h2 id="drawerTitle">Filters</h2>
+      <button type="button" class="drawer-close" data-close aria-label="Close filters">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div class="filter-group">
+        <div class="lbl">Category</div>
+        <div class="chips cat-chips" id="drawerCatChips">
+          <span class="chip active" data-cat="farm"><span class="dot" style="background:var(--farm)"></span>Farm shops</span>
+          <span class="chip active" data-cat="clothing"><span class="dot" style="background:var(--clothing)"></span>Clothing</span>
+          <span class="chip active" data-cat="ceramics"><span class="dot" style="background:var(--ceramics)"></span>Ceramics</span>
+          <span class="chip active" data-cat="jewellery"><span class="dot" style="background:var(--jewellery)"></span>Jewellery &amp; Watches</span>
+          <span class="chip active" data-cat="cutlery"><span class="dot" style="background:var(--cutlery)"></span>Cutlery &amp; Cookware</span>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="lbl">Standard</div>
+        <div class="chips tier-chips" id="drawerTierChips">
+          <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
+          <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="lbl">Sort</div>
+        <button type="button" id="drawerSortBtn" class="btn-sort sortBtn">A–Z ↓</button>
+      </div>
+      <div class="filter-group">
+        <div class="lbl">Map key</div>
+        <div class="drawer-key" id="drawerKey"></div>
+      </div>
+    </div>
+    <div class="drawer-foot">
+      <button type="button" class="ghost" id="drawerReset">Reset</button>
+      <button type="button" class="primary" id="drawerApply">Show <span id="drawerCount">0</span> results</button>
     </div>
   </div>
 </div>
@@ -371,11 +580,10 @@ map.on('resize', clampMinZoom);
 const cluster = L.markerClusterGroup({maxClusterRadius:40, spiderfyOnMaxZoom:true, showCoverageOnHover:false, zoomToBoundsOnClick:true});
 map.addLayer(cluster);
 
-// Legend
-const legend = L.control({position:'bottomright'});
-legend.onAdd = function(){
-  const d = L.DomUtil.create('div','legend');
-  d.innerHTML = `
+// Legend — the same markup feeds the on-map control (desktop/tablet) and the
+// "Map key" block inside the mobile filter drawer, where the control is hidden.
+function keyRowsHtml(){
+  return `
     <div class="row"><span class="sw" style="background:${CAT.farm.color}"></span>Farm shop</div>
     <div class="row"><span class="sw" style="background:${CAT.clothing.color}"></span>Clothing</div>
     <div class="row"><span class="sw" style="background:${CAT.ceramics.color}"></span>Ceramics</div>
@@ -383,9 +591,16 @@ legend.onAdd = function(){
     <div class="row"><span class="sw" style="background:${CAT.cutlery.color}"></span>Cutlery &amp; Cookware</div>
     <div class="row" style="margin-top:5px"><span class="sw" style="background:${getCss('--gold')}"></span>Gold · made/grown fully in UK</div>
     <div class="row"><span class="sw" style="background:#fff"></span>Silver · made in UK, some imports</div>`;
+}
+const legend = L.control({position:'bottomright'});
+legend.onAdd = function(){
+  const d = L.DomUtil.create('div','legend');
+  d.innerHTML = keyRowsHtml();
   return d;
 };
 legend.addTo(map);
+const drawerKeyEl = document.getElementById('drawerKey');
+if (drawerKeyEl) drawerKeyEl.innerHTML = keyRowsHtml();
 
 // Build markers
 const markers = {};
@@ -483,18 +698,28 @@ viewToggleBtn.addEventListener('click', () => {
   toggleView(state.currentView === 'map' ? 'grid' : 'map');
 });
 
+function setViewToggleLabel(icon, label, title) {
+  viewToggleBtn.querySelector('.icon').textContent = icon;
+  viewToggleBtn.querySelector('.label').textContent = label;
+  viewToggleBtn.setAttribute('aria-label', title);
+  viewToggleBtn.title = title;
+}
+
 function toggleView(view) {
   state.currentView = view;
   if (view === 'grid') {
     splitView.style.display = 'none';
     gridView.style.display = 'block';
-    viewToggleBtn.textContent = '🗺️ Show on Map';
+    setViewToggleLabel('🗺️', 'Show on Map', 'Show on map');
     renderGrid();
   } else {
     gridView.style.display = 'none';
-    splitView.style.display = 'flex';
-    viewToggleBtn.textContent = '☰ Grid View';
+    splitView.style.display = isMobile() ? 'block' : 'flex';
+    setViewToggleLabel('▦', 'Grid View', 'Show as a list of cards');
+    // The map was display:none until a moment ago, so Leaflet's cached size is
+    // stale. Re-measure after the browser has laid the pane out.
     map.invalidateSize();
+    requestAnimationFrame(() => map.invalidateSize());
     renderMapList();
   }
 }
@@ -522,6 +747,8 @@ function renderMapList(){
   countEl.innerHTML = countText;
   const gridCountEl = document.getElementById('gridCount');
   if (gridCountEl) gridCountEl.innerHTML = countText;
+  const drawerCountEl = document.getElementById('drawerCount');
+  if (drawerCountEl) drawerCountEl.textContent = vis.length;
 
   if (state.aiActive && vis.length > 0) {
     const coords = vis.map(b => [b.lat, b.lng]);
@@ -601,6 +828,9 @@ function focus(id){
   toggleView('map');
   const m = markers[id];
   if (!m) return;
+  // On a phone the sheet covers the map, so drop it out of the way before
+  // flying to the pin — otherwise the popup opens behind the results list.
+  if (isMobile()) Sheet.collapse();
   cluster.zoomToShowLayer(m, () => {
     m.openPopup();
   });
@@ -647,6 +877,7 @@ searchInput.addEventListener('input', e => {
         if (b) {
           searchInput.value = b.name;
           autocompleteDropdown.style.display = 'none';
+          searchInput.blur();
           focus(id);
         }
       });
@@ -1111,6 +1342,8 @@ function syncChips(){
       c.classList.remove('disabled');
     }
   });
+
+  if (typeof updateFilterBadge === 'function') updateFilterBadge();
 }
 
 function bindChipEvents() {
@@ -1135,6 +1368,181 @@ function bindChipEvents() {
   });
 }
 bindChipEvents();
+
+/* ===========================================================================
+   RESPONSIVE BEHAVIOUR
+   Everything below only does anything at phone widths. Above 768px the media
+   queries take the mobile furniture out of the layout and these handlers
+   short-circuit on isMobile().
+   =========================================================================== */
+
+const MOBILE_MQ = window.matchMedia('(max-width: 767px)');
+function isMobile(){ return MOBILE_MQ.matches; }
+
+/* --- Draggable results sheet ------------------------------------------------
+   Three snap points: peek (just the count row), half, and full. The user can
+   drag the handle or the count row between them, or tap to cycle up. A flick
+   is projected forward in time so a fast short swipe still travels a full
+   step, which is what makes it feel like a native sheet rather than a slider.
+--------------------------------------------------------------------------- */
+const Sheet = (function(){
+  const sheet = document.getElementById('sidebar');
+  const grab  = document.getElementById('sheetGrab');
+  const countRow = document.querySelector('#splitView .countrow');
+  const ORDER = ['peek','half','full'];
+  let snap = 'peek';
+  let dragging = false, startY = 0, startT = 0, curT = 0, lastY = 0, lastT = 0, vel = 0;
+
+  const vh = () => (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+  function peekPx(){
+    const v = parseFloat(getComputedStyle(sheet).getPropertyValue('--sheet-peek'));
+    return isNaN(v) ? 150 : v;
+  }
+  // Distance the sheet is pushed down for each snap point, in px.
+  function offsetFor(k){
+    const h = sheet.offsetHeight || 1;
+    if (k === 'full') return 0;
+    if (k === 'half') return Math.max(0, h - Math.round(vh() * 0.52));
+    return Math.max(0, h - peekPx());
+  }
+
+  function apply(k){
+    snap = k;
+    sheet.classList.remove('snap-half','snap-full');
+    if (k === 'half') sheet.classList.add('snap-half');
+    if (k === 'full') sheet.classList.add('snap-full');
+    sheet.style.transform = '';               // hand control back to the class
+    grab.setAttribute('aria-expanded', String(k !== 'peek'));
+    grab.setAttribute('aria-label', k === 'full' ? 'Collapse results list' : 'Expand results list');
+  }
+
+  function cycle(){ apply(snap === 'full' ? 'peek' : ORDER[ORDER.indexOf(snap) + 1]); }
+
+  function down(e){
+    if (!isMobile()) return;
+    if (e.target.closest('button') && e.target.closest('#sheetGrab') === null) return; // let the sort button work
+    dragging = true;
+    startY = lastY = e.clientY;
+    lastT = performance.now();
+    vel = 0;
+    startT = curT = offsetFor(snap);
+    sheet.classList.add('dragging');
+    sheet.setPointerCapture && sheet.setPointerCapture(e.pointerId);
+    e.currentTarget.setPointerCapture && e.currentTarget.setPointerCapture(e.pointerId);
+  }
+
+  function move(e){
+    if (!dragging) return;
+    e.preventDefault();
+    const now = performance.now();
+    const dt = Math.max(1, now - lastT);
+    vel = (e.clientY - lastY) / dt;           // px per ms, positive = downward
+    lastY = e.clientY; lastT = now;
+    curT = Math.max(0, Math.min(offsetFor('peek'), startT + (e.clientY - startY)));
+    sheet.style.transform = `translateY(${curT}px)`;
+  }
+
+  function up(){
+    if (!dragging) return;
+    dragging = false;
+    sheet.classList.remove('dragging');
+    if (Math.abs(lastY - startY) < 6) { cycle(); return; }   // it was a tap, not a drag
+    const projected = curT + vel * 130;                      // ~130ms of momentum
+    const best = ORDER.reduce((a, k) =>
+      Math.abs(offsetFor(k) - projected) < Math.abs(offsetFor(a) - projected) ? k : a, ORDER[0]);
+    apply(best);
+  }
+
+  [grab, countRow].filter(Boolean).forEach(el => {
+    el.addEventListener('pointerdown', down);
+    el.addEventListener('pointermove', move, { passive:false });
+    el.addEventListener('pointerup', up);
+    el.addEventListener('pointercancel', up);
+  });
+
+  return {
+    collapse(){ if (isMobile()) apply('peek'); },
+    expand(){ if (isMobile()) apply('full'); },
+    half(){ if (isMobile()) apply('half'); },
+    reset(){ sheet.style.transform = ''; sheet.classList.remove('snap-half','snap-full','dragging'); snap = 'peek'; }
+  };
+})();
+
+// A pin's popup needs the map, so get the sheet out of the way when one opens.
+map.on('popupopen', () => { if (isMobile()) Sheet.collapse(); });
+
+/* --- Mobile filter drawer -------------------------------------------------- */
+const filterDrawer = document.getElementById('filterDrawer');
+const filterBtn = document.getElementById('filterBtn');
+const filterCountEl = document.getElementById('filterCount');
+let drawerCloseTimer = null;
+
+function openDrawer(){
+  clearTimeout(drawerCloseTimer);
+  filterDrawer.hidden = false;
+  requestAnimationFrame(() => filterDrawer.classList.add('open'));
+  filterBtn.setAttribute('aria-expanded', 'true');
+}
+function closeDrawer(){
+  filterDrawer.classList.remove('open');
+  filterBtn.setAttribute('aria-expanded', 'false');
+  drawerCloseTimer = setTimeout(() => { filterDrawer.hidden = true; }, 300);
+}
+filterBtn.addEventListener('click', openDrawer);
+filterDrawer.addEventListener('click', e => { if (e.target.closest('[data-close]')) closeDrawer(); });
+document.getElementById('drawerApply').addEventListener('click', closeDrawer);
+document.getElementById('drawerReset').addEventListener('click', () => {
+  state.cats = new Set(ALL_CATS);
+  state.tiers = new Set(ALL_TIERS);
+  syncChips(); renderMapList(); renderGrid();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !filterDrawer.hidden) closeDrawer();
+});
+
+// Badge on the Filters button: how many chips are actively narrowing the list.
+function updateFilterBadge(){
+  let n = 0;
+  if (state.cats.size  < ALL_CATS.length)  n += state.cats.size;
+  if (state.tiers.size < ALL_TIERS.length) n += state.tiers.size;
+  filterBtn.classList.toggle('has-filters', n > 0);
+  filterCountEl.textContent = n;
+  // The reset button only earns its space once there is something to reset.
+  // Keyed off the field's actual value, not state.q — a typed-but-not-yet-
+  // submitted query still needs a way to be cleared on a phone.
+  document.body.classList.toggle('is-filtered',
+    n > 0 || state.aiActive || Boolean(searchInput.value.trim()));
+}
+searchInput.addEventListener('input', updateFilterBadge);
+
+/* --- Placeholder, and keeping Leaflet honest across breakpoints ------------- */
+const LONG_PLACEHOLDER  = searchInput.placeholder;
+const SHORT_PLACEHOLDER = 'Search makers, towns or products';
+function applyBreakpoint(){
+  searchInput.placeholder = isMobile() ? SHORT_PLACEHOLDER : LONG_PLACEHOLDER;
+  if (!isMobile()) Sheet.reset();
+  // toggleView writes an inline display on #splitView, which differs by
+  // breakpoint (block on mobile, flex above it). Re-apply it on the way across.
+  if (state.currentView === 'map') {
+    splitView.style.display = isMobile() ? 'block' : 'flex';
+  }
+  map.invalidateSize();
+}
+MOBILE_MQ.addEventListener('change', applyBreakpoint);
+applyBreakpoint();
+
+let resizeTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => map.invalidateSize(), 150);
+});
+window.addEventListener('orientationchange', () => setTimeout(() => map.invalidateSize(), 250));
+
+// Dismiss the on-screen keyboard once a search is committed, so the results
+// aren't hidden behind it.
+searchInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && isMobile()) searchInput.blur();
+});
 
 // Sort buttons sync
 document.querySelectorAll('#sortBtn, #gridSortBtn, .sortBtn, .btn-sort').forEach(btn => {
@@ -1168,6 +1576,7 @@ function resetSearchAndShowGrid() {
     b.textContent = 'A–Z ↓';
   });
 
+  if (typeof Sheet !== 'undefined') Sheet.collapse();
   syncChips();
   toggleView(state.currentView);
   renderGrid();

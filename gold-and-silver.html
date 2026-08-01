@@ -3,7 +3,8 @@
 <head>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#ffffff" />
 <title>Gold &amp; Silver — Grown and Made UK</title>
 <style>
   :root{
@@ -13,7 +14,7 @@
     --ink:#1d2733; --muted:#6b7682; --line:#e3e8ee; --bg:#f6f8fa;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg)}
+  html,body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
   #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
   #topbar .flag{position:absolute;left:0;top:0;bottom:0;width:230px;opacity:.16;pointer-events:none;
     -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%);
@@ -59,7 +60,6 @@
   .note p{font-size:13.5px;margin:0}
 
   @media (max-width:760px){
-    #topbar .flag{width:130px}.site-title{font-size:19px}
     table.rules,table.rules tbody,table.rules tr,table.rules td,table.rules th{display:block;width:100%}
     table.rules thead{display:none}
     table.rules tr{margin-bottom:16px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
@@ -72,6 +72,38 @@
 
   h1,h2,h3,.brand-logo,.g-title,.pop h3{font-family:var(--font-heading)}
   .brand-logo{font-family:var(--font-heading);font-size:25px;font-weight:700;color:var(--racing-green);letter-spacing:.2px;text-decoration:none;line-height:1;white-space:nowrap}
+
+  /* ==========================================================================
+     RESPONSIVE  —  shared across the content pages.
+     The layout is a single column already, so this is about the header,
+     touch targets, comfortable reading measure and iOS input zoom.
+     ========================================================================== */
+  #topbar{padding:0 calc(14px + env(safe-area-inset-right,0px)) 0 calc(14px + env(safe-area-inset-left,0px))}
+  #burger{right:calc(14px + env(safe-area-inset-right,0px))}
+
+  @media (max-width:1099px){
+    .wrap{padding:24px 16px 56px}
+    .card{padding:20px}
+  }
+
+  @media (max-width:767px){
+    #topbar{height:56px;justify-content:flex-start}
+    .brand-logo{font-size:19px;max-width:calc(100% - 60px);overflow:hidden;text-overflow:ellipsis}
+    #burger{width:44px;height:44px;right:calc(12px + env(safe-area-inset-right,0px))}
+    #topbar .flag{width:110px}
+    #menu{top:52px;left:calc(12px + env(safe-area-inset-left,0px));right:calc(12px + env(safe-area-inset-right,0px));min-width:0}
+    #menu a{padding:13px 14px;font-size:15px}
+    .wrap{padding:16px 12px calc(48px + env(safe-area-inset-bottom,0px))}
+    .card{padding:18px 16px;border-radius:12px}
+    h2{font-size:19px}
+    h3{font-size:15.5px}
+    p,li{font-size:15px;line-height:1.7}
+  }
+
+  @media (max-width:359px){
+    .brand-logo{font-size:17px}
+  }
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
