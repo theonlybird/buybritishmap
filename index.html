@@ -380,6 +380,9 @@
 
   #topbar{background:var(--paper-2);border-bottom:1px solid var(--line)}
   #topbar .flag,#topbar .flag-container svg{display:none}
+  /* .bar-top is display:contents on desktop, so it can't carry the stacking
+     context the flag needs — put it on the wordmark itself. */
+  .brand-logo{position:relative;z-index:1}
 
   #search{background:var(--surface);border:1px solid var(--line);border-radius:20px;
     font-family:var(--font-body);color:var(--ink);box-shadow:none}
@@ -870,7 +873,7 @@ function keyRowsHtml(){
     <p class="ttl spaced">Centre — the standard</p>
     ${tierRow('gold','Gold')}
     ${tierRow('silver','Silver')}
-    <p class="note">Gold means the material was made here too. Silver means it was built here.</p>`;
+    <p class="note">Silver means it was fully made in Britain. Gold means the materials were grown or made here too.</p>`;
 }
 const legend = L.control({position:'bottomright'});
 legend.onAdd = function(){

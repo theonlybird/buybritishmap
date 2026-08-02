@@ -46,6 +46,15 @@
   --font-heading:'Cormorant Garamond',Georgia,serif;
   --font-body:'Karla',-apple-system,system-ui,sans-serif;
 
+  /* Header flag. The only place the Union Jack appears, recoloured out of
+     red-white-blue into the heritage palette. Three knobs, all tunable here:
+     how wide the panel is, how strong it starts, and where it has faded to
+     nothing. If it reads as a flag rather than as texture, drop the opacity. */
+  --flag-w:34%;
+  --flag-opacity:.24;
+  --flag-fade:88%;
+  --flag-inset:11%;
+
   /* Back-compat aliases. Old rules retint without being rewritten.
      Anything read by JS resolves to a literal above, never to a var(). */
   --racing-green:#004225;
@@ -53,6 +62,30 @@
   --bg:#FAF7F0;
   --gold:#C79A3E;
   --silver:#535E58;
+}
+
+/* ---------- Header flag ----------
+   Painted as a pseudo-element so no page needs markup for it. Deliberately
+   not clipped with overflow:hidden — the menu dropdown lives inside #topbar
+   and would be cut off. The mask does the containing instead. */
+#topbar{position:relative}
+#topbar::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;
+  width:var(--flag-w);
+  background:url('flag-heritage.jpg') left center/cover no-repeat;
+  opacity:var(--flag-opacity);
+  -webkit-mask-image:linear-gradient(to right,#000 0%,rgba(0,0,0,.45) 45%,transparent var(--flag-fade));
+  mask-image:linear-gradient(to right,#000 0%,rgba(0,0,0,.45) 45%,transparent var(--flag-fade));
+  pointer-events:none;z-index:0;
+}
+/* Everything in the bar sits above the flag. */
+#topbar > *{position:relative;z-index:1}
+/* Only the map page has a left-aligned wordmark, so only it needs shifting
+   clear of the dense end of the flag. The content pages centre theirs. */
+.bar-top .brand-logo{padding-left:var(--flag-inset)}
+
+@media (max-width:760px){
+  :root{--flag-w:62%;--flag-opacity:.16;--flag-fade:82%;--flag-inset:0px}
 }
 
 /* ---------- Map pin ----------
