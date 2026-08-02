@@ -440,8 +440,18 @@
 
   /* Grid. White cards on the beige page — the separation the beige-on-beige comp lost. */
   #gridView{background:var(--paper);padding:28px 24px 40px}
+
+  /* The header kept an earlier max-width:1240px + auto margins, while the card
+     grid below was later switched to full width. That mismatch is what left the
+     banner floating inboard of the first card and the sort button hanging past
+     the last one. Both now share the column's full width. */
+  .grid-header{max-width:none;width:100%;margin-left:0;margin-right:0;
+    align-items:stretch}
   .grid-header .ai-banner{background:var(--paper-2);border:1px solid var(--line);
-    border-radius:6px;color:var(--green);font-weight:500}
+    border-radius:6px;color:var(--green);font-weight:500;flex:1 1 auto;
+    display:flex;align-items:center}
+  .grid-header .btn-sort{flex:0 0 auto;align-self:stretch;display:flex;
+    align-items:center}
   .grid-card{background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;
     box-shadow:none;padding:20px 20px 16px;min-height:250px}
   .grid-card:hover{box-shadow:0 6px 22px rgba(60,48,24,.13);border-color:var(--brass);
