@@ -449,12 +449,23 @@
      banner floating inboard of the first card and the sort button hanging past
      the last one. Both now share the column's full width. */
   .grid-header{max-width:none;width:100%;margin-left:0;margin-right:0;
-    align-items:stretch}
-  .grid-header .ai-banner{background:var(--paper-2);border:1px solid var(--line);
-    border-radius:6px;color:var(--green);font-weight:500;flex:1 1 auto;
-    display:flex;align-items:center}
-  .grid-header .btn-sort{flex:0 0 auto;align-self:stretch;display:flex;
     align-items:center}
+  /* Not display:flex. The banner's content is one text run with a <b> in it,
+     and flex turns those into flex items, which drops the whitespace between
+     them — that's what produced "Showing472British makers". */
+  .grid-header .ai-banner{background:var(--paper-2);border:1px solid var(--line);
+    border-radius:6px;color:var(--green);font-weight:500;flex:1 1 auto}
+  .grid-header .btn-sort{flex:0 0 auto}
+
+  /* Cap the grid at four columns however wide the screen gets. auto-fill would
+     otherwise keep adding narrower ones, and the descriptions need the room. */
+  .grid-container{--gcol:4;--ggap:20px;gap:var(--ggap);
+    grid-template-columns:repeat(auto-fill,
+      minmax(max(260px, calc((100% - (var(--gcol) - 1) * var(--ggap)) / var(--gcol))), 1fr))}
+  /* This rule is last in the sheet, so it would otherwise beat the existing
+     responsive steps. Restate them rather than reordering the whole file. */
+  @media (max-width:1100px){ .grid-container{--ggap:16px} }
+  @media (max-width:760px){ .grid-container{--ggap:14px;grid-template-columns:1fr} }
   .grid-card{background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;
     box-shadow:none;padding:20px 20px 16px;min-height:250px}
   .grid-card:hover{box-shadow:0 6px 22px rgba(60,48,24,.13);border-color:var(--brass);
@@ -540,7 +551,14 @@
     font-family:var(--font-body);font-size:9px;letter-spacing:.06em;color:var(--muted-2);
     padding:4px;line-height:1.25;border-radius:2px}
 
-  #fx{position:fixed;inset:0;width:100%;height:100%;z-index:3500;pointer-events:none}
+  /* Clipped to below the header so Shetland doesn't draw itself across the
+     search bar. Only on landscape/desktop — on a phone the header is two rows
+     deep and the map runs to the top, where the full outline reads fine. */
+  #fx{position:fixed;inset:0;width:100%;height:100%;z-index:3500;pointer-events:none;
+    clip-path:inset(var(--topbar-h) 0 0 0)}
+  @media (max-width:900px),(orientation:portrait){
+    #fx{clip-path:none}
+  }
   #fx .coast{fill:none;stroke:var(--green);stroke-width:2.2;stroke-linejoin:round;
     stroke-linecap:round}
   #fx .ipin{opacity:0}
