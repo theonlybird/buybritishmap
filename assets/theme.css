@@ -47,13 +47,20 @@
   --font-body:'Karla',-apple-system,system-ui,sans-serif;
 
   /* Header flag. The only place the Union Jack appears, recoloured out of
-     red-white-blue into the heritage palette. Three knobs, all tunable here:
-     how wide the panel is, how strong it starts, and where it has faded to
-     nothing. If it reads as a flag rather than as texture, drop the opacity. */
-  --flag-w:34%;
+     red-white-blue into the heritage palette. All tunable here: panel width,
+     image scale and crop, starting strength, and where it fades to nothing.
+     If it ever reads as a flag rather than as texture, drop the opacity.
+
+     A 16:9 flag inside a ~7:1 header strip: `cover` would scale to the width
+     and crop away all but a thin horizontal band, which reads as a zoom rather
+     than as a flag. Scaling to height instead shows over half the flag, and the
+     panel is then sized to the width the image naturally occupies. */
+  --flag-w:260px;
+  --flag-size:auto 180%;
+  --flag-pos:left 40%;
   --flag-opacity:.24;
   --flag-fade:88%;
-  --flag-inset:11%;
+  --flag-inset:0px;
 
   /* Back-compat aliases. Old rules retint without being rewritten.
      Anything read by JS resolves to a literal above, never to a var(). */
@@ -72,7 +79,7 @@
 #topbar::before{
   content:"";position:absolute;left:0;top:0;bottom:0;
   width:var(--flag-w);
-  background:url('flag-heritage.jpg') left center/cover no-repeat;
+  background:url('flag-heritage.jpg') var(--flag-pos)/var(--flag-size) no-repeat;
   opacity:var(--flag-opacity);
   -webkit-mask-image:linear-gradient(to right,#000 0%,rgba(0,0,0,.45) 45%,transparent var(--flag-fade));
   mask-image:linear-gradient(to right,#000 0%,rgba(0,0,0,.45) 45%,transparent var(--flag-fade));
@@ -84,8 +91,12 @@
    clear of the dense end of the flag. The content pages centre theirs. */
 .bar-top .brand-logo{padding-left:var(--flag-inset)}
 
+/* Mobile stacks the header into two rows, so the strip is close to the flag's
+   own proportions and `cover` works there — which is why it already looked
+   right on a phone. Left as it was. */
 @media (max-width:760px){
-  :root{--flag-w:62%;--flag-opacity:.16;--flag-fade:82%;--flag-inset:0px}
+  :root{--flag-w:62%;--flag-size:cover;--flag-pos:left center;
+        --flag-opacity:.16;--flag-fade:82%;--flag-inset:0px}
 }
 
 /* ---------- Map pin ----------
