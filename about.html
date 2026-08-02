@@ -4,15 +4,11 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#ffffff" />
+<meta name="theme-color" content="#FAF7F0" />
 <title>About — Grown and Made UK</title>
+<link rel="stylesheet" href="assets/theme.css" />
 <style>
-  :root{
-    --racing-green:#004225; --font-heading:'Cormorant Garamond',Georgia,serif; --font-body:'Plus Jakarta Sans',-apple-system,sans-serif;
-    
-    --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#9aa3ad;
-    --ink:#1d2733; --muted:#6b7682; --line:#e3e8ee; --bg:#f6f8fa;
-  }
+  /* Palette and type live in assets/theme.css */
   *{box-sizing:border-box}
   html,body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
   #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
@@ -75,6 +71,56 @@
   @media (max-width:359px){
     .brand-logo{font-size:17px}
   }
+
+
+  /* ==========================================================================
+     DESIGN SYSTEM OVERRIDES — see assets/theme.css
+     ========================================================================== */
+  html,body{background:var(--paper);color:var(--ink);font-family:var(--font-body)}
+  h1,h2,h3,h4{font-family:var(--font-heading);color:var(--green);font-weight:500;letter-spacing:.01em}
+  h1{font-size:clamp(30px,4.4vw,46px);line-height:1.1}
+  h2{font-size:25px}
+  h3{font-size:19px}
+  p,li{color:var(--muted);font-size:15px;line-height:1.7}
+  a{color:var(--green)}
+  a:hover{color:var(--green-dark)}
+
+  #topbar{background:var(--paper-2);border-bottom:1px solid var(--line)}
+  #topbar .flag{display:none}
+  .site-title,.brand-logo{font-family:var(--font-heading);font-weight:600;font-size:25px;
+    letter-spacing:.01em;color:var(--green);text-transform:none}
+  .site-title span{color:var(--green)}
+  #burger{background:var(--surface);border-color:var(--line);border-radius:6px}
+  #burger:hover{border-color:var(--green)}
+  #burger .bar{background:var(--green)}
+  #menu{background:var(--surface);border-color:var(--line);border-radius:8px}
+  #menu a{color:var(--ink);font-weight:500;border-bottom:none}
+  #menu a:hover{background:var(--paper-2);color:var(--green)}
+  #menu a.cta{background:var(--green);color:var(--paper)}
+
+  .card,.rules,.standards,.notice{background:var(--surface);border:1px solid var(--line-strong);
+    border-radius:6px;box-shadow:none}
+  .lede{color:var(--muted);font-size:17px;line-height:1.65}
+  .note,.hint,.sub,.opt{color:var(--muted-2)}
+  .cta,button[type=submit],.ok{background:var(--green);color:var(--paper);border:none;
+    border-radius:6px;font-family:var(--font-body);font-weight:500;letter-spacing:.03em}
+  .cta:hover,button[type=submit]:hover{background:var(--green-dark)}
+  input,select,textarea{font-family:var(--font-body);background:var(--surface);
+    border:1px solid var(--line);border-radius:6px;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);
+    box-shadow:0 0 0 3px rgba(0,66,37,.10)}
+
+  .tag{font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;border-radius:3px;padding:3px 7px}
+  .tag.gold,.gold-cell,.standard.is-gold{background:var(--gold-bg);color:var(--gold-mark)}
+  .tag.silver,.silver-cell{background:var(--silver-bg);color:var(--silver-mark)}
+  .gold-col,.g{color:var(--gold-mark)}
+  .silver-col,.s{color:var(--silver-mark)}
+  .cat,.eg{color:var(--muted-2)}
+  table{border-color:var(--line)}
+  th,td{border-color:var(--line)!important}
+  th{font-family:var(--font-body);color:var(--green);font-weight:600;
+    text-transform:uppercase;letter-spacing:.09em;font-size:11px}
 
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />

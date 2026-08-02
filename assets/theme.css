@@ -1,0 +1,98 @@
+/* Grown and Made UK — design system
+   Racing green on warm paper. Shared by every page.
+   Category vars must stay literal hex: index.html reads them with getComputedStyle. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+  /* Core */
+  --green:#004225;
+  --green-dark:#00301B;
+  --brass:#C09A4F;
+
+  /* Surfaces — page is beige, cards are white */
+  --paper:#FAF7F0;
+  --paper-2:#F4EFE4;
+  --surface:#FFFFFF;
+
+  /* Ink */
+  --ink:#1E2621;
+  --muted:#57544B;
+  /* Comp had #7A7568, which measures 4.29 on the beige page and 4.01 on the
+     header band — both under AA. Darkened until it passes on every surface. */
+  --muted-2:#6E6A5F;
+
+  /* Hairlines */
+  --line:#E4DCCB;
+  --line-strong:#D4C9B2;
+
+  /* Tiers — -pin is a fill (3:1 threshold), -mark carries text (4.5:1). Not interchangeable. */
+  --gold-pin:#C79A3E;
+  --gold-mark:#7D5F22;
+  --gold-bg:#F4EBD4;
+  --silver-pin:#535E58;
+  --silver-mark:#3F4744;
+  --silver-bg:#E7E9E6;
+
+  /* Categories */
+  --clothing:#4A5F72;
+  --farm:#5C6B3C;
+  --ceramics:#8F5A38;
+  --jewellery:#6B4F63;
+  --cutlery:#4A4A46;
+
+  --red:#8C1D2C;
+
+  --font-heading:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Karla',-apple-system,system-ui,sans-serif;
+
+  /* Back-compat aliases. Old rules retint without being rewritten.
+     Anything read by JS resolves to a literal above, never to a var(). */
+  --racing-green:#004225;
+  --navy:#004225;
+  --bg:#FAF7F0;
+  --gold:#C79A3E;
+  --silver:#535E58;
+}
+
+/* ---------- Map pin ----------
+   24px overall for every listing, Gold and Silver alike.
+   Reading outward: tier metal disc, paper gap, category ring, paper halo, dark edge.
+   The paper gap means the tier and category colours never have to contrast with
+   each other, so both stay legible over any tile. */
+.pin{
+  width:10px;height:10px;border-radius:50%;transform:none;border:none;
+  background:var(--silver-pin);
+  box-shadow:
+    0 0 0 2px var(--paper),
+    0 0 0 5px var(--cat,var(--green)),
+    0 0 0 6px var(--paper),
+    0 0 0 7px rgba(0,48,27,.45);
+}
+.pin::after{content:none}
+.pin.tier-gold{background:var(--gold-pin)}
+.pin.tier-silver{background:var(--silver-pin)}
+
+/* ---------- Hallmark ----------
+   A struck mark, not a badge. Never appears on a map pin. */
+.hallmark{display:inline-flex;align-items:center;justify-content:center;position:relative;
+  width:1.75em;height:1.75em;flex:0 0 auto;vertical-align:-.45em}
+.hallmark svg{position:absolute;inset:0;width:100%;height:100%}
+.hallmark span{font-family:var(--font-heading);font-weight:600;line-height:1;
+  font-size:.82em;letter-spacing:.02em}
+.hallmark.gold span{color:var(--gold-mark)}
+.hallmark.silver span{color:var(--silver-mark)}
+
+.tier-label{font-family:var(--font-body);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em}
+.tier-label.gold{color:var(--gold-mark)}
+.tier-label.silver{color:var(--silver-mark)}
+
+/* ---------- Shared page furniture for the content pages ---------- */
+.gm-page{background:var(--paper);color:var(--ink);font-family:var(--font-body);
+  font-size:15px;line-height:1.7}
+.gm-page h1,.gm-page h2,.gm-page h3{font-family:var(--font-heading);color:var(--green);
+  font-weight:500;letter-spacing:.01em}
+.gm-page a{color:var(--green);text-decoration:none;border-bottom:1px solid rgba(0,66,37,.3)}
+.gm-page a:hover{color:var(--green-dark);border-bottom-color:var(--brass)}
+::selection{background:var(--brass);color:var(--ink)}

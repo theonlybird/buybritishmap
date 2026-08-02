@@ -6,16 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#ffffff" />
 <title>Grown and Made UK</title>
+<link rel="stylesheet" href="assets/theme.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <style>
   :root{
-    --racing-green:#004225; --font-heading:'Cormorant Garamond',Georgia,serif; --font-body:'Plus Jakarta Sans',-apple-system,sans-serif;
-    
-    --navy:#1f3a5f; --red:#8c1d2c; --gold:#c8a24a; --silver:#b8c2cc;
-    --farm:#3c9d4e; --clothing:#24549c; --ceramics:#b0653a; --jewellery:#7a5296; --cutlery:#374151; --ink:#1d2733; --muted:#6b7682;
-    --line:#e3e8ee; --bg:#f6f8fa;
+    /* Palette and type now live in assets/theme.css. Only layout tokens below. */
 
     /* Responsive tokens — overridden per breakpoint at the bottom of this sheet */
     --topbar-h:70px;      /* height of the header, used to size the app below it */
@@ -357,12 +354,218 @@
     #sidebar,.drawer-panel,.drawer-backdrop,.grid-card{transition:none!important}
   }
 
+  /* ==========================================================================
+     DESIGN SYSTEM OVERRIDES
+     Racing green on warm paper. These come last so they win over the rules
+     above without needing those rules rewritten.
+     ========================================================================== */
+
+  /* Pin. Repeated here rather than left to theme.css because the old teardrop
+     rules live in this same sheet and would otherwise win on source order.
+     Outward: tier metal disc, paper gap, category ring, paper halo, dark edge. */
+  .pin{width:10px;height:10px;border-radius:50%;transform:none;border:none;
+    background:var(--silver-pin);
+    box-shadow:
+      0 0 0 2px var(--paper),
+      0 0 0 5px var(--cat,var(--green)),
+      0 0 0 6px var(--paper),
+      0 0 0 7px rgba(0,48,27,.45)}
+  .pin::after{content:none;display:none}
+  .pin.tier-gold{background:var(--gold-pin)}
+  .pin.tier-silver{background:var(--silver-pin)}
+
+  body{font-family:var(--font-body);background:var(--paper);color:var(--ink)}
+  h1,h2,h3,.brand-logo,.g-title,.pop h3{font-family:var(--font-heading);font-weight:500}
+  .brand-logo{color:var(--green);font-weight:600;letter-spacing:.01em}
+
+  #topbar{background:var(--paper-2);border-bottom:1px solid var(--line)}
+  #topbar .flag,#topbar .flag-container svg{display:none}
+
+  #search{background:var(--surface);border:1px solid var(--line);border-radius:20px;
+    font-family:var(--font-body);color:var(--ink);box-shadow:none}
+  #search:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0,66,37,.10)}
+  .search-input-box svg{stroke:var(--muted-2)}
+  .btn-reset,.btn-view-toggle{background:var(--green);border-radius:6px;font-family:var(--font-body)}
+  .btn-reset:hover,.btn-view-toggle:hover{background:var(--green-dark);filter:none}
+  .btn-sort,#sortBtn{color:var(--green);border-color:var(--line);background:var(--surface);
+    font-family:var(--font-body)}
+  #burger{background:var(--surface);border-color:var(--line);border-radius:6px}
+  #burger .bar{background:var(--green)}
+  #menu{background:var(--surface);border-color:var(--line);border-radius:8px}
+  #menu a{color:var(--ink);font-weight:500}
+  #menu a:hover{background:var(--paper-2);color:var(--green)}
+  #menu a.cta{background:var(--green);color:var(--paper)}
+
+  #sidebar{background:var(--surface);border-right:1px solid var(--line)}
+  .controls,.countrow{border-bottom:1px solid var(--line)}
+  .countrow{background:var(--paper-2)}
+  .filter-group .lbl{color:var(--muted-2);letter-spacing:.1em;font-size:10px}
+  .chip{border:1px solid var(--line);background:var(--surface);border-radius:4px;
+    color:var(--muted);font-weight:500}
+  .chip:hover{border-color:var(--line-strong)}
+  .chip.active{background:var(--green);border-color:var(--green);color:var(--paper)}
+  .chip.active.tier-gold{background:var(--gold-mark);border-color:var(--gold-mark);color:#FBF6E9}
+  .chip.active.tier-silver{background:var(--silver-mark);border-color:var(--silver-mark);color:#EDEFEE}
+
+  .item{border-bottom:1px solid var(--line)}
+  .item:hover{background:var(--paper-2)}
+  .item .nm{font-family:var(--font-heading);font-size:17px;font-weight:600;color:var(--green)}
+  .item .sub{color:var(--muted-2)}
+  .logo,.g-logo,.pop .plogo,.ac-logo{background:var(--paper-2);border:1px solid var(--line);
+    border-radius:4px;color:var(--green);font-family:var(--font-heading);font-weight:600}
+
+  /* Tier marks. Struck, quiet, never on a pin. */
+  .tag{font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:.1em;
+    border-radius:3px;padding:3px 7px}
+  .tag.gold{background:var(--gold-bg);color:var(--gold-mark)}
+  .tag.silver{background:var(--silver-bg);color:var(--silver-mark)}
+  .tag.cat{background:var(--paper-2);color:var(--muted);margin-left:5px}
+  .tag.cat.clothing{background:#EAEEF2;color:#31475A}
+  .tag.cat.ceramics{background:#F4EAE3;color:#6E4227}
+  .tag.cat.jewellery{background:#F0EAF0;color:#523A4C}
+  .tag.cat.cutlery{background:#ECECEA;color:#3A3A37}
+
+  /* Key. Now covers both what a pin's ring means and what its centre means. */
+  .legend{background:rgba(250,247,240,.95);border:1px solid var(--line);border-radius:8px;
+    box-shadow:0 2px 10px rgba(60,48,24,.12);font-family:var(--font-body);font-size:11.5px;
+    line-height:1.6;color:var(--muted);padding:11px 13px;max-width:212px}
+  .legend .ttl{font-family:var(--font-body);font-size:9.5px;font-weight:600;
+    text-transform:uppercase;letter-spacing:.11em;color:var(--muted-2);margin:0 0 6px}
+  .legend .ttl.spaced{margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
+  .legend .row{display:flex;align-items:center;gap:8px;padding:1.5px 0}
+  .legend .sw{width:13px;height:13px;border-radius:50%;border:none;box-shadow:none;flex:0 0 13px}
+  .legend .keypin{width:16px;height:16px;border-radius:50%;flex:0 0 16px;position:relative}
+  .legend .keypin i{position:absolute;inset:4px;border-radius:50%;display:block}
+  .legend .note{color:var(--muted-2);font-size:10.5px;margin-top:7px;line-height:1.45}
+
+  /* Grid. White cards on the beige page — the separation the beige-on-beige comp lost. */
+  #gridView{background:var(--paper);padding:28px 24px 40px}
+  .grid-header .ai-banner{background:var(--paper-2);border:1px solid var(--line);
+    border-radius:6px;color:var(--green);font-weight:500}
+  .grid-card{background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;
+    box-shadow:none;padding:20px 20px 16px;min-height:250px}
+  .grid-card:hover{box-shadow:0 6px 22px rgba(60,48,24,.13);border-color:var(--brass);
+    transform:translateY(-2px)}
+  .grid-card .g-title{font-family:var(--font-heading);font-size:21px;font-weight:600;
+    color:var(--green);line-height:1.1}
+  .grid-card .g-sub{color:var(--muted-2)}
+  .grid-card .g-desc{color:var(--muted);font-size:13.5px;line-height:1.55}
+  .grid-card .g-addr{color:var(--muted-2)}
+  .grid-card .g-links a{border-radius:4px;font-family:var(--font-body);font-weight:500}
+  .grid-card .g-links a.web{background:var(--green);color:var(--paper)}
+  .grid-card .g-links a.ig,.grid-card .g-links a.map-link{background:var(--paper-2);
+    color:var(--ink);border:1px solid var(--line)}
+
+  /* Diagonal-wave entrance. Cards are visible by default; the observer only
+     hides what it is about to reveal, so an observer failure degrades to
+     "no animation", never to "no content". */
+  .grid-card.pre-reveal{opacity:0;transform:translate3d(var(--rx,0),18px,0)}
+  .grid-card.revealed{opacity:1;transform:none;
+    transition:opacity .42s ease,transform .42s cubic-bezier(.22,.61,.36,1)}
+
+  .pop .pmeta,.pop .addr{color:var(--muted-2)}
+  .pop .desc{color:var(--muted)}
+  .pop h3{font-size:20px;font-weight:600;color:var(--green)}
+  .leaflet-popup-content-wrapper{background:var(--paper);border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,40,22,.20)}
+  .leaflet-popup-tip{background:var(--paper)}
+  .pop .links a{border-radius:4px;font-family:var(--font-body);font-weight:500}
+  .pop .links a.web{background:var(--green);color:var(--paper)}
+  .pop .links a.ig{background:var(--paper-2);color:var(--ink);border:1px solid var(--line)}
+  .leaflet-container{background:var(--paper);font-family:var(--font-body)}
+  .leaflet-control-attribution{background:rgba(250,247,240,.85);font-size:9px}
+
+  .marker-cluster{background:rgba(0,66,37,.16)}
+  .marker-cluster div{background:var(--green);color:var(--paper);font-family:var(--font-body);
+    font-weight:500;box-shadow:0 0 0 2px var(--paper)}
+
+  #autocompleteDropdown{background:var(--surface);border-color:var(--line);border-radius:8px}
+  .ac-item{border-bottom:1px solid var(--line)}
+  .ac-item:hover{background:var(--paper-2)}
+  .ac-name{font-family:var(--font-heading);font-size:16px;font-weight:600;color:var(--green)}
+  .ac-sub{color:var(--muted-2)}
+
+  .loader-overlay{background:rgba(250,247,240,.9)}
+  .spinner{border-color:var(--line);border-top-color:var(--green)}
+  .loader-text{color:var(--green);font-family:var(--font-body)}
+
+  .drawer-panel{background:var(--surface)}
+  .drawer-foot button{font-family:var(--font-body);border-radius:6px}
+  #filterBtn{background:var(--surface);border-color:var(--line);border-radius:6px;
+    color:var(--green);font-family:var(--font-body)}
+
+  /* ==========================================================================
+     LANDING OVERLAY
+     Sits over the map on first visit and lifts away. Same page, so the intro
+     pins genuinely become the map's markers rather than being re-created.
+     ========================================================================== */
+
+  #landing{position:fixed;inset:0;z-index:4000;background:var(--paper);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:32px;cursor:crosshair;overflow:hidden;
+    transition:opacity .3s ease-out}
+  #landing.out{opacity:0;pointer-events:none}
+  #landing.gone{display:none}
+  #sketchLayer{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+  #landing .inner{position:relative;z-index:2;pointer-events:none}
+  #landing .cta{pointer-events:auto}
+  .wordmark{font-family:var(--font-heading);font-size:clamp(40px,7vw,78px);font-weight:500;
+    color:var(--green);line-height:1.02;margin:0;letter-spacing:.01em}
+  .standfirst{font-size:clamp(14px,1.6vw,16.5px);color:var(--muted);max-width:36ch;
+    line-height:1.65;margin:22px auto 0}
+  .l-rule{width:64px;height:1px;background:var(--line-strong);margin:26px auto 0}
+  .l-count{font-family:var(--font-body);font-size:11px;color:var(--green);letter-spacing:.18em;
+    text-transform:uppercase;margin:22px 0 0}
+  #landing .cta{margin-top:26px;background:var(--green);color:var(--paper);border:none;
+    font-family:var(--font-body);font-size:14px;font-weight:500;letter-spacing:.04em;
+    padding:14px 32px;border-radius:6px;cursor:pointer;transition:background .18s}
+  #landing .cta:hover{background:var(--green-dark)}
+
+  /* Sketch slots. Empty on purpose — the engravings drop in here later. */
+  .slot{position:absolute;border:1px dashed var(--line-strong);background:rgba(244,239,228,.5);
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:var(--font-body);font-size:9px;letter-spacing:.06em;color:var(--muted-2);
+    padding:4px;line-height:1.25;border-radius:2px}
+
+  #fx{position:fixed;inset:0;width:100%;height:100%;z-index:3500;pointer-events:none}
+  #fx .coast{fill:none;stroke:var(--green);stroke-width:2.2;stroke-linejoin:round;
+    stroke-linecap:round}
+  #fx .ipin{opacity:0}
+
+  #topbar,#app{transition:opacity .35s ease-out}
+  body.intro #topbar,body.intro #app{opacity:0}
+
+  @media (hover:none),(pointer:coarse){
+    #sketchLayer{mix-blend-mode:multiply;opacity:.1!important;-webkit-mask-image:none!important;
+      mask-image:none!important}
+    #landing{cursor:default}
+  }
+  @media (prefers-reduced-motion:reduce){
+    #landing,#topbar,#app{transition:none!important}
+    #sketchLayer{-webkit-mask-image:none!important;mask-image:none!important;opacity:.1!important}
+  }
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="intro">
+
+<!-- Landing overlay. Sits over the map on first visit and lifts away; the map
+     boots underneath the whole time, so the intro pins become the real markers. -->
+<div id="landing">
+  <div id="sketchLayer"></div>
+  <div class="inner">
+    <h1 class="wordmark">Grown and<br>Made UK</h1>
+    <p class="standfirst">Every listing verified as genuinely made or grown in the British Isles, and graded against published rules.</p>
+    <div class="l-rule"></div>
+    <p class="l-count" id="landingCount">472 makers and growers</p>
+    <button class="cta" id="enterMap">Go to the map</button>
+  </div>
+</div>
+<svg id="fx" aria-hidden="true"><g id="coastG"></g><g id="pinG"></g></svg>
+
 <header id="topbar">
   <!-- On mobile these two wrappers become the header's two rows.
        On tablet/desktop they are display:contents, so the header stays one row. -->
@@ -582,15 +785,79 @@ map.addLayer(cluster);
 
 // Legend — the same markup feeds the on-map control (desktop/tablet) and the
 // "Map key" block inside the mobile filter drawer, where the control is hidden.
+// The key has to explain a pin that now carries two things at once: the ring is
+// the trade, the centre is the standard. Split into two labelled groups so it
+// reads as one instruction rather than seven unrelated swatches.
+// A struck hallmark rather than a badge: hexagonal punch, inner outline, the
+// initial set in the display serif. Gold and Silver are the same size at every
+// scale — colour is the only difference. Never rendered on a map pin.
+function hallmarkHtml(tier, px){
+  const gold = tier === 'gold';
+  const col  = gold ? 'var(--gold-mark)' : 'var(--silver-mark)';
+  const size = px || 30;
+  return `<span class="hallmark ${tier}" style="width:${size}px;height:${size}px;font-size:${size}px"
+      role="img" aria-label="${gold ? 'Gold' : 'Silver'} standard" title="${gold ? 'Gold' : 'Silver'} standard">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 2 L34 10 L34 30 L20 38 L6 30 L6 10 Z" fill="none" stroke="${col}" stroke-width="1.6"/>
+        <path d="M20 6.5 L30.2 12.4 L30.2 27.6 L20 33.5 L9.8 27.6 L9.8 12.4 Z" fill="none" stroke="${col}" stroke-width="0.7" opacity="0.65"/>
+      </svg>
+      <span>${gold ? 'G' : 'S'}</span>
+    </span>`;
+}
+
+// Diagonal wave across the grid. Cards render visible; we only hide the ones we
+// are about to reveal, so if IntersectionObserver is unavailable or throws, the
+// page degrades to "no animation" rather than "no content".
+const GRID_STAGGER_MIN = 8;
+let gridObserver = null;
+function animateGrid(){
+  if (gridObserver){ gridObserver.disconnect(); gridObserver = null; }
+  const cards = [...gridCards.querySelectorAll('.grid-card')];
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // A handful of results does not need choreography; it needs to be there.
+  if (still || cards.length < GRID_STAGGER_MIN || !('IntersectionObserver' in window)) return;
+
+  const cols = Math.max(1, Math.round(gridCards.clientWidth / 310));
+  cards.forEach((c,i)=>{
+    const col = i % cols;
+    c.style.setProperty('--rx', (col % 2 ? '16px' : '-16px'));
+    c.dataset.wave = (col + Math.floor(i / cols));   // diagonal, not top-to-bottom
+    const box = c.getBoundingClientRect();
+    if (box.top < window.innerHeight) return;        // already in view: leave alone
+    c.classList.add('pre-reveal');
+  });
+
+  gridObserver = new IntersectionObserver((entries,obs)=>{
+    entries.forEach(e=>{
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const d = Math.min(6, +el.dataset.wave || 0) * 50;
+      setTimeout(()=>{ el.classList.remove('pre-reveal'); el.classList.add('revealed'); }, d);
+      obs.unobserve(el);
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.05});
+
+  cards.filter(c=>c.classList.contains('pre-reveal')).forEach(c=>gridObserver.observe(c));
+}
+
 function keyRowsHtml(){
+  const catRow = (c,label) =>
+    `<div class="row"><span class="sw" style="background:${CAT[c].color}"></span>${label}</div>`;
+  const tierRow = (tier,label) =>
+    `<div class="row"><span class="keypin" style="background:${CAT.farm.color};box-shadow:0 0 0 1px var(--paper) inset">` +
+    `<i style="background:${getCss(tier==='gold'?'--gold-pin':'--silver-pin')};box-shadow:0 0 0 2px var(--paper)"></i>` +
+    `</span>${label}</div>`;
   return `
-    <div class="row"><span class="sw" style="background:${CAT.farm.color}"></span>Farm shop</div>
-    <div class="row"><span class="sw" style="background:${CAT.clothing.color}"></span>Clothing</div>
-    <div class="row"><span class="sw" style="background:${CAT.ceramics.color}"></span>Ceramics</div>
-    <div class="row"><span class="sw" style="background:${CAT.jewellery.color}"></span>Jewellery &amp; Watches</div>
-    <div class="row"><span class="sw" style="background:${CAT.cutlery.color}"></span>Cutlery &amp; Cookware</div>
-    <div class="row" style="margin-top:5px"><span class="sw" style="background:${getCss('--gold')}"></span>Gold · made/grown fully in UK</div>
-    <div class="row"><span class="sw" style="background:#fff"></span>Silver · made in UK, some imports</div>`;
+    <p class="ttl">Ring — the trade</p>
+    ${catRow('farm','Farm shop')}
+    ${catRow('clothing','Clothing')}
+    ${catRow('ceramics','Ceramics')}
+    ${catRow('jewellery','Jewellery &amp; watches')}
+    ${catRow('cutlery','Cutlery &amp; cookware')}
+    <p class="ttl spaced">Centre — the standard</p>
+    ${tierRow('gold','Gold')}
+    ${tierRow('silver','Silver')}
+    <p class="note">Gold means the material was made here too. Silver means it was built here.</p>`;
 }
 const legend = L.control({position:'bottomright'});
 legend.onAdd = function(){
@@ -606,9 +873,12 @@ if (drawerKeyEl) drawerKeyEl.innerHTML = keyRowsHtml();
 const markers = {};
 function buildMarkers(){
   BUSINESSES.forEach(b=>{
+    // Identical 24px pin for every listing. Category is the outer ring, tier is
+    // the centre; a paper hairline sits between them so neither has to contrast
+    // with the other. No hallmark on the pin — that lives on cards and popups.
     const icon = L.divIcon({
-      className:'', iconSize:[26,26], iconAnchor:[13,26], popupAnchor:[0,-24],
-      html:`<div class="pin tier-${b.tier}" style="background:${CAT[b.category].color}"></div>`
+      className:'', iconSize:[24,24], iconAnchor:[12,12], popupAnchor:[0,-14],
+      html:`<div class="pin tier-${b.tier}" style="--cat:${CAT[b.category].color}"></div>`
     });
     const m = L.marker([b.lat,b.lng],{icon});
     m.bindPopup(popupHtml(b),{closeButton:true});
@@ -620,11 +890,11 @@ function popupHtml(b){
   const igRow = b.instagram ? `<a class="ig" href="${b.instagram}" target="_blank" rel="noopener">Instagram</a>` : '';
   return `<div class="pop">
     <div class="head">${logoHtml(b,'plogo')}
-      <div><h3>${b.name}</h3>
+      <div style="flex:1;min-width:0"><h3>${b.name}</h3>
         <div class="pmeta">${CAT[b.category].label} · ${b.subcategory||''}</div></div>
+      ${hallmarkHtml(b.tier, 30)}
     </div>
     <div class="badges">
-      <span class="tag ${b.tier}">${b.tier} standard</span>
       <span class="tag cat ${b.category}">${b.listing_type==='online_only'?'Online only':(b.listing_type==='both'?'Shop + online':'Shop')}</span>
     </div>
     <div class="desc">${b.description}</div>
@@ -799,13 +1069,13 @@ function renderGrid(){
       <div>
         <div class="g-head">
           ${logoHtml(b, 'g-logo')}
-          <div>
+          <div style="flex:1;min-width:0">
             <div class="g-title">${b.name}</div>
             <div class="g-sub">${b.town}</div>
           </div>
+          ${hallmarkHtml(b.tier, 30)}
         </div>
         <div class="g-badges">
-          <span class="tag ${b.tier}">${b.tier} standard</span>
           <span class="tag cat ${b.category}">${CAT[b.category].label}</span>
         </div>
         ${aiReason}
@@ -821,6 +1091,8 @@ function renderGrid(){
       </div>
     </div>`;
   }).join('') || '<div style="padding:40px;color:var(--muted);font-size:15px;grid-column:1/-1;text-align:center">No businesses found matching your request.</div>';
+
+  animateGrid();
 }
 
 function focus(id){
@@ -1590,10 +1862,206 @@ fetch('data/businesses.json')
     BUSINESSES = data;
     buildMarkers();
     toggleView('map');
+    Landing.ready();
   })
   .catch(() => {
     countEl.innerHTML = 'Could not load listings. Run local server (e.g. <code>python3 -m http.server</code>).';
+    Landing.abort();
   });
+
+/* ==========================================================================
+   LANDING — maker constellation
+   The 472 records land as pins, the coastline draws around them, then the pins
+   converge into the map's own clusters. 4600ms on a first visit, skipped
+   thereafter. Everything here is decoration: if any of it fails, the map is
+   already built and visible underneath.
+   ========================================================================== */
+const Landing = (function(){
+  const SEEN = 'gm_landing_seen';
+  const SPEED = 1.35;                       // 4.6s total — see DESIGN-BRIEF section 8
+  const el   = document.getElementById('landing');
+  const fx   = document.getElementById('fx');
+  const coastG = document.getElementById('coastG');
+  const pinG   = document.getElementById('pinG');
+  const NS = 'http://www.w3.org/2000/svg';
+  let timers = [], running = false, armed = false;
+
+  const still = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const at  = (ms,fn) => timers.push(setTimeout(fn, still() ? 0 : ms * SPEED));
+  const dur = ms => still() ? 1 : ms * SPEED;
+
+  // 24 empty slots for the trade engravings. Labelled so it's obvious they are
+  // placeholders and not a rendering fault.
+  const SUBJECTS = ['Cheese wheel','Pig at trough','Tomatoes on the vine','Apple tree',
+    'Milk churn','Pulling leeks','Pint of beer','Stoneware dog bowl','Tape measure',
+    'Shirt and tie','Flat cap','Folded t-shirts','High-heeled shoe','Sole on a last',
+    'Spinning wheel','Shuttle and loom','Wheel mid-throw','Kiln door','Teacup and saucer',
+    'Blade on a grinder','Ring on a mandrel','Watch and strap','Chisel on wood','Pub sign'];
+
+  function buildSlots(){
+    const layer = document.getElementById('sketchLayer');
+    const cols = window.innerWidth < 760 ? 3 : 6;
+    const rows = Math.ceil(SUBJECTS.length / cols);
+    layer.innerHTML = SUBJECTS.map((s,i)=>{
+      const c = i % cols, r = Math.floor(i / cols);
+      const w = 100 / cols, h = 100 / rows;
+      const rot = ((i * 37) % 10 - 5);
+      return `<div class="slot" style="left:${(c*w+w*0.13).toFixed(2)}%;top:${(r*h+h*0.13).toFixed(2)}%;` +
+             `width:${(w*0.74).toFixed(2)}%;height:${(h*0.74).toFixed(2)}%;transform:rotate(${rot}deg)">${s}</div>`;
+    }).join('');
+  }
+
+  // Cursor reveal: a decaying trail of radial gradients used as a mask. No
+  // canvas, no shader — the mask string is rebuilt on pointermove and nothing else.
+  let trail = [], raf = null;
+  function onMove(e){
+    const r = el.getBoundingClientRect();
+    trail.push({x:e.clientX - r.left, y:e.clientY - r.top});
+    if (trail.length > 14) trail.shift();
+    if (!raf) raf = requestAnimationFrame(paint);
+  }
+  function paint(){
+    raf = null;
+    const layer = document.getElementById('sketchLayer');
+    if (!trail.length){ layer.style.opacity = 0; return; }
+    const stops = trail.map((p,i)=>{
+      const f = (i+1) / trail.length;
+      const rad = Math.max(24, 150 * (0.3 + 0.7*f));
+      return `radial-gradient(circle ${rad}px at ${p.x}px ${p.y}px, rgba(0,0,0,${(0.2+0.8*f).toFixed(2)}) 0%, rgba(0,0,0,0) 68%)`;
+    }).join(',');
+    layer.style.opacity = 1;
+    layer.style.webkitMaskImage = stops;
+    layer.style.maskImage = stops;
+    trail = trail.slice(1);
+    if (trail.length) raf = requestAnimationFrame(paint);
+  }
+
+  function project(){
+    pinG.innerHTML = ''; coastG.innerHTML = '';
+    const c = map.latLngToContainerPoint(map.getCenter());
+    const pins = [];
+    BUSINESSES.forEach(b=>{
+      if (typeof b.lat !== 'number' || typeof b.lng !== 'number') return;
+      const p = map.latLngToContainerPoint([b.lat, b.lng]);
+      const n = document.createElementNS(NS,'circle');
+      n.setAttribute('cx', p.x.toFixed(1)); n.setAttribute('cy', p.y.toFixed(1));
+      n.setAttribute('r', 10);
+      n.setAttribute('fill', getCss(b.tier === 'gold' ? '--gold-pin' : '--silver-pin'));
+      n.setAttribute('stroke', getCss('--paper')); n.setAttribute('stroke-width','2.2');
+      n.setAttribute('class','ipin');
+      pinG.appendChild(n);
+      pins.push({el:n, x:p.x, y:p.y, d:Math.hypot(p.x-c.x, p.y-c.y)});
+    });
+    const paths = (window.__COAST__ || []).map(ring=>{
+      let d = '';
+      ring.forEach((pt,i)=>{ const q = map.latLngToContainerPoint([pt[0],pt[1]]);
+        d += (i?'L':'M') + q.x.toFixed(1) + ',' + q.y.toFixed(1); });
+      const e = document.createElementNS(NS,'path');
+      e.setAttribute('class','coast'); e.setAttribute('d', d + 'Z');
+      coastG.appendChild(e); return e;
+    });
+    return {pins, paths};
+  }
+
+  function play(){
+    if (running) return; running = true;
+    const {pins, paths} = project();
+    const maxD = Math.max(...pins.map(p=>p.d), 1);
+
+    pins.forEach(p=>{
+      const delay = still() ? 0 : ((p.d/maxD)*950 + Math.random()*140) * SPEED;
+      p.el.style.transformBox = 'fill-box'; p.el.style.transformOrigin = 'center';
+      p.el.animate([{opacity:0,transform:'scale(.15)'},{opacity:1,transform:'scale(1)'}],
+        {duration:dur(460), delay, fill:'forwards', easing:'cubic-bezier(.22,1.25,.4,1)'});
+    });
+    paths.forEach(e=>{
+      const len = e.getTotalLength();
+      e.style.strokeDasharray = len; e.style.strokeDashoffset = len;
+      e.animate([{strokeDashoffset:len},{strokeDashoffset:0}],
+        {duration:dur(1500), delay: still()?0:800*SPEED, fill:'forwards',
+         easing:'cubic-bezier(.4,0,.25,1)'});
+    });
+
+    at(2150, ()=>{
+      document.body.classList.remove('intro');
+      paths.forEach(e=>e.animate([{strokeWidth:2.2,strokeOpacity:1},{strokeWidth:1,strokeOpacity:.45}],
+        {duration:dur(500), fill:'forwards', easing:'ease-out'}));
+    });
+
+    at(2400, ()=>{
+      const targets = [...document.querySelectorAll('#map .marker-cluster')].map(n=>{
+        const r = n.getBoundingClientRect();
+        return {x:r.left + r.width/2, y:r.top + r.height/2};
+      });
+      pins.forEach(p=>{
+        if (!targets.length) return;
+        let best = null, bd = Infinity;
+        targets.forEach(t=>{ const d = Math.hypot(t.x-p.x, t.y-p.y); if (d < bd){ bd = d; best = t; } });
+        if (!best || bd > 140) return;
+        p.el.animate([{transform:'translate(0,0)'},
+          {transform:`translate(${(best.x-p.x).toFixed(1)}px,${(best.y-p.y).toFixed(1)}px)`, opacity:0}],
+          {duration:dur(480), fill:'forwards', easing:'cubic-bezier(.45,0,.25,1)'});
+      });
+    });
+
+    at(3050, ()=>{
+      fx.animate([{opacity:1},{opacity:0}], {duration:dur(300), fill:'forwards'});
+      at(320, finish);
+    });
+  }
+
+  function finish(){
+    fx.style.display = 'none';
+    document.body.classList.remove('intro');
+    try { sessionStorage.setItem(SEEN,'1'); } catch(e){}
+    running = false;
+  }
+
+  function skip(){
+    timers.forEach(clearTimeout); timers = [];
+    finish();
+  }
+
+  function dismiss(){
+    el.removeEventListener('pointermove', onMove);
+    el.classList.add('out');
+    setTimeout(()=>el.classList.add('gone'), still() ? 0 : 320);
+    setTimeout(play, still() ? 0 : 200);
+  }
+
+  function straightThrough(){
+    el.classList.add('out','gone');
+    fx.style.display = 'none';
+    document.body.classList.remove('intro');
+  }
+
+  return {
+    ready(){
+      if (armed) return; armed = true;
+      document.getElementById('landingCount').textContent =
+        BUSINESSES.length + ' makers and growers';
+      let seen = false;
+      try { seen = !!sessionStorage.getItem(SEEN); } catch(e){}
+      if (seen){ straightThrough(); return; }
+
+      buildSlots();
+      if (window.matchMedia('(hover: hover)').matches && !still()){
+        el.addEventListener('pointermove', onMove);
+      } else {
+        document.getElementById('sketchLayer').style.opacity = .1;
+      }
+      document.getElementById('enterMap').addEventListener('click', dismiss);
+      ['click','keydown','wheel','touchstart'].forEach(ev=>
+        window.addEventListener(ev, ()=>{ if (running) skip(); }, {passive:true}));
+    },
+    abort(){ straightThrough(); }
+  };
+})();
+
+// Belt and braces: whatever happens, never leave the app hidden behind the intro.
+setTimeout(()=>document.body.classList.remove('intro'), 12000);
+
+fetch('data/uk-coast.json').then(r=>r.json()).then(c=>{ window.__COAST__ = c; }).catch(()=>{});
 </script>
 </body>
 </html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Landing prototype — Grown and Made UK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<style>
+  :root{
+    --green:#004225; --gold:#C8A24A; --silver:#96A0A8;
+    --paper:#FAF6EE; --paper-2:#FDFBF6; --ink:#1C2620; --muted:#6E7871;
+    --line:rgba(0,66,37,.16);
+    --head:'Cormorant Garamond',Georgia,serif;
+    --body:'Plus Jakarta Sans',-apple-system,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--paper);
+    font-family:var(--body);color:var(--ink);-webkit-font-smoothing:antialiased}
+
+  #map{position:absolute;inset:0;z-index:1;background:var(--paper)}
+  #map .leaflet-tile-pane{opacity:0;transition:opacity .45s ease-out}
+  #map.tiles-up .leaflet-tile-pane{opacity:1}
+  #map .leaflet-marker-pane,#map .leaflet-shadow-pane{opacity:0;transition:opacity .3s ease-out}
+  #map.marks-up .leaflet-marker-pane,#map.marks-up .leaflet-shadow-pane{opacity:1}
+  .leaflet-container{background:var(--paper);font-family:var(--body)}
+  .leaflet-control-attribution{font-size:9px;background:rgba(250,246,238,.8)}
+  .leaflet-control-zoom{opacity:0;transition:opacity .3s ease-out .1s}
+  .chrome-up .leaflet-control-zoom{opacity:1}
+
+  #fx{position:absolute;inset:0;width:100%;height:100%;z-index:600;pointer-events:none;overflow:visible}
+  #fx .coast{fill:none;stroke:var(--green);stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+  #fx .pin{opacity:0}
+
+  #landing{position:absolute;inset:0;z-index:900;background:var(--paper);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:32px;transition:opacity .3s ease-out}
+  #landing.out{opacity:0;pointer-events:none}
+  .wordmark{font-family:var(--head);font-size:clamp(38px,6.5vw,74px);font-weight:500;
+    color:var(--green);letter-spacing:.5px;line-height:1.05;margin:0}
+  .standfirst{font-size:clamp(14px,1.6vw,17px);color:var(--muted);max-width:34ch;
+    line-height:1.65;margin:20px 0 0}
+  .count{font-family:var(--head);font-size:15px;color:var(--green);letter-spacing:2.4px;
+    text-transform:uppercase;margin:34px 0 0;opacity:.85}
+  .cta{margin-top:26px;background:var(--green);color:var(--paper-2);border:none;
+    font-family:var(--body);font-size:15px;font-weight:500;letter-spacing:.3px;
+    padding:14px 30px;border-radius:6px;cursor:pointer;transition:.18s}
+  .cta:hover{background:#00301b}
+  .sub{margin-top:16px;font-size:13px;color:var(--muted)}
+  .sub a{color:var(--green);text-decoration:none;border-bottom:1px solid var(--line)}
+  .rule{width:62px;height:1px;background:var(--line);margin:26px 0 0}
+
+  #chrome{position:absolute;top:0;left:0;right:0;height:62px;z-index:700;
+    background:var(--paper-2);border-bottom:1px solid var(--line);
+    display:flex;align-items:center;gap:18px;padding:0 20px;
+    transform:translateY(-64px);transition:transform .32s cubic-bezier(.3,0,.2,1)}
+  .chrome-up #chrome{transform:translateY(0)}
+  #chrome .bm{font-family:var(--head);font-size:23px;font-weight:600;color:var(--green);white-space:nowrap}
+  #chrome .sf{flex:1;max-width:420px;height:36px;border:1px solid var(--line);border-radius:18px;
+    background:var(--paper);display:flex;align-items:center;padding:0 16px;font-size:13px;color:var(--muted)}
+  #chrome .gv{margin-left:auto;background:var(--green);color:var(--paper-2);
+    font-size:13px;font-weight:500;padding:9px 16px;border-radius:6px}
+
+  .marker-cluster{background:rgba(0,66,37,.18);border-radius:50%}
+  .marker-cluster div{background:var(--green);color:var(--paper-2);width:34px;height:34px;
+    margin-left:3px;margin-top:3px;border-radius:50%;font-family:var(--body);font-size:13px;
+    font-weight:500;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 0 2px var(--paper)}
+  .gm-pin{border-radius:50%;border:2.5px solid var(--paper);box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .gm-pin.gold{background:var(--gold)}
+  .gm-pin.silver{background:var(--silver)}
+
+  .leaflet-popup-content{margin:0;width:280px!important}
+  .leaflet-popup-content-wrapper{border-radius:10px;background:var(--paper-2);
+    box-shadow:0 8px 28px rgba(0,40,22,.18)}
+  .leaflet-popup-tip{background:var(--paper-2)}
+  .pop{font-family:var(--body);color:var(--ink)}
+  .pop .head{display:flex;gap:11px;padding:14px 15px 10px;align-items:center}
+  .pop .plogo{width:46px;height:46px;border-radius:9px;flex:0 0 46px;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;background:var(--green);
+    color:var(--paper);font-weight:600;font-size:14px;letter-spacing:.5px}
+  .pop .plogo img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .pop h3{margin:0;font-family:var(--head);font-size:19px;font-weight:600;
+    line-height:1.15;color:var(--green)}
+  .pop .pmeta{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .pop .badges{padding:0 15px 9px;display:flex;gap:6px;flex-wrap:wrap}
+  .pop .tag{font-size:9.5px;font-weight:600;text-transform:uppercase;letter-spacing:.9px;
+    padding:3px 8px;border-radius:3px}
+  .pop .tag.gold{background:#F4EBD4;color:#6E5411}
+  .pop .tag.silver{background:#E7E9E6;color:#4C5651}
+  .pop .tag.kind{background:#E6EDE8;color:var(--green)}
+  .pop .desc{padding:2px 15px 10px;font-size:12.5px;line-height:1.5;color:#3A443E}
+  .pop .addr{color:var(--muted);font-size:11.5px;padding:0 15px 12px;line-height:1.4}
+  .pop .links{display:flex;gap:8px;padding:0 15px 14px}
+  .pop .links a{flex:1;text-align:center;padding:8px;border-radius:6px;font-size:12px;
+    font-weight:500;text-decoration:none}
+  .pop .links a.web{background:var(--green);color:var(--paper-2)}
+  .pop .links a.ig{background:#EDEAE1;color:var(--ink)}
+
+  #dev{position:absolute;right:14px;bottom:14px;z-index:1000;background:var(--paper-2);
+    border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12px;
+    color:var(--muted);display:flex;flex-direction:column;gap:8px;max-width:230px}
+  #dev b{color:var(--green);font-weight:500;letter-spacing:.4px;text-transform:uppercase;font-size:10px}
+  #dev button{font-family:var(--body);font-size:12px;background:var(--paper);color:var(--ink);
+    border:1px solid var(--line);border-radius:5px;padding:6px 9px;cursor:pointer;text-align:left}
+  #dev button:hover{background:#F1EDE3}
+  #dev label{display:flex;align-items:center;gap:6px;cursor:pointer}
+  #ms{font-variant-numeric:tabular-nums;color:var(--green)}
+
+  @media (prefers-reduced-motion:reduce){
+    #map .leaflet-tile-pane,#map .leaflet-marker-pane,#landing,#chrome{transition-duration:.01s}
+  }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+<svg id="fx"><g id="coastG"></g><g id="pinG"></g></svg>
+
+<header id="chrome">
+  <span class="bm">Grown and Made UK</span>
+  <span class="sf">Search 472 makers and growers</span>
+  <span class="gv">Grid view</span>
+</header>
+
+<div id="landing">
+  <h1 class="wordmark">Grown and<br>Made UK</h1>
+  <p class="standfirst">Every listing verified as genuinely made or grown in the British Isles, and graded against published rules.</p>
+  <div class="rule"></div>
+  <p class="count" id="cnt">472 makers and growers</p>
+  <button class="cta" id="go">Go to the map</button>
+</div>
+
+<div id="dev">
+  <b>Prototype controls</b>
+  <span>Sequence <span id="ms">—</span></span>
+  <label style="justify-content:space-between">Pace
+    <select id="spd" style="font-family:var(--body);font-size:12px;padding:3px 5px;border:1px solid var(--line);border-radius:5px;background:var(--paper)">
+      <option value="0.7">Brisk (2.4s)</option>
+      <option value="1">Considered (3.4s)</option>
+      <option value="1.35" selected>Slow (4.6s)</option>
+      <option value="1.8">Very slow (6.1s)</option>
+    </select>
+  </label>
+  <button id="replay">Replay from landing</button>
+  <button id="clearss">Clear "already visited"</button>
+  <label><input type="checkbox" id="rm"> Force reduced motion</label>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="data/prototype-data.js"></script>
+<script>
+const UK_BOUNDS  = L.latLngBounds([49.7, -8.8], [61.1, 2.1]);
+const MAX_BOUNDS = L.latLngBounds([46.5, -16.0], [63.5, 10.5]);
+const SEEN_KEY   = 'gm_landing_seen';
+const NS = 'http://www.w3.org/2000/svg';
+
+const mapEl = document.getElementById('map');
+const fx    = document.getElementById('fx');
+const coastG= document.getElementById('coastG');
+const pinG  = document.getElementById('pinG');
+const landing = document.getElementById('landing');
+const msOut = document.getElementById('ms');
+
+const map = L.map('map', {
+  zoomControl:true, zoomSnap:0.25, maxBounds:MAX_BOUNDS,
+  maxBoundsViscosity:0.8, bounceAtZoomLimits:true
+});
+map.fitBounds(UK_BOUNDS);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; OpenStreetMap, &copy; CARTO', maxZoom:19, noWrap:true
+}).addTo(map);
+
+const BIZ   = (window.GM_BIZ || []).map(r=>({
+  name:r.n, town:r.t, address:r.a, lat:r.la, lng:r.ln, gold:!!r.g,
+  cat:r.c, sub:r.s, kind:r.lt, desc:r.d, web:r.w, insta:r.i, logo:r.lg
+}));
+const COAST = window.GM_COAST || [];
+let cluster = null, timers = [], ticker = null, running = false, SPEED = 1.35;
+
+const KIND = {online_only:'Online only', both:'Shop + online', physical:'Shop'};
+function initials(n){
+  return n.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(0,2)
+    .map(s=>s[0]).join('').toUpperCase();
+}
+function popupHtml(b){
+  const host = (b.web||'').replace(/^https?:\/\//,'').replace(/^www\./,'').split('/')[0];
+  const fb = "this.onerror=null;this.replaceWith(document.createTextNode('"+initials(b.name)+"'))";
+  const fav = "this.onerror=function(){"+fb+"};this.src='https://www.google.com/s2/favicons?domain="+host+"&sz=128'";
+  const logo = b.logo
+    ? '<div class="plogo"><img src="'+b.logo+'" alt="" onerror="'+fav+'"></div>'
+    : '<div class="plogo">'+initials(b.name)+'</div>';
+  return '<div class="pop">'
+    + '<div class="head">'+logo+'<div><h3>'+b.name+'</h3>'
+    + '<div class="pmeta">'+(b.sub||b.cat)+'</div></div></div>'
+    + '<div class="badges"><span class="tag '+(b.gold?'gold':'silver')+'">'
+    + (b.gold?'Gold':'Silver')+' standard</span>'
+    + (KIND[b.kind] ? '<span class="tag kind">'+KIND[b.kind]+'</span>' : '')
+    + '</div>'
+    + (b.desc ? '<div class="desc">'+b.desc+'</div>' : '')
+    + (b.address ? '<div class="addr">'+b.address+'</div>' : '')
+    + '<div class="links">'
+    + (b.web ? '<a class="web" href="'+b.web+'" target="_blank" rel="noopener">Website</a>' : '')
+    + (b.insta ? '<a class="ig" href="'+b.insta+'" target="_blank" rel="noopener">Instagram</a>' : '')
+    + '</div></div>';
+}
+
+function reduced(){
+  return document.getElementById('rm').checked ||
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+function at(ms, fn){ timers.push(setTimeout(fn, reduced() ? 0 : ms * SPEED)); }
+function dur(ms){ return reduced() ? 1 : ms * SPEED; }
+function clearTimers(){
+  timers.forEach(clearTimeout); timers = [];
+  if (ticker){ clearInterval(ticker); ticker = null; }
+}
+
+if (!BIZ.length){
+  document.getElementById('cnt').textContent = 'data/prototype-data.js did not load';
+} else {
+  document.getElementById('cnt').textContent = BIZ.length + ' makers and growers';
+  document.querySelector('#chrome .sf').textContent = 'Search ' + BIZ.length + ' makers and growers';
+  buildCluster();
+  if (sessionStorage.getItem(SEEN_KEY)) skipToMap();
+}
+
+function buildCluster(){
+  cluster = L.markerClusterGroup({
+    maxClusterRadius:40, spiderfyOnMaxZoom:true,
+    showCoverageOnHover:false, zoomToBoundsOnClick:true
+  });
+  BIZ.forEach(b=>{
+    const size = 22;
+    cluster.addLayer(L.marker([b.lat, b.lng], {
+      icon: L.divIcon({
+        className:'', iconSize:[size,size], iconAnchor:[size/2,size/2],
+        html:'<div class="gm-pin '+(b.gold?'gold':'silver')+'" style="width:'+size+'px;height:'+size+'px"></div>'
+      })
+    }).bindPopup(popupHtml(b), {closeButton:true, maxWidth:290, autoPanPadding:[24,80]}));
+  });
+}
+
+function projectCoast(){
+  coastG.innerHTML = '';
+  const paths = [];
+  COAST.forEach(ring=>{
+    let d = '';
+    ring.forEach((pt,i)=>{
+      const p = map.latLngToContainerPoint([pt[0], pt[1]]);
+      d += (i ? 'L' : 'M') + p.x.toFixed(1) + ',' + p.y.toFixed(1);
+    });
+    d += 'Z';
+    const el = document.createElementNS(NS,'path');
+    el.setAttribute('class','coast');
+    el.setAttribute('d', d);
+    coastG.appendChild(el);
+    paths.push(el);
+  });
+  return paths;
+}
+
+function projectPins(){
+  pinG.innerHTML = '';
+  const c = map.latLngToContainerPoint(map.getCenter());
+  const pins = [];
+  BIZ.forEach(b=>{
+    const p = map.latLngToContainerPoint([b.lat, b.lng]);
+    const el = document.createElementNS(NS,'circle');
+    el.setAttribute('cx', p.x.toFixed(1));
+    el.setAttribute('cy', p.y.toFixed(1));
+    el.setAttribute('r', 10);
+    el.setAttribute('fill', b.gold ? '#C8A24A' : '#96A0A8');
+    el.setAttribute('stroke', '#FAF6EE');
+    el.setAttribute('stroke-width', '2.2');
+    el.setAttribute('class','pin');
+    pinG.appendChild(el);
+    pins.push({ el, x:p.x, y:p.y, d: Math.hypot(p.x-c.x, p.y-c.y) });
+  });
+  return pins;
+}
+
+function play(){
+  if (running || !cluster) return;
+  running = true;
+  clearTimers();
+  mapEl.classList.remove('tiles-up','marks-up');
+  document.body.classList.remove('chrome-up');
+  if (cluster && map.hasLayer(cluster)) map.removeLayer(cluster);
+  fx.style.display = '';
+  fx.style.opacity = 1;
+
+  const t0 = performance.now();
+  ticker = setInterval(()=>{
+    const e = Math.round(performance.now()-t0);
+    msOut.textContent = e + 'ms';
+    if (e > 3600 * SPEED){ clearInterval(ticker); ticker = null; }
+  }, 40);
+
+  const pins  = projectPins();
+  const paths = projectCoast();
+  const maxD  = Math.max(...pins.map(p=>p.d)) || 1;
+
+  pins.forEach(p=>{
+    const delay = reduced() ? 0 : ((p.d / maxD) * 950 + Math.random()*140) * SPEED;
+    p.el.animate(
+      [{opacity:0, transform:'scale(.15)'},{opacity:1, transform:'scale(1)'}],
+      { duration: dur(460), delay, fill:'forwards',
+        easing:'cubic-bezier(.22,1.25,.4,1)' }
+    );
+    p.el.style.transformBox = 'fill-box';
+    p.el.style.transformOrigin = 'center';
+  });
+
+  paths.forEach(el=>{
+    const len = el.getTotalLength();
+    el.style.strokeDasharray  = len;
+    el.style.strokeDashoffset = len;
+    el.animate([{strokeDashoffset:len},{strokeDashoffset:0}],
+      { duration: dur(1500), delay: reduced()?0:800*SPEED, fill:'forwards',
+        easing:'cubic-bezier(.4,0,.25,1)' });
+  });
+
+  at(2150, ()=>{
+    mapEl.classList.add('tiles-up');
+    paths.forEach(el=>el.animate(
+      [{strokeWidth:2.2, strokeOpacity:1},{strokeWidth:1, strokeOpacity:.45}],
+      { duration:dur(500), fill:'forwards', easing:'ease-out' }));
+  });
+
+  at(2400, ()=>{
+    map.addLayer(cluster);
+    const targets = [...document.querySelectorAll('#map .marker-cluster')].map(el=>{
+      const r = el.getBoundingClientRect();
+      return { x: r.left + r.width/2, y: r.top + r.height/2 };
+    });
+    pins.forEach(p=>{
+      if (!targets.length) return;
+      let best = targets[0], bd = Infinity;
+      targets.forEach(t=>{
+        const d = Math.hypot(t.x-p.x, t.y-p.y);
+        if (d < bd){ bd = d; best = t; }
+      });
+      if (bd > 140) return;
+      p.el.animate(
+        [{transform:'translate(0,0)'},
+         {transform:'translate('+(best.x-p.x).toFixed(1)+'px,'+(best.y-p.y).toFixed(1)+'px)', opacity:0}],
+        { duration: dur(480), fill:'forwards', easing:'cubic-bezier(.45,0,.25,1)' });
+    });
+    at(220, ()=>mapEl.classList.add('marks-up'));
+  });
+
+  at(2700, ()=>document.body.classList.add('chrome-up'));
+
+  at(3050, ()=>{
+    fx.animate([{opacity:1},{opacity:0}], {duration:dur(300), fill:'forwards'});
+    at(320, ()=>{ fx.style.display='none'; running = false; });
+    sessionStorage.setItem(SEEN_KEY, '1');
+    if (ticker){ clearInterval(ticker); ticker = null; }
+    msOut.textContent = 'done';
+  });
+}
+
+function skipToMap(){
+  clearTimers();
+  running = false;
+  fx.style.display = 'none';
+  landing.classList.add('out');
+  mapEl.classList.add('tiles-up','marks-up');
+  document.body.classList.add('chrome-up');
+  if (cluster && !map.hasLayer(cluster)) map.addLayer(cluster);
+  msOut.textContent = 'skipped';
+}
+
+document.getElementById('go').addEventListener('click', ()=>{
+  landing.classList.add('out');
+  setTimeout(play, reduced() ? 0 : 180);
+});
+
+['click','keydown','wheel','touchstart'].forEach(ev=>{
+  window.addEventListener(ev, e=>{
+    if (!running) return;
+    if (e.target.closest('#dev')) return;
+    skipToMap();
+  }, {passive:true});
+});
+
+document.getElementById('replay').addEventListener('click', ()=>{
+  sessionStorage.removeItem(SEEN_KEY);
+  clearTimers(); running = false;
+  if (cluster && map.hasLayer(cluster)) map.removeLayer(cluster);
+  mapEl.classList.remove('tiles-up','marks-up');
+  document.body.classList.remove('chrome-up');
+  fx.style.display=''; fx.style.opacity=1; pinG.innerHTML=''; coastG.innerHTML='';
+  landing.classList.remove('out');
+  msOut.textContent = '—';
+});
+document.getElementById('spd').addEventListener('change', function(){
+  SPEED = parseFloat(this.value);
+});
+document.getElementById('clearss').addEventListener('click', ()=>{
+  sessionStorage.removeItem(SEEN_KEY);
+  msOut.textContent = 'cleared';
+});
+</script>
+</body>
+</html>
