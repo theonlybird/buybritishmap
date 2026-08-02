@@ -532,8 +532,14 @@
     stroke-linecap:round}
   #fx .ipin{opacity:0}
 
-  #topbar,#app{transition:opacity .35s ease-out}
-  body.intro #topbar,body.intro #app{opacity:0}
+  #topbar,#app{transition:opacity .6s ease-out}
+  body.intro #topbar,body.intro #app{opacity:0;pointer-events:none}
+
+  /* Grid: "further afield" break */
+  .afield-break{grid-column:1/-1;display:flex;align-items:center;gap:14px;
+    margin:14px 0 2px;font-family:var(--font-body);font-size:11px;font-weight:600;
+    letter-spacing:.13em;text-transform:uppercase;color:var(--muted-2)}
+  .afield-break::after{content:"";flex:1;height:1px;background:var(--line-strong)}
 
   @media (hover:none),(pointer:coarse){
     #sketchLayer{mix-blend-mode:multiply;opacity:.1!important;-webkit-mask-image:none!important;
@@ -546,9 +552,6 @@
   }
 
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body class="intro">
 
@@ -916,7 +919,9 @@ const state = {
   aiActive: false,
   aiHeadline: '',
   notice: '',            // shown above the full grid when a search found nothing
-  aiMatches: new Map() // id -> 1-sentence rationale
+  aiMatches: new Map(), // id -> 1-sentence rationale
+  aiOrder: [],          // ids in rank order — visible() sorts by this
+  placeTerms: []        // place words in the query, drives the "further afield" split
 };
 
 function escapeHtml(t) {
@@ -994,9 +999,75 @@ function toggleView(view) {
   }
 }
 
+/* ==========================================================================
+   PLACE MATCHING
+   A query term can name a town ("sheffield") or a region ("scotland"). Towns
+   we can match on text; regions mostly aren't written in any address, so those
+   are resolved geographically instead.
+   ========================================================================== */
+const REGIONS = {
+  scotland:    b => b.lat >= 54.95,
+  highlands:   b => b.lat >= 56.8,
+  orkney:      b => b.lat >= 58.7 && b.lat <= 59.4,
+  shetland:    b => b.lat >= 59.8,
+  hebrides:    b => b.lng <= -6.0 && b.lat >= 56.5,
+  wales:       b => b.lat >= 51.3 && b.lat <= 53.5 && b.lng >= -5.5 && b.lng <= -2.65,
+  cymru:       b => b.lat >= 51.3 && b.lat <= 53.5 && b.lng >= -5.5 && b.lng <= -2.65,
+  snowdonia:   b => b.lat >= 52.7 && b.lat <= 53.2 && b.lng >= -4.4 && b.lng <= -3.5,
+  cornwall:    b => b.lat >= 49.85 && b.lat <= 50.95 && b.lng <= -4.2,
+  devon:       b => b.lat >= 50.2 && b.lat <= 51.25 && b.lng >= -4.7 && b.lng <= -2.9,
+  yorkshire:   b => b.lat >= 53.3 && b.lat <= 54.6 && b.lng >= -2.2 && b.lng <= 0.2,
+  cumbria:     b => b.lat >= 54.0 && b.lat <= 55.2 && b.lng >= -3.7 && b.lng <= -2.2,
+  lakes:       b => b.lat >= 54.2 && b.lat <= 54.85 && b.lng >= -3.45 && b.lng <= -2.7,
+  cotswolds:   b => b.lat >= 51.55 && b.lat <= 52.25 && b.lng >= -2.45 && b.lng <= -1.55,
+  midlands:    b => b.lat >= 52.0 && b.lat <= 53.3 && b.lng >= -3.0 && b.lng <= 0.2,
+  london:      b => b.lat >= 51.32 && b.lat <= 51.70 && b.lng >= -0.52 && b.lng <= 0.34,
+  ulster:      b => b.lat >= 54.0 && b.lat <= 55.35 && b.lng >= -8.3 && b.lng <= -5.4,
+  england:     b => b.lat < 54.95
+                 && !(b.lat >= 51.3 && b.lat <= 53.5 && b.lng >= -5.5 && b.lng <= -2.65)
+                 && !(b.lat >= 54.0 && b.lng <= -5.4),
+  britain:     () => true,
+  uk:          () => true
+};
+
+// Does this business sit in the place the user named?
+function matchesPlace(b, placeTerms){
+  if (!placeTerms || !placeTerms.length) return false;
+  const where = [b.town, b.address].join(' ').toLowerCase();
+  return placeTerms.some(t => {
+    // Geography catches places nobody writes in an address ("scotland");
+    // the text catches the ones they do ("North Yorkshire"). Either will do,
+    // which keeps a rough bounding box from excluding a correct answer.
+    if (REGIONS[t] && REGIONS[t](b)) return true;
+    // Whole word, and not a street name — otherwise "London Road, Surrey"
+    // reads as London, and half the country is on a London Road.
+    return new RegExp('\\b' + t + '\\b(?!\\s+(road|rd|street|st|lane|ln|way|avenue|ave|close|drive))', 'i')
+      .test(where);
+  });
+}
+
+// Split a result set into "where you asked" and "everywhere else", preserving
+// the ranking inside each group. Booking.com's pattern: never hide the wider
+// results, but never let them push the local ones down the page either.
+function partitionByPlace(list){
+  const terms = state.placeTerms || [];
+  if (!terms.length) return { near: list, afield: [] };
+  const near = [], afield = [];
+  list.forEach(b => (matchesPlace(b, terms) ? near : afield).push(b));
+  return near.length ? { near, afield } : { near: afield, afield: [] };
+}
+
 function visible(){
   if (state.aiActive) {
-    return BUSINESSES.filter(b => state.aiMatches.has(b.id));
+    // Rank order matters and is not dataset order. Sort by the position the
+    // search engine gave each result, otherwise the best match surfaces
+    // wherever it happens to sit in businesses.json.
+    const order = state.aiOrder || [];
+    const pos = new Map(order.map((id,i)=>[id,i]));
+    const hits = BUSINESSES.filter(b => state.aiMatches.has(b.id));
+    hits.sort((x,y) => (pos.has(x.id)?pos.get(x.id):1e6) - (pos.has(y.id)?pos.get(y.id):1e6));
+    const { near, afield } = partitionByPlace(hits);
+    return near.concat(afield);
   }
   const q = state.q.toLowerCase();
   return BUSINESSES.filter(b =>
@@ -1061,11 +1132,18 @@ function renderGrid(){
     gridAiBanner.innerHTML = `Showing <b>${vis.length}</b> British makers & producers`;
   }
 
-  gridCards.innerHTML = vis.map(b => {
+  // visible() already returns near-then-afield; we only need to know where the
+  // seam falls so the break can be dropped in at the right point.
+  const split = state.aiActive ? partitionByPlace(vis) : { near: vis, afield: [] };
+  const seam = split.afield.length ? split.near.length : -1;
+
+  gridCards.innerHTML = vis.map((b, idx) => {
+    const brk = idx === seam
+      ? `<div class="afield-break">Results from further afield</div>` : '';
     const aiReason = '';
     const igRow = b.instagram ? `<a class="ig" href="${b.instagram}" target="_blank" rel="noopener">Instagram</a>` : '';
 
-    return `<div class="grid-card">
+    return `${brk}<div class="grid-card">
       <div>
         <div class="g-head">
           ${logoHtml(b, 'g-logo')}
@@ -1188,6 +1266,8 @@ function clearAiSearch() {
   state.aiActive = false;
   state.notice = '';
   state.aiMatches.clear();
+  state.aiOrder = [];
+  state.placeTerms = [];
   renderMapList();
   if (state.currentView === 'grid') renderGrid();
 }
@@ -1273,6 +1353,39 @@ function splitJoined(token, vocab) {
 }
 
 // Turn whatever the user typed into terms the catalogue understands.
+// Spellings people actually type, mapped to the words the catalogue uses.
+// Edit distance alone won't get "wooly" to "woollen" (three edits), and
+// loosening the budget that far starts matching unrelated words.
+const SYNONYMS = {
+  wooly:'wool', woolly:'wool', woollen:'wool', woolen:'wool', wollen:'wool',
+  jumper:'knitwear', jumpers:'knitwear', sweater:'knitwear', sweaters:'knitwear',
+  pullover:'knitwear', cardigan:'knitwear', knit:'knitwear', knitted:'knitwear',
+  cashmeres:'cashmere', tweeds:'tweed', linens:'linen',
+  pot:'pottery', pots:'pottery', ceramic:'ceramics', crockery:'ceramics',
+  mug:'mugs', bowl:'bowls', plate:'plates',
+  knife:'knives', cutler:'cutlery', silverware:'cutlery',
+  boot:'boots', shoe:'shoes', trainer:'trainers',
+  coat:'coats', jacket:'jackets', shirt:'shirts', trouser:'trousers',
+  ring:'rings', necklace:'necklaces', earring:'earrings', watches:'watch',
+  cheeses:'cheese', veg:'vegetables', vegetable:'vegetables', meats:'meat',
+  scots:'scotland', scottish:'scotland', welsh:'wales', cornish:'cornwall',
+  yorks:'yorkshire', londoner:'london', english:'england', british:'britain'
+};
+
+// Light stemmer: collapse doubled letters and shave common endings, so
+// "woollens" and "wooly" reach the same root as "wool".
+function stem(w){
+  return w.replace(/([a-z])\1+/g,'$1')
+          .replace(/(ings|ing|ies|ied|ers|er|ens|en|ed|es|s|y)$/,'');
+}
+function stemHit(token, vocab){
+  const t = stem(token);
+  if (!t || t.length < 3) return null;
+  if (vocab.has(t)) return t;
+  for (const w of vocab) if (stem(w) === t) return w;
+  return null;
+}
+
 function normaliseQuery(query) {
   const vocab = buildVocab();
   const raw = String(query).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/);
@@ -1281,8 +1394,13 @@ function normaliseQuery(query) {
   raw.forEach(tok => {
     if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
     if (vocab.has(tok)) { terms.push(tok); understood++; return; }
+    // Known spelling first — cheapest and most reliable.
+    const syn = SYNONYMS[tok];
+    if (syn) { terms.push(syn); understood++; if (vocab.has(tok)) terms.push(tok); return; }
     const split = splitJoined(tok, vocab);
     if (split) { terms.push(...split); understood++; return; }
+    const stemmed = stemHit(tok, vocab);
+    if (stemmed) { terms.push(stemmed); understood++; return; }
     const near = fuzzyHit(tok, vocab);
     if (near) { terms.push(near); understood++; return; }
     terms.push(tok); // keep it, but it counts as not understood
@@ -1396,7 +1514,7 @@ function localSearch(query) {
   const rank = s => s.productScore * 3 + s.placeScore * 2;
   eligible.sort((x, y) => rank(y) - rank(x) || x.b.name.localeCompare(y.b.name));
 
-  const top = eligible.slice(0, 12);
+  const top = eligible.slice(0, 40);
   return {
     matches: top.map(s => s.b),
     terms, understood, product, place,
@@ -1515,9 +1633,33 @@ ${catalogStr}`;
       state.notice = '';
       state.aiHeadline = buildHeadline(result);
       state.aiMatches.clear();
+      state.aiOrder = [];
       result.matches.forEach(m => {
         state.aiMatches.set(m.id, m.reason || 'Relevant match');
+        state.aiOrder.push(m.id);
       });
+
+      // Always run the local engine too, even when the AI succeeded. The model
+      // reasons well but its recall is patchy: "wooly jumper scotland" came
+      // back with nothing in Scotland while the catalogue holds Shetland and
+      // Hebridean knitwear. Local search is exhaustive, so anything it finds in
+      // the named place is appended rather than lost.
+      const alsoLocal = localSearch(query);
+      state.placeTerms = alsoLocal.place || [];
+      let rescued = 0;
+      alsoLocal.matches.forEach(b => {
+        if (!state.aiMatches.has(b.id) && matchesPlace(b, state.placeTerms)) {
+          state.aiMatches.set(b.id, 'Matched on ' + alsoLocal.terms.join(', '));
+          state.aiOrder.push(b.id);
+          rescued++;
+        }
+      });
+      // If we just supplied results in the requested place, the model's
+      // "nothing there, here's further afield" wording is now false. Replace it.
+      if (rescued) {
+        const where = state.placeTerms.map(t => t.charAt(0).toUpperCase() + t.slice(1)).join(' and ');
+        state.aiHeadline = `British makers in <b>${escapeHtml(where)}</b> first, then others further afield.`;
+      }
 
       // Switch view to Grid Results View
       toggleView('grid');
@@ -1535,7 +1677,12 @@ ${catalogStr}`;
       state.aiActive = true;
       state.notice = '';
       state.aiMatches.clear();
-      local.matches.forEach(b => state.aiMatches.set(b.id, 'Matched on ' + local.terms.join(', ')));
+      state.aiOrder = [];
+      state.placeTerms = local.place || [];
+      local.matches.forEach(b => {
+        state.aiMatches.set(b.id, 'Matched on ' + local.terms.join(', '));
+        state.aiOrder.push(b.id);
+      });
       // Describe the result the same way the AI path would, so a user can't
       // tell which engine answered — including the "further afield" wording
       // when we found the right product but not in the place they asked for.
@@ -1990,13 +2137,16 @@ const Landing = (function(){
          easing:'cubic-bezier(.4,0,.25,1)'});
     });
 
-    at(2150, ()=>{
+    // The coastline finishes at base 2300. Nothing happens for the next 150 so
+    // the completed drawing gets a beat entirely to itself — that pause is the
+    // whole trick. Only then does the real map rise underneath it.
+    at(2450, ()=>{
       document.body.classList.remove('intro');
       paths.forEach(e=>e.animate([{strokeWidth:2.2,strokeOpacity:1},{strokeWidth:1,strokeOpacity:.45}],
-        {duration:dur(500), fill:'forwards', easing:'ease-out'}));
+        {duration:dur(700), fill:'forwards', easing:'ease-out'}));
     });
 
-    at(2400, ()=>{
+    at(2820, ()=>{
       const targets = [...document.querySelectorAll('#map .marker-cluster')].map(n=>{
         const r = n.getBoundingClientRect();
         return {x:r.left + r.width/2, y:r.top + r.height/2};
@@ -2012,9 +2162,9 @@ const Landing = (function(){
       });
     });
 
-    at(3050, ()=>{
-      fx.animate([{opacity:1},{opacity:0}], {duration:dur(300), fill:'forwards'});
-      at(320, finish);
+    at(3160, ()=>{
+      fx.animate([{opacity:1},{opacity:0}], {duration:dur(400), fill:'forwards'});
+      at(420, finish);
     });
   }
 
