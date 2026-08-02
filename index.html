@@ -1938,11 +1938,19 @@ const Landing = (function(){
 
   function project(){
     pinG.innerHTML = ''; coastG.innerHTML = '';
-    const c = map.latLngToContainerPoint(map.getCenter());
+    // latLngToContainerPoint is relative to the map element, but #fx is fixed to
+    // the viewport and the map sits right of the sidebar and below the header.
+    // Shift everything into viewport space so it lines up — and so it shares a
+    // coordinate system with the cluster positions read later via getBoundingClientRect.
+    const off = map.getContainer().getBoundingClientRect();
+    const to = ll => { const p = map.latLngToContainerPoint(ll);
+      return {x: p.x + off.left, y: p.y + off.top}; };
+
+    const c = to(map.getCenter());
     const pins = [];
     BUSINESSES.forEach(b=>{
       if (typeof b.lat !== 'number' || typeof b.lng !== 'number') return;
-      const p = map.latLngToContainerPoint([b.lat, b.lng]);
+      const p = to([b.lat, b.lng]);
       const n = document.createElementNS(NS,'circle');
       n.setAttribute('cx', p.x.toFixed(1)); n.setAttribute('cy', p.y.toFixed(1));
       n.setAttribute('r', 10);
@@ -1954,7 +1962,7 @@ const Landing = (function(){
     });
     const paths = (window.__COAST__ || []).map(ring=>{
       let d = '';
-      ring.forEach((pt,i)=>{ const q = map.latLngToContainerPoint([pt[0],pt[1]]);
+      ring.forEach((pt,i)=>{ const q = to([pt[0],pt[1]]);
         d += (i?'L':'M') + q.x.toFixed(1) + ',' + q.y.toFixed(1); });
       const e = document.createElementNS(NS,'path');
       e.setAttribute('class','coast'); e.setAttribute('d', d + 'Z');
@@ -2040,8 +2048,11 @@ const Landing = (function(){
       if (armed) return; armed = true;
       document.getElementById('landingCount').textContent =
         BUSINESSES.length + ' makers and growers';
+      // ?intro forces the sequence to replay. sessionStorage survives a hard
+      // refresh, so without this the only way back is a new tab.
+      const forced = /[?&]intro\b/.test(location.search);
       let seen = false;
-      try { seen = !!sessionStorage.getItem(SEEN); } catch(e){}
+      try { seen = !forced && !!sessionStorage.getItem(SEEN); } catch(e){}
       if (seen){ straightThrough(); return; }
 
       buildSlots();
