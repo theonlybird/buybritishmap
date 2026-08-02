@@ -969,12 +969,28 @@ const gridCards = document.getElementById('gridCards');
 const loader = document.getElementById('loader');
 
 // Builds the sentence above the results. Honest about how good the match is.
+// Place names are proper nouns whatever the user typed. "suffolk" and "isle of
+// skye" both need capitalising, but the small joining words inside a place name
+// stay lower case — "Isle of Skye", not "Isle Of Skye".
+const PLACE_MINOR = new Set(['of','on','upon','the','in','and','le','sur']);
+function titleCasePlace(s) {
+  return String(s).split(/\s+/).map((w, i) => {
+    if (i > 0 && PLACE_MINOR.has(w.toLowerCase())) return w.toLowerCase();
+    // Hyphenated names capitalise both halves: "stoke-on-trent" -> "Stoke-on-Trent"
+    return w.split('-').map((part, j) =>
+      (j > 0 && PLACE_MINOR.has(part.toLowerCase()))
+        ? part.toLowerCase()
+        : part.charAt(0).toUpperCase() + part.slice(1)
+    ).join('-');
+  }).join(' ');
+}
+
 function buildHeadline(result) {
   const esc = t => String(t).replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
   const quality = (result && result.matchQuality) || 'exact';
   const verb    = (result && result.madeOrGrown === 'grown') ? 'grown' : 'made';
   const product = result && result.productTerm ? esc(result.productTerm) : '';
-  const place   = result && result.locationTerm ? esc(result.locationTerm) : '';
+  const place   = result && result.locationTerm ? esc(titleCasePlace(result.locationTerm)) : '';
   const none    = !result || !result.matches || result.matches.length === 0;
 
   if (none) {
@@ -1403,6 +1419,32 @@ const SYNONYMS = {
   yorks:'yorkshire', londoner:'london', english:'england', british:'britain'
 };
 
+// Words that mean the same garment to a British shopper. Matching any member
+// should find all of them: "jumper in norwich" has to reach the sweaters and
+// sweatshirts too, or the further-afield list is needlessly thin. Groups are
+// used for scoring only — the headline still echoes what the user actually
+// typed, so a search for a jumper doesn't answer "British made jumper knitwear
+// sweater sweatshirt".
+const TERM_GROUPS = [
+  ['jumper','jumpers','sweater','sweaters','sweatshirt','sweatshirts','pullover',
+   'pullovers','knitwear','knit','knits','knitted','cardigan','cardigans','guernsey','gansey'],
+  ['wool','woollen','woolen','wooly','woolly','lambswool','merino','fleece'],
+  ['coat','coats','jacket','jackets','outerwear','anorak','parka'],
+  ['shoe','shoes','boot','boots','footwear','brogue','brogues'],
+  ['bag','bags','satchel','satchels','holdall','rucksack','backpack'],
+  ['pot','pots','pottery','ceramic','ceramics','stoneware','earthenware','porcelain'],
+  ['mug','mugs','cup','cups','teacup','teacups'],
+  ['knife','knives','cutlery','blade','blades'],
+  ['pan','pans','cookware','saucepan','skillet'],
+  ['hat','hats','cap','caps','headwear','beanie'],
+  ['scarf','scarves','shawl','wrap'],
+  ['ring','rings','necklace','necklaces','earring','earrings','jewellery','jewelry'],
+  ['cheese','cheeses','dairy','creamery'],
+  ['veg','vegetable','vegetables','produce','greengrocer']
+];
+const GROUP_OF = {};
+TERM_GROUPS.forEach(g => g.forEach(w => { GROUP_OF[w] = g; }));
+
 // Light stemmer: collapse doubled letters and shave common endings, so
 // "woollens" and "wooly" reach the same root as "wool".
 function stem(w){
@@ -1420,23 +1462,38 @@ function stemHit(token, vocab){
 function normaliseQuery(query) {
   const vocab = buildVocab();
   const raw = String(query).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/);
-  const terms = [];
+  const terms = [];    // expanded — what we score against
+  const display = [];  // what the user meant — what the headline echoes back
+  const seen = new Set();
   let understood = 0;
+
+  // Record the canonical word, then quietly widen it to its synonym group.
+  const take = (word, shown) => {
+    if (shown && !display.includes(shown)) display.push(shown);
+    const group = GROUP_OF[word] || [word];
+    group.forEach(g => {
+      if (seen.has(g)) return;
+      // Only widen into words the catalogue actually uses, so a group can't
+      // drag in noise that matches nothing.
+      if (g === word || vocab.has(g)) { seen.add(g); terms.push(g); }
+    });
+  };
+
   raw.forEach(tok => {
     if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
-    if (vocab.has(tok)) { terms.push(tok); understood++; return; }
+    if (vocab.has(tok)) { take(tok, tok); understood++; return; }
     // Known spelling first — cheapest and most reliable.
     const syn = SYNONYMS[tok];
-    if (syn) { terms.push(syn); understood++; if (vocab.has(tok)) terms.push(tok); return; }
+    if (syn) { take(syn, tok); understood++; return; }
     const split = splitJoined(tok, vocab);
-    if (split) { terms.push(...split); understood++; return; }
+    if (split) { split.forEach(p => take(p, p)); understood++; return; }
     const stemmed = stemHit(tok, vocab);
-    if (stemmed) { terms.push(stemmed); understood++; return; }
+    if (stemmed) { take(stemmed, tok); understood++; return; }
     const near = fuzzyHit(tok, vocab);
-    if (near) { terms.push(near); understood++; return; }
-    terms.push(tok); // keep it, but it counts as not understood
+    if (near) { take(near, tok); understood++; return; }
+    take(tok, tok); // keep it, but it counts as not understood
   });
-  return { terms, understood };
+  return { terms, understood, display };
 }
 
 // Words that name a place in this catalogue, so a query term can be told apart
@@ -1502,12 +1559,16 @@ function classifyTerms(terms) {
 }
 
 function localSearch(query) {
-  const { terms, understood } = normaliseQuery(query);
+  const { terms, understood, display } = normaliseQuery(query);
   if (!terms.length || !understood) {
-    return { matches: [], terms, understood, product: [], place: [], inPlace: 0 };
+    return { matches: [], terms, understood, product: [], place: [], inPlace: 0,
+             productDisplay: [], placeDisplay: [] };
   }
 
   const { product, place } = classifyTerms(terms);
+  // Classify the user's own words separately, so the headline reads back what
+  // they typed rather than the widened set we searched on.
+  const shown = classifyTerms(display);
 
   const scored = BUSINESSES.map(b => {
     const name = b.name || '';
@@ -1549,6 +1610,7 @@ function localSearch(query) {
   return {
     matches: top.map(s => s.b),
     terms, understood, product, place,
+    productDisplay: shown.product, placeDisplay: shown.place,
     inPlace: top.filter(s => s.placeScore > 0).length
   };
 }
@@ -1561,9 +1623,15 @@ function localHeadlineData(local) {
     ? local.matches.filter(b => b.category === 'farm').length > local.matches.length / 2
     : grownWords.test(local.product.join(' '));
 
+  // Echo the user's own words, not the widened synonym set.
+  const prodWords  = local.productDisplay && local.productDisplay.length
+    ? local.productDisplay : local.product;
+  const placeWords = local.placeDisplay && local.placeDisplay.length
+    ? local.placeDisplay : local.place;
+
   return {
-    productTerm: local.product.length ? local.product.join(' ') : null,
-    locationTerm: local.place.length ? local.place.join(' ') : null,
+    productTerm: prodWords.length ? prodWords.join(' ') : null,
+    locationTerm: placeWords.length ? placeWords.join(' ') : null,
     madeOrGrown: looksGrown ? 'grown' : 'made',
     // Right product but nowhere near the requested place = "further afield".
     matchQuality: (local.place.length && local.inPlace === 0) ? 'wider' : 'exact',
@@ -1688,8 +1756,20 @@ ${catalogStr}`;
       // If we just supplied results in the requested place, the model's
       // "nothing there, here's further afield" wording is now false. Replace it.
       if (rescued) {
-        const where = state.placeTerms.map(t => t.charAt(0).toUpperCase() + t.slice(1)).join(' and ');
+        const where = state.placeTerms.map(titleCasePlace).join(' and ');
         state.aiHeadline = `British makers in <b>${escapeHtml(where)}</b> first, then others further afield.`;
+      }
+
+      // A thin answer is usually the model reading the query literally — asking
+      // for "jumper" when the catalogue files it under knitwear. The local
+      // engine has already widened the term across its synonym group, so top
+      // the list up from there rather than showing two cards.
+      if (state.aiMatches.size < 8) {
+        alsoLocal.matches.forEach(b => {
+          if (state.aiMatches.size >= 12 || state.aiMatches.has(b.id)) return;
+          state.aiMatches.set(b.id, 'Also matches what you asked for');
+          state.aiOrder.push(b.id);
+        });
       }
 
       // Switch view to Grid Results View
