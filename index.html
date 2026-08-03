@@ -781,7 +781,7 @@
    Errors during boot are easy to miss in a console on a machine you don't
    own; this makes them screenshottable. Costs nothing when not enabled.
    ========================================================================== */
-const BUILD = '2026-08-03d';   // bump when deploying; confirms which build is live
+const BUILD = '2026-08-03e';   // bump when deploying; confirms which build is live
 const Diag = (function(){
   const on = /[?&]debug\b/.test(location.search);
   const lines = [];
@@ -2216,12 +2216,24 @@ const DataLoader = (function(){
       try { fn(); Diag.ok(name); return true; }
       catch (e) { Diag.err(name, e); return false; }
     };
-    /* Paint immediately — deliberately NOT gated on map.whenReady or
-       requestAnimationFrame. rAF does not fire in a backgrounded Chrome tab,
-       so gating on it would mean a tab opened in the background never renders
-       at all. Instead: try now, and if the list render fails (markercluster
-       will throw if handed layers while the pane has no usable size) back off
-       and try again. Retries are plain timers, which always fire. */
+    /* markercluster reads the map's zoom the moment it is handed a layer, so
+       adding markers before Leaflet has finished initialising throws
+       "Cannot read properties of undefined (reading '_zoom')" — and any
+       markers that did land are grouped against a zoom that doesn't exist,
+       which is why the pins came out only half-clustered. So wait for the map.
+
+       Gated on map.whenReady, NOT requestAnimationFrame: rAF never fires in a
+       backgrounded Chrome tab, which would mean such a tab never renders at
+       all. whenReady fires immediately when the map is already loaded, and the
+       timer below guarantees we proceed even if it somehow never fires. */
+    const whenMapReady = (cb) => {
+      if (map._loaded) return cb();
+      let done = false;
+      const once = (via) => { if (!done){ done = true; Diag.log('map ready via ' + via); cb(); } };
+      map.whenReady(() => once('whenReady'));
+      setTimeout(() => once('timeout fallback'), 2000);
+    };
+
     const paint = (pass) => {
       stage('buildMarkers', buildMarkers);
       stage('toggleView', () => toggleView('map'));
@@ -2237,7 +2249,7 @@ const DataLoader = (function(){
     };
 
     Diag.log(`listings received (${BUSINESSES.length})`);
-    paint(1);
+    whenMapReady(() => paint(1));
   }
 
   function load(){
@@ -2312,7 +2324,17 @@ const Landing = (function(){
   const NS = 'http://www.w3.org/2000/svg';
   let timers = [], running = false, armed = false, leaving = false, startedAt = 0;
 
-  const still = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* still() collapses every delay to 0 and every duration to 1ms — that is what
+     makes the sequence flash past and the map appear instantly. It is driven by
+     the OS "reduce motion" setting (on Windows: Settings › Accessibility ›
+     Visual effects › Animation effects), which is off on some machines and on
+     on others — hence "works on my Mac, not on the work laptop".
+     ?intro is an explicit request to watch the intro, so it overrides the
+     setting; otherwise there is no way to preview the sequence at all on a
+     machine that has animations disabled. */
+  const forcedIntro = /[?&]intro\b/.test(location.search);
+  const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const still = () => reduceMotion() && !forcedIntro;
   const at  = (ms,fn) => timers.push(setTimeout(fn, still() ? 0 : ms * SPEED));
   const dur = ms => still() ? 1 : ms * SPEED;
 
@@ -2511,9 +2533,12 @@ const Landing = (function(){
        rendered perfectly but "Go to the map" and the cursor reveal were dead. */
     arm(){
       if (armed) return; armed = true;
+      Diag.log('prefers-reduced-motion: ' + reduceMotion() +
+        (reduceMotion() && forcedIntro ? ' — overridden by ?intro' : '') +
+        ' | animations ' + (still() ? 'OFF (sequence will be instant)' : 'ON'));
       // ?intro forces the sequence to replay. sessionStorage survives a hard
       // refresh, so without this the only way back is a new tab.
-      const forced = /[?&]intro\b/.test(location.search);
+      const forced = forcedIntro;
       let seen = false;
       try { seen = !forced && !!sessionStorage.getItem(SEEN); } catch(e){}
       if (seen){ straightThrough(); return; }
