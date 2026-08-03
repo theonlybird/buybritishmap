@@ -2226,12 +2226,28 @@ const DataLoader = (function(){
        backgrounded Chrome tab, which would mean such a tab never renders at
        all. whenReady fires immediately when the map is already loaded, and the
        timer below guarantees we proceed even if it somehow never fires. */
+    /* _loaded alone is not enough: the log showed it true while addLayer still
+       threw, because the pane had not been measured yet and markercluster
+       buckets against the map's size. Require a real size too, polled rather
+       than event-driven so nothing can leave us waiting forever. */
+    const mapUsable = () => {
+      if (!map._loaded) return false;
+      try { const s = map.getSize(); return s && s.x > 0 && s.y > 0; }
+      catch(e){ return false; }
+    };
     const whenMapReady = (cb) => {
-      if (map._loaded) return cb();
-      let done = false;
+      let done = false, waited = 0;
       const once = (via) => { if (!done){ done = true; Diag.log('map ready via ' + via); cb(); } };
-      map.whenReady(() => once('whenReady'));
-      setTimeout(() => once('timeout fallback'), 2000);
+      if (mapUsable()) return once('already loaded');
+      const poll = () => {
+        if (done) return;
+        if (mapUsable()) return once(`poll after ${waited}ms`);
+        if (waited >= 2000) return once(`timeout fallback after ${waited}ms`);
+        waited += 100;
+        setTimeout(poll, 100);
+      };
+      map.whenReady(() => { if (mapUsable()) once('whenReady'); });
+      poll();
     };
 
     const paint = (pass) => {
@@ -2246,6 +2262,17 @@ const DataLoader = (function(){
       }
       landing('setCount');
       waiters.splice(0).forEach(cb => { try { cb(); } catch(e){ Diag.err('waiter', e); } });
+
+      /* Even on a pass that reports success, markercluster can have bucketed
+         the markers against a container size Leaflet had not settled on yet —
+         which is why the clusters only appeared properly after a zoom click.
+         Re-measuring and re-adding is exactly what that zoom was doing, so do
+         it once, off the critical path. clearLayers()/addLayer in
+         renderMapList makes this idempotent. */
+      if (painted) setTimeout(() => stage('settleClusters', () => {
+        map.invalidateSize();
+        renderMapList();
+      }), 150);
     };
 
     Diag.log(`listings received (${BUSINESSES.length})`);
