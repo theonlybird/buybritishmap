@@ -2422,36 +2422,38 @@ const Landing = (function(){
 
   // 24 slots for trade engravings. Available illustrations load directly;
   // missing subjects display subtle label placeholders.
-  const SUBJECTS = ['Cheese wheel','Shirt and tie','Tomatoes on the vine','Apple tree',
-    'Milk churn','Chickens','Pint of beer','Stoneware dog bowl','Tape measure',
-    'Pig at trough','Flat cap','Folded t-shirts','High-heeled shoe','Sole on a last',
-    'Spinning wheel','Shuttle and loom','Wheel mid-throw','Kiln door','Teacup and saucer',
-    'Blade on a grinder','Ring on a mandrel','Watch and strap','Chisel on wood','Pub sign'];
+  const SUBJECTS = [
+    'Leather satchel', 'Teacup and saucer', 'Apple tree', 'Flat cap', 'Chisel on wood', 'Pint of beer',
+    'Ring on a mandrel', 'Kiln door', 'Tape measure', 'Pig at trough', 'Chelsea boot', 'Tomatoes on the vine',
+    'Wheel mid-throw', 'Folded t-shirts', 'Pub sign', 'Watch and strap', 'Chickens', 'Shuttle and loom',
+    'Cheese wheel', 'Shirt and tie', 'Blade on a grinder', 'Spinning wheel', 'Milk churn', 'Stoneware dog bowl'
+  ];
 
   const SKETCH_MAP = {
-    'Cheese wheel': 'trade-farm-cheese-wheel.png',
-    'Shirt and tie': 'trade-clothing-shirt-and-tie.png',
-    'Tomatoes on the vine': 'trade-farm-tomatoes.png',
+    'Leather satchel': 'trade-clothing-satchel-bag.png',
+    'Teacup and saucer': 'trade-ceramics-cup.png',
     'Apple tree': 'trade-farm-apple-tree.png',
-    'Milk churn': 'trade-farm-milk-churn.png',
-    'Chickens': 'trade-farm-chickens.png',
+    'Flat cap': 'trade-clothing-flat-cap.png',
+    'Chisel on wood': 'trade-tools-chisel.png',
     'Pint of beer': 'trade-drink-beer.png',
-    'Stoneware dog bowl': 'trade-ceramics-dog-bowl.png',
+    'Ring on a mandrel': 'trade-jewellery-ring.png',
+    'Kiln door': 'trade-ceramics-kiln.png',
     'Tape measure': 'trade-clothing-tailor.png',
     'Pig at trough': 'trade-farm-pigs.png',
-    'Flat cap': 'trade-clothing-flat-cap.png',
-    'Folded t-shirts': 'trade-clothing-t-shirts.png',
-    'High-heeled shoe': 'trade-clothing-high-heel.png',
-    'Spinning wheel': 'trade-clothing-spinning-wheel.png',
-    'Shuttle and loom': 'trade-clothing-loom.png',
+    'Chelsea boot': 'trade-clothing-chelsea-boot.png',
+    'Tomatoes on the vine': 'trade-farm-tomatoes.png',
     'Wheel mid-throw': 'trade-ceramics-potters-wheel.png',
-    'Kiln door': 'trade-ceramics-kiln.png',
-    'Teacup and saucer': 'trade-ceramics-cup.png',
-    'Blade on a grinder': 'trade-tools-grinder.png',
-    'Ring on a mandrel': 'trade-jewellery-ring.png',
+    'Folded t-shirts': 'trade-clothing-t-shirts.png',
+    'Pub sign': 'trade-ornament-pub-sign.png',
     'Watch and strap': 'trade-jewellery-watch.png',
-    'Chisel on wood': 'trade-tools-chisel.png',
-    'Pub sign': 'trade-ornament-pub-sign.png'
+    'Chickens': 'trade-farm-chickens.png',
+    'Shuttle and loom': 'trade-clothing-loom.png',
+    'Cheese wheel': 'trade-farm-cheese-wheel.png',
+    'Shirt and tie': 'trade-clothing-shirt-and-tie.png',
+    'Blade on a grinder': 'trade-tools-grinder.png',
+    'Spinning wheel': 'trade-clothing-spinning-wheel.png',
+    'Milk churn': 'trade-farm-milk-churn.png',
+    'Stoneware dog bowl': 'trade-ceramics-dog-bowl.png'
   };
 
   function buildSlots(){
