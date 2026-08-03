@@ -2430,21 +2430,28 @@ const Landing = (function(){
 
   const SKETCH_MAP = {
     'Cheese wheel': 'trade-farm-cheese-wheel.png',
-    'Pig at trough': 'trade-farm-pigs.png',
+    'Shirt and tie': 'trade-clothing-shirt-and-tie.png',
     'Tomatoes on the vine': 'trade-farm-tomatoes.png',
     'Apple tree': 'trade-farm-apple-tree.png',
+    'Milk churn': 'trade-farm-milk-churn.png',
     'Chickens': 'trade-farm-chickens.png',
     'Pint of beer': 'trade-drink-beer.png',
     'Stoneware dog bowl': 'trade-ceramics-dog-bowl.png',
     'Tape measure': 'trade-clothing-tailor.png',
+    'Pig at trough': 'trade-farm-pigs.png',
     'Flat cap': 'trade-clothing-flat-cap.png',
     'Folded t-shirts': 'trade-clothing-t-shirts.png',
+    'High-heeled shoe': 'trade-clothing-high-heel.png',
+    'Spinning wheel': 'trade-clothing-spinning-wheel.png',
     'Shuttle and loom': 'trade-clothing-loom.png',
     'Wheel mid-throw': 'trade-ceramics-potters-wheel.png',
+    'Kiln door': 'trade-ceramics-kiln.png',
     'Teacup and saucer': 'trade-ceramics-cup.png',
+    'Blade on a grinder': 'trade-tools-grinder.png',
     'Ring on a mandrel': 'trade-jewellery-ring.png',
     'Watch and strap': 'trade-jewellery-watch.png',
-    'Chisel on wood': 'trade-tools-chisel.png'
+    'Chisel on wood': 'trade-tools-chisel.png',
+    'Pub sign': 'trade-ornament-pub-sign.png'
   };
 
   function buildSlots(){
@@ -2473,7 +2480,7 @@ const Landing = (function(){
   function onMove(e){
     const r = el.getBoundingClientRect();
     trail.push({x:e.clientX - r.left, y:e.clientY - r.top});
-    if (trail.length > 14) trail.shift();
+    if (trail.length > 18) trail.shift();
     if (!raf) raf = requestAnimationFrame(paint);
   }
   function paint(){
@@ -2482,8 +2489,8 @@ const Landing = (function(){
     if (!trail.length){ layer.style.opacity = 0; return; }
     const stops = trail.map((p,i)=>{
       const f = (i+1) / trail.length;
-      const rad = Math.max(24, 150 * (0.3 + 0.7*f));
-      return `radial-gradient(circle ${rad}px at ${p.x}px ${p.y}px, rgba(0,0,0,${(0.2+0.8*f).toFixed(2)}) 0%, rgba(0,0,0,0) 68%)`;
+      const rad = Math.max(50, 240 * (0.35 + 0.65*f));
+      return `radial-gradient(circle ${rad}px at ${p.x}px ${p.y}px, rgba(0,0,0,${(0.25+0.75*f).toFixed(2)}) 0%, rgba(0,0,0,0) 75%)`;
     }).join(',');
     layer.style.opacity = 1;
     layer.style.webkitMaskImage = stops;
