@@ -6771,9 +6771,9 @@
     "tier": "silver",
     "listing_type": "online_only",
     "town": "London",
-    "address": "160 Kemp House, City Road, London, EC1V 2NX",
-    "lat": 51.5273,
-    "lng": -0.08889,
+    "address": "Autumn Way Operations Hub, West Drayton, London UB7 9GP",
+    "lat": 51.5178,
+    "lng": -0.4682,
     "website": "https://www.thecottonlondon.com",
     "instagram": "https://www.instagram.com/nomadicnabeel/",
     "description": "Cotton T-shirts cut and stitched in Leicester.",
@@ -6785,7 +6785,8 @@
       "shirts",
       "everyday wear",
       "poultry"
-    ]
+    ],
+    "postcode": "UB7 9GP"
   },
   {
     "id": "oxford-blue",
@@ -7740,9 +7741,9 @@
     "tier": "gold",
     "listing_type": "online_only",
     "town": "London",
-    "address": "London, EC1V 2NX",
-    "lat": 51.5273,
-    "lng": -0.08889,
+    "address": "London Fields Knitwear Studio, London E8 3RL",
+    "lat": 51.5412,
+    "lng": -0.0615,
     "website": "https://wearetalou.com",
     "instagram": "https://www.instagram.com/wearetalou/",
     "description": "Children's knitwear knitted and hand-linked in a London studio.",
@@ -7752,7 +7753,8 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "postcode": "E8 3RL"
   },
   {
     "id": "mille-saisons",
