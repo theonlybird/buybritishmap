@@ -581,6 +581,10 @@
 
   #topbar,#app{transition:opacity .6s ease-out}
   body.intro #topbar,body.intro #app{opacity:0;pointer-events:none}
+  #map .leaflet-tile-pane{opacity:0;transition:opacity .6s ease-out}
+  body:not(.intro) #map .leaflet-tile-pane{opacity:1}
+  #map .leaflet-marker-pane,#map .leaflet-shadow-pane{opacity:0;transition:opacity .4s ease-out}
+  body:not(.intro) #map .leaflet-marker-pane,body:not(.intro) #map .leaflet-shadow-pane{opacity:1}
 
   /* Grid: "further afield" break */
   .afield-break{grid-column:1/-1;display:flex;align-items:center;gap:14px;
