@@ -109,6 +109,9 @@
   .tag.cat.ceramics{background:#f5e9e1;color:#8a4a24}
   .tag.cat.jewellery{background:#efe7f5;color:#5a3d73}
   .tag.cat.cutlery{background:#e5e7eb;color:#1f2937}
+  /* Availability is not a taxonomy — it must not compete with the colour-coded
+     category pill sitting next to it. Outline only. */
+  .tag.avail{background:transparent;border:1px solid #1d2733;color:#1d2733;margin-left:5px;padding:1px 6px}
 
   #map{flex:1;height:100%}
   .legend{background:#fff;padding:10px 12px;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.2);font-size:12px;line-height:1.7}
@@ -439,6 +442,7 @@
   .tag.cat.ceramics{background:#F4EAE3;color:#6E4227}
   .tag.cat.jewellery{background:#F0EAF0;color:#523A4C}
   .tag.cat.cutlery{background:#ECECEA;color:#3A3A37}
+  .tag.avail{background:transparent;border:1px solid var(--ink,#2B3330);color:var(--ink,#2B3330);margin-left:5px;padding:1px 6px}
 
   /* Key. Now covers both what a pin's ring means and what its centre means. */
   .legend{background:rgba(250,247,240,.95);border:1px solid var(--line);border-radius:8px;
@@ -673,6 +677,13 @@
             <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
           </div>
         </div>
+        <div class="filter-group">
+          <div class="lbl">Availability</div>
+          <div class="chips avail-chips" id="availChips">
+            <span class="chip active" data-avail="shop">Visit in person</span>
+            <span class="chip active" data-avail="online">Online only</span>
+          </div>
+        </div>
       </div>
       <div class="countrow">
         <div class="count" id="count"></div>
@@ -703,6 +714,13 @@
             <div class="chips tier-chips" id="gridTierChips">
               <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
               <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
+            </div>
+          </div>
+          <div class="filter-group" style="margin-top:14px;">
+            <div class="lbl">Availability</div>
+            <div class="chips avail-chips" id="gridAvailChips">
+              <span class="chip active" data-avail="shop">Visit in person</span>
+              <span class="chip active" data-avail="online">Online only</span>
             </div>
           </div>
         </div>
@@ -749,6 +767,13 @@
         <div class="chips tier-chips" id="drawerTierChips">
           <span class="chip tier-gold active" data-tier="gold"><span class="dot" style="background:var(--gold)"></span>Gold</span>
           <span class="chip tier-silver active" data-tier="silver"><span class="dot" style="background:var(--silver)"></span>Silver</span>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="lbl">Availability</div>
+        <div class="chips avail-chips" id="drawerAvailChips">
+          <span class="chip active" data-avail="shop">Visit in person</span>
+          <span class="chip active" data-avail="online">Online only</span>
         </div>
       </div>
       <div class="filter-group">
@@ -881,21 +906,23 @@ map.addLayer(cluster);
 // The key has to explain a pin that now carries two things at once: the ring is
 // the trade, the centre is the standard. Split into two labelled groups so it
 // reads as one instruction rather than seven unrelated swatches.
-// A struck hallmark rather than a badge: hexagonal punch, inner outline, the
-// initial set in the display serif. Gold and Silver are the same size at every
-// scale — colour is the only difference. Never rendered on a map pin.
-function hallmarkHtml(tier, px){
-  const gold = tier === 'gold';
-  const col  = gold ? 'var(--gold-mark)' : 'var(--silver-mark)';
-  const size = px || 30;
-  return `<span class="hallmark ${tier}" style="width:${size}px;height:${size}px;font-size:${size}px"
-      role="img" aria-label="${gold ? 'Gold' : 'Silver'} standard" title="${gold ? 'Gold' : 'Silver'} standard">
-      <svg viewBox="0 0 40 40" aria-hidden="true">
-        <path d="M20 2 L34 10 L34 30 L20 38 L6 30 L6 10 Z" fill="none" stroke="${col}" stroke-width="1.6"/>
-        <path d="M20 6.5 L30.2 12.4 L30.2 27.6 L20 33.5 L9.8 27.6 L9.8 12.4 Z" fill="none" stroke="${col}" stroke-width="0.7" opacity="0.65"/>
-      </svg>
-      <span>${gold ? 'G' : 'S'}</span>
-    </span>`;
+// Tier is carried by one pill, used identically in the sidebar list, the map
+// popup and the grid card. The old hexagonal G/S hallmark was removed (3 Aug
+// 2026) — two devices for one piece of information read as two facts.
+function tierTagHtml(tier){
+  return `<span class="tag ${tier}">${tier}</span>`;
+}
+
+// Availability. Three labels on the pill, but only two things a shopper wants
+// to filter by: can I go there, or is it online only. Shop-only is 5 listings,
+// so a literal three-way filter would make "Shop" look broken.
+function availLabel(b){
+  return b.listing_type === 'online_only' ? 'Online only'
+       : b.listing_type === 'both'        ? 'Shop + online'
+       : 'Shop';
+}
+function availKey(b){
+  return b.listing_type === 'online_only' ? 'online' : 'shop';
 }
 
 // Diagonal wave across the grid. Cards render visible; we only hide the ones we
@@ -968,7 +995,7 @@ function buildMarkers(){
   BUSINESSES.forEach(b=>{
     // Identical 24px pin for every listing. Category is the outer ring, tier is
     // the centre; a paper hairline sits between them so neither has to contrast
-    // with the other. No hallmark on the pin — that lives on cards and popups.
+    // with the other. No tier mark on the pin — the ring and centre carry it.
     const icon = L.divIcon({
       className:'', iconSize:[24,24], iconAnchor:[12,12], popupAnchor:[0,-14],
       html:`<div class="pin tier-${b.tier}" style="--cat:${CAT[b.category].color}"></div>`
@@ -985,10 +1012,10 @@ function popupHtml(b){
     <div class="head">${logoHtml(b,'plogo')}
       <div style="flex:1;min-width:0"><h3>${b.name}</h3>
         <div class="pmeta">${CAT[b.category].label} · ${b.subcategory||''}</div></div>
-      ${hallmarkHtml(b.tier, 30)}
     </div>
     <div class="badges">
-      <span class="tag cat ${b.category}">${b.listing_type==='online_only'?'Online only':(b.listing_type==='both'?'Shop + online':'Shop')}</span>
+      ${tierTagHtml(b.tier)}
+      <span class="tag avail">${availLabel(b)}</span>
     </div>
     <div class="desc">${b.description}</div>
     <div class="addr">📍 <span>${b.address}</span></div>
@@ -1004,6 +1031,7 @@ const state = {
   q: '',
   cats: new Set(['farm','clothing','ceramics','jewellery','cutlery']),
   tiers: new Set(['gold','silver']),
+  avail: new Set(['shop','online']),
   sortAsc: true,
   currentView: 'map', // 'map' or 'grid'
   aiActive: false,
@@ -1177,7 +1205,7 @@ function visible(){
   }
   const q = state.q.toLowerCase();
   return BUSINESSES.filter(b =>
-    state.cats.has(b.category) && state.tiers.has(b.tier) &&
+    state.cats.has(b.category) && state.tiers.has(b.tier) && state.avail.has(availKey(b)) &&
     (q==='' || (b.name+' '+b.town+' '+(b.subcategory||'')+' '+b.category+' '+(b.description||'')).toLowerCase().includes(q))
   );
 }
@@ -1257,10 +1285,11 @@ function renderGrid(){
             <div class="g-title">${b.name}</div>
             <div class="g-sub">${b.town}</div>
           </div>
-          ${hallmarkHtml(b.tier, 30)}
         </div>
         <div class="g-badges">
+          ${tierTagHtml(b.tier)}
           <span class="tag cat ${b.category}">${CAT[b.category].label}</span>
+          <span class="tag avail">${availLabel(b)}</span>
         </div>
         ${aiReason}
         <div class="g-desc">${b.description}</div>
@@ -1887,6 +1916,7 @@ ${catalogStr}`;
 
 const ALL_CATS = ['farm','clothing','ceramics','jewellery','cutlery'];
 const ALL_TIERS = ['gold','silver'];
+const ALL_AVAIL = ['shop','online'];
 
 function chipClick(set, all, key){
   if (set.size === all.length) { set.clear(); set.add(key); }
@@ -1898,6 +1928,7 @@ function syncChips(){
   // Determine relevant categories & tiers from search matches if search is active
   let relevantCats = null;
   let relevantTiers = null;
+  let relevantAvail = null;
 
   const searchIsActive = Boolean(state.q.trim() || state.aiActive);
   if (searchIsActive) {
@@ -1910,6 +1941,7 @@ function syncChips(){
     }
     relevantCats = new Set(pool.map(b => b.category));
     relevantTiers = new Set(pool.map(b => b.tier));
+    relevantAvail = new Set(pool.map(b => availKey(b)));
   }
 
   document.querySelectorAll('.cat-chips .chip').forEach(c => {
@@ -1926,6 +1958,16 @@ function syncChips(){
     const tier = c.dataset.tier;
     c.classList.toggle('active', state.tiers.has(tier));
     if (searchIsActive && relevantTiers && !relevantTiers.has(tier)) {
+      c.classList.add('disabled');
+    } else {
+      c.classList.remove('disabled');
+    }
+  });
+
+  document.querySelectorAll('.avail-chips .chip').forEach(c => {
+    const a = c.dataset.avail;
+    c.classList.toggle('active', state.avail.has(a));
+    if (searchIsActive && relevantAvail && !relevantAvail.has(a)) {
       c.classList.add('disabled');
     } else {
       c.classList.remove('disabled');
@@ -1950,6 +1992,16 @@ function bindChipEvents() {
     c.addEventListener('click', () => {
       if (c.classList.contains('disabled')) return;
       chipClick(state.tiers, ALL_TIERS, c.dataset.tier);
+      syncChips();
+      renderMapList();
+      renderGrid();
+    });
+  });
+
+  document.querySelectorAll('.avail-chips .chip').forEach(c => {
+    c.addEventListener('click', () => {
+      if (c.classList.contains('disabled')) return;
+      chipClick(state.avail, ALL_AVAIL, c.dataset.avail);
       syncChips();
       renderMapList();
       renderGrid();
@@ -2083,6 +2135,7 @@ document.getElementById('drawerApply').addEventListener('click', closeDrawer);
 document.getElementById('drawerReset').addEventListener('click', () => {
   state.cats = new Set(ALL_CATS);
   state.tiers = new Set(ALL_TIERS);
+  state.avail = new Set(ALL_AVAIL);
   syncChips(); renderMapList(); renderGrid();
 });
 document.addEventListener('keydown', e => {
@@ -2094,6 +2147,7 @@ function updateFilterBadge(){
   let n = 0;
   if (state.cats.size  < ALL_CATS.length)  n += state.cats.size;
   if (state.tiers.size < ALL_TIERS.length) n += state.tiers.size;
+  if (state.avail.size < ALL_AVAIL.length) n += state.avail.size;
   filterBtn.classList.toggle('has-filters', n > 0);
   filterCountEl.textContent = n;
   // The reset button only earns its space once there is something to reset.
@@ -2159,6 +2213,7 @@ function resetSearchAndShowGrid() {
   state.aiHeadline = '';
   state.cats = new Set(ALL_CATS);
   state.tiers = new Set(ALL_TIERS);
+  state.avail = new Set(ALL_AVAIL);
   state.sortAsc = true;
 
   document.querySelectorAll('#sortBtn, #gridSortBtn, .sortBtn, .btn-sort').forEach(b => {
