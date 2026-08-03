@@ -876,11 +876,9 @@ function getCss(v){ return getComputedStyle(document.documentElement).getPropert
 function domain(url){ try{ return new URL(url).hostname.replace(/^www\./,''); }catch(e){ return ''; } }
 function initials(name){ return name.replace(/[^A-Za-z ]/g,'').split(' ').filter(Boolean).slice(0,2).map(s=>s[0]).join('').toUpperCase(); }
 function logoHtml(b, cls){
-  const d = domain(b.website);
-  const bg = CAT[b.category].color;
-  const initialsFallback = `this.onerror=null;this.parentNode.style.background='${bg}';this.replaceWith(document.createTextNode('${initials(b.name)}'))`;
-  const tryFavicon = `this.onerror=function(){${initialsFallback}};this.src='https://www.google.com/s2/favicons?domain=${d}&amp;sz=128'`;
-  return `<div class="${cls}" style="background:${bg}"><img src="assets/logos/${b.id}.png" alt="" onerror="${tryFavicon}"></div>`;
+  const logoPath = b.logo || `assets/logos/${b.id}.png`;
+  const fallback = `this.onerror=null;this.remove();`;
+  return `<div class="${cls}" style="background:#ffffff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="${logoPath}" alt="" style="width:100%;height:100%;object-fit:contain;background:#ffffff;" onerror="${fallback}"></div>`;
 }
 
 // --- Map Setup ---
