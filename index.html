@@ -776,6 +776,47 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
+/* ==========================================================================
+   DIAG — add ?debug to the URL for an on-screen boot log.
+   Errors during boot are easy to miss in a console on a machine you don't
+   own; this makes them screenshottable. Costs nothing when not enabled.
+   ========================================================================== */
+const Diag = (function(){
+  const on = /[?&]debug\b/.test(location.search);
+  const lines = [];
+  let box = null;
+  function draw(){
+    if (!on) return;
+    if (!box){
+      box = document.createElement('div');
+      box.id = 'diagBox';
+      box.style.cssText = 'position:fixed;left:8px;bottom:8px;z-index:99999;max-width:min(560px,92vw);' +
+        'max-height:45vh;overflow:auto;background:rgba(12,20,16,.94);color:#d7f5e3;font:11px/1.45 ' +
+        'ui-monospace,Menlo,Consolas,monospace;padding:9px 11px;border-radius:8px;white-space:pre-wrap;' +
+        'box-shadow:0 6px 24px rgba(0,0,0,.4)';
+      (document.body || document.documentElement).appendChild(box);
+    }
+    box.textContent = lines.join('\n');
+    box.scrollTop = box.scrollHeight;
+  }
+  const stamp = () => String(Math.round(performance.now())).padStart(5,' ') + 'ms ';
+  function push(s){ lines.push(stamp() + s); draw(); }
+  // Catch anything thrown outside our own try/catch, including async.
+  window.addEventListener('error', e =>
+    push('UNCAUGHT ' + (e.message||e) + (e.filename ? ` @${String(e.filename).split('/').pop()}:${e.lineno}` : '')));
+  window.addEventListener('unhandledrejection', e =>
+    push('UNHANDLED PROMISE ' + ((e.reason && (e.reason.stack || e.reason.message)) || e.reason)));
+  return {
+    on,
+    log(m){ push(m); },
+    ok(m){ push('ok   ' + m); },
+    err(m, e){
+      push('FAIL ' + m + ' — ' + ((e && (e.stack || e.message)) || e));
+      console.error(`[${m}]`, e);
+    }
+  };
+})();
+
 // --- Burger menu ---
 const burgerBtn = document.getElementById('burger'), burgerMenu = document.getElementById('menu');
 burgerBtn.addEventListener('click', e => {
@@ -2166,15 +2207,31 @@ const DataLoader = (function(){
      unconditionally, so a broken map layer can't also empty the sidebar. */
   function boot(){
     const stage = (name, fn) => {
-      try { fn(); return true; }
-      catch (e) { console.error(`[boot] ${name} failed:`, e); return false; }
+      try { fn(); Diag.ok(name); return true; }
+      catch (e) { Diag.err(name, e); return false; }
     };
-    stage('buildMarkers', buildMarkers);
-    stage('toggleView', () => toggleView('map'));
-    // Belt and braces: if toggleView bailed before reaching it, paint anyway.
-    stage('renderMapList', renderMapList);
-    landing('setCount');
-    waiters.splice(0).forEach(cb => { try { cb(); } catch(e){ console.warn('[boot] waiter', e); } });
+    /* Paint immediately — deliberately NOT gated on map.whenReady or
+       requestAnimationFrame. rAF does not fire in a backgrounded Chrome tab,
+       so gating on it would mean a tab opened in the background never renders
+       at all. Instead: try now, and if the list render fails (markercluster
+       will throw if handed layers while the pane has no usable size) back off
+       and try again. Retries are plain timers, which always fire. */
+    const paint = (pass) => {
+      stage('buildMarkers', buildMarkers);
+      stage('toggleView', () => toggleView('map'));
+      // toggleView may have bailed before reaching the list — paint regardless.
+      const painted = stage('renderMapList', renderMapList);
+      if (!painted && pass < 4) {
+        Diag.log(`render failed, retrying (pass ${pass + 1} of 4)`);
+        setTimeout(() => paint(pass + 1), 200 * pass);
+        return;
+      }
+      landing('setCount');
+      waiters.splice(0).forEach(cb => { try { cb(); } catch(e){ Diag.err('waiter', e); } });
+    };
+
+    Diag.log(`listings received (${BUSINESSES.length})`);
+    paint(1);
   }
 
   function load(){
@@ -2247,7 +2304,7 @@ const Landing = (function(){
   const coastG = document.getElementById('coastG');
   const pinG   = document.getElementById('pinG');
   const NS = 'http://www.w3.org/2000/svg';
-  let timers = [], running = false, armed = false, leaving = false;
+  let timers = [], running = false, armed = false, leaving = false, startedAt = 0;
 
   const still = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const at  = (ms,fn) => timers.push(setTimeout(fn, still() ? 0 : ms * SPEED));
@@ -2335,8 +2392,17 @@ const Landing = (function(){
   }
 
   function play(){
-    if (running) return; running = true;
-    const {pins, paths} = project();
+    if (running) return; running = true; startedAt = performance.now();
+    Diag.log('sketch started');
+    let projected;
+    try { projected = project(); }
+    catch(e){
+      // If the projection blows up the user is left staring at a dead overlay,
+      // so bail out to the map rather than trapping them behind it.
+      Diag.err('project', e); running = false; straightThrough(); return;
+    }
+    const {pins, paths} = projected;
+    Diag.log(`sketch: ${pins.length} pins, ${paths.length} coast paths`);
     const maxD = Math.max(...pins.map(p=>p.d), 1);
 
     pins.forEach(p=>{
@@ -2391,7 +2457,11 @@ const Landing = (function(){
     running = false;
   }
 
-  function skip(){
+  function skip(why){
+    // A stray wheel nudge or modifier keypress in the first moments used to
+    // wipe the whole sequence out. Give it a beat before it can be cancelled.
+    if (performance.now() - startedAt < 600) { Diag.log('skip ignored (too early): ' + why); return; }
+    Diag.log('sketch skipped by: ' + why);
     timers.forEach(clearTimeout); timers = [];
     finish();
   }
@@ -2412,6 +2482,7 @@ const Landing = (function(){
       setTimeout(play, still() ? 0 : 200);
     };
 
+    Diag.log('CTA clicked; listings loaded = ' + DataLoader.isLoaded());
     if (DataLoader.isLoaded()) return go();
     const cta = document.getElementById('enterMap');
     const label = cta.textContent;
@@ -2421,6 +2492,7 @@ const Landing = (function(){
   }
 
   function straightThrough(){
+    Diag.log('straightThrough (map revealed with no sketch)');
     el.classList.add('out','gone');
     fx.style.display = 'none';
     document.body.classList.remove('intro');
@@ -2444,7 +2516,7 @@ const Landing = (function(){
       // decoration below throws, the user can still get to the map.
       document.getElementById('enterMap').addEventListener('click', dismiss);
       ['click','keydown','wheel','touchstart'].forEach(ev=>
-        window.addEventListener(ev, ()=>{ if (running) skip(); }, {passive:true}));
+        window.addEventListener(ev, ()=>{ if (running) skip(ev); }, {passive:true}));
 
       try {
         buildSlots();
