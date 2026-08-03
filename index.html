@@ -180,6 +180,7 @@
   /* Listings load failure message */
   .load-detail { display: block; font-size: 11px; opacity: .65; margin: 2px 0; font-family: ui-monospace, Menlo, Consolas, monospace; }
   .link-btn { background: none; border: none; padding: 0; font: inherit; color: var(--green, #004225); text-decoration: underline; cursor: pointer; }
+  .cta.is-waiting { opacity: .7; cursor: progress; pointer-events: none; }
 
   /* Grid Layout with Left Filter Sidebar - Full Width 4-Column */
   #gridView { position: absolute; inset: 0; background: var(--bg); overflow-y: auto; z-index: 900; display: none; padding: 20px 24px; }
@@ -2132,6 +2133,7 @@ function resetSearchAndShowGrid() {
    reports the real error, and re-attempts whenever the tab is brought forward. */
 const DataLoader = (function(){
   let loaded = false, inflight = false, attempt = 0;
+  const waiters = [];
   const MAX = 3;
   const isLocalFile = location.protocol === 'file:';
   // Landing is declared below this block, so guard against the temporal dead
@@ -2155,6 +2157,26 @@ const DataLoader = (function(){
     // time rather than having it yanked away when the request finally gives up.
   }
 
+  /* Painting the data used to sit inside the fetch's .then, so ANY error in
+     buildMarkers/toggleView was caught by the .catch below and misreported as a
+     failed download — leaving "Loading listings…" on screen forever while
+     BUSINESSES was actually populated. (Typing in the search box calls
+     renderMapList() directly, which is why that appeared to fix it.)
+     Each stage is now isolated, and the list render happens last and
+     unconditionally, so a broken map layer can't also empty the sidebar. */
+  function boot(){
+    const stage = (name, fn) => {
+      try { fn(); return true; }
+      catch (e) { console.error(`[boot] ${name} failed:`, e); return false; }
+    };
+    stage('buildMarkers', buildMarkers);
+    stage('toggleView', () => toggleView('map'));
+    // Belt and braces: if toggleView bailed before reaching it, paint anyway.
+    stage('renderMapList', renderMapList);
+    landing('setCount');
+    waiters.splice(0).forEach(cb => { try { cb(); } catch(e){ console.warn('[boot] waiter', e); } });
+  }
+
   function load(){
     if (loaded || inflight) return;
     inflight = true;
@@ -2170,9 +2192,7 @@ const DataLoader = (function(){
         clearTimeout(timer);
         loaded = true; inflight = false;
         BUSINESSES = data;
-        buildMarkers();
-        toggleView('map');
-        landing('setCount');
+        boot();
       })
       .catch(err => {
         clearTimeout(timer);
@@ -2194,7 +2214,20 @@ const DataLoader = (function(){
   window.addEventListener('online', nudge);
   window.addEventListener('pageshow', nudge);
 
-  return { load, nudge };
+  /* Run cb once the listings are in. Fires immediately if they already are,
+     and fires anyway after maxWait so a stalled request can never strand the
+     caller. Used by the intro so the reveal isn't skipped just because the
+     data happened to be slow. */
+  function whenLoaded(cb, maxWait){
+    if (loaded) return cb();
+    let done = false;
+    const once = () => { if (!done){ done = true; cb(); } };
+    waiters.push(once);
+    setTimeout(once, maxWait || 3000);
+    nudge();
+  }
+
+  return { load, nudge, whenLoaded, isLoaded: () => loaded };
 })();
 
 DataLoader.load();
@@ -2214,7 +2247,7 @@ const Landing = (function(){
   const coastG = document.getElementById('coastG');
   const pinG   = document.getElementById('pinG');
   const NS = 'http://www.w3.org/2000/svg';
-  let timers = [], running = false, armed = false;
+  let timers = [], running = false, armed = false, leaving = false;
 
   const still = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const at  = (ms,fn) => timers.push(setTimeout(fn, still() ? 0 : ms * SPEED));
@@ -2364,13 +2397,27 @@ const Landing = (function(){
   }
 
   function dismiss(){
-    el.removeEventListener('pointermove', onMove);
-    el.classList.add('out');
-    setTimeout(()=>el.classList.add('gone'), still() ? 0 : 320);
-    // With no listings there are no pins to fly, so the sequence would just be
-    // a 3.5s blank hold. Go straight through to the map instead.
-    if (!BUSINESSES.length){ setTimeout(straightThrough, still() ? 0 : 320); return; }
-    setTimeout(play, still() ? 0 : 200);
+    if (leaving) return;
+    leaving = true;
+
+    // The pins ARE the sequence, so it can't start until the listings are in.
+    // On a fast connection they always are and this is a no-op. On a slow one
+    // we hold on the landing card — with the button showing it's working —
+    // rather than dropping the user straight onto a bare map, which is what
+    // made the reveal vanish on a corporate network.
+    const go = () => {
+      el.removeEventListener('pointermove', onMove);
+      el.classList.add('out');
+      setTimeout(()=>el.classList.add('gone'), still() ? 0 : 320);
+      setTimeout(play, still() ? 0 : 200);
+    };
+
+    if (DataLoader.isLoaded()) return go();
+    const cta = document.getElementById('enterMap');
+    const label = cta.textContent;
+    cta.classList.add('is-waiting');
+    cta.textContent = 'Just a moment…';
+    DataLoader.whenLoaded(() => { cta.textContent = label; cta.classList.remove('is-waiting'); go(); }, 6000);
   }
 
   function straightThrough(){
