@@ -2422,24 +2422,29 @@ const Landing = (function(){
 
   // 24 slots for trade engravings. Available illustrations load directly;
   // missing subjects display subtle label placeholders.
-  const SUBJECTS = ['Cheese wheel','Pig at trough','Tomatoes on the vine','Apple tree',
-    'Milk churn','Pulling leeks','Pint of beer','Stoneware dog bowl','Tape measure',
-    'Shirt and tie','Flat cap','Folded t-shirts','High-heeled shoe','Sole on a last',
+  const SUBJECTS = ['Cheese wheel','Shirt and tie','Tomatoes on the vine','Apple tree',
+    'Milk churn','Chickens','Pint of beer','Stoneware dog bowl','Tape measure',
+    'Pig at trough','Flat cap','Folded t-shirts','High-heeled shoe','Sole on a last',
     'Spinning wheel','Shuttle and loom','Wheel mid-throw','Kiln door','Teacup and saucer',
     'Blade on a grinder','Ring on a mandrel','Watch and strap','Chisel on wood','Pub sign'];
 
   const SKETCH_MAP = {
+    'Cheese wheel': 'trade-farm-cheese-wheel.png',
     'Pig at trough': 'trade-farm-pigs.png',
-    'Tape measure': 'trade-clothing-tailor.png',
+    'Tomatoes on the vine': 'trade-farm-tomatoes.png',
     'Apple tree': 'trade-farm-apple-tree.png',
+    'Chickens': 'trade-farm-chickens.png',
     'Pint of beer': 'trade-drink-beer.png',
-    'Teacup and saucer': 'trade-ceramics-cup.png',
     'Stoneware dog bowl': 'trade-ceramics-dog-bowl.png',
+    'Tape measure': 'trade-clothing-tailor.png',
     'Flat cap': 'trade-clothing-flat-cap.png',
-    'Wheel mid-throw': 'trade-ceramics-potters-wheel.png',
-    'Ring on a mandrel': 'trade-jewellery-ring.png',
     'Folded t-shirts': 'trade-clothing-t-shirts.png',
-    'Watch and strap': 'trade-jewellery-watch.png'
+    'Shuttle and loom': 'trade-clothing-loom.png',
+    'Wheel mid-throw': 'trade-ceramics-potters-wheel.png',
+    'Teacup and saucer': 'trade-ceramics-cup.png',
+    'Ring on a mandrel': 'trade-jewellery-ring.png',
+    'Watch and strap': 'trade-jewellery-watch.png',
+    'Chisel on wood': 'trade-tools-chisel.png'
   };
 
   function buildSlots(){
