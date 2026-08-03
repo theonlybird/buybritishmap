@@ -2136,7 +2136,10 @@ const DataLoader = (function(){
   const isLocalFile = location.protocol === 'file:';
   // Landing is declared below this block, so guard against the temporal dead
   // zone rather than assuming it exists.
-  const landing = fn => { try { Landing[fn](); } catch(e){} };
+  const landing = fn => { try { Landing[fn](); } catch(e){ console.warn('[landing]', fn, e); } };
+  // A request that hangs never rejects, so without this the retry below would
+  // never fire and the app would sit on "Loading" indefinitely.
+  const TIMEOUT = 8000;
 
   function fail(err){
     console.error('[listings] load failed:', err);
@@ -2147,7 +2150,9 @@ const DataLoader = (function(){
       `Could not load listings. ${detail} <button type="button" id="retryLoad" class="link-btn">Try again</button>`;
     const btn = document.getElementById('retryLoad');
     if (btn) btn.addEventListener('click', () => { attempt = 0; load(); });
-    landing('abort');
+    // Deliberately does NOT tear down the intro any more. It is armed
+    // independently of this fetch, so the user can click through in their own
+    // time rather than having it yanked away when the request finally gives up.
   }
 
   function load(){
@@ -2156,17 +2161,22 @@ const DataLoader = (function(){
     attempt++;
     // Cache-bust on retries only, so the happy path still hits the CDN cache.
     const url = 'data/businesses.json' + (attempt > 1 ? `?r=${Date.now()}` : '');
-    fetch(url, { cache: attempt > 1 ? 'reload' : 'default' })
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(new Error(`timed out after ${TIMEOUT}ms`)), TIMEOUT);
+    fetch(url, { cache: attempt > 1 ? 'reload' : 'default', signal: ctrl.signal })
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
         if (!Array.isArray(data) || !data.length) throw new Error('empty listings file');
+        clearTimeout(timer);
         loaded = true; inflight = false;
         BUSINESSES = data;
         buildMarkers();
         toggleView('map');
-        landing('ready');
+        landing('setCount');
       })
       .catch(err => {
+        clearTimeout(timer);
+        if (err && err.name === 'AbortError') err = ctrl.signal.reason || new Error('request aborted');
         inflight = false;
         if (attempt < MAX) {
           countEl.textContent = 'Loading listings…';
@@ -2357,6 +2367,9 @@ const Landing = (function(){
     el.removeEventListener('pointermove', onMove);
     el.classList.add('out');
     setTimeout(()=>el.classList.add('gone'), still() ? 0 : 320);
+    // With no listings there are no pins to fly, so the sequence would just be
+    // a 3.5s blank hold. Go straight through to the map instead.
+    if (!BUSINESSES.length){ setTimeout(straightThrough, still() ? 0 : 320); return; }
     setTimeout(play, still() ? 0 : 200);
   }
 
@@ -2367,10 +2380,12 @@ const Landing = (function(){
   }
 
   return {
-    ready(){
+    /* arm() attaches the landing's interactivity and must NOT wait on the
+       listings fetch. It used to live inside ready(), which only ran once the
+       data arrived — so if that request hung (corporate proxy), the intro
+       rendered perfectly but "Go to the map" and the cursor reveal were dead. */
+    arm(){
       if (armed) return; armed = true;
-      document.getElementById('landingCount').textContent =
-        BUSINESSES.length + ' makers and growers';
       // ?intro forces the sequence to replay. sessionStorage survives a hard
       // refresh, so without this the only way back is a new tab.
       const forced = /[?&]intro\b/.test(location.search);
@@ -2378,19 +2393,33 @@ const Landing = (function(){
       try { seen = !forced && !!sessionStorage.getItem(SEEN); } catch(e){}
       if (seen){ straightThrough(); return; }
 
-      buildSlots();
-      if (window.matchMedia('(hover: hover)').matches && !still()){
-        el.addEventListener('pointermove', onMove);
-      } else {
-        document.getElementById('sketchLayer').style.opacity = .1;
-      }
+      // The escape hatch goes on first and unconditionally: if any of the
+      // decoration below throws, the user can still get to the map.
       document.getElementById('enterMap').addEventListener('click', dismiss);
       ['click','keydown','wheel','touchstart'].forEach(ev=>
         window.addEventListener(ev, ()=>{ if (running) skip(); }, {passive:true}));
+
+      try {
+        buildSlots();
+        if (window.matchMedia('(hover: hover)').matches && !still()){
+          el.addEventListener('pointermove', onMove);
+        } else {
+          document.getElementById('sketchLayer').style.opacity = .1;
+        }
+      } catch(e){ console.warn('[landing] decoration failed:', e); }
     },
+    // Called separately when the listings actually land.
+    setCount(){
+      const n = document.getElementById('landingCount');
+      if (n) n.textContent = BUSINESSES.length + ' makers and growers';
+    },
+    ready(){ this.setCount(); this.arm(); },
     abort(){ straightThrough(); }
   };
 })();
+
+// The intro is interactive from the moment the script runs — never gated on data.
+Landing.arm();
 
 // Belt and braces: whatever happens, never leave the app hidden behind the intro.
 setTimeout(()=>document.body.classList.remove('intro'), 12000);
