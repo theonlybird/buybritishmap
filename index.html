@@ -781,6 +781,7 @@
    Errors during boot are easy to miss in a console on a machine you don't
    own; this makes them screenshottable. Costs nothing when not enabled.
    ========================================================================== */
+const BUILD = '2026-08-03d';   // bump when deploying; confirms which build is live
 const Diag = (function(){
   const on = /[?&]debug\b/.test(location.search);
   const lines = [];
@@ -806,6 +807,11 @@ const Diag = (function(){
     push('UNCAUGHT ' + (e.message||e) + (e.filename ? ` @${String(e.filename).split('/').pop()}:${e.lineno}` : '')));
   window.addEventListener('unhandledrejection', e =>
     push('UNHANDLED PROMISE ' + ((e.reason && (e.reason.stack || e.reason.message)) || e.reason)));
+  // Draw the panel straight away rather than lazily on the first message, so
+  // "no panel" can only ever mean "this build predates the panel" — not
+  // "nothing has been logged yet". Removes the ambiguity when testing.
+  if (on) push('diag ready — build ' + BUILD);
+
   return {
     on,
     log(m){ push(m); },
