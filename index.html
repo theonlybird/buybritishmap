@@ -2420,13 +2420,27 @@ const Landing = (function(){
   const at  = (ms,fn) => timers.push(setTimeout(fn, still() ? 0 : ms * SPEED));
   const dur = ms => still() ? 1 : ms * SPEED;
 
-  // 24 empty slots for the trade engravings. Labelled so it's obvious they are
-  // placeholders and not a rendering fault.
+  // 24 slots for trade engravings. Available illustrations load directly;
+  // missing subjects display subtle label placeholders.
   const SUBJECTS = ['Cheese wheel','Pig at trough','Tomatoes on the vine','Apple tree',
     'Milk churn','Pulling leeks','Pint of beer','Stoneware dog bowl','Tape measure',
     'Shirt and tie','Flat cap','Folded t-shirts','High-heeled shoe','Sole on a last',
     'Spinning wheel','Shuttle and loom','Wheel mid-throw','Kiln door','Teacup and saucer',
     'Blade on a grinder','Ring on a mandrel','Watch and strap','Chisel on wood','Pub sign'];
+
+  const SKETCH_MAP = {
+    'Pig at trough': 'trade-farm-pigs.png',
+    'Tape measure': 'trade-clothing-tailor.png',
+    'Apple tree': 'trade-farm-apple-tree.png',
+    'Pint of beer': 'trade-drink-beer.png',
+    'Teacup and saucer': 'trade-ceramics-cup.png',
+    'Stoneware dog bowl': 'trade-ceramics-dog-bowl.png',
+    'Flat cap': 'trade-clothing-flat-cap.png',
+    'Wheel mid-throw': 'trade-ceramics-potters-wheel.png',
+    'Ring on a mandrel': 'trade-jewellery-ring.png',
+    'Folded t-shirts': 'trade-clothing-t-shirts.png',
+    'Watch and strap': 'trade-jewellery-watch.png'
+  };
 
   function buildSlots(){
     const layer = document.getElementById('sketchLayer');
@@ -2436,6 +2450,13 @@ const Landing = (function(){
       const c = i % cols, r = Math.floor(i / cols);
       const w = 100 / cols, h = 100 / rows;
       const rot = ((i * 37) % 10 - 5);
+      const imgName = SKETCH_MAP[s];
+      if (imgName) {
+        return `<div class="slot has-image" style="left:${(c*w+w*0.05).toFixed(2)}%;top:${(r*h+h*0.05).toFixed(2)}%;` +
+               `width:${(w*0.90).toFixed(2)}%;height:${(h*0.90).toFixed(2)}%;transform:rotate(${rot}deg);border:none;background:transparent;box-shadow:none;">` +
+               `<img src="assets/illustration/${imgName}" alt="${s}" style="width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;opacity:0.88;">` +
+               `</div>`;
+      }
       return `<div class="slot" style="left:${(c*w+w*0.13).toFixed(2)}%;top:${(r*h+h*0.13).toFixed(2)}%;` +
              `width:${(w*0.74).toFixed(2)}%;height:${(h*0.74).toFixed(2)}%;transform:rotate(${rot}deg)">${s}</div>`;
     }).join('');
