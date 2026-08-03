@@ -165,10 +165,21 @@
   .loader-text{font-size:15px;font-weight:600;color:var(--navy)}
 
   .search-input-box { position: relative; display: flex; align-items: center; }
-  #search { width: 100%; padding: 11px 82px 11px 38px; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; outline: none; background: #fcfdfe; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: .2s; }
-  .btn-reset { position: absolute; right: 6px; background: var(--navy); color: #fff; border: none; padding: 6px 11px; border-radius: 7px; font-size: 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: .15s; z-index: 2; font-family: inherit; }
+  #search { width: 100%; padding: 11px 90px 11px 38px; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; outline: none; background: #fcfdfe; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: .2s; }
+  /* type="search" gives Chrome/Safari their own grey ✕. We already have the
+     green Reset button, so suppress the native one on every platform. */
+  #search::-webkit-search-cancel-button,
+  #search::-webkit-search-decoration,
+  #search::-webkit-search-results-button,
+  #search::-webkit-search-results-decoration { -webkit-appearance: none; appearance: none; display: none; }
+  #search::-ms-clear, #search::-ms-reveal { display: none; width: 0; height: 0; }
+  .btn-reset { position: absolute; right: 12px; background: var(--navy); color: #fff; border: none; padding: 6px 11px; border-radius: 7px; font-size: 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: .15s; z-index: 2; font-family: inherit; }
   .btn-reset:hover { background: var(--red); }
   .chip.disabled { opacity: 0.35; pointer-events: none; filter: grayscale(0.85); cursor: not-allowed; }
+
+  /* Listings load failure message */
+  .load-detail { display: block; font-size: 11px; opacity: .65; margin: 2px 0; font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .link-btn { background: none; border: none; padding: 0; font: inherit; color: var(--green, #004225); text-decoration: underline; cursor: pointer; }
 
   /* Grid Layout with Left Filter Sidebar - Full Width 4-Column */
   #gridView { position: absolute; inset: 0; background: var(--bg); overflow-y: auto; z-index: 900; display: none; padding: 20px 24px; }
@@ -267,10 +278,10 @@
     .search-input-box svg{left:12px}
     /* Icon-only reset, and only once there is something to reset — the word
        "Reset" was swallowing a third of an already narrow field. */
-    .btn-reset{display:none;right:5px;width:36px;height:36px;padding:0;justify-content:center;font-size:14px}
+    .btn-reset{display:none;right:10px;width:36px;height:36px;padding:0;justify-content:center;font-size:14px}
     .btn-reset .rlabel{display:none}
     body.is-filtered .btn-reset{display:inline-flex}
-    body.is-filtered #search{padding-right:46px}
+    body.is-filtered #search{padding-right:54px}
     #filterBtn{display:inline-flex}
     .btn-view-toggle{width:44px;height:44px;padding:0;justify-content:center;font-size:18px;border-radius:11px}
     .btn-view-toggle .label{display:none}
@@ -2114,18 +2125,69 @@ function resetSearchAndShowGrid() {
 }
 
 // --- Load data & Boot ---
-fetch('data/businesses.json')
-  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data => {
-    BUSINESSES = data;
-    buildMarkers();
-    toggleView('map');
-    Landing.ready();
-  })
-  .catch(() => {
-    countEl.innerHTML = 'Could not load listings. Run local server (e.g. <code>python3 -m http.server</code>).';
-    Landing.abort();
-  });
+/* The listings fetch used to be a single attempt with a hardcoded "run
+   python3 -m http.server" message — which is wrong anywhere but a local
+   checkout, and left the app permanently empty if the request was dropped
+   (corporate proxy, tab loaded in the background, flaky wifi). It now retries,
+   reports the real error, and re-attempts whenever the tab is brought forward. */
+const DataLoader = (function(){
+  let loaded = false, inflight = false, attempt = 0;
+  const MAX = 3;
+  const isLocalFile = location.protocol === 'file:';
+  // Landing is declared below this block, so guard against the temporal dead
+  // zone rather than assuming it exists.
+  const landing = fn => { try { Landing[fn](); } catch(e){} };
+
+  function fail(err){
+    console.error('[listings] load failed:', err);
+    const detail = isLocalFile
+      ? 'Open the site over http — from the project folder run <code>python3 -m http.server</code>.'
+      : `<span class="load-detail">${String(err && err.message || err)}</span>`;
+    countEl.innerHTML =
+      `Could not load listings. ${detail} <button type="button" id="retryLoad" class="link-btn">Try again</button>`;
+    const btn = document.getElementById('retryLoad');
+    if (btn) btn.addEventListener('click', () => { attempt = 0; load(); });
+    landing('abort');
+  }
+
+  function load(){
+    if (loaded || inflight) return;
+    inflight = true;
+    attempt++;
+    // Cache-bust on retries only, so the happy path still hits the CDN cache.
+    const url = 'data/businesses.json' + (attempt > 1 ? `?r=${Date.now()}` : '');
+    fetch(url, { cache: attempt > 1 ? 'reload' : 'default' })
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(data => {
+        if (!Array.isArray(data) || !data.length) throw new Error('empty listings file');
+        loaded = true; inflight = false;
+        BUSINESSES = data;
+        buildMarkers();
+        toggleView('map');
+        landing('ready');
+      })
+      .catch(err => {
+        inflight = false;
+        if (attempt < MAX) {
+          countEl.textContent = 'Loading listings…';
+          setTimeout(load, 400 * attempt);   // 400ms, then 800ms
+        } else {
+          fail(err);
+        }
+      });
+  }
+
+  // Self-heal: a tab that loaded in the background, or lost its connection,
+  // gets another go the moment it is looked at again.
+  const nudge = () => { if (!loaded && !inflight) { attempt = 0; load(); } };
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) nudge(); });
+  window.addEventListener('online', nudge);
+  window.addEventListener('pageshow', nudge);
+
+  return { load, nudge };
+})();
+
+DataLoader.load();
 
 /* ==========================================================================
    LANDING — maker constellation

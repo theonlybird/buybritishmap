@@ -105,6 +105,29 @@ Search Internet Archive for terms like `illustrated catalogue ironmonger 1880`, 
 
 **Licensing:** verify each source individually. UK copyright in an engraving expires 70 years after the engraver's death, so genuine 1880s catalogue work is safe, but a modern *digitisation* may carry its own claimed rights depending on the institution. The CC0 collections below sidestep that question entirely.
 
+### Named sources, in order of usefulness
+
+**1. Internet Archive — the trade catalogues themselves.** The richest seam, because a single volume gives you one engraver's hand across hundreds of objects. Confirmed volumes worth opening first:
+
+| Volume | Covers |
+| --- | --- |
+| [Carolan, Cory & Co. Illustrated Catalogue of Hardware, Iron and Steel](https://archive.org/details/CarolanCoryIllusCatalogueOfHardware) | 440pp. Blades, chisels, grinding wheels, bench tools — most of the metal and wood subjects |
+| [Swartchild & Co, Watchmakers', Jewelers' and Engravers' Supplies, 1897–98](https://archive.org/details/SwartchildCatalogue189798) | Mandrels, loupes, movements, watch cases — the whole jewellery and watches set |
+| [Illustrated catalogue of agricultural implements & machines](https://archive.org/details/cihm_26103) | Churns, farm tooling |
+| [The Victorian catalogue of household goods](https://archive.org/details/victoriancatalog0000unse) | 5,000 items — teacups, crockery, domestic objects |
+
+Search the Archive with `illustrated catalogue` plus a trade and a decade, filter to "Always Available", and use *search inside* to jump to the right page. Download the full-resolution JP2 zip rather than screenshotting the page viewer.
+
+**2. [British Library Flickr Commons](https://www.flickr.com/photos/britishlibrary/)** — over a million images cut from 65,000 digitised 17th–19th century books, released under the Public Domain Mark, so no rights question at all. Browse the [Mechanical Curator collection](https://publicdomainreview.org/collection/the-british-library-s-mechanical-curator-million/) or the themed albums. Best for the odd subjects a trade catalogue won't carry — animals, landscape, the pub sign.
+
+**3. [rawpixel](https://www.rawpixel.com/search/victorian%20engraving) and [PICRYL](https://picryl.com/topics/victorian)** — CC0, already cut out and cleaned up. Fastest route to a usable file, but the images come from many hands, so use these to fill gaps rather than to establish the style.
+
+**4. Dover clip-art compendia** — e.g. [Victorian goods and merchandise: 2,300 illustrations](https://archive.org/details/victoriangoodsme00caro). A curated shortcut, and the underlying engravings are out of copyright, but the compilation itself is a modern edition — check the edition's own permissions notice before commercial use.
+
+### Mapping to our 24
+
+Realistically the catalogues cover the tools and hard goods: blade on a grinder, chisel, ring on a mandrel, watch, kiln door, churn, spinning wheel, loom, shuttle, last and knife, tape measure. The British Library set covers pig, apple tree, cheese, leeks, tomatoes, pub sign. Expect to draw fresh: folded t-shirts, the high-heeled shoe, the stoneware dog bowl, the pint glass, and probably the flat cap — but by then you will have twenty reference drawings to match against, which is a far easier brief than starting cold.
+
 ---
 
 ## Paste-ready prompt
