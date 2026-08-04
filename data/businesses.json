@@ -242,7 +242,7 @@
     "description": "Derbyshire knitwear made at Lea Mills since 1784 \u2014 fine-gauge merino and Sea Island cotton knitted in England.",
     "evidence_note": "Knitted in England since 1784. (Raw fibre imported, as all UK knitwear; knitted/finished in UK.)",
     "tier_confidence": "medium",
-    "logo": "assets/logos/john-smedley.png",
+    "logo": "assets/logos/john-smedley.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear",
@@ -2169,7 +2169,7 @@
     "description": "Family-run County Durham farm shop with butchery, deli and bakery selling locally sourced meats and homemade goods.",
     "evidence_note": "Own farm + locally sourced; butchery/deli/bakery.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/knitsley.png",
+    "logo": "assets/logos/placeholder.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
@@ -2647,7 +2647,7 @@
     "tier_confidence": "medium",
     "category": "ceramics",
     "instagram": "https://www.instagram.com/brickettdavda/",
-    "logo": "assets/logos/placeholder.png",
+    "logo": "assets/logos/brickett-davda.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tableware",
@@ -4943,7 +4943,7 @@
     "description": "The independent family bootmaker on St James's Street \u2014 bespoke only, entirely by hand.",
     "evidence_note": "Wholly hand-made in the London workshop; calf bought in from Continental tanneries, no UK tannery evidenced.",
     "tier_confidence": "high",
-    "logo": "assets/logos/placeholder.png",
+    "logo": "assets/logos/john-lobb-ltd.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
@@ -5408,7 +5408,7 @@
     "description": "Cashmere wraps and scarves spun and knitted in the Scottish Lowlands.",
     "evidence_note": "Company names Todd & Duncan at Loch Leven as spinner and Hawick as the knitting town \u2014 both checkable.",
     "tier_confidence": "high",
-    "logo": "assets/logos/placeholder.png",
+    "logo": "assets/logos/anise-cashmere.jpg",
     "source": "unrecorded \u2014 verify before relying on",
     "product_tags": [
       "knitwear",
@@ -5768,7 +5768,7 @@
     "description": "Northamptonshire shoemaker since 1866, with English-made welted collections.",
     "evidence_note": "The G:One and G:Zero collections are made wholly at the Rushden factory, but other lines have uppers sewn in India, so only part of the range is England-made.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/grenson.png",
+    "logo": "assets/logos/grenson.svg",
     "source": "unrecorded \u2014 verify before relying on",
     "product_tags": [
       "footwear & boots"
@@ -6105,7 +6105,7 @@
     "description": "Lingerie, nightwear and knitwear made at the company's own Derbyshire workrooms.",
     "evidence_note": "Design and manufacture take place entirely in their own Alfreton factory \u2014 never offshored, 2020 Queen's Award for British Manufacturer of the Year \u2014 but the fabric mills are not named.",
     "tier_confidence": "high",
-    "logo": "assets/logos/david-nieper.png",
+    "logo": "assets/logos/david-nieper.svg",
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
@@ -8844,7 +8844,7 @@
     "description": "Towelling robes handmade in England since 1946.",
     "evidence_note": "Trading as Makin & Lloyd since 1946; robes described as designed in Italy and handmade in England, with no UK mill named for the towelling.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/the-bathrobe-company.png",
+    "logo": "assets/logos/the-bathrobe-company.svg",
     "source": "unrecorded \u2014 verify before relying on",
     "product_tags": [
       "underwear & nightwear"
@@ -8888,7 +8888,7 @@
     "description": "Made-to-order dresses cut in Brighton and sewn by UK seamstresses.",
     "evidence_note": "Orders cut by hand in the Brighton studio and sewn by home-based seamstresses, but the hero 100% flax fabric is designed and made by a Lithuanian supplier.",
     "tier_confidence": "high",
-    "logo": "assets/logos/placeholder.png",
+    "logo": "assets/logos/faith-rowan-leeves.svg",
     "source": "unrecorded \u2014 verify before relying on",
     "product_tags": [
       "womenswear",
@@ -8911,7 +8911,7 @@
     "description": "Handmade children's clothing made in Sussex.",
     "evidence_note": "Handmade in Sussex, but the printed jersey and French terry fabrics have no UK mill or knitter named. County-level pin.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/lilyberry.png",
+    "logo": "assets/logos/lilyberry.webp",
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "childrenswear"
@@ -9833,7 +9833,7 @@
     "description": "Hand-thrown stoneware made on the west side of Lewis by Alex and Sue Blair since 1974.",
     "evidence_note": "Made at the Borgh Pottery workshop, Isle of Lewis, since 1974; clay-body origin not stated \u2014 Silver pending confirmation.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/placeholder.png",
+    "logo": "assets/logos/borgh-pottery.png",
     "source": "unrecorded \u2014 verify before relying on",
     "product_tags": [
       "pottery"
@@ -10035,7 +10035,7 @@
     "description": "Cotswold pottery studio throwing hand-made stoneware and porcelain.",
     "evidence_note": "Thrown and fired in Bourton-on-the-Water studio; clay origin unevidenced \u2014 Silver default.",
     "tier_confidence": "high",
-    "logo": "assets/logos/cotswold-pottery.png",
+    "logo": "assets/logos/cotswold-pottery.svg",
     "source": "unrecorded \u2014 verify before relying on",
     "product_tags": [
       "pottery"
