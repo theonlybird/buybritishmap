@@ -4652,7 +4652,7 @@
     "description": "Reproduction flight and motorcycle jackets, hand-made in a Borders mill.",
     "evidence_note": "Jackets hand-made at Greenbank Mill, Galashiels, but hides are American front-quarter and Italian vegetable-tanned horsehide.",
     "tier_confidence": "high",
-    "logo": "assets/logos/aero-leather.png",
+    "logo": "assets/logos/aero-leather.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
