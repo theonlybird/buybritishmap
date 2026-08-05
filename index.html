@@ -2617,6 +2617,13 @@ const Landing = (function(){
     if (leaving) return;
     leaving = true;
 
+    /* The escape hatch's clock starts HERE, on the click — not at page load.
+       Worst case from this point is a 6s wait on the listings plus a ~3.6s
+       sequence, so 12s is comfortable margin without ever firing while the
+       user is still on the landing card. Deliberately not pushed onto
+       `timers`: skip() clears those, and this must survive anything. */
+    setTimeout(()=>document.body.classList.remove('intro'), 12000);
+
     // The pins ARE the sequence, so it can't start until the listings are in.
     // On a fast connection they always are and this is a no-op. On a slow one
     // we hold on the landing card — with the button showing it's working —
@@ -2690,8 +2697,29 @@ const Landing = (function(){
 // The intro is interactive from the moment the script runs — never gated on data.
 Landing.arm();
 
-// Belt and braces: whatever happens, never leave the app hidden behind the intro.
-setTimeout(()=>document.body.classList.remove('intro'), 12000);
+/* Belt and braces: never leave the app stranded behind the intro.
+
+   This used to be an unconditional 12s timer from page load, which quietly
+   broke the whole reveal for anyone who lingered. The landing is MEANT to be
+   played with — the cursor trail and the engravings easily hold someone for
+   20 seconds — and at 12s the tiles were faded in behind the (opaque) landing
+   card. Invisible at the time, but when they finally clicked through, the
+   sketch drew itself over an already-visible map. Whether it happened came
+   down purely to how long you dwelt, which is why it looked random.
+
+   The click-time failsafe now lives in dismiss(). This one only rescues the
+   case it was actually written for: body is still .intro but there is no
+   landing on screen to click, so nothing else is ever going to clear it. */
+setTimeout(()=>{
+  const l = document.getElementById('landing');
+  const landingUp = l && !l.classList.contains('out') && !l.classList.contains('gone')
+                      && getComputedStyle(l).display !== 'none';
+  if (landingUp) return;            // still on the landing: their call, not ours
+  if (document.body.classList.contains('intro')){
+    Diag.log('failsafe: revealed map (intro left up with no landing on screen)');
+    document.body.classList.remove('intro');
+  }
+}, 12000);
 
 fetch('data/uk-coast.json').then(r=>r.json()).then(c=>{ window.__COAST__ = c; }).catch(()=>{});
 </script>
