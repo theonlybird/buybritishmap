@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#FAF7F0" />
-<title>Contact — Grown and Made UK</title>
+<title>FAQs — Grown and Made UK</title>
 <link rel="stylesheet" href="assets/theme.css" />
 <style>
   /* Palette and type live in assets/theme.css */
@@ -145,14 +145,23 @@
 </header>
 <div class="wrap">
   <div class="card">
-    <h2>Contact us</h2>
-    <p>We&rsquo;d love to hear from you &mdash; corrections, questions, press, or just a maker we should know about.</p>
-    <h3>Suggest a business</h3>
-    <p>The quickest route is the <a href="submit.html">suggestion form</a> &mdash; it asks exactly the questions we need to verify a listing.</p>
-    <h3>Everything else</h3>
-    <p>Email us at <a href="mailto:hello@buybritishmap.uk">hello@buybritishmap.uk</a> and we&rsquo;ll get back to you as soon as we can.</p>
-    <h3>Are you a listed business?</h3>
-    <p>If you&rsquo;d like to send us your logo, correct a detail, or make the case for a tier upgrade with evidence about your materials, we&rsquo;re very glad to hear it &mdash; that&rsquo;s exactly how the map gets better.</p>
+    <h2>Frequently asked questions</h2>
+    <h3>What do the Gold and Silver badges mean?</h3>
+    <p><span class="tag gold">Gold</span> means fully made or grown in the UK, including the main material. <span class="tag silver">Silver</span> means genuinely made in the UK but with an imported main material or some imported stock. Products merely designed, branded, printed or packed in the UK don&rsquo;t qualify at all.</p>
+    <h3>Why is a famous British brand only Silver?</h3>
+    <p>Because the tier follows the material, not the reputation. Northampton&rsquo;s great shoemakers are Silver because the calf leather is imported &mdash; superb British making, imported main material. The badge is a statement of fact, not a criticism.</p>
+    <h3>Do businesses pay to be listed?</h3>
+    <p>No. Nobody pays for a listing, a badge, or placement &mdash; and nobody can. Tiers are decided by evidence alone, and every listing shows its evidence publicly.</p>
+    <h3>How do businesses get on the map?</h3>
+    <p>We research and verify each listing against public evidence &mdash; the business&rsquo;s own website, its stated materials and making locations. Anyone can <a href="submit.html">suggest a business</a>; every suggestion is checked against the standard before it appears.</p>
+    <h3>Something on the map is wrong &mdash; how do I report it?</h3>
+    <p>Please <a href="contact.html">contact us</a> with the listing name and what&rsquo;s wrong. If a business believes its tier understates it &mdash; for example, we couldn&rsquo;t evidence where its clay or fabric comes from &mdash; we&rsquo;ll gladly review with better evidence.</p>
+    <h3>Why are Northern Ireland and the Isle of Man included?</h3>
+    <p>Northern Ireland is part of the UK. The Isle of Man is a Crown dependency rather than part of the UK &mdash; we include it under a broader British Isles view, and we say so openly (it&rsquo;s home to some of the finest making in these islands).</p>
+    <h3>Why isn&rsquo;t my favourite maker listed?</h3>
+    <p>Probably because we haven&rsquo;t got to them yet &mdash; the map grows in researched batches. <a href="submit.html">Tell us about them</a> and we&rsquo;ll check them out.</p>
+    <h3>Is this sponsored or affiliated with anyone?</h3>
+    <p>No. Buy British is independent, carries no advertising, takes no commission, and has no connection to any retailer or trade body.</p>
   </div>
 </div>
 <script>
@@ -167,6 +176,5 @@ document.addEventListener('click', e => {
   if (!burgerMenu.hasAttribute('hidden') && !burgerMenu.contains(e.target)) burgerMenu.setAttribute('hidden','');
 });
 </script>
-<script src="assets/sketch-bg.js"></script>
 </body>
 </html>
