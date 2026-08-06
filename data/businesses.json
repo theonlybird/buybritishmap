@@ -3549,29 +3549,6 @@
     ]
   },
   {
-    "id": "roger-w-smith",
-    "name": "Roger W. Smith",
-    "subcategory": "Watchmaker",
-    "tier": "gold",
-    "listing_type": "online_only",
-    "town": "Isle of Man",
-    "address": "Studio on the Isle of Man (British Isles)",
-    "lat": 54.32,
-    "lng": -4.44,
-    "website": "https://www.rwsmithwatches.com",
-    "description": "Britain's greatest living watchmaker, making watches almost entirely in-house on the Isle of Man in the Daniels tradition \u2014 a handful a year.",
-    "evidence_note": "Movements, dials and cases substantially made in-house on the Isle of Man (Crown dependency \u2014 included by the map's British Isles policy).",
-    "tier_confidence": "high",
-    "category": "jewellery",
-    "instagram": "https://www.instagram.com/rogerwsmithltd/",
-    "logo": "assets/logos/roger-w-smith.png",
-    "source": "verified-batch-2026-07",
-    "product_tags": [
-      "watches",
-      "jewellery"
-    ]
-  },
-  {
     "id": "charles-frodsham",
     "name": "Charles Frodsham & Co",
     "subcategory": "Watchmaker",

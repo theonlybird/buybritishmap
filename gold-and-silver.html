@@ -150,6 +150,14 @@
   th{font-family:var(--font-body);color:var(--green);font-weight:600;
     text-transform:uppercase;letter-spacing:.09em;font-size:11px}
 
+  /* Gold / Silver standard boxes — badge sits tight to the top of the box,
+     and each badge keeps a background distinct from the box behind it. */
+  .standard{padding-top:16px}
+  .standard h3{margin:0 0 4px;line-height:1}
+  .standard .tag{font-size:12px;letter-spacing:.12em;padding:6px 12px;border-radius:4px}
+  .standard.is-silver .tag.silver{background:#D6DAD5;color:var(--silver-mark)}
+  .standard.is-gold .tag.gold{background:#E7D3A2;color:var(--gold-mark)}
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

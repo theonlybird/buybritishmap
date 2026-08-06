@@ -9062,16 +9062,6 @@
   "rescored": false,
   "alreadyGated": true
  },
- "roger-w-smith": {
-  "id": "roger-w-smith",
-  "shopify": false,
-  "platform": null,
-  "reason": "no-feed-found",
-  "checked": "2026-07-31",
-  "tags": [],
-  "tagConfidence": {},
-  "rescored": true
- },
  "charles-frodsham": {
   "id": "charles-frodsham",
   "shopify": false,
