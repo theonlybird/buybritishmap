@@ -1048,6 +1048,29 @@ function escapeHtml(t) {
   return String(t).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
 }
 
+const UK_COUNTIES = new Set([
+  "gloucestershire", "east sussex", "west sussex", "sussex", "north yorkshire", "west yorkshire", "south yorkshire", "yorkshire", "east riding of yorkshire", "west midlands", "suffolk", "warwickshire", "devon", "north devon", "south devon", "cornwall", "surrey", "cambridgeshire", "northumberland", "somerset", "dorset", "cumbria", "lancashire", "moray", "scottish borders", "carmarthenshire", "ceredigion", "fife", "shropshire", "denbighshire", "buckinghamshire", "nottinghamshire", "leicestershire", "oxfordshire", "berkshire", "kent", "essex", "wiltshire", "hampshire", "hertfordshire", "northamptonshire", "staffordshire", "worcestershire", "lincolnshire", "norfolk", "angus", "aberdeenshire", "dumfries & galloway", "dumfries and galloway", "perthshire", "ross-shire", "inverness-shire", "isle of lewis", "isle of wight", "conwy", "vale of glamorgan", "flintshire", "powys", "co. antrim", "co. down", "stockton-on-tees", "gwynedd", "orkney", "anglesey", "peak district", "cheshire", "derbyshire", "greater manchester", "merseyside", "tyne & wear", "tyne and wear", "pembrokeshire", "monmouthshire", "highland", "midlothian", "east lothian", "west lothian", "stirlingshire", "argyll & bute", "argyll and bute", "argyll", "borders", "clackmannanshire", "renfrewshire", "ayrshire", "north ayrshire", "south ayrshire", "east ayrshire", "lanarkshire", "south lanarkshire", "north lanarkshire", "fermanagh", "londonderry", "tyrone", "armagh", "antrim", "down", "glamorgan", "county durham"
+]);
+
+function cleanAddress(addr) {
+  if (!addr) return '';
+  let clean = String(addr).replace(/\([^)]*\)/gi, '').trim();
+  clean = clean.replace(/^made in\s+/gi, '').trim();
+  clean = clean.replace(/\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b/gi, '').trim();
+  clean = clean.replace(/^[,\s;\-]+|[,\s;\-]+$/g, '').replace(/,\s*,/g, ',');
+  let parts = clean.split(/[,;]/).map(p => p.trim()).filter(Boolean);
+  parts = parts.map(p => p.replace(/\b[A-Z]{1,2}\d[A-Z\d]?$/gi, '').trim()).filter(Boolean);
+  if (parts.length > 1) {
+    const nonCounty = parts.filter(p => !UK_COUNTIES.has(p.toLowerCase()));
+    if (nonCounty.length > 0) parts = nonCounty;
+  }
+  if (parts.length > 1 && ['scotland', 'england', 'wales'].includes(parts[parts.length - 1].toLowerCase())) {
+    parts.pop();
+  }
+  return parts.join(', ').trim();
+}
+
+
 const splitView = document.getElementById('splitView');
 const gridView = document.getElementById('gridView');
 const viewToggleBtn = document.getElementById('viewToggleBtn');
@@ -2350,7 +2373,7 @@ const DataLoader = (function(){
         if (!Array.isArray(data) || !data.length) throw new Error('empty listings file');
         clearTimeout(timer);
         loaded = true; inflight = false;
-        BUSINESSES = data;
+        BUSINESSES = data.map(b => ({ ...b, address: cleanAddress(b.address) }));
         boot();
       })
       .catch(err => {
