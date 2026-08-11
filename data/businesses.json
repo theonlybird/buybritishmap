@@ -10692,5 +10692,28 @@
       "fresh meat",
       "farm shop & deli"
     ]
+  },
+  {
+    "id": "henry-watsons-potteries",
+    "name": "Henry Watson's Potteries",
+    "category": "ceramics",
+    "subcategory": "Factory pottery",
+    "tier": "silver",
+    "listing_type": "both",
+    "town": "Wattisfield, Suffolk",
+    "address": "Wattisfield, Diss, Suffolk, IP22 1NH",
+    "lat": 52.332073,
+    "lng": 0.954541,
+    "website": "https://www.henrywatson.com",
+    "instagram": "https://www.instagram.com/henrywatsonpotteries/",
+    "description": "Suffolk terracotta since 1800, still on the site where the family found its clay seam. The Original Suffolk Collection — canisters, bread crocks, chicken bricks — is thrown and fired at Wattisfield by the seventh generation.",
+    "evidence_note": "Own kitchenware ranges made at the Wattisfield works (company pages, marked 'Made in England'). Clay body described by retailers as Staffordshire/Stoke-on-Trent — UK-dug, but not stated first-party, so Silver pending confirmation. Listing covers own-made ware only: the terracotta plant pots and saucers in their garden range are bought in and made in Germany.",
+    "tier_confidence": "medium",
+    "source": "verified-2026-08",
+    "product_tags": [
+      "pottery",
+      "tableware",
+      "bowls"
+    ]
   }
 ]
