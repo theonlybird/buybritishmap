@@ -804,6 +804,10 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<!-- Generated from scripts/lib/product-vocab.js. Maps what a person types
+     ("sausages", "cider", "spuds") onto the canonical product tags the
+     catalogue is indexed by. Same lexicon the search API uses. -->
+<script src="assets/query-expand.js"></script>
 <script>
 /* ==========================================================================
    DIAG — add ?debug to the URL for an on-screen boot log.
@@ -1606,7 +1610,29 @@ function normaliseQuery(query) {
     if (near) { take(near, tok); understood++; return; }
     take(tok, tok); // keep it, but it counts as not understood
   });
-  return { terms, understood, display };
+
+  // Everything above can only recognise words the catalogue literally
+  // contains. That is why "sausages" was not understood: no listing spells the
+  // word, they are tagged "pork & bacon". The shared lexicon closes that gap —
+  // it maps the query onto canonical tags, so a query counts as understood
+  // when we know what it MEANS, not only when we have seen the word.
+  const tags = expandToTags(query);
+  if (tags.length) understood++;
+
+  return { terms, understood, display, tags };
+}
+
+// Canonical product tags implied by a query, via the shared lexicon. Returns
+// [] if the generated file failed to load, so search degrades to its previous
+// behaviour rather than throwing.
+function expandToTags(query) {
+  try {
+    const api = window.BBQueryExpand;
+    if (!api || typeof api.expandQuery !== 'function') return [];
+    return api.expandQuery(String(query || '')).tags || [];
+  } catch (e) {
+    return [];
+  }
 }
 
 // Words that name a place in this catalogue, so a query term can be told apart
@@ -1672,8 +1698,9 @@ function classifyTerms(terms) {
 }
 
 function localSearch(query) {
-  const { terms, understood, display } = normaliseQuery(query);
-  if (!terms.length || !understood) {
+  const { terms, understood, display, tags } = normaliseQuery(query);
+  const queryTags = tags || [];
+  if ((!terms.length || !understood) && !queryTags.length) {
     return { matches: [], terms, understood, product: [], place: [], inPlace: 0,
              productDisplay: [], placeDisplay: [] };
   }
@@ -1691,6 +1718,13 @@ function localSearch(query) {
     const desc = b.description || '';
 
     let productScore = 0, placeScore = 0;
+
+    // Canonical tag against canonical tag. Scored above a literal word match
+    // because it is a stronger signal: the word came from the shop's own
+    // taxonomy rather than from prose that happens to contain it.
+    const ownTags = (b.product_tags || []).map(t => String(t).toLowerCase());
+    queryTags.forEach(t => { if (ownTags.indexOf(t) !== -1) productScore += 14; });
+
     product.forEach(t => {
       if (hasWord(tags, t)) productScore += 12;
       if (hasWord(kind, t)) productScore += 8;

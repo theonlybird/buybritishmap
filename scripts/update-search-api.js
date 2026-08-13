@@ -1,10 +1,25 @@
 const fs = require('fs');
 const path = require('path');
+const { serializeLexicon } = require('./lib/product-vocab');
 
 const dataPath = path.join(__dirname, '../data/businesses.json');
 const apiPath = path.join(__dirname, '../api/ai-search.js');
+const clientPath = path.join(__dirname, '../assets/query-expand.js');
+const expanderPath = path.join(__dirname, 'lib/query-expand.js');
 
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+
+// The deployed function is a single file with no imports, so the query
+// expander is inlined here rather than required at runtime. It is COPIED, not
+// retyped: scripts/lib/query-expand.js is the only implementation, and the
+// lexicon is serialised straight out of product-vocab.js. That is what stops
+// the tagging side and the search side drifting apart, which is the fault this
+// whole change exists to fix.
+const expanderSource = fs.readFileSync(expanderPath, 'utf8')
+  .split('// --- EXPORTS (stripped when inlined into the API) ---')[0]
+  .trimEnd();
+
+const lexiconJson = JSON.stringify(serializeLexicon());
 
 const catalog = data.map(b => ({
   i: b.id,
@@ -21,56 +36,15 @@ const catalogJson = JSON.stringify(catalog);
 
 const apiCode = `const BUSINESS_CATALOG = ${catalogJson};
 
-function stageOneFilter(query, catalog, maxCandidates = 40) {
-  if (!query || typeof query !== 'string') return catalog.slice(0, maxCandidates);
-  
-  const qClean = query.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-  if (!qClean) return catalog.slice(0, maxCandidates);
-  
-  const stopWords = new Set(['the', 'a', 'an', 'and', 'or', 'for', 'in', 'on', 'at', 'to', 'of', 'with', 'who', 'sell', 'sells', 'selling', 'make', 'makes', 'maker', 'makers', 'making', 'which', 'what', 'can', 'are', 'is', 'do', 'does', 'find', 'looking']);
-  const tokens = qClean.split(/\\s+/).filter(t => t.length > 1 && !stopWords.has(t));
+// GENERATED FILE — do not edit by hand.
+// Rebuild with: node scripts/update-search-api.js
+// The lexicon below is serialised from scripts/lib/product-vocab.js and the
+// expander is copied verbatim from scripts/lib/query-expand.js. Edit those.
+const QUERY_LEXICON = ${lexiconJson};
 
-  const scored = catalog.map(item => {
-    let score = 0;
-    const textNorm = ' ' + (item.n + ' ' + item.c + ' ' + item.s + ' ' + item.t + ' ' + item.d).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
-    const ptList = (item.pt || []).map(p => p.toLowerCase());
-    const ptStr = ' ' + ptList.join(' ') + ' ';
+${expanderSource}
 
-    if (qClean.length >= 3 && textNorm.includes(' ' + qClean + ' ')) {
-      score += 20;
-    }
-
-    ptList.forEach(pt => {
-      const ptNorm = pt.replace(/[^a-z0-9]+/g, ' ');
-      if (qClean.includes(ptNorm) || ptNorm.includes(qClean)) {
-        score += 15;
-      }
-    });
-
-    tokens.forEach(t => {
-      if (ptStr.includes(' ' + t + ' ')) score += 10;
-      if (item.c.toLowerCase().includes(t)) score += 8;
-      if (item.s.toLowerCase().includes(t)) score += 6;
-      if (item.n.toLowerCase().includes(t)) score += 6;
-      if (item.t.toLowerCase().includes(t)) score += 8;
-      if (item.d.toLowerCase().includes(t)) score += 3;
-    });
-
-    return { item, score };
-  });
-
-  scored.sort((a, b) => b.score - a.score);
-
-  const matched = scored.filter(s => s.score > 0).map(s => s.item);
-
-  if (matched.length >= 15) {
-    return matched.slice(0, maxCandidates);
-  }
-
-  const matchedIds = new Set(matched.map(m => m.i));
-  const fallback = catalog.filter(c => !matchedIds.has(c.i)).slice(0, maxCandidates - matched.length);
-  return [...matched, ...fallback];
-}
+const { expandQuery, stageOneFilter } = createQueryExpander(QUERY_LEXICON);
 
 // Preference order, not a fixed list. Google retires models and restricts old
 // ones to existing users without warning, which is what broke this twice: the
@@ -364,7 +338,40 @@ CANDIDATE CATALOG:
     details: String(lastBody).slice(0, 500)
   });
 };
+
+// Exposed for scripts/test-search.js, which asserts against the file that
+// actually deploys rather than against the library it was generated from.
+// Vercel only cares that the default export is callable; extra properties on
+// it are ignored.
+module.exports.stageOneFilter = stageOneFilter;
+module.exports.expandQuery = expandQuery;
+module.exports.BUSINESS_CATALOG = BUSINESS_CATALOG;
 `;
 
 fs.writeFileSync(apiPath, apiCode);
-console.log('Successfully updated api/ai-search.js with 429 quota fallback handling.');
+
+// The browser needs the same lexicon. index.html has its own local search,
+// used whenever the API is slow, rate-limited or down — and it had exactly the
+// same blind spot: a word the catalogue does not literally contain counts as
+// "not understood", which is what produced "No results for sausages" even
+// while the map was full of butchers. One source, three consumers.
+const clientCode = `/* GENERATED FILE — do not edit by hand.
+   Rebuild with: node scripts/update-search-api.js
+   Source: scripts/lib/query-expand.js + scripts/lib/product-vocab.js */
+(function (root) {
+  var QUERY_LEXICON = ${lexiconJson};
+
+${expanderSource.split('\n').map(l => (l ? '  ' + l : l)).join('\n')}
+
+  var api = createQueryExpander(QUERY_LEXICON);
+  root.BBQueryExpand = { expandQuery: api.expandQuery, lexiconVersion: QUERY_LEXICON.version };
+})(typeof window !== 'undefined' ? window : this);
+`;
+fs.writeFileSync(clientPath, clientCode);
+
+const tagged = catalog.filter(c => c.pt && c.pt.length).length;
+console.log(`assets/query-expand.js rebuilt.`);
+console.log(`api/ai-search.js rebuilt.`);
+console.log(`  businesses      : ${catalog.length} (${tagged} with product tags)`);
+console.log(`  lexicon version : ${JSON.parse(lexiconJson).version}`);
+console.log(`  query terms     : ${JSON.parse(lexiconJson).vocab.length} shop-side + ${JSON.parse(lexiconJson).extra.length} search-side`);

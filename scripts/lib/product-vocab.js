@@ -149,6 +149,13 @@ const NOISE = new RegExp('\\b(' + [
   'champagne glasses', 'champagne glass', 'champagne flutes?', 'shot glasses',
   'shot glass', 'beer glasses', 'beer glass', 'whisky glasses', 'whisky glass',
   'whiskey glasses', 'whiskey glass', 'glass tumblers?', 'stemware',
+  // Food words inside the name of a thing that is not that food. All found in
+  // the live harvest: "Big Green Egg" is a barbecue, "Duck Fat Yorkshire
+  // Puddings" are not poultry, and whipped tallow butter is a skin balm.
+  // Multi-word entries are matched whole, so the bare noun never survives.
+  'big green eggs?', 'green eggs?', 'duck fat', 'goose fat', 'beef dripping',
+  'tallow butter', 'body butter', 'shea butter', 'cocoa butter', 'peanut butter',
+  'nut butter', 'apple brandy', 'butter dish(es)?', 'egg cups?', 'egg timers?',
   // colours & finishes
   'cream', 'whiskey', 'whisky', 'wine', 'burgundy', 'port', 'chocolate', 'coffee', 'honey',
   'oatmeal', 'biscuit', 'caramel', 'mustard', 'olive', 'plum', 'cherry', 'peach', 'oxblood',
@@ -233,11 +240,105 @@ function isTagAllowed(tag, category) {
 
 // Bump whenever the word lists or rules change, so the harvester can tell
 // which stored entries predate the current vocabulary and need re-reading.
+// NB: only the TAGGING rules matter here. QUERY_EXTRA below never touches a
+// stored tag, so adding search words to it does not invalidate the harvest.
 const VOCAB_VERSION = 5;
+
+// ---------------------------------------------------------------------------
+// Query-side vocabulary.
+//
+// VOCAB above is written in SHOP language — the words that appear in product
+// titles and a shop's own taxonomy. People search in KITCHEN-TABLE language:
+// "bangers", "spuds", "a joint of beef". Those words never appear in a product
+// feed, so they have no business in VOCAB (they would only add false positives
+// when tagging), but they are exactly what search has to understand.
+//
+// So this is a second list, used only when interpreting a query, never when
+// tagging a business. Both map to the SAME canonical tags, which is what keeps
+// the two sides in step.
+// ---------------------------------------------------------------------------
+const QUERY_EXTRA = [
+  // --- meat, as ordered at a counter rather than as listed in a feed ---
+  ['pork & bacon',      /\b(banger|chipolata|salami|chorizo|charcuterie|cured meat|pancetta|prosciutto|pig|hog roast|pork pie|scratching)s?\b/i, GROUPS.FOOD],
+  ['beef',              /\b(steak|mince|burger|joint of beef|topside|silverside|braising steak|ox ?tail|bone broth|cow|cattle|bullock)s?\b/i,     GROUPS.FOOD],
+  ['lamb',              /\b(chop|shank|sheep|ewe|shoulder of lamb)s?\b/i,                                                                          GROUPS.FOOD],
+  ['poultry',           /\b(free ?range chicken|christmas turkey|bird|drumstick|thigh|wing)s?\b/i,                                                 GROUPS.FOOD],
+  ['game & venison',    /\b(wild meat|grouse|woodcock|hare|wild boar)s?\b/i,                                                                       GROUPS.FOOD],
+  // A butcher's counter is the single most useful thing to be able to search
+  // for, and it is how farm shops describe themselves.
+  ['pork & bacon',      /\b(butcher|butchery|butchers'?)\b/i,                                                                                      GROUPS.FOOD],
+
+  // --- fruit & veg ---
+  ['fruit & veg',       /\b(spud|tattie|greens|veggie|veg|produce|seasonal veg|root veg|leek|carrot|onion|cabbage|kale|tomato|strawberr|raspberr|asparagus|pumpkin|squash|sprout|bean|pea|beetroot|parsnip|rhubarb|plum|pear|cherr|berr)(y|ies|e?s)?\b/i, GROUPS.FOOD],
+  ['fruit & veg',       /\b(p\.?y\.?o\.?|pick your own|pick-your-own|greengrocer|market garden)\b/i,                                               GROUPS.FOOD],
+
+  // --- dairy ---
+  ['dairy & cheese',    /\b(raw milk|milk vending|milk station|cheddar|brie|stilton|wensleydale|cheesemonger|creamery|dairy|cream|ice ?cream|kefir|curd)s?\b/i, GROUPS.FOOD],
+
+  // --- bakery ---
+  ['bread & bakery',    /\b(sourdough|baker|bakehouse|bun|roll|pie|tart|croissant|doughnut|donut|biscuit|shortbread|flapjack|brownie|crumpet)s?\b/i, GROUPS.FOOD],
+
+  // --- eggs, preserves, store cupboard ---
+  ['eggs',              /\b(free ?range egg|duck egg|egg box|dozen eggs)s?\b/i,                                                                     GROUPS.FOOD],
+  ['preserves & honey', /\b(pickle|relish|conserve|curd|marmite|beeswax|beekeep|apiar)(y|ies|e?s)?\b/i,                                             GROUPS.FOOD],
+  ['flour & grain',     /\b(oat|oatmeal|porridge|granola|muesli|rye|mill|milled|stoneground|stone ?ground|pasta|rice|lentil|pulse)s?\b/i,           GROUPS.FOOD],
+  // Deli counters sell cheese and cured meat; both are worth returning.
+  ['dairy & cheese',    /\b(deli|delicatessen|farm ?shop|food hall|farm ?gate|farmers'? market)\b/i,                                                GROUPS.FOOD],
+
+  // --- drink ---
+  ['drinks & spirits',  /\b(perry|mead|cordial|juice|squash drink|lager|stout|bitter|real ale|craft beer|brewer|brewery|distiller|distillery|cider ?press|orchard|vineyard|kombucha|tonic)(y|ies|e?s)?\b/i, GROUPS.DRINK],
+
+  // --- a few non-food gaps in everyday search language ---
+  // "knitted" is how people search; "knit" is how shops write. The tagging
+  // regex only has the latter, so "knitted vests" found waistcoats but not
+  // knitwear.
+  ['knitwear',          /\b(knitted|knitting|hand ?knit|woolly|woollen|wool jumper|aran|fair ?isle|guernsey|gansey)s?\b/i,                          GROUPS.CLOTHING],
+  // A glasses case is a case, and the head-noun rule correctly refuses to read
+  // it as eyewear — which left the query matching nothing at all. It is a
+  // leather good, so say so.
+  ['bags & leather goods', /\b(glasses case|spectacle case|phone case|pencil case|wash ?bag|dopp kit|card holder|key ?fob)s?\b/i,                    GROUPS.BAGS],
+  ['footwear & boots',  /\b(wellie|wellington|welly|footwear|cobbler|shoemaker)s?\b/i,                                                              GROUPS.FOOTWEAR],
+  ['cutlery & knives',  /\b(cutler|penknife|pocket ?knife|chef'?s knife|kitchen knife|sharpen)(y|ies|e?s)?\b/i,                                     GROUPS.CUTLERY],
+  ['bags & leather goods', /\b(leather ?goods|leatherwork|saddler|tote)s?\b/i,                                                                      GROUPS.BAGS],
+  ['jewellery',         /\b(engagement|wedding band|goldsmith|silversmith|jeweller)s?\b/i,                                                          GROUPS.JEWELLERY],
+  ['pottery',           /\b(potter|kiln|thrown|wheel ?thrown|studio pottery)s?\b/i,                                                                 GROUPS.CERAMICS],
+];
+
+// Which map categories a tag group can plausibly live in. The inverse of
+// CATEGORY_ALLOWS, computed so the two can never disagree. Used by search to
+// decide which slice of the map to fall back to when nothing scores.
+const GROUP_CATEGORIES = {};
+for (const [category, groups] of Object.entries(CATEGORY_ALLOWS)) {
+  for (const g of groups) {
+    (GROUP_CATEGORIES[g] = GROUP_CATEGORIES[g] || []).push(category);
+  }
+}
+
+/**
+ * Everything the query expander needs, in a form that survives JSON.stringify.
+ *
+ * The search API is a single generated file with no imports, so the lexicon is
+ * inlined into it at build time rather than required at runtime. Serialising
+ * from here — instead of retyping the words in the API — is what stops the two
+ * sides drifting apart, which is the whole reason this file exists.
+ */
+function serializeLexicon() {
+  const pack = ([tag, re, group]) => [tag, re.source, re.flags, group];
+  return {
+    version: VOCAB_VERSION,
+    vocab: VOCAB.map(pack),
+    extra: QUERY_EXTRA.map(pack),
+    objectNouns: OBJECT_NOUNS,
+    motifProne: [...MOTIF_PRONE],
+    groupCategories: GROUP_CATEGORIES,
+    foodTags: [...FOOD_TAGS],
+  };
+}
 
 module.exports = {
   VOCAB_VERSION,
-  VOCAB, GROUPS, CATEGORY_ALLOWS, TAG_GROUP, FOOD_TAGS, MOTIF_PRONE,
+  VOCAB, QUERY_EXTRA, GROUPS, CATEGORY_ALLOWS, GROUP_CATEGORIES,
+  TAG_GROUP, FOOD_TAGS, MOTIF_PRONE,
   NOISE, OBJECT_NOUNS,
-  mapWithEvidence, mapToVocab, isTagAllowed,
+  mapWithEvidence, mapToVocab, isTagAllowed, serializeLexicon,
 };

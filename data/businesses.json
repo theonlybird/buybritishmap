@@ -199,8 +199,7 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets",
-      "bags & leather goods",
-      "poultry"
+      "bags & leather goods"
     ]
   },
   {
@@ -222,8 +221,7 @@
     "logo": "assets/logos/barnes-and-moore.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "bags & leather goods",
-      "fruit & veg"
+      "bags & leather goods"
     ]
   },
   {
@@ -361,8 +359,12 @@
     "product_tags": [
       "beef",
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "game & venison",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "gazegill-organics",
@@ -385,8 +387,19 @@
     "product_tags": [
       "fresh meat",
       "dairy & cheese",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "bread & bakery",
+      "drinks & spirits",
+      "eggs",
+      "flour & grain",
+      "game & venison",
+      "lamb",
+      "pork & bacon",
+      "poultry",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "farm2fork",
@@ -433,8 +446,15 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "dairy & cheese",
+      "game & venison",
+      "lamb",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "iow-tomatoes",
@@ -477,8 +497,20 @@
     "logo": "assets/logos/pipers-farm.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "fresh meat"
-    ]
+      "fresh meat",
+      "beef",
+      "bread & bakery",
+      "dairy & cheese",
+      "drinks & spirits",
+      "flour & grain",
+      "fruit & veg",
+      "game & venison",
+      "lamb",
+      "pork & bacon",
+      "poultry",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "daylesford",
@@ -865,8 +897,16 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "bread & bakery",
+      "dairy & cheese",
+      "eggs",
+      "lamb",
+      "pork & bacon",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "fodder",
@@ -934,8 +974,14 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "bread & bakery",
+      "dairy & cheese",
+      "drinks & spirits",
+      "lamb",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "goodwood-farm-shop",
@@ -981,8 +1027,16 @@
     "logo": "assets/logos/riverford.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "bread & bakery",
+      "dairy & cheese",
+      "flour & grain",
+      "lamb",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "fox-brothers",
@@ -1272,8 +1326,13 @@
     "product_tags": [
       "farm shop & deli",
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "bread & bakery",
+      "dairy & cheese",
+      "eggs",
+      "pork & bacon"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "hollis-mead",
@@ -1588,8 +1647,19 @@
     "logo": "assets/logos/lobbs-farm-shop.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "fresh meat"
-    ]
+      "fresh meat",
+      "beef",
+      "bread & bakery",
+      "dairy & cheese",
+      "drinks & spirits",
+      "flour & grain",
+      "fruit & veg",
+      "lamb",
+      "pork & bacon",
+      "poultry",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "ardross-farm",
@@ -1813,8 +1883,7 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jeans & denim",
-      "workwear & aprons",
-      "poultry"
+      "workwear & aprons"
     ]
   },
   {
@@ -1926,8 +1995,14 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
-      "dairy & cheese"
-    ]
+      "dairy & cheese",
+      "beef",
+      "game & venison",
+      "lamb",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "garsons",
@@ -1971,8 +2046,14 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
-      "dairy & cheese"
-    ]
+      "dairy & cheese",
+      "bread & bakery",
+      "drinks & spirits",
+      "fruit & veg",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "emmetts-peasenhall",
@@ -1994,8 +2075,13 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pork & bacon",
-      "fresh meat"
-    ]
+      "fresh meat",
+      "bread & bakery",
+      "dairy & cheese",
+      "fruit & veg",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "maple-farm-kelsale",
@@ -2017,8 +2103,10 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg",
-      "bread & bakery"
-    ]
+      "bread & bakery",
+      "flour & grain"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "north-sea-clothing",
@@ -2221,8 +2309,15 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "drinks & spirits",
+      "eggs",
+      "lamb",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "otterton-mill",
@@ -2266,8 +2361,12 @@
     "logo": "assets/logos/weetons.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "dairy & cheese",
+      "pork & bacon"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "emma-bridgewater",
@@ -3774,8 +3873,7 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "watches",
-      "jewellery",
-      "game & venison"
+      "jewellery"
     ]
   },
   {
@@ -4362,8 +4460,7 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tweed & woven goods",
-      "bags & leather goods",
-      "fruit & veg"
+      "bags & leather goods"
     ]
   },
   {
@@ -4834,8 +4931,7 @@
     "logo": "assets/logos/palava.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "coats & jackets",
-      "poultry"
+      "coats & jackets"
     ]
   },
   {
@@ -5232,8 +5328,7 @@
     "logo": "assets/logos/everbound-goods.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
-      "bags & leather goods",
-      "fruit & veg"
+      "bags & leather goods"
     ]
   },
   {
@@ -6760,8 +6855,7 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "shirts",
-      "everyday wear",
-      "poultry"
+      "everyday wear"
     ],
     "postcode": "UB7 9GP"
   },
@@ -6941,8 +7035,7 @@
     "logo": "assets/logos/paul-brown.png",
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
-      "shirts",
-      "poultry"
+      "shirts"
     ]
   },
   {
@@ -9161,8 +9254,18 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "bread & bakery",
+      "dairy & cheese",
+      "drinks & spirits",
+      "game & venison",
+      "lamb",
+      "pork & bacon",
+      "poultry",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "kilnford-farm-shop",
@@ -9186,8 +9289,13 @@
       "beef",
       "lamb",
       "fresh meat",
-      "dairy & cheese"
-    ]
+      "dairy & cheese",
+      "drinks & spirits",
+      "fruit & veg",
+      "pork & bacon",
+      "poultry"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "gloagburn-farm-shop",
@@ -9235,8 +9343,18 @@
       "beef",
       "lamb",
       "pork & bacon",
-      "fresh meat"
-    ]
+      "fresh meat",
+      "bread & bakery",
+      "dairy & cheese",
+      "drinks & spirits",
+      "eggs",
+      "flour & grain",
+      "fruit & veg",
+      "game & venison",
+      "poultry",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "mains-of-glassaugh",
@@ -9405,8 +9523,13 @@
     "logo": "assets/logos/caws-cenarth-farm-shop.png",
     "source": "unrecorded — verify before relying on",
     "product_tags": [
-      "dairy & cheese"
-    ]
+      "dairy & cheese",
+      "drinks & spirits",
+      "flour & grain",
+      "fruit & veg",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "broughgammon-farm",
@@ -9428,8 +9551,12 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "fresh meat",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "dairy & cheese",
+      "pork & bacon",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "castlescreen-farm",
@@ -9454,8 +9581,10 @@
       "lamb",
       "pork & bacon",
       "game & venison",
-      "fresh meat"
-    ]
+      "fresh meat",
+      "fruit & veg"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "pheasants-hill-farm",
@@ -9557,8 +9686,14 @@
       "game & venison",
       "fresh meat",
       "dairy & cheese",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "beef",
+      "bread & bakery",
+      "drinks & spirits",
+      "pork & bacon",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "strawberry-fields-farm-shop",
@@ -9581,8 +9716,15 @@
     "product_tags": [
       "beef",
       "lamb",
-      "fruit & veg"
-    ]
+      "fruit & veg",
+      "bread & bakery",
+      "dairy & cheese",
+      "drinks & spirits",
+      "eggs",
+      "pork & bacon",
+      "preserves & honey"
+    ],
+    "products_checked": "2026-08-01"
   },
   {
     "id": "lower-clopton-farm-shop",
@@ -10621,7 +10763,6 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "tableware",
-      "dairy & cheese",
       "cutlery & knives"
     ]
   },
