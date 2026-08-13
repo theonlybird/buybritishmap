@@ -1146,7 +1146,7 @@ function buildHeadline(result) {
   if (quality === 'partial' && place) {
     const n = result.inPlace || 0;
     const what = product ? `British ${verb} ${product}` : 'these';
-    return prefix + `${n === 1 ? 'The one match' : `All ${n} matches`} for ${what} in ${place} first, then others further afield.`;
+    return prefix + `${n} match${n === 1 ? '' : 'es'} for ${what} in ${place} below, then others further afield.`;
   }
   // Went wider than they asked for — say so plainly.
   if (product && place) {

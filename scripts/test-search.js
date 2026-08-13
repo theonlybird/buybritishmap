@@ -350,7 +350,7 @@ const businesses = JSON.parse(
   line(allScots, `"scottish pork" — first ${lead.length} are all in Scotland`);
   line(noneAfter, '"scottish pork" — no Scottish farm left below the seam');
 
-  const partial = headline.matchQuality === 'partial' && /in Scotland first, then others further afield/.test(banner);
+  const partial = headline.matchQuality === 'partial' && /in Scotland below, then others further afield/.test(banner);
   if (!partial) failures++;
   line(partial, `"scottish pork" — banner declares the boundary (${headline.matchQuality})`);
 
@@ -367,7 +367,7 @@ const businesses = JSON.parse(
 // The adjective must resolve to the nation's name, not be echoed raw.
 for (const [q, want] of [['scottish pork', 'Scotland'], ['welsh cheese', 'Wales'], ['northern irish beef', 'Northern Ireland']]) {
   const b = local(q).banner;
-  const ok = b.includes(`in ${want} first`) && !/Northern Northern/.test(b);
+  const ok = b.includes(`in ${want} below`) && !/Northern Northern/.test(b);
   if (!ok) failures++;
   line(ok, `"${q}"`.padEnd(28) + `reads "in ${want}"` + (ok ? '' : ` — got: ${b}`));
 }
