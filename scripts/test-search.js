@@ -13,7 +13,40 @@
  * Usage:  node scripts/test-search.js
  */
 
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm');
+
 const { stageOneFilter, expandQuery, BUSINESS_CATALOG } = require('../api/ai-search.js');
+
+// ---------------------------------------------------------------------------
+// The page's own local search, lifted out of index.html.
+//
+// This matters as much as the API: the local engine answers whenever the API
+// is slow, rate-limited or down, and both of the bugs found on 13 Aug lived
+// here rather than in the serverless function. Extracting the block by marker
+// keeps the test honest — it runs the code that ships, not a copy.
+// ---------------------------------------------------------------------------
+function loadLocalSearch() {
+  const root = path.join(__dirname, '..');
+  const lines = fs.readFileSync(path.join(root, 'index.html'), 'utf8').split('\n');
+  const from = lines.findIndex(l => l.includes('const STOP_WORDS = new Set'));
+  const to = lines.findIndex((l, i) => i > from && l.startsWith('async function executeAiSearch'));
+  if (from < 0 || to < 0) throw new Error('could not locate the search block in index.html');
+
+  const ctx = {
+    console,
+    window: {},
+    BUSINESSES: JSON.parse(fs.readFileSync(path.join(root, 'data/businesses.json'), 'utf8')),
+  };
+  vm.createContext(ctx);
+  vm.runInContext(fs.readFileSync(path.join(root, 'assets/query-expand.js'), 'utf8'), ctx);
+  vm.runInContext(lines.slice(from, to).join('\n'), ctx);
+  return q => ({
+    result: vm.runInContext(`localSearch(${JSON.stringify(q)})`, ctx),
+    headline: vm.runInContext(`localHeadlineData(localSearch(${JSON.stringify(q)}))`, ctx),
+  });
+}
 
 if (typeof stageOneFilter !== 'function') {
   console.error('stageOneFilter not found — did you run scripts/update-search-api.js?');
@@ -84,9 +117,133 @@ for (const c of cases) {
 
 // A false "no results" is the failure that started this. Nothing that names a
 // product should ever hand the model an all-wrong shortlist.
+// ---------------------------------------------------------------------------
+// Judgement words must not change the answer.
+//
+// Ranking on "sustainable" or "ethical" would mean this map deciding which
+// businesses are more sustainable than others, on no evidence. Mechanically it
+// was already doing so: the word appears in enough descriptions to score.
+// ---------------------------------------------------------------------------
+console.log('\njudgement words are ignored — same results as the bare noun\n');
+
+const local = loadLocalSearch();
+const ids = list => list.map(b => b.id || b.i).join(',');
+
+const neutrality = [
+  { bare: 'jumper', dressed: ['sustainable jumper', 'nice jumper', 'ethical jumper', 'the best quality jumper'] },
+  { bare: 'mugs',   dressed: ['eco friendly mugs', 'lovely mugs'] },
+  { bare: 'beef',   dressed: ['premium beef'] },
+];
+
+for (const { bare, dressed } of neutrality) {
+  const apiBase = ids(stageOneFilter(bare, BUSINESS_CATALOG, 40));
+  const localBase = ids(local(bare).result.matches);
+  for (const q of dressed) {
+    const apiSame = ids(stageOneFilter(q, BUSINESS_CATALOG, 40)) === apiBase;
+    const localSame = ids(local(q).result.matches) === localBase;
+    const echoed = local(q).headline.productTerm || '';
+    const clean = !/sustainab|ethic|eco|nice|lovely|best|quality|premium/i.test(echoed);
+    const ok = apiSame && localSame && clean;
+    if (!ok) failures++;
+    line(ok, `"${q}"`.padEnd(34) + `api ${apiSame ? '=' : '≠'}  page ${localSame ? '=' : '≠'}  echoes "${echoed}"`);
+  }
+}
+
+// "organic" is a certified claim, not an opinion, and must still bite.
+{
+  const differs = ids(stageOneFilter('organic beef', BUSINESS_CATALOG, 40)) !== ids(stageOneFilter('beef', BUSINESS_CATALOG, 40));
+  if (!differs) failures++;
+  line(differs, '"organic beef" still differs from "beef" (certified, not subjective)');
+}
+
+// ---------------------------------------------------------------------------
+// A place must be a place the user typed.
+//
+// "jumper" widens to include "cardigan"; Cardigan is a town in Ceredigion, so
+// the widened word was read as a location the user had asked for. Every
+// knitwear search then apologised for being "a bit further afield" than a
+// place nobody had mentioned.
+// ---------------------------------------------------------------------------
+console.log('\nplaces come from the user, not from synonym widening\n');
+
+const placeCases = [
+  { q: 'jumper',              expectPlace: null,       expectQuality: 'exact' },
+  { q: 'sustainable jumper',  expectPlace: null,       expectQuality: 'exact' },
+  { q: 'cardigans',           expectPlace: null,       expectQuality: 'exact' },
+  // Typed place names must still work, including when the place shares its
+  // name with a garment.
+  { q: 'jumper in cardigan',  expectPlace: 'cardigan', expectQuality: 'wider' },
+  { q: 'wool jumper cornwall', expectPlace: 'cornwall' },
+];
+
+for (const c of placeCases) {
+  const h = local(c.q).headline;
+  const got = h.locationTerm;
+  const problems = [];
+  if ((got || null) !== c.expectPlace) problems.push(`locationTerm ${JSON.stringify(got)}, wanted ${JSON.stringify(c.expectPlace)}`);
+  if (c.expectQuality && h.matchQuality !== c.expectQuality) problems.push(`matchQuality "${h.matchQuality}", wanted "${c.expectQuality}"`);
+  if (problems.length) {
+    failures++;
+    line(false, `"${c.q}"`);
+    problems.forEach(p => console.log(`          ${p}`));
+  } else {
+    line(true, `"${c.q}"`.padEnd(34) + `place: ${got || 'none'}  (${h.matchQuality})`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Qualifiers rank but never admit.
+//
+// "handmade bowl" used to return Hurdwick Handmade Bag Company, Alex Monroe
+// and Drakes. None of them make bowls; they simply have the word in their name
+// or copy. The noun decides who is eligible; the qualifier only orders them.
+// ---------------------------------------------------------------------------
+console.log('\nqualifiers boost, but never make a business eligible\n');
+
+{
+  const bowlMakers = new Set(
+    BUSINESS_CATALOG.filter(b => (b.pt || []).includes('bowls')).map(b => b.i)
+  );
+  const apiIntruders = stageOneFilter('handmade bowl', BUSINESS_CATALOG, 40)
+    .filter(b => !bowlMakers.has(b.i) && b.c !== 'ceramics');
+  const pageIntruders = local('handmade bowl').result.matches
+    .filter(b => !bowlMakers.has(b.id) && b.category !== 'ceramics');
+
+  const okApi = apiIntruders.length === 0;
+  const okPage = pageIntruders.length === 0;
+  if (!okApi) failures++;
+  if (!okPage) failures++;
+  line(okApi, `"handmade bowl" — api returns no non-bowl makers` +
+    (okApi ? '' : ` (got ${apiIntruders.slice(0, 4).map(b => b.i).join(', ')})`));
+  line(okPage, `"handmade bowl" — page returns no non-bowl makers` +
+    (okPage ? '' : ` (got ${pageIntruders.slice(0, 4).map(b => b.id).join(', ')})`));
+}
+
+// The boost must still do its job: organic farms should out-rank non-organic
+// ones on an organic query, without changing who is eligible.
+{
+  const organicFirst = local('organic beef').result.matches
+    .slice(0, 3).filter(b => /organic/i.test(b.name + ' ' + b.description)).length >= 2;
+  if (!organicFirst) failures++;
+  line(organicFirst, '"organic beef" still ranks organic farms into the top 3');
+
+  const same = ids(local('organic beef').result.matches.filter(b => b.category !== 'farm'));
+  if (same !== '') failures++;
+  line(same === '', '"organic beef" returns farm shops only');
+}
+
+// A query made only of qualifiers has no noun to fall back on, and must still
+// return something rather than nothing.
+{
+  const r = local('organic').result.matches;
+  const ok = r.length > 0;
+  if (!ok) failures++;
+  line(ok, `"organic" alone still returns results (${r.length})`);
+}
+
 console.log('');
 if (failures) {
-  console.log(`${failures} of ${cases.length} cases failed\n`);
+  console.log(`${failures} failing assertion(s)\n`);
   process.exit(1);
 }
-console.log(`all ${cases.length} cases passed\n`);
+console.log(`all assertions passed\n`);

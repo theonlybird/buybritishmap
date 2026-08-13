@@ -287,9 +287,112 @@ The non-food controls — `pottery yorkshire`, `leather bag cornwall`,
 `kitchen knife`, `tweed jacket`, `silver ring` — return byte-identical results
 before and after, which was the point of testing them.
 
-### One thing not fixed
+## Second pass: adjectives and the Cardigan bug (13 August 2026)
 
-`pottery yorkshire` puts Glosters (Wales) and Grayshott (Surrey) above any
-Yorkshire pottery in the *local* search. That predates this change and is
-unaffected by it — the local scorer weights product above place by design, and
-the AI path normally handles ordering. Worth a look separately.
+Both spotted from live searches for "sustainable jumper" and "nice jumper".
+
+### The map does not rank on sustainability
+
+`sustainable` appears in enough listing descriptions to have become a real
+search term, so it was scoring +4 to any business whose marketing copy used the
+word — which is this directory quietly deciding who is more sustainable than
+whom, on no evidence. `nice` was being echoed back in the headline as though it
+were part of the product.
+
+Both engines now drop judgement words before anything is scored or displayed:
+`SUBJECTIVE_WORDS` in `index.html`, the same list inside `STOP_WORDS` in
+`query-expand.js`, and an explicit instruction in the Gemini prompt. So
+`sustainable jumper`, `nice jumper` and `the best quality jumper` return results
+identical to `jumper`, and the headline reads "jumper".
+
+Deliberately **not** on that list: `organic`, `handmade`, `traditional`,
+`heritage`. Those are checkable claims about how something is made rather than
+opinions about whether it is good, and one of them is a subcategory on this map.
+`organic beef` still returns something different from `beef`.
+
+### Cardigan
+
+Not a display glitch — it was affecting every knitwear search, including plain
+`jumper`, and it had two independent halves.
+
+1. `jumper` widens through `GROUP_OF` into its synonym group, which contains
+   `cardigan`. Cardigan is a town in Ceredigion and so sits in the place
+   vocabulary, while `cardigan` is *not* in the product vocabulary — that is
+   built from `product_tags`, and the tag is `knitwear`. So the widened word was
+   classified as a location the user had asked for, no makers were found in
+   Cardigan, and the page apologised for going "further afield" from a place
+   nobody had typed.
+
+2. `localHeadlineData` echoed the user's own words but fell back to the *widened*
+   term set when they had named no place — which is how "in Cardigan" reached
+   the screen.
+
+Three changes:
+
+- Only words the user actually typed can name a place. Synonym widening is a
+  product operation.
+- No fallback from `placeDisplay` to the widened set. If they did not type a
+  place, there is no place.
+- `classifyTerms` now consults the shared lexicon as well as the catalogue's
+  tags, so it knows a cardigan is knitwear even though no tag says so.
+
+A typed place still wins where it should. "Cardigan" is both a garment and a
+town, and the only thing that distinguishes them is the preposition, so
+`jumper in cardigan` reads it as the town while `cardigans` reads it as the
+garment. `near`, `around` and `by` also became stop words — "farm shop near
+Cornwall" was echoing the location as "near cornwall", because "Near Sawrey"
+puts the word itself into the place vocabulary.
+
+`sausages in devon` now returns Eversfield (Tavistock), Pipers (Cullompton) and
+Riverford (Buckfastleigh).
+
+### One open question, for you rather than me
+
+`pottery in yorkshire` returns Glosters (Porthmadog), Grayshott (Surrey) and
+Isle of Wight Pottery above any Yorkshire pottery, and calls the match "exact".
+The cause is that the three winners all have "pottery" in their *name*, worth +6
+each, and the local scorer ranks `productScore * 3 + placeScore * 2`.
+
+I have not touched that ratio. The comment says it was tuned against live
+queries, and re-weighting ranking is a judgement about what the map is for, not
+a bug fix. But a named place arguably deserves more than it currently gets when
+the user was explicit about it. Worth a decision.
+
+### Qualifiers rank, but never admit
+
+Found by testing `organic vegetables` and `handmade bowl` after the adjective
+change. The first worked; the second did not.
+
+`handmade bowl` returned the right three potteries and then Hurdwick **Handmade**
+Bag Company, Alex Monroe, Drakes, Tanner Bates and Lockwood Smocks — none of
+whom make bowls. They qualified on the word appearing in a name or description.
+
+The scorer already had the right principle for places — *the product is the
+point; a business that doesn't make it can't qualify on location alone*. It
+simply wasn't applied to qualifiers. Now the noun decides who is **eligible**
+and the qualifier only decides the **order**:
+
+| Query | Before | After |
+|---|---|---|
+| `handmade bowl` | chris-keenan, portmeirion, henry-watsons, **hurdwick-handmade-bag-company**, **alex-monroe** | identical to `bowl` |
+| `organic beef` | ballylagan-organic, eversfield-organic, gazegill-organics | ballylagan-organic first, all farm shops |
+| `organic vegetables` | — | lifts Ballylagan Organic into the top five; `vegetables` alone does not |
+
+`QUALIFIER_WORDS` covers organic, handmade, handcrafted, traditional, heritage,
+bespoke, vintage, and the compound farm terms (free range, grass fed, small
+batch, seasonal, wild). A query made only of qualifiers — someone typing just
+"organic" — has no noun to fall back on, so they act as the product and it
+returns the 17 listings that say so.
+
+Qualifiers are also scored well below the noun (4–6 points against 42 for a tag
+match). "handmade" is weak evidence: 47 listings use the word and most of the
+other 427 are handmade too — they just didn't write it down. Weighting it
+heavily would rank on copywriting.
+
+### Verification, second pass
+
+`node scripts/test-search.js` now also loads the search block out of
+`index.html` and runs it, so the page's own engine is covered rather than just
+the API. That matters because both of these bugs lived in the page, not in the
+serverless function — the local engine answers whenever the API is slow,
+rate-limited or down.

@@ -216,11 +216,12 @@ Analyze the user's natural language request and find the best matching British m
 CRITICAL INSTRUCTIONS:
 1. Understand regional synonyms (e.g. Yorkshire = Sheffield, Leeds; Scotland = Hawick, Edinburgh; Wales = Gwynedd; Cotswolds = Chipping Campden).
 2. Match materials, craft techniques, product terms and tags (e.g. pet food bowls = ceramics/pottery pet bowls; knitted vests = woollen waistcoats/gilets; kitchen knife = forged cutlery/blades).
+2a. IGNORE subjective adjectives entirely — sustainable, ethical, eco, green, nice, best, quality, luxury, affordable and the like. This directory does not rank businesses on those claims and has no evidence with which to do so, so "sustainable jumper" must return exactly what "jumper" returns. Certified or factual descriptors ARE meaningful and should be matched: organic, handmade, traditional, heritage.
 3. Return ONLY a valid JSON object matching this exact structure:
 {
   "query": \${JSON.stringify(query)},
-  "productTerm": "the plural everyday noun for what they want, e.g. jumpers, watches, jewellery, venison, mugs. Lowercase. Null if they named no product.",
-  "locationTerm": "the place they asked for exactly as a person would say it, e.g. Darlington, Norfolk, Cornwall. Null if they named no place.",
+  "productTerm": "the plural everyday noun for what they want, e.g. jumpers, watches, jewellery, venison, mugs. Lowercase. Null if they named no product. STRIP subjective adjectives: 'sustainable jumper', 'nice jumper' and 'the best quality jumper' all have the productTerm 'jumpers'.",
+  "locationTerm": "the place they asked for exactly as a person would say it, e.g. Darlington, Norfolk, Cornwall. Null if they named no place. Only ever a place the user actually typed — never infer one from the product.",
   "madeOrGrown": "made or grown - use grown for food, produce, meat and farm goods; made for everything else",
   "matchQuality": "exact if you found businesses that genuinely satisfy BOTH the product and the location; wider if you found the right product but had to go outside the requested area; loose if you could only find loosely related businesses",
   "matches": [

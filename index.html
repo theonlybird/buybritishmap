@@ -1447,7 +1447,60 @@ function clearAiSearch() {
 
 const STOP_WORDS = new Set(['the','a','an','and','or','for','in','on','at','to','of','with',
   'who','sell','sells','selling','make','makes','maker','makers','making','which','what',
-  'can','are','is','do','does','find','looking','me','my','i','want','need','buy','british','uk']);
+  'can','are','is','do','does','find','looking','me','my','i','want','need','buy','british','uk',
+  // Prepositions that introduce a place. Without these, "farm shop near
+  // Cornwall" echoed the location back as "near cornwall" — "Near Sawrey" and
+  // similar put the word itself into the place vocabulary. They are read for
+  // their position before this list is applied, so dropping them here does not
+  // affect telling "jumper in Cardigan" from "cardigans".
+  'near','nearby','around','close','by']);
+
+// Judgement words. Dropped from the query before anything is scored or echoed
+// back, so "sustainable jumper" and "nice jumper" both return exactly what
+// "jumper" returns.
+//
+// Two reasons, and the first matters more. Ranking on these words would mean
+// this map quietly deciding which businesses are more sustainable, more
+// ethical or nicer than the others — a claim it has no evidence for and no
+// business making. And mechanically it did exactly that: "sustainable" appears
+// in enough descriptions to be a real search term, so it was scoring +4 to any
+// listing whose marketing copy happened to use the word.
+//
+// NOT in this list, deliberately: "organic", "handmade", "traditional",
+// "heritage". Those are checkable claims about how something is made, not
+// opinions about whether it is good, and several listings turn on them —
+// "Organic farm shop" is a subcategory on this map.
+const SUBJECTIVE_WORDS = new Set([
+  // opinion
+  'nice','good','great','lovely','beautiful','pretty','cool','stylish','smart',
+  'best','better','finest','top','favourite','decent','proper','amazing',
+  // marketing
+  'sustainable','sustainably','ethical','ethically','eco','ecofriendly','conscious',
+  'responsible','responsibly','green','planet','friendly','natural',
+  'quality','luxury','luxurious','premium','exclusive','artisan','artisanal',
+  'affordable','cheap','budget','expensive','value','reasonable',
+  // filler
+  'some','any','something','anything','really','very','quite','lots','bit',
+]);
+
+// Qualifiers: checkable claims about HOW something is made. Unlike the words
+// above they are kept and they do count — but only as a boost on a business
+// that already makes the thing asked for. A qualifier can never make a
+// business eligible on its own.
+//
+// This is the same rule the scorer already applies to places ("a business that
+// doesn't make it can't qualify on location alone"), and it is needed for the
+// same reason. "handmade bowl" was returning Hurdwick Handmade Bag Company,
+// Alex Monroe and Drakes — none of whom make bowls — because the word appears
+// in their name or description.
+//
+// "organic beef" is unaffected: organic farms match "beef" too, so they stay
+// eligible and still take the boost.
+const QUALIFIER_WORDS = new Set([
+  'organic','organics','handmade','handcrafted','handwoven','handstitched','handthrown',
+  'traditional','traditionally','heritage','bespoke','custom','vintage','artisanal',
+  'small','batch','local','locally','seasonal','free','range','grass','fed','wild',
+]);
 
 // Every distinct word the catalogue actually contains. Built once, lazily.
 let SEARCH_VOCAB = null;
@@ -1581,12 +1634,24 @@ function normaliseQuery(query) {
   const raw = String(query).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/);
   const terms = [];    // expanded — what we score against
   const display = [];  // what the user meant — what the headline echoes back
+  const typed = new Set();  // only these words are allowed to name a place
+
+  // Words the user introduced with "in", "near" and the like. Cardigan is both
+  // a garment and a town in Ceredigion, and the preposition is the only thing
+  // that tells them apart: "cardigans" is a jumper, "jumper in Cardigan" is a
+  // place. Read before stop words are dropped, because "in" is one of them.
+  const PLACE_PREPS = new Set(['in', 'near', 'around', 'from', 'by', 'at']);
+  const placePreferred = new Set();
+  raw.forEach((tok, i) => {
+    if (i > 0 && PLACE_PREPS.has(raw[i - 1])) placePreferred.add(tok);
+  });
   const seen = new Set();
   let understood = 0;
 
   // Record the canonical word, then quietly widen it to its synonym group.
   const take = (word, shown) => {
     if (shown && !display.includes(shown)) display.push(shown);
+    typed.add(word);
     const group = GROUP_OF[word] || [word];
     group.forEach(g => {
       if (seen.has(g)) return;
@@ -1598,6 +1663,9 @@ function normaliseQuery(query) {
 
   raw.forEach(tok => {
     if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
+    // Dropped before scoring AND before display, so the headline reads back
+    // "jumper" rather than "sustainable jumper".
+    if (SUBJECTIVE_WORDS.has(tok)) return;
     if (vocab.has(tok)) { take(tok, tok); understood++; return; }
     // Known spelling first — cheapest and most reliable.
     const syn = SYNONYMS[tok];
@@ -1619,7 +1687,7 @@ function normaliseQuery(query) {
   const tags = expandToTags(query);
   if (tags.length) understood++;
 
-  return { terms, understood, display, tags };
+  return { terms, understood, display, tags, typed, placePreferred };
 }
 
 // Canonical product tags implied by a query, via the shared lexicon. Returns
@@ -1684,31 +1752,54 @@ function hasWord(haystack, word) {
   return new RegExp('\\b' + safe + 's?\\b', 'i').test(haystack);
 }
 
-function classifyTerms(terms) {
+// `typed`, when given, is the set of words the user actually wrote. Words that
+// only appear because we widened a synonym group can never be places.
+//
+// This is what put every knitwear search "a bit further afield": "jumper"
+// widens to include "cardigan", Cardigan is a town in Ceredigion and so sits in
+// the place vocabulary, and "cardigan" is not a product tag (the tag is
+// "knitwear") — so the widened word was read as a location the user had asked
+// for, found no makers in Cardigan, and apologised for it. Nobody had typed a
+// place at all. Widening is a product operation, and only the user can name a
+// place.
+function classifyTerms(terms, typed, placePreferred) {
   const places = buildPlaceVocab(), prods = buildProductVocab();
   const product = [], place = [];
   terms.forEach(t => {
+    // "jumper in Cardigan" — the preposition says they meant the town.
+    if (placePreferred && placePreferred.has(t) && places.has(t)) { place.push(t); return; }
     // A word that names a product wins even if a town shares the name, because
-    // people search for the thing far more often than the place.
-    if (prods.has(t)) product.push(t);
-    else if (places.has(t)) place.push(t);
+    // people search for the thing far more often than the place. The shared
+    // lexicon is consulted as well as the catalogue's own tags: it knows a
+    // cardigan is knitwear, which no product tag says in so many words.
+    if (prods.has(t) || expandToTags(t).length) product.push(t);
+    else if (places.has(t) && (!typed || typed.has(t))) place.push(t);
     else product.push(t);
   });
   return { product, place };
 }
 
 function localSearch(query) {
-  const { terms, understood, display, tags } = normaliseQuery(query);
+  const { terms, understood, display, tags, typed, placePreferred } = normaliseQuery(query);
   const queryTags = tags || [];
   if ((!terms.length || !understood) && !queryTags.length) {
     return { matches: [], terms, understood, product: [], place: [], inPlace: 0,
              productDisplay: [], placeDisplay: [] };
   }
 
-  const { product, place } = classifyTerms(terms);
+  const { product, place } = classifyTerms(terms, typed, placePreferred);
   // Classify the user's own words separately, so the headline reads back what
   // they typed rather than the widened set we searched on.
-  const shown = classifyTerms(display);
+  const shown = classifyTerms(display, typed, placePreferred);
+
+  // "handmade bowl" is a bowl search qualified by handmade, not a search for
+  // two independent things. Split them so eligibility can rest on the noun.
+  const qualifiers = product.filter(t => QUALIFIER_WORDS.has(t));
+  // If every word they typed was a qualifier ("organic", "handmade"), there is
+  // no noun to fall back on, so let the qualifiers act as the product.
+  const core = product.filter(t => !QUALIFIER_WORDS.has(t));
+  const coreTerms = core.length ? core : product;
+  const boostTerms = core.length ? qualifiers : [];
 
   const scored = BUSINESSES.map(b => {
     const name = b.name || '';
@@ -1717,7 +1808,7 @@ function localSearch(query) {
     const kind = [b.category, b.subcategory].join(' ');
     const desc = b.description || '';
 
-    let productScore = 0, placeScore = 0;
+    let productScore = 0, placeScore = 0, qualScore = 0;
 
     // Canonical tag against canonical tag. Scored above a literal word match
     // because it is a stronger signal: the word came from the shop's own
@@ -1725,23 +1816,33 @@ function localSearch(query) {
     const ownTags = (b.product_tags || []).map(t => String(t).toLowerCase());
     queryTags.forEach(t => { if (ownTags.indexOf(t) !== -1) productScore += 14; });
 
-    product.forEach(t => {
+    coreTerms.forEach(t => {
       if (hasWord(tags, t)) productScore += 12;
       if (hasWord(kind, t)) productScore += 8;
       if (hasWord(name, t)) productScore += 6;
       if (hasWord(desc, t)) productScore += 4;
+    });
+    // Qualifiers rank but never admit. Scored lower than the noun throughout,
+    // because a business saying "handmade" is weaker evidence than one filed
+    // under the product asked for — 47 listings use the word and most of the
+    // other 427 are handmade too, they just didn't write it down.
+    boostTerms.forEach(t => {
+      if (hasWord(tags, t) || hasWord(kind, t)) qualScore += 6;
+      else if (hasWord(name, t) || hasWord(desc, t)) qualScore += 4;
     });
     place.forEach(t => {
       if (hasWord(where, t)) placeScore += 10;
       else if (hasWord(desc, t)) placeScore += 3;
     });
 
-    return { b, productScore, placeScore };
+    return { b, productScore, placeScore, qualScore };
   });
 
   // The product is the point. If they named one, a business that doesn't make
   // it can't qualify on location alone — that's how "leather hat cornwall"
-  // ended up showing farm shops.
+  // ended up showing farm shops. The same now goes for qualifiers: "handmade"
+  // can lift a bowl maker above another bowl maker, but it cannot put a bag
+  // company into a search for bowls.
   const eligible = product.length
     ? scored.filter(s => s.productScore > 0)
     : scored.filter(s => s.placeScore > 0);
@@ -1750,7 +1851,7 @@ function localSearch(query) {
   // live queries: it puts London leather makers above Walsall for "leather hat
   // london" and Sheffield above Marlborough for "knives sheffield", without
   // ever letting a business in the right town outrank one that makes the thing.
-  const rank = s => s.productScore * 3 + s.placeScore * 2;
+  const rank = s => s.productScore * 3 + s.placeScore * 2 + s.qualScore;
   eligible.sort((x, y) => rank(y) - rank(x) || x.b.name.localeCompare(y.b.name));
 
   const top = eligible.slice(0, 40);
@@ -1773,8 +1874,12 @@ function localHeadlineData(local) {
   // Echo the user's own words, not the widened synonym set.
   const prodWords  = local.productDisplay && local.productDisplay.length
     ? local.productDisplay : local.product;
-  const placeWords = local.placeDisplay && local.placeDisplay.length
-    ? local.placeDisplay : local.place;
+  // No fallback to local.place here, on purpose. That fallback was the second
+  // half of the Cardigan bug: when the user named no place, placeDisplay is
+  // empty and the old code reached for the widened term set instead, printing
+  // "in Cardigan" for a query that never mentioned it. If they did not type a
+  // place, there is no place.
+  const placeWords = local.placeDisplay || [];
 
   return {
     productTerm: prodWords.length ? prodWords.join(' ') : null,

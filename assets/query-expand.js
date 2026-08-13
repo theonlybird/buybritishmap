@@ -56,8 +56,42 @@
       'the', 'a', 'an', 'and', 'or', 'for', 'in', 'on', 'at', 'to', 'of', 'with',
       'who', 'sell', 'sells', 'selling', 'sold', 'buy', 'buying', 'make', 'makes',
       'maker', 'makers', 'making', 'made', 'which', 'what', 'where', 'can', 'are',
-      'is', 'do', 'does', 'find', 'looking', 'near', 'me', 'my', 'best', 'good',
+      'is', 'do', 'does', 'find', 'looking', 'near', 'me', 'my',
       'any', 'some', 'from', 'british', 'britain', 'uk', 'english', 'local',
+
+      // Judgement words. Scoring on these would mean the map deciding which
+      // businesses are more sustainable, more ethical or nicer than the others,
+      // which it has no evidence for. "sustainable" appears in enough
+      // descriptions to be a real search term, so it was quietly ranking on
+      // whose marketing copy used the word. "sustainable jumper" must return
+      // exactly what "jumper" returns.
+      //
+      // Not here, deliberately: "organic", "handmade", "traditional",
+      // "heritage" — checkable claims about how something is made, not opinions
+      // about whether it is good.
+      'nice', 'good', 'great', 'lovely', 'beautiful', 'pretty', 'cool', 'stylish',
+      'smart', 'best', 'better', 'finest', 'top', 'favourite', 'decent', 'proper',
+      'amazing', 'sustainable', 'sustainably', 'ethical', 'ethically', 'eco',
+      'ecofriendly', 'conscious', 'responsible', 'responsibly', 'green', 'planet',
+      'friendly', 'natural', 'quality', 'luxury', 'luxurious', 'premium',
+      'exclusive', 'artisan', 'artisanal', 'affordable', 'cheap', 'budget',
+      'expensive', 'value', 'reasonable', 'something', 'anything', 'really',
+      'very', 'quite', 'lots', 'bit',
+    ]);
+
+    // Qualifiers: checkable claims about HOW something is made. Kept, and they
+    // do count — but only as a boost on a business that already makes the thing
+    // asked for. A qualifier can never make a business eligible on its own.
+    //
+    // "handmade bowl" was returning Hurdwick Handmade Bag Company, Alex Monroe
+    // and Drakes, none of whom make bowls, purely on the word appearing in their
+    // name or copy. "organic beef" is unaffected: organic farms match "beef"
+    // too, so they stay eligible and still take the boost.
+    const QUALIFIER_WORDS = new Set([
+      'organic', 'organics', 'handmade', 'handcrafted', 'handwoven', 'handstitched',
+      'handthrown', 'traditional', 'traditionally', 'heritage', 'bespoke', 'custom',
+      'vintage', 'artisanal', 'small', 'batch', 'local', 'locally', 'seasonal',
+      'free', 'range', 'grass', 'fed', 'wild',
     ]);
 
     /** Is the matched word modifying something else? "cake tin" is a tin. */
@@ -97,13 +131,21 @@
       }
 
       const qClean = raw.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-      const tokens = qClean.split(/\s+/).filter(t => t.length > 2 && !STOP_WORDS.has(t));
+      const all = qClean.split(/\s+/).filter(t => t.length > 2 && !STOP_WORDS.has(t));
+
+      // "handmade bowl" is a bowl search qualified by handmade. Split them so
+      // eligibility can rest on the noun. If everything they typed was a
+      // qualifier there is no noun to fall back on, so let them act as one.
+      const core = all.filter(t => !QUALIFIER_WORDS.has(t));
+      const tokens = core.length ? core : all;
+      const qualifiers = core.length ? all.filter(t => QUALIFIER_WORDS.has(t)) : [];
 
       return {
         tags: [...tags],
         groups: [...groups],
         categories: [...categories],
         tokens,
+        qualifiers,
         qClean,
         isFood: [...tags].some(t => FOOD_TAGS.has(t)),
       };
@@ -140,17 +182,29 @@
         // Literal word matches, as a backstop for anything the lexicon missed
         // (place names, maker names, materials). Word-boundary matched: the old
         // substring test scored "ale" against "Kels*ale*" and "wholes*ale*".
+        const wordIn = (field, t) =>
+          (' ' + String(field).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ').includes(' ' + t + ' ');
+
         q.tokens.forEach(t => {
-          const w = ' ' + t + ' ';
-          if ((' ' + ptList.join(' ') + ' ').replace(/[^a-z0-9]+/g, ' ').includes(w)) score += 10;
-          if ((' ' + String(item.t).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ').includes(w)) score += 8;
-          if ((' ' + String(item.c).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ').includes(w)) score += 8;
-          if ((' ' + String(item.s).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ').includes(w)) score += 6;
-          if ((' ' + String(item.n).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ').includes(w)) score += 6;
-          if ((' ' + String(item.d).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ').includes(w)) score += 3;
+          if (wordIn(ptList.join(' '), t)) score += 10;
+          if (wordIn(item.t, t)) score += 8;
+          if (wordIn(item.c, t)) score += 8;
+          if (wordIn(item.s, t)) score += 6;
+          if (wordIn(item.n, t)) score += 6;
+          if (wordIn(item.d, t)) score += 3;
         });
 
-        return { item, score };
+        // Qualifiers rank but never admit, so they are added only once the
+        // business has already scored on the product itself.
+        let boost = 0;
+        if (score > 0) {
+          q.qualifiers.forEach(t => {
+            if (wordIn(ptList.join(' '), t) || wordIn(item.s, t) || wordIn(item.c, t)) boost += 4;
+            else if (wordIn(item.n, t) || wordIn(item.d, t)) boost += 2;
+          });
+        }
+
+        return { item, score: score + boost };
       });
 
       scored.sort((a, b) => b.score - a.score);
