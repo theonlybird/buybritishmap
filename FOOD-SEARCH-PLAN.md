@@ -389,6 +389,37 @@ match). "handmade" is weak evidence: 47 listings use the word and most of the
 other 427 are handmade too — they just didn't write it down. Weighting it
 heavily would rank on copywriting.
 
+### Spelling corrections are declared, not applied silently
+
+Searching **Darlington** (County Durham) returned two businesses in
+**Dartington** (Devon) under the banner "Here are some UK businesses we think
+you'll love". Fuzzy matching had corrected the word — the two are one letter
+apart — and said nothing about it, so the page confidently showed results 350
+miles from where the user asked.
+
+The banner now reads:
+
+> No results for **Darlington** — showing results for **Dartington** instead.
+
+Only genuine substitutions are announced, and the existing code already draws
+the line in the right place without meaning to. The stemmer collapses doubled
+letters and word endings, so "cornwal" reaches Cornwall — but by construction it
+can only ever reach *the same word, typed sloppily*. Fuzzy matching is the one
+step that can land on a *different word*. So announcing fuzzy hits alone catches
+Darlington/Dartington while staying quiet about ordinary typos.
+
+Two details:
+
+- The misspelling is kept out of the echoed terms. Left in, "jumpers in
+  darlington" read as "British made jumpers darlington".
+- When the search also went wider than asked, both facts are stated rather than
+  the correction hiding the widening: *"No results for Darlington, showing
+  Dartington instead. We couldn't find an exact match for British made jumpers,
+  but think you'll love these."*
+
+The AI path attaches the same corrections, so the message appears whichever
+engine answers.
+
 ### Verification, second pass
 
 `node scripts/test-search.js` now also loads the search block out of

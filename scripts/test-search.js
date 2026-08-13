@@ -34,6 +34,10 @@ function loadLocalSearch() {
   const to = lines.findIndex((l, i) => i > from && l.startsWith('async function executeAiSearch'));
   if (from < 0 || to < 0) throw new Error('could not locate the search block in index.html');
 
+  // buildHeadline and its place-casing helpers sit higher up the file.
+  const hFrom = lines.findIndex(l => l.includes('const PLACE_MINOR'));
+  const hTo = lines.findIndex((l, i) => i > hFrom && l.startsWith('const searchInput'));
+
   const ctx = {
     console,
     window: {},
@@ -41,10 +45,12 @@ function loadLocalSearch() {
   };
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(path.join(root, 'assets/query-expand.js'), 'utf8'), ctx);
+  vm.runInContext(lines.slice(hFrom, hTo).join('\n'), ctx);
   vm.runInContext(lines.slice(from, to).join('\n'), ctx);
   return q => ({
     result: vm.runInContext(`localSearch(${JSON.stringify(q)})`, ctx),
     headline: vm.runInContext(`localHeadlineData(localSearch(${JSON.stringify(q)}))`, ctx),
+    banner: vm.runInContext(`buildHeadline(localHeadlineData(localSearch(${JSON.stringify(q)})))`, ctx),
   });
 }
 
@@ -239,6 +245,52 @@ console.log('\nqualifiers boost, but never make a business eligible\n');
   const ok = r.length > 0;
   if (!ok) failures++;
   line(ok, `"organic" alone still returns results (${r.length})`);
+}
+
+// ---------------------------------------------------------------------------
+// A spelling correction must be declared, not applied quietly.
+//
+// Darlington is in County Durham, Dartington is in Devon, and they are one
+// letter apart. Searching the first silently returned two businesses in the
+// second under the banner "Here are some UK businesses we think you'll love".
+// ---------------------------------------------------------------------------
+console.log('\nspelling corrections are declared, not silent\n');
+
+const correctionCases = [
+  { q: 'darlington',      expect: ['darlington', 'dartington'], banner: /No results for <b>Darlington<\/b>.*Dartington/ },
+  { q: 'sheffild knives', expect: ['sheffild', 'sheffield'],    banner: /No results for <b>Sheffild<\/b>.*Sheffield/ },
+  // Not corrections: exact hits, and the stemmer's own doubled-letter repairs
+  // ("cornwal" reaches Cornwall by collapsing "ll", so it is the same word).
+  { q: 'dartington',      expect: null },
+  { q: 'cornwal',         expect: null },
+  { q: 'sausages',        expect: null },
+];
+
+for (const c of correctionCases) {
+  const { result, banner } = local(c.q);
+  const fixes = result.corrections || [];
+  const problems = [];
+
+  if (c.expect === null) {
+    if (fixes.length) problems.push(`announced a correction it should not have: ${JSON.stringify(fixes)}`);
+    if (/No results for/.test(banner)) problems.push('banner claims a correction');
+  } else {
+    const got = fixes.length ? [fixes[0].from, fixes[0].to] : null;
+    if (!got || got[0] !== c.expect[0] || got[1] !== c.expect[1]) {
+      problems.push(`corrections ${JSON.stringify(got)}, wanted ${JSON.stringify(c.expect)}`);
+    }
+    if (c.banner && !c.banner.test(banner)) problems.push(`banner reads: ${banner}`);
+    if (!result.matches.length) problems.push('no results to show');
+  }
+
+  if (problems.length) {
+    failures++;
+    line(false, `"${c.q}"`);
+    problems.forEach(p => console.log(`          ${p}`));
+  } else {
+    const shown = banner.replace(/<\/?b>/g, '').replace(/&mdash;/g, '—').replace(/&rsquo;/g, '’');
+    line(true, `"${c.q}"`.padEnd(34) + shown.slice(0, 62));
+  }
 }
 
 console.log('');

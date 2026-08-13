@@ -1109,6 +1109,30 @@ function buildHeadline(result) {
   const place   = result && result.locationTerm ? esc(titleCasePlace(result.locationTerm)) : '';
   const none    = !result || !result.matches || result.matches.length === 0;
 
+  // A spelling correction has to be declared, not applied quietly. Darlington
+  // is in County Durham and Dartington is in Devon — one letter apart — so a
+  // silent correction sends someone 350 miles from where they asked without
+  // telling them. Fuzzy matching only fires on words the catalogue does not
+  // contain, so "nothing for what you typed" is always true here.
+  //
+  // Only genuine substitutions reach here. The stemmer, which handles "cornwal"
+  // for Cornwall, collapses doubled letters and endings — so by construction it
+  // only ever reaches the same word typed sloppily. Fuzzy matching is the only
+  // step that can land on a different word, which is exactly the case worth
+  // declaring.
+  const fixes = (result && result.corrections) || [];
+  let prefix = '';
+  if (fixes.length && !none) {
+    const from = fixes.map(c => esc(titleCasePlace(c.from))).join(', ');
+    const to   = fixes.map(c => esc(titleCasePlace(c.to))).join(', ');
+    if (quality === 'exact') {
+      return `No results for <b>${from}</b> &mdash; showing results for <b>${to}</b> instead.`;
+    }
+    // Two things went differently from what they asked. Say both, shortest
+    // first, rather than letting the correction hide the widening.
+    prefix = `No results for <b>${from}</b>, showing <b>${to}</b> instead. `;
+  }
+
   if (none) {
     if (product && place) return `We couldn&rsquo;t find any British ${verb} ${product} in ${place} just yet.`;
     if (product)          return `We couldn&rsquo;t find any British ${verb} ${product} just yet.`;
@@ -1119,15 +1143,15 @@ function buildHeadline(result) {
   }
   // Went wider than they asked for — say so plainly.
   if (product && place) {
-    return `We couldn&rsquo;t find you any British ${verb} ${product} in ${place}, but think you&rsquo;ll love these businesses a bit further afield.`;
+    return prefix + `We couldn&rsquo;t find you any British ${verb} ${product} in ${place}, but think you&rsquo;ll love these businesses a bit further afield.`;
   }
   if (place) {
-    return `We couldn&rsquo;t find a match in ${place}, but think you&rsquo;ll love these businesses a bit further afield.`;
+    return prefix + `We couldn&rsquo;t find a match in ${place}, but think you&rsquo;ll love these businesses a bit further afield.`;
   }
   if (product) {
-    return `We couldn&rsquo;t find an exact match for British ${verb} ${product}, but think you&rsquo;ll love these.`;
+    return prefix + `We couldn&rsquo;t find an exact match for British ${verb} ${product}, but think you&rsquo;ll love these.`;
   }
-  return 'Here are some UK businesses we think you&rsquo;ll love';
+  return prefix + 'Here are some UK businesses we think you&rsquo;ll love';
 }
 const searchInput = document.getElementById('search');
 const autocompleteDropdown = document.getElementById('autocompleteDropdown');
@@ -1648,6 +1672,10 @@ function normaliseQuery(query) {
   const seen = new Set();
   let understood = 0;
 
+  // Fuzzy corrections we made on the user's behalf. Recorded so they can be
+  // declared rather than applied silently — see the note on fuzzyHit below.
+  const corrections = [];
+
   // Record the canonical word, then quietly widen it to its synonym group.
   const take = (word, shown) => {
     if (shown && !display.includes(shown)) display.push(shown);
@@ -1675,7 +1703,25 @@ function normaliseQuery(query) {
     const stemmed = stemHit(tok, vocab);
     if (stemmed) { take(stemmed, tok); understood++; return; }
     const near = fuzzyHit(tok, vocab);
-    if (near) { take(near, tok); understood++; return; }
+    if (near) {
+      // Darlington is a town in County Durham; Dartington is a village in
+      // Devon. One letter apart, and fuzzy matching will happily send someone
+      // looking for the first to the second without a word about it. Record it
+      // so the page can say what it did. Fuzzy only fires on words the
+      // catalogue does not contain, so "no results for what you typed" is
+      // always true when this fires.
+      if (near !== tok) {
+        corrections.push({ from: tok, to: near });
+        // Keep the misspelling out of the echoed terms — the correction notice
+        // already carries it, and leaving it in read as "British made jumpers
+        // darlington". Passing null means "search on this, but don't say it".
+        take(near, null);
+      } else {
+        take(near, tok);
+      }
+      understood++;
+      return;
+    }
     take(tok, tok); // keep it, but it counts as not understood
   });
 
@@ -1687,7 +1733,7 @@ function normaliseQuery(query) {
   const tags = expandToTags(query);
   if (tags.length) understood++;
 
-  return { terms, understood, display, tags, typed, placePreferred };
+  return { terms, understood, display, tags, typed, placePreferred, corrections };
 }
 
 // Canonical product tags implied by a query, via the shared lexicon. Returns
@@ -1780,11 +1826,11 @@ function classifyTerms(terms, typed, placePreferred) {
 }
 
 function localSearch(query) {
-  const { terms, understood, display, tags, typed, placePreferred } = normaliseQuery(query);
+  const { terms, understood, display, tags, typed, placePreferred, corrections } = normaliseQuery(query);
   const queryTags = tags || [];
   if ((!terms.length || !understood) && !queryTags.length) {
     return { matches: [], terms, understood, product: [], place: [], inPlace: 0,
-             productDisplay: [], placeDisplay: [] };
+             productDisplay: [], placeDisplay: [], corrections };
   }
 
   const { product, place } = classifyTerms(terms, typed, placePreferred);
@@ -1857,7 +1903,7 @@ function localSearch(query) {
   const top = eligible.slice(0, 40);
   return {
     matches: top.map(s => s.b),
-    terms, understood, product, place,
+    terms, understood, product, place, corrections,
     productDisplay: shown.product, placeDisplay: shown.place,
     inPlace: top.filter(s => s.placeScore > 0).length
   };
@@ -1887,6 +1933,7 @@ function localHeadlineData(local) {
     madeOrGrown: looksGrown ? 'grown' : 'made',
     // Right product but nowhere near the requested place = "further afield".
     matchQuality: (local.place.length && local.inPlace === 0) ? 'wider' : 'exact',
+    corrections: local.corrections || [],
     matches: local.matches
   };
 }
@@ -1982,6 +2029,12 @@ ${catalogStr}`;
       console.info('[search] AI answered via', result._model || 'unknown model');
       state.aiActive = true;
       state.notice = '';
+      // The model does not do spelling correction, but the local engine runs
+      // alongside it either way — so if the query only makes sense as a
+      // misspelling, say so here too rather than only on the fallback path.
+      if (!result.corrections) {
+        result.corrections = normaliseQuery(query).corrections || [];
+      }
       state.aiHeadline = buildHeadline(result);
       state.aiMatches.clear();
       state.aiOrder = [];
