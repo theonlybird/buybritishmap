@@ -107,7 +107,10 @@ const VOCAB = [
   ['watches',              /\b(watch|chronometer|timepiece)(es)?\b/i,                   GROUPS.WATCHES],
 
   // --- cutlery & cookware ---
-  ['cutlery & knives',      /\b(knife|knive|cutlery|blade|cleaver)s?\b/i,               GROUPS.CUTLERY],
+  // Forks and spoons appear nowhere in the catalogue — Sheffield makers write
+  // "cutlery" and "knives" — so without them here "fork" was an unknown word,
+  // and fuzzy matching turned a cutlery search into "pork".
+  ['cutlery & knives',      /\b(knife|knive|cutlery|blade|cleaver|fork|spoon|flatware|canteen of cutlery)s?\b/i, GROUPS.CUTLERY],
   ['cookware',              /\b(pan|skillet|casserole|stockpot|frying ?pan|wok)s?\b/i,  GROUPS.COOKWARE],
   ['boards & blocks',       /\b(chopping ?board|serving ?board|knife ?block)s?\b/i,     GROUPS.COOKWARE],
 
@@ -242,7 +245,8 @@ function isTagAllowed(tag, category) {
 // which stored entries predate the current vocabulary and need re-reading.
 // NB: only the TAGGING rules matter here. QUERY_EXTRA below never touches a
 // stored tag, so adding search words to it does not invalidate the harvest.
-const VOCAB_VERSION = 5;
+// v6: forks, spoons and flatware added to the cutlery entry.
+const VOCAB_VERSION = 6;
 
 // ---------------------------------------------------------------------------
 // Query-side vocabulary.

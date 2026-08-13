@@ -78,6 +78,10 @@ const cases = [
   // --- non-food controls: these worked before and must still work ---
   { q: 'knitted vests',   expectTags: ['knitwear', 'vests & waistcoats'], expectCategory: 'clothing', minInCategory: 5 },
   { q: 'kitchen knife',   expectTags: ['cutlery & knives'], expectCategory: 'cutlery', minInCategory: 3 },
+  // The catalogue never writes "fork" — Sheffield makers write "cutlery" — so
+  // the lexicon has to carry it, or fuzzy matching turns it into "pork".
+  { q: 'sheffield fork',  expectTags: ['cutlery & knives'], expectCategory: 'cutlery', minInCategory: 3 },
+  { q: 'spoons',          expectTags: ['cutlery & knives'], expectCategory: 'cutlery', minInCategory: 2 },
   { q: 'pet food bowls',  expectTags: ['bowls'], expectCategory: 'ceramics', minInCategory: 3 },
   { q: 'wellies',         expectTags: ['footwear & boots'], expectCategory: 'clothing', minInCategory: 2 },
 
@@ -264,6 +268,11 @@ const correctionCases = [
   { q: 'dartington',      expect: null },
   { q: 'cornwal',         expect: null },
   { q: 'sausages',        expect: null },
+  // A word the lexicon recognises is a real product term and must never be
+  // corrected. "sheffield fork" was returning farm shops under "No results for
+  // Fork, showing Pork instead."
+  { q: 'fork',            expect: null },
+  { q: 'sheffield fork',  expect: null },
 ];
 
 for (const c of correctionCases) {
@@ -291,6 +300,18 @@ for (const c of correctionCases) {
     const shown = banner.replace(/<\/?b>/g, '').replace(/&mdash;/g, '—').replace(/&rsquo;/g, '’');
     line(true, `"${c.q}"`.padEnd(34) + shown.slice(0, 62));
   }
+}
+
+// A fuzzy correction may not change the first letter. Typos happen in the
+// middle and at the end of words; a changed initial is a different word.
+{
+  const { result, banner } = local('sheffield fork');
+  const farms = result.matches.filter(b => b.category === 'farm');
+  const cutlers = result.matches.filter(b => b.category === 'cutlery');
+  const ok = farms.length === 0 && cutlers.length >= 3 && !/Pork/i.test(banner);
+  if (!ok) failures++;
+  line(ok, `"sheffield fork" — ${cutlers.length} cutlers, ${farms.length} farm shops` +
+    (ok ? '' : ` | ${banner}`));
 }
 
 console.log('');

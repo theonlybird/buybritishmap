@@ -1570,6 +1570,12 @@ function fuzzyHit(token, vocab) {
   let best = null, bestD = 99;
   for (const w of vocab) {
     if (Math.abs(w.length - token.length) > budget) continue;
+    // A typo is almost never in the first letter — fingers slip in the middle
+    // and at the end of a word. Requiring the first letter to survive costs
+    // nothing on real misspellings ("darlington", "sheffild") and rules out the
+    // damaging class of correction, where a short word becomes a completely
+    // different one: fork/pork, lamp/lamb, wool/tool, beef/beer.
+    if (w[0] !== token[0]) continue;
     const d = editDistance(token, w);
     if (d <= budget && d < bestD) { best = w; bestD = d; if (d === 1) break; }
   }
@@ -1695,6 +1701,12 @@ function normaliseQuery(query) {
     // "jumper" rather than "sustainable jumper".
     if (SUBJECTIVE_WORDS.has(tok)) return;
     if (vocab.has(tok)) { take(tok, tok); understood++; return; }
+    // A word the controlled vocabulary recognises is a real product term and
+    // must never be "corrected". The catalogue does not contain the word
+    // "fork" — Sheffield makers write "cutlery" — so it looked like a
+    // misspelling and became "pork". The lexicon knows better, and is checked
+    // here rather than at the end so nothing downstream gets the chance.
+    if (expandToTags(tok).length) { take(tok, tok); understood++; return; }
     // Known spelling first — cheapest and most reliable.
     const syn = SYNONYMS[tok];
     if (syn) { take(syn, tok); understood++; return; }

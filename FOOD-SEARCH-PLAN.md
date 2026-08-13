@@ -420,6 +420,43 @@ Two details:
 The AI path attaches the same corrections, so the message appears whichever
 engine answers.
 
+### Fork is not a misspelling of pork
+
+`sheffield fork` returned farm shops under *"No results for Fork, showing Pork
+instead."* The correction notice was working; the correction was wrong.
+
+Cause: the catalogue never writes the word "fork". Sheffield makers describe
+themselves as cutlers and write "cutlery" and "knives", so "fork" was an unknown
+word, and fuzzy matching found "pork" one letter away.
+
+Three changes, each of which fixes it independently — the redundancy is
+deliberate, because this class of error is silent and confident:
+
+1. **The lexicon now knows forks.** `fork`, `spoon`, `flatware` and `canteen of
+   cutlery` joined the `cutlery & knives` entry. This is the real fix: the
+   controlled vocabulary exists precisely to hold words the catalogue does not
+   spell. `VOCAB_VERSION` bumped to 6.
+
+2. **The lexicon is consulted before fuzzy matching.** A word the controlled
+   vocabulary recognises is a real product term and must never be "corrected".
+   The check used to happen at the very end, after fuzzy had already fired.
+
+3. **A fuzzy correction may not change the first letter.** Typos happen in the
+   middle and at the end of words — fingers slip mid-word, not on the initial.
+   Tested across a battery of realistic misspellings (`darlington`, `sheffild`,
+   `scotand`, `shetlnd`, `edinburg`, `glasgw`, `chees`, `leathr`, `jumpr`) this
+   rule changes **nothing**: every genuine typo still corrects exactly as
+   before. What it rules out is the damaging class where a short word becomes a
+   different word — fork/pork, wool/tool, beef/beer.
+
+`sheffield fork` now returns Samuel Staniforth, Taylor's Eye Witness and David
+Mellor: seven cutlers, no farm shops.
+
+One case is left deliberately alone. `lamp` still corrects to `lamb`, because
+they share an initial and nothing on this map is a lamp — but it now says so:
+*"No results for Lamp — showing results for Lamb instead."* That is the
+behaviour the correction notice was built for.
+
 ### Verification, second pass
 
 `node scripts/test-search.js` now also loads the search block out of
