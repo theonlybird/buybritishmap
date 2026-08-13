@@ -1139,7 +1139,14 @@ function buildHeadline(result) {
     return 'We couldn&rsquo;t find a good match for that just yet.';
   }
   if (quality === 'exact') {
-    return 'Here are some UK businesses we think you&rsquo;ll love';
+    return prefix + 'Here are some UK businesses we think you&rsquo;ll love';
+  }
+  // Some in the place they asked for, some not. Say which, rather than letting
+  // one hit in Perthshire vouch for twenty-five farms in England.
+  if (quality === 'partial' && place) {
+    const n = result.inPlace || 0;
+    const what = product ? `British ${verb} ${product}` : 'these';
+    return prefix + `${n === 1 ? 'The one match' : `All ${n} matches`} for ${what} in ${place} first, then others further afield.`;
   }
   // Went wider than they asked for — say so plainly.
   if (product && place) {
@@ -1192,14 +1199,27 @@ function toggleView(view) {
    we can match on text; regions mostly aren't written in any address, so those
    are resolved geographically instead.
    ========================================================================== */
+// The four nations are read from the `nation` field, which is derived from the
+// county in each address by scripts/add-regions.js. They used to be latitude
+// boxes, and the border is exactly where a box fails: "lat >= 54.95" put
+// Newcastle (54.97) and Northumberland (55.31) in Scotland, while Carlisle
+// (54.88) and Hawick (55.42) are only half a degree apart on opposite sides.
+// Counties do not have that problem. The sub-regional boxes below stay, since
+// there is no field for the Cotswolds.
+const inNation = name => b => b.nation === name;
 const REGIONS = {
-  scotland:    b => b.lat >= 54.95,
+  scotland:    inNation('Scotland'),
+  scottish:    inNation('Scotland'),
+  scots:       inNation('Scotland'),
+  welsh:       inNation('Wales'),
+  english:     inNation('England'),
+  irish:       inNation('Northern Ireland'),
   highlands:   b => b.lat >= 56.8,
   orkney:      b => b.lat >= 58.7 && b.lat <= 59.4,
   shetland:    b => b.lat >= 59.8,
   hebrides:    b => b.lng <= -6.0 && b.lat >= 56.5,
-  wales:       b => b.lat >= 51.3 && b.lat <= 53.5 && b.lng >= -5.5 && b.lng <= -2.65,
-  cymru:       b => b.lat >= 51.3 && b.lat <= 53.5 && b.lng >= -5.5 && b.lng <= -2.65,
+  wales:       inNation('Wales'),
+  cymru:       inNation('Wales'),
   snowdonia:   b => b.lat >= 52.7 && b.lat <= 53.2 && b.lng >= -4.4 && b.lng <= -3.5,
   cornwall:    b => b.lat >= 49.85 && b.lat <= 50.95 && b.lng <= -4.2,
   devon:       b => b.lat >= 50.2 && b.lat <= 51.25 && b.lng >= -4.7 && b.lng <= -2.9,
@@ -1209,10 +1229,8 @@ const REGIONS = {
   cotswolds:   b => b.lat >= 51.55 && b.lat <= 52.25 && b.lng >= -2.45 && b.lng <= -1.55,
   midlands:    b => b.lat >= 52.0 && b.lat <= 53.3 && b.lng >= -3.0 && b.lng <= 0.2,
   london:      b => b.lat >= 51.32 && b.lat <= 51.70 && b.lng >= -0.52 && b.lng <= 0.34,
-  ulster:      b => b.lat >= 54.0 && b.lat <= 55.35 && b.lng >= -8.3 && b.lng <= -5.4,
-  england:     b => b.lat < 54.95
-                 && !(b.lat >= 51.3 && b.lat <= 53.5 && b.lng >= -5.5 && b.lng <= -2.65)
-                 && !(b.lat >= 54.0 && b.lng <= -5.4),
+  ulster:      inNation('Northern Ireland'),
+  england:     inNation('England'),
   britain:     () => true,
   uk:          () => true
 };
@@ -1220,7 +1238,9 @@ const REGIONS = {
 // Does this business sit in the place the user named?
 function matchesPlace(b, placeTerms){
   if (!placeTerms || !placeTerms.length) return false;
-  const where = [b.town, b.address].join(' ').toLowerCase();
+  // The county is included so "Fife" and "Powys" match a listing that names
+  // only its town, the same way the nation does.
+  const where = [b.town, b.address, b.county].filter(Boolean).join(' ').toLowerCase();
   return placeTerms.some(t => {
     // Geography catches places nobody writes in an address ("scotland");
     // the text catches the ones they do ("North Yorkshire"). Either will do,
@@ -1695,11 +1715,27 @@ function normaliseQuery(query) {
     });
   };
 
-  raw.forEach(tok => {
+  raw.forEach((tok, i) => {
     if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
+    // "northern ireland" and "northern irish" are one place in two words.
+    // Without this the first word was taken on its own and the banner read
+    // "in Northern Northern Ireland".
+    if (tok === 'northern' && /^(irish|ireland)$/.test(raw[i + 1] || '')) return;
     // Dropped before scoring AND before display, so the headline reads back
     // "jumper" rather than "sustainable jumper".
     if (SUBJECTIVE_WORDS.has(tok)) return;
+    // Nations are resolved first, and to their noun. "Welsh" appears in the
+    // catalogue text (Bodnant Welsh Food), so the plain vocabulary check below
+    // claimed it before the synonym rule could turn it into "wales" — and it
+    // was then read as a product word. Resolving here also means the banner
+    // reads "in Wales" rather than "in Welsh".
+    if (NATION_WORDS[tok]) {
+      const nation = NATION_WORDS[tok];
+      placePreferred.add(nation);
+      take(nation, nation);
+      understood++;
+      return;
+    }
     if (vocab.has(tok)) { take(tok, tok); understood++; return; }
     // A word the controlled vocabulary recognises is a real product term and
     // must never be "corrected". The catalogue does not contain the word
@@ -1761,17 +1797,32 @@ function expandToTags(query) {
   }
 }
 
+// Adjectival forms of the four nations, and the handful of counties people
+// name that way. A listing in Fife does not write the word "Scottish" anywhere,
+// so without this a search for Scottish pork could only find the businesses
+// whose marketing copy happened to use the word — five of the ten Scottish farm
+// shops on the map.
+const NATION_WORDS = {
+  scottish: 'scotland', scots: 'scotland', scotland: 'scotland',
+  welsh: 'wales', cymru: 'wales', wales: 'wales',
+  english: 'england', england: 'england',
+  irish: 'northern ireland', ulster: 'northern ireland',
+  'northern ireland': 'northern ireland',
+};
+const NATION_OF = { scotland: 'Scotland', wales: 'Wales', england: 'England', 'northern ireland': 'Northern Ireland' };
+
 // Words that name a place in this catalogue, so a query term can be told apart
-// from a product term. Built from towns and addresses only.
+// from a product term. Built from towns, addresses, counties and nations.
 let PLACE_VOCAB = null;
 function buildPlaceVocab() {
   if (PLACE_VOCAB) return PLACE_VOCAB;
   const places = new Set();
   BUSINESSES.forEach(b => {
-    [b.town, b.address].join(' ').toLowerCase()
+    [b.town, b.address, b.county, b.nation].filter(Boolean).join(' ').toLowerCase()
       .replace(/[^a-z0-9]+/g, ' ').split(' ')
       .forEach(w => { if (w.length > 2) places.add(w); });
   });
+  Object.keys(NATION_WORDS).forEach(w => places.add(w));
   // Regions people search for that may not appear verbatim in an address.
   ['england','scotland','wales','britain','cornwall','yorkshire','devon','cotswolds',
    'highlands','midlands','shetland','orkney','hebrides','snowdonia','lakes']
@@ -1889,7 +1940,12 @@ function localSearch(query) {
       else if (hasWord(name, t) || hasWord(desc, t)) qualScore += 4;
     });
     place.forEach(t => {
+      // Nation first: "scottish" is a fact about where the business is, not a
+      // word that has to appear in its address.
+      const nation = NATION_WORDS[t];
+      if (nation && b.nation === NATION_OF[nation]) { placeScore += 10; return; }
       if (hasWord(where, t)) placeScore += 10;
+      else if (b.county && hasWord(b.county, t)) placeScore += 10;
       else if (hasWord(desc, t)) placeScore += 3;
     });
 
@@ -1912,11 +1968,20 @@ function localSearch(query) {
   const rank = s => s.productScore * 3 + s.placeScore * 2 + s.qualScore;
   eligible.sort((x, y) => rank(y) - rank(x) || x.b.name.localeCompare(y.b.name));
 
-  const top = eligible.slice(0, 40);
+  // When a place was named, everything in it comes first — all of it, before
+  // anything outside. Ranking alone did not guarantee that: on "scottish pork"
+  // an English farm with a stronger product score sat above a Scottish one, so
+  // the results interleaved and there was no line to draw.
+  const top = (place.length
+    ? [...eligible.filter(s => s.placeScore > 0), ...eligible.filter(s => s.placeScore === 0)]
+    : eligible
+  ).slice(0, 40);
+
   return {
     matches: top.map(s => s.b),
     terms, understood, product, place, corrections,
     productDisplay: shown.product, placeDisplay: shown.place,
+    // Where the named place runs out. The grid draws its divider here.
     inPlace: top.filter(s => s.placeScore > 0).length
   };
 }
@@ -1943,8 +2008,18 @@ function localHeadlineData(local) {
     productTerm: prodWords.length ? prodWords.join(' ') : null,
     locationTerm: placeWords.length ? placeWords.join(' ') : null,
     madeOrGrown: looksGrown ? 'grown' : 'made',
-    // Right product but nowhere near the requested place = "further afield".
-    matchQuality: (local.place.length && local.inPlace === 0) ? 'wider' : 'exact',
+    // Three states, not two. The old rule was binary — one result in the named
+    // place was enough to call the whole set "exact", so "scottish pork" showed
+    // three Scottish farms and twenty-five English ones under a banner that
+    // claimed they all matched.
+    //   none in place        -> wider   ("couldn't find any there")
+    //   some, but not all    -> partial ("these first, then further afield")
+    //   all of them          -> exact
+    matchQuality: !local.place.length ? 'exact'
+      : local.inPlace === 0 ? 'wider'
+      : local.inPlace < local.matches.length ? 'partial'
+      : 'exact',
+    inPlace: local.inPlace,
     corrections: local.corrections || [],
     matches: local.matches
   };

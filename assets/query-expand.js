@@ -94,6 +94,15 @@
       'free', 'range', 'grass', 'fed', 'wild',
     ]);
 
+    // Adjectival forms of the nations. Each business carries its nation in the
+    // place field, so mapping the adjective onto the noun is all that is needed.
+    const NATION_WORDS = {
+      scottish: 'scotland', scots: 'scotland',
+      welsh: 'wales', cymru: 'wales',
+      english: 'england',
+      irish: 'northern ireland', ulster: 'northern ireland',
+    };
+
     /** Is the matched word modifying something else? "cake tin" is a tin. */
     function isModifier(text, matchIndex, matchLength) {
       const after = String(text).slice(matchIndex + matchLength, matchIndex + matchLength + 40);
@@ -187,6 +196,8 @@
 
         q.tokens.forEach(t => {
           if (wordIn(ptList.join(' '), t)) score += 10;
+          // "scottish" has to reach a business filed under Scotland.
+          if (NATION_WORDS[t] && wordIn(item.t, NATION_WORDS[t])) score += 8;
           if (wordIn(item.t, t)) score += 8;
           if (wordIn(item.c, t)) score += 8;
           if (wordIn(item.s, t)) score += 6;

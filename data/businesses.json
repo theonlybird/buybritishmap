@@ -19,7 +19,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "united-overalls",
@@ -42,7 +44,9 @@
     "product_tags": [
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "private-white-vc",
@@ -64,7 +68,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Manchester"
   },
   {
     "id": "community-clothing",
@@ -86,7 +92,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "everyday wear"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "maquien",
@@ -109,7 +116,9 @@
     "product_tags": [
       "cashmere & merino",
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Yorkshire"
   },
   {
     "id": "maude-and-fox",
@@ -131,7 +140,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Dorset"
   },
   {
     "id": "chapman-bags",
@@ -154,7 +165,8 @@
     "product_tags": [
       "tweed & woven goods",
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "trakke",
@@ -177,7 +189,9 @@
     "product_tags": [
       "coats & jackets",
       "bags & leather goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Glasgow"
   },
   {
     "id": "carradice",
@@ -200,7 +214,9 @@
     "product_tags": [
       "coats & jackets",
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "barnes-and-moore",
@@ -222,7 +238,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "john-smedley",
@@ -245,7 +262,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "hebtroco",
@@ -269,7 +288,8 @@
       "jeans & denim",
       "suits & trousers",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "billingham",
@@ -291,7 +311,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "campbell-cole",
@@ -313,7 +334,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "carl-stuart-tailors",
@@ -336,7 +359,9 @@
     "product_tags": [
       "suits & trousers",
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "knepp-wild-range",
@@ -364,7 +389,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "West Sussex"
   },
   {
     "id": "gazegill-organics",
@@ -399,7 +426,9 @@
       "poultry",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "farm2fork",
@@ -424,7 +453,9 @@
       "lamb",
       "poultry",
       "fresh meat"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "eversfield-organic",
@@ -454,7 +485,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "iow-tomatoes",
@@ -476,7 +509,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Isle of Wight"
   },
   {
     "id": "pipers-farm",
@@ -510,7 +545,9 @@
       "poultry",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "daylesford",
@@ -534,7 +571,9 @@
       "dairy & cheese",
       "fruit & veg",
       "drinks & spirits"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "trickers",
@@ -556,7 +595,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "crockett-jones",
@@ -578,7 +618,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "joseph-cheaney",
@@ -600,7 +641,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "loake",
@@ -622,7 +665,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "edward-green",
@@ -644,7 +689,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "johnstons-of-elgin",
@@ -667,7 +713,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Moray"
   },
   {
     "id": "begg-x-co",
@@ -691,7 +739,9 @@
       "knitwear",
       "cashmere & merino",
       "scarves & accessories"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Ayr"
   },
   {
     "id": "william-lockie",
@@ -714,7 +764,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Hawick"
   },
   {
     "id": "corgi",
@@ -737,7 +789,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Carmarthenshire"
   },
   {
     "id": "pantherella",
@@ -760,7 +814,8 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "peregrine",
@@ -783,7 +838,9 @@
     "product_tags": [
       "knitwear",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "mackintosh",
@@ -805,7 +862,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Cumbernauld"
   },
   {
     "id": "hiut-denim",
@@ -829,7 +888,8 @@
       "knitwear",
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "Wales"
   },
   {
     "id": "chatsworth-farm-shop",
@@ -851,7 +911,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "ludlow-food-centre",
@@ -875,7 +937,9 @@
       "farm shop & deli",
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Shropshire"
   },
   {
     "id": "balgove-larder",
@@ -906,7 +970,9 @@
       "pork & bacon",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Scotland",
+    "county": "Fife"
   },
   {
     "id": "fodder",
@@ -930,7 +996,9 @@
       "farm shop & deli",
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "gloucester-services",
@@ -952,7 +1020,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "rhug-estate",
@@ -981,7 +1050,9 @@
       "lamb",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Wales",
+    "county": "Denbighshire"
   },
   {
     "id": "goodwood-farm-shop",
@@ -1006,7 +1077,9 @@
       "dairy & cheese",
       "fruit & veg",
       "drinks & spirits"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Sussex"
   },
   {
     "id": "riverford",
@@ -1036,7 +1109,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "fox-brothers",
@@ -1058,7 +1133,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "lavenham",
@@ -1080,7 +1157,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Suffolk"
   },
   {
     "id": "christys",
@@ -1102,7 +1181,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "hats & caps"
-    ]
+    ],
+    "nation": "England",
+    "county": "Oxfordshire"
   },
   {
     "id": "ettinger",
@@ -1124,7 +1205,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "barbour",
@@ -1146,7 +1229,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "new-balance-uk",
@@ -1168,7 +1252,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "globe-trotter",
@@ -1190,7 +1276,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hertfordshire"
   },
   {
     "id": "tusting",
@@ -1212,7 +1300,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Buckinghamshire"
   },
   {
     "id": "emma-willis",
@@ -1234,7 +1324,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "shirts"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "turnbull-asser",
@@ -1256,7 +1347,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "keelham",
@@ -1278,7 +1371,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "cannon-hall-farm",
@@ -1303,7 +1398,8 @@
       "lamb",
       "pork & bacon",
       "fresh meat"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "farmer-copleys",
@@ -1332,7 +1428,9 @@
       "eggs",
       "pork & bacon"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "hollis-mead",
@@ -1355,7 +1453,9 @@
     "product_tags": [
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Dorset"
   },
   {
     "id": "loch-arthur",
@@ -1379,7 +1479,9 @@
       "fresh meat",
       "dairy & cheese",
       "bread & bakery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Dumfries"
   },
   {
     "id": "macknade",
@@ -1402,7 +1504,9 @@
     "product_tags": [
       "farm shop & deli",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Kent"
   },
   {
     "id": "secretts",
@@ -1424,7 +1528,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "jamiesons-shetland",
@@ -1446,7 +1552,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Shetland"
   },
   {
     "id": "melin-tregwynt",
@@ -1468,7 +1576,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Pembrokeshire"
   },
   {
     "id": "eribe",
@@ -1490,7 +1600,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "sunspel",
@@ -1513,7 +1625,9 @@
     "product_tags": [
       "shirts",
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "drakes",
@@ -1536,7 +1650,9 @@
     "product_tags": [
       "shirts",
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "solovair",
@@ -1558,7 +1674,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "drmartens-mie",
@@ -1580,7 +1698,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "low-sizergh-barn",
@@ -1603,7 +1723,9 @@
     "product_tags": [
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "trevaskis-farm",
@@ -1626,7 +1748,9 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "lobbs-farm-shop",
@@ -1659,7 +1783,9 @@
       "poultry",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "ardross-farm",
@@ -1681,7 +1807,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Fife"
   },
   {
     "id": "brocksbushes",
@@ -1704,7 +1832,9 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northumberland"
   },
   {
     "id": "hollies-farm-shop",
@@ -1726,7 +1856,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fresh meat"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cheshire"
   },
   {
     "id": "cobbs-farm-shop",
@@ -1748,7 +1880,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Berkshire"
   },
   {
     "id": "essington-farm",
@@ -1770,7 +1904,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "abraham-moon",
@@ -1793,7 +1928,9 @@
     "product_tags": [
       "tweed & woven goods",
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "hawico",
@@ -1816,7 +1953,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "tanner-bates",
@@ -1838,7 +1977,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "carrier-company",
@@ -1861,7 +2002,9 @@
     "product_tags": [
       "bags & leather goods",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "blackhorse-lane",
@@ -1884,7 +2027,9 @@
     "product_tags": [
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "norman-walsh",
@@ -1906,7 +2051,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "gonalston",
@@ -1929,7 +2075,9 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Nottinghamshire"
   },
   {
     "id": "denstone-hall",
@@ -1951,7 +2099,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Staffordshire"
   },
   {
     "id": "loch-levens-larder",
@@ -1973,7 +2123,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Kinross"
   },
   {
     "id": "cowdray-farm-shop",
@@ -2002,7 +2154,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "West Sussex"
   },
   {
     "id": "garsons",
@@ -2024,7 +2178,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "stansted-park",
@@ -2053,7 +2209,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Hampshire"
   },
   {
     "id": "emmetts-peasenhall",
@@ -2081,7 +2239,9 @@
       "fruit & veg",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Suffolk"
   },
   {
     "id": "maple-farm-kelsale",
@@ -2106,7 +2266,9 @@
       "bread & bakery",
       "flour & grain"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Suffolk"
   },
   {
     "id": "north-sea-clothing",
@@ -2128,7 +2290,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "genevieve-sweeney",
@@ -2150,7 +2314,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hertfordshire"
   },
   {
     "id": "henry-poole",
@@ -2172,7 +2338,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "anderson-sheppard",
@@ -2194,7 +2362,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "gaziano-girling",
@@ -2216,7 +2386,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "llwynhelyg",
@@ -2239,7 +2411,9 @@
     "product_tags": [
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Ceredigion"
   },
   {
     "id": "knitsley",
@@ -2262,7 +2436,9 @@
     "product_tags": [
       "fresh meat",
       "bread & bakery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Durham"
   },
   {
     "id": "tablehurst-farm",
@@ -2287,7 +2463,9 @@
       "fresh meat",
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "plumgarths",
@@ -2317,7 +2495,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "otterton-mill",
@@ -2340,7 +2520,9 @@
     "product_tags": [
       "fruit & veg",
       "bread & bakery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "weetons",
@@ -2366,7 +2548,9 @@
       "dairy & cheese",
       "pork & bacon"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "emma-bridgewater",
@@ -2389,7 +2573,8 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "denby-pottery",
@@ -2411,7 +2596,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "burleigh-pottery",
@@ -2433,7 +2620,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "moorcroft",
@@ -2455,7 +2643,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "leach-pottery",
@@ -2477,7 +2666,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "whichford-pottery",
@@ -2500,7 +2691,9 @@
     "product_tags": [
       "flowerpots",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Warwickshire"
   },
   {
     "id": "highland-stoneware",
@@ -2522,7 +2715,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Sutherland"
   },
   {
     "id": "royal-crown-derby",
@@ -2545,7 +2740,8 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "1882-ltd",
@@ -2567,7 +2763,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "portmeirion",
@@ -2592,7 +2789,9 @@
       "bowls",
       "plates",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "emma-alington",
@@ -2615,7 +2814,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Berkshire"
   },
   {
     "id": "feldspar",
@@ -2637,7 +2838,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "rye-pottery",
@@ -2659,7 +2862,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "dunoon-ceramics",
@@ -2682,7 +2887,9 @@
     "product_tags": [
       "mugs",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Staffordshire"
   },
   {
     "id": "linda-bloomfield",
@@ -2705,7 +2912,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "sue-pryke",
@@ -2728,7 +2937,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "brickett-davda",
@@ -2751,7 +2962,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "gwili-pottery",
@@ -2774,7 +2987,9 @@
     "product_tags": [
       "mugs",
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Carmarthenshire"
   },
   {
     "id": "edinbane-pottery",
@@ -2796,7 +3011,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Isle of Skye"
   },
   {
     "id": "sytch-farm-studios",
@@ -2818,7 +3035,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Shropshire"
   },
   {
     "id": "belleek-pottery",
@@ -2840,7 +3059,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Fermanagh"
   },
   {
     "id": "clive-bowen",
@@ -2862,7 +3083,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "jim-malone",
@@ -2884,7 +3107,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "matthew-blakely",
@@ -2906,7 +3131,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "fitch-and-mcandrew",
@@ -2928,7 +3154,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Dumfries & Galloway"
   },
   {
     "id": "bridge-pottery",
@@ -2950,7 +3178,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Swansea"
   },
   {
     "id": "brookhouse-pottery",
@@ -2972,7 +3202,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Wales"
   },
   {
     "id": "maze-hill-pottery",
@@ -2994,7 +3225,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "sasha-wardell",
@@ -3016,7 +3249,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Wiltshire"
   },
   {
     "id": "jane-hamlyn",
@@ -3038,7 +3273,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Nottinghamshire"
   },
   {
     "id": "walter-keeler",
@@ -3060,7 +3297,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Monmouthshire"
   },
   {
     "id": "sandy-brown",
@@ -3083,7 +3322,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "john-pollex",
@@ -3105,7 +3346,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "penny-simpson",
@@ -3128,7 +3371,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "chris-keenan",
@@ -3152,7 +3397,9 @@
       "bowls",
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "sue-paraskeva",
@@ -3175,7 +3422,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Isle of Wight"
   },
   {
     "id": "akiko-hirai",
@@ -3197,7 +3446,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "james-tilla-waters",
@@ -3220,7 +3471,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Carmarthenshire"
   },
   {
     "id": "jack-doherty",
@@ -3242,7 +3495,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "adam-buick",
@@ -3264,7 +3519,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Pembrokeshire"
   },
   {
     "id": "nicola-werner",
@@ -3287,7 +3544,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "katharina-klug",
@@ -3309,7 +3568,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "churchill-china",
@@ -3332,7 +3592,8 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "cornishware-tg-green",
@@ -3354,7 +3615,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "littlethorpe-potteries",
@@ -3377,7 +3640,8 @@
     "product_tags": [
       "flowerpots",
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "errington-reay",
@@ -3399,7 +3663,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northumberland"
   },
   {
     "id": "anta",
@@ -3423,7 +3689,9 @@
       "tableware",
       "pottery",
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Ross-shire"
   },
   {
     "id": "crail-pottery",
@@ -3446,7 +3714,9 @@
     "product_tags": [
       "flowerpots",
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Fife"
   },
   {
     "id": "ballydougan-pottery",
@@ -3468,7 +3738,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Armagh"
   },
   {
     "id": "sheila-fleet",
@@ -3490,7 +3762,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Orkney"
   },
   {
     "id": "ola-gorie",
@@ -3512,7 +3786,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Orkney"
   },
   {
     "id": "deakin-and-francis",
@@ -3535,7 +3811,8 @@
     "product_tags": [
       "cufflinks & signets",
       "jewellery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "hamilton-and-inches",
@@ -3557,7 +3834,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Edinburgh"
   },
   {
     "id": "alex-monroe",
@@ -3579,7 +3858,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "cw-sellors",
@@ -3601,7 +3882,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "rhiannon",
@@ -3623,7 +3906,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Ceredigion"
   },
   {
     "id": "hebridean-jewellery",
@@ -3645,7 +3930,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "South Uist"
   },
   {
     "id": "charles-frodsham",
@@ -3668,7 +3955,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "garrick-watchmakers",
@@ -3691,7 +3980,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "anordain",
@@ -3714,7 +4005,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Glasgow"
   },
   {
     "id": "bremont",
@@ -3737,7 +4030,8 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "fears-watches",
@@ -3760,7 +4054,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Bristol"
   },
   {
     "id": "mourne-textiles",
@@ -3782,7 +4078,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "thomas-ferguson-linen",
@@ -3805,7 +4103,9 @@
     "product_tags": [
       "tweed & woven goods",
       "tableware"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "ballylagan-organic",
@@ -3829,7 +4129,9 @@
       "beef",
       "pork & bacon",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Antrim"
   },
   {
     "id": "eden-pottery",
@@ -3851,7 +4153,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "steensons",
@@ -3874,7 +4178,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Antrim"
   },
   {
     "id": "faller",
@@ -3896,7 +4202,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Londonderry"
   },
   {
     "id": "nomadic-watches",
@@ -3919,7 +4227,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Belfast"
   },
   {
     "id": "yarmouth-oilskins",
@@ -3943,7 +4253,9 @@
       "coats & jackets",
       "suits & trousers",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "farfield-clothing",
@@ -3966,7 +4278,9 @@
     "product_tags": [
       "vests & waistcoats",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "troy-london",
@@ -3988,7 +4302,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "mcnair-shirts",
@@ -4011,7 +4327,9 @@
     "product_tags": [
       "cashmere & merino",
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "fieldware-co",
@@ -4034,7 +4352,9 @@
     "product_tags": [
       "coats & jackets",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "hegarty-london",
@@ -4057,7 +4377,9 @@
     "product_tags": [
       "tweed & woven goods",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "lochcarron",
@@ -4079,7 +4401,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "berk",
@@ -4102,7 +4426,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "colhays",
@@ -4125,7 +4451,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "mallochs",
@@ -4147,7 +4475,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "glenbrae",
@@ -4170,7 +4500,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "michael-ross-knitwear",
@@ -4192,7 +4524,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Berkshire"
   },
   {
     "id": "oubas",
@@ -4214,7 +4548,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "mars-knitwear",
@@ -4236,7 +4572,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "glencroft",
@@ -4258,7 +4595,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "izzy-lane",
@@ -4280,7 +4619,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "navygrey",
@@ -4303,7 +4644,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "eas-fors",
@@ -4326,7 +4669,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Isle of Mull"
   },
   {
     "id": "carnwear",
@@ -4348,7 +4693,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "quinton-chadwick",
@@ -4371,7 +4718,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "Suffolk"
   },
   {
     "id": "croft-house",
@@ -4394,7 +4743,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Aberdeenshire"
   },
   {
     "id": "goral",
@@ -4416,7 +4767,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "billy-tannery",
@@ -4438,7 +4790,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "cherchbi",
@@ -4461,7 +4815,9 @@
     "product_tags": [
       "tweed & woven goods",
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "mcrostie",
@@ -4483,7 +4839,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Glasgow"
   },
   {
     "id": "english-fine-cottons",
@@ -4505,7 +4863,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Greater Manchester"
   },
   {
     "id": "ghhurt",
@@ -4528,7 +4888,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "Nottinghamshire"
   },
   {
     "id": "house-of-cheviot",
@@ -4552,7 +4914,9 @@
       "knitwear",
       "cashmere & merino",
       "socks"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "and-daughter",
@@ -4574,7 +4938,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "woolkind",
@@ -4597,7 +4963,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Edinburgh"
   },
   {
     "id": "london-tradition",
@@ -4619,7 +4987,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "grenfell",
@@ -4641,7 +5011,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "gloverall",
@@ -4663,7 +5035,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "yarmo",
@@ -4686,7 +5059,9 @@
     "product_tags": [
       "coats & jackets",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "buffalo-systems",
@@ -4708,7 +5083,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "aero-leather",
@@ -4730,7 +5106,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "fox-umbrellas",
@@ -4753,7 +5131,9 @@
     "product_tags": [
       "umbrellas",
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "budd-shirts",
@@ -4775,7 +5155,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hampshire"
   },
   {
     "id": "fortis-clothing",
@@ -4798,7 +5180,9 @@
     "product_tags": [
       "coats & jackets",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "gushlow-cole",
@@ -4820,7 +5204,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Kent"
   },
   {
     "id": "british-sheepskin",
@@ -4843,7 +5229,9 @@
     "product_tags": [
       "cashmere & merino",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "lockwood-smocks",
@@ -4865,7 +5253,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "darzi",
@@ -4887,7 +5277,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "thorndale",
@@ -4910,7 +5302,9 @@
     "product_tags": [
       "coats & jackets",
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Staffordshire"
   },
   {
     "id": "palava",
@@ -4932,7 +5326,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "crown-northampton",
@@ -4954,7 +5350,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "sanders-sanders",
@@ -4976,7 +5373,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "william-lennon",
@@ -4998,7 +5397,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "john-lobb-ltd",
@@ -5020,7 +5421,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "dartmoor-shoemakers",
@@ -5042,7 +5445,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "owen-barry",
@@ -5064,7 +5469,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "cambridge-satchel",
@@ -5086,7 +5493,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "leather-satchel-co",
@@ -5108,7 +5517,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Liverpool"
   },
   {
     "id": "broadland-slippers",
@@ -5130,7 +5541,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "barnwell-footwear",
@@ -5152,7 +5565,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "zatchels",
@@ -5174,7 +5589,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "juju-footwear",
@@ -5196,7 +5612,8 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "swaine",
@@ -5218,7 +5635,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cambridgeshire"
   },
   {
     "id": "de-winter",
@@ -5240,7 +5659,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "percy-stride",
@@ -5262,7 +5683,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "arthur-sleep",
@@ -5285,7 +5708,8 @@
     "product_tags": [
       "cashmere & merino",
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "jadd-shoes",
@@ -5307,7 +5731,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Suffolk"
   },
   {
     "id": "everbound-goods",
@@ -5329,7 +5755,9 @@
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Bristol"
   },
   {
     "id": "lanx",
@@ -5351,7 +5779,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "draper-of-glastonbury",
@@ -5373,7 +5803,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "herd",
@@ -5395,7 +5827,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "beorma-leather-company",
@@ -5417,7 +5851,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Midlands"
   },
   {
     "id": "cornelia-james",
@@ -5439,7 +5875,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "laird-hatters",
@@ -5462,7 +5900,9 @@
     "product_tags": [
       "tweed & woven goods",
       "hats & caps"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hertfordshire"
   },
   {
     "id": "anise-cashmere",
@@ -5486,7 +5926,9 @@
       "knitwear",
       "cashmere & merino",
       "scarves & accessories"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "rove-knitwear",
@@ -5509,7 +5951,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "Kent"
   },
   {
     "id": "brora",
@@ -5532,7 +5976,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "kinloch-anderson",
@@ -5555,7 +6001,9 @@
     "product_tags": [
       "tweed & woven goods",
       "suits & trousers"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Edinburgh"
   },
   {
     "id": "gordon-nicolson-kiltmakers",
@@ -5578,7 +6026,9 @@
     "product_tags": [
       "tweed & woven goods",
       "suits & trousers"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Edinburgh"
   },
   {
     "id": "campbells-of-beauly",
@@ -5600,7 +6050,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Highland"
   },
   {
     "id": "bowhill-and-elliott",
@@ -5622,7 +6074,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "albert-thurston",
@@ -5644,7 +6098,8 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "braces & belts"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "bennett-winch",
@@ -5667,7 +6122,9 @@
     "product_tags": [
       "bags & leather goods"
     ],
-    "postcode": "W1K 5FC"
+    "postcode": "W1K 5FC",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "george-cleverley",
@@ -5689,7 +6146,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "lock-and-co-hatters",
@@ -5711,7 +6170,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "hats & caps"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "cordings",
@@ -5733,7 +6194,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "dents",
@@ -5755,7 +6218,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Wiltshire"
   },
   {
     "id": "the-british-belt-company",
@@ -5777,7 +6242,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Rutland"
   },
   {
     "id": "risdon-and-risdon",
@@ -5800,7 +6267,9 @@
     "product_tags": [
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Shropshire"
   },
   {
     "id": "churchs",
@@ -5822,7 +6291,8 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "grenson",
@@ -5844,7 +6314,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "barker-shoes",
@@ -5866,7 +6338,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northamptonshire"
   },
   {
     "id": "alt-berg",
@@ -5888,7 +6362,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "mamnick",
@@ -5910,7 +6386,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "South Yorkshire"
   },
   {
     "id": "bridgedale",
@@ -5933,7 +6411,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "british-boxers",
@@ -5955,7 +6435,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "underwear & nightwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Staffordshire"
   },
   {
     "id": "charl-knitwear",
@@ -5977,7 +6459,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "oliver-spencer",
@@ -5999,7 +6483,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "marwood",
@@ -6021,7 +6507,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "john-partridge",
@@ -6043,7 +6531,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Midlands"
   },
   {
     "id": "the-cambridge-sock-company",
@@ -6067,7 +6557,9 @@
       "knitwear",
       "cashmere & merino",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cambridgeshire"
   },
   {
     "id": "arbon-socks",
@@ -6090,7 +6582,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cumbria"
   },
   {
     "id": "ratcatcher",
@@ -6113,7 +6607,9 @@
     "product_tags": [
       "tweed & woven goods",
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "tyler-and-tyler",
@@ -6136,7 +6632,8 @@
     "product_tags": [
       "cufflinks & signets",
       "jewellery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "banton-frameworks",
@@ -6159,7 +6656,9 @@
     "product_tags": [
       "scarves & accessories",
       "bags & leather goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Glasgow"
   },
   {
     "id": "david-nieper",
@@ -6181,7 +6680,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "freddies-of-pinewood",
@@ -6204,7 +6705,9 @@
     "product_tags": [
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Essex"
   },
   {
     "id": "peper-harow",
@@ -6228,7 +6731,9 @@
       "knitwear",
       "cashmere & merino",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Sussex"
   },
   {
     "id": "benson-and-clegg",
@@ -6250,7 +6755,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "pickett-london",
@@ -6272,7 +6779,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "moloh",
@@ -6294,7 +6803,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "tiffany-rose",
@@ -6317,7 +6828,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "lambland",
@@ -6339,7 +6852,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "sheepland",
@@ -6361,7 +6876,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "the-bradford-sock-company",
@@ -6384,7 +6901,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "elgar-shirts",
@@ -6406,7 +6925,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "shirts"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Monmouthshire"
   },
   {
     "id": "justine-tabak",
@@ -6428,7 +6949,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "colenimo",
@@ -6450,7 +6973,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "findra-clothing",
@@ -6473,7 +6998,9 @@
     "product_tags": [
       "tweed & woven goods",
       "coats & jackets"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Scottish Borders"
   },
   {
     "id": "sub-zero",
@@ -6496,7 +7023,9 @@
     "product_tags": [
       "underwear & nightwear",
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "withnell",
@@ -6518,7 +7047,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "garstin-1871",
@@ -6540,7 +7071,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "hackney-gt",
@@ -6563,7 +7096,9 @@
     "product_tags": [
       "coats & jackets"
     ],
-    "postcode": "E8 4PH"
+    "postcode": "E8 4PH",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "kate-sheridan",
@@ -6585,7 +7120,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "blackshore",
@@ -6607,7 +7144,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "sam-brown-london",
@@ -6629,7 +7168,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "weskit",
@@ -6653,7 +7194,9 @@
       "vests & waistcoats",
       "tweed & woven goods",
       "suits & trousers"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Monmouthshire"
   },
   {
     "id": "meccanica-clothing",
@@ -6675,7 +7218,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cheshire"
   },
   {
     "id": "pajotten",
@@ -6697,7 +7242,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Kent"
   },
   {
     "id": "elizabeth-martin-tweed",
@@ -6720,7 +7267,9 @@
     "product_tags": [
       "tweed & woven goods",
       "coats & jackets"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Lanarkshire"
   },
   {
     "id": "berties-of-bay",
@@ -6743,7 +7292,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "tim-hardy",
@@ -6765,7 +7316,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Worcestershire"
   },
   {
     "id": "monkstone-knitwear",
@@ -6787,7 +7340,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Pembrokeshire"
   },
   {
     "id": "rolf-skeldon",
@@ -6810,7 +7365,9 @@
     "product_tags": [
       "underwear & nightwear",
       "everyday wear"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Powys"
   },
   {
     "id": "blue-nude",
@@ -6833,7 +7390,9 @@
     "product_tags": [
       "womenswear"
     ],
-    "postcode": "E8 2BT"
+    "postcode": "E8 2BT",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "the-cotton-london",
@@ -6857,7 +7416,9 @@
       "shirts",
       "everyday wear"
     ],
-    "postcode": "UB7 9GP"
+    "postcode": "UB7 9GP",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "oxford-blue",
@@ -6879,7 +7440,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Midlands"
   },
   {
     "id": "cwt-clothing",
@@ -6902,7 +7465,9 @@
     "product_tags": [
       "shirts",
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "crease-studios",
@@ -6925,7 +7490,9 @@
     "product_tags": [
       "womenswear",
       "underwear & nightwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "wildsole",
@@ -6947,7 +7514,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "South Yorkshire"
   },
   {
     "id": "daffodil-and-leek",
@@ -6969,7 +7538,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "worn-to-threads",
@@ -6991,7 +7562,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Bristol"
   },
   {
     "id": "o-pioneers",
@@ -7014,7 +7587,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "paul-brown",
@@ -7036,7 +7611,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "hemingsworth",
@@ -7059,7 +7636,9 @@
     "product_tags": [
       "everyday wear"
     ],
-    "postcode": "EC1V 4JP"
+    "postcode": "EC1V 4JP",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "waring-brooke",
@@ -7081,7 +7660,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Nottinghamshire"
   },
   {
     "id": "umpie-handbags",
@@ -7103,7 +7684,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "hurdwick-handmade-bag-company",
@@ -7125,7 +7708,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "english-utopia",
@@ -7148,7 +7733,9 @@
     "product_tags": [
       "tweed & woven goods",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "goodnight-irene",
@@ -7171,7 +7758,9 @@
     "product_tags": [
       "tweed & woven goods"
     ],
-    "postcode": "N16 7UY"
+    "postcode": "N16 7UY",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "empire-jeans",
@@ -7194,7 +7783,9 @@
     "product_tags": [
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Midlands"
   },
   {
     "id": "joe-and-co-denim",
@@ -7217,7 +7808,9 @@
     "product_tags": [
       "jeans & denim",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Greater Manchester"
   },
   {
     "id": "torramor",
@@ -7239,7 +7832,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Kinross"
   },
   {
     "id": "the-moleskin-jeans-co",
@@ -7263,7 +7858,9 @@
       "jeans & denim",
       "suits & trousers",
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "awling",
@@ -7285,7 +7882,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "charles-laurie",
@@ -7307,7 +7906,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Rutland"
   },
   {
     "id": "ednerat",
@@ -7329,7 +7930,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Monmouthshire"
   },
   {
     "id": "kerriealdo",
@@ -7351,7 +7954,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "coats & jackets"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Dundee"
   },
   {
     "id": "reflekt-clothing",
@@ -7374,7 +7979,9 @@
     "product_tags": [
       "suits & trousers",
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "tropel-kids",
@@ -7396,7 +8003,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "childrenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "amy-britton",
@@ -7418,7 +8027,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Stirling"
   },
   {
     "id": "good-measure",
@@ -7440,7 +8051,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Manchester"
   },
   {
     "id": "homebody",
@@ -7463,7 +8076,9 @@
     "product_tags": [
       "underwear & nightwear",
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "the-rugby-company",
@@ -7485,7 +8100,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "Warwickshire"
   },
   {
     "id": "the-goat-company",
@@ -7508,7 +8125,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Monmouthshire"
   },
   {
     "id": "oldfield-outfitters",
@@ -7531,7 +8150,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "moda-de-la-maria",
@@ -7553,7 +8174,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "tweed & woven goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "mackenzie-and-george",
@@ -7575,7 +8198,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Shropshire"
   },
   {
     "id": "thomas-fortin",
@@ -7597,7 +8222,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "frimble",
@@ -7620,7 +8247,9 @@
     "product_tags": [
       "tweed & woven goods",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "julian-road",
@@ -7644,7 +8273,9 @@
       "cashmere & merino",
       "tweed & woven goods",
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "Shropshire"
   },
   {
     "id": "pinpiuma",
@@ -7668,7 +8299,9 @@
       "vests & waistcoats",
       "tweed & woven goods",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Suffolk"
   },
   {
     "id": "green-thomas",
@@ -7690,7 +8323,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Glasgow"
   },
   {
     "id": "the-pattern-guild",
@@ -7712,7 +8347,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "harriet-eccleston",
@@ -7734,7 +8371,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "South Yorkshire"
   },
   {
     "id": "hettie",
@@ -7756,7 +8395,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Warwickshire"
   },
   {
     "id": "elwin",
@@ -7779,7 +8420,9 @@
     "product_tags": [
       "knitwear"
     ],
-    "postcode": "E8 3PH"
+    "postcode": "E8 3PH",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "katie-cotmarsh",
@@ -7801,7 +8444,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Wiltshire"
   },
   {
     "id": "talou",
@@ -7824,7 +8469,9 @@
     "product_tags": [
       "knitwear"
     ],
-    "postcode": "E8 3RL"
+    "postcode": "E8 3RL",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "mille-saisons",
@@ -7846,7 +8493,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "sarvin",
@@ -7869,7 +8518,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "Manchester"
   },
   {
     "id": "soma-sportswear",
@@ -7891,7 +8542,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "activewear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "rock-and-ruby",
@@ -7914,7 +8567,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "Essex"
   },
   {
     "id": "dreaming-of-ivy",
@@ -7937,7 +8592,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "cara-and-the-sky",
@@ -7959,7 +8616,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "lola-starr",
@@ -7981,7 +8640,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "activewear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Merseyside"
   },
   {
     "id": "pittch",
@@ -8005,7 +8666,9 @@
       "knitwear",
       "cashmere & merino",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "the-well-worn",
@@ -8027,7 +8690,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hampshire"
   },
   {
     "id": "adkn",
@@ -8049,7 +8714,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "been-london",
@@ -8072,7 +8739,9 @@
     "product_tags": [
       "bags & leather goods"
     ],
-    "postcode": "E8 3DL"
+    "postcode": "E8 3DL",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "lottie-and-lysh",
@@ -8094,7 +8763,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "childrenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "red-shoes-ruth-emily-davey",
@@ -8116,7 +8787,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Powys"
   },
   {
     "id": "lady-v-london",
@@ -8139,7 +8812,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hampshire"
   },
   {
     "id": "j-alex-swift",
@@ -8162,7 +8837,9 @@
     "product_tags": [
       "knitwear",
       "socks"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "batch-ldn",
@@ -8184,7 +8861,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "tutti-frutti-clothing",
@@ -8206,7 +8885,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "childrenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hertfordshire"
   },
   {
     "id": "gina",
@@ -8228,7 +8909,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "footwear & boots"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "marvin-browne",
@@ -8251,7 +8934,9 @@
     "product_tags": [
       "womenswear"
     ],
-    "postcode": "E1 6BG"
+    "postcode": "E1 6BG",
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "foxology",
@@ -8274,7 +8959,9 @@
     "product_tags": [
       "knitwear",
       "cashmere & merino"
-    ]
+    ],
+    "nation": "England",
+    "county": "Warwickshire"
   },
   {
     "id": "moghrabi",
@@ -8296,7 +8983,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "sami-k",
@@ -8318,7 +9007,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "reworked-348",
@@ -8340,7 +9031,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Derbyshire"
   },
   {
     "id": "vivien-of-holloway",
@@ -8363,7 +9056,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "alie-street",
@@ -8386,7 +9081,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "ella-griffee",
@@ -8408,7 +9105,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "orraman-leather",
@@ -8430,7 +9129,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Argyll and Bute"
   },
   {
     "id": "furious-goose",
@@ -8452,7 +9153,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cheshire"
   },
   {
     "id": "cocoove",
@@ -8474,7 +9177,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Merseyside"
   },
   {
     "id": "kipper",
@@ -8496,7 +9201,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "meandthee",
@@ -8518,7 +9225,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "clare-haggas",
@@ -8540,7 +9249,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "cravat-club",
@@ -8562,7 +9273,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "hyde-and-hare",
@@ -8584,7 +9297,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "macangus-and-wainwright",
@@ -8606,7 +9321,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "geoff-stocker",
@@ -8629,7 +9346,9 @@
     "product_tags": [
       "scarves & accessories",
       "underwear & nightwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "abe-house",
@@ -8651,7 +9370,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "stalf",
@@ -8673,7 +9394,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lincolnshire"
   },
   {
     "id": "big-fox-apparel",
@@ -8696,7 +9419,9 @@
     "product_tags": [
       "shirts",
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Tyne and Wear"
   },
   {
     "id": "daltons-england",
@@ -8718,7 +9443,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Somerset"
   },
   {
     "id": "des-merrion",
@@ -8740,7 +9467,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "West Yorkshire"
   },
   {
     "id": "nattily-dressed",
@@ -8763,7 +9492,9 @@
     "product_tags": [
       "vests & waistcoats",
       "coats & jackets"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "wildish",
@@ -8785,7 +9516,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "North Yorkshire"
   },
   {
     "id": "iona-montgomery",
@@ -8807,7 +9540,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "hats & caps"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "fawn-and-freda",
@@ -8830,7 +9565,9 @@
     "product_tags": [
       "childrenswear",
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "rach-x",
@@ -8852,7 +9589,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "workwear & aprons"
-    ]
+    ],
+    "nation": "England",
+    "county": "Durham"
   },
   {
     "id": "nadinoo",
@@ -8874,7 +9613,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Rutland"
   },
   {
     "id": "kaely-russell",
@@ -8896,7 +9637,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "the-bathrobe-company",
@@ -8918,7 +9661,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "underwear & nightwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "violets-in-may",
@@ -8940,7 +9685,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Berkshire"
   },
   {
     "id": "faith-rowan-leeves",
@@ -8963,7 +9710,9 @@
     "product_tags": [
       "womenswear",
       "dresses"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "lilyberry",
@@ -8985,7 +9734,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "childrenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Sussex"
   },
   {
     "id": "leah-may-tailors",
@@ -9007,7 +9758,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "suits & trousers"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hertfordshire"
   },
   {
     "id": "wear-london",
@@ -9033,7 +9786,9 @@
       "suits & trousers",
       "shirts",
       "everyday wear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "mhulot",
@@ -9055,7 +9810,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cambridgeshire"
   },
   {
     "id": "jane-hopkinson",
@@ -9077,7 +9834,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "lpol",
@@ -9099,7 +9858,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "heather-borg",
@@ -9121,7 +9882,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
-    ]
+    ],
+    "nation": "England",
+    "county": "Manchester"
   },
   {
     "id": "otway-orford",
@@ -9143,7 +9906,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "scarves & accessories"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cheshire"
   },
   {
     "id": "barrington-ayre",
@@ -9166,7 +9931,9 @@
     "product_tags": [
       "suits & trousers",
       "shirts"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "paul-james-knitwear",
@@ -9188,7 +9955,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "libby-london",
@@ -9210,7 +9979,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "womenswear"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "ivy-and-rigg",
@@ -9232,7 +10003,9 @@
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "knitwear"
-    ]
+    ],
+    "nation": "England",
+    "county": "Northumberland"
   },
   {
     "id": "craigies-farm",
@@ -9265,7 +10038,9 @@
       "poultry",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Scotland",
+    "county": "Edinburgh"
   },
   {
     "id": "kilnford-farm-shop",
@@ -9295,7 +10070,9 @@
       "pork & bacon",
       "poultry"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Scotland",
+    "county": "Dumfries & Galloway"
   },
   {
     "id": "gloagburn-farm-shop",
@@ -9319,7 +10096,9 @@
       "beef",
       "pork & bacon",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Perthshire"
   },
   {
     "id": "newton-farm-foods",
@@ -9354,7 +10133,9 @@
       "poultry",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Scotland",
+    "county": "Angus"
   },
   {
     "id": "mains-of-glassaugh",
@@ -9377,7 +10158,9 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Aberdeenshire"
   },
   {
     "id": "Ernespie-farm-shop",
@@ -9400,7 +10183,9 @@
     "product_tags": [
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Dumfries & Galloway"
   },
   {
     "id": "bodnant-welsh-food",
@@ -9426,7 +10211,9 @@
       "fruit & veg",
       "bread & bakery",
       "drinks & spirits"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Conwy"
   },
   {
     "id": "forage-farm-shop",
@@ -9452,7 +10239,9 @@
       "pork & bacon",
       "fresh meat",
       "dairy & cheese"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Vale of Glamorgan"
   },
   {
     "id": "hawarden-estate-farm-shop",
@@ -9475,7 +10264,9 @@
     "product_tags": [
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Flintshire"
   },
   {
     "id": "beacons-farm-shop",
@@ -9502,7 +10293,9 @@
       "game & venison",
       "fresh meat",
       "dairy & cheese"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Powys"
   },
   {
     "id": "caws-cenarth-farm-shop",
@@ -9529,7 +10322,9 @@
       "fruit & veg",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Wales",
+    "county": "Carmarthenshire"
   },
   {
     "id": "broughgammon-farm",
@@ -9556,7 +10351,9 @@
       "pork & bacon",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Northern Ireland",
+    "county": "Co. Antrim"
   },
   {
     "id": "castlescreen-farm",
@@ -9584,7 +10381,9 @@
       "fresh meat",
       "fruit & veg"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "pheasants-hill-farm",
@@ -9612,7 +10411,9 @@
       "game & venison",
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "mckees-country-store",
@@ -9639,7 +10440,9 @@
       "dairy & cheese",
       "fruit & veg",
       "bread & bakery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Co. Down"
   },
   {
     "id": "farndon-fields-farm-shop",
@@ -9661,7 +10464,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Leicestershire"
   },
   {
     "id": "welbeck-farm-shop",
@@ -9693,7 +10498,9 @@
       "pork & bacon",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Nottinghamshire"
   },
   {
     "id": "strawberry-fields-farm-shop",
@@ -9724,7 +10531,9 @@
       "pork & bacon",
       "preserves & honey"
     ],
-    "products_checked": "2026-08-01"
+    "products_checked": "2026-08-01",
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "lower-clopton-farm-shop",
@@ -9751,7 +10560,9 @@
       "fresh meat",
       "dairy & cheese",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Warwickshire"
   },
   {
     "id": "goat-shed-farm-shop",
@@ -9775,7 +10586,9 @@
       "dairy & cheese",
       "fruit & veg",
       "bread & bakery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Norfolk"
   },
   {
     "id": "hutchinson-hobbs",
@@ -9798,7 +10611,8 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "darts-farm",
@@ -9822,7 +10636,9 @@
       "beef",
       "fruit & veg",
       "drinks & spirits"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "canalside-farm-shop",
@@ -9844,7 +10660,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Staffordshire"
   },
   {
     "id": "sharnfold-farm",
@@ -9867,7 +10685,9 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "priory-farm-estate",
@@ -9890,7 +10710,9 @@
     "product_tags": [
       "fresh meat",
       "fruit & veg"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "wemyss-ware",
@@ -9912,7 +10734,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Fife"
   },
   {
     "id": "tain-pottery",
@@ -9934,7 +10758,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Ross-shire"
   },
   {
     "id": "borgh-pottery",
@@ -9956,7 +10782,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Isle of Lewis"
   },
   {
     "id": "ewenny-pottery",
@@ -9978,7 +10806,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Bridgend"
   },
   {
     "id": "glosters-pottery",
@@ -10000,7 +10830,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Gwynedd"
   },
   {
     "id": "winchcombe-pottery",
@@ -10022,7 +10854,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "grayshott-pottery",
@@ -10045,7 +10879,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "pottery-west",
@@ -10068,7 +10904,9 @@
     "product_tags": [
       "tableware",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "South Yorkshire"
   },
   {
     "id": "reiko-kaneko",
@@ -10090,7 +10928,8 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "maham-anjum",
@@ -10114,7 +10953,9 @@
       "tableware",
       "flowerpots",
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "dartington-pottery",
@@ -10136,7 +10977,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "cotswold-pottery",
@@ -10158,7 +11001,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Gloucestershire"
   },
   {
     "id": "isle-of-wight-pottery",
@@ -10180,7 +11025,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "pottery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Isle of Wight"
   },
   {
     "id": "ortak-jewellery",
@@ -10202,7 +11049,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Orkney"
   },
   {
     "id": "alison-moore-designs",
@@ -10224,7 +11073,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Orkney"
   },
   {
     "id": "paulin-watches",
@@ -10247,7 +11098,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Glasgow"
   },
   {
     "id": "marloe-watch-company",
@@ -10270,7 +11123,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "Scotland",
+    "county": "Perth"
   },
   {
     "id": "mari-thomas-jewellery",
@@ -10292,7 +11147,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Carmarthenshire"
   },
   {
     "id": "janis-morgan-jewellery",
@@ -10315,7 +11172,9 @@
     "product_tags": [
       "jewellery",
       "silverware"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Anglesey"
   },
   {
     "id": "tregaron-goldsmiths",
@@ -10337,7 +11196,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Ceredigion"
   },
   {
     "id": "robinson-jewellery-belfast",
@@ -10359,7 +11220,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "Northern Ireland",
+    "county": "Belfast"
   },
   {
     "id": "justin-duance",
@@ -10381,7 +11244,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Cornwall"
   },
   {
     "id": "erin-cox-jewellery",
@@ -10403,7 +11268,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Devon"
   },
   {
     "id": "pruden-and-smith",
@@ -10426,7 +11293,9 @@
     "product_tags": [
       "tableware",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "East Sussex"
   },
   {
     "id": "harriet-kelsall",
@@ -10448,7 +11317,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Hertfordshire"
   },
   {
     "id": "stephen-webster",
@@ -10470,7 +11341,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "London"
   },
   {
     "id": "hockley-mint",
@@ -10492,7 +11365,8 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "elliot-brown-watches",
@@ -10515,7 +11389,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Dorset"
   },
   {
     "id": "pinion-watches",
@@ -10538,7 +11414,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Oxfordshire"
   },
   {
     "id": "loomes-and-co",
@@ -10561,7 +11439,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lincolnshire"
   },
   {
     "id": "farer-watches",
@@ -10584,7 +11464,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Oxfordshire"
   },
   {
     "id": "duckworth-prestex",
@@ -10607,7 +11489,9 @@
     "product_tags": [
       "watches",
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Lancashire"
   },
   {
     "id": "pobjoy-mint",
@@ -10629,7 +11513,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "david-mellor",
@@ -10652,7 +11538,8 @@
     "product_tags": [
       "tableware",
       "cutlery & knives"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "samuel-staniforth",
@@ -10675,7 +11562,8 @@
     "product_tags": [
       "fresh meat",
       "cutlery & knives"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "netherton-foundry",
@@ -10697,7 +11585,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "cutlery & knives"
-    ]
+    ],
+    "nation": "England",
+    "county": "Shropshire"
   },
   {
     "id": "samuel-groves",
@@ -10719,7 +11609,8 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "cutlery & knives"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "savernake-knives",
@@ -10741,7 +11632,9 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "cutlery & knives"
-    ]
+    ],
+    "nation": "England",
+    "county": "Wiltshire"
   },
   {
     "id": "inigo-jones-slate",
@@ -10764,7 +11657,9 @@
     "product_tags": [
       "tableware",
       "cutlery & knives"
-    ]
+    ],
+    "nation": "Wales",
+    "county": "Gwynedd"
   },
   {
     "id": "taylors-eye-witness",
@@ -10786,7 +11681,8 @@
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "cutlery & knives"
-    ]
+    ],
+    "nation": "England"
   },
   {
     "id": "jewelled",
@@ -10808,7 +11704,9 @@
     "source": "verified-2026-08",
     "product_tags": [
       "jewellery"
-    ]
+    ],
+    "nation": "England",
+    "county": "Surrey"
   },
   {
     "id": "diddly-squat-farm-shop",
@@ -10832,7 +11730,9 @@
       "fruit & veg",
       "fresh meat",
       "farm shop & deli"
-    ]
+    ],
+    "nation": "England",
+    "county": "Oxfordshire"
   },
   {
     "id": "henry-watsons-potteries",
@@ -10855,6 +11755,8 @@
       "pottery",
       "tableware",
       "bowls"
-    ]
+    ],
+    "nation": "England",
+    "county": "Suffolk"
   }
 ]

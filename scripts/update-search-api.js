@@ -26,7 +26,10 @@ const catalog = data.map(b => ({
   n: b.name,
   c: b.category,
   s: b.subcategory,
-  t: b.town,
+  // Town, county and nation travel together as the place field. A Fife farm
+  // shop writes neither "Fife" nor "Scotland" in its town, so without these
+  // the model could only place it if the description happened to say so.
+  t: [b.town, b.county, b.nation].filter(Boolean).join(', '),
   d: b.description,
   tr: b.tier,
   pt: b.product_tags || []

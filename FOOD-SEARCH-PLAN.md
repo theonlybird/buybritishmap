@@ -457,6 +457,68 @@ they share an initial and nothing on this map is a lamp — but it now says so:
 *"No results for Lamp — showing results for Lamb instead."* That is the
 behaviour the correction notice was built for.
 
+### Places are geography, not wording
+
+`scottish pork` returned three Scottish farms and twenty-five English ones under
+"Here are some UK businesses we think you'll love". Two separate faults.
+
+**The rule was binary.** `matchQuality` was `wider` only when *zero* results were
+in the named place; one hit anywhere in the set made the whole thing "exact". It
+now has three states:
+
+| in place | quality | banner |
+|---|---|---|
+| none | `wider` | "couldn't find a match in X, but…" |
+| some | `partial` | "All 5 matches for British grown pork in Scotland first, then others further afield." |
+| all | `exact` | "Here are some UK businesses we think you'll love" |
+
+Results are also re-ordered so everything in the place comes first — ranking
+alone did not guarantee it, because an English farm with a stronger product
+score could sit above a Scottish one. `inPlace` marks the seam, and the grid's
+existing `afield-break` divider is drawn there.
+
+**Place matching was text-only**, which is why only three matched. A business
+was findable as Scottish only if its copy happened to use the word. Ardross Farm
+(Fife), Mains of Glassaugh (Aberdeenshire), Kilnford (Dumfries), Newton Farm
+Foods (Angus) and Loch Arthur (Dumfries) never do. The map holds **ten** Scottish
+farm shops; text matching found five.
+
+Every business now carries `nation` and `county`, derived by
+`scripts/add-regions.js` from `scripts/lib/uk-regions.js`.
+
+**Why counties and not coordinates.** Every listing has lat/lng, so a latitude
+rule looks obvious — and the old divider used one, `lat >= 54.95`. The border is
+exactly where it fails: that rule puts Newcastle (54.97) and Northumberland
+(55.31) in Scotland, while Carlisle (54.88) and Hawick (55.42) are half a degree
+apart on opposite sides. County names are unambiguous and already written down.
+
+Coordinates are kept as a **cross-check** rather than a classifier: if the text
+says England and the point is north of 55.3N, that is a gap in the table and the
+script says so. It found three on the first run — Ayr, Hawick and Perth, none of
+which name a county — and one data error, below.
+
+Adjectives resolve to the nation before anything else looks at them. "Welsh"
+appears in the catalogue text (Bodnant Welsh Food), so the ordinary vocabulary
+check was claiming it first and reading it as a product word. Resolving early
+also means the banner reads "in Wales" rather than "in Welsh", and
+"northern irish" is collapsed to one place rather than printing "Northern
+Northern Ireland".
+
+### One data error found
+
+`kipper` is listed in **London** but its coordinates are 52.59, -3.19 — mid-Wales,
+near Llanidloes. One of the two is wrong and I have not guessed which. The
+cross-check reports it on every run until it is fixed.
+
+### The Yorkshire question from earlier is now answered
+
+`pottery in yorkshire` used to return Glosters (Porthmadog) and Grayshott
+(Surrey) above any Yorkshire pottery, and call it "exact". It now leads with
+Pottery West in Sheffield — the only Yorkshire pottery on the map — under "The
+one match for British made pottery in Yorkshire first, then others further
+afield." I did not have to touch the `productScore * 3 + placeScore * 2` ratio
+you tuned; putting in-place results first solved it.
+
 ### Verification, second pass
 
 `node scripts/test-search.js` now also loads the search block out of

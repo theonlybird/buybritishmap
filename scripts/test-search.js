@@ -34,18 +34,25 @@ function loadLocalSearch() {
   const to = lines.findIndex((l, i) => i > from && l.startsWith('async function executeAiSearch'));
   if (from < 0 || to < 0) throw new Error('could not locate the search block in index.html');
 
-  // buildHeadline and its place-casing helpers sit higher up the file.
-  const hFrom = lines.findIndex(l => l.includes('const PLACE_MINOR'));
-  const hTo = lines.findIndex((l, i) => i > hFrom && l.startsWith('const searchInput'));
+  // buildHeadline, its place-casing helpers and the region predicates sit
+  // higher up the file, in blocks that stop short of the first DOM reference.
+  const slice = (startsWith, endsWith) => {
+    const a = lines.findIndex(l => l.includes(startsWith));
+    const b = lines.findIndex((l, i) => i > a && l.includes(endsWith));
+    if (a < 0 || b < 0) throw new Error(`could not locate ${startsWith} in index.html`);
+    return lines.slice(a, b).join('\n');
+  };
 
   const ctx = {
     console,
     window: {},
     BUSINESSES: JSON.parse(fs.readFileSync(path.join(root, 'data/businesses.json'), 'utf8')),
+    state: { placeTerms: [] },
   };
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(path.join(root, 'assets/query-expand.js'), 'utf8'), ctx);
-  vm.runInContext(lines.slice(hFrom, hTo).join('\n'), ctx);
+  vm.runInContext(slice('const PLACE_MINOR', 'const searchInput'), ctx);
+  vm.runInContext(slice('const inNation =', 'function renderGrid'), ctx);
   vm.runInContext(lines.slice(from, to).join('\n'), ctx);
   return q => ({
     result: vm.runInContext(`localSearch(${JSON.stringify(q)})`, ctx),
@@ -181,8 +188,9 @@ const placeCases = [
   { q: 'sustainable jumper',  expectPlace: null,       expectQuality: 'exact' },
   { q: 'cardigans',           expectPlace: null,       expectQuality: 'exact' },
   // Typed place names must still work, including when the place shares its
-  // name with a garment.
-  { q: 'jumper in cardigan',  expectPlace: 'cardigan', expectQuality: 'wider' },
+  // name with a garment. "partial" rather than "wider": Hiut Denim really is
+  // in Cardigan, so the honest answer is "the one match there, then others".
+  { q: 'jumper in cardigan',  expectPlace: 'cardigan', expectQuality: 'partial' },
   { q: 'wool jumper cornwall', expectPlace: 'cornwall' },
 ];
 
@@ -312,6 +320,73 @@ for (const c of correctionCases) {
   if (!ok) failures++;
   line(ok, `"sheffield fork" — ${cutlers.length} cutlers, ${farms.length} farm shops` +
     (ok ? '' : ` | ${banner}`));
+}
+
+// ---------------------------------------------------------------------------
+// Places are geography, not wording.
+//
+// "scottish pork" used to return three Scottish farms and twenty-five English
+// ones under a banner claiming they all matched, because a business was only
+// findable as Scottish if its copy happened to use the word. Five of the ten
+// Scottish farm shops on the map never do.
+// ---------------------------------------------------------------------------
+console.log('\nplace searches match on nation and county\n');
+
+const businesses = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../data/businesses.json'), 'utf8')
+);
+
+{
+  const everyScottishFarm = businesses
+    .filter(b => b.category === 'farm' && b.nation === 'Scotland').length;
+
+  const { result, headline, banner } = local('scottish pork');
+  const lead = result.matches.slice(0, result.inPlace);
+  const allScots = lead.length > 0 && lead.every(b => b.nation === 'Scotland');
+  const noneAfter = result.matches.slice(result.inPlace).every(b => b.nation !== 'Scotland');
+
+  if (!allScots) failures++;
+  if (!noneAfter) failures++;
+  line(allScots, `"scottish pork" — first ${lead.length} are all in Scotland`);
+  line(noneAfter, '"scottish pork" — no Scottish farm left below the seam');
+
+  const partial = headline.matchQuality === 'partial' && /in Scotland first, then others further afield/.test(banner);
+  if (!partial) failures++;
+  line(partial, `"scottish pork" — banner declares the boundary (${headline.matchQuality})`);
+
+  line(true, `   for reference: ${everyScottishFarm} Scottish farm shops on the map`);
+}
+
+{
+  const { result, headline } = local('welsh cheese');
+  const ok = result.inPlace > 0 && result.matches.slice(0, result.inPlace).every(b => b.nation === 'Wales');
+  if (!ok) failures++;
+  line(ok, `"welsh cheese" — ${result.inPlace} in Wales, all first (${headline.matchQuality})`);
+}
+
+// The adjective must resolve to the nation's name, not be echoed raw.
+for (const [q, want] of [['scottish pork', 'Scotland'], ['welsh cheese', 'Wales'], ['northern irish beef', 'Northern Ireland']]) {
+  const b = local(q).banner;
+  const ok = b.includes(`in ${want} first`) && !/Northern Northern/.test(b);
+  if (!ok) failures++;
+  line(ok, `"${q}"`.padEnd(28) + `reads "in ${want}"` + (ok ? '' : ` — got: ${b}`));
+}
+
+// The border is where a latitude rule fails. Newcastle sits at 54.97 and
+// Northumberland reaches 55.31; Hawick and Carlisle are half a degree apart on
+// opposite sides. All of these must land in the right country.
+console.log('');
+const borderCases = [
+  ['big-fox-apparel', 'England'], ['barbour', 'England'], ['ivy-and-rigg', 'England'],
+  ['chapman-bags', 'England'], ['jim-malone', 'England'], ['errington-reay', 'England'],
+  ['william-lockie', 'Scotland'], ['begg-x-co', 'Scotland'], ['marloe-watch-company', 'Scotland'],
+  ['hiut-denim', 'Wales'], ['broughgammon-farm', 'Northern Ireland'],
+];
+for (const [id, want] of borderCases) {
+  const b = businesses.find(x => x.id === id);
+  const ok = b && b.nation === want;
+  if (!ok) failures++;
+  line(ok, `${id.padEnd(24)} ${b ? b.town : '(missing)'} -> ${b ? b.nation : '?'}`.slice(0, 74));
 }
 
 console.log('');
