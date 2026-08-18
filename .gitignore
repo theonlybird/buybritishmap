@@ -13,3 +13,6 @@ data/contact-harvest-report.md
 
 # one-off cleanup script — hardcodes 15 harvested addresses as manual overrides
 scripts/clean-and-finalize-contacts.js
+
+# FUSE mount remnants of deleted files — never commit
+.fuse_hidden*
