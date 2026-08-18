@@ -6,3 +6,10 @@ Thumbs.db
 PROJECT-NOTES.md
 COMPETITOR-GAP-*.md
 BMC-BRAND-QUEUE.md
+
+# harvested business contact details — personal data, never publish
+data/business-contacts.*
+data/contact-harvest-report.md
+
+# one-off cleanup script — hardcodes 15 harvested addresses as manual overrides
+scripts/clean-and-finalize-contacts.js

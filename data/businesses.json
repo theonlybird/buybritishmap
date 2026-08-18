@@ -11758,5 +11758,34 @@
     ],
     "nation": "England",
     "county": "Suffolk"
+  },
+  {
+    "id": "trough-farm-shop",
+    "name": "Trough Farm Shop",
+    "category": "farm",
+    "subcategory": "Mixed farm shop",
+    "tier": "silver",
+    "listing_type": "shop",
+    "town": "Silchester, Hampshire",
+    "address": "Silchester Farm, Little London Road, Silchester, Reading",
+    "lat": 51.3437,
+    "lng": -1.1047,
+    "website": "https://www.silchesterfarm.co.uk/trough-farm-shop",
+    "instagram": "https://www.instagram.com/troughfarmshop/",
+    "logo": "assets/logos/trough-farm-shop.png",
+    "description": "Farm shop at Silchester Farm selling produce cut from its own Kitchen Garden and Silchester Farm eggs alongside curated Hampshire suppliers, own-label Wingless Eagle gin, and a kitchen counter of sandwiches, soups, bakes and sausage rolls.",
+    "evidence_note": "Own production is real but small: the shop's own lines are Kitchen Garden fruit and veg and Silchester Farm eggs, with Silchester-grazed lamb and Woodland Farm Saddleback pork on the estate's own kitchen menus and an own-label Wingless Eagle gin distilled for the farm by Hawkridge Distillers in Berkshire. SILVER not Gold because the retail range is self-described as 'carefully curated goods from local suppliers' with wine (a rotating Wine of the Week), beer and takeaway coffee sold alongside it, and there is no published statement that the wine list is English-only - coffee is unavoidably imported and the wine origin is unevidenced, so the tiering rule's default-to-Silver applies. Same basis as Daylesford, Welbeck Farm Shop and Bodnant Welsh Food. Reviewed 18 Aug 2026 from a user suggestion. WATCH: Silchester Farm is primarily a weddings and events venue, so own-farm output is a small share of the shop; also the shop page currently carries the browser title 'The Drift', which may signal a rename in progress. If the wine range is confirmed English-only, re-score for Gold.",
+    "tier_confidence": "medium",
+    "source": "user-suggestion-verified-2026-08",
+    "product_tags": [
+      "fruit & veg",
+      "eggs",
+      "bread & bakery",
+      "drinks & spirits",
+      "farm shop & deli"
+    ],
+    "products_checked": "2026-08-18",
+    "nation": "England",
+    "county": "Hampshire"
   }
 ]
