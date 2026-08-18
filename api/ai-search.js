@@ -418,7 +418,7 @@ module.exports = async function handler(req, res) {
   const shortlistedCatalog = stageOneFilter(query, BUSINESS_CATALOG, 40);
   const catalogStr = JSON.stringify(shortlistedCatalog);
 
-  const systemInstruction = `You are the Buy British AI Search Assistant.
+  const systemInstruction = `You are the Grown and Made AI Search Assistant.
 Analyze the user's natural language request and find the best matching British makers from the provided candidate catalog.
 
 CRITICAL INSTRUCTIONS:

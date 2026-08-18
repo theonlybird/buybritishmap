@@ -1,6 +1,6 @@
-# Buy British Map
+# Grown and Made UK
 
-**[buybritishmap.uk](https://buybritishmap.uk)** — an interactive map of UK makers and producers who genuinely make or grow what they sell. Built to help shoppers find the British businesses around them instead of defaulting to Amazon.
+**[grownandmade.uk](https://grownandmade.uk)** — an interactive map of UK makers and producers who genuinely make or grow what they sell. Built to help shoppers find the British businesses around them instead of defaulting to Amazon.
 
 ## The standard
 
@@ -33,7 +33,7 @@ then open http://localhost:8000.
 
 ## Deployment
 
-Hosted as a static site on GitHub Pages (Settings → Pages → deploy from `main`). Pushes to `main` deploy automatically. The custom domain buybritishmap.uk will be connected later.
+Hosted as a static site on GitHub Pages (Settings → Pages → deploy from `main`). Pushes to `main` deploy automatically. The custom domain grownandmade.uk will be connected.
 
 The submission form posts to Formspree.
 
@@ -45,4 +45,4 @@ The submission form posts to Formspree.
 
 ## Suggesting a business
 
-Use the [form](https://buybritishmap.uk/submit.html) — or open a PR against `data/businesses.json` including an `evidence_note` with a public source for the made-in-UK claim.
+Use the [form](https://grownandmade.uk/submit.html) — or open a PR against `data/businesses.json` including an `evidence_note` with a public source for the made-in-UK claim.

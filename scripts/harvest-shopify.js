@@ -36,8 +36,8 @@ const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data', 'businesses.json');
 const OUT = path.join(ROOT, 'data', 'product-index.json');
 
-const CONTACT = 'hello@buybritishmap.uk';
-const UA = `BuyBritishMapBot/1.0 (+https://buybritishmap.uk; ${CONTACT})`;
+const CONTACT = 'hello@grownandmade.uk';
+const UA = `GrownAndMadeBot/1.0 (+https://grownandmade.uk; ${CONTACT})`;
 const DELAY_MS = Number(process.env.HARVEST_DELAY_MS || 1500);
 // Sites that hang rather than refuse can burn the whole cascade on timeouts
 // (Squarespace alone tries four paths). Lower this to get a quick verdict.
