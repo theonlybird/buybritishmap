@@ -134,3 +134,90 @@
 .gm-page a{color:var(--green);text-decoration:none;border-bottom:1px solid rgba(0,66,37,.3)}
 .gm-page a:hover{color:var(--green-dark);border-bottom-color:var(--brass)}
 ::selection{background:var(--brass);color:var(--ink)}
+
+/* ---------- Site footer ----------
+   Used on every page except the map, which is full-bleed and has no room for it.
+   Markup lives in each page (static HTML so the trading disclosures are crawlable
+   and survive with JS off); all styling is here so there is one place to change it.
+
+   The band deliberately repeats the header: same --paper-2, same hairline. The
+   page then reads as a plate between two matching rules. */
+.site-footer{
+  background:var(--paper-2);
+  border-top:1px solid var(--line-strong);
+  margin-top:64px;
+  font-family:var(--font-body);
+  color:var(--muted);
+}
+.site-footer .foot-inner{
+  max-width:680px;margin:0 auto;
+  padding:40px calc(18px + env(safe-area-inset-right,0px)) 0 calc(18px + env(safe-area-inset-left,0px));
+}
+
+/* Brand block plus two link columns. The brand is given the extra width because
+   the strapline needs a readable measure; the link columns only need their
+   longest label ("Suggest a business") to fit on one line. */
+.site-footer .foot-top{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(0,1fr) minmax(0,1fr);
+  gap:34px 30px;
+}
+
+.site-footer .foot-seal{display:block;width:74px;height:auto;margin:0 0 14px}
+.site-footer .foot-name{
+  font-family:var(--font-heading);font-size:22px;font-weight:600;letter-spacing:.01em;
+  color:var(--green);margin:0 0 8px;line-height:1.15;
+}
+.site-footer .foot-strap{
+  margin:0;font-size:13.5px;line-height:1.65;color:var(--muted-2);max-width:34ch;
+}
+
+.site-footer .foot-col h2{
+  font-family:var(--font-body);font-size:11px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.11em;color:var(--green);
+  margin:0 0 12px;
+}
+.site-footer .foot-col a{
+  display:block;font-size:13.5px;line-height:1.45;padding:5px 0;
+  color:var(--muted);text-decoration:none;border-bottom:none;
+}
+.site-footer .foot-col a:hover{color:var(--green);text-decoration:underline;
+  text-underline-offset:3px;text-decoration-color:var(--brass)}
+.site-footer a:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:2px}
+
+/* The legal strip. The pledge sits here rather than in the columns because it is
+   the one claim a visitor most needs to be able to find from any page. */
+.site-footer .foot-legal{
+  margin-top:34px;padding:18px 0 calc(30px + env(safe-area-inset-bottom,0px));
+  border-top:1px solid var(--line-strong);
+}
+.site-footer .foot-pledge{
+  margin:0 0 8px;font-size:12.5px;line-height:1.6;color:var(--green);letter-spacing:.01em;
+}
+.site-footer .foot-reg{
+  margin:0;font-size:11.5px;line-height:1.7;color:var(--muted-2);
+}
+.site-footer .foot-reg strong{font-weight:600;color:var(--muted)}
+
+@media (max-width:767px){
+  .site-footer{margin-top:44px}
+  .site-footer .foot-inner{
+    padding:32px calc(12px + env(safe-area-inset-right,0px)) 0 calc(12px + env(safe-area-inset-left,0px));
+  }
+  /* Two columns below the brand rather than three across: the link labels stop
+     wrapping and the touch targets keep their full height. */
+  .site-footer .foot-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px}
+  .site-footer .foot-brand{grid-column:1 / -1}
+  .site-footer .foot-strap{max-width:none}
+  .site-footer .foot-col a{padding:8px 0;font-size:14px}
+}
+
+/* Keep the footer at the foot of the window on short pages (contact, say, on a
+   tall monitor) without it ever overlapping content on long ones. Scoped with
+   :has() so the map page — which has no footer and manages its own full-height
+   layout — is left completely alone. #sketchBg is position:fixed and so isn't
+   a flex item. */
+body:has(> .site-footer){min-height:100vh;display:flex;flex-direction:column}
+body:has(> .site-footer) > #topbar{flex:0 0 auto}
+body:has(> .site-footer) > .wrap{flex:1 0 auto}
+body:has(> .site-footer) > .site-footer{flex:0 0 auto}
