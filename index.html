@@ -1264,6 +1264,15 @@ function partitionByPlace(list){
   return near.length ? { near, afield } : { near: afield, afield: [] };
 }
 
+// The three chip groups, as one test. Search results are subject to them
+// exactly as the full catalogue is: a search for "mens jumper" followed by
+// Gold means the Gold jumpers, not every Gold business on the map. Before
+// this, the search branch below returned its matches unfiltered and clicking
+// a chip appeared to do nothing.
+function passesChips(b){
+  return state.cats.has(b.category) && state.tiers.has(b.tier) && state.avail.has(availKey(b));
+}
+
 function visible(){
   if (state.aiActive) {
     // Rank order matters and is not dataset order. Sort by the position the
@@ -1271,16 +1280,30 @@ function visible(){
     // wherever it happens to sit in businesses.json.
     const order = state.aiOrder || [];
     const pos = new Map(order.map((id,i)=>[id,i]));
-    const hits = BUSINESSES.filter(b => state.aiMatches.has(b.id));
+    const hits = BUSINESSES.filter(b => state.aiMatches.has(b.id) && passesChips(b));
     hits.sort((x,y) => (pos.has(x.id)?pos.get(x.id):1e6) - (pos.has(y.id)?pos.get(y.id):1e6));
     const { near, afield } = partitionByPlace(hits);
     return near.concat(afield);
   }
   const q = state.q.toLowerCase();
-  return BUSINESSES.filter(b =>
-    state.cats.has(b.category) && state.tiers.has(b.tier) && state.avail.has(availKey(b)) &&
+  return BUSINESSES.filter(b => passesChips(b) &&
     (q==='' || (b.name+' '+b.town+' '+(b.subcategory||'')+' '+b.category+' '+(b.description||'')).toLowerCase().includes(q))
   );
+}
+
+// Every count on the page, from one number. Lifted out of renderMapList
+// because the grid never calls that function — so after a search the sidebar
+// count sat at whatever the last map render left behind, and went stale again
+// the moment a chip narrowed the results.
+function updateCounts(n){
+  const countText = state.aiActive
+    ? `Found <b>${n}</b> matching makers`
+    : `Showing <b>${n}</b> of ${BUSINESSES.length} businesses`;
+  if (countEl) countEl.innerHTML = countText;
+  const gridCountEl = document.getElementById('gridCount');
+  if (gridCountEl) gridCountEl.innerHTML = countText;
+  const drawerCountEl = document.getElementById('drawerCount');
+  if (drawerCountEl) drawerCountEl.textContent = n;
 }
 
 function renderMapList(){
@@ -1291,12 +1314,7 @@ function renderMapList(){
   cluster.clearLayers();
   vis.forEach(b=>cluster.addLayer(markers[b.id]));
   syncChips();
-  const countText = state.aiActive ? `Found <b>${vis.length}</b> AI matching makers` : `Showing <b>${vis.length}</b> of ${BUSINESSES.length} businesses`;
-  countEl.innerHTML = countText;
-  const gridCountEl = document.getElementById('gridCount');
-  if (gridCountEl) gridCountEl.innerHTML = countText;
-  const drawerCountEl = document.getElementById('drawerCount');
-  if (drawerCountEl) drawerCountEl.textContent = vis.length;
+  updateCounts(vis.length);
 
   if (state.aiActive && vis.length > 0) {
     const coords = vis.map(b => [b.lat, b.lng]);
@@ -1331,7 +1349,16 @@ function renderGrid(){
   if (!state.aiActive) {
     vis.sort((a,b)=> state.sortAsc ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name));
   }
-  if (state.aiActive) {
+  // The grid is reached without ever passing through renderMapList — the
+  // search switches straight to it — so the chips and the count have to be
+  // brought up to date here as well, or they describe the previous view.
+  syncChips();
+  updateCounts(vis.length);
+  if (state.aiActive && vis.length === 0) {
+    // The search did find things; the chips are what emptied the page. Say
+    // that, rather than leaving "here are some businesses" over nothing.
+    gridAiBanner.innerHTML = 'Nothing matches your search with those filters &mdash; try widening them.';
+  } else if (state.aiActive) {
     gridAiBanner.innerHTML = state.aiHeadline || 'Here are some UK businesses we think you&rsquo;ll love';
   } else if (state.notice) {
     gridAiBanner.innerHTML = state.notice;
