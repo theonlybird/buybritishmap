@@ -8504,14 +8504,14 @@
     "subcategory": "Womenswear",
     "tier": "silver",
     "listing_type": "online_only",
-    "town": "Manchester",
-    "address": "Manchester",
-    "lat": 53.4775,
-    "lng": -2.2361,
+    "town": "Shelley, Huddersfield",
+    "address": "Shelley, Huddersfield, West Yorkshire",
+    "lat": 53.59695,
+    "lng": -1.69354,
     "website": "https://sarvin.co.uk",
     "instagram": "https://www.instagram.com/sarvinworld/",
-    "description": "Occasionwear made by an in-house Manchester dressmaking team.",
-    "evidence_note": "Made locally in Manchester by an in-house dressmaking team, using fabrics handpicked from around the world. Town-level pin.",
+    "description": "Persian-inspired occasionwear made in the UK by the brand's own in-house dressmaking team.",
+    "evidence_note": "Made in the UK by an in-house dressmaking team, using fabrics handpicked from around the world. Head office, returns address and Companies House registered office (Sarvin Design Ltd, 12386877, SIC 14131 manufacture of women's outerwear) are all Shelley, Huddersfield; sarvin.co.uk now describes the brand as 'based in Huddersfield, in the heart of West Yorkshire... local manufacturing'. A June 2023 blog post placed the in-house dressmaking team at a Manchester studio, so the sewing room may still be in Manchester. Postcode-level pin on the published Huddersfield head office.",
     "tier_confidence": "high",
     "logo": "assets/logos/sarvin.png",
     "source": "britishmadeclothing.co.uk queue",
@@ -8520,7 +8520,7 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "Manchester"
+    "county": "West Yorkshire"
   },
   {
     "id": "soma-sportswear",
@@ -11175,30 +11175,6 @@
     ],
     "nation": "Wales",
     "county": "Anglesey"
-  },
-  {
-    "id": "tregaron-goldsmiths",
-    "name": "Tregaron Goldsmiths (Rhiannon Workshop)",
-    "category": "jewellery",
-    "subcategory": "Welsh Gold & Fine Jewellery",
-    "tier": "gold",
-    "listing_type": "both",
-    "town": "Tregaron, Ceredigion",
-    "address": "The Square, Tregaron",
-    "lat": 52.21982,
-    "lng": -3.9332,
-    "website": "https://www.rhiannon.co.uk",
-    "instagram": "https://www.instagram.com/rhiannontregaron/",
-    "description": "Historic Welsh gold casting and goldsmithing workshop in Tregaron since 1971.",
-    "evidence_note": "Casting and goldsmithing in Tregaron using pure Welsh gold and UK-refined precious metals.",
-    "tier_confidence": "high",
-    "logo": "assets/logos/tregaron-goldsmiths.png",
-    "source": "unrecorded — verify before relying on",
-    "product_tags": [
-      "jewellery"
-    ],
-    "nation": "Wales",
-    "county": "Ceredigion"
   },
   {
     "id": "robinson-jewellery-belfast",

@@ -26009,16 +26009,6 @@
   "rescored": false,
   "alreadyGated": true
  },
- "tregaron-goldsmiths": {
-  "id": "tregaron-goldsmiths",
-  "shopify": false,
-  "platform": null,
-  "reason": "no-feed-found",
-  "checked": "2026-08-01",
-  "tags": [],
-  "tagConfidence": {},
-  "rescored": true
- },
  "elliot-brown-watches": {
   "id": "elliot-brown-watches",
   "shopify": true,
