@@ -1634,6 +1634,12 @@ const SYNONYMS = {
   boot:'boots', shoe:'shoes', trainer:'trainers',
   coat:'coats', jacket:'jackets', shirt:'shirts', trouser:'trousers',
   ring:'rings', necklace:'necklaces', earring:'earrings', watches:'watch',
+  // Who the garment is for. No listing spells "mens" or "ladies", so without
+  // these the fuzzy step reached "men"/"women" by edit distance and declared
+  // it as a spelling correction — the search worked, but apologised for a
+  // missing apostrophe. Mapped here so they resolve quietly instead.
+  mens:'men', womens:'women', childrens:'children',
+  ladies:'women', gents:'men',
   cheeses:'cheese', veg:'vegetables', vegetable:'vegetables', meats:'meat',
   scots:'scotland', scottish:'scotland', welsh:'wales', cornish:'cornwall',
   yorks:'yorkshire', londoner:'london', english:'england', british:'britain'
