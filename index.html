@@ -882,7 +882,11 @@ function initials(name){ return name.replace(/[^A-Za-z ]/g,'').split(' ').filter
 function logoHtml(b, cls){
   const logoPath = b.logo || `assets/logos/${b.id}.png`;
   const fallback = `this.onerror=null;this.remove();`;
-  return `<div class="${cls}" style="background:#ffffff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="${logoPath}" alt="" style="width:100%;height:100%;object-fit:contain;background:#ffffff;" onerror="${fallback}"></div>`;
+  // Some brands only publish a white-on-transparent mark. On the default white
+  // tile those render as an empty box, so those records carry logo_bg:"dark"
+  // (set by scripts/apply-logo-choices.py, audited by scripts/audit-logos.py).
+  const bg = b.logo_bg === 'dark' ? 'var(--ink)' : '#ffffff';
+  return `<div class="${cls}" style="background:${bg};border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="${logoPath}" alt="" style="width:100%;height:100%;object-fit:contain;background:${bg};" onerror="${fallback}"></div>`;
 }
 
 // --- Map Setup ---

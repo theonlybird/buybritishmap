@@ -15,7 +15,7 @@
     "description": "East London menswear maker. Every cloth is woven and every garment made in the British Isles — including British-sourced buttons and trims.",
     "evidence_note": "Sources all fabrics, buttons and trims from regional British mills/makers; made in British Isles.",
     "tier_confidence": "high",
-    "logo": "assets/logos/seh-kelly.png",
+    "logo": "assets/logos/seh-kelly.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "coats & jackets"
@@ -487,7 +487,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "logo_bg": "dark"
   },
   {
     "id": "iow-tomatoes",
@@ -2101,7 +2102,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Staffordshire"
+    "county": "Staffordshire",
+    "logo_bg": "dark"
   },
   {
     "id": "loch-levens-larder",
@@ -2241,7 +2243,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "logo_bg": "dark"
   },
   {
     "id": "maple-farm-kelsale",
@@ -2268,7 +2271,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "logo_bg": "dark"
   },
   {
     "id": "north-sea-clothing",
@@ -3180,7 +3184,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Swansea"
+    "county": "Swansea",
+    "logo_bg": "dark"
   },
   {
     "id": "brookhouse-pottery",
@@ -3473,7 +3478,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Carmarthenshire"
+    "county": "Carmarthenshire",
+    "logo_bg": "dark"
   },
   {
     "id": "jack-doherty",
@@ -3957,7 +3963,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "logo_bg": "dark"
   },
   {
     "id": "garrick-watchmakers",

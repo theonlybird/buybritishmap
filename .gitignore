@@ -21,3 +21,8 @@ scripts/clean-and-finalize-contacts.js
 
 # FUSE mount remnants of deleted files — never commit
 .fuse_hidden*
+
+# logo harvest working files — candidate images downloaded from business sites
+.logo-harvest/
+
+__pycache__/
