@@ -14,7 +14,7 @@ businesses.json is rewritten with json.dumps(indent=2), which round-trips
 the existing file byte-for-byte, so the diff shows only real changes.
 """
 import argparse, json, os, shutil, sys
-from PIL import Image
+from PIL import Image, ImageChops
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from logo_lib import measure
@@ -23,20 +23,22 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAXDIM = 512
 
 
-def trim(im, tol=8):
-    import numpy
-    a = numpy.array(im.convert('RGB')).astype(int)
-    alpha = numpy.array(im.split()[-1]) if im.mode == 'RGBA' else None
-    nonwhite = (255 - a).max(2) > tol
-    if alpha is not None:
-        nonwhite &= alpha > 24
-    ys, xs = numpy.nonzero(nonwhite)
-    if len(xs) == 0:
+def trim(im, tol=8, pad=2):
+    """Crop away surrounding white / transparency. Pillow only -- no numpy,
+    so the whole pipeline needs exactly one installed dependency."""
+    rgb = im.convert('RGB')
+    diff = ImageChops.difference(rgb, Image.new('RGB', im.size, (255, 255, 255)))
+    if im.mode == 'RGBA':
+        # Transparent pixels are blank whatever colour they claim to be.
+        a = im.split()[-1]
+        diff = ImageChops.multiply(diff, Image.merge('RGB', (a, a, a)))
+    mask = diff.convert('L').point(lambda v: 255 if v > tol else 0)
+    box = mask.getbbox()
+    if not box:
         return im
-    pad = 2
-    return im.crop((max(int(xs.min()) - pad, 0), max(int(ys.min()) - pad, 0),
-                    min(int(xs.max()) + 1 + pad, im.width),
-                    min(int(ys.max()) + 1 + pad, im.height)))
+    l, t, r, b = box
+    return im.crop((max(l - pad, 0), max(t - pad, 0),
+                    min(r + pad, im.width), min(b + pad, im.height)))
 
 
 def normalise(src, dest, keep_alpha):

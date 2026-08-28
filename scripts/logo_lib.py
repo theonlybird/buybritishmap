@@ -6,7 +6,16 @@ behaves at that size, not about how it looks at full resolution.
 """
 import os
 from collections import Counter
-from PIL import Image
+
+try:
+    from PIL import Image
+except ImportError:  # pragma: no cover
+    raise SystemExit(
+        "This needs Pillow, which reads the image pixels.\n"
+        "Install it with:\n"
+        "    python3 -m pip install --user pillow\n"
+        "(if that reports an externally-managed environment, add "
+        "--break-system-packages)")
 
 # How a file's pixel dimensions betray where it was taken from.
 OG_SIZES = {(1200, 628), (1200, 630), (1200, 675), (1920, 1005)}
