@@ -566,7 +566,7 @@
     "description": "Large organic Cotswolds farm shop with its own market garden and creamery — predominantly British, with a range of specialist imported deli lines.",
     "evidence_note": "Own organic farm produce, but stocks specialist imports (wine, deli) — hence Silver.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/daylesford.png",
+    "logo": "assets/logos/daylesford.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "dairy & cheese",
@@ -810,7 +810,7 @@
     "description": "Fine English socks knitted at a family-owned factory in Leicester.",
     "evidence_note": "Knitted in Leicester. Gold by UK-milled rule.",
     "tier_confidence": "high",
-    "logo": "assets/logos/pantherella.png",
+    "logo": "assets/logos/pantherella.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear",
@@ -1098,7 +1098,7 @@
     "description": "Employee-owned Devon organic farm and nationwide veg-box delivery, growing in Devon and beyond.",
     "evidence_note": "Organic and largely British, but imports out-of-season produce (e.g. citrus) — hence Silver.",
     "tier_confidence": "high",
-    "logo": "assets/logos/riverford.png",
+    "logo": "assets/logos/riverford.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "fruit & veg",
@@ -1273,7 +1273,7 @@
     "description": "Suitcases handcrafted in Hertfordshire on Victorian machinery, with bodies of in-house vulcanised fibreboard.",
     "evidence_note": "Made in UK; fibreboard body UK-made but leather trim imported, so Silver under strict rule.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/globe-trotter.png",
+    "logo": "assets/logos/globe-trotter.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "bags & leather goods"
@@ -1573,7 +1573,7 @@
     "description": "Family woollen mill on the Pembrokeshire coast weaving distinctive double-cloth Welsh blankets and accessories since 1912.",
     "evidence_note": "Woven in Wales; British (Yorkshire) yarn. Gold: UK-milled fabric.",
     "tier_confidence": "high",
-    "logo": "assets/logos/melin-tregwynt.png",
+    "logo": "assets/logos/melin-tregwynt.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tweed & woven goods"
@@ -2794,8 +2794,7 @@
       "plates",
       "pottery"
     ],
-    "nation": "England",
-    "county": "London"
+    "nation": "England"
   },
   {
     "id": "emma-alington",
@@ -3178,14 +3177,13 @@
     "category": "ceramics",
     "subcategory": "Studio pottery",
     "instagram": "https://www.instagram.com/mickischloessingk/",
-    "logo": "assets/logos/bridge-pottery.png",
+    "logo": "assets/logos/bridge-pottery.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Swansea",
-    "logo_bg": "dark"
+    "county": "Swansea"
   },
   {
     "id": "brookhouse-pottery",
@@ -4646,7 +4644,7 @@
     "description": "One perfect jumper, made properly — Scottish-spun lambswool knitted in Britain.",
     "evidence_note": "Signature jumpers use 100% Scottish-spun lambswool, knitted and hand-finished in Britain; newer linen/cotton lines less clearly UK-made.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/navygrey.png",
+    "logo": "assets/logos/navygrey.svg",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "knitwear",
@@ -5286,7 +5284,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "logo_bg": "dark"
   },
   {
     "id": "thorndale",
@@ -6083,7 +6082,7 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "Norfolk"
   },
   {
     "id": "albert-thurston",
@@ -6173,7 +6172,7 @@
     "description": "The world's oldest hat shop, blocking and finishing hats in St James's since 1676.",
     "evidence_note": "Hats prepared and finished in the London shop, but the firm states it works with hat manufacturers in Spain, Belgium and the UK, so felt body manufacture is not confirmed UK.",
     "tier_confidence": "medium",
-    "logo": "assets/logos/lock-and-co-hatters.png",
+    "logo": "assets/logos/lock-and-co-hatters.svg",
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "hats & caps"
@@ -7074,7 +7073,7 @@
     "description": "Leather goods handmade in a Gloucestershire workshop.",
     "evidence_note": "Handmade in their Gloucestershire workshop, but the leather is tanned at the La Perla Azzurra tannery in Tuscany. No address is published anywhere on garstin1871.com — the most precise claim is 'a small atelier in the rolling hills of Gloucestershire' (Sir Gordon Bennett maker interview), so this stays a county-centroid pin. Note: Sir Gordon Bennett's own collection page is titled 'Handcrafted in Walsall', which conflicts with their interview; unresolved, and it does not affect the tier either way.",
     "tier_confidence": "high",
-    "logo": "assets/logos/garstin-1871.png",
+    "logo": "assets/logos/garstin-1871.svg",
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "bags & leather goods"
@@ -7367,7 +7366,7 @@
     "description": "Organic cotton boxers, swim shorts and jersey basics made in Wales.",
     "evidence_note": "Product pages state items are proudly made in Wales from GOTS organic cotton, but the fabric-milling location is not given. Town-level pin.",
     "tier_confidence": "high",
-    "logo": "assets/logos/rolf-skeldon.png",
+    "logo": "assets/logos/rolf-skeldon.svg",
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "underwear & nightwear",
@@ -7620,7 +7619,7 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "Suffolk"
   },
   {
     "id": "hemingsworth",
@@ -8814,7 +8813,7 @@
     "description": "Vintage-style dresses made at a long-term London factory.",
     "evidence_note": "Has worked with the same London factory since 2013 with in-house pattern cutters and machinists, but the stretch jersey origin is unspecified. Town-level pin.",
     "tier_confidence": "high",
-    "logo": "assets/logos/lady-v-london.png",
+    "logo": "assets/logos/lady-v-london.svg",
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "womenswear",
@@ -9034,7 +9033,7 @@
     "description": "Workwear cut and sewn in Derby on vintage machines.",
     "evidence_note": "Cut and sewn in Derby on vintage machines using archived cloths from heritage mills across the UK and Europe — an unspecified mix. Town-level pin.",
     "tier_confidence": "high",
-    "logo": "assets/logos/reworked-348.png",
+    "logo": "assets/logos/reworked-348.svg",
     "source": "britishmadeclothing.co.uk queue",
     "product_tags": [
       "workwear & aprons"
@@ -9452,7 +9451,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "logo_bg": "dark"
   },
   {
     "id": "des-merrion",
@@ -11344,7 +11344,7 @@
     "description": "Historic Birmingham Jewellery Quarter casting house and fine jewellery manufacturer since 1953.",
     "evidence_note": "Cast and hallmarked in Birmingham Jewellery Quarter using 100% UK-refined gold and platinum.",
     "tier_confidence": "high",
-    "logo": "assets/logos/hockley-mint.png",
+    "logo": "assets/logos/hockley-mint.svg",
     "source": "unrecorded — verify before relying on",
     "product_tags": [
       "jewellery"
@@ -11740,7 +11740,8 @@
       "bowls"
     ],
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "logo": "assets/logos/henry-watsons-potteries.png"
   },
   {
     "id": "trough-farm-shop",
