@@ -127,10 +127,16 @@ function titleCase(name) {
   ).join(' ');
 }
 
-/** Whole-word-ish match, so "derry" does not fire inside "Londonderry". */
+/**
+ * Whole-word-ish match, so "derry" does not fire inside "Londonderry" — and not
+ * a street name, so Portmeirion on London Road in Stoke-on-Trent is not filed
+ * under London. Three businesses had been given a county from the street they
+ * are on, which put them in the results for a city 150 miles away.
+ */
+const STREET_SUFFIX = '(?!\\s+(road|rd|street|st|lane|ln|way|avenue|ave|close|drive|crescent|terrace|mews|parade|walk)\\b)';
 function mentions(text, name) {
   const safe = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return new RegExp('(^|[^a-z])' + safe + '([^a-z]|$)', 'i').test(text);
+  return new RegExp('(^|[^a-z])' + safe + STREET_SUFFIX + '([^a-z]|$)', 'i').test(text);
 }
 
 /**

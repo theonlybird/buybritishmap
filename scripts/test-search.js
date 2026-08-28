@@ -389,6 +389,140 @@ for (const [id, want] of borderCases) {
   line(ok, `${id.padEnd(24)} ${b ? b.town : '(missing)'} -> ${b ? b.nation : '?'}`.slice(0, 74));
 }
 
+
+// ---------------------------------------------------------------------------
+// A place we have no makers in is still a place.
+//
+// Every place vocabulary was built from the catalogue, so a town became a word
+// only once someone there was listed. "Leeds jumper" was not answered with
+// "nothing in Leeds" — Leeds was stemmed to "led", scored as a product, and
+// dropped from the query, leaving a banner that claimed an exact match. Fifteen
+// of the fifty largest towns and cities in the UK behaved that way.
+//
+// The rule: if the user typed a place, the result must know it, whether or not
+// there is anything there.
+// ---------------------------------------------------------------------------
+console.log('\nplaces are recognised whether or not we have anyone there\n');
+
+const GAZETTEER_TOWNS = [
+  'London', 'Birmingham', 'Glasgow', 'Liverpool', 'Bristol', 'Manchester',
+  'Sheffield', 'Leeds', 'Edinburgh', 'Leicester', 'Coventry', 'Bradford',
+  'Cardiff', 'Belfast', 'Nottingham', 'Kingston upon Hull', 'Newcastle upon Tyne',
+  'Stoke-on-Trent', 'Southampton', 'Derby', 'Portsmouth', 'Brighton', 'Plymouth',
+  'Northampton', 'Reading', 'Luton', 'Wolverhampton', 'Bolton', 'Aberdeen',
+  'Bournemouth', 'Norwich', 'Swindon', 'Swansea', 'Milton Keynes',
+  'Southend-on-Sea', 'Middlesbrough', 'Peterborough', 'Sunderland', 'Warrington',
+  'Huddersfield', 'Slough', 'Oxford', 'York', 'Poole', 'Ipswich', 'Telford',
+  'Cambridge', 'Dundee', 'Gloucester', 'Blackpool'
+];
+
+{
+  const missed = GAZETTEER_TOWNS.filter(t => !local(`${t} jumper`).result.place.length);
+  const ok = missed.length === 0;
+  if (!ok) failures++;
+  line(ok, `all ${GAZETTEER_TOWNS.length} of the largest UK towns and cities name a place` +
+    (ok ? '' : ` — dropped: ${missed.join(', ')}`));
+}
+
+// One county from each nation, plus the two spellings people actually type.
+const countyCases = [
+  'Rutland', 'Herefordshire', 'Northumberland', 'West Sussex',   // England
+  'Perthshire', 'Argyll and Bute', 'Caithness', 'Midlothian',    // Scotland
+  'Powys', 'Ceredigion', 'Monmouthshire', 'Vale of Glamorgan',   // Wales
+  'County Down', 'Co. Fermanagh', 'County Tyrone', 'Armagh',     // Northern Ireland
+];
+{
+  const missed = countyCases.filter(c => !local(`${c} pottery`).result.place.length);
+  const ok = missed.length === 0;
+  if (!ok) failures++;
+  line(ok, `counties of all four nations name a place` +
+    (ok ? '' : ` — dropped: ${missed.join(', ')}`));
+}
+
+// The specific manglings. Each of these was a real place turned into something
+// else by a repair step that assumed an unknown word must be a misspelt
+// product: the stemmer collapsed the doubled letter in Leeds, splitJoined broke
+// Wakefield in half, and fuzzy matching moved the rest around the country.
+const manglings = [
+  ['Leeds jumper', 'leeds'],
+  ['Hull cheese', 'hull'],
+  ['Coventry watch', 'coventry'],
+  ['Sunderland knitwear', 'sunderland'],
+  ['Cardiff jumper', 'cardiff'],
+  ['Oxford cheese', 'oxford'],
+  ['Swindon knife', 'swindon'],
+];
+for (const [q, want] of manglings) {
+  const { result, banner } = local(q);
+  const problems = [];
+  if (!result.place.includes(want)) problems.push(`place is ${JSON.stringify(result.place)}, wanted ${want}`);
+  if ((result.corrections || []).length) problems.push(`invented a correction: ${JSON.stringify(result.corrections)}`);
+  if (/we think you&rsquo;ll love$/.test(banner)) problems.push('banner claims an exact match');
+  if (problems.length) {
+    failures++;
+    line(false, `"${q}"`);
+    problems.forEach(p => console.log(`          ${p}`));
+  } else {
+    line(true, `"${q}"`.padEnd(26) + banner.replace(/<\/?b>/g, '').replace(/&rsquo;/g, '’').slice(0, 58));
+  }
+}
+
+// A two-word place is one place. "Milton Keynes jumper" read as a place called
+// Milton and a product called keynes, and said so out loud.
+console.log('');
+const phraseCases = [
+  ['Milton Keynes jumper',      /in Milton Keynes/],
+  ['Kingston upon Hull cheese', /in Kingston upon Hull/],
+  ['tomatoes isle of wight',    /in Isle of Wight/],
+  ['vale of glamorgan cheese',  /in Vale of Glamorgan/],
+  ['tyne and wear knitwear',    /in Tyne and Wear/],
+  ['pottery stoke on trent',    /in Stoke on Trent/],
+];
+for (const [q, want] of phraseCases) {
+  const { banner } = local(q);
+  const ok = want.test(banner);
+  if (!ok) failures++;
+  line(ok, `"${q}"`.padEnd(30) + (ok ? 'reads as one place' : `— got: ${banner}`));
+}
+
+// ---------------------------------------------------------------------------
+// A street is not a place. Weetons is on Leeds Road in Harrogate, Portmeirion
+// is on London Road in Stoke-on-Trent, and putting the country's cities into
+// the vocabulary would have turned both into local matches.
+// ---------------------------------------------------------------------------
+console.log('');
+const streetCases = [
+  ['Leeds cheese',   'weetons',     'Leeds Road, Harrogate'],
+  ['London pottery', 'portmeirion', 'London Road, Stoke-on-Trent'],
+];
+for (const [q, id, why] of streetCases) {
+  const { result } = local(q);
+  const inPlace = result.matches.slice(0, result.inPlace);
+  const ok = !inPlace.some(b => b.id === id);
+  if (!ok) failures++;
+  line(ok, `"${q}"`.padEnd(18) + `${why} is not a match` + (ok ? '' : ' — it was counted'));
+}
+
+// Only what the place actually contains. These were all counted before: a
+// London pottery for a Stoke search, a Fermanagh one for County Down.
+{
+  const { result } = local('pottery stoke on trent');
+  const inPlace = result.matches.slice(0, result.inPlace);
+  const strays = inPlace.filter(b => !/stoke|trent/i.test([b.town, b.address].join(' ')));
+  const ok = strays.length === 0 && inPlace.length >= 6;
+  if (!ok) failures++;
+  line(ok, `"pottery stoke on trent" — ${inPlace.length} in place, none of them elsewhere` +
+    (ok ? '' : ` — strays: ${strays.map(b => b.name).join(', ')}`));
+}
+{
+  const { result } = local('county down pottery');
+  const inPlace = result.matches.slice(0, result.inPlace);
+  const ok = inPlace.length > 0 && inPlace.every(b => /down/i.test([b.town, b.address, b.county].join(' ')));
+  if (!ok) failures++;
+  line(ok, `"county down pottery" — ${inPlace.length} in place, all of them in Co. Down` +
+    (ok ? '' : ` — got: ${inPlace.map(b => b.town).join(', ')}`));
+}
+
 console.log('');
 if (failures) {
   console.log(`${failures} failing assertion(s)\n`);

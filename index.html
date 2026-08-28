@@ -1252,8 +1252,7 @@ function matchesPlace(b, placeTerms){
     if (REGIONS[t] && REGIONS[t](b)) return true;
     // Whole word, and not a street name — otherwise "London Road, Surrey"
     // reads as London, and half the country is on a London Road.
-    return new RegExp('\\b' + t + '\\b(?!\\s+(road|rd|street|st|lane|ln|way|avenue|ave|close|drive))', 'i')
-      .test(where);
+    return hasPlaceWord(where, t);
   });
 }
 
@@ -1732,6 +1731,26 @@ function normaliseQuery(query) {
   raw.forEach((tok, i) => {
     if (i > 0 && PLACE_PREPS.has(raw[i - 1])) placePreferred.add(tok);
   });
+
+  // Two-and-three-word place names, read before the query is split into single
+  // words. "Milton Keynes jumper" used to be a place called Milton and a
+  // product called keynes, and the banner said exactly that. Longest first, so
+  // "Newcastle upon Tyne" is not eaten by a shorter overlapping name.
+  const phrases = buildPlacePhrases();
+  const phraseAt = new Map();   // index -> the whole phrase
+  const insidePhrase = new Set(); // indexes swallowed by one
+  for (let n = 4; n >= 2; n--) {
+    for (let i = 0; i + n <= raw.length; i++) {
+      let free = true;
+      for (let k = i; k < i + n; k++) if (insidePhrase.has(k) || phraseAt.has(k)) free = false;
+      if (!free) continue;
+      const phrase = raw.slice(i, i + n).join(' ');
+      if (!phrases.has(phrase)) continue;
+      phraseAt.set(i, phrase);
+      for (let k = i + 1; k < i + n; k++) insidePhrase.add(k);
+    }
+  }
+
   const seen = new Set();
   let understood = 0;
 
@@ -1753,6 +1772,14 @@ function normaliseQuery(query) {
   };
 
   raw.forEach((tok, i) => {
+    if (insidePhrase.has(i)) return;
+    if (phraseAt.has(i)) {
+      const phrase = phraseAt.get(i);
+      placePreferred.add(phrase);
+      take(phrase, phrase);
+      understood++;
+      return;
+    }
     if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
     // "northern ireland" and "northern irish" are one place in two words.
     // Without this the first word was taken on its own and the banner read
@@ -1780,11 +1807,30 @@ function normaliseQuery(query) {
     // misspelling and became "pork". The lexicon knows better, and is checked
     // here rather than at the end so nothing downstream gets the chance.
     if (expandToTags(tok).length) { take(tok, tok); understood++; return; }
+    // A word that names a place is a place, whatever the stemmer would make of
+    // it. This check has to come before the three repair steps below, because
+    // all three assume an unrecognised word is a misspelt product: the stemmer
+    // collapsed Leeds to "led", splitJoined broke Wakefield into wake and
+    // field, and fuzzy matching turned Hull into Hall, Coventry into Country
+    // and Sunderland into Sutherland. A place then vanished from the query
+    // entirely and the banner claimed an exact match for a search it had not
+    // run. The catalogue's own addresses and counties are in this vocabulary
+    // too, so it also picks up towns we list but never mention in prose.
+    if (buildPlaceVocab().has(tok)) { take(tok, tok); understood++; return; }
     // Known spelling first — cheapest and most reliable.
     const syn = SYNONYMS[tok];
     if (syn) { take(syn, tok); understood++; return; }
     const split = splitJoined(tok, vocab);
-    if (split) { split.forEach(p => take(p, p)); understood++; return; }
+    if (split) {
+      // splitJoined is allowed one fuzzy half, and that half is a substitution
+      // like any other: "wakefield" comes back as "ware field". Declare it for
+      // the same reason a whole-word correction is declared — otherwise the
+      // banner apologises for a place the user never typed.
+      if (split.join('') !== tok) corrections.push({ from: tok, to: split.join(' ') });
+      split.forEach(p => take(p, p));
+      understood++;
+      return;
+    }
     const stemmed = stemHit(tok, vocab);
     if (stemmed) { take(stemmed, tok); understood++; return; }
     const near = fuzzyHit(tok, vocab);
@@ -1848,6 +1894,108 @@ const NATION_WORDS = {
 };
 const NATION_OF = { scotland: 'Scotland', wales: 'Wales', england: 'England', 'northern ireland': 'Northern Ireland' };
 
+/* --------------------------------------------------------------------------
+   UK GAZETTEER
+   Every place vocabulary above is built from the catalogue itself, which means
+   the map could only recognise a town once a maker there had been listed. A
+   search for Leeds was therefore not "no makers in Leeds" but "Leeds is not a
+   word" — it fell through to the stemmer, came out as "led", and was scored as
+   if it were a product. The banner then claimed an exact match for a place it
+   had quietly discarded. Fifteen of the fifty largest towns and cities in the
+   country failed that way, Cardiff and Oxford among them.
+   This list is the floor: places we recognise whether or not we have anyone
+   there yet, so the honest "nothing in Leeds, here is what is nearby" wording
+   can fire. Kept separate from UK_COUNTIES above on purpose — that set edits
+   the addresses we display, and widening it would change what is printed on
+   the cards.
+   -------------------------------------------------------------------------- */
+
+// The 50 largest towns and cities in the UK by population, in rank order.
+// Source: whereig.com's ranking of UK cities and towns by population.
+const UK_LARGEST_TOWNS = [
+  'London', 'Birmingham', 'Glasgow', 'Liverpool', 'Bristol', 'Manchester',
+  'Sheffield', 'Leeds', 'Edinburgh', 'Leicester', 'Coventry', 'Bradford',
+  'Cardiff', 'Belfast', 'Nottingham', 'Kingston upon Hull', 'Newcastle upon Tyne',
+  'Stoke-on-Trent', 'Southampton', 'Derby', 'Portsmouth', 'Brighton', 'Plymouth',
+  'Northampton', 'Reading', 'Luton', 'Wolverhampton', 'Bolton', 'Aberdeen',
+  'Bournemouth', 'Norwich', 'Swindon', 'Swansea', 'Milton Keynes',
+  'Southend-on-Sea', 'Middlesbrough', 'Peterborough', 'Sunderland', 'Warrington',
+  'Huddersfield', 'Slough', 'Oxford', 'York', 'Poole', 'Ipswich', 'Telford',
+  'Cambridge', 'Dundee', 'Gloucester', 'Blackpool'
+];
+
+// Counties of all four nations. England's 48 ceremonial counties; Scotland's
+// historic counties and its modern council areas, because people search both
+// ("Perthshire" and "Perth and Kinross" are the same answer to a visitor);
+// Wales's 13 historic counties and 22 principal areas for the same reason; and
+// the 6 counties of Northern Ireland.
+const UK_COUNTY_NAMES = [
+  // England — ceremonial counties
+  'Bedfordshire', 'Berkshire', 'Bristol', 'Buckinghamshire', 'Cambridgeshire',
+  'Cheshire', 'Cornwall', 'Cumbria', 'Cumberland', 'Westmorland', 'Derbyshire',
+  'Devon', 'Dorset', 'County Durham', 'East Riding of Yorkshire', 'East Sussex',
+  'Essex', 'Gloucestershire', 'Greater London', 'Greater Manchester',
+  'Hampshire', 'Herefordshire', 'Hertfordshire', 'Isle of Wight', 'Kent',
+  'Lancashire', 'Leicestershire', 'Lincolnshire', 'Merseyside', 'Norfolk',
+  'North Yorkshire', 'Northamptonshire', 'Northumberland', 'Nottinghamshire',
+  'Oxfordshire', 'Rutland', 'Shropshire', 'Somerset', 'South Yorkshire',
+  'Staffordshire', 'Suffolk', 'Surrey', 'Tyne and Wear', 'Warwickshire',
+  'West Midlands', 'West Sussex', 'West Yorkshire', 'Wiltshire', 'Worcestershire',
+  // Scotland — historic counties
+  'Aberdeenshire', 'Angus', 'Argyll', 'Ayrshire', 'Banffshire', 'Berwickshire',
+  'Bute', 'Caithness', 'Clackmannanshire', 'Dumfriesshire', 'Dunbartonshire',
+  'East Lothian', 'Fife', 'Inverness-shire', 'Kincardineshire', 'Kinross-shire',
+  'Kirkcudbrightshire', 'Lanarkshire', 'Midlothian', 'Moray', 'Nairnshire',
+  'Orkney', 'Peeblesshire', 'Perthshire', 'Renfrewshire', 'Ross-shire',
+  'Roxburghshire', 'Selkirkshire', 'Shetland', 'Stirlingshire', 'Sutherland',
+  'West Lothian', 'Wigtownshire',
+  // Scotland — council areas people search by
+  'Argyll and Bute', 'Dumfries and Galloway', 'East Ayrshire', 'East Dunbartonshire',
+  'East Renfrewshire', 'Falkirk', 'Highland', 'Inverclyde', 'North Ayrshire',
+  'North Lanarkshire', 'Perth and Kinross', 'Scottish Borders', 'South Ayrshire',
+  'South Lanarkshire', 'Stirling', 'West Dunbartonshire', 'Western Isles',
+  'Outer Hebrides', 'Na h-Eileanan Siar',
+  // Wales — historic counties
+  'Anglesey', 'Brecknockshire', 'Caernarfonshire', 'Cardiganshire',
+  'Carmarthenshire', 'Denbighshire', 'Flintshire', 'Glamorgan', 'Merionethshire',
+  'Monmouthshire', 'Montgomeryshire', 'Pembrokeshire', 'Radnorshire',
+  // Wales — principal areas
+  'Blaenau Gwent', 'Bridgend', 'Caerphilly', 'Ceredigion', 'Conwy', 'Gwynedd',
+  'Isle of Anglesey', 'Merthyr Tydfil', 'Neath Port Talbot', 'Newport',
+  'Powys', 'Rhondda Cynon Taf', 'Torfaen', 'Vale of Glamorgan', 'Wrexham',
+  // Northern Ireland
+  'County Antrim', 'County Armagh', 'County Down', 'County Fermanagh',
+  'County Londonderry', 'County Tyrone', 'Derry'
+];
+
+// Words that carry no location on their own. "West Yorkshire" contributes
+// "yorkshire" to the single-word vocabulary and nothing else: a bare "west"
+// would match every address with West in it, and "down" on its own is a jacket
+// filling far more often than it is a county in Northern Ireland.
+const PLACE_STOP_PARTS = new Set([
+  'north', 'south', 'east', 'west', 'greater', 'isle', 'isles', 'city', 'county',
+  'vale', 'upon', 'on', 'of', 'and', 'the', 'sea', 'royal', 'new', 'old', 'port',
+  'saint', 'mid', 'central', 'shire', 'wear', 'down', 'siar', 'eileanan'
+]);
+
+const normalisePlace = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+// Multi-word place names, matched as a phrase before the query is broken into
+// words. Without this "Milton Keynes jumper" read as a place called Milton and
+// a product called keynes, and said so in the banner.
+let PLACE_PHRASES = null;
+function buildPlacePhrases() {
+  if (PLACE_PHRASES) return PLACE_PHRASES;
+  PLACE_PHRASES = new Set();
+  UK_LARGEST_TOWNS.concat(UK_COUNTY_NAMES).forEach(name => {
+    const n = normalisePlace(name);
+    if (n.indexOf(' ') !== -1) PLACE_PHRASES.add(n);
+    // "Co. Down" is how the addresses write it and how people type it.
+    if (n.indexOf('county ') === 0) PLACE_PHRASES.add('co ' + n.slice(7));
+  });
+  return PLACE_PHRASES;
+}
+
 // Words that name a place in this catalogue, so a query term can be told apart
 // from a product term. Built from towns, addresses, counties and nations.
 let PLACE_VOCAB = null;
@@ -1864,6 +2012,21 @@ function buildPlaceVocab() {
   ['england','scotland','wales','britain','cornwall','yorkshire','devon','cotswolds',
    'highlands','midlands','shetland','orkney','hebrides','snowdonia','lakes']
     .forEach(w => places.add(w));
+  // The gazetteer: the country's largest towns and cities and every county,
+  // listed whether or not a maker there is on the map yet. A place we do not
+  // know is not reported as "nothing there" — it is silently read as a product
+  // word, which is how a search for Leeds returned a banner claiming an exact
+  // match. Both the whole name and its distinctive parts go in, so "Milton
+  // Keynes" and "Keynes" both land.
+  UK_LARGEST_TOWNS.concat(UK_COUNTY_NAMES).forEach(name => {
+    const n = normalisePlace(name);
+    places.add(n);
+    // "Co. Fermanagh" is how the addresses write it and how people type it.
+    if (n.indexOf('county ') === 0) places.add('co ' + n.slice(7));
+    n.split(' ').forEach(w => {
+      if (w.length > 3 && !PLACE_STOP_PARTS.has(w)) places.add(w);
+    });
+  });
   PLACE_VOCAB = places;
   return places;
 }
@@ -1896,6 +2059,28 @@ function buildProductVocab() {
 function hasWord(haystack, word) {
   const safe = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return new RegExp('\\b' + safe + 's?\\b', 'i').test(haystack);
+}
+
+// A place name in an address is only a place when it is not a street name.
+// Weetons is on Leeds Road in Harrogate, and there is a London Road in
+// Stoke-on-Trent; without this, adding the country's big cities to the
+// vocabulary would have invented a Leeds maker and two London ones. No
+// trailing "s" either — places are not pluralised the way products are.
+const STREET_WORD = '(?!\\s+(road|rd|street|st|lane|ln|way|avenue|ave|close|drive|crescent|terrace|mews|parade|walk))';
+// Addresses are written every which way — "Stoke-on-Trent", "Tyne & Wear",
+// "Co. Down" — so both sides are flattened to plain words before matching, and
+// "county" is allowed to appear as "co". Without this, reading a multi-word
+// place as one term lost twelve Stoke potteries to a pair of hyphens.
+function placeText(s) {
+  return String(s || '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
+}
+function hasPlaceWord(haystack, word) {
+  const parts = placeText(word).split(' ').filter(Boolean);
+  if (!parts.length) return false;
+  const pattern = parts.map(w => w === 'county'
+    ? '(?:county|co)'
+    : w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('\\s+');
+  return new RegExp('\\b' + pattern + '\\b' + STREET_WORD, 'i').test(placeText(haystack));
 }
 
 // `typed`, when given, is the set of words the user actually wrote. Words that
@@ -1981,9 +2166,9 @@ function localSearch(query) {
       // word that has to appear in its address.
       const nation = NATION_WORDS[t];
       if (nation && b.nation === NATION_OF[nation]) { placeScore += 10; return; }
-      if (hasWord(where, t)) placeScore += 10;
-      else if (b.county && hasWord(b.county, t)) placeScore += 10;
-      else if (hasWord(desc, t)) placeScore += 3;
+      if (hasPlaceWord(where, t)) placeScore += 10;
+      else if (b.county && hasPlaceWord(b.county, t)) placeScore += 10;
+      else if (hasPlaceWord(desc, t)) placeScore += 3;
     });
 
     return { b, productScore, placeScore, qualScore };
