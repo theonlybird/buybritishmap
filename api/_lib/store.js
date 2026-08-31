@@ -45,10 +45,11 @@ async function get(key) {
     return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null;
   }
   const { get: blobGet } = await blob();
-  // useCache:false so a status just written by the admin page reads back
-  // immediately rather than after the CDN catches up.
-  const res = await blobGet(key, { useCache: false });
-  if (!res || !res.stream) return null;
+  // access is required and throws if omitted -- it is not inferred from the
+  // store. useCache:false so a status just written by the admin page reads
+  // back immediately rather than after the CDN catches up.
+  const res = await blobGet(key, { access: 'private', useCache: false });
+  if (!res || res.statusCode !== 200 || !res.stream) return null;
   const text = await new Response(res.stream).text();
   return JSON.parse(text);
 }
