@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<meta charset="utf-8" />
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#FAF7F0" />
+<title>Update your listing — Grown and Made UK</title>
+<link rel="stylesheet" href="assets/theme.css" />
+<style>
+  /* Palette and type live in assets/theme.css */
+  *{box-sizing:border-box}
+  html,body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
+  #topbar{position:relative;height:64px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;z-index:1100}
+  #topbar .flag{position:absolute;left:0;top:0;bottom:0;width:230px;opacity:.16;pointer-events:none;
+    -webkit-mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%);
+    mask-image:linear-gradient(100deg,#000 0%,#000 25%,transparent 85%)}
+  #topbar .flag svg{width:100%;height:100%;display:block}
+  .site-title{margin:0;font-size:24px;letter-spacing:1px;color:var(--navy);font-weight:800}
+  .site-title span{color:var(--red)}
+  .site-title a{color:inherit;text-decoration:none}
+  #burger{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid var(--line);border-radius:9px;background:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+  #burger:hover{border-color:var(--navy)}
+  #burger .bar{width:20px;height:2px;background:var(--navy);border-radius:2px}
+  #menu{position:absolute;right:10px;top:60px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 8px 24px rgba(0,0,0,.13);min-width:210px;padding:6px;z-index:1200}
+  #menu a{display:block;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+  #menu a:hover{background:var(--bg);color:var(--navy)}
+  #menu a.cta{background:var(--red);color:#fff;margin-top:4px;text-align:center}
+  #menu a.cta:hover{filter:brightness(1.08)}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 18px 60px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  h2{margin:0 0 12px;font-size:20px;color:var(--navy)}
+  h3{margin:22px 0 6px;font-size:15.5px;color:var(--navy)}
+  p,li{font-size:14.5px;line-height:1.65;color:#39434e}
+  a{color:var(--navy)}
+  .tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:4px}
+  .tag.gold{background:#f6edd2;color:#7a5a12}
+  .tag.silver{background:#eceff2;color:#566069}
+
+  h1,h2,h3,.brand-logo,.g-title,.pop h3{font-family:var(--font-heading)}
+  .brand-logo{font-family:var(--font-heading);font-size:25px;font-weight:700;color:var(--racing-green);letter-spacing:.2px;text-decoration:none;line-height:1;white-space:nowrap}
+
+
+  /* ==========================================================================
+     RESPONSIVE  —  shared across the content pages.
+     The layout is a single column already, so this is about the header,
+     touch targets, comfortable reading measure and iOS input zoom.
+     ========================================================================== */
+  #topbar{padding:0 calc(14px + env(safe-area-inset-right,0px)) 0 calc(14px + env(safe-area-inset-left,0px))}
+  #burger{right:calc(14px + env(safe-area-inset-right,0px))}
+
+  @media (max-width:1099px){
+    .wrap{padding:24px 16px 56px}
+    .card{padding:20px}
+  }
+
+  @media (max-width:767px){
+    #topbar{height:56px;justify-content:flex-start}
+    .brand-logo{font-size:19px;max-width:calc(100% - 60px);overflow:hidden;text-overflow:ellipsis}
+    #burger{width:44px;height:44px;right:calc(12px + env(safe-area-inset-right,0px))}
+    #topbar .flag{width:110px}
+    #menu{top:52px;left:calc(12px + env(safe-area-inset-left,0px));right:calc(12px + env(safe-area-inset-right,0px));min-width:0}
+    #menu a{padding:13px 14px;font-size:15px}
+    .wrap{padding:16px 12px calc(48px + env(safe-area-inset-bottom,0px))}
+    .card{padding:18px 16px;border-radius:12px}
+    h2{font-size:19px}
+    h3{font-size:15.5px}
+    p,li{font-size:15px;line-height:1.7}
+  }
+
+  @media (max-width:359px){
+    .brand-logo{font-size:17px}
+  }
+
+
+  /* ==========================================================================
+     DESIGN SYSTEM OVERRIDES — see assets/theme.css
+     ========================================================================== */
+  html,body{background:var(--paper);color:var(--ink);font-family:var(--font-body)}
+  h1,h2,h3,h4{font-family:var(--font-heading);color:var(--green);font-weight:500;letter-spacing:.01em}
+  h1{font-size:clamp(30px,4.4vw,46px);line-height:1.1}
+  h2{font-size:25px}
+  h3{font-size:19px}
+  p,li{color:var(--muted);font-size:15px;line-height:1.7}
+  a{color:var(--green)}
+  a:hover{color:var(--green-dark)}
+
+  #topbar{background:var(--paper-2);border-bottom:1px solid var(--line)}
+  #topbar .flag{display:none}
+  .site-title,.brand-logo{font-family:var(--font-heading);font-weight:600;font-size:25px;
+    letter-spacing:.01em;color:var(--green);text-transform:none}
+  .site-title span{color:var(--green)}
+  #burger{background:var(--surface);border-color:var(--line);border-radius:6px}
+  #burger:hover{border-color:var(--green)}
+  #burger .bar{background:var(--green)}
+  #menu{background:var(--surface);border-color:var(--line);border-radius:8px}
+  #menu a{color:var(--ink);font-weight:500;border-bottom:none}
+  #menu a:hover{background:var(--paper-2);color:var(--green)}
+  #menu a.cta{background:var(--green);color:var(--paper)}
+
+  .card,.rules,.standards,.notice{background:var(--surface);border:1px solid var(--line-strong);
+    border-radius:6px;box-shadow:none}
+  .lede{color:var(--muted);font-size:17px;line-height:1.65}
+  .note,.hint,.sub,.opt{color:var(--muted-2)}
+  .cta,button[type=submit],.ok{background:var(--green);color:var(--paper);border:none;
+    border-radius:6px;font-family:var(--font-body);font-weight:500;letter-spacing:.03em}
+  .cta:hover,button[type=submit]:hover{background:var(--green-dark)}
+  input,select,textarea{font-family:var(--font-body);background:var(--surface);
+    border:1px solid var(--line);border-radius:6px;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);
+    box-shadow:0 0 0 3px rgba(0,66,37,.10)}
+
+  .tag{font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;border-radius:3px;padding:3px 7px}
+  .tag.gold,.gold-cell,.standard.is-gold{background:var(--gold-bg);color:var(--gold-mark)}
+  .tag.silver,.silver-cell{background:var(--silver-bg);color:var(--silver-mark)}
+  .gold-col,.g{color:var(--gold-mark)}
+  .silver-col,.s{color:var(--silver-mark)}
+  .cat,.eg{color:var(--muted-2)}
+  table{border-color:var(--line)}
+  th,td{border-color:var(--line)!important}
+  th{font-family:var(--font-body);color:var(--green);font-weight:600;
+    text-transform:uppercase;letter-spacing:.09em;font-size:11px}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* ---- update.html ---- */
+  /* .check and .two set display, which beats the browser's own [hidden]
+     rule. Anything toggled with el.hidden needs this to actually hide. */
+  [hidden]{display:none !important}
+  .wrap{max-width:720px}
+  .card{margin-bottom:14px}
+  .card.intro h1{margin:0 0 8px;font-size:30px;color:var(--racing-green);line-height:1.15}
+  .lede{font-size:15px;color:var(--muted);margin:0}
+  .ask{margin:14px 0 0;padding:11px 14px;background:#F4EBD4;border:1px solid #D8BE84;
+       border-radius:9px;font-size:14.5px;color:#7D5F22;font-weight:600}
+  .fld{display:block;margin-bottom:15px}
+  .lab{display:block;font-size:12px;font-weight:700;color:var(--muted-2);
+       letter-spacing:.04em;text-transform:uppercase;margin-bottom:5px}
+  .lab em{font-style:normal;font-weight:600;text-transform:none;letter-spacing:0;color:var(--muted)}
+  .fld input,.fld textarea{width:100%;font:15px/1.5 var(--font-body);color:var(--ink);
+       background:var(--bg);border:1px solid var(--line-strong);border-radius:9px;
+       padding:10px 12px;transition:border-color .15s,background .15s}
+  .fld input:focus,.fld textarea:focus{outline:none;border-color:var(--racing-green);background:#fff}
+  .fld input.changed,.fld textarea.changed{border-color:#C09A4F;background:#FCF7EC}
+  .help{display:block;font-size:12.5px;color:var(--muted-2);margin-top:5px;line-height:1.45}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .logo-row{display:flex;gap:16px;align-items:center}
+  .logo-box{width:64px;height:64px;flex:none;border:1px solid var(--line);border-radius:9px;
+       background:#fff;display:grid;place-items:center;overflow:hidden}
+  .logo-box img{max-width:52px;max-height:52px;object-fit:contain}
+  .logo-box.empty{border-style:dashed;font-size:10px;color:var(--muted-2);text-align:center;
+       line-height:1.25;padding:5px;font-weight:600}
+  .logo-row p{margin:0 0 9px;font-size:14.5px}
+  .btn-ghost{display:inline-block;font-size:13.5px;font-weight:700;color:var(--racing-green);
+       border:1px solid var(--line-strong);border-radius:8px;padding:7px 14px;text-decoration:none}
+  .btn-ghost:hover{border-color:var(--racing-green)}
+  .why-lab{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+       color:var(--muted-2);margin:14px 0 4px}
+  .why{margin:0;font-size:14.5px;line-height:1.6;color:#39434e;padding:12px 14px;
+       background:var(--bg);border-left:3px solid var(--line-strong);border-radius:0 8px 8px 0}
+  .rules{font-size:13px;color:var(--muted-2);margin:14px 0 16px}
+  .check{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;cursor:pointer;
+       padding:12px 14px;border:1px dashed var(--line-strong);border-radius:9px;background:var(--bg)}
+  .check input{margin:2px 0 0;flex:none;width:16px;height:16px;accent-color:var(--racing-green)}
+  #appeal{margin-top:14px;padding:16px;border:1px solid #C79A3E;border-radius:11px;background:#FCF7EC}
+  .appeal-q{margin:0 0 14px;font-size:15px;font-weight:700;color:#7D5F22}
+  #appeal .lab{color:#7D5F22}
+  #appeal input,#appeal textarea{background:#fff}
+  .submit-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:4px}
+  .btn{font:700 15px var(--font-body);background:var(--racing-green);color:#fff;border:0;
+       border-radius:9px;padding:13px 28px;cursor:pointer}
+  .btn:hover{filter:brightness(1.1)}
+  .btn:disabled{opacity:.5;cursor:default;filter:none}
+  .changed-note{margin:0;font-size:13.5px;color:var(--muted-2)}
+  .changed-note.live{color:#7D5F22;font-weight:700}
+  .err{margin-top:14px;padding:12px 14px;background:#F7E7E9;border:1px solid #E3B9C0;
+       border-radius:9px;color:#8C1D2C;font-size:14px}
+  #hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  @media (max-width:600px){ .two{grid-template-columns:1fr} .card.intro h1{font-size:25px} }
+</style>
+</head>
+<body>
+<header id="topbar">
+  
+  <a href="index.html" class="brand-logo">Grown and Made UK</a>
+  <button id="burger" aria-label="Menu" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+  <nav id="menu" hidden>
+    <a href="index.html">Map</a>
+    <a href="about.html">About</a>
+    <a href="gold-and-silver.html">Gold &amp; Silver</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="contact.html">Contact Us</a>
+    <a class="cta" href="submit.html">+ Suggest a Business</a>
+  </nav>
+</header>
+<div class="wrap">
+  <div id="state-loading" class="card">
+    <p class="lede">Loading your listing…</p>
+  </div>
+
+  <div id="state-error" class="card" hidden>
+    <h2>We couldn't find that listing</h2>
+    <p>The link may have been cut short by your email client — they sometimes break long links across two lines. Try copying the whole thing into your browser's address bar.</p>
+    <p>If it still doesn't work, email <a href="mailto:hello@grownandmade.uk">hello@grownandmade.uk</a> and we'll send you a fresh one.</p>
+  </div>
+
+  <div id="state-sent" class="card" hidden>
+    <h2>Thank you — that's with us</h2>
+    <p id="sent-summary"></p>
+    <p>We check every change by hand before it goes live, so it may be a few days before you see it on the map. If we have a question we'll email you.</p>
+    <p><a href="index.html">Back to the map</a></p>
+  </div>
+
+  <form id="state-form" hidden autocomplete="off">
+    <div class="card intro">
+      <h1 id="biz-name"></h1>
+      <p class="lede">This is how you currently appear on the map. Change anything that's wrong and send it back — nothing goes live until we've checked it.</p>
+      <p class="ask" id="primary-ask" hidden></p>
+    </div>
+
+    <div class="card">
+      <h2>Your details</h2>
+
+      <label class="fld">
+        <span class="lab">Business name</span>
+        <input type="text" name="name" />
+      </label>
+
+      <div class="two">
+        <label class="fld">
+          <span class="lab">Website</span>
+          <input type="url" name="website" placeholder="https://…" />
+        </label>
+        <label class="fld">
+          <span class="lab">Instagram</span>
+          <input type="text" name="instagram" placeholder="@yourname" />
+        </label>
+      </div>
+
+      <label class="fld">
+        <span class="lab">Address <em id="addr-hint">— including postcode, please</em></span>
+        <input type="text" name="address" />
+        <span class="help">This sets where your pin sits on the map. If you're online-only with no address you'd like published, leave it as it is and say so below.</span>
+      </label>
+
+      <label class="fld">
+        <span class="lab">Town or area shown on your listing</span>
+        <input type="text" name="town" />
+      </label>
+
+      <label class="fld">
+        <span class="lab">How we describe you</span>
+        <textarea name="description" rows="3"></textarea>
+        <span class="help">One or two lines, in plain English. We may trim it to fit.</span>
+      </label>
+    </div>
+
+    <div class="card">
+      <h2>Your logo</h2>
+      <div class="logo-row">
+        <div class="logo-box" id="logo-box"></div>
+        <div>
+          <p id="logo-text"></p>
+          <a class="btn-ghost" id="logo-mail" href="#">Email us your logo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="tier-card">
+      <h2>Your tier</h2>
+      <p><span class="tag" id="tier-tag"></span></p>
+      <div id="tier-why" hidden>
+        <p class="why-lab">Why</p>
+        <p class="why" id="tier-why-text"></p>
+      </div>
+      <p class="rules">Every listing is graded against the same <a href="gold-and-silver.html" target="_blank">published rules</a>. No business can pay to move tier — only evidence does.</p>
+
+      <label class="check">
+        <input type="checkbox" id="appeal-toggle" />
+        <span>I think this is wrong, and I can evidence it</span>
+      </label>
+
+      <div id="appeal" hidden>
+        <p class="appeal-q" id="appeal-question"></p>
+        <label class="fld">
+          <span class="lab">Your answer — please name the business, mill or supplier</span>
+          <textarea name="appeal_answer" rows="2"></textarea>
+        </label>
+        <label class="fld">
+          <span class="lab">A link that shows it</span>
+          <input type="url" name="appeal_link" placeholder="https://…" />
+          <span class="help">Your own page, your supplier's, or a press piece. We need something we can check ourselves.</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Anything else</h2>
+      <label class="fld">
+        <span class="lab">Anything we've got wrong that isn't covered above</span>
+        <textarea name="notes" rows="3"></textarea>
+      </label>
+      <label class="check">
+        <input type="checkbox" name="remove" id="remove-toggle" />
+        <span>Please remove our listing from the map</span>
+      </label>
+      <p class="help" id="remove-help" hidden>We'll take it down and won't contact you again. You don't need to give a reason, but it helps us if you do — use the box above.</p>
+    </div>
+
+    <div class="card">
+      <h2>Who's sending this</h2>
+      <div class="two">
+        <label class="fld">
+          <span class="lab">Your name</span>
+          <input type="text" name="from_name" required />
+        </label>
+        <label class="fld">
+          <span class="lab">Your email</span>
+          <input type="email" name="from_email" required />
+          <span class="help">Only so we can come back to you with questions.</span>
+        </label>
+      </div>
+      <input type="text" name="_hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="btn" id="submit-btn">Send these changes</button>
+      <p class="changed-note" id="changed-note">No changes yet</p>
+    </div>
+    <p class="err" id="form-err" hidden></p>
+  </form>
+</div>
+<footer class="site-footer">
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="foot-seal" src="assets/brand/gm-seal.png" alt="" width="74" height="69" loading="lazy" />
+        <p class="foot-name">Grown and Made UK</p>
+        <p class="foot-strap">An independent, non-profit map of the businesses that genuinely make and grow what they sell in Britain.</p>
+      </div>
+      <nav class="foot-col" aria-label="Explore the site">
+        <h2>Explore</h2>
+        <a href="index.html">The map</a>
+        <a href="gold-and-silver.html">Gold &amp; Silver</a>
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+      <nav class="foot-col" aria-label="Contact and legal">
+        <h2>Get in touch</h2>
+        <a href="submit.html">Suggest a business</a>
+        <a href="contact.html">Contact us</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of use</a>
+      </nav>
+    </div>
+    <div class="foot-legal">
+      <p class="foot-pledge">No business can pay to be listed, promoted or upgraded. Only evidence moves a tier.</p>
+      <p class="foot-reg">&copy; 2026 Grown and Made UK CIC. A community interest company limited by guarantee, registered in England and Wales, company number <strong>17415545</strong>.
+      <!-- Registered office address goes here when you're ready to publish it:
+           add " Registered office: <address>." to the sentence above. The
+           trading disclosure regulations expect it on the website. --></p>
+    </div>
+  </div>
+</footer>
+<script>
+const burgerBtn = document.getElementById('burger'), burgerMenu = document.getElementById('menu');
+burgerBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  const open = !burgerMenu.hasAttribute('hidden');
+  if (open) { burgerMenu.setAttribute('hidden',''); } else { burgerMenu.removeAttribute('hidden'); }
+  burgerBtn.setAttribute('aria-expanded', String(!open));
+});
+document.addEventListener('click', e => {
+  if (!burgerMenu.hasAttribute('hidden') && !burgerMenu.contains(e.target)) burgerMenu.setAttribute('hidden','');
+});
+</script>
+<script src="assets/sketch-bg.js"></script>
+<script>
+/* update.html — a business updating its own listing.
+ *
+ * The link carries ?b=<id>&k=<token>. The token is checked by the API when the
+ * form is submitted, not here: this page can only ever be a convenience, since
+ * anything it knows the visitor could read from data/businesses.json anyway.
+ * Gating the *submission* is the part that matters, and that happens server-side.
+ *
+ * What the page is really for is the diff. Every field starts filled with what
+ * we hold, so what gets sent is only what the business actually changed —
+ * which is the difference between reviewing 150 short lists and re-reading 150
+ * whole records.
+ */
+(function () {
+  var qs = new URLSearchParams(location.search);
+  var ID = qs.get('b') || '';
+  var TOKEN = qs.get('k') || '';
+
+  var FIELDS = ['name', 'website', 'instagram', 'address', 'town', 'description'];
+  var record = null, original = {};
+
+  var $ = function (id) { return document.getElementById(id); };
+  function show(which) {
+    ['state-loading', 'state-error', 'state-form', 'state-sent'].forEach(function (s) {
+      $(s).hidden = (s !== which);
+    });
+  }
+
+  /* Instagram is stored as a full URL but read as a handle. Compare handles so
+     that "@name" and "https://instagram.com/name/" don't look like an edit. */
+  function igHandle(v) {
+    if (!v) return '';
+    var m = String(v).match(/instagram\.com\/([^/?#]+)/i);
+    return '@' + (m ? m[1] : String(v).replace(/^@/, '')).replace(/\/$/, '');
+  }
+  function norm(field, v) {
+    v = (v == null ? '' : String(v)).trim();
+    return field === 'instagram' ? igHandle(v).toLowerCase() : v;
+  }
+
+  function fieldEls() { return document.querySelectorAll('#state-form [name]'); }
+  function el(name) { return document.querySelector('#state-form [name="' + name + '"]'); }
+
+  function changedFields() {
+    var out = {};
+    FIELDS.forEach(function (f) {
+      var node = el(f);
+      if (!node) return;
+      if (norm(f, node.value) !== norm(f, original[f])) out[f] = node.value.trim();
+    });
+    return out;
+  }
+
+  function paint() {
+    var changed = changedFields();
+    FIELDS.forEach(function (f) {
+      var node = el(f);
+      if (node) node.classList.toggle('changed', Object.prototype.hasOwnProperty.call(changed, f));
+    });
+    var n = Object.keys(changed).length;
+    var appealing = $('appeal-toggle').checked;
+    var removing = $('remove-toggle').checked;
+    var note = $('changed-note');
+    var bits = [];
+    if (n) bits.push(n + (n === 1 ? ' change' : ' changes'));
+    if (appealing) bits.push('a tier review');
+    if (removing) bits.push('a removal request');
+    note.textContent = bits.length ? 'Sending ' + bits.join(' and ') : 'No changes yet';
+    note.classList.toggle('live', bits.length > 0);
+  }
+
+  function render(r) {
+    document.title = r.name + ' — update your listing — Grown and Made UK';
+    $('biz-name').textContent = r.name;
+
+    original = {
+      name: r.name || '', website: r.website || '',
+      instagram: r.instagram ? igHandle(r.instagram) : '',
+      address: r.address || '', town: r.town || '', description: r.description || ''
+    };
+    FIELDS.forEach(function (f) { var n = el(f); if (n) n.value = original[f]; });
+
+    /* The one thing we most want from this business, said plainly up top. */
+    var hasLogo = r.logo && r.logo.indexOf('placeholder') === -1;
+    var hasPostcode = /[A-Z]{1,2}[0-9][0-9A-Z]?\s*[0-9][A-Z]{2}/i.test(r.address || '');
+    var physical = r.listing_type === 'shop' || r.listing_type === 'both';
+    var ask = '';
+    if (!hasLogo) ask = "We don't have your logo — that's the one thing we'd most like from you.";
+    else if (physical && !hasPostcode) ask = 'Could you give us your full address including postcode? It puts your pin in the right place.';
+    else if (r.tier === 'silver' && r.tier_question) ask = 'One question would let us look at your tier again — it’s at the bottom of this page.';
+    else if (!r.instagram) ask = "We don't have an Instagram for you, if you'd like it on your listing.";
+    if (ask) { $('primary-ask').textContent = ask; $('primary-ask').hidden = false; }
+    if (!physical) $('addr-hint').textContent = '— or the town you work from';
+
+    /* Logo: show what we hold, and make emailing a new one land already labelled. */
+    var box = $('logo-box');
+    function markNoLogo() {
+      box.className = 'logo-box empty';
+      box.textContent = 'no logo on file';
+      $('logo-text').textContent = 'We don’t have your logo yet, so your listing shows without one. PNG or SVG, any size — we’ll resize it.';
+    }
+    if (hasLogo) {
+      var img = new Image();
+      img.alt = ''; img.src = r.logo;
+      /* 19 records point at a placeholder that isn't on disk, and any path can
+         rot. If the image fails, the wording has to fail with it — otherwise
+         the box says "no logo" while the text says "this is your logo". */
+      img.onerror = function () { markNoLogo(); };
+      box.appendChild(img);
+      $('logo-text').textContent = 'This is the logo we show. If it’s out of date or you’d prefer a different one, send it over.';
+    } else {
+      markNoLogo();
+    }
+    $('logo-mail').href = 'mailto:hello@grownandmade.uk?subject='
+      + encodeURIComponent('Logo — ' + r.name + ' (' + r.id + ')')
+      + '&body=' + encodeURIComponent('Please attach your logo to this email. Nothing else needed.\n\n');
+
+    /* Tier: displayed, never editable. The appeal is a separate, deliberate act. */
+    var tag = $('tier-tag');
+    tag.textContent = r.tier === 'gold' ? 'Gold' : 'Silver';
+    tag.className = 'tag ' + r.tier;
+    if (r.public_note) {
+      $('tier-why-text').textContent = r.public_note;
+      $('tier-why').hidden = false;
+    }
+    if (r.tier === 'gold') {
+      $('appeal-toggle').closest('.check').hidden = true;
+    } else {
+      $('appeal-question').textContent = r.tier_question
+        || 'What have we got wrong, and what can we check?';
+    }
+
+    show('state-form');
+    paint();
+  }
+
+  $('appeal-toggle').addEventListener('change', function () {
+    $('appeal').hidden = !this.checked; paint();
+  });
+  $('remove-toggle').addEventListener('change', function () {
+    $('remove-help').hidden = !this.checked; paint();
+  });
+  document.addEventListener('input', function (e) {
+    if (e.target.closest('#state-form')) paint();
+  });
+
+  $('state-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    if ($('hp').value) return;                    // bot
+
+    var changes = changedFields();
+    var appeal = $('appeal-toggle').checked ? {
+      question: $('appeal-question').textContent,
+      answer: (el('appeal_answer').value || '').trim(),
+      link: (el('appeal_link').value || '').trim()
+    } : null;
+    var removal = $('remove-toggle').checked;
+    var notes = (el('notes').value || '').trim();
+
+    if (!Object.keys(changes).length && !appeal && !removal && !notes) {
+      $('form-err').textContent = "Nothing has changed yet — edit a field, or tell us what's wrong in the last box.";
+      $('form-err').hidden = false;
+      return;
+    }
+    if (appeal && !appeal.answer && !appeal.link) {
+      $('form-err').textContent = 'To look at your tier again we need something we can check — a supplier name, or a link.';
+      $('form-err').hidden = false;
+      return;
+    }
+    $('form-err').hidden = true;
+
+    var btn = $('submit-btn');
+    btn.disabled = true; btn.textContent = 'Sending…';
+
+    fetch('/api/update-listing', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        id: ID, token: TOKEN, changes: changes, appeal: appeal,
+        removal: removal, notes: notes,
+        from_name: (el('from_name').value || '').trim(),
+        from_email: (el('from_email').value || '').trim()
+      })
+    }).then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (data) {
+        if (!res.ok) throw new Error(data.error || ('Something went wrong (' + res.status + ')'));
+        return data;
+      });
+    }).then(function () {
+      var n = Object.keys(changes).length;
+      var bits = [];
+      if (n) bits.push(n === 1 ? 'one change' : n + ' changes');
+      if (appeal) bits.push('your tier evidence');
+      if (removal) bits.push('your removal request');
+      if (notes && !n) bits.push('your note');
+      $('sent-summary').textContent = 'We have ' + (bits.join(' and ') || 'your message') + '.';
+      show('state-sent');
+      window.scrollTo(0, 0);
+    }).catch(function (err) {
+      btn.disabled = false; btn.textContent = 'Send these changes';
+      $('form-err').textContent = err.message
+        + ' — if it keeps happening, email hello@grownandmade.uk and we’ll do it by hand.';
+      $('form-err').hidden = false;
+    });
+  });
+
+  if (!ID) { show('state-error'); return; }
+  fetch('data/businesses.json')
+    .then(function (r) { return r.json(); })
+    .then(function (all) {
+      record = all.filter(function (x) { return x.id === ID; })[0];
+      if (!record) { show('state-error'); return; }
+      render(record);
+    })
+    .catch(function () { show('state-error'); });
+})();
+</script>
+
+</body>
+</html>

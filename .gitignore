@@ -27,3 +27,4 @@ scripts/clean-and-finalize-contacts.js
 
 __pycache__/
 .note-review/
+.outreach/
