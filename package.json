@@ -1,0 +1,9 @@
+{
+  "name": "grown-and-made-uk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site plus Vercel functions. There is deliberately no build step: the HTML is served as written. This file exists so the functions can use @vercel/blob.",
+  "dependencies": {
+    "@vercel/blob": "^2.0.0"
+  }
+}
