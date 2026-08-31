@@ -2271,8 +2271,7 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Suffolk",
-    "logo_bg": "dark"
+    "county": "Suffolk"
   },
   {
     "id": "north-sea-clothing",
@@ -2960,7 +2959,7 @@
     "tier_confidence": "medium",
     "category": "ceramics",
     "instagram": "https://www.instagram.com/brickettdavda/",
-    "logo": "assets/logos/brickett-davda.svg",
+    "logo": "assets/logos/brickett-davda.png",
     "source": "verified-batch-2026-07",
     "product_tags": [
       "tableware",
