@@ -21,7 +21,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@sehkelly.com"
   },
   {
     "id": "united-overalls",
@@ -46,7 +47,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "enquiries@unitedoveralls.com"
   },
   {
     "id": "private-white-vc",
@@ -70,7 +72,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Manchester"
+    "county": "Manchester",
+    "email": "customercare@privatewhitevc.com"
   },
   {
     "id": "community-clothing",
@@ -93,7 +96,8 @@
     "product_tags": [
       "everyday wear"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "hello@communityclothing.co.uk"
   },
   {
     "id": "maquien",
@@ -118,7 +122,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "East Yorkshire"
+    "county": "East Yorkshire",
+    "email": "sales@maquien.co.uk"
   },
   {
     "id": "maude-and-fox",
@@ -142,7 +147,8 @@
       "tweed & woven goods"
     ],
     "nation": "England",
-    "county": "Dorset"
+    "county": "Dorset",
+    "email": "info@maudeandfox.com"
   },
   {
     "id": "chapman-bags",
@@ -166,7 +172,8 @@
       "tweed & woven goods",
       "bags & leather goods"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "retail@chapmanmade.uk"
   },
   {
     "id": "trakke",
@@ -191,7 +198,8 @@
       "bags & leather goods"
     ],
     "nation": "Scotland",
-    "county": "Glasgow"
+    "county": "Glasgow",
+    "email": "support@trakke.co.uk"
   },
   {
     "id": "carradice",
@@ -216,7 +224,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": "sales@carradice.co.uk"
   },
   {
     "id": "barnes-and-moore",
@@ -239,7 +248,8 @@
     "product_tags": [
       "bags & leather goods"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "connor@tidalux.io"
   },
   {
     "id": "john-smedley",
@@ -264,7 +274,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": ""
   },
   {
     "id": "hebtroco",
@@ -289,7 +300,8 @@
       "suits & trousers",
       "workwear & aprons"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "hello@hebtro.co"
   },
   {
     "id": "billingham",
@@ -312,7 +324,8 @@
     "product_tags": [
       "bags & leather goods"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "help@billingham.co.uk"
   },
   {
     "id": "campbell-cole",
@@ -336,7 +349,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@campbellcole.co.uk"
   },
   {
     "id": "carl-stuart-tailors",
@@ -361,7 +375,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "enquiries@carl-stuart.co.uk"
   },
   {
     "id": "knepp-wild-range",
@@ -391,7 +406,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "West Sussex"
+    "county": "West Sussex",
+    "email": ""
   },
   {
     "id": "gazegill-organics",
@@ -428,7 +444,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": "orders@gazegillorganics.co.uk"
   },
   {
     "id": "farm2fork",
@@ -455,7 +472,8 @@
       "fresh meat"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@farm2fork.co.uk"
   },
   {
     "id": "eversfield-organic",
@@ -488,7 +506,8 @@
     "products_checked": "2026-08-01",
     "nation": "England",
     "county": "Devon",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": "info@eversfieldorganic.co.uk"
   },
   {
     "id": "iow-tomatoes",
@@ -512,7 +531,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Isle of Wight"
+    "county": "Isle of Wight",
+    "email": "hello@iowtomatoes.co.uk"
   },
   {
     "id": "pipers-farm",
@@ -548,7 +568,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "support@pipersfarm.com"
   },
   {
     "id": "daylesford",
@@ -574,7 +595,8 @@
       "drinks & spirits"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "onlineshop@daylesford.com"
   },
   {
     "id": "trickers",
@@ -597,7 +619,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "customerservices@trickers.com"
   },
   {
     "id": "crockett-jones",
@@ -620,7 +643,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "online@crockettandjones.co.uk"
   },
   {
     "id": "joseph-cheaney",
@@ -644,7 +668,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "customerservices@cheaney.co.uk"
   },
   {
     "id": "loake",
@@ -668,7 +693,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "enquiries@loake.co.uk"
   },
   {
     "id": "edward-green",
@@ -691,7 +717,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": ""
   },
   {
     "id": "johnstons-of-elgin",
@@ -716,7 +743,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Moray"
+    "county": "Moray",
+    "email": "ecommerce@johnstonsofelgin.com"
   },
   {
     "id": "begg-x-co",
@@ -742,7 +770,8 @@
       "scarves & accessories"
     ],
     "nation": "Scotland",
-    "county": "Ayr"
+    "county": "Ayr",
+    "email": "customerservice@beggxco.com"
   },
   {
     "id": "william-lockie",
@@ -767,7 +796,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Hawick"
+    "county": "Hawick",
+    "email": "sales@williamlockie.com"
   },
   {
     "id": "corgi",
@@ -792,7 +822,8 @@
       "socks"
     ],
     "nation": "Wales",
-    "county": "Carmarthenshire"
+    "county": "Carmarthenshire",
+    "email": "sales@corgi-socks.com"
   },
   {
     "id": "pantherella",
@@ -816,7 +847,8 @@
       "knitwear",
       "socks"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "hello@pantherella.com"
   },
   {
     "id": "peregrine",
@@ -841,7 +873,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "support@peregrineclothing.co.uk"
   },
   {
     "id": "mackintosh",
@@ -865,7 +898,8 @@
       "coats & jackets"
     ],
     "nation": "Scotland",
-    "county": "Cumbernauld"
+    "county": "Cumbernauld",
+    "email": "product-info@mackintosh.com"
   },
   {
     "id": "hiut-denim",
@@ -890,7 +924,8 @@
       "jeans & denim",
       "workwear & aprons"
     ],
-    "nation": "Wales"
+    "nation": "Wales",
+    "email": "hi@hiutdenim.co.uk"
   },
   {
     "id": "chatsworth-farm-shop",
@@ -914,7 +949,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "info@chatsworth.org"
   },
   {
     "id": "ludlow-food-centre",
@@ -940,7 +976,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Shropshire"
+    "county": "Shropshire",
+    "email": ""
   },
   {
     "id": "balgove-larder",
@@ -973,7 +1010,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Scotland",
-    "county": "Fife"
+    "county": "Fife",
+    "email": "info@balgove.com"
   },
   {
     "id": "fodder",
@@ -999,7 +1037,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": ""
   },
   {
     "id": "gloucester-services",
@@ -1022,7 +1061,8 @@
     "product_tags": [
       "fruit & veg"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@gloucesterservices.com"
   },
   {
     "id": "rhug-estate",
@@ -1053,7 +1093,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Wales",
-    "county": "Denbighshire"
+    "county": "Denbighshire",
+    "email": "contact@rhug.co.uk"
   },
   {
     "id": "goodwood-farm-shop",
@@ -1080,7 +1121,8 @@
       "drinks & spirits"
     ],
     "nation": "England",
-    "county": "West Sussex"
+    "county": "West Sussex",
+    "email": "grrc@goodwood.com"
   },
   {
     "id": "riverford",
@@ -1112,7 +1154,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "pressteam@riverford.co.uk"
   },
   {
     "id": "fox-brothers",
@@ -1136,7 +1179,8 @@
       "tweed & woven goods"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "info@foxflannel.com"
   },
   {
     "id": "lavenham",
@@ -1160,7 +1204,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "email": "customerservice@lavenhamjackets.com"
   },
   {
     "id": "christys",
@@ -1184,7 +1229,8 @@
       "hats & caps"
     ],
     "nation": "England",
-    "county": "Oxfordshire"
+    "county": "Oxfordshire",
+    "email": "support@christys-hats.com"
   },
   {
     "id": "ettinger",
@@ -1208,7 +1254,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "sales@ettinger.co.uk"
   },
   {
     "id": "barbour",
@@ -1231,7 +1278,8 @@
     "product_tags": [
       "coats & jackets"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "customer.care@barbour.com"
   },
   {
     "id": "new-balance-uk",
@@ -1255,7 +1303,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": ""
   },
   {
     "id": "globe-trotter",
@@ -1279,7 +1328,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Hertfordshire"
+    "county": "Hertfordshire",
+    "email": "store@globe-trotter.com"
   },
   {
     "id": "tusting",
@@ -1303,7 +1353,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Buckinghamshire"
+    "county": "Buckinghamshire",
+    "email": "theteam@tusting.co.uk"
   },
   {
     "id": "emma-willis",
@@ -1326,7 +1377,8 @@
     "product_tags": [
       "shirts"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "sales@emmawillis.com"
   },
   {
     "id": "turnbull-asser",
@@ -1350,7 +1402,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "help@turnbullandasser.co.uk"
   },
   {
     "id": "keelham",
@@ -1374,7 +1427,8 @@
       "fresh meat"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": ""
   },
   {
     "id": "cannon-hall-farm",
@@ -1400,7 +1454,8 @@
       "pork & bacon",
       "fresh meat"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@cannonhallfarm.co.uk"
   },
   {
     "id": "farmer-copleys",
@@ -1431,7 +1486,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "info@farmercopleys.co.uk"
   },
   {
     "id": "hollis-mead",
@@ -1456,7 +1512,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Dorset"
+    "county": "Dorset",
+    "email": ""
   },
   {
     "id": "loch-arthur",
@@ -1482,7 +1539,8 @@
       "bread & bakery"
     ],
     "nation": "Scotland",
-    "county": "Dumfries"
+    "county": "Dumfries",
+    "email": "shop@locharthur.org.uk"
   },
   {
     "id": "macknade",
@@ -1507,7 +1565,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Kent"
+    "county": "Kent",
+    "email": "sales@macknade.com"
   },
   {
     "id": "secretts",
@@ -1531,7 +1590,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "mel@secretts.co.uk"
   },
   {
     "id": "jamiesons-shetland",
@@ -1555,7 +1615,8 @@
       "knitwear"
     ],
     "nation": "Scotland",
-    "county": "Shetland"
+    "county": "Shetland",
+    "email": "lerwick@jamiesonsofshetland.co.uk"
   },
   {
     "id": "melin-tregwynt",
@@ -1579,7 +1640,8 @@
       "tweed & woven goods"
     ],
     "nation": "Wales",
-    "county": "Pembrokeshire"
+    "county": "Pembrokeshire",
+    "email": "info@melintregwynt.co.uk"
   },
   {
     "id": "eribe",
@@ -1603,7 +1665,8 @@
       "knitwear"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "shop@eribe.com"
   },
   {
     "id": "sunspel",
@@ -1628,7 +1691,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "customerservice@sunspel.com"
   },
   {
     "id": "drakes",
@@ -1653,7 +1717,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "concierge@drakes.com"
   },
   {
     "id": "solovair",
@@ -1677,7 +1742,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "customer.services@nps-shoes.com"
   },
   {
     "id": "drmartens-mie",
@@ -1701,7 +1767,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": ""
   },
   {
     "id": "low-sizergh-barn",
@@ -1726,7 +1793,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "info@lowsizerghbarn.co.uk"
   },
   {
     "id": "trevaskis-farm",
@@ -1751,7 +1819,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "hello@trevaskisfarm.co.uk"
   },
   {
     "id": "lobbs-farm-shop",
@@ -1786,7 +1855,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "sales@lobbsfarmshop.com"
   },
   {
     "id": "ardross-farm",
@@ -1810,7 +1880,8 @@
       "fruit & veg"
     ],
     "nation": "Scotland",
-    "county": "Fife"
+    "county": "Fife",
+    "email": "info@ardrossfarm.co.uk"
   },
   {
     "id": "brocksbushes",
@@ -1835,7 +1906,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Northumberland"
+    "county": "Northumberland",
+    "email": "shop@brocksbushes.co.uk"
   },
   {
     "id": "hollies-farm-shop",
@@ -1859,7 +1931,8 @@
       "fresh meat"
     ],
     "nation": "England",
-    "county": "Cheshire"
+    "county": "Cheshire",
+    "email": "mail@theholliesfarmshop.co.uk"
   },
   {
     "id": "cobbs-farm-shop",
@@ -1883,7 +1956,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Berkshire"
+    "county": "Berkshire",
+    "email": "hungerfordshop@cobbsfarmshops.co.uk"
   },
   {
     "id": "essington-farm",
@@ -1906,7 +1980,8 @@
     "product_tags": [
       "fruit & veg"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@essingtonfarm.co.uk"
   },
   {
     "id": "abraham-moon",
@@ -1931,7 +2006,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "customerservice@moons.co.uk"
   },
   {
     "id": "hawico",
@@ -1956,7 +2032,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "info@hawico.com"
   },
   {
     "id": "tanner-bates",
@@ -1980,7 +2057,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@tannerbates.co.uk"
   },
   {
     "id": "carrier-company",
@@ -2005,7 +2083,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "info@carriercompany.co.uk"
   },
   {
     "id": "blackhorse-lane",
@@ -2030,7 +2109,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "enquiries@blackhorselane.com"
   },
   {
     "id": "norman-walsh",
@@ -2053,7 +2133,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "service@normanwalsh.com"
   },
   {
     "id": "gonalston",
@@ -2078,7 +2159,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Nottinghamshire"
+    "county": "Nottinghamshire",
+    "email": ""
   },
   {
     "id": "denstone-hall",
@@ -2103,7 +2185,8 @@
     ],
     "nation": "England",
     "county": "Staffordshire",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": "info@denstonehall.co.uk"
   },
   {
     "id": "loch-levens-larder",
@@ -2127,7 +2210,8 @@
       "fruit & veg"
     ],
     "nation": "Scotland",
-    "county": "Kinross"
+    "county": "Kinross",
+    "email": "customerservice@lochlevenslarder.com"
   },
   {
     "id": "cowdray-farm-shop",
@@ -2158,7 +2242,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "West Sussex"
+    "county": "West Sussex",
+    "email": "farmshopcafe@cowdray.co.uk"
   },
   {
     "id": "garsons",
@@ -2182,7 +2267,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": ""
   },
   {
     "id": "stansted-park",
@@ -2213,7 +2299,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Hampshire"
+    "county": "Hampshire",
+    "email": "info@stanstedfarmshop.com"
   },
   {
     "id": "emmetts-peasenhall",
@@ -2244,7 +2331,8 @@
     "products_checked": "2026-08-01",
     "nation": "England",
     "county": "Suffolk",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": "mail@emmettsham.co.uk"
   },
   {
     "id": "maple-farm-kelsale",
@@ -2271,7 +2359,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "email": "info@maplefarmkelsale.co.uk"
   },
   {
     "id": "north-sea-clothing",
@@ -2295,7 +2384,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@northseaclothing.co.uk"
   },
   {
     "id": "genevieve-sweeney",
@@ -2319,7 +2409,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Hertfordshire"
+    "county": "Hertfordshire",
+    "email": "me@genevievesweeney.com"
   },
   {
     "id": "henry-poole",
@@ -2343,7 +2434,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "office@henrypoole.com"
   },
   {
     "id": "anderson-sheppard",
@@ -2367,7 +2459,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "shop@anderson-sheppard.co.uk"
   },
   {
     "id": "gaziano-girling",
@@ -2391,7 +2484,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "enquiries@gazianogirling.com"
   },
   {
     "id": "llwynhelyg",
@@ -2416,7 +2510,8 @@
       "fruit & veg"
     ],
     "nation": "Wales",
-    "county": "Ceredigion"
+    "county": "Ceredigion",
+    "email": ""
   },
   {
     "id": "knitsley",
@@ -2441,7 +2536,8 @@
       "bread & bakery"
     ],
     "nation": "England",
-    "county": "Durham"
+    "county": "Durham",
+    "email": ""
   },
   {
     "id": "tablehurst-farm",
@@ -2468,7 +2564,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "shop@tablehurstfarm.org.uk"
   },
   {
     "id": "plumgarths",
@@ -2500,7 +2597,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "plumgarthsfarmshop@gmail.com"
   },
   {
     "id": "otterton-mill",
@@ -2525,7 +2623,8 @@
       "bread & bakery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "escape@ottertonmill.com"
   },
   {
     "id": "weetons",
@@ -2553,7 +2652,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "leedsroad@weetons.com"
   },
   {
     "id": "emma-bridgewater",
@@ -2577,7 +2677,8 @@
       "tableware",
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "bookings@emmabridgewater.co.uk"
   },
   {
     "id": "denby-pottery",
@@ -2601,7 +2702,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "hello@denbypottery.com"
   },
   {
     "id": "burleigh-pottery",
@@ -2624,7 +2726,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "trade.services@burgessandleigh.co.uk"
   },
   {
     "id": "moorcroft",
@@ -2647,7 +2750,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "enquiries@moorcroft.com"
   },
   {
     "id": "leach-pottery",
@@ -2671,7 +2775,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "office@leachpottery.com"
   },
   {
     "id": "whichford-pottery",
@@ -2696,7 +2801,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Warwickshire"
+    "county": "Warwickshire",
+    "email": "flowerpots@whichfordpottery.com"
   },
   {
     "id": "highland-stoneware",
@@ -2720,7 +2826,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Sutherland"
+    "county": "Sutherland",
+    "email": "info@highlandstoneware.com"
   },
   {
     "id": "royal-crown-derby",
@@ -2744,7 +2851,8 @@
       "tableware",
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "enquiries@royalcrownderby.co.uk"
   },
   {
     "id": "1882-ltd",
@@ -2767,7 +2875,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "hello@1882ltd.com"
   },
   {
     "id": "portmeirion",
@@ -2793,7 +2902,8 @@
       "plates",
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": ""
   },
   {
     "id": "emma-alington",
@@ -2818,7 +2928,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Berkshire"
+    "county": "Berkshire",
+    "email": "emma@emmaalington.co.uk"
   },
   {
     "id": "feldspar",
@@ -2842,7 +2953,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "enquiries@feldspar.studio"
   },
   {
     "id": "rye-pottery",
@@ -2866,7 +2978,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "sales@ryepottery.co.uk"
   },
   {
     "id": "dunoon-ceramics",
@@ -2891,7 +3004,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Staffordshire"
+    "county": "Staffordshire",
+    "email": "customerservice@dunoonmugs.co.uk"
   },
   {
     "id": "linda-bloomfield",
@@ -2916,7 +3030,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "sue-pryke",
@@ -2941,7 +3056,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "sue@suepryke.co.uk"
   },
   {
     "id": "brickett-davda",
@@ -2966,7 +3082,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": ""
   },
   {
     "id": "gwili-pottery",
@@ -2991,7 +3108,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Carmarthenshire"
+    "county": "Carmarthenshire",
+    "email": "%20info@gwilipottery.com"
   },
   {
     "id": "edinbane-pottery",
@@ -3015,7 +3133,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Isle of Skye"
+    "county": "Isle of Skye",
+    "email": "stuart@edinbane-pottery.co.uk"
   },
   {
     "id": "sytch-farm-studios",
@@ -3039,7 +3158,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Shropshire"
+    "county": "Shropshire",
+    "email": "enquiries@sytchfarmstudios.co.uk"
   },
   {
     "id": "belleek-pottery",
@@ -3063,7 +3183,8 @@
       "pottery"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Fermanagh"
+    "county": "Co. Fermanagh",
+    "email": "takethetour@belleek.ie"
   },
   {
     "id": "clive-bowen",
@@ -3087,7 +3208,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "information@clivebowen.co.uk"
   },
   {
     "id": "jim-malone",
@@ -3111,7 +3233,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "info@contemporaryceramics.uk"
   },
   {
     "id": "matthew-blakely",
@@ -3134,7 +3257,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "smashingpots@hotmail.com"
   },
   {
     "id": "fitch-and-mcandrew",
@@ -3158,7 +3282,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Dumfries & Galloway"
+    "county": "Dumfries & Galloway",
+    "email": "info@fitchandmcandrew.co.uk"
   },
   {
     "id": "bridge-pottery",
@@ -3182,7 +3307,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Swansea"
+    "county": "Swansea",
+    "email": "info@mickischloessingk.co.uk"
   },
   {
     "id": "brookhouse-pottery",
@@ -3205,7 +3331,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "Wales"
+    "nation": "Wales",
+    "email": "info@contemporaryceramics.uk"
   },
   {
     "id": "maze-hill-pottery",
@@ -3229,7 +3356,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "sasha-wardell",
@@ -3253,7 +3381,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Wiltshire"
+    "county": "Wiltshire",
+    "email": "sashawardell@gmail.com"
   },
   {
     "id": "jane-hamlyn",
@@ -3277,7 +3406,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Nottinghamshire"
+    "county": "Nottinghamshire",
+    "email": "info@contemporaryceramics.uk"
   },
   {
     "id": "walter-keeler",
@@ -3301,7 +3431,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Monmouthshire"
+    "county": "Monmouthshire",
+    "email": "info@contemporaryceramics.uk"
   },
   {
     "id": "sandy-brown",
@@ -3326,7 +3457,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "sandy@sandybrownarts.com"
   },
   {
     "id": "john-pollex",
@@ -3350,7 +3482,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": ""
   },
   {
     "id": "penny-simpson",
@@ -3375,7 +3508,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "penny@pennysimpsonceramics.co.uk"
   },
   {
     "id": "chris-keenan",
@@ -3401,7 +3535,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "chriskeenan.potter@gmail.com"
   },
   {
     "id": "sue-paraskeva",
@@ -3426,7 +3561,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Isle of Wight"
+    "county": "Isle of Wight",
+    "email": ""
   },
   {
     "id": "akiko-hirai",
@@ -3450,7 +3586,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "akiko@akikohirai.live"
   },
   {
     "id": "james-tilla-waters",
@@ -3476,7 +3613,8 @@
     ],
     "nation": "Wales",
     "county": "Carmarthenshire",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": ""
   },
   {
     "id": "jack-doherty",
@@ -3500,7 +3638,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "jack@dohertyporcelain.com"
   },
   {
     "id": "adam-buick",
@@ -3524,7 +3663,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Pembrokeshire"
+    "county": "Pembrokeshire",
+    "email": ""
   },
   {
     "id": "nicola-werner",
@@ -3549,7 +3689,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@nicolawerner.com"
   },
   {
     "id": "katharina-klug",
@@ -3572,7 +3713,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "katharina@klug-art.com"
   },
   {
     "id": "churchill-china",
@@ -3596,7 +3738,8 @@
       "tableware",
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "contact@churchillhome.co.uk"
   },
   {
     "id": "cornishware-tg-green",
@@ -3620,7 +3763,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "customerservices@tggreen.co.uk"
   },
   {
     "id": "littlethorpe-potteries",
@@ -3644,7 +3788,8 @@
       "flowerpots",
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@littlethorpepotteries.co.uk"
   },
   {
     "id": "errington-reay",
@@ -3668,7 +3813,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Northumberland"
+    "county": "Northumberland",
+    "email": "office@erringtonreay.co.uk"
   },
   {
     "id": "anta",
@@ -3694,7 +3840,8 @@
       "tweed & woven goods"
     ],
     "nation": "Scotland",
-    "county": "Ross-shire"
+    "county": "Ross-shire",
+    "email": "hello@anta.co.uk"
   },
   {
     "id": "crail-pottery",
@@ -3719,7 +3866,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Fife"
+    "county": "Fife",
+    "email": "info@crailpottery.com"
   },
   {
     "id": "ballydougan-pottery",
@@ -3743,7 +3891,8 @@
       "pottery"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Armagh"
+    "county": "Co. Armagh",
+    "email": "info@ballydouganpottery.co.uk"
   },
   {
     "id": "sheila-fleet",
@@ -3767,7 +3916,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Orkney"
+    "county": "Orkney",
+    "email": "info@sheilafleet.com"
   },
   {
     "id": "ola-gorie",
@@ -3791,7 +3941,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Orkney"
+    "county": "Orkney",
+    "email": "info@olagoriejewellery.com"
   },
   {
     "id": "deakin-and-francis",
@@ -3815,7 +3966,8 @@
       "cufflinks & signets",
       "jewellery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "cufflinks@deakinandfrancis.co.uk"
   },
   {
     "id": "hamilton-and-inches",
@@ -3839,7 +3991,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Edinburgh"
+    "county": "Edinburgh",
+    "email": "hello@hamiltonandinches.com"
   },
   {
     "id": "alex-monroe",
@@ -3863,7 +4016,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "customercare@alexmonroe.com"
   },
   {
     "id": "cw-sellors",
@@ -3887,7 +4041,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "sales@cwsellors.com"
   },
   {
     "id": "rhiannon",
@@ -3911,7 +4066,8 @@
       "jewellery"
     ],
     "nation": "Wales",
-    "county": "Ceredigion"
+    "county": "Ceredigion",
+    "email": "post@rhiannon.co.uk"
   },
   {
     "id": "hebridean-jewellery",
@@ -3935,7 +4091,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "South Uist"
+    "county": "South Uist",
+    "email": "info@hebridean-jewellery.co.uk"
   },
   {
     "id": "charles-frodsham",
@@ -3961,7 +4118,8 @@
     ],
     "nation": "England",
     "county": "London",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": ""
   },
   {
     "id": "garrick-watchmakers",
@@ -3986,7 +4144,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "info@garrick.co.uk"
   },
   {
     "id": "anordain",
@@ -4011,7 +4170,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Glasgow"
+    "county": "Glasgow",
+    "email": "hello@anordain.com"
   },
   {
     "id": "bremont",
@@ -4035,7 +4195,8 @@
       "watches",
       "jewellery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "customerservice@bremont.com"
   },
   {
     "id": "fears-watches",
@@ -4060,7 +4221,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Bristol"
+    "county": "Bristol",
+    "email": "enquiries@fearswatches.com"
   },
   {
     "id": "mourne-textiles",
@@ -4084,7 +4246,8 @@
       "scarves & accessories"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": "studio@mournetextiles.com"
   },
   {
     "id": "thomas-ferguson-linen",
@@ -4109,7 +4272,8 @@
       "tableware"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": "info@fergusonsirishlinen.com"
   },
   {
     "id": "ballylagan-organic",
@@ -4135,7 +4299,8 @@
       "fruit & veg"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Antrim"
+    "county": "Co. Antrim",
+    "email": "info@ballylagan.com"
   },
   {
     "id": "eden-pottery",
@@ -4159,7 +4324,8 @@
       "pottery"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": "sales@edenpotteryshop.co.uk"
   },
   {
     "id": "steensons",
@@ -4184,7 +4350,8 @@
       "jewellery"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Antrim"
+    "county": "Co. Antrim",
+    "email": "mail@thesteensons.com"
   },
   {
     "id": "faller",
@@ -4208,7 +4375,8 @@
       "jewellery"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Londonderry"
+    "county": "Co. Londonderry",
+    "email": "shop@faller.com"
   },
   {
     "id": "nomadic-watches",
@@ -4233,7 +4401,8 @@
       "jewellery"
     ],
     "nation": "Northern Ireland",
-    "county": "Belfast"
+    "county": "Belfast",
+    "email": "info@nomadicwatches.com"
   },
   {
     "id": "yarmouth-oilskins",
@@ -4259,7 +4428,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "hello@yarmouthoilskins.co.uk"
   },
   {
     "id": "farfield-clothing",
@@ -4284,7 +4454,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "info@farfield.co.uk"
   },
   {
     "id": "troy-london",
@@ -4308,7 +4479,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@troylondon.com"
   },
   {
     "id": "mcnair-shirts",
@@ -4333,7 +4505,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "natalie@mcnairshirts.com"
   },
   {
     "id": "fieldware-co",
@@ -4358,7 +4531,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "hello@fieldwareco.com"
   },
   {
     "id": "hegarty-london",
@@ -4383,7 +4557,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@hegartylondon.com"
   },
   {
     "id": "lochcarron",
@@ -4407,7 +4582,8 @@
       "tweed & woven goods"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "visit@lochcarron.com"
   },
   {
     "id": "berk",
@@ -4432,7 +4608,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": "berk@berkcashmere.co.uk"
   },
   {
     "id": "colhays",
@@ -4457,7 +4634,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "contact@colhays.com"
   },
   {
     "id": "mallochs",
@@ -4481,7 +4659,8 @@
       "knitwear"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "hello@mallochs.co.uk"
   },
   {
     "id": "glenbrae",
@@ -4506,7 +4685,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "information@glenbrae.com"
   },
   {
     "id": "michael-ross-knitwear",
@@ -4530,7 +4710,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Berkshire"
+    "county": "Berkshire",
+    "email": ""
   },
   {
     "id": "oubas",
@@ -4554,7 +4735,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "hello@oubasknitwear.co.uk"
   },
   {
     "id": "mars-knitwear",
@@ -4577,7 +4759,8 @@
     "product_tags": [
       "knitwear"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "sales@marsknitwear.com"
   },
   {
     "id": "glencroft",
@@ -4601,7 +4784,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "edward@glencroft.co.uk"
   },
   {
     "id": "izzy-lane",
@@ -4625,7 +4809,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": ""
   },
   {
     "id": "navygrey",
@@ -4650,7 +4835,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@navygrey.co"
   },
   {
     "id": "eas-fors",
@@ -4675,7 +4861,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Isle of Mull"
+    "county": "Isle of Mull",
+    "email": "info@easfors.com"
   },
   {
     "id": "carnwear",
@@ -4699,7 +4886,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "tudio@carnwear.uk"
   },
   {
     "id": "quinton-chadwick",
@@ -4724,7 +4912,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "email": "jess@quintonchadwick.london"
   },
   {
     "id": "croft-house",
@@ -4749,7 +4938,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Aberdeenshire"
+    "county": "Aberdeenshire",
+    "email": "contact@thecrofthouse.com"
   },
   {
     "id": "goral",
@@ -4772,7 +4962,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "customerservices@goral-shoes.co.uk"
   },
   {
     "id": "billy-tannery",
@@ -4796,7 +4987,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "support@billytannery.co.uk"
   },
   {
     "id": "cherchbi",
@@ -4821,7 +5013,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "hello@cherchbi.com"
   },
   {
     "id": "mcrostie",
@@ -4845,7 +5038,8 @@
       "bags & leather goods"
     ],
     "nation": "Scotland",
-    "county": "Glasgow"
+    "county": "Glasgow",
+    "email": "info@mcrostie.co.uk"
   },
   {
     "id": "english-fine-cottons",
@@ -4869,7 +5063,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Greater Manchester"
+    "county": "Greater Manchester",
+    "email": "sales@englishfinecottons.co.uk"
   },
   {
     "id": "ghhurt",
@@ -4894,7 +5089,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "Nottinghamshire"
+    "county": "Nottinghamshire",
+    "email": "contactus@ghhurt.com"
   },
   {
     "id": "house-of-cheviot",
@@ -4920,7 +5116,8 @@
       "socks"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "sales@houseofcheviot.com"
   },
   {
     "id": "and-daughter",
@@ -4944,7 +5141,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "customercare@and-daughter.com"
   },
   {
     "id": "woolkind",
@@ -4969,7 +5167,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Edinburgh"
+    "county": "Edinburgh",
+    "email": "hello@woolkind.com"
   },
   {
     "id": "london-tradition",
@@ -4993,7 +5192,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "support@londontradition.com"
   },
   {
     "id": "grenfell",
@@ -5017,7 +5217,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "gloverall",
@@ -5040,7 +5241,8 @@
     "product_tags": [
       "coats & jackets"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@gloverall.com"
   },
   {
     "id": "yarmo",
@@ -5065,7 +5267,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "hello@yarmouthstores.co.uk"
   },
   {
     "id": "buffalo-systems",
@@ -5088,7 +5291,8 @@
     "product_tags": [
       "coats & jackets"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@buffalosystems.co.uk"
   },
   {
     "id": "aero-leather",
@@ -5112,7 +5316,8 @@
       "coats & jackets"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "enquiries@aeroleatherclothing.com"
   },
   {
     "id": "fox-umbrellas",
@@ -5137,7 +5342,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "onlineshop@foxumbrellas.com"
   },
   {
     "id": "budd-shirts",
@@ -5161,7 +5367,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "Hampshire"
+    "county": "Hampshire",
+    "email": ""
   },
   {
     "id": "fortis-clothing",
@@ -5186,7 +5393,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@fortisclothing.co.uk"
   },
   {
     "id": "gushlow-cole",
@@ -5210,7 +5418,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Kent"
+    "county": "Kent",
+    "email": "customercare@gushlowandcole.com"
   },
   {
     "id": "british-sheepskin",
@@ -5235,7 +5444,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "info@british-sheepskin.co.uk"
   },
   {
     "id": "lockwood-smocks",
@@ -5259,7 +5469,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "jacob@lockwoodsmocks.com"
   },
   {
     "id": "darzi",
@@ -5284,7 +5495,8 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": "info@darziclothingcompany.com"
   },
   {
     "id": "thorndale",
@@ -5309,7 +5521,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Staffordshire"
+    "county": "Staffordshire",
+    "email": "info@thorndale.co.uk"
   },
   {
     "id": "palava",
@@ -5333,7 +5546,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@palava.co"
   },
   {
     "id": "crown-northampton",
@@ -5356,7 +5570,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@crownnorthampton.com"
   },
   {
     "id": "sanders-sanders",
@@ -5380,7 +5595,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "shop@sanders-uk.com"
   },
   {
     "id": "william-lennon",
@@ -5404,7 +5620,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "sales@williamlennon.co.uk"
   },
   {
     "id": "john-lobb-ltd",
@@ -5428,7 +5645,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@johnlobb1849.com"
   },
   {
     "id": "dartmoor-shoemakers",
@@ -5452,7 +5670,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@dartmoorshoemakers.co.uk"
   },
   {
     "id": "owen-barry",
@@ -5476,7 +5695,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "info@owenbarry.com"
   },
   {
     "id": "cambridge-satchel",
@@ -5500,7 +5720,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "contactus@cambridgesatchel.com"
   },
   {
     "id": "leather-satchel-co",
@@ -5524,7 +5745,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Liverpool"
+    "county": "Liverpool",
+    "email": "team@leathersatchel.com"
   },
   {
     "id": "broadland-slippers",
@@ -5548,7 +5770,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "info@broadlandslippers.co.uk"
   },
   {
     "id": "barnwell-footwear",
@@ -5572,7 +5795,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "barnwellfootwear@gmail.com"
   },
   {
     "id": "zatchels",
@@ -5595,7 +5819,8 @@
     "product_tags": [
       "bags & leather goods"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "customerservices@zatchels.com"
   },
   {
     "id": "juju-footwear",
@@ -5618,7 +5843,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@jujushoes.co.uk"
   },
   {
     "id": "swaine",
@@ -5642,7 +5868,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Cambridgeshire"
+    "county": "Cambridgeshire",
+    "email": "enquiries@swaine.group"
   },
   {
     "id": "de-winter",
@@ -5666,7 +5893,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "sales@dewinterboots.com"
   },
   {
     "id": "percy-stride",
@@ -5690,7 +5918,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "info@percystride.com"
   },
   {
     "id": "arthur-sleep",
@@ -5714,7 +5943,8 @@
       "cashmere & merino",
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "hello@arthursleep.com"
   },
   {
     "id": "jadd-shoes",
@@ -5738,7 +5968,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "email": "enquiries@suffolkshoes.co.uk"
   },
   {
     "id": "everbound-goods",
@@ -5762,7 +5993,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Bristol"
+    "county": "Bristol",
+    "email": "everboundgoods@gmail.com"
   },
   {
     "id": "lanx",
@@ -5786,7 +6018,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": ""
   },
   {
     "id": "draper-of-glastonbury",
@@ -5810,7 +6043,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "shop@draper-of-glastonbury.com"
   },
   {
     "id": "herd",
@@ -5834,7 +6068,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "hello@herdwear.co"
   },
   {
     "id": "beorma-leather-company",
@@ -5858,7 +6093,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "West Midlands"
+    "county": "West Midlands",
+    "email": "enquiries@beormaleathercompany.co.uk"
   },
   {
     "id": "cornelia-james",
@@ -5882,7 +6118,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "contact@corneliajames.com"
   },
   {
     "id": "laird-hatters",
@@ -5907,7 +6144,8 @@
       "hats & caps"
     ],
     "nation": "England",
-    "county": "Hertfordshire"
+    "county": "Hertfordshire",
+    "email": "admin@lairdhatters.com"
   },
   {
     "id": "anise-cashmere",
@@ -5933,7 +6171,8 @@
       "scarves & accessories"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "reessmith@aol.com"
   },
   {
     "id": "rove-knitwear",
@@ -5958,7 +6197,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "Kent"
+    "county": "Kent",
+    "email": "rose@roveknitwear.com"
   },
   {
     "id": "brora",
@@ -5983,7 +6223,8 @@
       "cashmere & merino"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "press@brora.co.uk"
   },
   {
     "id": "kinloch-anderson",
@@ -6008,7 +6249,8 @@
       "suits & trousers"
     ],
     "nation": "Scotland",
-    "county": "Edinburgh"
+    "county": "Edinburgh",
+    "email": "enquiries@kinlochanderson.com"
   },
   {
     "id": "gordon-nicolson-kiltmakers",
@@ -6033,7 +6275,8 @@
       "suits & trousers"
     ],
     "nation": "Scotland",
-    "county": "Edinburgh"
+    "county": "Edinburgh",
+    "email": "gordon@nicolsonkiltmakers.com"
   },
   {
     "id": "campbells-of-beauly",
@@ -6057,7 +6300,8 @@
       "suits & trousers"
     ],
     "nation": "Scotland",
-    "county": "Highland"
+    "county": "Highland",
+    "email": "shop@campbellsofbeauly.com"
   },
   {
     "id": "bowhill-and-elliott",
@@ -6081,7 +6325,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "shop@bowhillandelliott.co.uk"
   },
   {
     "id": "albert-thurston",
@@ -6104,7 +6349,8 @@
     "product_tags": [
       "braces & belts"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@albertthurston.com"
   },
   {
     "id": "bennett-winch",
@@ -6129,7 +6375,8 @@
     ],
     "postcode": "W1K 5FC",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@bennettwinch.com"
   },
   {
     "id": "george-cleverley",
@@ -6153,7 +6400,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "enquiries@georgecleverley.com"
   },
   {
     "id": "lock-and-co-hatters",
@@ -6177,7 +6425,8 @@
       "hats & caps"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "shop@lockhatters.co.uk"
   },
   {
     "id": "cordings",
@@ -6201,7 +6450,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "shop@cordings.co.uk"
   },
   {
     "id": "dents",
@@ -6225,7 +6475,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Wiltshire"
+    "county": "Wiltshire",
+    "email": "sales@dents.co.uk"
   },
   {
     "id": "the-british-belt-company",
@@ -6249,7 +6500,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Rutland"
+    "county": "Rutland",
+    "email": "customer.service@thebritishbeltcompany.com"
   },
   {
     "id": "risdon-and-risdon",
@@ -6274,7 +6526,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Shropshire"
+    "county": "Shropshire",
+    "email": "aprons@risdonandrisdon.co.uk"
   },
   {
     "id": "churchs",
@@ -6297,7 +6550,8 @@
     "product_tags": [
       "footwear & boots"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": ""
   },
   {
     "id": "grenson",
@@ -6321,7 +6575,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": ""
   },
   {
     "id": "barker-shoes",
@@ -6345,7 +6600,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Northamptonshire"
+    "county": "Northamptonshire",
+    "email": "sales@barkershoes.co.uk"
   },
   {
     "id": "alt-berg",
@@ -6369,7 +6625,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "sales@altberg.co.uk"
   },
   {
     "id": "mamnick",
@@ -6393,7 +6650,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "South Yorkshire"
+    "county": "South Yorkshire",
+    "email": ""
   },
   {
     "id": "bridgedale",
@@ -6418,7 +6676,8 @@
       "socks"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": "customer.services@bridgedale.com"
   },
   {
     "id": "british-boxers",
@@ -6442,7 +6701,8 @@
       "underwear & nightwear"
     ],
     "nation": "England",
-    "county": "Staffordshire"
+    "county": "Staffordshire",
+    "email": "customerservice@british-boxers.com"
   },
   {
     "id": "charl-knitwear",
@@ -6466,7 +6726,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": ""
   },
   {
     "id": "oliver-spencer",
@@ -6490,7 +6751,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@oliverspencer.co.uk"
   },
   {
     "id": "marwood",
@@ -6514,7 +6776,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@marwoodlondon.co.uk"
   },
   {
     "id": "john-partridge",
@@ -6538,7 +6801,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "West Midlands"
+    "county": "West Midlands",
+    "email": "sales@johnpartridge.com"
   },
   {
     "id": "the-cambridge-sock-company",
@@ -6564,7 +6828,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "Cambridgeshire"
+    "county": "Cambridgeshire",
+    "email": "cambsocks@gmail.com"
   },
   {
     "id": "arbon-socks",
@@ -6589,7 +6854,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "Cumbria"
+    "county": "Cumbria",
+    "email": "info@arbonsocks.co.uk"
   },
   {
     "id": "ratcatcher",
@@ -6614,7 +6880,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "info@ratcatchertweed.co.uk"
   },
   {
     "id": "tyler-and-tyler",
@@ -6638,7 +6905,8 @@
       "cufflinks & signets",
       "jewellery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "richard@tylerandtyler.co.uk"
   },
   {
     "id": "banton-frameworks",
@@ -6663,7 +6931,8 @@
       "bags & leather goods"
     ],
     "nation": "Scotland",
-    "county": "Glasgow"
+    "county": "Glasgow",
+    "email": ""
   },
   {
     "id": "david-nieper",
@@ -6687,7 +6956,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "customer.services@davidnieper.co.uk"
   },
   {
     "id": "freddies-of-pinewood",
@@ -6712,7 +6982,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Essex"
+    "county": "Essex",
+    "email": "sales@freddiesofpinewood.co.uk"
   },
   {
     "id": "peper-harow",
@@ -6738,7 +7009,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "West Sussex"
+    "county": "West Sussex",
+    "email": "sales@peperharowengland.com"
   },
   {
     "id": "benson-and-clegg",
@@ -6762,7 +7034,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "enquiries@bensonandclegg.com"
   },
   {
     "id": "pickett-london",
@@ -6786,7 +7059,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "pressoffice@pickett.co.uk"
   },
   {
     "id": "moloh",
@@ -6810,7 +7084,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "info@moloh.com"
   },
   {
     "id": "tiffany-rose",
@@ -6835,7 +7110,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "sales@tiffanyrose.com"
   },
   {
     "id": "lambland",
@@ -6859,7 +7135,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "sales@lambland.co.uk"
   },
   {
     "id": "sheepland",
@@ -6883,7 +7160,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": "sheepland@outlook.com"
   },
   {
     "id": "the-bradford-sock-company",
@@ -6908,7 +7186,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": ""
   },
   {
     "id": "elgar-shirts",
@@ -6932,7 +7211,8 @@
       "shirts"
     ],
     "nation": "Wales",
-    "county": "Monmouthshire"
+    "county": "Monmouthshire",
+    "email": "catherine@elgarshirts.com"
   },
   {
     "id": "justine-tabak",
@@ -6956,7 +7236,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "support@justinetabak.co.uk"
   },
   {
     "id": "colenimo",
@@ -6980,7 +7261,8 @@
       "tweed & woven goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@colenimo.com"
   },
   {
     "id": "findra-clothing",
@@ -7005,7 +7287,8 @@
       "coats & jackets"
     ],
     "nation": "Scotland",
-    "county": "Scottish Borders"
+    "county": "Scottish Borders",
+    "email": "hello@findraclothing.com"
   },
   {
     "id": "sub-zero",
@@ -7030,7 +7313,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "sales@subzero.co.uk"
   },
   {
     "id": "withnell",
@@ -7054,7 +7338,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": "hello@withnell.co"
   },
   {
     "id": "garstin-1871",
@@ -7078,7 +7363,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "contact@garstin1871.com"
   },
   {
     "id": "hackney-gt",
@@ -7103,7 +7389,8 @@
     ],
     "postcode": "E8 4PH",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@hackneygt.com"
   },
   {
     "id": "kate-sheridan",
@@ -7127,7 +7414,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@katesheridan.com"
   },
   {
     "id": "blackshore",
@@ -7151,7 +7439,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "info@blackshoreclothing.com"
   },
   {
     "id": "sam-brown-london",
@@ -7175,7 +7464,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@sambrownlondon.com"
   },
   {
     "id": "weskit",
@@ -7201,7 +7491,8 @@
       "suits & trousers"
     ],
     "nation": "Wales",
-    "county": "Monmouthshire"
+    "county": "Monmouthshire",
+    "email": "info@weskit.co.uk"
   },
   {
     "id": "meccanica-clothing",
@@ -7225,7 +7516,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Cheshire"
+    "county": "Cheshire",
+    "email": "info@meccanicaclothing.co.uk"
   },
   {
     "id": "pajotten",
@@ -7249,7 +7541,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Kent"
+    "county": "Kent",
+    "email": "becca@pajotten.com"
   },
   {
     "id": "elizabeth-martin-tweed",
@@ -7274,7 +7567,8 @@
       "coats & jackets"
     ],
     "nation": "Scotland",
-    "county": "Lanarkshire"
+    "county": "Lanarkshire",
+    "email": "elizabeth@elizabethmartintweed.co.uk"
   },
   {
     "id": "berties-of-bay",
@@ -7299,7 +7593,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "hello@bertiesofbay.co.uk"
   },
   {
     "id": "tim-hardy",
@@ -7323,7 +7618,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Worcestershire"
+    "county": "Worcestershire",
+    "email": ""
   },
   {
     "id": "monkstone-knitwear",
@@ -7347,7 +7643,8 @@
       "knitwear"
     ],
     "nation": "Wales",
-    "county": "Pembrokeshire"
+    "county": "Pembrokeshire",
+    "email": "hello@monkstoneknitwear.co.uk"
   },
   {
     "id": "rolf-skeldon",
@@ -7372,7 +7669,8 @@
       "everyday wear"
     ],
     "nation": "Wales",
-    "county": "Powys"
+    "county": "Powys",
+    "email": "hello@rolfskeldon.com"
   },
   {
     "id": "blue-nude",
@@ -7397,7 +7695,8 @@
     ],
     "postcode": "E8 2BT",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@bluenude.com"
   },
   {
     "id": "the-cotton-london",
@@ -7423,7 +7722,8 @@
     ],
     "postcode": "UB7 9GP",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@thecottonlondon.com"
   },
   {
     "id": "oxford-blue",
@@ -7447,7 +7747,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "West Midlands"
+    "county": "West Midlands",
+    "email": "info@oxford-blue.com"
   },
   {
     "id": "cwt-clothing",
@@ -7472,7 +7773,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "cwt@colourwaystextiles.com"
   },
   {
     "id": "crease-studios",
@@ -7497,7 +7799,8 @@
       "underwear & nightwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@creasestudios.com"
   },
   {
     "id": "wildsole",
@@ -7521,7 +7824,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "South Yorkshire"
+    "county": "South Yorkshire",
+    "email": "hello@wildsolesandals.com"
   },
   {
     "id": "daffodil-and-leek",
@@ -7545,7 +7849,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "katie@daffodilandleek.com"
   },
   {
     "id": "worn-to-threads",
@@ -7569,7 +7874,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Bristol"
+    "county": "Bristol",
+    "email": "hello@worntothreads.com"
   },
   {
     "id": "o-pioneers",
@@ -7594,7 +7900,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "enquiries@opioneers.co.uk"
   },
   {
     "id": "paul-brown",
@@ -7618,7 +7925,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "email": "sales@paulbrownengland.com"
   },
   {
     "id": "hemingsworth",
@@ -7643,7 +7951,8 @@
     ],
     "postcode": "EC1V 4JP",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@hemingsworth.com"
   },
   {
     "id": "waring-brooke",
@@ -7667,7 +7976,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Nottinghamshire"
+    "county": "Nottinghamshire",
+    "email": "samantha@waringbrooke.com"
   },
   {
     "id": "umpie-handbags",
@@ -7691,7 +8001,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "info@umpiehandbags.com"
   },
   {
     "id": "hurdwick-handmade-bag-company",
@@ -7715,7 +8026,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "hello@hurdwick.co.uk"
   },
   {
     "id": "english-utopia",
@@ -7740,7 +8052,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "info@englishutopia.com"
   },
   {
     "id": "goodnight-irene",
@@ -7765,7 +8078,8 @@
     ],
     "postcode": "N16 7UY",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@goodnightirene.co.uk"
   },
   {
     "id": "empire-jeans",
@@ -7790,7 +8104,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "West Midlands"
+    "county": "West Midlands",
+    "email": "enquiries@empirejeans.co.uk"
   },
   {
     "id": "joe-and-co-denim",
@@ -7815,7 +8130,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Greater Manchester"
+    "county": "Greater Manchester",
+    "email": "info@wearejoeandco.co.uk"
   },
   {
     "id": "torramor",
@@ -7839,7 +8155,8 @@
       "coats & jackets"
     ],
     "nation": "Scotland",
-    "county": "Kinross"
+    "county": "Kinross",
+    "email": "info@torramor.com"
   },
   {
     "id": "the-moleskin-jeans-co",
@@ -7865,7 +8182,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": "info@themoleskinjeansco.uk"
   },
   {
     "id": "awling",
@@ -7889,7 +8207,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "info@awling.com"
   },
   {
     "id": "charles-laurie",
@@ -7913,7 +8232,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Rutland"
+    "county": "Rutland",
+    "email": "charlie@charleslaurielondon.com"
   },
   {
     "id": "ednerat",
@@ -7937,7 +8257,8 @@
       "coats & jackets"
     ],
     "nation": "Wales",
-    "county": "Monmouthshire"
+    "county": "Monmouthshire",
+    "email": "info@ednerat.com"
   },
   {
     "id": "kerriealdo",
@@ -7961,7 +8282,8 @@
       "coats & jackets"
     ],
     "nation": "Scotland",
-    "county": "Dundee"
+    "county": "Dundee",
+    "email": "info@kerriealdo.com"
   },
   {
     "id": "reflekt-clothing",
@@ -7986,7 +8308,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "sales@reflektclothing.co.uk"
   },
   {
     "id": "tropel-kids",
@@ -8010,7 +8333,8 @@
       "childrenswear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "amy-britton",
@@ -8034,7 +8358,8 @@
       "tweed & woven goods"
     ],
     "nation": "Scotland",
-    "county": "Stirling"
+    "county": "Stirling",
+    "email": "amy@amybritton.co.uk"
   },
   {
     "id": "good-measure",
@@ -8058,7 +8383,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Manchester"
+    "county": "Manchester",
+    "email": "hello@goodmeasure.co.uk"
   },
   {
     "id": "homebody",
@@ -8083,7 +8409,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "customerservices@homebody.co.uk"
   },
   {
     "id": "the-rugby-company",
@@ -8107,7 +8434,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "Warwickshire"
+    "county": "Warwickshire",
+    "email": "customerservice@therugbycompany.co.uk"
   },
   {
     "id": "the-goat-company",
@@ -8132,7 +8460,8 @@
       "socks"
     ],
     "nation": "Wales",
-    "county": "Monmouthshire"
+    "county": "Monmouthshire",
+    "email": ""
   },
   {
     "id": "oldfield-outfitters",
@@ -8157,7 +8486,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "info@oldfieldclothing.com"
   },
   {
     "id": "moda-de-la-maria",
@@ -8181,7 +8511,8 @@
       "tweed & woven goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@modadelamaria.com"
   },
   {
     "id": "mackenzie-and-george",
@@ -8205,7 +8536,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Shropshire"
+    "county": "Shropshire",
+    "email": "info@mackenzieandgeorge.com"
   },
   {
     "id": "thomas-fortin",
@@ -8229,7 +8561,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Somerset"
+    "county": "Somerset",
+    "email": ""
   },
   {
     "id": "frimble",
@@ -8254,7 +8587,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "sophie@frimble.com"
   },
   {
     "id": "julian-road",
@@ -8280,7 +8614,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "Shropshire"
+    "county": "Shropshire",
+    "email": "hello@julianroad.com"
   },
   {
     "id": "pinpiuma",
@@ -8306,7 +8641,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Suffolk"
+    "county": "Suffolk",
+    "email": ""
   },
   {
     "id": "green-thomas",
@@ -8330,7 +8666,8 @@
       "knitwear"
     ],
     "nation": "Scotland",
-    "county": "Glasgow"
+    "county": "Glasgow",
+    "email": "talktous@greenthomas.com"
   },
   {
     "id": "the-pattern-guild",
@@ -8354,7 +8691,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@thepatternguild.co.uk"
   },
   {
     "id": "harriet-eccleston",
@@ -8378,7 +8716,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "South Yorkshire"
+    "county": "South Yorkshire",
+    "email": "info@harrieteccleston.co.uk"
   },
   {
     "id": "hettie",
@@ -8402,7 +8741,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Warwickshire"
+    "county": "Warwickshire",
+    "email": "hello@hettie.co.uk"
   },
   {
     "id": "elwin",
@@ -8427,7 +8767,8 @@
     ],
     "postcode": "E8 3PH",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@elwinstudio.com"
   },
   {
     "id": "katie-cotmarsh",
@@ -8451,7 +8792,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Wiltshire"
+    "county": "Wiltshire",
+    "email": "hello@katiecotmarsh.co.uk"
   },
   {
     "id": "talou",
@@ -8476,7 +8818,8 @@
     ],
     "postcode": "E8 3RL",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "anotherstorymade@wearetalou.com"
   },
   {
     "id": "mille-saisons",
@@ -8500,7 +8843,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "jo@millesaisons.co.uk"
   },
   {
     "id": "sarvin",
@@ -8525,7 +8869,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "info@sarvin.co.uk"
   },
   {
     "id": "soma-sportswear",
@@ -8549,7 +8894,8 @@
       "activewear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "chris@somasportswear.com"
   },
   {
     "id": "rock-and-ruby",
@@ -8574,7 +8920,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "Essex"
+    "county": "Essex",
+    "email": "support@rockandruby.co.uk"
   },
   {
     "id": "dreaming-of-ivy",
@@ -8599,7 +8946,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "dreamingofivydesign@gmail.com"
   },
   {
     "id": "cara-and-the-sky",
@@ -8623,7 +8971,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@caraandthesky.com"
   },
   {
     "id": "lola-starr",
@@ -8647,7 +8996,8 @@
       "activewear"
     ],
     "nation": "England",
-    "county": "Merseyside"
+    "county": "Merseyside",
+    "email": "info@lolastarr.co.uk"
   },
   {
     "id": "pittch",
@@ -8673,7 +9023,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "sales@pittch.co.uk"
   },
   {
     "id": "the-well-worn",
@@ -8697,7 +9048,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Hampshire"
+    "county": "Hampshire",
+    "email": "hello@thewellworn.co.uk"
   },
   {
     "id": "adkn",
@@ -8721,7 +9073,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@adkn.co.uk"
   },
   {
     "id": "been-london",
@@ -8746,7 +9099,8 @@
     ],
     "postcode": "E8 3DL",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@been.london"
   },
   {
     "id": "lottie-and-lysh",
@@ -8770,7 +9124,8 @@
       "childrenswear"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "lottie@lottieandlysh.co.uk"
   },
   {
     "id": "red-shoes-ruth-emily-davey",
@@ -8794,7 +9149,8 @@
       "footwear & boots"
     ],
     "nation": "Wales",
-    "county": "Powys"
+    "county": "Powys",
+    "email": "ruth@ruthemilydavey.co.uk"
   },
   {
     "id": "lady-v-london",
@@ -8819,7 +9175,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "Hampshire"
+    "county": "Hampshire",
+    "email": ""
   },
   {
     "id": "j-alex-swift",
@@ -8844,7 +9201,8 @@
       "socks"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "retail@jalexswift.co.uk"
   },
   {
     "id": "batch-ldn",
@@ -8868,7 +9226,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@batchldn.com"
   },
   {
     "id": "tutti-frutti-clothing",
@@ -8892,7 +9251,8 @@
       "childrenswear"
     ],
     "nation": "England",
-    "county": "Hertfordshire"
+    "county": "Hertfordshire",
+    "email": "hello@tuttifrutticlothing.com"
   },
   {
     "id": "gina",
@@ -8916,7 +9276,8 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "marvin-browne",
@@ -8941,7 +9302,8 @@
     ],
     "postcode": "E1 6BG",
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "foxology",
@@ -8966,7 +9328,8 @@
       "cashmere & merino"
     ],
     "nation": "England",
-    "county": "Warwickshire"
+    "county": "Warwickshire",
+    "email": "enquiries@foxologyclothing.com"
   },
   {
     "id": "moghrabi",
@@ -8990,7 +9353,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "sami-k",
@@ -9014,7 +9378,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "sami@sami-k.co.uk"
   },
   {
     "id": "reworked-348",
@@ -9038,7 +9403,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Derbyshire"
+    "county": "Derbyshire",
+    "email": "info@reworked348.com"
   },
   {
     "id": "vivien-of-holloway",
@@ -9063,7 +9429,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "alie-street",
@@ -9088,7 +9455,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "hello@aliestreet.com"
   },
   {
     "id": "ella-griffee",
@@ -9112,7 +9480,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "ellagriffee_studio@outlook.com"
   },
   {
     "id": "orraman-leather",
@@ -9136,7 +9505,8 @@
       "bags & leather goods"
     ],
     "nation": "Scotland",
-    "county": "Argyll and Bute"
+    "county": "Argyll and Bute",
+    "email": "info@orramanleather.com"
   },
   {
     "id": "furious-goose",
@@ -9160,7 +9530,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Cheshire"
+    "county": "Cheshire",
+    "email": "hiss@furiousgoose.co.uk"
   },
   {
     "id": "cocoove",
@@ -9184,7 +9555,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Merseyside"
+    "county": "Merseyside",
+    "email": "info@cocoveve.uk"
   },
   {
     "id": "kipper",
@@ -9208,7 +9580,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "skipper@kipper.club"
   },
   {
     "id": "meandthee",
@@ -9232,7 +9605,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "info@meandthee.co.uk"
   },
   {
     "id": "clare-haggas",
@@ -9256,7 +9630,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": ""
   },
   {
     "id": "cravat-club",
@@ -9280,7 +9655,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "info@cravat-club.com"
   },
   {
     "id": "hyde-and-hare",
@@ -9304,7 +9680,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "customercare@hydeandhare.com"
   },
   {
     "id": "macangus-and-wainwright",
@@ -9328,7 +9705,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "geoff-stocker",
@@ -9353,7 +9731,8 @@
       "underwear & nightwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": ""
   },
   {
     "id": "abe-house",
@@ -9377,7 +9756,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "info@abehouse.net"
   },
   {
     "id": "stalf",
@@ -9401,7 +9781,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Lincolnshire"
+    "county": "Lincolnshire",
+    "email": ""
   },
   {
     "id": "big-fox-apparel",
@@ -9426,7 +9807,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "Tyne and Wear"
+    "county": "Tyne and Wear",
+    "email": "jack@bigfoxapparel.com"
   },
   {
     "id": "daltons-england",
@@ -9451,7 +9833,8 @@
     ],
     "nation": "England",
     "county": "Somerset",
-    "logo_bg": "dark"
+    "logo_bg": "dark",
+    "email": "info@daltonsengland.co.uk"
   },
   {
     "id": "des-merrion",
@@ -9475,7 +9858,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "West Yorkshire"
+    "county": "West Yorkshire",
+    "email": "des@desmerrion.com"
   },
   {
     "id": "nattily-dressed",
@@ -9500,7 +9884,8 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "hello@nattily.co.uk"
   },
   {
     "id": "wildish",
@@ -9524,7 +9909,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "North Yorkshire"
+    "county": "North Yorkshire",
+    "email": "hello@wildishstore.com"
   },
   {
     "id": "iona-montgomery",
@@ -9548,7 +9934,8 @@
       "hats & caps"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "iona@ionamontgomery.co.uk"
   },
   {
     "id": "fawn-and-freda",
@@ -9573,7 +9960,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@fawnandfreda.com"
   },
   {
     "id": "rach-x",
@@ -9597,7 +9985,8 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "county": "Durham"
+    "county": "Durham",
+    "email": "info@rachx.com"
   },
   {
     "id": "nadinoo",
@@ -9621,7 +10010,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Rutland"
+    "county": "Rutland",
+    "email": "info@nadinoo.co.uk"
   },
   {
     "id": "kaely-russell",
@@ -9645,7 +10035,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "studio@kaelyrussell.com"
   },
   {
     "id": "the-bathrobe-company",
@@ -9669,7 +10060,8 @@
       "underwear & nightwear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "colin.lloyd@bathrobe.co.uk"
   },
   {
     "id": "violets-in-may",
@@ -9693,7 +10085,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "Berkshire"
+    "county": "Berkshire",
+    "email": "enquiries@violetsinmay.co.uk"
   },
   {
     "id": "faith-rowan-leeves",
@@ -9718,7 +10111,8 @@
       "dresses"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "studio@faithrowanleeves.com"
   },
   {
     "id": "lilyberry",
@@ -9742,7 +10136,8 @@
       "childrenswear"
     ],
     "nation": "England",
-    "county": "Sussex"
+    "county": "Sussex",
+    "email": ""
   },
   {
     "id": "leah-may-tailors",
@@ -9766,7 +10161,8 @@
       "suits & trousers"
     ],
     "nation": "England",
-    "county": "Hertfordshire"
+    "county": "Hertfordshire",
+    "email": "leahmaytailors@outlook.com"
   },
   {
     "id": "wear-london",
@@ -9794,7 +10190,8 @@
       "everyday wear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@wear-london.co.uk"
   },
   {
     "id": "mhulot",
@@ -9818,7 +10215,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Cambridgeshire"
+    "county": "Cambridgeshire",
+    "email": "info@mhulot.co.uk"
   },
   {
     "id": "jane-hopkinson",
@@ -9842,7 +10240,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": ""
   },
   {
     "id": "lpol",
@@ -9866,7 +10265,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "hello@lpol.co.uk"
   },
   {
     "id": "heather-borg",
@@ -9890,7 +10290,8 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "county": "Manchester"
+    "county": "Manchester",
+    "email": ""
   },
   {
     "id": "otway-orford",
@@ -9914,7 +10315,8 @@
       "scarves & accessories"
     ],
     "nation": "England",
-    "county": "Cheshire"
+    "county": "Cheshire",
+    "email": "info@otwayorford.co.uk"
   },
   {
     "id": "barrington-ayre",
@@ -9939,7 +10341,8 @@
       "shirts"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "info@barringtonayre.co.uk"
   },
   {
     "id": "paul-james-knitwear",
@@ -9963,7 +10366,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "hello@pauljamesknitwear.com"
   },
   {
     "id": "libby-london",
@@ -9987,7 +10391,8 @@
       "womenswear"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "studio@libbylondon.com"
   },
   {
     "id": "ivy-and-rigg",
@@ -10011,7 +10416,8 @@
       "knitwear"
     ],
     "nation": "England",
-    "county": "Northumberland"
+    "county": "Northumberland",
+    "email": "info@ivyandrigg.com"
   },
   {
     "id": "craigies-farm",
@@ -10046,7 +10452,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Scotland",
-    "county": "Edinburgh"
+    "county": "Edinburgh",
+    "email": ""
   },
   {
     "id": "kilnford-farm-shop",
@@ -10078,7 +10485,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Scotland",
-    "county": "Dumfries & Galloway"
+    "county": "Dumfries & Galloway",
+    "email": ""
   },
   {
     "id": "gloagburn-farm-shop",
@@ -10104,7 +10512,8 @@
       "fruit & veg"
     ],
     "nation": "Scotland",
-    "county": "Perthshire"
+    "county": "Perthshire",
+    "email": "office@gloagburn.co.uk"
   },
   {
     "id": "newton-farm-foods",
@@ -10141,7 +10550,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Scotland",
-    "county": "Angus"
+    "county": "Angus",
+    "email": "orders@newtonfarmfoods.co.uk"
   },
   {
     "id": "mains-of-glassaugh",
@@ -10166,7 +10576,8 @@
       "fruit & veg"
     ],
     "nation": "Scotland",
-    "county": "Aberdeenshire"
+    "county": "Aberdeenshire",
+    "email": ""
   },
   {
     "id": "Ernespie-farm-shop",
@@ -10191,7 +10602,8 @@
       "fruit & veg"
     ],
     "nation": "Scotland",
-    "county": "Dumfries & Galloway"
+    "county": "Dumfries & Galloway",
+    "email": "info@ernespiefarm.co.uk"
   },
   {
     "id": "bodnant-welsh-food",
@@ -10219,7 +10631,8 @@
       "drinks & spirits"
     ],
     "nation": "Wales",
-    "county": "Conwy"
+    "county": "Conwy",
+    "email": "hello@bodnant-welshfood.co.uk"
   },
   {
     "id": "forage-farm-shop",
@@ -10247,7 +10660,8 @@
       "dairy & cheese"
     ],
     "nation": "Wales",
-    "county": "Vale of Glamorgan"
+    "county": "Vale of Glamorgan",
+    "email": "info@foragefarmshop.co.uk"
   },
   {
     "id": "hawarden-estate-farm-shop",
@@ -10272,7 +10686,8 @@
       "fruit & veg"
     ],
     "nation": "Wales",
-    "county": "Flintshire"
+    "county": "Flintshire",
+    "email": "manager@hawardenestate.co.uk"
   },
   {
     "id": "beacons-farm-shop",
@@ -10301,7 +10716,8 @@
       "dairy & cheese"
     ],
     "nation": "Wales",
-    "county": "Powys"
+    "county": "Powys",
+    "email": ""
   },
   {
     "id": "caws-cenarth-farm-shop",
@@ -10330,7 +10746,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Wales",
-    "county": "Carmarthenshire"
+    "county": "Carmarthenshire",
+    "email": "cheeseshop@cawscenarth.co.uk"
   },
   {
     "id": "broughgammon-farm",
@@ -10359,7 +10776,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Northern Ireland",
-    "county": "Co. Antrim"
+    "county": "Co. Antrim",
+    "email": "info@broughgammon.com"
   },
   {
     "id": "castlescreen-farm",
@@ -10389,7 +10807,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": "hello@castlescreenfarm.co.uk"
   },
   {
     "id": "pheasants-hill-farm",
@@ -10419,7 +10838,8 @@
       "fruit & veg"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": ""
   },
   {
     "id": "mckees-country-store",
@@ -10448,7 +10868,8 @@
       "bread & bakery"
     ],
     "nation": "Northern Ireland",
-    "county": "Co. Down"
+    "county": "Co. Down",
+    "email": ""
   },
   {
     "id": "farndon-fields-farm-shop",
@@ -10472,7 +10893,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Leicestershire"
+    "county": "Leicestershire",
+    "email": "hello@farndonfields.co.uk"
   },
   {
     "id": "welbeck-farm-shop",
@@ -10506,7 +10928,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Nottinghamshire"
+    "county": "Nottinghamshire",
+    "email": "farmshop@welbeck.co.uk"
   },
   {
     "id": "strawberry-fields-farm-shop",
@@ -10539,7 +10962,8 @@
     ],
     "products_checked": "2026-08-01",
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@strawberryfieldslifton.co.uk"
   },
   {
     "id": "lower-clopton-farm-shop",
@@ -10568,7 +10992,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Warwickshire"
+    "county": "Warwickshire",
+    "email": ""
   },
   {
     "id": "goat-shed-farm-shop",
@@ -10594,7 +11019,8 @@
       "bread & bakery"
     ],
     "nation": "England",
-    "county": "Norfolk"
+    "county": "Norfolk",
+    "email": "enquiries@goat-shed.co.uk"
   },
   {
     "id": "hutchinson-hobbs",
@@ -10618,7 +11044,8 @@
       "fresh meat",
       "fruit & veg"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@hutchinsonhobbs.co.uk"
   },
   {
     "id": "darts-farm",
@@ -10644,7 +11071,8 @@
       "drinks & spirits"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@dartsfarm.co.uk"
   },
   {
     "id": "canalside-farm-shop",
@@ -10668,7 +11096,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Staffordshire"
+    "county": "Staffordshire",
+    "email": "info@canalsidefarm.co.uk"
   },
   {
     "id": "sharnfold-farm",
@@ -10693,7 +11122,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "farmoffice@sharnfoldfarm.co.uk"
   },
   {
     "id": "priory-farm-estate",
@@ -10718,7 +11148,8 @@
       "fruit & veg"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "shop@prioryfarm.co.uk"
   },
   {
     "id": "wemyss-ware",
@@ -10742,7 +11173,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Fife"
+    "county": "Fife",
+    "email": "info@wemyssware.co.uk"
   },
   {
     "id": "tain-pottery",
@@ -10766,7 +11198,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Ross-shire"
+    "county": "Ross-shire",
+    "email": "ros@tainpottery.co.uk"
   },
   {
     "id": "borgh-pottery",
@@ -10790,7 +11223,8 @@
       "pottery"
     ],
     "nation": "Scotland",
-    "county": "Isle of Lewis"
+    "county": "Isle of Lewis",
+    "email": ""
   },
   {
     "id": "ewenny-pottery",
@@ -10814,7 +11248,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Bridgend"
+    "county": "Bridgend",
+    "email": ""
   },
   {
     "id": "glosters-pottery",
@@ -10838,7 +11273,8 @@
       "pottery"
     ],
     "nation": "Wales",
-    "county": "Gwynedd"
+    "county": "Gwynedd",
+    "email": "info@glosters.co.uk"
   },
   {
     "id": "winchcombe-pottery",
@@ -10862,7 +11298,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "winchcombepottery@msn.com"
   },
   {
     "id": "grayshott-pottery",
@@ -10887,7 +11324,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "info@grayshottpottery.com"
   },
   {
     "id": "pottery-west",
@@ -10912,7 +11350,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "South Yorkshire"
+    "county": "South Yorkshire",
+    "email": "info@potterywest.co.uk"
   },
   {
     "id": "reiko-kaneko",
@@ -10935,7 +11374,8 @@
     "product_tags": [
       "pottery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "hello@reikokaneko.co.uk"
   },
   {
     "id": "maham-anjum",
@@ -10961,7 +11401,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "mahamanjum@aol.com"
   },
   {
     "id": "dartington-pottery",
@@ -10985,7 +11426,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@grayshottpottery.com"
   },
   {
     "id": "cotswold-pottery",
@@ -11009,7 +11451,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Gloucestershire"
+    "county": "Gloucestershire",
+    "email": "pottery@cotswoldpottery.com"
   },
   {
     "id": "isle-of-wight-pottery",
@@ -11033,7 +11476,8 @@
       "pottery"
     ],
     "nation": "England",
-    "county": "Isle of Wight"
+    "county": "Isle of Wight",
+    "email": "hello@isleofwightpottery.com"
   },
   {
     "id": "ortak-jewellery",
@@ -11057,7 +11501,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Orkney"
+    "county": "Orkney",
+    "email": "hello@ortak.co.uk"
   },
   {
     "id": "alison-moore-designs",
@@ -11081,7 +11526,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Orkney"
+    "county": "Orkney",
+    "email": "hello@alisonmoore.co.uk"
   },
   {
     "id": "paulin-watches",
@@ -11106,7 +11552,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Glasgow"
+    "county": "Glasgow",
+    "email": "contact@paulinwatches.com"
   },
   {
     "id": "marloe-watch-company",
@@ -11131,7 +11578,8 @@
       "jewellery"
     ],
     "nation": "Scotland",
-    "county": "Perth"
+    "county": "Perth",
+    "email": "hello@marloewatchcompany.com"
   },
   {
     "id": "mari-thomas-jewellery",
@@ -11155,7 +11603,8 @@
       "jewellery"
     ],
     "nation": "Wales",
-    "county": "Carmarthenshire"
+    "county": "Carmarthenshire",
+    "email": "info@marithomas.com"
   },
   {
     "id": "janis-morgan-jewellery",
@@ -11180,7 +11629,8 @@
       "silverware"
     ],
     "nation": "Wales",
-    "county": "Anglesey"
+    "county": "Anglesey",
+    "email": ""
   },
   {
     "id": "robinson-jewellery-belfast",
@@ -11204,7 +11654,8 @@
       "jewellery"
     ],
     "nation": "Northern Ireland",
-    "county": "Belfast"
+    "county": "Belfast",
+    "email": ""
   },
   {
     "id": "justin-duance",
@@ -11228,7 +11679,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Cornwall"
+    "county": "Cornwall",
+    "email": "info@justind.co.uk"
   },
   {
     "id": "erin-cox-jewellery",
@@ -11252,7 +11704,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Devon"
+    "county": "Devon",
+    "email": "info@erincox.co.uk"
   },
   {
     "id": "pruden-and-smith",
@@ -11277,7 +11730,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "East Sussex"
+    "county": "East Sussex",
+    "email": "hello@prudenandsmith.com"
   },
   {
     "id": "harriet-kelsall",
@@ -11301,7 +11755,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Hertfordshire"
+    "county": "Hertfordshire",
+    "email": "enquiries@hkjewellery.co.uk"
   },
   {
     "id": "stephen-webster",
@@ -11325,7 +11780,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "London"
+    "county": "London",
+    "email": "online@stephenwebster.com"
   },
   {
     "id": "hockley-mint",
@@ -11348,7 +11804,8 @@
     "product_tags": [
       "jewellery"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "sales@hockleymint.co.uk"
   },
   {
     "id": "elliot-brown-watches",
@@ -11373,7 +11830,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Dorset"
+    "county": "Dorset",
+    "email": "info@elliotbrownwatches.com"
   },
   {
     "id": "pinion-watches",
@@ -11398,7 +11856,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Oxfordshire"
+    "county": "Oxfordshire",
+    "email": ""
   },
   {
     "id": "loomes-and-co",
@@ -11423,7 +11882,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Lincolnshire"
+    "county": "Lincolnshire",
+    "email": ""
   },
   {
     "id": "farer-watches",
@@ -11448,7 +11908,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Oxfordshire"
+    "county": "Oxfordshire",
+    "email": "enquiries@farer.com"
   },
   {
     "id": "duckworth-prestex",
@@ -11473,7 +11934,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Lancashire"
+    "county": "Lancashire",
+    "email": "info@duckworthprestex.co.uk"
   },
   {
     "id": "pobjoy-mint",
@@ -11497,7 +11959,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": ""
   },
   {
     "id": "david-mellor",
@@ -11521,7 +11984,8 @@
       "tableware",
       "cutlery & knives"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "davidmellor@davidmellordesign.co.uk"
   },
   {
     "id": "samuel-staniforth",
@@ -11545,7 +12009,8 @@
       "fresh meat",
       "cutlery & knives"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "info@s-staniforth.co.uk"
   },
   {
     "id": "netherton-foundry",
@@ -11569,7 +12034,8 @@
       "cutlery & knives"
     ],
     "nation": "England",
-    "county": "Shropshire"
+    "county": "Shropshire",
+    "email": ""
   },
   {
     "id": "samuel-groves",
@@ -11592,7 +12058,8 @@
     "product_tags": [
       "cutlery & knives"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": "sales@samuelgroves.com"
   },
   {
     "id": "savernake-knives",
@@ -11616,7 +12083,8 @@
       "cutlery & knives"
     ],
     "nation": "England",
-    "county": "Wiltshire"
+    "county": "Wiltshire",
+    "email": "hello@savernakeknives.co.uk"
   },
   {
     "id": "inigo-jones-slate",
@@ -11641,7 +12109,8 @@
       "cutlery & knives"
     ],
     "nation": "Wales",
-    "county": "Gwynedd"
+    "county": "Gwynedd",
+    "email": "slate@inigojones.co.uk"
   },
   {
     "id": "taylors-eye-witness",
@@ -11664,7 +12133,8 @@
     "product_tags": [
       "cutlery & knives"
     ],
-    "nation": "England"
+    "nation": "England",
+    "email": ""
   },
   {
     "id": "jewelled",
@@ -11688,7 +12158,8 @@
       "jewellery"
     ],
     "nation": "England",
-    "county": "Surrey"
+    "county": "Surrey",
+    "email": "enquiries@jewelled.co.uk"
   },
   {
     "id": "diddly-squat-farm-shop",
@@ -11714,7 +12185,8 @@
       "farm shop & deli"
     ],
     "nation": "England",
-    "county": "Oxfordshire"
+    "county": "Oxfordshire",
+    "email": "orders@diddlysquatfarmshop.com"
   },
   {
     "id": "henry-watsons-potteries",
@@ -11740,7 +12212,8 @@
     ],
     "nation": "England",
     "county": "Suffolk",
-    "logo": "assets/logos/henry-watsons-potteries.png"
+    "logo": "assets/logos/henry-watsons-potteries.png",
+    "email": "sales@henrywatson.com"
   },
   {
     "id": "trough-farm-shop",
@@ -11769,6 +12242,35 @@
     ],
     "products_checked": "2026-08-18",
     "nation": "England",
-    "county": "Hampshire"
+    "county": "Hampshire",
+    "email": "info@silchesterfarm.co.uk"
+  },
+  {
+    "id": "moma-hilo",
+    "name": "Moma Hilo",
+    "subcategory": "Womenswear",
+    "tier": "silver",
+    "listing_type": "online_only",
+    "town": "London (Walthamstow)",
+    "address": "Studio in Walthamstow, London",
+    "lat": 51.5866,
+    "lng": -0.041,
+    "website": "https://www.momahilo.com",
+    "description": "Made-to-order womenswear, bridal and jewellery, sewn by two female-run London manufacturers entirely from deadstock fabric.",
+    "evidence_note": "All construction in London by named CMTs (MAES London, Fashion Studio 85); signature buttons hand-carved from reclaimed ceramics in Shropshire, remaining trims UK-sourced. Fabric is 100% deadstock via Last Yarn, The Materialist and Woolcrest Textiles — no mill or weaving origin named on any product page (e.g. Margaret Blazer listed only as '65% wool, 35% polyester (deadstock)'), so Silver per the unevidenced-main-material default. Jewellery line would qualify Gold under the jewellery rule (wax-carved in-studio, cast at Just Castings, Hatton Garden, recycled sterling silver) but is a minority of the range. Area-level pin on the published Blackhorse Road studio; Companies House registered office (15225945) is residential and deliberately not used. Gold reachable on appeal if deadstock mill origins are published and UK.",
+    "tier_confidence": "high",
+    "category": "clothing",
+    "instagram": "https://www.instagram.com/momahilo/",
+    "logo": "assets/logos/moma-hilo.png",
+    "source": "user-suggestion-verified-2026-09",
+    "product_tags": [
+      "womenswear",
+      "dresses",
+      "coats & jackets",
+      "suits & trousers"
+    ],
+    "nation": "England",
+    "county": "London",
+    "email": "studio@momahilo.com"
   }
 ]

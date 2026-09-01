@@ -1373,5 +1373,10 @@
     "id": "zatchels",
     "public_note": "Your bags are handmade to order in Leicester by Britannia Hide, and the leather is described as coming from a Scottish tannery. Because that tannery isn't named, it isn't something we could confirm. Gold needs the main material tanned in the UK.",
     "tier_question": "Which Scottish tannery supplies your leather?"
+  },
+  {
+    "id": "moma-hilo",
+    "public_note": "Everything you make is sewn in London by MAES London and Fashion Studio 85, and your buttons and trims are UK-made too — that's more of your supply chain named publicly than most brands your size manage. What we couldn't establish is where your deadstock cloth was originally woven, since Last Yarn, The Materialist and Woolcrest Textiles all supply surplus of mixed origin. Gold needs the main fabric itself milled, woven or knitted in the UK.",
+    "tier_question": "Do you know which mills your deadstock fabrics originally came from, and are any of them UK mills?"
   }
 ]

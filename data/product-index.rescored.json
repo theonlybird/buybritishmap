@@ -26697,5 +26697,63 @@
   "checked": "2026-08-01",
   "rescored": false,
   "alreadyGated": true
+ },
+ "moma-hilo": {
+  "id": "moma-hilo",
+  "shopify": true,
+  "platform": "shopify",
+  "vocabVersion": 6,
+  "productCount": 41,
+  "tags": [
+   "bags & leather goods",
+   "coats & jackets",
+   "dresses",
+   "scarves & accessories",
+   "suits & trousers",
+   "womenswear"
+  ],
+  "tagConfidence": {
+   "bags & leather goods": "weak",
+   "coats & jackets": "weak",
+   "dresses": "weak",
+   "scarves & accessories": "weak",
+   "suits & trousers": "weak",
+   "womenswear": "weak"
+  },
+  "tagCounts": {
+   "suits & trousers": 4,
+   "womenswear": 3,
+   "scarves & accessories": 4,
+   "coats & jackets": 2,
+   "dresses": 4,
+   "jewellery": 5,
+   "bags & leather goods": 2
+  },
+  "tagEvidence": {
+   "suits & trousers": "Deadstock Cotton Twill Margaret Blazer Ready to ship",
+   "womenswear": "Bridal Ivory Silk Iris Skirt Made-to-order",
+   "scarves & accessories": "Ruffle Collar | Neck Accessory + Waist Tie Ready to ship",
+   "coats & jackets": "Black Deadstock Taffeta Edie Jacket Pre-Order Ready to ship",
+   "dresses": "Augusta Dress Pre-Order",
+   "jewellery": "Lala Ring Pre-Order",
+   "bags & leather goods": "Lozza Bag Ready to ship"
+  },
+  "gatedOut": [
+   "jewellery"
+  ],
+  "observedTypes": [],
+  "sample": [
+   "Deadstock Cotton Dale Pant",
+   "Deadstock Sheer Kate Top",
+   "Deadstock Cotton Twill Margaret Blazer",
+   "Bridal Ivory Silk Dale Pant",
+   "Bridal Ivory Silk Margaret Blazer",
+   "Bridal Veil In Ivory Crinkle Taffeta",
+   "Crinkle Taffeta Ruffle Cuffs",
+   "Bridal Ivory Silk Lilian Halter Top"
+  ],
+  "checked": "2026-09-01",
+  "rescored": false,
+  "alreadyGated": true
  }
 }
