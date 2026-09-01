@@ -24,16 +24,30 @@ from note_draft import draft
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, '.note-review')
 
+# Silver notes were rewritten properly (second person, the gap named, the Gold
+# bar stated) and fact-checked against evidence_note. Where a rewrite exists it
+# beats the mechanical draft; note_draft.py still covers Gold and anything new.
+REWRITTEN = {}
+_rw = os.path.join(ROOT, 'data', 'public-note-drafts.json')
+if os.path.exists(_rw):
+    REWRITTEN = {x['id']: x for x in json.load(open(_rw))}
+
 rows = []
 for r in json.load(open(os.path.join(ROOT, 'data', 'businesses.json'))):
     d = draft(r)
+    rw = REWRITTEN.get(r['id'])
+    if rw:
+        d = {'public': rw['public_note'], 'ask': rw.get('tier_question', ''), 'flags': []}
     rows.append({
         'id': r['id'], 'name': r['name'], 'tier': r['tier'],
         'cat': r.get('category', ''), 'conf': r.get('tier_confidence', ''),
         'internal': r.get('evidence_note', ''),
         'public': d['public'], 'ask': d['ask'], 'flags': d['flags'],
     })
-rows.sort(key=lambda x: (not x['flags'], x['tier'] != 'silver', x['name']))
+# Silver first: those are the notes that carry risk and that Theo actually has
+# to read. The remaining flags sit on Gold records still on the mechanical
+# draft, which is the least urgent group -- good news, tersely put.
+rows.sort(key=lambda x: (x['tier'] != 'silver', not x['flags'], x['name']))
 
 HTML = """<!doctype html><html><head><meta charset="utf-8">
 <title>Tier reasons — review</title>

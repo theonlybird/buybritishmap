@@ -1,0 +1,1377 @@
+[
+  {
+    "id": "1882-ltd",
+    "public_note": "Your work is produced in Stoke-on-Trent across five clay bodies, including bone china. Where those bodies are sourced isn't something we could confirm publicly. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Where are your five clay bodies sourced or prepared?"
+  },
+  {
+    "id": "Ernespie-farm-shop",
+    "public_note": "What we could see of your site is a garden centre, gift shop and café. What we couldn't establish is how much of what you sell is your own or British produce. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is produce from your own farm or from British growers?"
+  },
+  {
+    "id": "abe-house",
+    "public_note": "You state that every step, from fabric sourcing to the final stitch, happens within the UK, and your pattern cutter is named. What we couldn't establish is where the fabric is milled, as no mill is named. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves or knits your fabric?"
+  },
+  {
+    "id": "adam-buick",
+    "public_note": "Your pots are made in Pembrokeshire, and some of the work uses materials gathered locally. What we couldn't establish is where the base clay body comes from. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Where is the base clay body for your pots dug or prepared?"
+  },
+  {
+    "id": "adkn",
+    "public_note": "You set up your own design and production studio in London in 2018 and make there. Your fabrics are sourced from Europe, with some accessories from Asia. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do any of your fabrics come from a UK mill, and which one?"
+  },
+  {
+    "id": "aero-leather",
+    "public_note": "Your jackets are hand-made at Greenbank Mill in Galashiels. The hides, though, are American front-quarter and Italian vegetable-tanned horsehide. Gold needs the main material, here the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned hides, and if so which tannery?"
+  },
+  {
+    "id": "akiko-hirai",
+    "public_note": "Your work is made at your own London studio. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British as well as the forming and firing.",
+    "tier_question": "Where is the clay you use dug or prepared?"
+  },
+  {
+    "id": "albert-thurston",
+    "public_note": "Your braces are made and finished in Leicester, and some of the jacquard silk facings are woven in Devon. What we couldn't establish is where the elastic webbing that forms the main material is made. Gold needs that main material woven in the UK.",
+    "tier_question": "Who weaves your elastic webbing, and where?"
+  },
+  {
+    "id": "alie-street",
+    "public_note": "Your entire dress collection is made in Britain, at your Surrey studios and with named UK garment specialists. Some of your jerseys come from British mills, but none is named, so the cloth origin isn't something we could confirm. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which British mills supply your jersey?"
+  },
+  {
+    "id": "alt-berg",
+    "public_note": "You make boots in two factories — Richmond in Yorkshire, which handles specialist and small-batch orders, and Treviso in Italy. What we couldn't establish is where the leather is tanned. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which tanneries supply the leather for your Richmond-made boots?"
+  },
+  {
+    "id": "and-daughter",
+    "public_note": "Your yarn is spun by Todd & Duncan in Scotland, which is exactly the British spinning we look for. The knitting is split between makers in the Scottish Borders and in Donegal, and we couldn't establish how much is done here. Gold needs the garments knitted in the UK too.",
+    "tier_question": "What proportion of your knitwear is knitted in the Scottish Borders?"
+  },
+  {
+    "id": "anderson-sheppard",
+    "public_note": "Your garments are made bespoke in London. The cloth is the client's choice, so where it is woven isn't something we could confirm. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mills supply most of the cloth you make up, and are any of them British?"
+  },
+  {
+    "id": "anordain",
+    "public_note": "You make your own enamel dials and assemble your watches in Glasgow, which is watchmaking done here. The movements themselves are Swiss. Gold needs the movement made in the UK, not only fitted and finished here.",
+    "tier_question": "Are any parts of your movements made in the UK, and if so which?"
+  },
+  {
+    "id": "anta",
+    "public_note": "Your stoneware is made and hand-painted at your own pottery at Fearn. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British as well as the making.",
+    "tier_question": "Where is the clay for your stoneware dug or prepared?"
+  },
+  {
+    "id": "arthur-sleep",
+    "public_note": "Your footwear is hand-made by artisans in Northampton. What we couldn't establish is where the velvet, cashmere and suede come from. Gold needs the main materials woven, spun or tanned in the UK.",
+    "tier_question": "Who supplies your velvet, cashmere and suede, and where are they made?"
+  },
+  {
+    "id": "awling",
+    "public_note": "Everything is cut, sewn and assembled by hand in Derbyshire, with your buckles cast at a foundry in northern England. The leather itself is Italian vegetable-tanned. Gold needs the main material, here the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "ballydougan-pottery",
+    "public_note": "Your ware is handmade at the Ballydougan workshops in Co. Armagh. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British as well as the making.",
+    "tier_question": "Where is the clay you use dug or prepared?"
+  },
+  {
+    "id": "barbour",
+    "public_note": "Your waxed jackets are made in South Shields. Many other products in the range are made elsewhere, so we couldn't take the brand as British-made across the board. Gold needs the main fabric woven in the UK as well as the making.",
+    "tier_question": "Who weaves the cloth for your South Shields-made jackets?"
+  },
+  {
+    "id": "barker-shoes",
+    "public_note": "Your shoes are hand-lasted and hand-sewn at the Earls Barton factory. The upper calf is European, and the soles are cut from Italian-tanned bends. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Is any of your upper or sole leather tanned in the UK, and by whom?"
+  },
+  {
+    "id": "barnwell-footwear",
+    "public_note": "Your footwear is made in your own Kettering workshop, and you say all components are sourced in the UK. No tannery is named publicly, so we couldn't confirm where the leather itself is tanned. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which tannery supplies your leather?"
+  },
+  {
+    "id": "barrington-ayre",
+    "public_note": "Your tailoring is cut and made by a Savile Row-trained tailor in your Cirencester workroom, including cloth from the William Bliss mill in Wiltshire. Your bespoke shirts, though, are made in France. Gold needs everything you sell to be made in the UK.",
+    "tier_question": "Is there a UK-made option for your bespoke shirts, and who makes it?"
+  },
+  {
+    "id": "batch-ldn",
+    "public_note": "Your garments are hand made to order in London, which keeps the whole of the tailoring here. The cloth itself is premium Italian fabric, so we couldn't establish any UK-woven material. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you offer any cloth woven in the UK, and from which mill?"
+  },
+  {
+    "id": "been-london",
+    "public_note": "Most of your bags are handmade at your own East London workshop with a bag maker you have worked with for years. The recycled leather, nylon and polyester have no named origin, so we couldn't establish where they are made. Gold needs the main material, the leather, made or tanned in the UK.",
+    "tier_question": "Who supplies your recycled leather, and where is it made?"
+  },
+  {
+    "id": "belleek-pottery",
+    "public_note": "All of your making happens at the Belleek works in County Fermanagh. What we couldn't establish is where the minerals for your parian body are sourced. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Where are the minerals for your parian body sourced and prepared?"
+  },
+  {
+    "id": "bennett-winch",
+    "public_note": "Everything is made in England, between your Hackney workshop and a factory in Carlisle. The leather, though, is Tuscan hide from Italian tanneries. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned hide, and if so which tannery?"
+  },
+  {
+    "id": "benson-and-clegg",
+    "public_note": "Your garments are entirely made in England, hand cut and hand made in your own Piccadilly Arcade workrooms. What we couldn't confirm is whether the merchant cloth is woven in the UK. Gold needs the main cloth woven here.",
+    "tier_question": "Which mills weave the cloth you cut from?"
+  },
+  {
+    "id": "big-fox-apparel",
+    "public_note": "Your clothes are handmade in the North East of England, with fabric sourced in the UK through a small independent local manufacturer. Where that cloth is actually milled isn't something we could confirm. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves or knits the fabric you buy?"
+  },
+  {
+    "id": "billingham",
+    "public_note": "Your bags are made in England from real leather and solid brass. What we couldn't confirm is where the canvas and FibreNyte are woven — neither is clearly milled in the UK. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Who weaves your canvas and FibreNyte, and where?"
+  },
+  {
+    "id": "blackhorse-lane",
+    "public_note": "Everything is made in London. The denim itself, though, is mostly imported. Gold needs the main fabric — here, the denim — woven in the UK.",
+    "tier_question": "Do you use any UK-woven denim, and if so which mill?"
+  },
+  {
+    "id": "blue-nude",
+    "public_note": "Your sustainability page names your UK makers — Fabrika, London Sewing Services, Adamley of Langley, Loop Studio and Another Knitted Thing in Manchester — which is unusually open. What we couldn't establish is where your fabric is milled. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Which mill weaves or knits your main fabric?"
+  },
+  {
+    "id": "bodnant-welsh-food",
+    "public_note": "Your estate produce is the heart of what you do, alongside a restaurant and a cookery school. The wine cellar, though, stocks premium varieties from all over the world. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own estate or British produce?"
+  },
+  {
+    "id": "borgh-pottery",
+    "public_note": "Your work has been made at the Borgh Pottery workshop on the Isle of Lewis since 1974. Where the clay body comes from isn't stated publicly, so we couldn't confirm it. Gold needs the clay itself dug or prepared in the UK, alongside the making.",
+    "tier_question": "Where is your clay dug or prepared?"
+  },
+  {
+    "id": "bowhill-and-elliott",
+    "public_note": "All the clicking, closing and hand-lasting happens in your Norwich workshop. What we couldn't establish is where the velvet and leather for the uppers are milled and tanned. Gold needs the main material woven or tanned in the UK.",
+    "tier_question": "Who weaves your velvet and who tans your upper leather?"
+  },
+  {
+    "id": "bremont",
+    "public_note": "Cases and movement components are assembled and finished at your Henley workshop. What we couldn't establish is a movement fully made in the UK rather than built up from imported parts. Gold needs the movement itself manufactured here.",
+    "tier_question": "Which movement parts are manufactured in the UK, and by whom?"
+  },
+  {
+    "id": "brickett-davda",
+    "public_note": "Everything is handmade at your East Sussex studio. What we couldn't establish is where your clay body is dug or prepared. Gold needs that clay body to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "bridge-pottery",
+    "public_note": "Your pots are made and wood-fired at Cheriton. The stoneware clay, though, comes from St Amand in France. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Do you use any British-dug clay alongside the St Amand body, and if so whose?"
+  },
+  {
+    "id": "bridgedale",
+    "public_note": "Your socks are knitted and finished at your own factory in Newtownards. What we couldn't establish is where the yarn is spun. Gold needs the yarn spun in the UK as well as knitted here.",
+    "tier_question": "Who spins your yarn, and where?"
+  },
+  {
+    "id": "british-boxers",
+    "public_note": "You manufacture in both Great Britain and Europe. What we couldn't establish is which lines are made here, or where any of the fabric is woven or knitted. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Which mill weaves or knits the fabric for your British-made lines?"
+  },
+  {
+    "id": "british-sheepskin",
+    "public_note": "Every coat is hand-cut and made to order in Somerset. The skins are imported merino, Toscana and Mongolian shearling. Gold needs the main material tanned in the UK.",
+    "tier_question": "Do you use any British-tanned sheepskin, and if so which tannery?"
+  },
+  {
+    "id": "broadland-slippers",
+    "public_note": "Your slippers are hand-cut and lasted in Norwich using traditional methods. What we couldn't establish is where the velvets and leathers come from, as that isn't stated publicly. Gold needs the main materials woven or tanned in the UK.",
+    "tier_question": "Who supplies your velvet and leather, and where are they woven and tanned?"
+  },
+  {
+    "id": "brookhouse-pottery",
+    "public_note": "Everything is made at your Denbigh workshop. What we couldn't establish is where the clay body is dug or prepared. Gold needs that clay body to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "budd-shirts",
+    "public_note": "Your ready-to-wear and made-to-measure shirts are cut and sewn in your own Andover workroom. The shirtings come from Swiss and Italian mills. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you offer any shirtings woven at a UK mill, and which mill is it?"
+  },
+  {
+    "id": "buffalo-systems",
+    "public_note": "Everything is still sewn at your Sheffield factory. The Pertex, though, has been made in Japan since Perseverance Mills in Padiham closed in 2005. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do any of your ranges use a UK-woven fabric, and which mill weaves it?"
+  },
+  {
+    "id": "cambridge-satchel",
+    "public_note": "Your bags are made in your own Leicestershire factory, and two of your leather suppliers are UK tanneries. Some of the leather also comes from a Dutch supplier. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which of your bags are made entirely with leather from your two UK tanneries?"
+  },
+  {
+    "id": "campbell-cole",
+    "public_note": "Your leather goods are made in England. The vegetable-tanned leather itself comes from Italy. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "cara-and-the-sky",
+    "public_note": "Your knitwear is made in the UK at a SEDEX-approved manufacturer in Leicester. The acrylic, nylon and recycled cotton yarns aren't claimed as UK-spun, so that wasn't something we could confirm. Gold needs the yarn spun in the UK.",
+    "tier_question": "Who spins the yarn your knitwear is made from?"
+  },
+  {
+    "id": "carl-stuart-tailors",
+    "public_note": "Every garment is constructed wholly in the UK. Because the cloth is chosen by the client it can be British or imported, often Italian, so a UK-woven cloth isn't something we could confirm across the board. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which British mills do you offer cloth from?"
+  },
+  {
+    "id": "carrier-company",
+    "public_note": "Your clothes are made by hand in Norfolk. Where the fabric is woven isn't something we could confirm. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Who weaves the fabric for your clothes, and where?"
+  },
+  {
+    "id": "charl-knitwear",
+    "public_note": "Your knitwear is crafted in England and Italy, with the UK knitting done at a small Nottinghamshire factory and other pieces knitted in Perugia. What we couldn't establish is UK spinning or knitting across the whole range. Gold needs the main yarn spun, woven or knitted in the UK.",
+    "tier_question": "Who spins the yarn for your Nottinghamshire-knitted pieces?"
+  },
+  {
+    "id": "charles-laurie",
+    "public_note": "Every piece is designed and made by hand at your own workshop in Rutland. What we couldn't establish is where your leather is tanned, as no tannery or leather source is named. Gold needs the main material, the leather, tanned in the UK.",
+    "tier_question": "Which tannery supplies your leather?"
+  },
+  {
+    "id": "chris-keenan",
+    "public_note": "Your work is thrown and fired at your London studio, and the porcelain you are known for is Limoges. That means the clay body comes from France rather than Britain. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Do you use any British-prepared porcelain body, and if so whose?"
+  },
+  {
+    "id": "churchill-china",
+    "public_note": "Your tableware is manufactured in Stoke-on-Trent, which is about as rooted as British pottery gets. Where the clay body is sourced isn't something we could find stated publicly. Gold needs the clay body dug or prepared in the UK as well as the making.",
+    "tier_question": "Where is the clay body for your tableware dug or prepared?"
+  },
+  {
+    "id": "churchs",
+    "public_note": "Your men's welted shoes are still wholly manufactured at the Northampton factory. The uppers, though, use Western European calf rather than UK-tanned hide. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned hide, and if so which tannery?"
+  },
+  {
+    "id": "clare-haggas",
+    "public_note": "Your scarves are hand-finished in England, with the hems rolled by a team of artisans. Where the silk itself is woven isn't stated publicly. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your silk?"
+  },
+  {
+    "id": "cobbs-farm-shop",
+    "public_note": "You sell your own produce alongside food from local suppliers. What we couldn't establish is how much of the broader general range is British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "cocoove",
+    "public_note": "Your clothes are made in the UK, at your own studio and with British manufacturers, and most of your fabrics are sourced in the North West. Where that cloth is actually woven or knitted isn't stated publicly. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Which mill weaves or knits the fabrics you source in the North West?"
+  },
+  {
+    "id": "colenimo",
+    "public_note": "Most of your pieces are made in the UK, by a small number of makers and workshops. What we couldn't establish is where your Irish linen, tweed and sheepskin are milled and tanned. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Where are your linen and tweed woven?"
+  },
+  {
+    "id": "cordings",
+    "public_note": "Your signature covert coat is made in England from cloth woven for you by Fox Brothers in Somerset. Across the wider range, though, the mills and makers are both British and overseas. Gold needs the main cloth woven in the UK throughout.",
+    "tier_question": "Which lines beyond the covert coat use British-woven cloth?"
+  },
+  {
+    "id": "cotswold-pottery",
+    "public_note": "Your pots are thrown and fired in your studio in Bourton-on-the-Water. Where the clay comes from isn't something we could find stated, so we couldn't confirm it. Gold needs the clay body dug or prepared in the UK as well as the making.",
+    "tier_question": "Where is the clay you use dug or prepared?"
+  },
+  {
+    "id": "cowdray-farm-shop",
+    "public_note": "Your estate butchery and local sourcing are the heart of the shop. Alongside them, the deli and fine-food range takes in wider continental lines that aren't British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "craigies-farm",
+    "public_note": "Your own fruit, veg and butchery are the heart of the shop. Alongside them the food hall carries teas, coffees, wines, gins and gift lines, and we couldn't establish how much of that wider range is British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "crail-pottery",
+    "public_note": "Every piece is thrown, decorated, glazed and fired at your Crail workshops, so the whole making happens in one place. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British.",
+    "tier_question": "Where is the clay you throw with dug or prepared?"
+  },
+  {
+    "id": "cravat-club",
+    "public_note": "Your cravats are made from start to finish in England, including weaving the raw silk. What we couldn't find is a named mill or facility for that weaving stage. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which mill weaves your silk?"
+  },
+  {
+    "id": "crease-studios",
+    "public_note": "Everything is handmade at your Deptford studio, in peace silk and organic cotton. What we couldn't establish is where those fabrics are milled, as no mill is named publicly. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your peace silk and organic cotton?"
+  },
+  {
+    "id": "crockett-jones",
+    "public_note": "Your shoes have been made in Northampton since 1879, which is about as established as British shoemaking gets. The calf leather, though, is typically imported rather than British-tanned. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "crown-northampton",
+    "public_note": "Your shoes are made in your own Northampton factory, and some upper leather comes from C.F. Stead. Alongside it, uppers are sourced from tanneries worldwide, including Horween in Chicago. Gold needs the main material, the upper leather, tanned in the UK.",
+    "tier_question": "Which of your styles use UK-tanned upper leather throughout?"
+  },
+  {
+    "id": "cwt-clothing",
+    "public_note": "You have been manufacturing in your own family factory in Leicester since 1972, in Supima and organic cotton. Where that fabric is milled isn't something we could confirm. Gold needs the main fabric spun or woven in the UK, though imported raw cotton is fine.",
+    "tier_question": "Which mill spins or weaves your cotton?"
+  },
+  {
+    "id": "daffodil-and-leek",
+    "public_note": "Each piece is designed, patterned, cut and sewn by you in your North Yorkshire studio, from vintage and reclaimed cloth. Where that cloth was originally woven isn't stated, so it isn't something we could confirm. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you know where any of your vintage and reclaimed cloth was originally woven?"
+  },
+  {
+    "id": "daltons-england",
+    "public_note": "Your goods are wholly handmade in your Milton workshop in Somerset and in London. The hides, though, are Italian calf. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "dartmoor-shoemakers",
+    "public_note": "Your shoes are hand-made to order in your Devon workshop. The leather, as you state, is Italian. Gold needs the main material, the leather, tanned in the UK.",
+    "tier_question": "Do you offer any styles in British-tanned leather, and from which tannery?"
+  },
+  {
+    "id": "darts-farm",
+    "public_note": "You grow your own vegetables and raise Ruby Red cattle, and you were one of the first farm shops in the country to do it this way. The food hall has since grown to carry some imported artisan lines alongside them. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of your food hall range is British?"
+  },
+  {
+    "id": "darzi",
+    "public_note": "Your clothing has been made in England since 2015. The cloth comes from independent mills across the UK and Europe, so we couldn't establish that the main fabric is milled here. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mills weave your cloth, and which of them are in the UK?"
+  },
+  {
+    "id": "david-mellor",
+    "public_note": "Your cutlery is made in your own Round Building factory at Hathersage, and has been since 1990. Where the stainless steel strip itself comes from isn't published, so we couldn't confirm it. Gold needs the main material — here the steel — made in the UK.",
+    "tier_question": "Who supplies your stainless steel strip, and where is it rolled?"
+  },
+  {
+    "id": "david-nieper",
+    "public_note": "Design and manufacture happen entirely in your own Alfreton factory, never offshored, and recognised by the 2020 Queen's Award for British Manufacturer of the Year. What we couldn't establish is where the fabric is milled, as no mill is named. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Which mills weave or knit your fabric?"
+  },
+  {
+    "id": "daylesford",
+    "public_note": "Your own organic farm produce is the heart of what you sell. Alongside it you stock specialist imports, including wine and deli lines that aren't British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "de-winter",
+    "public_note": "Your boots are hand-cut and Goodyear-welted by contract makers in Northamptonshire, in the heart of British shoemaking. The leather isn't specified publicly, so we couldn't establish where it is tanned. Gold needs the main material, the leather, tanned in the UK.",
+    "tier_question": "Which tannery supplies the leather for your boots?"
+  },
+  {
+    "id": "dents",
+    "public_note": "Your heritage gloves are handmade at your own Warminster factory, and the hairsheep is tanned here. The deerskin comes from New York tanneries and the lambskin from India. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which gloves in the range are made from UK-tanned leather?"
+  },
+  {
+    "id": "des-merrion",
+    "public_note": "You personally cut and make every bespoke garment on site. The cloth comes from a mix of merchants, and not all of it is milled in the UK. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which UK mills weave the cloths you use most often?"
+  },
+  {
+    "id": "drakes",
+    "public_note": "Your pieces are made in England. The silk and cloth are imported, often from Italy. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you use any UK-woven silk or cloth, and which mill weaves it?"
+  },
+  {
+    "id": "dreaming-of-ivy",
+    "public_note": "Each dress is hand-made to order in the founder's Devon studio. Where your cotton cloth is woven isn't stated publicly, so it isn't something we could confirm. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your cotton?"
+  },
+  {
+    "id": "drmartens-mie",
+    "public_note": "Your Made in England line is made in Wollaston, Northamptonshire. The leather is imported, and the wider range is largely made abroad. Gold needs the main material — the leather — tanned in the UK.",
+    "tier_question": "Who tans the leather for your Made in England line?"
+  },
+  {
+    "id": "duckworth-prestex",
+    "public_note": "Your watches are designed and tested in Bolton. The movements are imported. Gold needs the piece itself made in the UK from raw metal, rather than assembled from imported components.",
+    "tier_question": "Who makes your cases and dials, and where?"
+  },
+  {
+    "id": "eden-pottery",
+    "public_note": "Your ware is made and decorated at your studio in Millisle. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British as well as the making.",
+    "tier_question": "Where is the clay you use dug or prepared?"
+  },
+  {
+    "id": "edinbane-pottery",
+    "public_note": "All of your ware is made at the workshop on Skye. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay body itself to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "edward-green",
+    "public_note": "Your shoes are made in Northampton. The calf leather is imported. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Is any of your calf leather tanned in the UK, and if so by which tannery?"
+  },
+  {
+    "id": "elgar-shirts",
+    "public_note": "Your shirts are handmade in your own workshop in Abergavenny, in natural fabrics. What we couldn't establish is where those fabrics are woven, since no origin is stated publicly. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your shirting fabric?"
+  },
+  {
+    "id": "ella-griffee",
+    "public_note": "You make every garment yourself at your Falmouth studio, in linen and organic cotton. Where those cloths are woven isn't stated publicly, so we couldn't confirm it. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your linen and organic cotton?"
+  },
+  {
+    "id": "elliot-brown-watches",
+    "public_note": "Your watches are designed, tested and assembled in your own workshop in Poole, which is more making than most. The movements come from Switzerland or Japan. Gold needs the piece itself made in the UK from raw metal, rather than assembled from imported components.",
+    "tier_question": "Beyond assembly, which components are made in the UK for you, and by whom?"
+  },
+  {
+    "id": "emma-alington",
+    "public_note": "Everything is made in the UK — in your Berkshire studio, working with craftsmen in Stoke. What we couldn't establish is where your black stoneware clay is dug or prepared. Gold needs the clay body itself to be British.",
+    "tier_question": "Where is your black stoneware clay dug or prepared?"
+  },
+  {
+    "id": "emma-willis",
+    "public_note": "Your shirts are made in Gloucester. The cloth is typically Swiss or Italian cotton rather than UK-woven. Gold needs the main fabric woven in the UK, though imported raw cotton is fine.",
+    "tier_question": "Do you offer any shirting woven in the UK, and which mill weaves it?"
+  },
+  {
+    "id": "empire-jeans",
+    "public_note": "You are based in the Midlands and making around a thousand pairs of jeans a week, which is real production at scale. What we couldn't establish is where your denim is woven, as no mill is named. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your denim?"
+  },
+  {
+    "id": "english-fine-cottons",
+    "public_note": "Your clothing is designed, cut, sewn and finished in the UK. Since the spinning here ceased in 2024, the cloth is bought in, and we couldn't establish where it is now spun or woven. Gold needs the main fabric spun, woven or knitted in the UK.",
+    "tier_question": "Who supplies your fabric, and where is it spun or woven?"
+  },
+  {
+    "id": "english-utopia",
+    "public_note": "Every jacket is designed, patterned, cut and sewn by hand in your own York workshops. Your waxed cotton, Ventile and tweed come from mills in Europe, and we couldn't confirm any of them as UK-woven. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your waxed cotton, Ventile and tweed?"
+  },
+  {
+    "id": "errington-reay",
+    "public_note": "Every pot is thrown and salt-fired at Bardon Mill, and the works historically drew on clay mined nearby. Where the clay comes from now isn't stated publicly. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Where is the clay you use today dug or prepared?"
+  },
+  {
+    "id": "everbound-goods",
+    "public_note": "Your belts are hand-cut in Bristol. Across the range, though, the Tuscany belt uses Italian vegetable-tanned leather brought in through a UK merchant. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Which tannery supplies the leather for each belt in your range?"
+  },
+  {
+    "id": "faith-rowan-leeves",
+    "public_note": "Orders are cut by hand in your Brighton studio and sewn by home-based seamstresses. Your hero 100% flax fabric, though, is designed and made by a Lithuanian supplier. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do you use any UK-woven cloth, and which mill weaves it?"
+  },
+  {
+    "id": "farer-watches",
+    "public_note": "Your watches are designed in Oxfordshire, and that design work is clearly your own. The movements and the assembly are Swiss. Gold needs the piece itself made in the UK from raw metal, rather than assembled abroad from imported components.",
+    "tier_question": "Is any part of the watch — cases, dials or hands — manufactured in the UK, and by whom?"
+  },
+  {
+    "id": "farndon-fields-farm-shop",
+    "public_note": "You grow your own produce and run one of England's largest farm shops, with a full restaurant alongside it. The shelves also carry specialist wines, dips and mustards, and bedding plants. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "fawn-and-freda",
+    "public_note": "All your garments are made in London, with the smocking and embroidery done by hand by you. What we couldn't establish is where the fabric is woven, as no mill is named. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves your fabric?"
+  },
+  {
+    "id": "fears-watches",
+    "public_note": "Your watches are assembled at your own premises in Bristol. The movements are Swiss, and beyond assembly we couldn't establish what else is made or finished in your workshop. Gold needs the movement itself made in the UK.",
+    "tier_question": "What is made or finished in your Bristol workshop besides assembly?"
+  },
+  {
+    "id": "findra-clothing",
+    "public_note": "Sixty per cent of your range is made in the UK and thirty per cent in China, and you set that split out openly on your own manufacturing page. Your Seamless Performance wool is Australian and spun in Italy. Gold needs the main fabric spun or knitted in the UK.",
+    "tier_question": "Is any of your yarn spun in the UK, and by which spinner?"
+  },
+  {
+    "id": "fitch-and-mcandrew",
+    "public_note": "Everything is made at your workshop in Galloway. Where your red earthenware body comes from isn't stated publicly. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Where is your red earthenware clay dug or prepared?"
+  },
+  {
+    "id": "forage-farm-shop",
+    "public_note": "Your own butchery is the heart of the shop. The deli counter, though, offers Continental cheeses and charcuterie alongside the Welsh and British ones. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is Welsh or British produce?"
+  },
+  {
+    "id": "fortis-clothing",
+    "public_note": "Everything is handmade to order in Devon. Publicly you state that you aim to buy all fabric in the UK, which is a sourcing aim rather than confirmation of where the cloth is milled. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mills supply your fabric, and are any of them UK mills?"
+  },
+  {
+    "id": "fox-umbrellas",
+    "public_note": "Each umbrella is hand-made to order at your Croydon factory. What we couldn't establish is where the canopy cloth is woven. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Who weaves your canopy cloth, and where?"
+  },
+  {
+    "id": "foxology",
+    "public_note": "All of your products are manufactured in the UK, with the knitting done in Leicester in merino yarn. What we couldn't establish is where that yarn is spun. Gold needs the main yarn spun in the UK as well as knitted here.",
+    "tier_question": "Who spins your merino yarn, and where?"
+  },
+  {
+    "id": "freddies-of-pinewood",
+    "public_note": "Your garments are labelled Made in England and manufactured at your Essex premises. What we couldn't establish is where the denim itself is woven. Gold needs the main fabric — here, the denim — woven in the UK.",
+    "tier_question": "Which mill weaves your denim?"
+  },
+  {
+    "id": "furious-goose",
+    "public_note": "Your pieces are printed and finished in the UK by printers based in Macclesfield. Where the base cloth is woven isn't something we could confirm. Gold needs the main fabric woven in the UK as well as printed here.",
+    "tier_question": "Which mill weaves the base cloth you print on?"
+  },
+  {
+    "id": "garsons",
+    "public_note": "You grow your own pick-your-own produce, which is about as direct as food gets. Alongside it sits a wide garden-centre and general range that isn't all British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "garstin-1871",
+    "public_note": "Your pieces are handmade in your Gloucestershire workshop. The leather, though, is tanned at the La Perla Azzurra tannery in Tuscany. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "gaziano-girling",
+    "public_note": "Your shoes are made in Kettering, in the heart of Northamptonshire shoemaking. The leather, though, is imported. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "geoff-stocker",
+    "public_note": "Your silks are digitally printed by R A Smart of Macclesfield and your dressing gowns constructed by Fabrika London. Where the base silk is woven isn't stated publicly. Gold needs the main fabric woven in the UK as well as printed and made here.",
+    "tier_question": "Which mill weaves the base silk you print on?"
+  },
+  {
+    "id": "george-cleverley",
+    "public_note": "Your shoes are cut and made in your Mayfair workshop. What we couldn't establish is where the calf and exotic leathers are tanned. Gold needs the main material — the leather — tanned in the UK.",
+    "tier_question": "Which tanneries supply your calf leather?"
+  },
+  {
+    "id": "ghhurt",
+    "public_note": "Your knitwear is knitted and hand-finished in your own Nottingham factory. The merino yarn comes from spinners in both Britain and Italy, so we couldn't confirm that a given piece is knitted from UK-spun yarn. Gold needs the main yarn spun in the UK.",
+    "tier_question": "Which pieces use British-spun yarn, and who spins it?"
+  },
+  {
+    "id": "gina",
+    "public_note": "All your footwear is hand-crafted at your own factory in London. The leathers you use are Italian, so we couldn't find any UK-tanned material in the uppers. Gold needs the main material, here the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "gloagburn-farm-shop",
+    "public_note": "Your own beef, pork and eggs are the heart of the shop. Alongside them you carry a bought-in national grocery range and wines, with a coffee shop and a separate gift shop. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "globe-trotter",
+    "public_note": "Your cases are made in the UK, and the fibreboard body itself is made here too. The leather trim, though, is imported. Gold needs the main materials, trim included, made or tanned in the UK.",
+    "tier_question": "Who tans the leather for your trim, and is any of it British?"
+  },
+  {
+    "id": "glosters-pottery",
+    "public_note": "Everything is hand-thrown in your workshop in Porthmadog. What we couldn't establish is where your clay body is dug or prepared. Gold needs the clay to be British as well as the forming and firing.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "gloverall",
+    "public_note": "Your Heritage Collection is stated as made in England, and that is clear. For the wider range we couldn't establish UK making, and the Original Monty uses Italian wool. Gold needs the main cloth woven in the UK and the garments made here.",
+    "tier_question": "Which coats are made in the UK, and whose cloth are they cut from?"
+  },
+  {
+    "id": "goat-shed-farm-shop",
+    "public_note": "Your own goat's cheese is genuine own production. Around it, the shelves, freezers, gifts and skincare are bought in, and we couldn't establish that those lines are British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of your bought-in shelves is British?"
+  },
+  {
+    "id": "goodnight-irene",
+    "public_note": "Your pieces are handmade in London in silk and heritage tweed. What we couldn't establish is who weaves that cloth: no mill is named, and some of the material is deadstock of unspecified origin. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your tweed?"
+  },
+  {
+    "id": "green-thomas",
+    "public_note": "Your knitwear is made in Scotland and carries RWS certification. Your spinner is described as a Scottish yarn mill dating from 1876, but it isn't named, so that wasn't something we could confirm. Gold needs the yarn spun in the UK.",
+    "tier_question": "Which Scottish mill spins your yarn?"
+  },
+  {
+    "id": "grenfell",
+    "public_note": "All your garments are made in your own east London factory. What we couldn't establish is where Grenfell Cloth is woven now, since Lodge Mill in Burnley. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves Grenfell Cloth today, and where is it?"
+  },
+  {
+    "id": "grenson",
+    "public_note": "Your G:One and G:Zero collections are made wholly at the Rushden factory. Other lines have their uppers sewn in India, so only part of the range is made in England. Gold needs the whole range made in the UK from UK-tanned leather.",
+    "tier_question": "Which lines are made wholly at Rushden, and where is the leather for them tanned?"
+  },
+  {
+    "id": "gushlow-cole",
+    "public_note": "All your design, sampling and production happens in your Kent workshop or within thirty miles of it. The shearling, though, is tanned by Iberian tanneries. Gold needs the main material tanned in the UK.",
+    "tier_question": "Do you use any British-tanned shearling, and if so which tannery?"
+  },
+  {
+    "id": "gwili-pottery",
+    "public_note": "Every piece is individually made and hand-painted at your Carmarthenshire pottery. Where the clay body is dug or prepared isn't something we could confirm. Gold needs the clay body itself to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "hackney-gt",
+    "public_note": "Your jerseys and kit are made at a Lancashire factory you have worked with since 2014. The fabric itself comes from a pro-team supplier in Belgium. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Is any of your jersey fabric knitted in the UK, and by which mill?"
+  },
+  {
+    "id": "hawarden-estate-farm-shop",
+    "public_note": "Your own veg, milk and honey are the heart of the shop. Alongside them you carry a bought-in Provision Merchant grocery range, imported enamelware, homewares and a gift shop. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "heather-borg",
+    "public_note": "Every bag is handmade in your Manchester studio. The Badalassi Carlo leather you work with is tanned in Italy. Gold needs the main material, here the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "hebtroco",
+    "public_note": "Your clothing is made in the UK, using the best fabrics and trims you can get hold of. What we couldn't establish is which of that cloth is British, since the mix includes imported cloth too. Gold needs the main fabric milled, spun or woven in the UK.",
+    "tier_question": "Which of your lines use British-milled cloth, and who mills it?"
+  },
+  {
+    "id": "hemingsworth",
+    "public_note": "Around 90% of your garments are produced at your own London factory. Trade reporting we found says the fabrics are woven in Portugal with trims from Italy, and we couldn't find anything to establish UK weaving. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you use any UK-woven cloth, and from which mill?"
+  },
+  {
+    "id": "henry-poole",
+    "public_note": "Your suits are cut and made bespoke in London. Because the cloth is the client's choice, where it is woven isn't something we could confirm. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mills supply most of the cloth you make up, and are any of them British?"
+  },
+  {
+    "id": "henry-watsons-potteries",
+    "public_note": "Your own kitchenware ranges are made at the Wattisfield works and marked Made in England. Your clay body is described elsewhere as Staffordshire clay, but that isn't stated by you, so it isn't something we could confirm. Gold needs the clay body dug or prepared in the UK.",
+    "tier_question": "Who supplies your clay body, and where is it dug or prepared?"
+  },
+  {
+    "id": "hiut-denim",
+    "public_note": "Your jeans are cut and sewn in Wales. The denim itself is typically woven abroad, in Japan or Italy. Gold needs the main fabric woven in the UK, though imported raw cotton is no obstacle.",
+    "tier_question": "Who weaves your denim, and where?"
+  },
+  {
+    "id": "hollies-farm-shop",
+    "public_note": "You work with more than seventy local suppliers, which is a real commitment to the area. Alongside that, the shop is complemented by food from other regions and abroad. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is British?"
+  },
+  {
+    "id": "house-of-cheviot",
+    "public_note": "Your knitwear is made in Hawick, in the heart of Borders knitting. The Australian merino, though, is spun in Italy and the cashmere combed in Mongolia. Gold needs the yarn spun in the UK — imported raw fibre is fine, provided the spinning happens here.",
+    "tier_question": "Do you use any UK-spun yarn, and if so which spinner?"
+  },
+  {
+    "id": "hurdwick-handmade-bag-company",
+    "public_note": "Your bags are hand cut and made at your Tavistock workshop, from hides bought from family firms in Somerset and Twickenham. What we couldn't confirm is whether either firm tans the leather itself. Gold needs the main material tanned in the UK.",
+    "tier_question": "Do your Somerset and Twickenham suppliers tan the hides themselves, and if not, which tannery does?"
+  },
+  {
+    "id": "hyde-and-hare",
+    "public_note": "Your bags are hand cut and handcrafted in England. The hides, though, are sourced from suppliers around the world, with no UK tannery named. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned hides, and if so which tannery?"
+  },
+  {
+    "id": "iona-montgomery",
+    "public_note": "Your hats are hand finished in London by you. The wool felt and silk you work with have no named UK source that we could find. Gold needs the main material made in the UK.",
+    "tier_question": "Who supplies your wool felt and silk, and where is it made?"
+  },
+  {
+    "id": "isle-of-wight-pottery",
+    "public_note": "You run a working pottery and teaching studio at Freshwater on the Isle of Wight. What we couldn't establish is where your clay body is dug or prepared. Gold needs the clay itself to be British, alongside the forming and firing.",
+    "tier_question": "Where is your clay dug or prepared?"
+  },
+  {
+    "id": "ivy-and-rigg",
+    "public_note": "Your British range is knitted by a family mill in the Midlands, from wool that comes through a spinner in the North Pennines. Other items are made in Bangladesh and China. Gold needs the whole range made in the UK.",
+    "tier_question": "Which of your lines are made entirely in the UK?"
+  },
+  {
+    "id": "j-alex-swift",
+    "public_note": "Your socks are knitted at your own Hathern factory on a mix of vintage and modern machines. What we couldn't establish is where the yarn is spun. Gold needs the yarn spun in the UK.",
+    "tier_question": "Who spins your yarn, and where?"
+  },
+  {
+    "id": "jack-doherty",
+    "public_note": "Your work is made and soda-fired in Cornwall. Where the porcelain body comes from isn't something we could confirm. Gold needs the clay body dug or prepared in the UK as well as the making and firing.",
+    "tier_question": "Where is the porcelain body you use prepared?"
+  },
+  {
+    "id": "jadd-shoes",
+    "public_note": "Your shoes are made in your family workshop in Suffolk. The leather on your headline models, though, is Horween from Chicago. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "james-tilla-waters",
+    "public_note": "Your pots are made at your workshop in Carmarthenshire. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British, alongside the making.",
+    "tier_question": "Where is the clay you use dug or prepared?"
+  },
+  {
+    "id": "jane-hamlyn",
+    "public_note": "Your pots are made and salt-fired at Everton. What we couldn't establish is where the clay body is dug or prepared. Gold needs that clay body to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "jane-hopkinson",
+    "public_note": "You and your husband make everything from start to finish in the workshop yourselves. The leathers, though, are obtained from Italy. Gold needs the main material, here the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "joe-and-co-denim",
+    "public_note": "One of your lines is woven on 1950s Northrop shuttle looms in Lancashire and then cut and stitched in the North West. Your other lines, though, use cloth from Japanese and Italian mills. Gold needs the main fabric woven in the UK across the range.",
+    "tier_question": "Which Lancashire mill weaves your shuttle-loom denim?"
+  },
+  {
+    "id": "john-lobb-ltd",
+    "public_note": "Your shoes are wholly hand-made in your London workshop. The calf is bought in from Continental tanneries, and we couldn't find a UK tannery among them. Gold needs the main material, the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned calf, and if so which tannery?"
+  },
+  {
+    "id": "john-pollex",
+    "public_note": "Your pots are thrown and decorated at your own studio in Plymouth. What we couldn't establish is where the clay body itself is dug or prepared. Gold needs the clay to be British as well as the making.",
+    "tier_question": "Where is the clay you throw with dug or prepared?"
+  },
+  {
+    "id": "joseph-cheaney",
+    "public_note": "Your shoes are made in Desborough. The calf leather is typically imported. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Which tannery supplies your calf leather, and is any of it British-tanned?"
+  },
+  {
+    "id": "juju-footwear",
+    "public_note": "Your shoes are injection-moulded in your own Northampton factory. The materials are described as sourced in England, which tells us where they were bought rather than where they were made. Gold needs the main material produced in the UK.",
+    "tier_question": "Who makes the material you injection-mould, and where is it made?"
+  },
+  {
+    "id": "justine-tabak",
+    "public_note": "All your collections are made in England. Your fabrics come from several different sources, and we couldn't confirm that the main one is milled in the UK. Gold needs the main fabric woven or knitted here.",
+    "tier_question": "Which mill supplies your main fabric?"
+  },
+  {
+    "id": "kaely-russell",
+    "public_note": "Everything is designed and handmade in Devon, in linen, Tencel and wool, including end-of-roll fabrics. What we couldn't establish is where those fabrics are woven, as no UK mill is named. Gold needs the main fabric spun or woven in the UK.",
+    "tier_question": "Which mill weaves the linen and wool you sew with?"
+  },
+  {
+    "id": "kate-sheridan",
+    "public_note": "Your pieces are cut at a Dalston factory and assembled in your Clapton workshop, alongside makers in Kent and Suffolk. The leather is Italian vegetable-tanned. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "katharina-klug",
+    "public_note": "Your work is made at your studio in Cambridge. Where the porcelain body is prepared isn't stated publicly. Gold needs the clay body dug or prepared in the UK, alongside the forming and firing.",
+    "tier_question": "Who prepares the porcelain body you work with, and where?"
+  },
+  {
+    "id": "kilnford-farm-shop",
+    "public_note": "Your own Galloway beef and lamb are the heart of the shop. Alongside them the deli carries speciality cheeses and olives, plus a crafts and gifts range, and we couldn't establish how much of that wider range is British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "kipper",
+    "public_note": "All your pieces are made in London. What we couldn't establish is where your linen and stripe cloths are woven, as no mill is named. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which mill weaves your linen and stripe cloths?"
+  },
+  {
+    "id": "lady-v-london",
+    "public_note": "You have worked with the same London factory since 2013, with your own pattern cutters and machinists. Where your stretch jersey is knitted isn't stated publicly, so it isn't something we could confirm. Gold needs the main fabric knitted or woven in the UK.",
+    "tier_question": "Who knits your stretch jersey, and where?"
+  },
+  {
+    "id": "lambland",
+    "public_note": "Your union-flagged products are manufactured in Britain. Where the materials come from is not something we could confirm — your own British Made page says they may be sourced from the rest of the world. Gold needs the main material milled or tanned in the UK.",
+    "tier_question": "Which of your materials are milled or tanned in the UK, and by whom?"
+  },
+  {
+    "id": "leah-may-tailors",
+    "public_note": "Every garment is made by hand in your own Hertfordshire workshop. What we couldn't establish is where your suiting cloth is woven, as no mill is named. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which mill weaves your suiting cloth?"
+  },
+  {
+    "id": "leather-satchel-co",
+    "public_note": "Your satchels are hand-made in the family workshop in Knowsley, and some of your leather comes from British tanneries. Other leathers come from Italian and Dutch tanneries, along with Horween cordovan. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which of your ranges use British-tanned leather throughout, and which tannery supplies it?"
+  },
+  {
+    "id": "libby-london",
+    "public_note": "Over 70% of your clothes are made in the UK, and you run a dedicated British Made collection. What we couldn't establish is which factory makes them or which mill weaves the fabric. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves the fabric for your British Made collection?"
+  },
+  {
+    "id": "lilyberry",
+    "public_note": "Everything is handmade in Sussex. What we couldn't establish is where your printed jersey and French terry are knitted, as no UK mill or knitter is named. Gold needs the main fabric knitted or woven in the UK.",
+    "tier_question": "Who knits your jersey and French terry?"
+  },
+  {
+    "id": "loake",
+    "public_note": "Your core Goodyear-welted ranges are made in Kettering. The leather is imported, and some other lines are made overseas, so which ranges are wholly British isn't something we could confirm. Gold needs the main material — the leather — tanned in the UK.",
+    "tier_question": "Who tans the leather for your Kettering-made ranges?"
+  },
+  {
+    "id": "lock-and-co-hatters",
+    "public_note": "Your hats are prepared and finished in your London shop. Because you work with hat manufacturers in Spain, Belgium and the UK, we couldn't confirm where the felt bodies themselves are made. Gold needs the main material made in the UK.",
+    "tier_question": "Which of your felt hat bodies are made in the UK, and by whom?"
+  },
+  {
+    "id": "lockwood-smocks",
+    "public_note": "Your smocks are handmade in Barnstaple. What we couldn't establish is where the PU-coated Cordura nylon is woven. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Who weaves and coats your Cordura, and where?"
+  },
+  {
+    "id": "lola-starr",
+    "public_note": "You manufacture in the UK, making bespoke pieces in-house in Liverpool alongside two UK partners. The ECONYL regenerated nylon and TENCEL Modal are both imported. Gold needs the main fabric spun, woven or knitted in the UK.",
+    "tier_question": "Is any of your fabric knitted or woven in the UK, and by which mill?"
+  },
+  {
+    "id": "london-tradition",
+    "public_note": "Every coat is cut, sewn and finished by hand at your Wallis Road factory. The signature double-faced duffle cloth, though, is Italian. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you use any British-woven cloth, and if so which mill?"
+  },
+  {
+    "id": "lottie-and-lysh",
+    "public_note": "Your clothes are handmade in-house by your own team of seamstresses in Cornwall. The fabrics come from family-run print houses that aren't named, so we couldn't establish where the cloth itself is woven or knitted. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Who knits or weaves the base cloth your fabrics are printed on?"
+  },
+  {
+    "id": "lpol",
+    "public_note": "Everything is handmade in your London and Kent workshops from vegetable-tanned leather. What we couldn't establish is which tannery supplies it, as the specialist suppliers span the UK and Europe and none is named. Gold needs the leather tanned in the UK.",
+    "tier_question": "Which tannery supplies your vegetable-tanned leather?"
+  },
+  {
+    "id": "macangus-and-wainwright",
+    "public_note": "Your garments are handmade in London to an individual pattern cut for each client. What we couldn't establish is where the cloth is woven, as no mill or supplier is named. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which mill weaves the cloth you use?"
+  },
+  {
+    "id": "mackintosh",
+    "public_note": "Your coats are hand-made in Scotland. The bonded cotton they are made from is produced in Japan. Gold needs the main fabric woven or bonded in the UK.",
+    "tier_question": "Do you make any coats from UK-woven cloth, and which mill supplies it?"
+  },
+  {
+    "id": "macknade",
+    "public_note": "You source strongly from local producers, which shows in what is on the shelves. Alongside that sits a large continental and imported fine-food range. Gold needs a shop like yours to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is British?"
+  },
+  {
+    "id": "mamnick",
+    "public_note": "Most of your inventory is manufactured in South Yorkshire. The Black Label line is made in Japan, and we couldn't establish where the leather is tanned. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which tannery supplies the leather for your South Yorkshire-made goods?"
+  },
+  {
+    "id": "marloe-watch-company",
+    "public_note": "Your watches are designed and tested in Perthshire, and that work is genuinely done there. The movements, though, are imported. Gold needs the piece itself made in the UK from raw metal, rather than built up from imported components.",
+    "tier_question": "Is any part of a Marloe watch manufactured in the UK, and by which workshop?"
+  },
+  {
+    "id": "marvin-browne",
+    "public_note": "Your pieces are designed and made by you and your small team in London. The fabrics come from a mix of UK and Italian sources, and we couldn't establish which cloth goes into which garment. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which of your fabrics are woven in the UK, and at which mill?"
+  },
+  {
+    "id": "maze-hill-pottery",
+    "public_note": "Your pots are thrown and soda-fired in Greenwich. Where the clay body is dug or prepared isn't stated publicly. Gold needs the clay body itself to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "mckees-country-store",
+    "public_note": "Your own beef, pork and veg sit at the centre of the shop, alongside a one-stop range of bakery, dairy, deli, groceries and frozen foods. What we couldn't establish is how much of that wider range is British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "meandthee",
+    "public_note": "Your patterns are designed and all your garment production happens in your West Yorkshire studio. The fabrics come from both the UK and Europe, including Italy, so we couldn't establish that the main cloth is British. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which of your fabrics are woven in the UK, and at which mill?"
+  },
+  {
+    "id": "mhulot",
+    "public_note": "Your bags are made in England, by a maker in Margate and a factory in Leicestershire. The vegetable-tanned leather in the main collection is processed in Tuscany. Gold needs the main material, here the leather, tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "mille-saisons",
+    "public_note": "Everything is made in small batches in your Sussex studio, from Grade A mulberry silk. Where that silk is woven isn't stated publicly, so it isn't something we could establish. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Where is your mulberry silk woven?"
+  },
+  {
+    "id": "moghrabi",
+    "public_note": "Your bespoke suits are made in England with full canvas construction and a great deal of hand-sewing. The mill behind your cloth isn't named anywhere we could find. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which mill weaves the cloth you use?"
+  },
+  {
+    "id": "moloh",
+    "public_note": "You have designed and manufactured exclusively in the UK since 2003, drawing on British mill archives. What we couldn't establish is which mill weaves the cloth you use now. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill weaves your cloth today?"
+  },
+  {
+    "id": "moorcroft",
+    "public_note": "All of your making happens in Stoke-on-Trent. What we couldn't establish is where your clay body is dug or prepared, which isn't stated publicly. Gold needs the clay body itself to be British.",
+    "tier_question": "Where is the clay for your pottery dug or prepared?"
+  },
+  {
+    "id": "nadinoo",
+    "public_note": "Every piece is cut and sewn in-house in your Rutland studio. Your linen, though, comes from a supplier's factory in Lithuania. Gold needs the main fabric spun or woven in the UK.",
+    "tier_question": "Do you use any UK-woven linen or other British cloth, and which mill weaves it?"
+  },
+  {
+    "id": "nattily-dressed",
+    "public_note": "Your manufacturing moved to Leicester in 2021 and you visit the factory regularly. The Polartec recycled polyester in your garments isn't something we could confirm as UK-milled. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Where is your Polartec fabric knitted or woven?"
+  },
+  {
+    "id": "netherton-foundry",
+    "public_note": "Your pans are spun in-house on 1920s lathes in Shropshire and finished with British oak handles. Where the iron sheet itself comes from isn't something we could establish. Gold needs the main material — here the iron — made in the UK.",
+    "tier_question": "Who supplies your iron sheet, and where is it made?"
+  },
+  {
+    "id": "new-balance-uk",
+    "public_note": "Your trainers are assembled in Flimby, Cumbria. The suede and mesh they are built from are imported. Gold needs the main materials made in the UK.",
+    "tier_question": "Who supplies your suede and mesh, and is any of it made in the UK?"
+  },
+  {
+    "id": "newton-farm-foods",
+    "public_note": "Your home-reared meat is the heart of the shop. Alongside it you carry delicatessen lines, artisan pantry staples, wines, spirits, crafts and homewares. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "nicola-werner",
+    "public_note": "Your pieces are made and painted at your Devon workshop. What we couldn't establish is where the earthenware body is dug or prepared. Gold needs the clay itself to be British as well as the making.",
+    "tier_question": "Where is your earthenware body dug or prepared?"
+  },
+  {
+    "id": "nomadic-watches",
+    "public_note": "Your watches are hand-assembled in Belfast, which is assembled in the UK. The Sellita movements inside them are Swiss. Gold needs the movement itself made in the UK.",
+    "tier_question": "Are any components in your watches made in the UK, and if so which?"
+  },
+  {
+    "id": "norman-walsh",
+    "public_note": "Your footwear is made in Bolton. The materials, though, come from outside the UK. Gold needs the main material made or tanned here.",
+    "tier_question": "Which of your materials are made in the UK, and who supplies them?"
+  },
+  {
+    "id": "o-pioneers",
+    "public_note": "Your pieces are hand-crafted in Camden through small London ateliers and seamstresses. What we couldn't establish is where your Liberty prints and heritage deadstock were woven. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Where is the cloth for your Liberty prints and deadstock woven?"
+  },
+  {
+    "id": "oliver-spencer",
+    "public_note": "You manufacture primarily in the UK and Portugal, and you have a named British Made collection. What we couldn't establish is where the cloth for that collection is milled. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mills supply the cloth for your British Made collection?"
+  },
+  {
+    "id": "orraman-leather",
+    "public_note": "Everything is hand-cut, stitched and finished at your own workshop in Ardrishaig. The leather itself comes from Badalassi Carlo in Italy or Horween in the USA. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "otway-orford",
+    "public_note": "Your pocket squares are digitally printed, hand-rolled and hand-sewn by a leading Macclesfield maker. What we couldn't establish is where the mulberry silk twill is woven, as that isn't stated publicly. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Where is your mulberry silk twill woven?"
+  },
+  {
+    "id": "owen-barry",
+    "public_note": "Your pieces have been cut and sewn at the Street factory since 1948. The materials are described as British or European with the tanneries unnamed, so we couldn't confirm where the leather is tanned. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which tanneries supply your leather and sheepskin?"
+  },
+  {
+    "id": "oxford-blue",
+    "public_note": "Your named wax jackets are made in Birmingham from British Millerain waxed cotton milled in Lancashire, which is exactly the kind of sourcing we look for. The wider range, though, comes from China, Pakistan, India and Portugal. Gold needs the main material UK-milled across the range.",
+    "tier_question": "What proportion of your range is made in the UK from UK-milled cloth?"
+  },
+  {
+    "id": "pajotten",
+    "public_note": "Every garment is hand-cut and hand-sewn by you. A mill in Leicestershire supplies part of your cloth but isn't named, and we found no UK weaving claim for your hemp, tencel and linen. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mill in Leicestershire weaves your cloth?"
+  },
+  {
+    "id": "palava",
+    "public_note": "Your clothes are made in a family-run factory in Barking. The printed fabrics, though, are woven, dyed and printed in Turkey. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do you have any fabric woven or printed at a UK mill, and which mill is it?"
+  },
+  {
+    "id": "paul-brown",
+    "public_note": "Your shirts are hand cut and sewn at your own factory in Brandon, and you name your mills openly — Brisbane Moss among them is English. The bulk of the shirting, though, comes from Monti in Italy and Sotkas in Turkey. Gold needs the main fabric woven in the UK.",
+    "tier_question": "What share of your shirting comes from Brisbane Moss or other UK mills?"
+  },
+  {
+    "id": "paul-james-knitwear",
+    "public_note": "Your knitwear is crafted in your own family-owned factories, and you keep a distinct Made in England range. Production is split between England and India, though, rather than being wholly British. Gold needs the whole range made in the UK.",
+    "tier_question": "Which of your ranges are knitted entirely in England, and in which factory?"
+  },
+  {
+    "id": "paulin-watches",
+    "public_note": "Your watches are designed and hand-assembled in your Glasgow studio, which is real work done here. The movement inside them is imported. Gold needs the piece itself made in the UK from raw metal, rather than assembled from imported components.",
+    "tier_question": "Which parts of your watches are made in the UK, and by whom?"
+  },
+  {
+    "id": "penny-simpson",
+    "public_note": "Everything is made at your workshop in Moretonhampstead. What we couldn't establish is where the clay body is dug or prepared. Gold needs the clay itself to be British, alongside the forming, firing and glazing.",
+    "tier_question": "Where is the clay you use dug or prepared?"
+  },
+  {
+    "id": "peper-harow",
+    "public_note": "Your socks are knitted at your own factory in West Sussex. What we couldn't establish is where the cotton and cashmere yarn is spun — imported raw fibre is fine, but the spinning is the part that counts. Gold needs the yarn spun in the UK.",
+    "tier_question": "Who spins your cotton and cashmere yarn?"
+  },
+  {
+    "id": "percy-stride",
+    "public_note": "Your shoes are made for you by a small family-run factory in Northampton. Where the leather is tanned isn't stated publicly, so it isn't something we could confirm. Gold needs the main material, the leather, tanned in the UK.",
+    "tier_question": "Which tannery supplies your leather?"
+  },
+  {
+    "id": "pickett-london",
+    "public_note": "Everything is made in England from start to finish in small specialist workshops, and your larger items use British bridle hide. Much of the rest of the range, though, uses New Zealand deerskin and other imported skins. Gold needs the main material tanned in the UK.",
+    "tier_question": "How much of your range is made from British-tanned hide?"
+  },
+  {
+    "id": "pinion-watches",
+    "public_note": "Your watches are designed and hand-finished in Oxfordshire. The movements are imported. Gold needs the piece itself made in the UK from raw metal, rather than finished or assembled from imported components.",
+    "tier_question": "Are any Pinion parts manufactured in the UK, and which workshop makes them?"
+  },
+  {
+    "id": "pittch",
+    "public_note": "You have made a point of using only British manufacturers for your merino socks. What we couldn't establish is where the merino is spun, as that isn't stated publicly. Gold needs the yarn spun in the UK.",
+    "tier_question": "Who spins your merino yarn?"
+  },
+  {
+    "id": "portmeirion",
+    "public_note": "The sets marked Made in England are made in Stoke-on-Trent, in a pottery town you have long been part of. Other pieces and ranges are made overseas. Gold needs the whole range formed, fired and glazed in the UK, from a British clay body.",
+    "tier_question": "Which of your ranges are made in Stoke-on-Trent, and where is the clay body for them dug or prepared?"
+  },
+  {
+    "id": "priory-farm-estate",
+    "public_note": "Your Surrey estate grows seasonal crops and you sell meat from local farms, which is real own and local production. The food hall selection is broad, though, and we couldn't establish that all of it is British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Is everything in your food hall British, and if not, which lines aren't?"
+  },
+  {
+    "id": "rach-x",
+    "public_note": "Most of your garments are made in Bishop Auckland and Birmingham, and you say so plainly. Your FAQ also notes that the fabric is currently imported. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do you use any UK-milled fabric in any line, and if so which mill?"
+  },
+  {
+    "id": "red-shoes-ruth-emily-davey",
+    "public_note": "Ruth hand-cuts and makes every pair herself in Wales, and your soles are English-tanned. The main upper leather, though, is imported Italian full-grain. Gold needs the main material, here the upper leather, tanned in the UK.",
+    "tier_question": "Do you offer any shoes with British-tanned uppers, and from which tannery?"
+  },
+  {
+    "id": "reworked-348",
+    "public_note": "Your garments are cut and sewn in Derby on vintage machines, using archived cloths from heritage mills. Those mills span both the UK and Europe, and we couldn't establish which of the cloths are British. Gold needs the main cloth woven in the UK.",
+    "tier_question": "Which of your archive cloths come from UK mills, and which mills are they?"
+  },
+  {
+    "id": "risdon-and-risdon",
+    "public_note": "Your aprons are designed and handmade in the Shrewsbury workshop, with metalware from a British foundry. The denim itself comes from the Candiani mill near Milan. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Do you use any UK-woven denim, and if so which mill?"
+  },
+  {
+    "id": "riverford",
+    "public_note": "What you sell is organic and largely British. Out-of-season lines such as citrus are imported. Gold needs the produce to be effectively all British.",
+    "tier_question": "Roughly what proportion of what you sell across the year is British-grown?"
+  },
+  {
+    "id": "rock-and-ruby",
+    "public_note": "Your socks are made in the UK by craftspeople who have been making socks for decades. The organic cotton and wool come from certified suppliers who aren't named, so we couldn't establish where the yarn is spun. Gold needs the yarn spun in the UK.",
+    "tier_question": "Who spins your cotton and wool yarn?"
+  },
+  {
+    "id": "rolf-skeldon",
+    "public_note": "Your items are made in Wales, from GOTS organic cotton. Where that cotton is spun and woven isn't stated publicly, so it isn't something we could confirm. Gold needs the main fabric spun or woven in the UK, though imported raw cotton is fine.",
+    "tier_question": "Which mill spins and weaves your organic cotton?"
+  },
+  {
+    "id": "royal-crown-derby",
+    "public_note": "Everything is manufactured at your Osmaston Road factory in Derby. What we couldn't find is where the ingredients for your bone china body are sourced. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Where are the ingredients for your bone china body sourced and prepared?"
+  },
+  {
+    "id": "rye-pottery",
+    "public_note": "Everything is made by hand in Rye. What we couldn't establish is where your clay body currently comes from. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "sami-k",
+    "public_note": "Every piece is made in your home studio in Cornwall. Your GOTS-certified fabrics, though, are produced by a family mill in Kerala. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do you use any UK-woven fabric, and if so which mill?"
+  },
+  {
+    "id": "samuel-groves",
+    "public_note": "Your cookware has been manufactured at the Birmingham works since 1817, which is a long run of British making. The supplier of the tri-ply clad sheet isn't disclosed, so we couldn't confirm where it is made. Gold needs the main material — here the clad sheet — made in the UK.",
+    "tier_question": "Who supplies your tri-ply clad sheet, and where is it rolled?"
+  },
+  {
+    "id": "samuel-staniforth",
+    "public_note": "Your knives are genuinely forged and finished at Smithfield Works in Sheffield, as they have been since 1864. The only blade steel sourcing we could find points to France. Gold needs the main material — the steel — made in the UK.",
+    "tier_question": "Do any of your ranges use British-made steel, and which mill supplies it?"
+  },
+  {
+    "id": "sanders-sanders",
+    "public_note": "Your entire collection is Goodyear-welted at the family's Spencer Road factory. What we couldn't establish is where the upper leather is tanned, as that isn't stated publicly. Gold needs the main material, the leather, tanned in the UK.",
+    "tier_question": "Which tannery supplies your upper leather?"
+  },
+  {
+    "id": "sandy-brown",
+    "public_note": "Your work is made at your Appledore studio in Devon. What we couldn't establish is where the clay body is dug or prepared. Gold needs that clay body to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "sarvin",
+    "public_note": "Your pieces are made in the UK by your own in-house dressmaking team. The fabrics are handpicked from around the world, and we couldn't find any of them evidenced as UK-woven. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do any of your fabrics come from a UK mill, and which one?"
+  },
+  {
+    "id": "sasha-wardell",
+    "public_note": "Your work is slip-cast and finished at your Wiltshire studio. What we couldn't establish is where your bone china body is made. Gold needs the clay body itself prepared in the UK.",
+    "tier_question": "Who supplies your bone china body, and where is it prepared?"
+  },
+  {
+    "id": "savernake-knives",
+    "public_note": "Your knives are hand-crafted at a converted sawmill near Marlborough with British timber handles, and the DNA range uses British steel from Stocksbridge. Across the wider range, though, the blade steel is Swedish. Gold needs the main material — the steel — made in the UK.",
+    "tier_question": "Which of your ranges are made with the Stocksbridge British steel?"
+  },
+  {
+    "id": "secretts",
+    "public_note": "You grow your own produce, and that is the heart of the shop. Alongside it sits a wide gourmet range that includes imported lines. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own or British produce?"
+  },
+  {
+    "id": "sheepland",
+    "public_note": "Everything is handmade start to finish at your Somerset workshop, and the sheepskin is genuinely British. What we couldn't establish is where that sheepskin is tanned, as no tannery is named. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which tannery tans your British sheepskin?"
+  },
+  {
+    "id": "solovair",
+    "public_note": "Your boots are made in Wollaston, Northamptonshire. The leather is imported. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Which tannery supplies your leather, and is any of it British?"
+  },
+  {
+    "id": "soma-sportswear",
+    "public_note": "Your products are manufactured in the UK, in London. The TENCEL Modal fibre comes from European forests, and we couldn't find where it is spun or knitted into cloth. Gold needs the main fabric spun, woven or knitted in the UK.",
+    "tier_question": "Who knits or weaves your TENCEL Modal fabric, and where?"
+  },
+  {
+    "id": "stalf",
+    "public_note": "Every garment is hand-cut, sewn, finished and packed at your Caistor studio, mainly in GOTS organic cotton. Where that cotton is milled isn't stated publicly. Gold needs the main fabric spun and woven or knitted in the UK.",
+    "tier_question": "Where is your GOTS organic cotton spun and woven?"
+  },
+  {
+    "id": "stansted-park",
+    "public_note": "You source strongly from local producers, and it shows across the shop. The deli range, though, takes in charcuterie and cheeses that aren't British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of your deli range is British?"
+  },
+  {
+    "id": "strawberry-fields-farm-shop",
+    "public_note": "You grow a great deal of your own produce, and that own-grown base is the heart of the shop. Alongside it the deli sells olives, and the pantry, gift and hamper ranges take in lines we couldn't confirm as British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of your pantry and deli range is British?"
+  },
+  {
+    "id": "sub-zero",
+    "public_note": "Your base layers are knitted on seamless circular machines at your own factory in Leicestershire. Where the polyamide yarn is spun isn't something we could confirm. Gold needs the yarn itself spun in the UK.",
+    "tier_question": "Who spins the polyamide yarn you knit with?"
+  },
+  {
+    "id": "sue-paraskeva",
+    "public_note": "Your porcelain is made on the Isle of Wight. Where the porcelain body is prepared isn't something we could confirm. Gold needs the clay body dug or prepared in the UK as well as the making.",
+    "tier_question": "Who prepares the porcelain body you work with, and where?"
+  },
+  {
+    "id": "sue-pryke",
+    "public_note": "Your work is handmade in Britain at your Leicestershire studio. Where the porcelain body comes from isn't stated publicly. Gold needs the clay body itself dug or prepared in the UK.",
+    "tier_question": "Who supplies your porcelain body, and where is it prepared?"
+  },
+  {
+    "id": "sunspel",
+    "public_note": "Your garments are made in Long Eaton, Derbyshire. Imported raw cotton is no obstacle, but where the fabric is knitted isn't something we could confirm. Gold needs the main fabric knitted or woven in the UK.",
+    "tier_question": "Who knits the fabric for your garments, and where?"
+  },
+  {
+    "id": "swaine",
+    "public_note": "Your goods are hand-stitched at the Sawston factory and the Brigg umbrellas are made in Cambridgeshire. You describe the leather as English bridle leather; with no tannery named, we weren't able to confirm where it is tanned. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which tannery supplies your English bridle leather?"
+  },
+  {
+    "id": "tain-pottery",
+    "public_note": "Your pots are hand-thrown and decorated in your own studio in Tain. What we couldn't establish is where the clay itself is dug or prepared. Gold needs the clay body to be British as well as the making.",
+    "tier_question": "Where is the clay you throw with dug or prepared?"
+  },
+  {
+    "id": "taylors-eye-witness",
+    "public_note": "A good deal of your output is still made in Sheffield. Alongside it there is significant production overseas on the lower-priced lines, and we couldn't find evidence of British steel in any of the ranges. Gold needs the main material — the steel — made in the UK.",
+    "tier_question": "Which ranges are made in Sheffield, and who supplies the steel for them?"
+  },
+  {
+    "id": "the-bathrobe-company",
+    "public_note": "Your robes are handmade in England under the Makin & Lloyd name, which has traded since 1946, and are designed in Italy. What we couldn't establish is where the towelling itself is woven. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves your towelling?"
+  },
+  {
+    "id": "the-bradford-sock-company",
+    "public_note": "Your socks are knitted on site at your own mill in Bradford, which is real mill work in a mill town. What we couldn't establish is where the wool yarn is spun. Gold needs the yarn itself spun in the UK as well as knitted here.",
+    "tier_question": "Who spins your wool yarn, and where?"
+  },
+  {
+    "id": "the-british-belt-company",
+    "public_note": "Your belts are designed and manufactured end to end at the Rutland factory. What we couldn't establish is where the leather is tanned, as the sourcing is described by Leather Working Group approval rather than by tannery. Gold needs the leather tanned in the UK.",
+    "tier_question": "Which tanneries supply your leather, and are any of them in the UK?"
+  },
+  {
+    "id": "the-cambridge-sock-company",
+    "public_note": "Your socks are knitted in Britain, and you are clear about where the fibre comes from — Peru, South Africa and Portugal. Imported fibre is fine; what we couldn't establish is who spins it, as no mill is named. Gold needs the yarn spun in the UK.",
+    "tier_question": "Which mill spins your yarn?"
+  },
+  {
+    "id": "the-cotton-london",
+    "public_note": "Your Made in England collection is cut and stitched in Leicester and embroidered in Nottingham. The cotton itself is grown in the USA and spun, woven and dyed in Turkey. Gold needs the main fabric spun or woven in the UK, though imported raw cotton is fine.",
+    "tier_question": "Is any of your cotton spun or woven in the UK, and by which mill?"
+  },
+  {
+    "id": "the-moleskin-jeans-co",
+    "public_note": "You have been manufacturing jeans in the North of England since the 1990s, which is a long run of British making. What we couldn't establish is where your cloth is woven, as the mills aren't named. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Which mills weave your cloth?"
+  },
+  {
+    "id": "the-pattern-guild",
+    "public_note": "Your pieces are made in England and screen-printed in your London studio. The weaving and spinning are described as English, but with no mill, town or partner named we couldn't confirm them. Gold needs the yarn spun and the cloth woven or knitted in the UK.",
+    "tier_question": "Which mill spins and weaves your cloth?"
+  },
+  {
+    "id": "the-well-worn",
+    "public_note": "Everything is cut, sewn and finished in-house at your own Winchester studio. Your fabric is deadstock and vintage material, and where it was originally milled isn't something we could confirm. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do you know which mills wove any of your deadstock fabric?"
+  },
+  {
+    "id": "thorndale",
+    "public_note": "Your goods are handcrafted in your own Staffordshire factory, and the waxed styles use British waxed cotton, which counts for a lot. What isn't stated publicly is where the ballistic nylon is woven. Gold needs the main material made in the UK.",
+    "tier_question": "Who weaves your ballistic nylon, and where?"
+  },
+  {
+    "id": "tiffany-rose",
+    "public_note": "Your pieces are produced by a small team of garment specialists at your own Surrey studio. What we couldn't establish is where the jersey, silk and chiffon are woven or knitted. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Which mills supply your jersey, silk and chiffon?"
+  },
+  {
+    "id": "torramor",
+    "public_note": "Your range is designed, tested and made in the UK, from recycled material and organic cotton. What we couldn't establish is where that cloth is woven, since no mill or weaver is named. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves the fabric for your range?"
+  },
+  {
+    "id": "trickers",
+    "public_note": "Your shoes are made in Northampton. The calf leather, though, generally comes from European tanneries rather than British ones. Gold needs the main material — here, the leather — tanned in the UK.",
+    "tier_question": "Do you use any British-tanned leather, and if so which tannery?"
+  },
+  {
+    "id": "trough-farm-shop",
+    "public_note": "Your Kitchen Garden fruit and vegetables, Silchester Farm eggs and the Wingless Eagle gin distilled for you in Berkshire are real own production. Alongside them you sell coffee, which can't be British, and a wine range we couldn't confirm as English. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Is your wine range English-only, and if so which producers do you stock?"
+  },
+  {
+    "id": "turnbull-asser",
+    "public_note": "Your shirts are made in Gloucester. The cloth is imported, from Italy and Switzerland. Gold needs the main fabric woven in the UK, though imported raw cotton is fine.",
+    "tier_question": "Which mill weaves your shirting, and do you use any woven in the UK?"
+  },
+  {
+    "id": "tusting",
+    "public_note": "Your bags are made in the UK, and some of the leather is English. Other pieces use Italian leather, so British leather throughout isn't something we could confirm. Gold needs the leather tanned in the UK.",
+    "tier_question": "Which of your bags are made entirely from English-tanned leather?"
+  },
+  {
+    "id": "tutti-frutti-clothing",
+    "public_note": "Everything is designed, cut and sewn in the founder's Letchworth studio, with a seamstress in Watford. What we couldn't establish is where your organic cotton jersey is knitted, as no mill is named. Gold needs the main fabric knitted or woven in the UK.",
+    "tier_question": "Which mill knits your organic cotton jersey?"
+  },
+  {
+    "id": "umpie-handbags",
+    "public_note": "Each bag is handcrafted by you in your Northallerton studio. What we couldn't establish is where your William Morris and kilim-print fabrics are woven, or where the leather for your straps is tanned. Gold needs the main material milled or tanned in the UK.",
+    "tier_question": "Who weaves your William Morris and kilim-print fabrics?"
+  },
+  {
+    "id": "violets-in-may",
+    "public_note": "Each piece is hand-made by you in the UK, one at a time. The tiki and Hawaiian print fabrics, though, are sourced from around the world, including Hawaii. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do any of your prints come from a UK mill, and which one?"
+  },
+  {
+    "id": "vivien-of-holloway",
+    "public_note": "Your FAQ states plainly that all your garments are made in London. What we couldn't establish is where the fabric itself is woven, as no mill is named. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves your fabric?"
+  },
+  {
+    "id": "walter-keeler",
+    "public_note": "Everything is made at your Monmouthshire workshop. Where the clay body is dug or prepared isn't stated publicly. Gold needs the clay body itself to be British.",
+    "tier_question": "Who supplies your clay, and where is it dug or prepared?"
+  },
+  {
+    "id": "waring-brooke",
+    "public_note": "Every garment is knitted, linked, washed and pressed in-house on your own STOLL machine in Nottinghamshire. What we couldn't establish is where the yarn is spun. Gold needs the main fabric spun, woven or knitted in the UK.",
+    "tier_question": "Who spins your yarn, and where?"
+  },
+  {
+    "id": "wear-london",
+    "public_note": "Your outerwear and trousers are made in East London, your denim in West Bromwich and your T-shirts in Golders Green. The fabric, though, comes mainly from Prato and Como in Italy. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Do any of your lines use UK-woven or UK-knitted cloth, and from which mill?"
+  },
+  {
+    "id": "weetons",
+    "public_note": "You source strongly from local producers. Alongside that sits a food-hall and garden-centre range that isn't all British. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is British produce?"
+  },
+  {
+    "id": "welbeck-farm-shop",
+    "public_note": "Your estate produce is the heart of the shop, with a large cheese counter alongside it. You also carry a good choice of wines, Dark Woods coffee and imported chocolate ranges. Gold needs a farm shop to be effectively all British produce.",
+    "tier_question": "Roughly what proportion of what you sell is your own estate or British produce?"
+  },
+  {
+    "id": "wildish",
+    "public_note": "Your bags are made by named UK makers in Suffolk, Leeds and Glasgow, and the canvas is proofed and dyed by British Millerain in Rochdale. The canvas itself is grown and milled in India. Gold needs the main material milled in the UK.",
+    "tier_question": "Do you use any UK-woven canvas, and if so from which mill?"
+  },
+  {
+    "id": "wildsole",
+    "public_note": "Your sandals are handmade in Yorkshire by Tom, from animal-free materials. Where those materials are made isn't something we could confirm. Gold needs the main material made in the UK.",
+    "tier_question": "Who makes the animal-free material your sandals are built from?"
+  },
+  {
+    "id": "william-lennon",
+    "public_note": "Your boots have been made in the Old Corn Mill since 1904, and the sole leather is tanned in Northampton. The upper leather now comes from Horween in Chicago, having previously come from Bridge of Weir. Gold needs the upper leather tanned in the UK too.",
+    "tier_question": "Do any of your styles use UK-tanned upper leather, and which tannery supplies it?"
+  },
+  {
+    "id": "withnell",
+    "public_note": "Everything is cut, sewn and handmade in your Lancashire studio. Your fabrics come through UK fabric houses and merchants, which tells us who sells them but not where they were woven. Gold needs the main fabric milled in the UK.",
+    "tier_question": "Which mill weaves the fabric your merchants supply?"
+  },
+  {
+    "id": "woolkind",
+    "public_note": "Your knitwear is knitted to order in your Marchmont studio in Edinburgh. The superfine merino, though, is washed, dyed and spun in Biella. Gold needs the yarn spun in the UK — imported raw fibre is fine, provided the spinning happens here.",
+    "tier_question": "Do you offer any yarn spun in the UK, and if so which spinner?"
+  },
+  {
+    "id": "worn-to-threads",
+    "public_note": "Everything is made in your Bristol studio from reclaimed, deadstock and offset textiles, which puts cloth that already exists back to work. Where that cloth was first woven isn't something we could establish. Gold needs the main fabric woven in the UK.",
+    "tier_question": "Is any of your deadstock cloth traceable to a UK mill?"
+  },
+  {
+    "id": "yarmo",
+    "public_note": "Your garments have been manufactured in Great Yarmouth since 1898. What we couldn't establish is where the cloth for the current range is milled, as that isn't stated publicly. Gold needs the main fabric woven or knitted in the UK.",
+    "tier_question": "Which mill weaves the cloth for your current range?"
+  },
+  {
+    "id": "zatchels",
+    "public_note": "Your bags are handmade to order in Leicester by Britannia Hide, and the leather is described as coming from a Scottish tannery. Because that tannery isn't named, it isn't something we could confirm. Gold needs the main material tanned in the UK.",
+    "tier_question": "Which Scottish tannery supplies your leather?"
+  }
+]
