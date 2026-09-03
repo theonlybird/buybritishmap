@@ -1,0 +1,312 @@
+# Audience harvest
+
+Generated 2026-09-03 by scripts/harvest-audience.js.
+
+295 clothing businesses read.
+
+## Verdicts
+
+- **unknown** — 95
+- **men+women** — 85
+- **women** — 48
+- **men** — 32
+- **children** — 12
+- **women+children** — 12
+- **men+women+children** — 7
+- **men+children** — 4
+
+## Exclusions asserted
+
+Every business below will be hidden from a search for an audience it does not serve. These are the rows worth spot-checking.
+
+- `abe-house` — **women** (medium); not men/children. Dresses dress (dresses)
+- `adkn` — **men + women** (strong); not children. ADKN Pyjamas Bundle bamboo-pyjamas-and-loungewear-organic-sl (men); ADKN Womenswear (womenswear)
+- `alie-street` — **women** (strong); not men/children. Alie Street Womenswear (womenswear)
+- `and-daughter` — **men + women** (strong); not children. Mens Accessories mens-accessories (mens); Women women (women)
+- `arthur-sleep` — **men + women** (strong); not children. Men's Loafers mens-loafers (mens); Women's Mules womens-mules (womens)
+- `awling` — **men** (weak); not women/children. Mens leather belt (mens)
+- `banton-frameworks` — **men** (strong); not women/children. Stylish Glasses for Men stylish-glasses-for-men (men)
+- `barker-shoes` — **men + women** (strong); not children. Men's Boots mens-boots (mens); Women's Boots womens-boots (womens)
+- `barnwell-footwear` — **men + women** (weak); not children.  product handmade to order mens ladies blue suede hard sole  (mens);  product handmade to order mens ladies blue suede hard sole  (ladies)
+- `barrington-ayre` — **men + women** (strong); not children. Mens Luxury Nightwear luxury-nightwear (mens); Ladies Clothing bespoke-ladies-clothing-uk (ladies)
+- `batch-ldn` — **men + women** (strong); not children. Batch 02 For Men batch-02-for-men (men); Batch 01 For Women womens (women)
+- `begg-x-co` — **men + women** (strong); not children. Accessories mens-cashmere-accessories (mens); Accessories womens-cashmere-accessories (womens)
+- `benson-and-clegg` — **men** (medium); not women/children. Silk Cummerbunds silk-cummerbunds (cummerbunds)
+- `beorma-leather-company` — **women** (strong); not men/children. For Her womens (womens)
+- `berk` — **men + women** (strong); not children. John Smedley - Men john-smedley-women (men); John Smedley - Men john-smedley-women (women)
+- `billy-tannery` — **men** (strong); not women/children. Leather Bags for Men leather-bags-for-men (men)
+- `blackhorse-lane` — **men + women** (strong); not children. E14 Wide Mens Jeans e14-wide-mens-jeans (mens); E10 Classic Straight Womens Jeans e10-classic-straight-women (womens)
+- `blue-nude` — **women** (strong); not men/children. Blue Nude Womenswear (womenswear)
+- `bowhill-and-elliott` — **men + women** (strong); not children. B&E Exclusives Men's be-exclusives-mens (mens); B&E Exclusives Women's be-exclusives-womens (womens)
+- `bridgedale` — **men + women** (strong); not children. Men's 3/4 Crew Socks mens-three-quarter-crew-socks (mens); Women's 3/4 Crew Socks womens-three-quarter-crew-socks (womens)
+- `british-boxers` — **men + women** (strong); not children. British Boxers Everyday wear (boxers); All Women's Sale Styles - 2026 all-womens-sale-styles-2026 (womens)
+- `british-sheepskin` — **men + women** (medium); not children. Mens sheepskin gloves (mens); Ladies Fingerless Sheepskin Mittens (ladies)
+- `broadland-slippers` — **men + women** (medium); not children. Mens Classic Leather Grecian (mens); Ladies Tapestry Slippers (ladies)
+- `brora` — **men + women** (strong); not children. Clearance Men's Cashmere clearance-mens-cashmere (mens); Clearance Women's Cashmere clearance-womens-cashmere (womens)
+- `budd-shirts` — **men + women** (strong); not children. Boxer Shorts boxer-shorts (boxer); Outlet Womenswear outlet-womenswear (womenswear)
+- `buffalo-systems` — **men + women** (strong); not children. All Mens all-mens (mens); All Womens all-womens (womens)
+- `cambridge-satchel` — **men + women** (strong); not children. Leather Sling / Crossbody Bags Men leather-sling-crossbody-b (men); Doctor Bags for Ladies doctor-bag-for-ladies (ladies)
+- `campbell-cole` — **children** (strong); not men/women. Kids kids (kids)
+- `campbells-of-beauly` — **men + women** (strong); not children. Men men (men); Dresses & Skirts dresses-skirts (dresses)
+- `cara-and-the-sky` — **women + children** (strong); not men. Archive Sale Dresses & Skirts archive-sale-dresses (dresses); Kid's Knitwear kids-knitwear (kids)
+- `carrier-company` — **men + women** (strong); not children. Men’s mens (mens); Skirts skirts (skirts)
+- `chapman-bags` — **women** (strong); not men/children. Ladies Bags womens-bags (ladies)
+- `charl-knitwear` — **men** (medium); not women/children. Menswear (menswear)
+- `cocoove` — **women** (strong); not men/children. Cocoove Womenswear (womenswear)
+- `colenimo` — **women** (strong); not men/children. Colenimo Womenswear (womenswear)
+- `community-clothing` — **men + women** (strong); not children. Anatomy of wearing 100% British made - Men's Winter Edition  (mens); Anatomy of wearing 100% British made - Women's Winter Editio (womens)
+- `cordings` — **men** (strong); not women/children. Cordings Menswear & Outerwear (menswear)
+- `cornelia-james` — **men + women** (weak); not children. Marmotte | Men's Ski Mitten - Chesnut (mens); Chamois | Women's Ski Mitten - White (womens)
+- `cravat-club` — **men** (strong); not women/children. Autumn Flash Sale autumn-sale-2023-mens-luxury-silk-accessor (mens)
+- `crease-studios` — **women** (strong); not men/children. Crease Studios Womenswear (womenswear)
+- `crockett-jones` — **men + women** (strong); not children. article-gentleman-a-timeless-fashion article-gentleman-a-tim (gentleman); article-aw16-new-womens-collection article-aw16-new-womens-c (womens)
+- `croft-house` — **men + women** (strong); not children. Men's Cashmere Shop men-accessories-cashmere-shop (mens); Women's Cashmere Shop womens-cashmere-accessories (womens)
+- `daffodil-and-leek` — **women** (strong); not men/children. Daffodil and Leek Womenswear (womenswear)
+- `daltons-england` — **men + women** (strong); not children. Men's Belts personalised-mens-leather-belts (mens); BELTS ladies (ladies)
+- `darzi` — **men** (strong); not women/children. Men's outerwear and accessories, with production brought bac (mens)
+- `david-nieper` — **women** (strong); not men/children. David Nieper Womenswear (womenswear)
+- `de-winter` — **men** (medium); not women/children. Classic cedar men&#8217;s shoe trees (men)
+- `dents` — **men + women** (strong); not children. All Men's Products Excluding Outlet all-mens-products-exclud (mens); Accessories with Check Pattern womens-accessories-with-check (womens)
+- `drakes` — **men** (strong); not women/children. Drake's Menswear (menswear)
+- `draper-of-glastonbury` — **men + women** (strong); not children. Men men (men); Women women (women)
+- `dreaming-of-ivy` — **women** (strong); not men/children. Dreaming of Ivy Womenswear (womenswear)
+- `eas-fors` — **children** (strong); not men/women. Baby Blanket baby-blanket (baby)
+- `ednerat` — **women** (strong); not men/children. Ednerat Womenswear (womenswear)
+- `elgar-shirts` — **men** (weak); not women/children. Men&#8217;s nightshirt in soft cotton check (men)
+- `ella-griffee` — **women** (strong); not men/children. Ella Griffee Womenswear (womenswear)
+- `elwin` — **women** (medium); not men/children. Dresses dresses (dresses)
+- `emma-willis` — **men + women** (strong); not children. Boxer Shorts all-boxer-shorts (boxer); Womens Shirts womens-shirts (womens)
+- `english-fine-cottons` — **men** (strong); not women/children. English Fine Cottons Menswear (menswear)
+- `eribe` — **men + women** (strong); not children. Men's Corry Collection mens-corry-collection (mens); Green Wool Cardigans & Sweaters green-knitwear-womens (womens)
+- `ettinger` — **men + women** (strong); not children. Men's Accessories mens-accessories (mens); Coin purses womens-coin-purses (womens)
+- `faith-rowan-leeves` — **women + children** (strong); not men. Faith Rowan Leeves Womenswear (womenswear); Disco Baby! disco-baby (baby)
+- `farfield-clothing` — **women** (medium); not men/children. Ladies A50 Fleece Jacket Natural Red Squirrel (ladies)
+- `fawn-and-freda` — **women + children** (strong); not men. Hand-smocked womenswear and childrenswear made in London. (womenswear); Fawn & Freda Childrenswear (childrenswear)
+- `findra-clothing` — **women** (strong); not men/children. BASE LAYERS womens-merino-base-layers (womens)
+- `fortis-clothing` — **men + women** (strong); not children. Dog Vests mens-vests (mens); Leggings leggings (leggings)
+- `fox-umbrellas` — **men + women** (strong); not children. Animal Head Gents Tube animal-head-gents-tube (gents); Ladies Solid ladies-solid (ladies)
+- `foxology` — **men + women** (strong); not children. Men's Merino Base Layers & Tops foxology-men (mens); Dresses dresses (dresses)
+- `freddies-of-pinewood` — **women** (weak); not men/children.  product red and gold blouse  (blouse)
+- `frimble` — **women** (medium); not men/children. Bold tweed jackets and skirts made in Lancashire. (skirts)
+- `garstin-1871` — **men** (strong); not women/children. Weekender Bags leather-weekend-bag-for-men (men)
+- `genevieve-sweeney` — **men + women** (strong); not children. Archive Menswear sale-men (menswear); Archive Womenswear sale-women (womenswear)
+- `geoff-stocker` — **men** (medium); not women/children. The Geometric Gent Collection (gent)
+- `ghhurt` — **women + children** (strong); not men. Heritage Collection womens-heritage-collection (womens); Knitted lace shawls made in Nottingham since 1912 — the chri (babies)
+- `globe-trotter` — **children** (weak); not men/women. child (child)
+- `gloverall` — **men + women** (strong); not children. Men's Aran Jumpers aran-jumpers (mens); Women's Black Duffle Coats womens-black-duffle-coats (womens)
+- `goral` — **men + women** (strong); not children. Handmade High Top Leather Sneakers | Premium Men’s Trainers  (mens); WOMENS womens (womens)
+- `gordon-nicolson-kiltmakers` — **children** (weak); not men/women. Sale Ex-hire Modern Hunting Stewart 13oz Kilt - Various KIDS (kids)
+- `green-thomas` — **men + women** (weak); not children. MEN (men); WOMEN (women)
+- `gushlow-cole` — **women + children** (strong); not men. Bags womens-bags-accessories (womens); Baby Boots baby-boots (baby)
+- `hackney-gt` — **men + women** (strong); not children. Men's mens-2 (mens); Women's womens (womens)
+- `harriet-eccleston` — **women** (strong); not men/children. Harriet Eccleston Womenswear (womenswear)
+- `hawico` — **men + women** (strong); not children. Cashmere and Silk Mens cashmere-and-silk (mens); Cashmere and Silk Ladies cashmere-and-silk-ladies (ladies)
+- `hebtroco` — **men** (strong); not women/children. HebTroCo Menswear (menswear)
+- `hegarty-london` — **men + women** (strong); not children. MENS mens (mens); WOMENS womens (womens)
+- `hemingsworth` — **men** (strong); not women/children. Hemingsworth Menswear (menswear)
+- `herd` — **men + women** (strong); not children. Menswear mens (menswear); Shop All Womenswear shop-all (womenswear)
+- `hettie` — **women + children** (strong); not men. Hettie art print " Lady Muck" (lady); All junior accessories junior (junior)
+- `homebody` — **men + women** (strong); not children. Homebody Resort Edit Mens homebody-resort-edit-mens (mens); Dresses dresses (dresses)
+- `house-of-cheviot` — **men + women** (strong); not children. Black Gents black-gents (gents); Accessories Ladies accessories-ladies (ladies)
+- `jadd-shoes` — **children** (strong); not men/women. Baby Shoes baby-shoes (baby)
+- `jamiesons-shetland` — **children** (strong); not men/women. Children's Patterns childrens-patterns (childrens)
+- `joe-and-co-denim` — **men** (strong); not women/children. Men's Accessories, Hats & Caps Collection. mensaccessories (mens)
+- `john-partridge` — **men + women** (strong); not children. Mens Biker Jackets mens-biker-jackets (mens); Ladies Casual Jackets ladies-casual-jackets (ladies)
+- `johnstons-of-elgin` — **men + women** (strong); not children. Cashmere Cardigans mens-cashmere-cardigans (mens); Cashmere Cardigans womens-cashmere-cardigans (womens)
+- `juju-footwear` — **women + children** (strong); not men. Women's Shoes womens-shoes (womens); Kid's Shoes kids-shoes (kids)
+- `julian-road` — **women** (strong); not men/children. Julian Road Womenswear (womenswear)
+- `justine-tabak` — **women** (strong); not men/children. Justine Tabak Womenswear (womenswear)
+- `kaely-russell` — **women** (strong); not men/children. Kaely Russell Womenswear (womenswear)
+- `kate-sheridan` — **men + children** (strong); not women. Mens Accessories accessories-1 (mens); KIDS kids (kids)
+- `kerriealdo` — **men + women** (medium); not children. menswear (menswear); ladies shirt (ladies)
+- `kipper` — **women** (medium); not men/children. Women's tailoring made in London. (womens)
+- `lady-v-london` — **women** (strong); not men/children. Lady V London Womenswear (lady)
+- `laird-hatters` — **men + women** (strong); not children. Men's Hats mens-hats (mens); Women's Caps womens-caps (womens)
+- `lanx` — **men + women** (strong); not children. 1985 - MEN'S & WOMEN'S 1985-mens-womens (mens); 1985 - MEN'S & WOMEN'S 1985-mens-womens (womens)
+- `lavenham` — **men + women** (strong); not children. AW24 Men's Collection aw24-mens-collection (mens); A Top Coat Colder women-a-top-coat-colder (women)
+- `libby-london` — **women** (strong); not men/children. Libby London Womenswear (womenswear)
+- `lilyberry` — **women + children** (strong); not men. Rainbow Leggings (2-3yrs) (leggings); Lilyberry Childrenswear (childrenswear)
+- `lock-and-co-hatters` — **men + women** (strong); not children. Best hats for tall men and women hats-for-tall-people (men); Best hats for tall men and women hats-for-tall-people (women)
+- `lockwood-smocks` — **women** (weak); not men/children. Ladies Henry Boiled Wool Gilet (ladies)
+- `lola-starr` — **women + children** (strong); not men. Anti-Cellulite Leggings anti-cellulite-leggings (leggings); Junior junior (junior)
+- `london-tradition` — **men + women** (weak); not children.  shop men (men);  shop women (women)
+- `lottie-and-lysh` — **children** (strong); not men/women. Lottie & Lysh Childrenswear (childrenswear)
+- `lpol` — **women** (weak); not men/children. Womens (womens)
+- `mackenzie-and-george` — **men + women** (strong); not children. Mens Belts mens (mens); Womens Belts womens (womens)
+- `mackintosh` — **men + women** (strong); not children. Men's mens (mens); Men's Shirts womens-shirts-copy (womens)
+- `mamnick` — **men** (strong); not women/children. Clothing menswear (menswear)
+- `maquien` — **women** (strong); not men/children. Maquien Womenswear & Tailoring (womenswear)
+- `mars-knitwear` — **men + women** (weak); not children. Mens (mens); Womens (womens)
+- `marvin-browne` — **women** (strong); not men/children. Marvin Browne Womenswear (womenswear)
+- `marwood` — **men + women** (weak); not children.  product mesh laceleather mens gloves  (mens);  product marwood womens mohair socks black  (womens)
+- `maude-and-fox` — **men + women** (strong); not children. Mens Tweed Coats & Jackets mens-tweed-coats (mens); Maude & Fox Womenswear (womenswear)
+- `mcnair-shirts` — **men + women** (medium); not children. Men’s PlasmaDry Lightweight Canvas Work Jacket – Made to Mea (mens); Women’s made-to-measure Lightweight Canvas Work Jacket (womens)
+- `mcrostie` — **men + women** (medium); not children. Men (men); Women (women)
+- `meandthee` — **women** (strong); not men/children. Me&Thee Womenswear (womenswear)
+- `meccanica-clothing` — **men** (weak); not women/children. Meccanica Men's Full Zip Hoodie 'Parts & Service' Black (mens)
+- `melin-tregwynt` — **children** (strong); not men/women. Baby baby (baby)
+- `moda-de-la-maria` — **women** (strong); not men/children. Moda de la Maria Womenswear (womenswear)
+- `moloh` — **women** (strong); not men/children. Moloh Womenswear (womenswear)
+- `moma-hilo` — **women** (strong); not men/children. Moma Hilo Womenswear (womenswear)
+- `mourne-textiles` — **children** (strong); not men/women. For Children for-children (children)
+- `nadinoo` — **women** (strong); not men/children. Nadinoo Womenswear (womenswear)
+- `navygrey` — **women** (strong); not men/children. Feature Product all-womens-clothing (womens)
+- `norman-walsh` — **men + women** (strong); not children. Men men-dh (men); Ensign Series For Women ensign-series-for-woman (women)
+- `north-sea-clothing` — **women + children** (strong); not men. WOMEN'S womens-knitwear (womens); KIDS kids (kids)
+- `o-pioneers` — **women** (strong); not men/children. O Pioneers Womenswear (womenswear)
+- `oldfield-outfitters` — **men + women** (strong); not children. Oldfield Outfitters Menswear (menswear); ARCHIVE SALE ladies-sale (ladies)
+- `oliver-spencer` — **men** (strong); not women/children. Oliver Spencer Menswear (menswear)
+- `otway-orford` — **men + women** (strong); not children. Our Complete Collection of Luxury Men's Pocket Squares & Sil (mens); Ladies' Scarves ladies-scarves (ladies)
+- `oubas` — **men + women** (strong); not children. Mens Hats mens-hats (mens); Dresses dresses (dresses)
+- `owen-barry` — **men + women** (medium); not children. Men's Leather Bags (mens); Women's Sheepskin Products (womens)
+- `oxford-blue` — **men + women** (strong); not children. Knitwear, Sweatshirts & Tops mens-knitwear-sweatshirts-tops (mens); Women's Clothing womens (womens)
+- `pajotten` — **men + women** (strong); not children. Seasonal collection spring-summer-menswear (menswear); Constant collection - Woman constant-collection-woman (woman)
+- `palava` — **women + children** (strong); not men. Palava Womenswear (womenswear); All Childrens - 2026 all-childrens-2026 (childrens)
+- `paul-james-knitwear` — **men + women** (strong); not children. Made In England Jumpers For Men mens-made-in-england-knitwea (men); Men's and Women's Fine Merino Wool Knitwear mens-and-womens- (womens)
+- `peper-harow` — **men + women** (strong); not children. Andover Men's Luxury Socks andover-mens-luxury-socks (mens); Anne Women's Socks anne-womens-socks (womens)
+- `percy-stride` — **men** (medium); not women/children. Goodyear-welted men's shoes made in Northampton at an access (mens)
+- `peregrine` — **men + women** (strong); not children. Men's Accessories mens-accessories (mens); Shop All Womenswear shop-all-womens (womenswear)
+- `pickett-london` — **men + women** (strong); not children. Men mens (men); Ladies Socks ladies-socks (ladies)
+- `pinpiuma` — **women** (medium); not men/children. Ladies Teal Reversible Gilet (ladies)
+- `private-white-vc` — **men** (strong); not women/children. Private White V.C. Menswear & Outerwear (menswear)
+- `ratcatcher` — **men + women** (strong); not children. Mens Clothing mens-clothing (mens); Ladies Breeks ladies-breeks (ladies)
+- `reflekt-clothing` — **men** (strong); not women/children. Reflekt Clothing Menswear (menswear)
+- `reworked-348` — **men** (strong); not women/children. Reworked 348 Menswear (menswear)
+- `risdon-and-risdon` — **children** (strong); not men/women. Children's childrens-aprons (childrens)
+- `rock-and-ruby` — **men + women** (strong); not children. MEN ACCESSORIES men-accessories (men); WOMEN ACCESSORIES accessories (women)
+- `rolf-skeldon` — **men + children** (strong); not women. Organic cotton boxers, swim shorts and jersey basics made in (boxers); Junior junior (junior)
+- `rove-knitwear` — **men + women** (strong); not children. Gloves for Men & Women gloves (men); Gloves for Men & Women gloves (women)
+- `sam-brown-london` — **men** (weak); not women/children. mens tote bag (mens)
+- `sami-k` — **women** (strong); not men/children. Sami-K Womenswear (womenswear)
+- `sarvin` — **women** (strong); not men/children. Sarvin Womenswear (womenswear)
+- `seh-kelly` — **men** (strong); not women/children. S.E.H Kelly Menswear & Outerwear (menswear)
+- `solovair` — **men + women** (strong); not children. MENS mens (mens); WOMENS womens (womens)
+- `soma-sportswear` — **men + women** (strong); not children. Combat Men's combat-mens (mens); Combat Women's combat-womens (womens)
+- `stalf` — **women** (strong); not men/children. Stalf Womenswear (womenswear)
+- `sub-zero` — **men + children** (strong); not women. Men men-all (men); Child Carriers child-carriers (child)
+- `sunspel` — **men + women** (strong); not children. Men's Accessories mens-accessories (mens); Sunspel and David Shrigley for Women womens-sunspel-and-davi (women)
+- `swaine` — **men + women** (strong); not children. All Men's Collection all-mens-collections (mens); All Women's Collection all-womens-collections (womens)
+- `talou` — **children** (strong); not men/women. Talou Childrenswear (childrenswear)
+- `the-bathrobe-company` — **women** (weak); not men/children.  product duck egg blue kaftan  (kaftan)
+- `the-british-belt-company` — **men + women** (strong); not children. Men's Belts mens-belts (mens); Ladies' Belts ladies-belts (ladies)
+- `the-cambridge-sock-company` — **women** (strong); not men/children. Luxury Lounge Socks Womens luxury-lounge-socks (womens)
+- `the-cotton-london` — **men** (strong); not women/children. BOXER SHORTS boxer-shorts (boxer)
+- `the-moleskin-jeans-co` — **men** (weak); not women/children. Double Denim- 2 For £100 (Mid Blue &#038; Dark Blue) Gentlem (gentleman)
+- `the-pattern-guild` — **men + women** (weak); not children. mens toiletry bag (mens); womenswear (womenswear)
+- `the-well-worn` — **women** (strong); not men/children. The Well Worn Womenswear (womenswear)
+- `thomas-fortin` — **men** (medium); not women/children. Ties, braces and menswear accessories in British-woven silk. (menswear)
+- `thorndale` — **men + women** (strong); not children. Men mens-made-in-england-bags (men); Women womens-british-wax-nylon-and-leather-bags (women)
+- `tiffany-rose` — **women** (strong); not men/children. Tiffany Rose Womenswear (womenswear)
+- `trickers` — **men** (strong); not women/children. Men's Apron Derby Shoes apron-derby-shoes (mens)
+- `tropel-kids` — **children** (strong); not men/women. Tropel Kids Childrenswear (kids)
+- `troy-london` — **men + women** (strong); not children. Men's Collection mens-collection (mens); Shirts, Blouses & Jumpers shirts-blouses-jumpers (blouses)
+- `turnbull-asser` — **men** (medium); not women/children. Boxer Shorts boxer-shorts (boxer)
+- `tusting` — **men + women** (strong); not children. Business Bags leather-business-bags-men (men); Travel Heros travel-luggage-women (women)
+- `tutti-frutti-clothing` — **women + children** (strong); not men. Bottoms leggings (leggings); Tutti Frutti Clothing Childrenswear (childrenswear)
+- `vivien-of-holloway` — **women** (strong); not men/children. Vivien of Holloway Womenswear (womenswear)
+- `waring-brooke` — **women** (strong); not men/children. Knitted Dresses knitted-dresses (dresses)
+- `wear-london` — **men** (strong); not women/children. Wear London Menswear (menswear)
+- `weskit` — **men + women** (strong); not children. Mens 36" Waistcoats 36-1 (mens); Ladies 10 ladies-10 (ladies)
+- `withnell` — **women** (strong); not men/children. Withnell Womenswear (womenswear)
+- `worn-to-threads` — **women** (strong); not men/children. Worn To Threads Womenswear (womenswear)
+- `yarmo` — **men + children** (strong); not women. Yarmo Mens Sailcloth Zip Up Jacket, Navy - JK184 (mens); Child Care child-care-east-coast-college (child)
+- `yarmouth-oilskins` — **men + women** (strong); not children. April Mens april-mens (mens); April Womens april-womens (womens)
+- `zatchels` — **men + women** (strong); not children. Men's Backpacks mens-backpacks (mens); Women's Bags womens-bags (womens)
+
+## Unknown — shown in every search, ranked below confirmed matches
+
+- `abraham-moon` — woocommerce, 100 items
+- `aero-leather` — sitemap, 34 items
+- `albert-thurston` — no product feed reached, 0 items
+- `alt-berg` — no product feed reached, 0 items
+- `amy-britton` — shopify, 132 items
+- `anderson-sheppard` — no product feed reached, 0 items
+- `anise-cashmere` — woocommerce, 3 items
+- `arbon-socks` — woocommerce, 20 items
+- `barbour` — no product feed reached, 0 items
+- `barnes-and-moore` — no product feed reached, 0 items
+- `been-london` — shopify, 38 items
+- `bennett-winch` — shopify, 145 items
+- `berties-of-bay` — no product feed reached, 0 items
+- `big-fox-apparel` — woocommerce, 11 items
+- `billingham` — shopify, 251 items
+- `blackshore` — sitemap, 34 items
+- `carl-stuart-tailors` — no product feed reached, 0 items
+- `carnwear` — no product feed reached, 0 items
+- `carradice` — shopify, 114 items
+- `charles-laurie` — no product feed reached, 0 items
+- `cherchbi` — shopify, 14 items
+- `christys` — shopify, 125 items
+- `churchs` — no product feed reached, 0 items
+- `clare-haggas` — no product feed reached, 0 items
+- `colhays` — shopify, 85 items
+- `crown-northampton` — shopify, 410 items
+- `cwt-clothing` — shopify, 6 items
+- `dartmoor-shoemakers` — no product feed reached, 0 items
+- `des-merrion` — woocommerce, 4 items
+- `drmartens-mie` — no product feed reached, 0 items
+- `edward-green` — no product feed reached, 0 items
+- `elizabeth-martin-tweed` — no product feed reached, 0 items
+- `empire-jeans` — woocommerce, 48 items
+- `english-utopia` — no product feed reached, 0 items
+- `everbound-goods` — shopify, 8 items
+- `fieldware-co` — squarespace, 17 items
+- `fox-brothers` — shopify, 500 items
+- `furious-goose` — shopify, 316 items
+- `gaziano-girling` — sitemap, 80 items
+- `george-cleverley` — squarespace, 117 items
+- `gina` — no product feed reached, 0 items
+- `glenbrae` — no product feed reached, 0 items
+- `good-measure` — shopify, 49 items
+- `goodnight-irene` — shopify, 33 items
+- `grenfell` — shopify, 94 items
+- `grenson` — no product feed reached, 0 items
+- `heather-borg` — no product feed reached, 0 items
+- `henry-poole` — woocommerce, 100 items
+- `hiut-denim` — sitemap, 9 items
+- `hurdwick-handmade-bag-company` — woocommerce, 50 items
+- `hyde-and-hare` — shopify, 750 items
+- `iona-montgomery` — shopify, 215 items
+- `ivy-and-rigg` — shopify, 32 items
+- `izzy-lane` — sitemap, 13 items
+- `j-alex-swift` — woocommerce, 32 items
+- `jane-hopkinson` — no product feed reached, 0 items
+- `john-lobb-ltd` — no product feed reached, 0 items
+- `john-smedley` — no product feed reached, 0 items
+- `joseph-cheaney` — no product feed reached, 0 items
+- `katie-cotmarsh` — shopify, 13 items
+- `kinloch-anderson` — sitemap, 4 items
+- `leah-may-tailors` — squarespace, 8 items
+- `leather-satchel-co` — no product feed reached, 0 items
+- `loake` — sitemap, 500 items
+- `lochcarron` — no product feed reached, 0 items
+- `macangus-and-wainwright` — no product feed reached, 0 items
+- `mallochs` — shopify, 45 items
+- `mhulot` — shopify, 83 items
+- `michael-ross-knitwear` — no product feed reached, 0 items
+- `mille-saisons` — no product feed reached, 0 items
+- `moghrabi` — no product feed reached, 0 items
+- `monkstone-knitwear` — no product feed reached, 0 items
+- `new-balance-uk` — no product feed reached, 0 items
+- `orraman-leather` — shopify, 148 items
+- `pantherella` — no product feed reached, 0 items
+- `paul-brown` — no product feed reached, 0 items
+- `quinton-chadwick` — squarespace, 55 items
+- `rach-x` — no product feed reached, 0 items
+- `red-shoes-ruth-emily-davey` — no product feed reached, 0 items
+- `sanders-sanders` — no product feed reached, 0 items
+- `tanner-bates` — shopify, 74 items
+- `the-bradford-sock-company` — no product feed reached, 0 items
+- `the-goat-company` — no product feed reached, 0 items
+- `the-rugby-company` — woocommerce, 41 items
+- `thomas-ferguson-linen` — shopify, 133 items
+- `tim-hardy` — no product feed reached, 0 items
+- `torramor` — no product feed reached, 0 items
+- `trakke` — shopify, 32 items
+- `umpie-handbags` — shopify, 45 items
+- `united-overalls` — squarespace, 8 items
+- `wildish` — shopify, 28 items
+- `wildsole` — squarespace, 28 items
+- `william-lennon` — woocommerce, 26 items
+- `william-lockie` — woocommerce, 50 items
+- `woolkind` — shopify, 57 items

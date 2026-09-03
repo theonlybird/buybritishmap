@@ -1049,7 +1049,8 @@ const state = {
   notice: '',            // shown above the full grid when a search found nothing
   aiMatches: new Map(), // id -> 1-sentence rationale
   aiOrder: [],          // ids in rank order — visible() sorts by this
-  placeTerms: []        // place words in the query, drives the "further afield" split
+  placeTerms: [],       // place words in the query, drives the "further afield" split
+  audience: []          // men / women / children asked for, drives the audience filter
 };
 
 function escapeHtml(t) {
@@ -1239,6 +1240,52 @@ const REGIONS = {
   uk:          () => true
 };
 
+/* ---------------------------------------------------------------------------
+   WHO THE GARMENT IS FOR
+
+   "mens jackets" was returning womenswear-only makers. The words were being
+   read as product terms, and \bmen\b matches neither "Menswear" nor "menswear"
+   — so the audience did nothing at all while the jackets did all the work.
+
+   Audience is now its own facet, not a product word: it never decides whether
+   a business makes the thing, only whether it makes it for the person asking.
+   data/businesses.json carries the answer per listing, harvested from each
+   shop's own navigation by scripts/harvest-audience.js.
+--------------------------------------------------------------------------- */
+const AUDIENCE_WORDS = {
+  men:'men', mens:'men', man:'men', menswear:'men', gent:'men', gents:'men',
+  gentlemen:'men', gentlemens:'men', male:'men', males:'men', him:'men', his:'men',
+  women:'women', womens:'women', woman:'women', womans:'women', womenswear:'women',
+  lady:'women', ladies:'women', ladys:'women', female:'women', females:'women',
+  her:'women', hers:'women',
+  child:'children', childs:'children', children:'children', childrens:'children',
+  childrenswear:'children', kid:'children', kids:'children', kidswear:'children',
+  baby:'children', babies:'children', toddler:'children', toddlers:'children',
+  infant:'children', infants:'children', boy:'children', boys:'children',
+  girl:'children', girls:'children'
+};
+
+// Three answers, not two. "We know they don't" and "we haven't established it
+// yet" are different facts, and treating the second as the first is how a good
+// maker disappears from the map. Only the first is grounds for hiding anyone.
+//   yes     — the listing says it dresses at least one audience asked for
+//   unknown — no audience recorded; shown, but below every confirmed match
+//   no      — audience recorded, and the one asked for is not in it
+function audienceVerdict(b, wanted) {
+  if (!wanted || !wanted.length) return 'yes';
+  const au = Array.isArray(b.audience) ? b.audience : null;
+  if (!au || !au.length) return 'unknown';
+  return wanted.some(w => au.includes(w)) ? 'yes' : 'no';
+}
+
+// Confirmed matches first, unknowns after, order preserved inside each group.
+function byAudience(list, wanted) {
+  if (!wanted || !wanted.length) return list;
+  const yes = [], unknown = [];
+  list.forEach(b => (audienceVerdict(b, wanted) === 'unknown' ? unknown : yes).push(b));
+  return yes.concat(unknown);
+}
+
 // Does this business sit in the place the user named?
 function matchesPlace(b, placeTerms){
   if (!placeTerms || !placeTerms.length) return false;
@@ -1283,10 +1330,15 @@ function visible(){
     // wherever it happens to sit in businesses.json.
     const order = state.aiOrder || [];
     const pos = new Map(order.map((id,i)=>[id,i]));
-    const hits = BUSINESSES.filter(b => state.aiMatches.has(b.id) && passesChips(b));
+    // The audience filter is applied HERE rather than only inside localSearch,
+    // because everything reaches the page through this function: the model's
+    // own picks, the local rescue pass, and the top-up. The model is told
+    // about audience in its prompt, but a prompt is a request, not a rule.
+    const hits = BUSINESSES.filter(b => state.aiMatches.has(b.id) && passesChips(b)
+      && audienceVerdict(b, state.audience) !== 'no');
     hits.sort((x,y) => (pos.has(x.id)?pos.get(x.id):1e6) - (pos.has(y.id)?pos.get(y.id):1e6));
     const { near, afield } = partitionByPlace(hits);
-    return near.concat(afield);
+    return byAudience(near, state.audience).concat(byAudience(afield, state.audience));
   }
   const q = state.q.toLowerCase();
   return BUSINESSES.filter(b => passesChips(b) &&
@@ -1506,6 +1558,7 @@ function clearAiSearch() {
   state.aiMatches.clear();
   state.aiOrder = [];
   state.placeTerms = [];
+  state.audience = [];
   renderMapList();
   if (state.currentView === 'grid') renderGrid();
 }
@@ -1664,12 +1717,11 @@ const SYNONYMS = {
   boot:'boots', shoe:'shoes', trainer:'trainers',
   coat:'coats', jacket:'jackets', shirt:'shirts', trouser:'trousers',
   ring:'rings', necklace:'necklaces', earring:'earrings', watches:'watch',
-  // Who the garment is for. No listing spells "mens" or "ladies", so without
-  // these the fuzzy step reached "men"/"women" by edit distance and declared
-  // it as a spelling correction — the search worked, but apologised for a
-  // missing apostrophe. Mapped here so they resolve quietly instead.
-  mens:'men', womens:'women', childrens:'children',
-  ladies:'women', gents:'men',
+  // Who the garment is for is deliberately NOT here any more. "mens" and
+  // "ladies" are read as an audience (see AUDIENCE_WORDS) before this table is
+  // consulted: they say who a garment is for, never what it is, and scoring
+  // them as product words is what let a womenswear-only maker answer a search
+  // for men's jackets.
   cheeses:'cheese', veg:'vegetables', vegetable:'vegetables', meats:'meat',
   scots:'scotland', scottish:'scotland', welsh:'wales', cornish:'cornwall',
   yorks:'yorkshire', londoner:'london', english:'england', british:'britain'
@@ -1754,6 +1806,11 @@ function normaliseQuery(query) {
   const seen = new Set();
   let understood = 0;
 
+  // Who they are shopping for. Collected here and kept out of `terms`: an
+  // audience must never be able to make a business eligible on its own, only
+  // to rule one out.
+  const audience = [];
+
   // Fuzzy corrections we made on the user's behalf. Recorded so they can be
   // declared rather than applied silently — see the note on fuzzyHit below.
   const corrections = [];
@@ -1781,6 +1838,17 @@ function normaliseQuery(query) {
       return;
     }
     if (!tok || tok.length < 2 || STOP_WORDS.has(tok)) return;
+    // Audience before vocabulary, for the same reason places come before the
+    // repair steps: every rule below assumes an unrecognised word is a misspelt
+    // product, and "gents" is not a misspelling of anything.
+    if (AUDIENCE_WORDS[tok]) {
+      const who = AUDIENCE_WORDS[tok];
+      if (!audience.includes(who)) audience.push(who);
+      // Echoed in the headline ("men's jackets") but never scored.
+      if (!display.includes(tok)) display.push(tok);
+      understood++;
+      return;
+    }
     // "northern ireland" and "northern irish" are one place in two words.
     // Without this the first word was taken on its own and the banner read
     // "in Northern Northern Ireland".
@@ -1864,7 +1932,7 @@ function normaliseQuery(query) {
   const tags = expandToTags(query);
   if (tags.length) understood++;
 
-  return { terms, understood, display, tags, typed, placePreferred, corrections };
+  return { terms, understood, display, tags, typed, placePreferred, corrections, audience };
 }
 
 // Canonical product tags implied by a query, via the shared lexicon. Returns
@@ -2111,11 +2179,13 @@ function classifyTerms(terms, typed, placePreferred) {
 }
 
 function localSearch(query) {
-  const { terms, understood, display, tags, typed, placePreferred, corrections } = normaliseQuery(query);
+  const { terms, understood, display, tags, typed, placePreferred, corrections, audience } = normaliseQuery(query);
   const queryTags = tags || [];
-  if ((!terms.length || !understood) && !queryTags.length) {
+  // "womenswear" on its own is a real search: no product, no place, just an
+  // audience. Without the last clause it fell through here as gibberish.
+  if ((!terms.length || !understood) && !queryTags.length && !audience.length) {
     return { matches: [], terms, understood, product: [], place: [], inPlace: 0,
-             productDisplay: [], placeDisplay: [], corrections };
+             productDisplay: [], placeDisplay: [], corrections, audience: [] };
   }
 
   const { product, place } = classifyTerms(terms, typed, placePreferred);
@@ -2179,9 +2249,18 @@ function localSearch(query) {
   // ended up showing farm shops. The same now goes for qualifiers: "handmade"
   // can lift a bowl maker above another bowl maker, but it cannot put a bag
   // company into a search for bowls.
-  const eligible = product.length
+  const eligible = (product.length
     ? scored.filter(s => s.productScore > 0)
-    : scored.filter(s => s.placeScore > 0);
+    : place.length
+      ? scored.filter(s => s.placeScore > 0)
+      // Audience alone ("menswear", "kids clothes") — every listing is a
+      // candidate and the audience filter below does the whole job.
+      : scored
+  // Who it is for is a veto, never a qualification. A business we KNOW does
+  // not dress this audience is dropped outright; one we have not classified
+  // yet is kept and sorted below, because an unclassified listing is an
+  // unfinished audit, not a fact about the business.
+  ).filter(s => audienceVerdict(s.b, audience) !== 'no');
 
   // Product leads, but location still counts for real. 3:2 was chosen against
   // live queries: it puts London leather makers above Walsall for "leather hat
@@ -2194,14 +2273,22 @@ function localSearch(query) {
   // anything outside. Ranking alone did not guarantee that: on "scottish pork"
   // an English farm with a stronger product score sat above a Scottish one, so
   // the results interleaved and there was no line to draw.
+  // Confirmed audience above unclassified, inside each place group so the
+  // "further afield" divider still lands where the place runs out.
+  const audienceFirst = list => audience.length
+    ? [...list.filter(s => audienceVerdict(s.b, audience) === 'yes'),
+       ...list.filter(s => audienceVerdict(s.b, audience) !== 'yes')]
+    : list;
+
   const top = (place.length
-    ? [...eligible.filter(s => s.placeScore > 0), ...eligible.filter(s => s.placeScore === 0)]
-    : eligible
+    ? [...audienceFirst(eligible.filter(s => s.placeScore > 0)),
+       ...audienceFirst(eligible.filter(s => s.placeScore === 0))]
+    : audienceFirst(eligible)
   ).slice(0, 40);
 
   return {
     matches: top.map(s => s.b),
-    terms, understood, product, place, corrections,
+    terms, understood, product, place, corrections, audience,
     productDisplay: shown.product, placeDisplay: shown.place,
     // Where the named place runs out. The grid draws its divider here.
     inPlace: top.filter(s => s.placeScore > 0).length
@@ -2359,6 +2446,9 @@ ${catalogStr}`;
       // the named place is appended rather than lost.
       const alsoLocal = localSearch(query);
       state.placeTerms = alsoLocal.place || [];
+      // Read from the query, not from the model's answer. The prompt asks the
+      // model to respect the audience, but visible() enforces it either way.
+      state.audience = alsoLocal.audience || [];
       let rescued = 0;
       alsoLocal.matches.forEach(b => {
         if (!state.aiMatches.has(b.id) && matchesPlace(b, state.placeTerms)) {
@@ -2404,6 +2494,7 @@ ${catalogStr}`;
       state.aiMatches.clear();
       state.aiOrder = [];
       state.placeTerms = local.place || [];
+      state.audience = local.audience || [];
       local.matches.forEach(b => {
         state.aiMatches.set(b.id, 'Matched on ' + local.terms.join(', '));
         state.aiOrder.push(b.id);

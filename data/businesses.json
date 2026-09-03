@@ -22,7 +22,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@sehkelly.com"
+    "email": "info@sehkelly.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "united-overalls",
@@ -73,7 +77,11 @@
     ],
     "nation": "England",
     "county": "Manchester",
-    "email": "customercare@privatewhitevc.com"
+    "email": "customercare@privatewhitevc.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "community-clothing",
@@ -97,7 +105,12 @@
       "everyday wear"
     ],
     "nation": "England",
-    "email": "hello@communityclothing.co.uk"
+    "email": "hello@communityclothing.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "maquien",
@@ -123,7 +136,11 @@
     ],
     "nation": "England",
     "county": "East Yorkshire",
-    "email": "sales@maquien.co.uk"
+    "email": "sales@maquien.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "maude-and-fox",
@@ -148,7 +165,12 @@
     ],
     "nation": "England",
     "county": "Dorset",
-    "email": "info@maudeandfox.com"
+    "email": "info@maudeandfox.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "chapman-bags",
@@ -173,7 +195,11 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "email": "retail@chapmanmade.uk"
+    "email": "retail@chapmanmade.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "trakke",
@@ -301,7 +327,11 @@
       "workwear & aprons"
     ],
     "nation": "England",
-    "email": "hello@hebtro.co"
+    "email": "hello@hebtro.co",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "billingham",
@@ -350,7 +380,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@campbellcole.co.uk"
+    "email": "info@campbellcole.co.uk",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "carl-stuart-tailors",
@@ -620,7 +654,11 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "email": "customerservices@trickers.com"
+    "email": "customerservices@trickers.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "crockett-jones",
@@ -644,7 +682,12 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "email": "online@crockettandjones.co.uk"
+    "email": "online@crockettandjones.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "joseph-cheaney",
@@ -744,7 +787,12 @@
     ],
     "nation": "Scotland",
     "county": "Moray",
-    "email": "ecommerce@johnstonsofelgin.com"
+    "email": "ecommerce@johnstonsofelgin.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "begg-x-co",
@@ -771,7 +819,12 @@
     ],
     "nation": "Scotland",
     "county": "Ayr",
-    "email": "customerservice@beggxco.com"
+    "email": "customerservice@beggxco.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "william-lockie",
@@ -823,7 +876,13 @@
     ],
     "nation": "Wales",
     "county": "Carmarthenshire",
-    "email": "sales@corgi-socks.com"
+    "email": "sales@corgi-socks.com",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "pantherella",
@@ -874,7 +933,12 @@
     ],
     "nation": "England",
     "county": "Cumbria",
-    "email": "support@peregrineclothing.co.uk"
+    "email": "support@peregrineclothing.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "mackintosh",
@@ -899,7 +963,12 @@
     ],
     "nation": "Scotland",
     "county": "Cumbernauld",
-    "email": "product-info@mackintosh.com"
+    "email": "product-info@mackintosh.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "hiut-denim",
@@ -1205,7 +1274,12 @@
     ],
     "nation": "England",
     "county": "Suffolk",
-    "email": "customerservice@lavenhamjackets.com"
+    "email": "customerservice@lavenhamjackets.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "christys",
@@ -1255,7 +1329,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "sales@ettinger.co.uk"
+    "email": "sales@ettinger.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "barbour",
@@ -1354,7 +1433,12 @@
     ],
     "nation": "England",
     "county": "Buckinghamshire",
-    "email": "theteam@tusting.co.uk"
+    "email": "theteam@tusting.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "emma-willis",
@@ -1378,7 +1462,12 @@
       "shirts"
     ],
     "nation": "England",
-    "email": "sales@emmawillis.com"
+    "email": "sales@emmawillis.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "turnbull-asser",
@@ -1403,7 +1492,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "help@turnbullandasser.co.uk"
+    "email": "help@turnbullandasser.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "keelham",
@@ -1616,7 +1709,11 @@
     ],
     "nation": "Scotland",
     "county": "Shetland",
-    "email": "lerwick@jamiesonsofshetland.co.uk"
+    "email": "lerwick@jamiesonsofshetland.co.uk",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "melin-tregwynt",
@@ -1641,7 +1738,11 @@
     ],
     "nation": "Wales",
     "county": "Pembrokeshire",
-    "email": "info@melintregwynt.co.uk"
+    "email": "info@melintregwynt.co.uk",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "eribe",
@@ -1666,7 +1767,12 @@
     ],
     "nation": "Scotland",
     "county": "Scottish Borders",
-    "email": "shop@eribe.com"
+    "email": "shop@eribe.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "sunspel",
@@ -1692,7 +1798,12 @@
     ],
     "nation": "England",
     "county": "Derbyshire",
-    "email": "customerservice@sunspel.com"
+    "email": "customerservice@sunspel.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "drakes",
@@ -1718,7 +1829,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "concierge@drakes.com"
+    "email": "concierge@drakes.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "solovair",
@@ -1743,7 +1858,12 @@
     ],
     "nation": "England",
     "county": "Northamptonshire",
-    "email": "customer.services@nps-shoes.com"
+    "email": "customer.services@nps-shoes.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "drmartens-mie",
@@ -2033,7 +2153,12 @@
     ],
     "nation": "Scotland",
     "county": "Scottish Borders",
-    "email": "info@hawico.com"
+    "email": "info@hawico.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "tanner-bates",
@@ -2084,7 +2209,12 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": "info@carriercompany.co.uk"
+    "email": "info@carriercompany.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "blackhorse-lane",
@@ -2110,7 +2240,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "enquiries@blackhorselane.com"
+    "email": "enquiries@blackhorselane.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "norman-walsh",
@@ -2134,7 +2269,12 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "email": "service@normanwalsh.com"
+    "email": "service@normanwalsh.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "gonalston",
@@ -2385,7 +2525,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@northseaclothing.co.uk"
+    "email": "info@northseaclothing.co.uk",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "genevieve-sweeney",
@@ -2410,7 +2555,12 @@
     ],
     "nation": "England",
     "county": "Hertfordshire",
-    "email": "me@genevievesweeney.com"
+    "email": "me@genevievesweeney.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "henry-poole",
@@ -4247,7 +4397,11 @@
     ],
     "nation": "Northern Ireland",
     "county": "Co. Down",
-    "email": "studio@mournetextiles.com"
+    "email": "studio@mournetextiles.com",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "thomas-ferguson-linen",
@@ -4429,7 +4583,12 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": "hello@yarmouthoilskins.co.uk"
+    "email": "hello@yarmouthoilskins.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "farfield-clothing",
@@ -4455,7 +4614,11 @@
     ],
     "nation": "England",
     "county": "Cumbria",
-    "email": "info@farfield.co.uk"
+    "email": "info@farfield.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "troy-london",
@@ -4480,7 +4643,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@troylondon.com"
+    "email": "info@troylondon.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "mcnair-shirts",
@@ -4506,7 +4674,12 @@
     ],
     "nation": "England",
     "county": "West Yorkshire",
-    "email": "natalie@mcnairshirts.com"
+    "email": "natalie@mcnairshirts.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "fieldware-co",
@@ -4558,7 +4731,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@hegartylondon.com"
+    "email": "info@hegartylondon.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "lochcarron",
@@ -4609,7 +4787,12 @@
     ],
     "nation": "England",
     "county": "Lancashire",
-    "email": "berk@berkcashmere.co.uk"
+    "email": "berk@berkcashmere.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "colhays",
@@ -4736,7 +4919,12 @@
     ],
     "nation": "England",
     "county": "Cumbria",
-    "email": "hello@oubasknitwear.co.uk"
+    "email": "hello@oubasknitwear.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "mars-knitwear",
@@ -4785,7 +4973,13 @@
     ],
     "nation": "England",
     "county": "North Yorkshire",
-    "email": "edward@glencroft.co.uk"
+    "email": "edward@glencroft.co.uk",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "izzy-lane",
@@ -4836,7 +5030,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "hello@navygrey.co"
+    "email": "hello@navygrey.co",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "eas-fors",
@@ -4862,7 +5060,11 @@
     ],
     "nation": "Scotland",
     "county": "Isle of Mull",
-    "email": "info@easfors.com"
+    "email": "info@easfors.com",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "carnwear",
@@ -4939,7 +5141,12 @@
     ],
     "nation": "Scotland",
     "county": "Aberdeenshire",
-    "email": "contact@thecrofthouse.com"
+    "email": "contact@thecrofthouse.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "goral",
@@ -4963,7 +5170,12 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "email": "customerservices@goral-shoes.co.uk"
+    "email": "customerservices@goral-shoes.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "billy-tannery",
@@ -4988,7 +5200,11 @@
     ],
     "nation": "England",
     "county": "Northamptonshire",
-    "email": "support@billytannery.co.uk"
+    "email": "support@billytannery.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "cherchbi",
@@ -5039,7 +5255,12 @@
     ],
     "nation": "Scotland",
     "county": "Glasgow",
-    "email": "info@mcrostie.co.uk"
+    "email": "info@mcrostie.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "english-fine-cottons",
@@ -5064,7 +5285,11 @@
     ],
     "nation": "England",
     "county": "Greater Manchester",
-    "email": "sales@englishfinecottons.co.uk"
+    "email": "sales@englishfinecottons.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "ghhurt",
@@ -5090,7 +5315,12 @@
     ],
     "nation": "England",
     "county": "Nottinghamshire",
-    "email": "contactus@ghhurt.com"
+    "email": "contactus@ghhurt.com",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "house-of-cheviot",
@@ -5117,7 +5347,12 @@
     ],
     "nation": "Scotland",
     "county": "Scottish Borders",
-    "email": "sales@houseofcheviot.com"
+    "email": "sales@houseofcheviot.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "and-daughter",
@@ -5142,7 +5377,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "customercare@and-daughter.com"
+    "email": "customercare@and-daughter.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "woolkind",
@@ -5242,7 +5482,12 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "email": "info@gloverall.com"
+    "email": "info@gloverall.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "yarmo",
@@ -5268,7 +5513,12 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": "hello@yarmouthstores.co.uk"
+    "email": "hello@yarmouthstores.co.uk",
+    "audience": [
+      "men",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "buffalo-systems",
@@ -5292,7 +5542,12 @@
       "coats & jackets"
     ],
     "nation": "England",
-    "email": "info@buffalosystems.co.uk"
+    "email": "info@buffalosystems.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "aero-leather",
@@ -5343,7 +5598,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "onlineshop@foxumbrellas.com"
+    "email": "onlineshop@foxumbrellas.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "budd-shirts",
@@ -5368,7 +5628,12 @@
     ],
     "nation": "England",
     "county": "Hampshire",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "fortis-clothing",
@@ -5394,7 +5659,12 @@
     ],
     "nation": "England",
     "county": "Devon",
-    "email": "info@fortisclothing.co.uk"
+    "email": "info@fortisclothing.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "gushlow-cole",
@@ -5419,7 +5689,12 @@
     ],
     "nation": "England",
     "county": "Kent",
-    "email": "customercare@gushlowandcole.com"
+    "email": "customercare@gushlowandcole.com",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "british-sheepskin",
@@ -5445,7 +5720,12 @@
     ],
     "nation": "England",
     "county": "Somerset",
-    "email": "info@british-sheepskin.co.uk"
+    "email": "info@british-sheepskin.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "lockwood-smocks",
@@ -5496,7 +5776,11 @@
     "nation": "England",
     "county": "Leicestershire",
     "logo_bg": "dark",
-    "email": "info@darziclothingcompany.com"
+    "email": "info@darziclothingcompany.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "thorndale",
@@ -5522,7 +5806,12 @@
     ],
     "nation": "England",
     "county": "Staffordshire",
-    "email": "info@thorndale.co.uk"
+    "email": "info@thorndale.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "palava",
@@ -5547,7 +5836,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "hello@palava.co"
+    "email": "hello@palava.co",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "crown-northampton",
@@ -5696,7 +5990,12 @@
     ],
     "nation": "England",
     "county": "Somerset",
-    "email": "info@owenbarry.com"
+    "email": "info@owenbarry.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "cambridge-satchel",
@@ -5721,7 +6020,12 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "email": "contactus@cambridgesatchel.com"
+    "email": "contactus@cambridgesatchel.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "leather-satchel-co",
@@ -5771,7 +6075,12 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": "info@broadlandslippers.co.uk"
+    "email": "info@broadlandslippers.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "barnwell-footwear",
@@ -5820,7 +6129,12 @@
       "bags & leather goods"
     ],
     "nation": "England",
-    "email": "customerservices@zatchels.com"
+    "email": "customerservices@zatchels.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "juju-footwear",
@@ -5844,7 +6158,12 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "email": "info@jujushoes.co.uk"
+    "email": "info@jujushoes.co.uk",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "swaine",
@@ -5869,7 +6188,12 @@
     ],
     "nation": "England",
     "county": "Cambridgeshire",
-    "email": "enquiries@swaine.group"
+    "email": "enquiries@swaine.group",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "de-winter",
@@ -5894,7 +6218,11 @@
     ],
     "nation": "England",
     "county": "Northamptonshire",
-    "email": "sales@dewinterboots.com"
+    "email": "sales@dewinterboots.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "percy-stride",
@@ -5919,7 +6247,11 @@
     ],
     "nation": "England",
     "county": "Northamptonshire",
-    "email": "info@percystride.com"
+    "email": "info@percystride.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "arthur-sleep",
@@ -5944,7 +6276,12 @@
       "footwear & boots"
     ],
     "nation": "England",
-    "email": "hello@arthursleep.com"
+    "email": "hello@arthursleep.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "jadd-shoes",
@@ -5969,7 +6306,11 @@
     ],
     "nation": "England",
     "county": "Suffolk",
-    "email": "enquiries@suffolkshoes.co.uk"
+    "email": "enquiries@suffolkshoes.co.uk",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "everbound-goods",
@@ -6019,7 +6360,12 @@
     ],
     "nation": "England",
     "county": "Lancashire",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "draper-of-glastonbury",
@@ -6044,7 +6390,12 @@
     ],
     "nation": "England",
     "county": "Somerset",
-    "email": "shop@draper-of-glastonbury.com"
+    "email": "shop@draper-of-glastonbury.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "herd",
@@ -6069,7 +6420,12 @@
     ],
     "nation": "England",
     "county": "Gloucestershire",
-    "email": "hello@herdwear.co"
+    "email": "hello@herdwear.co",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "beorma-leather-company",
@@ -6094,7 +6450,11 @@
     ],
     "nation": "England",
     "county": "West Midlands",
-    "email": "enquiries@beormaleathercompany.co.uk"
+    "email": "enquiries@beormaleathercompany.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "cornelia-james",
@@ -6145,7 +6505,12 @@
     ],
     "nation": "England",
     "county": "Hertfordshire",
-    "email": "admin@lairdhatters.com"
+    "email": "admin@lairdhatters.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "anise-cashmere",
@@ -6198,7 +6563,12 @@
     ],
     "nation": "England",
     "county": "Kent",
-    "email": "rose@roveknitwear.com"
+    "email": "rose@roveknitwear.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "brora",
@@ -6224,7 +6594,12 @@
     ],
     "nation": "Scotland",
     "county": "Scottish Borders",
-    "email": "press@brora.co.uk"
+    "email": "press@brora.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "kinloch-anderson",
@@ -6301,7 +6676,12 @@
     ],
     "nation": "Scotland",
     "county": "Highland",
-    "email": "shop@campbellsofbeauly.com"
+    "email": "shop@campbellsofbeauly.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "bowhill-and-elliott",
@@ -6326,7 +6706,12 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": "shop@bowhillandelliott.co.uk"
+    "email": "shop@bowhillandelliott.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "albert-thurston",
@@ -6426,7 +6811,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "shop@lockhatters.co.uk"
+    "email": "shop@lockhatters.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "cordings",
@@ -6451,7 +6841,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "shop@cordings.co.uk"
+    "email": "shop@cordings.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "dents",
@@ -6476,7 +6870,12 @@
     ],
     "nation": "England",
     "county": "Wiltshire",
-    "email": "sales@dents.co.uk"
+    "email": "sales@dents.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "the-british-belt-company",
@@ -6501,7 +6900,12 @@
     ],
     "nation": "England",
     "county": "Rutland",
-    "email": "customer.service@thebritishbeltcompany.com"
+    "email": "customer.service@thebritishbeltcompany.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "risdon-and-risdon",
@@ -6527,7 +6931,11 @@
     ],
     "nation": "England",
     "county": "Shropshire",
-    "email": "aprons@risdonandrisdon.co.uk"
+    "email": "aprons@risdonandrisdon.co.uk",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "churchs",
@@ -6601,7 +7009,12 @@
     ],
     "nation": "England",
     "county": "Northamptonshire",
-    "email": "sales@barkershoes.co.uk"
+    "email": "sales@barkershoes.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "alt-berg",
@@ -6651,7 +7064,11 @@
     ],
     "nation": "England",
     "county": "South Yorkshire",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "bridgedale",
@@ -6677,7 +7094,12 @@
     ],
     "nation": "Northern Ireland",
     "county": "Co. Down",
-    "email": "customer.services@bridgedale.com"
+    "email": "customer.services@bridgedale.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "british-boxers",
@@ -6702,7 +7124,12 @@
     ],
     "nation": "England",
     "county": "Staffordshire",
-    "email": "customerservice@british-boxers.com"
+    "email": "customerservice@british-boxers.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "charl-knitwear",
@@ -6727,7 +7154,11 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "oliver-spencer",
@@ -6752,7 +7183,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@oliverspencer.co.uk"
+    "email": "info@oliverspencer.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "marwood",
@@ -6802,7 +7237,12 @@
     ],
     "nation": "England",
     "county": "West Midlands",
-    "email": "sales@johnpartridge.com"
+    "email": "sales@johnpartridge.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "the-cambridge-sock-company",
@@ -6829,7 +7269,11 @@
     ],
     "nation": "England",
     "county": "Cambridgeshire",
-    "email": "cambsocks@gmail.com"
+    "email": "cambsocks@gmail.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "arbon-socks",
@@ -6881,7 +7325,12 @@
     ],
     "nation": "England",
     "county": "West Yorkshire",
-    "email": "info@ratcatchertweed.co.uk"
+    "email": "info@ratcatchertweed.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "tyler-and-tyler",
@@ -6932,7 +7381,11 @@
     ],
     "nation": "Scotland",
     "county": "Glasgow",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "david-nieper",
@@ -6957,7 +7410,11 @@
     ],
     "nation": "England",
     "county": "Derbyshire",
-    "email": "customer.services@davidnieper.co.uk"
+    "email": "customer.services@davidnieper.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "freddies-of-pinewood",
@@ -7010,7 +7467,12 @@
     ],
     "nation": "England",
     "county": "West Sussex",
-    "email": "sales@peperharowengland.com"
+    "email": "sales@peperharowengland.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "benson-and-clegg",
@@ -7035,7 +7497,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "enquiries@bensonandclegg.com"
+    "email": "enquiries@bensonandclegg.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "pickett-london",
@@ -7060,7 +7526,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "pressoffice@pickett.co.uk"
+    "email": "pressoffice@pickett.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "moloh",
@@ -7085,7 +7556,11 @@
     ],
     "nation": "England",
     "county": "Gloucestershire",
-    "email": "info@moloh.com"
+    "email": "info@moloh.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "tiffany-rose",
@@ -7111,7 +7586,11 @@
     ],
     "nation": "England",
     "county": "Surrey",
-    "email": "sales@tiffanyrose.com"
+    "email": "sales@tiffanyrose.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "lambland",
@@ -7136,7 +7615,13 @@
     ],
     "nation": "England",
     "county": "Devon",
-    "email": "sales@lambland.co.uk"
+    "email": "sales@lambland.co.uk",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "sheepland",
@@ -7161,7 +7646,13 @@
     ],
     "nation": "England",
     "county": "Somerset",
-    "email": "sheepland@outlook.com"
+    "email": "sheepland@outlook.com",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "the-bradford-sock-company",
@@ -7237,7 +7728,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "support@justinetabak.co.uk"
+    "email": "support@justinetabak.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "colenimo",
@@ -7262,7 +7757,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@colenimo.com"
+    "email": "info@colenimo.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "findra-clothing",
@@ -7288,7 +7787,11 @@
     ],
     "nation": "Scotland",
     "county": "Scottish Borders",
-    "email": "hello@findraclothing.com"
+    "email": "hello@findraclothing.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "sub-zero",
@@ -7314,7 +7817,12 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "email": "sales@subzero.co.uk"
+    "email": "sales@subzero.co.uk",
+    "audience": [
+      "men",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "withnell",
@@ -7339,7 +7847,11 @@
     ],
     "nation": "England",
     "county": "Lancashire",
-    "email": "hello@withnell.co"
+    "email": "hello@withnell.co",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "garstin-1871",
@@ -7364,7 +7876,11 @@
     ],
     "nation": "England",
     "county": "Gloucestershire",
-    "email": "contact@garstin1871.com"
+    "email": "contact@garstin1871.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "hackney-gt",
@@ -7390,7 +7906,12 @@
     "postcode": "E8 4PH",
     "nation": "England",
     "county": "London",
-    "email": "info@hackneygt.com"
+    "email": "info@hackneygt.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "kate-sheridan",
@@ -7415,7 +7936,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@katesheridan.com"
+    "email": "info@katesheridan.com",
+    "audience": [
+      "men",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "blackshore",
@@ -7492,7 +8018,12 @@
     ],
     "nation": "Wales",
     "county": "Monmouthshire",
-    "email": "info@weskit.co.uk"
+    "email": "info@weskit.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "meccanica-clothing",
@@ -7542,7 +8073,12 @@
     ],
     "nation": "England",
     "county": "Kent",
-    "email": "becca@pajotten.com"
+    "email": "becca@pajotten.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "elizabeth-martin-tweed",
@@ -7670,7 +8206,12 @@
     ],
     "nation": "Wales",
     "county": "Powys",
-    "email": "hello@rolfskeldon.com"
+    "email": "hello@rolfskeldon.com",
+    "audience": [
+      "men",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "blue-nude",
@@ -7696,7 +8237,11 @@
     "postcode": "E8 2BT",
     "nation": "England",
     "county": "London",
-    "email": "hello@bluenude.com"
+    "email": "hello@bluenude.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "the-cotton-london",
@@ -7723,7 +8268,11 @@
     "postcode": "UB7 9GP",
     "nation": "England",
     "county": "London",
-    "email": "info@thecottonlondon.com"
+    "email": "info@thecottonlondon.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "oxford-blue",
@@ -7748,7 +8297,12 @@
     ],
     "nation": "England",
     "county": "West Midlands",
-    "email": "info@oxford-blue.com"
+    "email": "info@oxford-blue.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "cwt-clothing",
@@ -7800,7 +8354,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@creasestudios.com"
+    "email": "info@creasestudios.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "wildsole",
@@ -7850,7 +8408,11 @@
     ],
     "nation": "England",
     "county": "North Yorkshire",
-    "email": "katie@daffodilandleek.com"
+    "email": "katie@daffodilandleek.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "worn-to-threads",
@@ -7875,7 +8437,11 @@
     ],
     "nation": "England",
     "county": "Bristol",
-    "email": "hello@worntothreads.com"
+    "email": "hello@worntothreads.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "o-pioneers",
@@ -7901,7 +8467,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "enquiries@opioneers.co.uk"
+    "email": "enquiries@opioneers.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "paul-brown",
@@ -7952,7 +8522,11 @@
     "postcode": "EC1V 4JP",
     "nation": "England",
     "county": "London",
-    "email": "info@hemingsworth.com"
+    "email": "info@hemingsworth.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "waring-brooke",
@@ -7977,7 +8551,11 @@
     ],
     "nation": "England",
     "county": "Nottinghamshire",
-    "email": "samantha@waringbrooke.com"
+    "email": "samantha@waringbrooke.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "umpie-handbags",
@@ -8131,7 +8709,11 @@
     ],
     "nation": "England",
     "county": "Greater Manchester",
-    "email": "info@wearejoeandco.co.uk"
+    "email": "info@wearejoeandco.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "torramor",
@@ -8258,7 +8840,11 @@
     ],
     "nation": "Wales",
     "county": "Monmouthshire",
-    "email": "info@ednerat.com"
+    "email": "info@ednerat.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "kerriealdo",
@@ -8283,7 +8869,12 @@
     ],
     "nation": "Scotland",
     "county": "Dundee",
-    "email": "info@kerriealdo.com"
+    "email": "info@kerriealdo.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "reflekt-clothing",
@@ -8309,7 +8900,11 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "email": "sales@reflektclothing.co.uk"
+    "email": "sales@reflektclothing.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "tropel-kids",
@@ -8334,7 +8929,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": ""
+    "email": "",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "amy-britton",
@@ -8410,7 +9009,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "customerservices@homebody.co.uk"
+    "email": "customerservices@homebody.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "the-rugby-company",
@@ -8487,7 +9091,12 @@
     ],
     "nation": "England",
     "county": "Norfolk",
-    "email": "info@oldfieldclothing.com"
+    "email": "info@oldfieldclothing.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "moda-de-la-maria",
@@ -8512,7 +9121,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@modadelamaria.com"
+    "email": "info@modadelamaria.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "mackenzie-and-george",
@@ -8537,7 +9150,12 @@
     ],
     "nation": "England",
     "county": "Shropshire",
-    "email": "info@mackenzieandgeorge.com"
+    "email": "info@mackenzieandgeorge.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "thomas-fortin",
@@ -8562,7 +9180,11 @@
     ],
     "nation": "England",
     "county": "Somerset",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "frimble",
@@ -8588,7 +9210,11 @@
     ],
     "nation": "England",
     "county": "North Yorkshire",
-    "email": "sophie@frimble.com"
+    "email": "sophie@frimble.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "julian-road",
@@ -8615,7 +9241,11 @@
     ],
     "nation": "England",
     "county": "Shropshire",
-    "email": "hello@julianroad.com"
+    "email": "hello@julianroad.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "pinpiuma",
@@ -8642,7 +9272,11 @@
     ],
     "nation": "England",
     "county": "Suffolk",
-    "email": ""
+    "email": "",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "green-thomas",
@@ -8717,7 +9351,11 @@
     ],
     "nation": "England",
     "county": "South Yorkshire",
-    "email": "info@harrieteccleston.co.uk"
+    "email": "info@harrieteccleston.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "hettie",
@@ -8742,7 +9380,12 @@
     ],
     "nation": "England",
     "county": "Warwickshire",
-    "email": "hello@hettie.co.uk"
+    "email": "hello@hettie.co.uk",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "elwin",
@@ -8768,7 +9411,11 @@
     "postcode": "E8 3PH",
     "nation": "England",
     "county": "London",
-    "email": "hello@elwinstudio.com"
+    "email": "hello@elwinstudio.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "katie-cotmarsh",
@@ -8819,7 +9466,11 @@
     "postcode": "E8 3RL",
     "nation": "England",
     "county": "London",
-    "email": "anotherstorymade@wearetalou.com"
+    "email": "anotherstorymade@wearetalou.com",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "mille-saisons",
@@ -8870,7 +9521,11 @@
     ],
     "nation": "England",
     "county": "West Yorkshire",
-    "email": "info@sarvin.co.uk"
+    "email": "info@sarvin.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "soma-sportswear",
@@ -8895,7 +9550,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "chris@somasportswear.com"
+    "email": "chris@somasportswear.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "rock-and-ruby",
@@ -8921,7 +9581,12 @@
     ],
     "nation": "England",
     "county": "Essex",
-    "email": "support@rockandruby.co.uk"
+    "email": "support@rockandruby.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "dreaming-of-ivy",
@@ -8947,7 +9612,11 @@
     ],
     "nation": "England",
     "county": "Devon",
-    "email": "dreamingofivydesign@gmail.com"
+    "email": "dreamingofivydesign@gmail.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "cara-and-the-sky",
@@ -8972,7 +9641,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@caraandthesky.com"
+    "email": "info@caraandthesky.com",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "lola-starr",
@@ -8997,7 +9671,12 @@
     ],
     "nation": "England",
     "county": "Merseyside",
-    "email": "info@lolastarr.co.uk"
+    "email": "info@lolastarr.co.uk",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "pittch",
@@ -9024,7 +9703,13 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "email": "sales@pittch.co.uk"
+    "email": "sales@pittch.co.uk",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "the-well-worn",
@@ -9049,7 +9734,11 @@
     ],
     "nation": "England",
     "county": "Hampshire",
-    "email": "hello@thewellworn.co.uk"
+    "email": "hello@thewellworn.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "adkn",
@@ -9074,7 +9763,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@adkn.co.uk"
+    "email": "info@adkn.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "been-london",
@@ -9125,7 +9819,11 @@
     ],
     "nation": "England",
     "county": "Cornwall",
-    "email": "lottie@lottieandlysh.co.uk"
+    "email": "lottie@lottieandlysh.co.uk",
+    "audience": [
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "red-shoes-ruth-emily-davey",
@@ -9176,7 +9874,11 @@
     ],
     "nation": "England",
     "county": "Hampshire",
-    "email": ""
+    "email": "",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "j-alex-swift",
@@ -9227,7 +9929,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "hello@batchldn.com"
+    "email": "hello@batchldn.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "tutti-frutti-clothing",
@@ -9252,7 +9959,12 @@
     ],
     "nation": "England",
     "county": "Hertfordshire",
-    "email": "hello@tuttifrutticlothing.com"
+    "email": "hello@tuttifrutticlothing.com",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "gina",
@@ -9303,7 +10015,11 @@
     "postcode": "E1 6BG",
     "nation": "England",
     "county": "London",
-    "email": ""
+    "email": "",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "foxology",
@@ -9329,7 +10045,12 @@
     ],
     "nation": "England",
     "county": "Warwickshire",
-    "email": "enquiries@foxologyclothing.com"
+    "email": "enquiries@foxologyclothing.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "moghrabi",
@@ -9379,7 +10100,11 @@
     ],
     "nation": "England",
     "county": "Cornwall",
-    "email": "sami@sami-k.co.uk"
+    "email": "sami@sami-k.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "reworked-348",
@@ -9404,7 +10129,11 @@
     ],
     "nation": "England",
     "county": "Derbyshire",
-    "email": "info@reworked348.com"
+    "email": "info@reworked348.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "vivien-of-holloway",
@@ -9430,7 +10159,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": ""
+    "email": "",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "alie-street",
@@ -9456,7 +10189,11 @@
     ],
     "nation": "England",
     "county": "Surrey",
-    "email": "hello@aliestreet.com"
+    "email": "hello@aliestreet.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "ella-griffee",
@@ -9481,7 +10218,11 @@
     ],
     "nation": "England",
     "county": "Cornwall",
-    "email": "ellagriffee_studio@outlook.com"
+    "email": "ellagriffee_studio@outlook.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "orraman-leather",
@@ -9556,7 +10297,11 @@
     ],
     "nation": "England",
     "county": "Merseyside",
-    "email": "info@cocoveve.uk"
+    "email": "info@cocoveve.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "kipper",
@@ -9581,7 +10326,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "skipper@kipper.club"
+    "email": "skipper@kipper.club",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "meandthee",
@@ -9606,7 +10355,11 @@
     ],
     "nation": "England",
     "county": "West Yorkshire",
-    "email": "info@meandthee.co.uk"
+    "email": "info@meandthee.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "clare-haggas",
@@ -9656,7 +10409,11 @@
     ],
     "nation": "England",
     "county": "Surrey",
-    "email": "info@cravat-club.com"
+    "email": "info@cravat-club.com",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "hyde-and-hare",
@@ -9732,7 +10489,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": ""
+    "email": "",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "abe-house",
@@ -9757,7 +10518,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "info@abehouse.net"
+    "email": "info@abehouse.net",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "medium"
   },
   {
     "id": "stalf",
@@ -9782,7 +10547,11 @@
     ],
     "nation": "England",
     "county": "Lincolnshire",
-    "email": ""
+    "email": "",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "big-fox-apparel",
@@ -9834,7 +10603,12 @@
     "nation": "England",
     "county": "Somerset",
     "logo_bg": "dark",
-    "email": "info@daltonsengland.co.uk"
+    "email": "info@daltonsengland.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "des-merrion",
@@ -9885,7 +10659,13 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "email": "hello@nattily.co.uk"
+    "email": "hello@nattily.co.uk",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "wildish",
@@ -9961,7 +10741,12 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "hello@fawnandfreda.com"
+    "email": "hello@fawnandfreda.com",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "rach-x",
@@ -10011,7 +10796,11 @@
     ],
     "nation": "England",
     "county": "Rutland",
-    "email": "info@nadinoo.co.uk"
+    "email": "info@nadinoo.co.uk",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "kaely-russell",
@@ -10036,7 +10825,11 @@
     ],
     "nation": "England",
     "county": "Devon",
-    "email": "studio@kaelyrussell.com"
+    "email": "studio@kaelyrussell.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "the-bathrobe-company",
@@ -10086,7 +10879,13 @@
     ],
     "nation": "England",
     "county": "Berkshire",
-    "email": "enquiries@violetsinmay.co.uk"
+    "email": "enquiries@violetsinmay.co.uk",
+    "audience": [
+      "men",
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "faith-rowan-leeves",
@@ -10112,7 +10911,12 @@
     ],
     "nation": "England",
     "county": "East Sussex",
-    "email": "studio@faithrowanleeves.com"
+    "email": "studio@faithrowanleeves.com",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "lilyberry",
@@ -10137,7 +10941,12 @@
     ],
     "nation": "England",
     "county": "Sussex",
-    "email": ""
+    "email": "",
+    "audience": [
+      "women",
+      "children"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "leah-may-tailors",
@@ -10191,7 +11000,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "hello@wear-london.co.uk"
+    "email": "hello@wear-london.co.uk",
+    "audience": [
+      "men"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "mhulot",
@@ -10316,7 +11129,12 @@
     ],
     "nation": "England",
     "county": "Cheshire",
-    "email": "info@otwayorford.co.uk"
+    "email": "info@otwayorford.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "barrington-ayre",
@@ -10342,7 +11160,12 @@
     ],
     "nation": "England",
     "county": "Gloucestershire",
-    "email": "info@barringtonayre.co.uk"
+    "email": "info@barringtonayre.co.uk",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "paul-james-knitwear",
@@ -10367,7 +11190,12 @@
     ],
     "nation": "England",
     "county": "Leicestershire",
-    "email": "hello@pauljamesknitwear.com"
+    "email": "hello@pauljamesknitwear.com",
+    "audience": [
+      "men",
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "libby-london",
@@ -10392,7 +11220,11 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "studio@libbylondon.com"
+    "email": "studio@libbylondon.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   },
   {
     "id": "ivy-and-rigg",
@@ -12271,6 +13103,10 @@
     ],
     "nation": "England",
     "county": "London",
-    "email": "studio@momahilo.com"
+    "email": "studio@momahilo.com",
+    "audience": [
+      "women"
+    ],
+    "audience_confidence": "strong"
   }
 ]

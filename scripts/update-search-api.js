@@ -32,7 +32,11 @@ const catalog = data.map(b => ({
   t: [b.town, b.county, b.nation].filter(Boolean).join(', '),
   d: b.description,
   tr: b.tier,
-  pt: b.product_tags || []
+  pt: b.product_tags || [],
+  // Who this business dresses, where we have established it. Absent means not
+  // yet classified, NOT unisex — the page ranks those below confirmed matches
+  // rather than hiding them, and enforces the exclusion itself in visible().
+  au: b.audience || undefined
 }));
 
 const catalogJson = JSON.stringify(catalog);
@@ -219,6 +223,7 @@ Analyze the user's natural language request and find the best matching British m
 CRITICAL INSTRUCTIONS:
 1. Understand regional synonyms (e.g. Yorkshire = Sheffield, Leeds; Scotland = Hawick, Edinburgh; Wales = Gwynedd; Cotswolds = Chipping Campden).
 2. Match materials, craft techniques, product terms and tags (e.g. pet food bowls = ceramics/pottery pet bowls; knitted vests = woollen waistcoats/gilets; kitchen knife = forged cutlery/blades).
+1b. Respect who the shopper is buying for. "au" on a catalog entry lists the audiences that business actually dresses — men, women, children. If the query names an audience ("mens jackets", "something for my daughter"), never return a business whose "au" excludes it. An entry with no "au" has not been classified yet and may be returned. An audience is a filter, never a reason to match: "mens jackets" still has to be jackets.
 2a. IGNORE subjective adjectives entirely — sustainable, ethical, eco, green, nice, best, quality, luxury, affordable and the like. This directory does not rank businesses on those claims and has no evidence with which to do so, so "sustainable jumper" must return exactly what "jumper" returns. Certified or factual descriptors ARE meaningful and should be matched: organic, handmade, traditional, heritage.
 3. Return ONLY a valid JSON object matching this exact structure:
 {

@@ -47,7 +47,7 @@ function loadLocalSearch() {
     console,
     window: {},
     BUSINESSES: JSON.parse(fs.readFileSync(path.join(root, 'data/businesses.json'), 'utf8')),
-    state: { placeTerms: [] },
+    state: { placeTerms: [], audience: [] },
   };
   vm.createContext(ctx);
   vm.runInContext(fs.readFileSync(path.join(root, 'assets/query-expand.js'), 'utf8'), ctx);
@@ -521,6 +521,89 @@ for (const [q, id, why] of streetCases) {
   if (!ok) failures++;
   line(ok, `"county down pottery" — ${inPlace.length} in place, all of them in Co. Down` +
     (ok ? '' : ` — got: ${inPlace.map(b => b.town).join(', ')}`));
+}
+
+// ---------------------------------------------------------------------------
+// WHO THE GARMENT IS FOR
+//
+// "mens jackets" returned forty jacket makers, several of whom sell only
+// womenswear. The words were being scored as product terms, and whole-word
+// matching means "men" matches neither "Menswear" nor the menswear tag — so
+// the audience did nothing at all.
+//
+// The rule: an audience can only ever RULE A BUSINESS OUT. A listing whose
+// audience we have not established still appears, below the confirmed ones.
+// ---------------------------------------------------------------------------
+console.log('\naudience — a gendered search never shows a business that excludes that gender\n');
+
+const audienceOf = b => (Array.isArray(b.audience) ? b.audience : null);
+const excludes = (b, who) => { const a = audienceOf(b); return !!a && a.length && !a.includes(who); };
+
+const audienceCases = [
+  ['mens jackets', 'men'], ["men's coats", 'men'], ['gents shoes', 'men'],
+  ['womens knitwear', 'women'], ['ladies coats', 'women'],
+  ['kids jumpers', 'children'], ['childrens clothes', 'children'],
+];
+for (const [q, who] of audienceCases) {
+  const { result } = local(q);
+  const wrong = result.matches.filter(b => excludes(b, who));
+  const ok = result.matches.length > 0 && wrong.length === 0;
+  if (!ok) failures++;
+  line(ok, `"${q}"`.padEnd(22) + `${result.matches.length} results, none of them excludes ${who}` +
+    (ok ? '' : ` — got ${wrong.slice(0, 4).map(b => b.name).join(', ') || 'nothing at all'}`));
+}
+
+// The three that were reported. Each dresses women (Gushlow & Cole children
+// too) and none of them dresses men, so none may answer a menswear search.
+for (const id of ['gushlow-cole', 'frimble', 'findra-clothing']) {
+  const { result } = local('mens jackets');
+  const ok = !result.matches.some(b => b.id === id);
+  if (!ok) failures++;
+  line(ok, `"mens jackets"`.padEnd(22) + `${id} is not offered`);
+}
+
+// …and the same businesses must still answer the search they DO fit.
+{
+  const { result } = local('womens jackets');
+  const ok = result.matches.some(b => b.id === 'gushlow-cole');
+  if (!ok) failures++;
+  line(ok, `"womens jackets"`.padEnd(22) + 'gushlow-cole is still offered');
+}
+
+// Confirmed before unclassified, so an unfinished audit costs ranking rather
+// than correctness.
+{
+  const { result } = local('mens jackets');
+  const firstUnknown = result.matches.findIndex(b => !audienceOf(b));
+  const lastKnown = result.matches.map(b => !!audienceOf(b)).lastIndexOf(true);
+  const ok = firstUnknown === -1 || lastKnown < firstUnknown;
+  if (!ok) failures++;
+  line(ok, `"mens jackets"`.padEnd(22) + 'confirmed menswear ranks above the unclassified');
+}
+
+// An audience is not a product. "mens" must not make a business eligible on
+// its own, and it must not stop the product term doing its work: the jackets
+// in "mens jackets" still have to be jackets.
+{
+  // Compared against the product, not against the capped result set for
+  // "jackets": narrowing by audience lets businesses that sat at rank 41
+  // through, and they are correct answers, not strays.
+  const jacketish = /jacket|coat|outerwear|anorak|parka|waxed/i;
+  const { result } = local('mens jackets');
+  const strays = result.matches.filter(b =>
+    !jacketish.test([b.name, b.subcategory, b.description, (b.product_tags || []).join(' ')].join(' ')));
+  const ok = strays.length === 0;
+  if (!ok) failures++;
+  line(ok, `"mens jackets"`.padEnd(22) + 'every result actually makes jackets' +
+    (ok ? '' : ` — strays: ${strays.map(b => b.name).join(', ')}`));
+}
+
+// An audience on its own is a real search, not gibberish.
+{
+  const { result } = local('womenswear');
+  const ok = result.matches.length > 0 && !result.matches.some(b => excludes(b, 'women'));
+  if (!ok) failures++;
+  line(ok, `"womenswear"`.padEnd(22) + `${result.matches.length} results, all of them dressing women`);
 }
 
 console.log('');
